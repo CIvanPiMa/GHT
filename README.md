@@ -4,7 +4,6 @@
 
 - [Introduction](#introduction)
 - [Install](#install)
-- [TODO:](#todo)
 
 ## Introduction
 
@@ -24,7 +23,6 @@ See [docs/installation.md](./docs/installation.md) for the full guide. Quick opt
 - **Self-host:** Unzip the release zip onto your web server, or build and run with Docker: `docker build -t gh-tracker . && docker run --rm -p 80:80 gh-tracker`
 - **Build from source:** `npm run build` — output at `./dist/gh-tracker`
 
-## TODO:
+---
 
-- remove
-  - GHT
+Forked from [Lurkars/gloomhavensecretariat](https://github.com/Lurkars/gloomhavensecretariat)

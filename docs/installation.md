@@ -19,7 +19,7 @@ This guide covers all ways to install or deploy GH Tracker.
 Clone the repository and start the dev server:
 
 ```bash
-git clone https://github.com/CIvanPiMa/gh-tracker.git
+git clone https://github.com/CIvanPiMa/GHT.git
 cd gh-tracker
 npm install
 npm run start

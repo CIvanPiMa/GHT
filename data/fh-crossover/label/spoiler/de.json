@@ -1,0 +1,22 @@
+{
+  "character": {
+    "fh-crossover": {
+      "angry-face": "Schicksalsläufer",
+      "circles": "Ruferin",
+      "eclipse": "Nachtschleier",
+      "envx": "Klingenschwarm",
+      "lightning": {
+        "": "Berserkerin"
+      },
+      "music-note": {
+        "": "Wahrsängerin"
+      },
+      "saw": "Knochenflicker",
+      "squidface": "Seuchenbringer",
+      "sun": "Sonnenhüterin",
+      "three-spears": "Quartiermeister",
+      "triangles": "Elementarist",
+      "two-mini": "Bestienmeister"
+    }
+  }
+}

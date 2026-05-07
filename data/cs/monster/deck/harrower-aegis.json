@@ -1,0 +1,342 @@
+{
+  "name": "harrower-aegis",
+  "edition": "cs",
+  "abilities": [
+    {
+      "name": "Horned Carapace",
+      "cardId": 2020,
+      "initiative": 26,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "pierce",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "push",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "retaliate",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "earth"
+        }
+      ]
+    },
+    {
+      "name": "Maddening Chatter",
+      "cardId": 2021,
+      "initiative": 29,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "range",
+              "value": "2 %or% 3",
+              "small": true
+            },
+            {
+              "type": "specialTarget",
+              "value": "alliesRangeAffect:3",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "value": "muddle",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesRange:3",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "wild",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "element",
+                  "value": "fire"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Encasing Webs",
+      "cardId": 2022,
+      "initiative": 33,
+      "actions": [
+        {
+          "type": "heal",
+          "value": 5,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.harrower-aegis.1%",
+              "small": true
+            },
+            {
+              "type": "pull",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.cs.harrower-aegis.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steelsilk Weaver",
+      "cardId": 2023,
+      "initiative": 41,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "condition",
+          "value": "immobilize",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.cs.harrower-aegis.3%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coordinated Infestation",
+      "cardId": 2024,
+      "initiative": 50,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "condition",
+          "value": "ward",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "selfAlliesAdjacentAffect",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "fire"
+            },
+            {
+              "type": "element",
+              "value": "earth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anti-Venom",
+      "cardId": 2025,
+      "initiative": 63,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.harrower-aegis.4%",
+          "small": true
+        },
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "poison",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "heal",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "earth"
+        }
+      ]
+    },
+    {
+      "name": "Burning Stingers",
+      "cardId": 2026,
+      "initiative": 73,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.harrower-aegis.3%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire"
+        }
+      ]
+    },
+    {
+      "name": "Burrow Under",
+      "cardId": 2027,
+      "initiative": 88,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "specialTarget",
+          "value": "focusEnemyFarthest",
+          "small": true
+        },
+        {
+          "type": "move",
+          "value": 2,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "jump",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.harrower-aegis.5%",
+              "small": true
+            },
+            {
+              "type": "elementHalf",
+              "value": "earth:fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "condition",
+                  "value": "immobilize",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

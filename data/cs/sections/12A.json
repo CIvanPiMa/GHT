@@ -1,0 +1,99 @@
+{
+  "index": "12A",
+  "name": "Den of Monstrosity",
+  "edition": "cs",
+  "parent": "10",
+  "marker": "1",
+  "monsters": [
+    "black-imp",
+    "lurker"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Supply Crate"
+          },
+          "type": "killed",
+          "value": "3"
+        }
+      ],
+      "disableRules": [
+        {
+          "edition": "cs",
+          "scenario": "10",
+          "index": 2,
+          "section": false
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Supply Crate"
+          },
+          "type": "killed",
+          "value": "4"
+        }
+      ],
+      "disableRules": [
+        {
+          "edition": "cs",
+          "scenario": "10",
+          "index": 3,
+          "section": false
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker",
+          "type": "normal"
+        },
+        {
+          "name": "lurker",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        1
+      ]
+    }
+  ]
+}

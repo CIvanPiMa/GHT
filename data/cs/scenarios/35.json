@@ -1,0 +1,79 @@
+{
+  "index": "35",
+  "name": "Prison Riot",
+  "flowChartGroup": "personal-quests",
+  "edition": "cs",
+  "unlocks": [
+    "36"
+  ],
+  "links": [
+    "36"
+  ],
+  "monsters": [
+    "bandit-archer",
+    "bandit-guard"
+  ],
+  "objectives": [
+    {
+      "name": "Chainguard",
+      "escort": true,
+      "health": "6+(3xL)",
+      "initiative": 50,
+      "marker": "a",
+      "actions": [
+        {
+          "type": "move",
+          "value": 3
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "push",
+              "value": 2,
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-archer",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-archer",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "type": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "type": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

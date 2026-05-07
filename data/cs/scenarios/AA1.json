@@ -1,0 +1,140 @@
+{
+  "index": "AA1",
+  "group": "AA",
+  "name": "The Riches of the Steelsilk",
+  "edition": "cs",
+  "initial": true,
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.beetle%"
+    ],
+    "items": [
+      "101"
+    ],
+    "custom": "%data.scenario.rewards.cs.AA1%"
+  },
+  "monsters": [
+    "bandit-archer",
+    "bandit-guard",
+    "frost-demon",
+    "harrower-aegis",
+    "hound",
+    "wind-demon"
+  ],
+  "allies": [
+    "harrower-aegis"
+  ],
+  "rules": [
+    {
+      "round": "R == 2 || R == 6",
+      "start": true,
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "bandit-guard",
+            "type": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 3 || R == 7",
+      "start": true,
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "bandit-archer",
+            "type": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 4 || R == 8",
+      "start": true,
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "hound",
+            "type": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 5",
+      "start": true,
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "wind-demon",
+            "type": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 9",
+      "start": true,
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "frost-demon",
+            "type": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 9",
+      "sections": [
+        "1-AA1"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "K1b",
+      "initial": true,
+      "treasures": [
+        51
+      ],
+      "monster": [
+        {
+          "name": "harrower-aegis",
+          "type": "elite"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

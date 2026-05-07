@@ -1,0 +1,15 @@
+{
+  "edition": {
+    "sox": "Suchende von Xorn"
+  },
+  "monster": {
+    "night-demon-sox": "%data.monster.night-demon% (%data.edition.sox%)",
+    "tormented-soul": "Gequälte Seele",
+    "water-eel": "Wasseraal"
+  },
+  "scenario": {
+    "Crypt of the Ancients": "Krypta der Ältesten",
+    "Flooded Crypt": "Überflutete Krypta",
+    "Nobles' Crypt": "Adelsgruft"
+  }
+}

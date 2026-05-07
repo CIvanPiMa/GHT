@@ -1,0 +1,64 @@
+{
+  "index": "RM1",
+  "group": "RM",
+  "name": "Mind Your Manners",
+  "edition": "cs",
+  "initial": true,
+  "unlocks": [
+    "RM2"
+  ],
+  "monsters": [
+    "bandit-archer-hired-muscle",
+    "bandit-guard-hired-muscle"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "G2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-archer-hired-muscle",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-archer-hired-muscle",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-archer-hired-muscle",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-archer-hired-muscle",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard-hired-muscle",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard-hired-muscle",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard-hired-muscle",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard-hired-muscle",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

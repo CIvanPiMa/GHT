@@ -1,0 +1,63 @@
+{
+  "index": "7-4",
+  "group": "RM",
+  "name": "Insatiable",
+  "edition": "cs",
+  "parent": "RM7",
+  "parentSections": [
+    [
+      "7-3"
+    ]
+  ],
+  "marker": "4",
+  "monsters": [
+    "ruinmaw-section-4",
+    "vermling-shaman"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "cs",
+            "name": "ruinmaw-section-2"
+          },
+          "type": "remove"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "monster": [
+        {
+          "name": "ruinmaw-section-4",
+          "type": "boss"
+        },
+        {
+          "name": "vermling-shaman",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-shaman",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-shaman",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-shaman",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

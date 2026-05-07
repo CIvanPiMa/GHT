@@ -1,0 +1,115 @@
+{
+  "index": "128",
+  "name": "Cracked Facade",
+  "edition": "fc",
+  "parent": "111",
+  "parentSections": [
+    [
+      "66"
+    ]
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "%data.section.rules.fc.128.1%",
+      "sections": [
+        "81"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "aesther-ashblade",
+            "tag": "the-husk"
+          },
+          "type": "loseCondition",
+          "value": "wound"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "aesther-ashblade",
+            "tag": "the-husk"
+          },
+          "type": "loseCondition",
+          "value": "muddle"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "aesther-ashblade",
+            "tag": "the-husk"
+          },
+          "type": "loseCondition",
+          "value": "poison"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "aesther-ashblade",
+            "tag": "the-husk"
+          },
+          "type": "setHp",
+          "value": "HP/4"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "111",
+          "index": 2,
+          "section": false
+        },
+        {
+          "edition": "fc",
+          "scenario": "66",
+          "index": 2,
+          "section": true
+        }
+      ],
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "aesther-ashblade",
+            "tag": "the-husk"
+          },
+          "statEffect": {
+            "name": "the-husk",
+            "health": "[HxC]",
+            "attack": "[A+3]",
+            "actions": [
+              {
+                "type": "shield",
+                "value": 2
+              },
+              {
+                "type": "custom",
+                "value": "%data.scenario.rules.fc.111.2%"
+              }
+            ],
+            "immunities": [
+              "stun",
+              "disarm",
+              "immobilize"
+            ],
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fc.111.4%"
+        }
+      ]
+    }
+  ]
+}

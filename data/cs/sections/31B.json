@@ -1,0 +1,57 @@
+{
+  "index": "31B",
+  "name": "Burial Chamber",
+  "edition": "cs",
+  "parent": "29",
+  "marker": "1",
+  "monsters": [
+    "bone-archer",
+    "living-corpse",
+    "living-spirit"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "bone-archer",
+          "type": "elite"
+        },
+        {
+          "name": "bone-archer",
+          "type": "elite"
+        },
+        {
+          "name": "bone-archer",
+          "player4": "elite"
+        },
+        {
+          "name": "bone-archer",
+          "player4": "elite"
+        },
+        {
+          "name": "living-corpse",
+          "type": "normal"
+        },
+        {
+          "name": "living-corpse",
+          "type": "normal"
+        },
+        {
+          "name": "living-spirit",
+          "type": "normal"
+        },
+        {
+          "name": "living-spirit",
+          "type": "normal"
+        },
+        {
+          "name": "living-spirit",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

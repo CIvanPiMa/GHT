@@ -1,0 +1,26 @@
+{
+  "index": "5",
+  "name": "Moving Walls",
+  "edition": "fc",
+  "parent": "107",
+  "parentSections": [
+    [
+      "42"
+    ]
+  ],
+  "marker": "f",
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "%data.section.rules.fc.5.1%"
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "%data.section.rules.fc.5.2%"
+    }
+  ]
+}

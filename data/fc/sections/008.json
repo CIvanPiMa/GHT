@@ -1,0 +1,35 @@
+{
+  "index": "8",
+  "name": "A Life Taken, a Life Given",
+  "edition": "fc",
+  "parent": "99",
+  "marker": "a",
+  "monsters": [
+    "valrath-savage"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "escort",
+            "name": "Civilian"
+          },
+          "type": "killed",
+          "value": "1"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "valrath-savage",
+            "type": "elite"
+          }
+        }
+      ]
+    }
+  ]
+}

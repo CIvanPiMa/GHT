@@ -1,0 +1,61 @@
+{
+  "index": "37C",
+  "name": "Great Oak Rescue",
+  "edition": "cs",
+  "parent": "34",
+  "parentSections": [
+    [
+      "36B"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "inox-guard",
+    "inox-shaman"
+  ],
+  "objectives": [
+    {
+      "name": "Revered Monk",
+      "escort": true,
+      "health": "C+L+2",
+      "marker": "c",
+      "count": 2,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "When attacked within %game.action.range% 3, enemy gains %game.condition.curse%",
+          "small": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        42
+      ],
+      "monster": [
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-shaman",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        1
+      ]
+    }
+  ]
+}

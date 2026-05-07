@@ -1,0 +1,30 @@
+h2 {
+  font-size: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+  color: var(--ght-color-darkgray);
+  margin: 0;
+  padding: 0;
+}
+
+.applied ght-scenario-rule {
+  cursor: zoom-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    cursor: pointer;
+    font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

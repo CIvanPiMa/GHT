@@ -1,0 +1,85 @@
+{
+  "index": "AA2",
+  "group": "AA",
+  "name": "Malign Echoes",
+  "edition": "cs",
+  "initial": true,
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.beetle%"
+    ],
+    "items": [
+      "102"
+    ],
+    "custom": "%data.scenario.rewards.cs.AA2%"
+  },
+  "monsters": [
+    "giant-viper",
+    "ravenous-gharial"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "poison",
+          "scenarioEffect": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "M1b",
+      "initial": true,
+      "treasures": [
+        52
+      ],
+      "monster": [
+        {
+          "name": "giant-viper",
+          "type": "normal"
+        },
+        {
+          "name": "giant-viper",
+          "type": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player4": "elite"
+        },
+        {
+          "name": "ravenous-gharial",
+          "type": "elite"
+        },
+        {
+          "name": "ravenous-gharial",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "ravenous-gharial",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

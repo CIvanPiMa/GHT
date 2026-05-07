@@ -1,0 +1,372 @@
+{
+  "ability": {
+    "A Balance Struck": "A Balance Struck",
+    "Abandoned Fury": "Abandoned Fury",
+    "Aerial Dominance": "Aerial Dominance",
+    "Aggressive Defense": "Aggressive Defense",
+    "Air Current": "Air Current",
+    "Alone in the End": "Alone in the End",
+    "Amassed Formation": "Amassed Formation",
+    "Ancestral Blade": "Ancestral Blade",
+    "Ancient Banner": "Ancient Banner",
+    "Arc Reaction": "Arc Reaction",
+    "Arcblast": "Arcblast",
+    "Aukotu's Defiant Resolve": "Aukotu's Defiant Resolve",
+    "Awnu's Retribution": "Awnu's Retribution",
+    "Barbed Onslaught": "Barbed Onslaught",
+    "Bed of Roses": "Bed of Roses",
+    "Biting Cold": "Biting Cold",
+    "Black Rose": "Black Rose",
+    "Blazing Streak": "Blazing Streak",
+    "Blood of Champions": "Blood of Champions",
+    "Bonechill": "Bonechill",
+    "Branched Slam": "Branched Slam",
+    "Breakneck Blitz": "Breakneck Blitz",
+    "Bright Skies": "Bright Skies",
+    "Bulwark of Ether": "Bulwark of Ether",
+    "Channeled Energy": "Channeled Energy",
+    "Cinnabar Seeding": "Cinnabar Seeding",
+    "Cold Snap": "Cold Snap",
+    "Corundum Shell": "Corundum Shell",
+    "Cover of Green": "Cover of Green",
+    "Cryoseism": "Cryoseism",
+    "Crystal Growth": "Crystal Growth",
+    "Dawn's Gift": "Dawn's Gift",
+    "Deafening Roar": "Deafening Roar",
+    "Devoured by Thorns": "Devoured by Thorns",
+    "Diamond Skin": "Diamond Skin",
+    "Electric Current": "Electric Current",
+    "Electromagnetic Pulse": "Electromagnetic Pulse",
+    "Electrostatic Bypass": "Electrostatic Bypass",
+    "Encased in Thorns": "Encased in Thorns",
+    "Energy Siphon": "Energy Siphon",
+    "Enraged Destruction": "Enraged Destruction",
+    "Extended Branch": "Extended Branch",
+    "Farseer's Pilum": "Farseer's Pilum",
+    "Firebrand": "Firebrand",
+    "Fissive Eruption": "Fissive Eruption",
+    "Flash of Lightning": "Flash of Lightning",
+    "Floral Burst": "Floral Burst",
+    "Frostbite": "Frostbite",
+    "Frozen Grasp": "Frozen Grasp",
+    "Geode Barrage": "Geode Barrage",
+    "Gift of the Dying": "Gift of the Dying",
+    "Glacial Cocoon": "Glacial Cocoon",
+    "Glistening Facets": "Glistening Facets",
+    "Gol's Tonic": "Gol's Tonic",
+    "Haf's Reverence": "Haf's Reverence",
+    "Hands of Three Tribes": "Hands of Three Tribes",
+    "Hard Target": "Hard Target",
+    "Hearthbolt": "Hearthbolt",
+    "Heat Transfer": "Heat Transfer",
+    "Heatwave": "Heatwave",
+    "Homeostasis": "Homeostasis",
+    "Hurricane": "Hurricane",
+    "Impaling Command": "Impaling Command",
+    "Impaling Spike": "Impaling Spike",
+    "Jagged Clutch": "Jagged Clutch",
+    "Jetstream Gust": "Jetstream Gust",
+    "Jubilant Recovery": "Jubilant Recovery",
+    "Kleptotherapy": "Kleptotherapy",
+    "Kou's Favor": "Kou's Favor",
+    "Lashing Thorns": "Lashing Thorns",
+    "Lightbender": "Lightbender",
+    "Lightbury Quartz": "Lightbury Quartz",
+    "Luminous Glow": "Luminous Glow",
+    "Maku's Deadly Aim": "Maku's Deadly Aim",
+    "Matriarch's Dominance": "Matriarch's Dominance",
+    "Memory of the Hunt": "Memory of the Hunt",
+    "Merciless Resolve": "Merciless Resolve",
+    "Midsummer": "Midsummer",
+    "Natures Fury": "Natures Fury",
+    "Nimble Resilience": "Nimble Resilience",
+    "Outward Spurs": "Outward Spurs",
+    "Pakh's Lunge": "Pakh's Lunge",
+    "Penetrating Fragments": "Penetrating Fragments",
+    "Perforating Bore": "Perforating Bore",
+    "Photosynthesis": "Photosynthesis",
+    "Pressure Spike": "Pressure Spike",
+    "Pressure Wave": "Pressure Wave",
+    "Prickly Situation": "Prickly Situation",
+    "Prismatic Ward": "Prismatic Ward",
+    "Protective Gale": "Protective Gale",
+    "Rabid Undergrowth": "Rabid Undergrowth",
+    "Radiant Explosion": "Radiant Explosion",
+    "Radtating Crust": "Radtating Crust",
+    "Raging Fire": "Raging Fire",
+    "Rapid Calcification": "Rapid Calcification",
+    "Rapid Flux": "Rapid Flux",
+    "Ravaged Earth": "Ravaged Earth",
+    "Reaching Malice": "Reaching Malice",
+    "Reciprocal Resonance": "Reciprocal Resonance",
+    "Reflecting Surface": "Reflecting Surface",
+    "Rejuvenating Charge": "Rejuvenating Charge",
+    "Remineralize": "Remineralize",
+    "Remnants of the Broken": "Remnants of the Broken",
+    "Rimeshock": "Rimeshock",
+    "Ruinous Shard": "Ruinous Shard",
+    "Rushing Wind": "Rushing Wind",
+    "Savvas Coreglass Knife": "Savvas Coreglass Knife",
+    "Scorched Path": "Scorched Path",
+    "Scorching Arcbolt": "Scorching Arcbolt",
+    "Searing Stone": "Searing Stone",
+    "Seismic Shockwave": "Seismic Shockwave",
+    "Serrated Razor": "Serrated Razor",
+    "Share our Anquish": "Share our Anquish",
+    "Shock Therapy": "Shock Therapy",
+    "Shrewd Owergrowth": "Shrewd Owergrowth",
+    "Snap Freeze": "Snap Freeze",
+    "Solar Flare": "Solar Flare",
+    "Spark Conduit": "Spark Conduit",
+    "Spiked Carapace": "Spiked Carapace",
+    "Spiked Embrace": "Spiked Embrace",
+    "Splinter Burst": "Splinter Burst",
+    "Spreading Flames": "Spreading Flames",
+    "Static Shock": "Static Shock",
+    "Steamburst": "Steamburst",
+    "Storm Lightning": "Storm Lightning",
+    "Stormy Retribution": "Stormy Retribution",
+    "Superradiance": "Superradiance",
+    "Surging Storm": "Surging Storm",
+    "Swift Strike": "Swift Strike",
+    "The Arms of Oxcepi": "The Arms of Oxcepi",
+    "The Grave Beckons": "The Grave Beckons",
+    "Thermal Weaving": "Thermal Weaving",
+    "Thermotherapy": "Thermotherapy",
+    "Thornstride": "Thornstride",
+    "Tomeg's Shield-Arm": "Tomeg's Shield-Arm",
+    "Torrid Blast": "Torrid Blast",
+    "Triboluminescence": "Triboluminescence",
+    "Turbulent Absorption": "Turbulent Absorption",
+    "Twisted Thistle": "Twisted Thistle",
+    "Unyielding Charge": "Unyielding Charge",
+    "Unyielding Stalagmite": "Unyielding Stalagmite",
+    "Vadi's Last Stand": "Vadi's Last Stand",
+    "Vaska's Cunning": "Vaska's Cunning",
+    "Vengeance of Aksut": "Vengeance of Aksut",
+    "Violent Shatter": "Violent Shatter",
+    "Violent Sprout": "Violent Sprout",
+    "Vital Outburst": "Vital Outburst",
+    "Vital Tether": "Vital Tether",
+    "Voltaic Burst": "Voltaic Burst",
+    "War Drums": "War Drums",
+    "Warborn's Shout": "Warborn's Shout",
+    "Welcome to the Jungle": "Welcome to the Jungle",
+    "Wielded Memory": "Wielded Memory",
+    "Wild Leap": "Wild Leap",
+    "Will of the Huntress": "Will of the Huntress",
+    "Wreathed in Flame": "Wreathed in Flame"
+  },
+  "custom": {
+    "glacier-demon": {
+      "1": "Lose %game.action.retaliate% if %game.condition.wound%"
+    },
+    "inferno-demon": {
+      "1": "Lose %game.action.retaliate% if %game.condition.chill%"
+    },
+    "okeda": {
+      "1": "Acts immediately after the Incarnate, performing the same bottom and top actions as the Incarnate",
+      "2": "If the Incarnate did not move during the bottom action:",
+      "3": "If the Incarnate did not attack during the top action:"
+    },
+    "toa": {
+      "enraged-vanquisher": {
+        "1": "If an enemy targets you with an attack<br>this round, that enemy gains",
+        "2": "%game.objectiveMarker.1%:",
+        "3": "%game.objectiveMarker.2%:",
+        "4": "If a target occupies the hex, add the condition shown to the attack.",
+        "5": "Vanquisher %game.objectiveMarker.1% swap positions<br>with Vanquisher %game.objectiveMarker.2%.",
+        "6": "All attackers targeting you this round gain %game.condition.disarm% at the end of their turn."
+      },
+      "enraged-vanquisher-scenario-71": {
+        "1": "If an enemy targets you with an attack<br>this round, that enemy gains",
+        "2": "%game.objectiveMarker.1%:",
+        "3": "%game.objectiveMarker.2%:",
+        "4": "If a target occupies the hex, add the condition shown to the attack.",
+        "5": "Vanquisher %game.objectiveMarker.1% swap positions<br>with Vanquisher %game.objectiveMarker.2%.",
+        "6": "All attackers targeting you this round gain %game.condition.disarm% at the end of their turn.",
+        "7": "Swap positions with the figure closest to you.",
+        "8": "%game.action.teleport% to a hex adjacent to %game.mapMarker.a% that is furthest from an enemy."
+      },
+      "reaver": {
+        "1": "If killed, all enemies gain %game.custom.advantage% on all their attacks"
+      },
+      "shardrender": {
+        "1": "One adjacent enemy suffer %game.damage:2%."
+      },
+      "smoke-spirit": {
+        "1": "Retaliate only applies before its turn",
+        "2": "Create a hazardous terrain tile in the<br>hex occupied by the target if it contains<br>no overlay tiles.",
+        "3": "Create a hazardous terrain tile in<br>all hexes occupied by a target if<br>it contains no overlay tiles.",
+        "4": "%game.action.target% one enemy within two hexes",
+        "5": "If the target of the attack ability is adjacent,<br>add %game.action.push% 2 to the attack.",
+        "6": "Create a hazardous terrain tile in the hex<br>the Smoke Spirit is occupying if it contains<br>no overlay tiles.",
+        "7": "Create a hazardous terrain tile in an empty<br>adjacent hex closest to an enemy."
+      },
+      "valrath-vanquisher": {
+        "1": "The Vanquisher<br>with the lowest<br>current hit point<br>value performs",
+        "2": "The Vanquisher with the<br>highest current hit point<br>value performs",
+        "3": "If both Vanquishers have the same hit point value, they both<br>perform all abilities."
+      },
+      "vermling-scenario-68": {
+        "1": "Move towards exit %game.mapMarker.a%"
+      }
+    }
+  },
+  "deck": {
+    "scavenger": "Scavenger"
+  },
+  "edition": {
+    "toa": "Trail Of Ashes"
+  },
+  "monster": {
+    "active-mechanism": "Active Mechanism",
+    "active-mechanism-extra": "Active Mechanism Extra Deck",
+    "conqueror": "Conqueror",
+    "enraged-vanquisher": "Enraged Vanquisher",
+    "enraged-vanquisher-2": "Enraged Vanquisher 2",
+    "glacier-demon": "Glacier Demon",
+    "harrower-bugflute": "Harrower Bugflute",
+    "harrower-bugflute-immortal": "Harrower Bugflute (Immune)",
+    "harrower-bugflute-immortal-2": "Harrower Bugflute (Immune)",
+    "inferno-demon": "Inferno Demon",
+    "inox-guard-ally": "Inox Guard (Ally)",
+    "lootbot": "Lootbot",
+    "okeda": "Okeda, the Unsouled",
+    "reaver": "Reaver",
+    "ritualist": "Ritualist",
+    "savvas-acolyte": "Savvas Acolyte",
+    "shardrender": "Shardrender",
+    "smoke-spirit": "Smoke Spirit",
+    "talo": "Talo",
+    "tendril-of-corruption": "Tendril of Corruption",
+    "valrath-vanquisher": "Valrath Vanquisher",
+    "valrath-vanquisher-2": "Valrath Vanquisher 2",
+    "vermling-scavenger": "Vermling Scavenger",
+    "volt-demon": "Volt Demon"
+  },
+  "personalQuest": {
+    "toa": {
+      "641": {
+        "": "Grave Robber",
+        "1": "Money tokes looted in scenarios with Living Bons, Living Corpses, or Living Spritits",
+        "2": "Follow \"Ternion Tomb\" (Scenario 67) to a conclusion"
+      },
+      "642": {
+        "": "Stand as One",
+        "1": "Enemies killed with \"Battle Standard\" (Item 115) by allies with abilities granted by you"
+      },
+      "643": {
+        "": "False Dichotomies",
+        "1": "Option A was chosen for an event.",
+        "2": "Option B was chosen for an event."
+      },
+      "644": {
+        "": "Shared Suffering",
+        "1": "Enemies killed while they're adjacent to one or more of their allies"
+      },
+      "645": {
+        "": "Speed is King",
+        "1": "Enemies with initiative at least 20 slower than yours killed"
+      },
+      "646": {
+        "": "Resourceful",
+        "1": "Different scenarios where twice performed a loot action adjacent to an enemy"
+      },
+      "647": {
+        "": "Close to Nature",
+        "1": "Scenarios completed used at least one Bush, Tree, or Thorns overlay"
+      },
+      "648": {
+        "": "In Good Time",
+        "1": "Long rests performed while an enemy is in the same room"
+      }
+    }
+  },
+  "scenario": {
+    "rewards": {
+      "toa": {
+        "73": "Each character gains X gold, where X is 3 times the number of money tokens remaining on the Stone Golem's statistic card."
+      }
+    },
+    "title": {
+      "toa": {
+        "67": "The Dark Valley",
+        "68": "Rival Explorers",
+        "69": "Shaman Chaperone",
+        "70": "Spirits Rising",
+        "71": "Embers of Corruption",
+        "72": "Inox Salvation",
+        "73": "Lootpalooza",
+        "74": "Song of the Harrower",
+        "75": "Sunken Temple",
+        "76": "Untold Woe",
+        "77": "Rat Traps",
+        "78": "Ternion Tomb",
+        "solo-79": "Unsouled",
+        "solo-80": "Conflux of Power",
+        "solo-81": "Corrupted Presence",
+        "solo-82": "Storm Mountain",
+        "solo-83": "Collapsed Cavern",
+        "solo-84": "Return to Crystal Gardens"
+      }
+    }
+  },
+  "section": {
+    "rewards": {
+      "toa": {
+        "33C": "Each character loses 1 %game.items.slots.legs% item",
+        "36C-1": "\"Grave Robber\" quest complete",
+        "36C-2": "\"Grave Robber\" quest complete",
+        "51A": "To view your reward, visit <a href=\"https://www.thecrimsonscales.com/reveal\" target=\"_blank\">thecrimsonscales.com/reveal</a><br>Password: ashes"
+      }
+    },
+    "title": {
+      "toa": {
+        "11A": "The Dark Valley",
+        "11B": "The Dark Valley",
+        "14A": "Rival Explorers",
+        "14C": "Shaman Chaperone",
+        "14D": "Shaman Chaperone",
+        "17A": "Spirits Rising",
+        "17B": "Spirits Rising",
+        "19A": "Embers of Corruption",
+        "19B": "Embers of Corruption",
+        "21A": "Inox Salvation",
+        "21B": "Inox Salvation",
+        "22B": "Lootpalooza",
+        "22C": "Lootpalooza",
+        "24B": "Song of the Harrower",
+        "24C": "Song of the Harrower",
+        "26B": "Sunken Temple",
+        "26C": "Sunken Temple",
+        "30C": "Untold Woe",
+        "32B": "Rat Traps",
+        "32C": "Rat Traps",
+        "32D": "Rat Traps",
+        "33A": "Rat Traps",
+        "33B": "Looted less than two treasure tiles",
+        "33C": "Looted two or more treasure tiles",
+        "35A": "Ternion Tomb",
+        "35B": "Ternion Tomb",
+        "36A": "Ternion Tomb",
+        "36C-1": "One named Inox killed",
+        "36C-2": "All named Inox killed",
+        "51-A": "Inevitable (%game.characterIconColored.gemstone% Retires)",
+        "solo-36B": "Unsouled",
+        "solo-38A": "Unsouled",
+        "solo-40A": "Conflux of Power",
+        "solo-40C": "Conflux of Power",
+        "solo-42A": "Conflux of Power",
+        "solo-42B": "Corrupted Presence",
+        "solo-43A": "Corrupted Presence",
+        "solo-43C": "Corrupted Presence",
+        "solo-46A": "Storm Mountain",
+        "solo-46B": "Storm Mountain",
+        "solo-48A": "Collapsed Cavern",
+        "solo-48B": "Collapsed Cavern",
+        "solo-48C": "Collapsed Cavern"
+      }
+    }
+  }
+}

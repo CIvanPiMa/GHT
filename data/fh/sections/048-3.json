@@ -1,0 +1,12 @@
+{
+  "index": "48.3",
+  "name": "%game.characterIconColored.drifter% Retires",
+  "edition": "fh",
+  "conclusion": true,
+  "rewards": {
+    "calendarSection": [
+      "138.1-4"
+    ]
+  },
+  "retirement": "drifter"
+}

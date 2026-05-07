@@ -1,0 +1,31 @@
+{
+  "character": {
+    "gh2e": {
+      "bruiser": "야만인",
+      "cragheart": "바위심장",
+      "mindthief": "정신도둑",
+      "silent-knife": "무법자",
+      "spellweaver": "주문직인",
+      "tinkerer": "땜장이"
+    }
+  },
+  "custom": {
+    "gh2e": {
+      "flowChartGroup": {
+        "hail": "헤일"
+      }
+    }
+  },
+  "edition": {
+    "gh2e": {
+      "": "글룸헤이븐 2판"
+    }
+  },
+  "personalQuest": {
+    "gh2e": {
+      "09": {
+        "5": "글룸헤이븐"
+      }
+    }
+  }
+}

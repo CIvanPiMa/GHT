@@ -1,0 +1,47 @@
+{
+  "index": "39D",
+  "name": "Prison Riot",
+  "edition": "cs",
+  "parent": "35",
+  "parentSections": [
+    [
+      "39B"
+    ]
+  ],
+  "marker": "3",
+  "monsters": [
+    "bandit-guard",
+    "wind-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "treasures": [
+        40
+      ],
+      "monster": [
+        {
+          "name": "bandit-guard",
+          "type": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "wind-demon",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "wind-demon",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

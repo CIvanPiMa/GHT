@@ -1,0 +1,440 @@
+import { Dialog, DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { Character } from 'src/app/game/model/Character';
+import { Ability } from 'src/app/game/model/data/Ability';
+import { AbilityComponent } from 'src/app/ui/figures/ability/ability';
+import { AbilityDialogComponent } from 'src/app/ui/figures/ability/ability-dialog';
+import { EnhancementDialogComponent } from 'src/app/ui/figures/character/sheet/abilities/enhancements/enhancement-dialog';
+import { ConfirmDialogComponent } from 'src/app/ui/helper/confirm/confirm';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { GhsRangePipe } from 'src/app/ui/helper/Pipes';
+import { PointerInputDirective } from 'src/app/ui/helper/pointer-input';
+import { GhsTooltipDirective } from 'src/app/ui/helper/tooltip/tooltip';
+import { TrackUUIDPipe } from 'src/app/ui/helper/trackUUID';
+
+@Component({
+  imports: [
+    NgClass,
+    FormsModule,
+    GhsLabelDirective,
+    GhsTooltipDirective,
+    PointerInputDirective,
+    GhsRangePipe,
+    TrackUUIDPipe,
+    AbilityComponent
+  ],
+  selector: 'ght-ability-cards-dialog',
+  templateUrl: 'ability-cards-dialog.html',
+  styleUrls: ['./ability-cards-dialog.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class AbilityCardsDialogComponent implements OnInit {
+  private dialogRef = inject(DialogRef);
+  private dialog = inject(Dialog);
+  private ghsManager = inject(GhsManager);
+
+  character: Character;
+  level: number | string;
+  exclusiveLevel: number | string | undefined;
+  additionalLevels: (number | string)[] = [];
+  abilities: Ability[] = [];
+  visibleAbilities: Ability[] = [];
+  smallAbilities: Ability[] = [];
+  cardsToPick: number = 1;
+  levelToPick: number = 1;
+  sort: 'initiative' | 'level-deck' | 'cardId' | 'level-name' | 'name' = 'initiative';
+  sorts: ('initiative' | 'level-deck' | 'cardId' | 'level-name' | 'name')[] = ['initiative', 'level-deck', 'cardId', 'level-name', 'name'];
+  deck: boolean = true;
+  maxLevel: number = 1;
+  enhanced: boolean = false;
+
+  data: { character: Character } = inject(DIALOG_DATA);
+  ghsSettingsManager = settingsManager;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.update());
+    this.character = this.data.character;
+    this.level = this.character.level;
+    this.abilities = gameManager.deckData(this.character).abilities;
+    this.abilities
+      .filter(
+        (ability) =>
+          (typeof ability.level === 'string' && ability.level !== 'X') || (typeof ability.level === 'number' && ability.level > 9)
+      )
+      .forEach((ability) => {
+        if (!this.additionalLevels.includes(ability.level)) {
+          this.additionalLevels.push(ability.level);
+        }
+      });
+    this.dialogRef.closed.subscribe({
+      next: () => {
+        this.character.tags = this.character.tags.filter((tag) => tag !== 'edit-abilities');
+      }
+    });
+  }
+
+  ngOnInit(): void {
+    this.update();
+  }
+
+  update() {
+    this.cardsToPick = this.character.level - this.character.progress.deck.length - 1;
+    this.character.tags = this.character.tags.filter((tag) => tag !== 'edit-abilities');
+
+    if (this.cardsToPick < 0) {
+      this.cardsToPick = 0;
+    }
+    this.character.progress.deck = this.character.progress.deck || [];
+    this.levelToPick = this.deck && this.cardsToPick ? this.character.level - this.cardsToPick + 1 : 0;
+    this.maxLevel = Math.max(
+      ...this.abilities
+        .filter((ability, i) => typeof ability.level === 'number' && this.character.progress.deck.includes(i))
+        .map((ability) => +ability.level),
+      this.character.level
+    );
+    if (this.levelToPick) {
+      this.visibleAbilities = this.abilities
+        .filter(
+          (ability, i) =>
+            typeof ability.level === 'number' &&
+            ability.level > 1 &&
+            ability.level <= this.levelToPick &&
+            !this.character.progress.deck.includes(i)
+        )
+        .sort((a, b) => {
+          if (typeof a.level === 'number' && typeof b.level === 'number' && a.level !== b.level) {
+            return b.level - a.level;
+          }
+          if (a.cardId && b.cardId) {
+            return a.cardId - b.cardId;
+          }
+          return 0;
+        });
+      this.smallAbilities = this.abilities.filter(
+        (ability, i) => ability.level === 'X' || ability.level === 1 || this.character.progress.deck.includes(i)
+      );
+    } else {
+      this.visibleAbilities = this.abilities.filter(
+        (ability) =>
+          (!this.exclusiveLevel &&
+            typeof this.level === 'number' &&
+            (typeof ability.level === 'string' || +ability.level <= this.level) &&
+            !this.additionalLevels.includes(ability.level)) ||
+          (this.exclusiveLevel && ability.level === this.exclusiveLevel) ||
+          (this.exclusiveLevel === 1 && ability.level === 'X')
+      );
+      this.smallAbilities = [];
+
+      if (this.deck) {
+        this.visibleAbilities = this.visibleAbilities.filter(
+          (ability) =>
+            ability.level === 'X' ||
+            ability.level === 1 ||
+            (typeof ability.level === 'string' && ability.level === this.level) ||
+            this.character.progress.deck.indexOf(this.abilities.indexOf(ability)) !== -1
+        );
+        this.character.tags.push('edit-abilities');
+      }
+
+      const stateRank = (ability: Ability): number => {
+        if (!settingsManager.settings.abilitySortByState) return 0;
+        const i = this.abilities.indexOf(ability);
+        if ((this.character.activatedAbilities || []).includes(i)) return 0;
+        if ((this.character.selectedAbilities || []).includes(i)) return 1;
+        if ((this.character.discardedAbilities || []).includes(i)) return 3;
+        if ((this.character.lostAbilities || []).includes(i)) return 4;
+        if ((this.character.inactiveAbilities || []).includes(i)) return 5;
+        return 2; // available
+      };
+
+      if (this.sort === 'initiative') {
+        this.visibleAbilities.sort((a, b) => {
+          const stateDiff = stateRank(a) - stateRank(b);
+          if (stateDiff !== 0) return stateDiff;
+          if (a.initiative !== b.initiative) {
+            return a.initiative - b.initiative;
+          }
+          if (a.cardId && b.cardId) {
+            return a.cardId - b.cardId;
+          }
+          return 0;
+        });
+      } else if (this.sort === 'cardId') {
+        this.visibleAbilities.sort((a, b) => {
+          const stateDiff = stateRank(a) - stateRank(b);
+          if (stateDiff !== 0) return stateDiff;
+          if (a.cardId && b.cardId) {
+            return a.cardId - b.cardId;
+          }
+          return 0;
+        });
+      } else if (this.sort === 'level-name') {
+        this.visibleAbilities.sort((a, b) => {
+          const stateDiff = stateRank(a) - stateRank(b);
+          if (stateDiff !== 0) return stateDiff;
+          if (a.level === b.level) {
+            if (a.name && b.name) {
+              return a.name < b.name ? -1 : 1;
+            } else if (a.cardId && b.cardId) {
+              return a.cardId - b.cardId;
+            }
+            return 0;
+          } else if (a.level === 1 && b.level === 'X') {
+            return -1;
+          } else if (a.level === 'X' && b.level === 1) {
+            return 1;
+          } else if (a.level === 'X') {
+            return -1;
+          } else if (b.level === 'X') {
+            return 1;
+          } else if (typeof a.level === 'number' && typeof b.level === 'number') {
+            return a.level - b.level;
+          }
+          return 0;
+        });
+      } else if (this.sort === 'level-deck') {
+        this.visibleAbilities.sort((a, b) => {
+          const stateDiff = stateRank(a) - stateRank(b);
+          if (stateDiff !== 0) return stateDiff;
+          if ((a.level === 1 || a.level === 'X') && (b.level === 1 || b.level === 'X')) {
+            return 0;
+          } else if (a.level === 1 || a.level === 'X') {
+            return -1;
+          } else if (b.level === 1 || b.level === 'X') {
+            return 1;
+          } else if (
+            this.character.progress.deck.indexOf(this.abilities.indexOf(a)) !== -1 &&
+            this.character.progress.deck.indexOf(this.abilities.indexOf(b)) === -1
+          ) {
+            return -1;
+          } else if (
+            this.character.progress.deck.indexOf(this.abilities.indexOf(a)) === -1 &&
+            this.character.progress.deck.indexOf(this.abilities.indexOf(b)) !== -1
+          ) {
+            return 1;
+          }
+          return 0;
+        });
+      } else if (this.sort === 'name') {
+        this.visibleAbilities.sort((a, b) => {
+          const stateDiff = stateRank(a) - stateRank(b);
+          if (stateDiff !== 0) return stateDiff;
+          if (a.name && b.name) {
+            return a.name < b.name ? -1 : 1;
+          } else if (a.cardId && b.cardId) {
+            return a.cardId - b.cardId;
+          }
+          return 0;
+        });
+      }
+    }
+
+    if (!this.levelToPick && this.enhanced && this.character.progress.enhancements && this.character.progress.enhancements.length) {
+      this.visibleAbilities = this.visibleAbilities.filter(
+        (ability) =>
+          this.character.progress.enhancements &&
+          this.character.progress.enhancements.find((enhancement) => enhancement.cardId === ability.cardId)
+      );
+    }
+  }
+
+  toggleSortByState() {
+    settingsManager.settings.abilitySortByState = !settingsManager.settings.abilitySortByState;
+    settingsManager.storeSettings();
+    this.update();
+  }
+
+  navigableCharacters(): Character[] {
+    return gameManager.game.figures.filter(
+      (figure): figure is Character =>
+        figure instanceof Character && !figure.absent && gameManager.deckData(figure, true).abilities.length > 0
+    );
+  }
+
+  openNextCharacter() {
+    const chars = this.navigableCharacters();
+    const currentIndex = chars.findIndex((c) => c === this.character);
+    const nextIndex = (currentIndex + 1) % chars.length;
+    const next = chars[nextIndex];
+    this.dialogRef.close();
+    this.dialog.open(AbilityCardsDialogComponent, {
+      panelClass: ['dialog'],
+      data: { character: next }
+    });
+  }
+
+  togglePick() {
+    this.deck = !this.deck;
+    this.ghsManager.triggerUiChange();
+  }
+
+  setLevel(level: number | string, exclusive: boolean = false) {
+    this.level = level;
+    this.exclusiveLevel = exclusive ? level : undefined;
+    if (this.additionalLevels.includes(level)) {
+      this.exclusiveLevel = level;
+    }
+    this.update();
+  }
+
+  undoLastCard() {
+    gameManager.stateManager.before('character.undoLastCard', gameManager.characterManager.characterName(this.character, true, true));
+    this.character.progress.deck.splice(-1, 1);
+    gameManager.stateManager.after();
+    this.update();
+  }
+
+  resetDeck() {
+    gameManager.stateManager.before('character.resetDeck', gameManager.characterManager.characterName(this.character, true, true));
+    this.character.progress.deck = [];
+    gameManager.stateManager.after();
+    this.update();
+  }
+
+  clickAbility(ability: Ability) {
+    if (!this.levelToPick && this.deck) {
+      this.toggleTurnSelection(ability);
+    } else {
+      const level1 = typeof ability.level === 'string' || ability.level === 1;
+      if (level1 || !this.levelToPick || !this.deck) {
+        this.openDialog(ability);
+      } else {
+        this.toggleDeck(ability);
+      }
+    }
+  }
+
+  toggleTurnSelection(ability: Ability) {
+    const abilityIndex = this.abilities.indexOf(ability);
+    const usedAbilities = this.character.discardedAbilities || [];
+    if (usedAbilities.includes(abilityIndex)) {
+      return;
+    }
+    const selectedAbilities = this.character.selectedAbilities || [];
+    const alreadySelected = selectedAbilities.includes(abilityIndex);
+    gameManager.stateManager.before(
+      alreadySelected ? 'character.deselectAbility' : 'character.selectAbility',
+      gameManager.characterManager.characterName(this.character, true, true),
+      '' + (ability.name || ability.cardId || '')
+    );
+    if (alreadySelected) {
+      this.character.selectedAbilities = selectedAbilities.filter((i) => i !== abilityIndex);
+    } else if (selectedAbilities.length < 2) {
+      this.character.selectedAbilities = [...selectedAbilities, abilityIndex];
+    }
+    gameManager.stateManager.after();
+    this.ghsManager.triggerUiChange();
+  }
+
+  selectInitiative(initiative: number) {
+    gameManager.stateManager.before(
+      'setInitiative',
+      gameManager.characterManager.characterName(this.character, true, true),
+      '' + initiative
+    );
+    this.character.initiative = initiative;
+    this.character.initiativeVisible = true;
+    gameManager.stateManager.after();
+    this.ghsManager.triggerUiChange();
+  }
+
+  shortRest() {
+    const confirmDialog = this.dialog.open(ConfirmDialogComponent, {
+      panelClass: ['dialog'],
+      data: { label: 'character.abilities.shortRest' }
+    });
+    confirmDialog.closed.subscribe({
+      next: (result) => {
+        if (result) {
+          gameManager.stateManager.before('character.shortRest', gameManager.characterManager.characterName(this.character, true, true));
+          this.character.discardedAbilities = [];
+          gameManager.stateManager.after();
+          this.ghsManager.triggerUiChange();
+        }
+      }
+    });
+  }
+
+  toggleAbilityState(ability: Ability, field: 'discardedAbilities' | 'lostAbilities' | 'inactiveAbilities' | 'activatedAbilities') {
+    const abilityIndex = this.abilities.indexOf(ability);
+    const list: number[] = this.character[field] || [];
+    const active = list.includes(abilityIndex);
+    gameManager.stateManager.before(
+      active ? 'character.ability.stateOff' : 'character.ability.stateOn',
+      gameManager.characterManager.characterName(this.character, true, true),
+      field,
+      '' + (ability.name || ability.cardId || '')
+    );
+    const allFields: ('discardedAbilities' | 'lostAbilities' | 'inactiveAbilities' | 'activatedAbilities')[] = [
+      'discardedAbilities',
+      'lostAbilities',
+      'inactiveAbilities',
+      'activatedAbilities'
+    ];
+    if (active) {
+      this.character[field] = list.filter((i) => i !== abilityIndex);
+    } else {
+      // clear this ability from all other state fields first (mutual exclusivity)
+      for (const other of allFields) {
+        if (other !== field) {
+          this.character[other] = (this.character[other] || []).filter((i) => i !== abilityIndex);
+        }
+      }
+      this.character[field] = [...list, abilityIndex];
+    }
+    gameManager.stateManager.after();
+    this.ghsManager.triggerUiChange();
+  }
+
+  toggleDeck(ability: Ability, force: boolean = false) {
+    const inDeck = this.character.progress.deck.indexOf(this.abilities.indexOf(ability)) !== -1;
+    if (inDeck || force || (this.levelToPick >= +ability.level && this.cardsToPick > 0)) {
+      if (inDeck) {
+        gameManager.stateManager.before(
+          'character.cardFromDeck',
+          gameManager.characterManager.characterName(this.character, true, true),
+          ability.name || ability.cardId || ''
+        );
+        this.character.progress.deck = this.character.progress.deck.filter((value) => value !== this.abilities.indexOf(ability));
+      } else {
+        gameManager.stateManager.before(
+          'character.cardToDeck',
+          gameManager.characterManager.characterName(this.character, true, true),
+          ability.name || ability.cardId || ''
+        );
+        this.character.progress.deck.push(this.abilities.indexOf(ability));
+      }
+      gameManager.stateManager.after();
+      this.update();
+    }
+  }
+
+  openDialog(ability: Ability) {
+    this.dialog.open(AbilityDialogComponent, {
+      panelClass: ['fullscreen-panel'],
+      disableClose: true,
+      data: { ability: ability, character: this.character }
+    });
+  }
+
+  toggleEnhanced() {
+    if (this.character.progress.enhancements && this.character.progress.enhancements.length) {
+      this.enhanced = !this.enhanced;
+      this.ghsManager.triggerUiChange();
+    } else {
+      this.enhanced = false;
+      this.openEnhancementDialog();
+    }
+  }
+
+  openEnhancementDialog() {
+    this.dialog.open(EnhancementDialogComponent, {
+      panelClass: ['dialog']
+    });
+  }
+}

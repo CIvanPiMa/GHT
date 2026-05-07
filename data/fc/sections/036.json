@@ -1,0 +1,30 @@
+{
+  "index": "36",
+  "edition": "fc",
+  "parent": "100",
+  "conclusion": true,
+  "rewards": {
+    "globalAchievements": [
+      "knowledge-is-power"
+    ],
+    "chooseItem": [
+      [
+        "59-gh"
+      ],
+      [
+        "112-gh"
+      ],
+      [
+        "125-gh"
+      ],
+      [
+        "126-gh"
+      ]
+    ],
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"Knowledge is Power\" achievement gained, read section 27 on page 10)"
+      ]
+    }
+  }
+}

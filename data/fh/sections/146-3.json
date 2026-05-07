@@ -1,0 +1,112 @@
+{
+  "index": "146.3",
+  "name": "A Contained Fire",
+  "edition": "fh",
+  "parent": "89",
+  "parentSections": [
+    [
+      "131.5"
+    ]
+  ],
+  "marker": "3",
+  "monsters": [
+    "algox-archer",
+    "algox-guard",
+    "algox-priest",
+    "vanjal"
+  ],
+  "objectives": [
+    {
+      "name": "Faye",
+      "escort": true,
+      "allyDeck": true,
+      "health": "(Lx3)+8",
+      "initiative": 11,
+      "actions": [
+        {
+          "type": "move",
+          "value": "3"
+        },
+        {
+          "type": "attack",
+          "value": "3+L",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "brittle",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.section.rules.fh.146-3%",
+              "small": true,
+              "subActions": [
+                {
+                  "type": "heal",
+                  "value": 2,
+                  "subActions": [
+                    {
+                      "type": "specialTarget",
+                      "value": "self",
+                      "small": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "escort",
+            "name": "Faye"
+          },
+          "type": "transfer",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "treasures": [
+        42
+      ],
+      "monster": [
+        {
+          "name": "algox-archer",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "algox-guard",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "algox-priest",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vanjal",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

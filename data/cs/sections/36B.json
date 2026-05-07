@@ -1,0 +1,70 @@
+{
+  "index": "36B",
+  "name": "Great Oak Rescue",
+  "edition": "cs",
+  "parent": "34",
+  "marker": "1",
+  "monsters": [
+    "hound",
+    "inox-shaman"
+  ],
+  "objectives": [
+    {
+      "name": "Holy Monk",
+      "escort": true,
+      "health": "C+L+2",
+      "marker": "b",
+      "count": 3,
+      "actions": [
+        {
+          "type": "heal",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "allyAdjacent",
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "hound",
+          "player4": "normal"
+        },
+        {
+          "name": "hound",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-shaman",
+          "type": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

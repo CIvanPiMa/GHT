@@ -1,0 +1,307 @@
+<div class="scroll-container">
+  @switch (active) {
+    @case (SubMenu.main) {
+      <div class="menu-container main two-column">
+        <div class="line state-container span">
+          @if (undoOffset && gameManager.stateManager.gameOffsetWarning) {
+            <span class="warning" (click)="gameManager.stateManager.gameOffsetWarning = false">
+              <img src="./assets/images/warning.svg" /> <span [ght-label]="'state.missing'" [ght-label-args]="[undoOffset]"></span
+            ></span>
+          }
+          <a
+            tabclick
+            class="state undo"
+            [ngClass]="{
+              disabled:
+                !gameManager.stateManager.undoPermission ||
+                (undoOffset && gameManager.stateManager.gameOffsetWarning) ||
+                gameManager.stateManager.undos.length === 0
+            }"
+            (click)="gameManager.stateManager.undo()"
+          >
+            <span class="undo-text">
+              <span [ght-label]="'state.undo'"></span>
+            </span>
+            @if (undoInfo.length > 0) {
+              <span
+                class="info text-white"
+                [ght-label]="'state.info.' + undoInfo[0]"
+                [ght-label-args]="undoInfo | slice: 1 : undoInfo.length"
+                [ght-label-empty]="true"
+              ></span>
+            }
+          </a>
+          <span tabclick class="undo-dialog" (click)="openUndoDialog($event)"
+            ><img class="ght-svg" src="./assets/images/long-rest.svg"
+          /></span>
+          <a
+            tabclick
+            class="state redo"
+            [ngClass]="{ disabled: !gameManager.stateManager.redoPermission || gameManager.stateManager.redos.length === 0 }"
+            (click)="gameManager.stateManager.redo()"
+          >
+            <span [ght-label]="'state.redo'"></span>
+            @if (redoInfo.length > 0) {
+              <span
+                class="info text-white"
+                [ght-label]="'state.info.' + redoInfo[0]"
+                [ght-label-args]="redoInfo | slice: 1 : redoInfo.length"
+                [ght-label-empty]="true"
+              ></span>
+            }
+          </a>
+        </div>
+        <div class="separator"></div>
+        @if (!standalone) {
+          <div class="line" [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.scenario }">
+            <a tabclick (click)="setActive(SubMenu.scenario)"><span [ght-label]="'scenario.set'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: !hasSections(),
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.scenario
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.section)"><span [ght-label]="'section'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: hasAllMonster(),
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.monsters
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.monster_add)"><span [ght-label]="'monster.add'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: monsters().length === 0,
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.monsters
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.monster_remove)"><span [ght-label]="'monster.remove'"></span></a>
+          </div>
+          <div class="separator"></div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: characters().length > 0 && gameManager.bbRules() && settingsManager.settings.bbChars,
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.characters
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.character_add)"><span [ght-label]="'character.add'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: characters().length === 0,
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.characters
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.character_remove)"><span [ght-label]="'character.remove'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.characters }"
+          >
+            <a tabclick (click)="setActive(SubMenu.objective_add)"><span [ght-label]="'objective.add'"></span></a>
+          </div>
+          <div
+            class="line"
+            [ngClass]="{
+              disabled: objectives().length === 0,
+              denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.characters
+            }"
+          >
+            <a tabclick (click)="setActive(SubMenu.objective_remove)"><span [ght-label]="'objective.remove'"></span></a>
+          </div>
+          <div class="separator"></div>
+          <div class="line span">
+            <a tabclick (click)="setActive(SubMenu.campaign)"><span [ght-label]="'campaign'"></span></a>
+          </div>
+          <div class="separator"></div>
+        }
+        <div class="line">
+          <a tabclick (click)="setActive(SubMenu.settings)"><span [ght-label]="'settings'"></span></a>
+        </div>
+        <div class="line">
+          <a tabclick (click)="setActive(SubMenu.datamanagement)"><span [ght-label]="'datamanagement'"></span></a>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+          <a tabclick (click)="setActive(SubMenu.server)">
+            @switch (gameManager.stateManager.wsState()) {
+              @case (WebSocket.OPEN) {
+                <span><span [ght-label]="'server.menu.connected'"></span></span>
+              }
+              @case (WebSocket.CONNECTING) {
+                <span><span [ght-label]="'server.connecting'"></span></span>
+              }
+              @default {
+                <span><span [ght-label]="'server.menu.connect'"></span></span>
+              }
+            }
+          </a>
+        </div>
+        <div class="separator"></div>
+        <div class="line">
+          <a tabclick (click)="setActive(SubMenu.about)"><span [ght-label]="'about'"></span></a>
+        </div>
+        @if (gameManager.stateManager.installPrompt) {
+          <div class="line">
+            <a class="install" (click)="gameManager.stateManager.install()">
+              <img class="ght-svg" src="./assets/images/install.svg" /> <span [ght-label]="'app.install'"></span
+            ></a>
+          </div>
+        }
+        <div class="line">
+          <a tabclick (click)="keyboardShourtcutsDialog()" [ght-tooltip]="'tools.keyboard'"
+            ><img class="ght-svg" src="./assets/images/keyboard.svg" />
+          </a>
+        </div>
+        @if (standalone) {
+          <div class="line">
+            <a tabclick [routerLink]="'/'" (click)="close()"
+              ><img class="ght-svg" src="./assets/images/left.svg" />&nbsp;
+              <span [ght-label]="'tools.backToGhs'"></span>
+            </a>
+          </div>
+        }
+        @if (isUpdateAvailable) {
+          <div class="line separator">
+            <a tabclick (click)="updateApplication()">&lt;<span [ght-label]="'update'"></span>(!)&gt;</a>
+          </div>
+        }
+      </div>
+    }
+    @case (SubMenu.scenario) {
+      <ght-scenario-menu (close)="close()"></ght-scenario-menu>
+    }
+    @case (SubMenu.section) {
+      <ght-section-menu></ght-section-menu>
+    }
+    @case (SubMenu.character_add) {
+      <ght-character-menu (close)="close()"></ght-character-menu>
+    }
+    @case (SubMenu.campaign) {
+      <ght-campaign-menu (close)="close()"></ght-campaign-menu>
+    }
+    @case (SubMenu.character_remove) {
+      <div class="menu-container character-remove">
+        <div class="line">
+          <a (click)="removeAllCharacters()"> &lt;<span [ght-label]="'character.removeAll'"></span>&gt; </a>
+        </div>
+        @for (character of characters() | trackUUID; track character._trackUUID) {
+          <div class="line">
+            <a (click)="removeCharacter(character)">
+              <img class="icon" [src]="character.iconUrl" />
+              <span>{{ gameManager.characterManager.characterName(character, true) }}</span>
+            </a>
+          </div>
+        }
+      </div>
+    }
+    @case (SubMenu.objective_add) {
+      <div class="menu-container objective-add">
+        <div class="line">
+          <a (click)="addObjectiveContainer()">
+            <img class="icon" src="./assets/images/objective/objective.svg" />
+            <span [ght-label]="'objective.add'"></span>
+          </a>
+        </div>
+        <div class="line">
+          <a (click)="addObjectiveContainer(true)">
+            <img class="icon" src="./assets/images/objective/escort.svg" />
+            <span [ght-label]="'escort.add'"></span>
+          </a>
+        </div>
+      </div>
+    }
+    @case (SubMenu.objective_remove) {
+      <div class="menu-container objective-remove">
+        <div class="line">
+          <a (click)="removeAllObjectives()"> &lt;<span [ght-label]="'objective.removeAll'"></span>&gt; </a>
+        </div>
+        @for (objective of objectives() | trackUUID; track objective._trackUUID) {
+          <div class="line">
+            <a (click)="removeObjective(objective)">
+              @if (!objective.escort) {
+                <img class="icon" src="./assets/images/objective/objective.svg" />
+              }
+              @if (objective.escort) {
+                <img class="icon" src="./assets/images/objective/escort.svg" />
+              }
+              @if (objective.title) {
+                <span>{{ objective.title }}</span>
+              }
+              @if (!objective.title && objective.name) {
+                <span [ght-label]="'data.objective.' + objective.name"></span>
+              }
+              @if (objective.title || objective.name) {
+                <span>(</span>
+              }
+              <span [ght-label]="objective.escort ? 'escort' : 'objective'"></span>
+              @if (objective.name) {
+                <span>)</span>
+              }
+            </a>
+          </div>
+        }
+      </div>
+    }
+    @case (SubMenu.monster_add) {
+      <ght-monster-menu></ght-monster-menu>
+    }
+    @case (SubMenu.monster_remove) {
+      <div class="menu-container monster-remove">
+        <div class="line">
+          <a (click)="removeAllMonsters()"> &lt;<span [ght-label]="'monster.removeAll'"></span>&gt; </a>
+        </div>
+        @for (monster of monsters() | trackUUID; track monster._trackUUID) {
+          <div class="line">
+            <a (click)="removeMonster(monster)">
+              <span [ght-label]="'data.monster.' + monster.name"></span>
+              @if (gameManager.entityManager.entities(monster).length > 0) {
+                <span class="count">&nbsp;({{ gameManager.entityManager.entities(monster).length }})</span>
+              }
+              @if (gameManager.getEdition(monster)) {
+                <span class="edition">&nbsp;[<span [ght-label]="'data.edition.' + gameManager.getEdition(monster)"></span>]</span>
+              }
+            </a>
+          </div>
+        }
+        @if (hasUnusedMonster()) {
+          <div class="line">
+            <a (click)="removeAllMonsters(true)"> &lt;<span [ght-label]="'monster.removeUnused'"></span>&gt; </a>
+          </div>
+        }
+      </div>
+    }
+    @case (SubMenu.settings) {
+      <ght-settings-menu (setMenu)="setActive($event)"></ght-settings-menu>
+    }
+    @case (SubMenu.debug) {
+      <ght-debug-menu (close)="close()"></ght-debug-menu>
+    }
+    @case (SubMenu.server) {
+      <ght-server-menu></ght-server-menu>
+    }
+    @case (SubMenu.datamanagement) {
+      <ght-datamanagement-menu></ght-datamanagement-menu>
+    }
+    @case (SubMenu.editions) {
+      <ght-datamanagement-menu [editionsOnly]="true"></ght-datamanagement-menu>
+    }
+    @case (SubMenu.about) {
+      <ght-about-menu></ght-about-menu>
+    }
+  }
+</div>
+
+@if (active !== SubMenu.main) {
+  <div class="back" tabclick (click)="setActive(SubMenu.main)" [ght-label]="'menu.backToMain'" [ght-label-attribute]="'title'">
+    <img class="ght-svg" src="./assets/images/left.svg" />
+  </div>
+}

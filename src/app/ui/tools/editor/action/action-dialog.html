@@ -1,0 +1,17 @@
+<div class="scroll-container">
+  @if (!noPreview.includes(data.action.type)) {
+    <ght-action
+      (click)="relative = !relative"
+      [action]="data.action"
+      [relative]="relative"
+      [character]="data.character"
+      [cardId]="data.cardId"
+    >
+    </ght-action>
+  }
+  <ght-editor-action [(action)]="data.action" [character]="data.character" [cardId]="data.cardId"></ght-editor-action>
+
+  <a (click)="deleteAction()"
+    ><img class="ght-icon" src="./assets/images/minus.svg" /> <span [ght-label]="'editor.action.remove'"></span
+  ></a>
+</div>

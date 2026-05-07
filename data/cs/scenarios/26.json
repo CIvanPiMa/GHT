@@ -1,0 +1,81 @@
+{
+  "index": "26",
+  "name": "Thermal Stone Peak",
+  "flowChartGroup": "chilly",
+  "edition": "cs",
+  "requirements": [
+    {
+      "party": [
+        "frozen-warrior"
+      ]
+    }
+  ],
+  "rewards": {
+    "experience": 20,
+    "battleGoals": 1
+  },
+  "monsters": [
+    "hail-demon",
+    "harrower-icecrawlers"
+  ],
+  "objectives": [
+    {
+      "name": "Cold thermal stone",
+      "health": "C+3",
+      "marker": "a"
+    }
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "chill",
+          "scenarioEffect": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L3b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "hail-demon",
+          "type": "normal"
+        },
+        {
+          "name": "hail-demon",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "type": "elite"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "player4": "normal"
+        }
+      ],
+      "objectives": [
+        1,
+        1
+      ]
+    }
+  ]
+}

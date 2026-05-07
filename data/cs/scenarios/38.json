@@ -1,0 +1,51 @@
+{
+  "index": "38",
+  "name": "Altars of Confusion",
+  "flowChartGroup": "personal-quests",
+  "edition": "cs",
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.crescent-sun%"
+    ]
+  },
+  "monsters": [
+    "black-imp",
+    "stone-golem"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "J1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

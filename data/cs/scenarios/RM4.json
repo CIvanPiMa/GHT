@@ -1,0 +1,58 @@
+{
+  "index": "RM4",
+  "group": "RM",
+  "name": "Terrorscale Lair",
+  "edition": "cs",
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.bleeding-claw%"
+    ],
+    "itemDesigns": [
+      "112",
+      "113"
+    ],
+    "custom": "%data.scenario.rewards.cs.RM4%"
+  },
+  "monsters": [
+    "gnashing-drake",
+    "terrorscale-drake"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "N1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "gnashing-drake",
+          "type": "elite"
+        },
+        {
+          "name": "gnashing-drake",
+          "type": "elite"
+        },
+        {
+          "name": "gnashing-drake",
+          "type": "elite"
+        },
+        {
+          "name": "gnashing-drake",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "gnashing-drake",
+          "player4": "elite"
+        },
+        {
+          "name": "gnashing-drake",
+          "player4": "elite"
+        },
+        {
+          "name": "terrorscale-drake",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

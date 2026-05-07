@@ -1,0 +1,60 @@
+{
+  "index": "47",
+  "name": "Viper Marsh",
+  "flowChartGroup": "road-events",
+  "edition": "cs",
+  "rewards": {
+    "gold": 10,
+    "prosperity": 1,
+    "itemDesigns": [
+      "55"
+    ]
+  },
+  "monsters": [
+    "earth-demon",
+    "giant-viper",
+    "ooze"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "B1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "type": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "type": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "type": "normal"
+        },
+        {
+          "name": "ooze",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

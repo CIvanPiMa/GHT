@@ -1,0 +1,78 @@
+{
+  "index": "7.2",
+  "edition": "gh2e",
+  "parent": "35",
+  "marker": "2",
+  "monsters": [
+    "deep-terror",
+    "night-demon",
+    "wind-demon"
+  ],
+  "objectives": [
+    {
+      "name": "Vocal Chord C",
+      "health": "LxC+2",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "All characters add -1 %game.action.attack% to all their attacks."
+        }
+      ]
+    },
+    {
+      "name": "Vocal Chord D",
+      "health": "LxC+2",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "All monsters add +1 %game.action.attack% to all their attacks."
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "deep-terror",
+          "type": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player4": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "player4": "normal"
+        },
+        {
+          "name": "night-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "wind-demon",
+          "type": "normal"
+        },
+        {
+          "name": "wind-demon",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ],
+      "objectives": [
+        1,
+        2
+      ]
+    }
+  ]
+}

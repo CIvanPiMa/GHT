@@ -1,0 +1,15 @@
+{
+  "edition": "solo",
+  "additional": true,
+  "extensions": [
+    "gh",
+    "gh2e",
+    "fh",
+    "mp",
+    "gh-envx",
+    "fc",
+    "cs",
+    "toa",
+    "toa-envv"
+  ]
+}

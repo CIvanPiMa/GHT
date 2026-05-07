@@ -1,0 +1,231 @@
+{
+  "index": "16",
+  "name": "Mixed Results",
+  "flowChartGroup": "main",
+  "coordinates": {
+    "x": 763.25,
+    "y": 367.5,
+    "width": 274,
+    "height": 167,
+    "gridLocation": "B4"
+  },
+  "edition": "jotl",
+  "unlocks": [
+    "17"
+  ],
+  "rewards": {
+    "experience": 15,
+    "items": [
+      "29"
+    ]
+  },
+  "monsters": [
+    "black-imp",
+    "blood-imp",
+    "rat-monstrosity",
+    "rat-monstrosity-scenario-16-1",
+    "rat-monstrosity-scenario-16-2"
+  ],
+  "rules": [
+    {
+      "round": "R == 2",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "rat-monstrosity",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "A",
+          "count": 3
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "normal"
+          },
+          "marker": "B",
+          "count": 4
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity",
+            "player2": "elite",
+            "player4": "elite"
+          },
+          "marker": "C",
+          "count": 2
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "round": "R > 2",
+      "start": true,
+      "once": true,
+      "rooms": [
+        2
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "jotl",
+            "name": ".+"
+          },
+          "type": "dead"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "requiredRooms": [
+        2
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-1",
+            "player3": "elite",
+            "player4": "normal"
+          },
+          "marker": "A",
+          "count": 3
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-1",
+            "player2": "normal",
+            "player4": "elite"
+          },
+          "marker": "B",
+          "count": 4
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-1",
+            "player3": "normal"
+          },
+          "marker": "C",
+          "count": 2
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-1",
+            "player2": "elite",
+            "player3": "normal",
+            "player4": "normal"
+          },
+          "marker": "D",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "once": true,
+      "requiredRooms": [
+        2
+      ],
+      "rooms": [
+        3
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "jotl",
+            "name": ".+"
+          },
+          "type": "dead"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "requiredRooms": [
+        3
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-2",
+            "player3": "normal",
+            "player4": "normal"
+          },
+          "marker": "A",
+          "count": 3
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-2",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "B",
+          "count": 4
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-2",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "C",
+          "count": 2
+        },
+        {
+          "monster": {
+            "name": "rat-monstrosity-scenario-16-2",
+            "player2": "elite",
+            "player3": "normal",
+            "player4": "normal"
+          },
+          "marker": "D",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl16-1",
+      "initial": true,
+      "rooms": [
+        2
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "jotl16-1",
+      "marker": "1",
+      "rooms": [
+        3
+      ]
+    },
+    {
+      "roomNumber": 3,
+      "ref": "jotl16-1",
+      "marker": "2"
+    }
+  ]
+}

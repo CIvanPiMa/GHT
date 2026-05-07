@@ -1,0 +1,50 @@
+<div class="item-list" [style.--ght-item-list-zoom]="settingsManager.settings.characterItemsPermanentZoom">
+  @if (items.length === 0) {
+    <div class="empty" (click)="openShop()">
+      <img [src]="settingsManager.settings.fhStyle ? './assets/images/fh/items/item-back-fh.png' : './assets/images/items/item-back.png'" />
+      <span class="text" [ght-label]="'game.items.character.empty'"></span>
+    </div>
+  }
+
+  @for (itemData of items | trackUUID; track itemData._trackUUID) {
+    <div class="item-container" [ngClass]="{ spent: !setup && countFlag(itemData, ItemFlags.spent) }">
+      <ght-character-item [character]="character" [item]="itemData" [setup]="setup"></ght-character-item>
+      <a class="open-dialog" (click)="openItemDialog(itemData)"></a>
+    </div>
+  }
+
+  <div class="menu">
+    <a
+      (click)="toggleEquipped()"
+      [ngClass]="{ active: settingsManager.settings.characterItemsPermanentEquipped, disabled: setup }"
+      [ght-tooltip]="'game.items.character.toggleEquipped'"
+      [overlayX]="'end'"
+      [overlayY]="'bottom'"
+    >
+      <img class="toggle ght-svg" src="./assets/images/check.svg"
+    /></a>
+    <a
+      (click)="toggleSorted()"
+      [ngClass]="{ active: settingsManager.settings.characterItemsPermanentSorted }"
+      [ght-tooltip]="'game.items.character.toggleSorted'"
+      [overlayX]="'end'"
+      [overlayY]="'bottom'"
+    >
+      <img class="toggle ght-svg" src="./assets/images/sort.svg"
+    /></a>
+    <a
+      ght-pointer-input
+      (singleClick)="zoom(0.075)"
+      (doubleClick)="resetZoom()"
+      [ngClass]="{ disabled: settingsManager.settings.characterItemsPermanentZoom >= 1.5 }"
+      ><img class="ght-svg" src="./assets/images/zoom-in.svg"
+    /></a>
+    <a
+      ght-pointer-input
+      (singleClick)="zoom(-0.075)"
+      (doubleClick)="resetZoom()"
+      [ngClass]="{ disabled: settingsManager.settings.characterItemsPermanentZoom <= 0.5 }"
+      ><img class="ght-svg" src="./assets/images/zoom-out.svg"
+    /></a>
+  </div>
+</div>

@@ -1,0 +1,152 @@
+{
+  "index": "39",
+  "name": "Festering Mire",
+  "flowChartGroup": "personal-quests",
+  "edition": "cs",
+  "rewards": {
+    "experience": 10,
+    "custom": "%data.scenario.rewards.cs.39%"
+  },
+  "monsters": [
+    "earth-demon",
+    "ghost-viper",
+    "ghost-viper-extra"
+  ],
+  "drawExtra": [
+    "ghost-viper-extra"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "damage",
+          "value": "1",
+          "scenarioEffect": true
+        }
+      ]
+    },
+    {
+      "round": "R == 3",
+      "sections": [
+        "44A"
+      ]
+    },
+    {
+      "round": "R == 4 || R == 5 || R == 6",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "ghost-viper",
+            "player2": "normal"
+          },
+          "marker": "b"
+        },
+        {
+          "monster": {
+            "name": "ghost-viper",
+            "player3": "normal"
+          },
+          "marker": "b",
+          "count": "2"
+        },
+        {
+          "monster": {
+            "name": "ghost-viper",
+            "player2": "elite",
+            "player3": "elite"
+          },
+          "marker": "b"
+        },
+        {
+          "monster": {
+            "name": "ghost-viper",
+            "player4": "elite"
+          },
+          "marker": "b",
+          "count": "3"
+        }
+      ]
+    },
+    {
+      "round": "R == 6",
+      "sections": [
+        "44B"
+      ]
+    },
+    {
+      "round": "R == 7",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "earth-demon",
+            "type": "normal"
+          },
+          "count": "C"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "A4a",
+      "initial": true,
+      "treasures": [
+        46
+      ],
+      "monster": [
+        {
+          "name": "ghost-viper",
+          "type": "normal"
+        },
+        {
+          "name": "ghost-viper",
+          "type": "normal"
+        },
+        {
+          "name": "ghost-viper",
+          "type": "normal"
+        },
+        {
+          "name": "ghost-viper",
+          "type": "elite"
+        },
+        {
+          "name": "ghost-viper",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "ghost-viper",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "ghost-viper",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ghost-viper",
+          "player4": "elite"
+        },
+        {
+          "name": "ghost-viper",
+          "player4": "elite"
+        },
+        {
+          "name": "ghost-viper-extra",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

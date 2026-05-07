@@ -1,0 +1,470 @@
+{
+  "name": "skull",
+  "characterClass": "vermling",
+  "edition": "cs",
+  "handSize": 10,
+  "unlockEvent": "47",
+  "retireEvent": "48",
+  "color": "#63bd57",
+  "spoiler": true,
+  "specialActions": [
+    {
+      "name": "spirits"
+    }
+  ],
+  "stats": [
+    {
+      "level": 1,
+      "health": 6
+    },
+    {
+      "level": 2,
+      "health": 7
+    },
+    {
+      "level": 3,
+      "health": 8
+    },
+    {
+      "level": 4,
+      "health": 9
+    },
+    {
+      "level": 5,
+      "health": 10
+    },
+    {
+      "level": 6,
+      "health": 11
+    },
+    {
+      "level": 7,
+      "health": 12
+    },
+    {
+      "level": 8,
+      "health": 13
+    },
+    {
+      "level": 9,
+      "health": 14
+    }
+  ],
+  "availableSummons": [
+    {
+      "name": "blazing-fire",
+      "cardId": "272",
+      "level": 1,
+      "health": 2
+    },
+    {
+      "name": "wall-of-shadows",
+      "cardId": "274",
+      "level": 1,
+      "health": 2
+    },
+    {
+      "name": "phantom-hound",
+      "cardId": "275",
+      "level": 1,
+      "health": 1,
+      "attack": 2,
+      "movement": 3
+    },
+    {
+      "name": "skeletal-archer",
+      "cardId": "276",
+      "level": 1,
+      "health": 2,
+      "attack": 1,
+      "movement": 2,
+      "range": 2
+    },
+    {
+      "name": "ghost-carriage",
+      "cardId": "277",
+      "level": 1,
+      "health": 2,
+      "movement": 4
+    },
+    {
+      "name": "wailing-banshee",
+      "cardId": "279",
+      "level": 1,
+      "health": 2,
+      "attack": 2,
+      "movement": 3
+    },
+    {
+      "name": "deatheater",
+      "cardId": "282",
+      "level": 1,
+      "health": 2,
+      "attack": 1,
+      "movement": 3,
+      "range": 3
+    },
+    {
+      "name": "leeching-phantasm",
+      "cardId": "283",
+      "level": 1,
+      "health": 2,
+      "attack": 2,
+      "movement": 2
+    },
+    {
+      "name": "one-eyed-terror",
+      "level": 1,
+      "health": 1,
+      "attack": 2
+    },
+    {
+      "name": "reaching-tentacle",
+      "level": 1,
+      "health": 2,
+      "attack": 2,
+      "range": 4
+    },
+    {
+      "name": "bat-cloud",
+      "cardId": "285",
+      "level": 2,
+      "health": 2,
+      "attack": 1,
+      "movement": 2
+    },
+    {
+      "name": "mantle-of-darkness",
+      "cardId": "286",
+      "level": 2,
+      "health": 2,
+      "attack": 2,
+      "movement": 1
+    },
+    {
+      "name": "leprous-wraith",
+      "cardId": "288",
+      "level": 3,
+      "health": 2,
+      "attack": 2,
+      "movement": 1
+    },
+    {
+      "name": "orb-of-light",
+      "cardId": "290",
+      "level": 4,
+      "health": 2,
+      "attack": 2,
+      "movement": 3
+    },
+    {
+      "name": "shifting-discs",
+      "cardId": "290",
+      "level": 4,
+      "health": 2,
+      "movement": 2
+    },
+    {
+      "name": "imbued-monolith",
+      "cardId": "292",
+      "level": 5,
+      "health": 2
+    },
+    {
+      "name": "mimicking-sprite",
+      "cardId": "293",
+      "level": 6,
+      "health": 1
+    },
+    {
+      "name": "soul-snatcher",
+      "cardId": "294",
+      "level": 6,
+      "health": 3,
+      "attack": 2,
+      "movement": 2,
+      "range": 3
+    },
+    {
+      "name": "glowing-egg",
+      "cardId": "295",
+      "level": 7,
+      "health": 3
+    },
+    {
+      "name": "spectral-phoenix",
+      "cardId": "295",
+      "level": 7,
+      "health": 1,
+      "attack": 3,
+      "movement": 4
+    },
+    {
+      "name": "vengeful-phantasm",
+      "cardId": "296",
+      "level": 7,
+      "health": 2,
+      "movement": 1
+    },
+    {
+      "name": "disembodied-goliath",
+      "cardId": "300",
+      "level": 9,
+      "health": 3,
+      "attack": 2,
+      "movement": 1
+    },
+    {
+      "name": "wandering-soul",
+      "cardId": "300",
+      "level": 9,
+      "movement": 3
+    }
+  ],
+  "perks": [
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.perks.skull.1%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "condition",
+                "value": "poison"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "element",
+                "value": "air"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "element",
+                "value": "dark"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "pierce",
+                "value": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 3,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "pierce",
+                "value": 3
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "curse"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "target",
+                "value": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus2",
+            "effects": [
+              {
+                "type": "push",
+                "value": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "remove",
+      "count": 1,
+      "custom": "%game.custom.perks.ignoreNegativeScenario%",
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        }
+      ]
+    }
+  ]
+}

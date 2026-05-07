@@ -1,0 +1,374 @@
+{
+  "ability": {
+    "Accelerated Power": "Beschleunigte Kraft",
+    "Angry Howl": "Wütendes Heulen",
+    "Black Hex": "Schwarzfluch",
+    "Black Tendrils": "Schwarze Ranken",
+    "Boil Blood": "Kochendes Blut",
+    "Booming Scream": "Donnernder Schrei",
+    "Calculated Strike": "Kalkulierter Schlag",
+    "Careful Throw": "Vorsichtiger Wurf",
+    "Chilling Breath": "Eisiger Hauch",
+    "Constrict": "Abschnüren",
+    "Coupled Chain": "Koppelkette",
+    "Cripple": "Verkrüppeln",
+    "Dark Charm": "Dunkles Amulett",
+    "Defensive Strike": "Abwehrschlag",
+    "Drain Life": "Lebenssauger",
+    "Dual Daggers": "Doppeldolche",
+    "Explosive Blisters": "Explosiver Eiter",
+    "Feed": "Fressen",
+    "Find Cover": "In Deckung",
+    "Flashing Claws": "Blitzende Klauen",
+    "Greed": "Gier",
+    "Ground Pound": "Bodenstampfen",
+    "Hasty Assault": "Hastiger Überfall",
+    "Heat Blast": "Hitzestoß",
+    "Hex Whip": "Fluchpeitsche",
+    "Hungry Maw": "Hungriger Schlund",
+    "Icy Glare": "Eisiger Blick",
+    "Leech Warmth": "Wärmeentzug",
+    "Lingering Strength": "Nachhaltige Stärke",
+    "Mana Explosion": "Mana-Explosion",
+    "Nothing Special": "Nichts Besonderes",
+    "Noxious Blade": "Seuchenklinge",
+    "Parry": "Parade",
+    "Patch Wounds": "Zusammenflicken",
+    "Phase Out": "Ruhephase",
+    "Plasma Ward": "Plasmaschutz",
+    "Rancid Arrow": "Grausiger Pfeil",
+    "Rapid Bolts": "Schnelle Bolzen",
+    "Reckless Charge": "Waghalsiger Vorstoß",
+    "Release Gas": "Gas freisetzen",
+    "Restoration": "Erholung",
+    "Rotting Embrace": "Faulige Umarmung",
+    "Runic Draw": "Runenzug",
+    "Runic Feedback": "Runen-Resonanz",
+    "Sacrificial Hurl": "Selbstloser Wurf",
+    "Sap Strength": "Stärkeraub",
+    "Screaming Shot": "Schreiender Schuss",
+    "Seismic Punch": "Bebenschlag",
+    "Septic Hex": "Faulfluch",
+    "Short Bow": "Kurzbogen",
+    "Spiked Pit": "Stachelgrube",
+    "Surround": "Umzingeln",
+    "Swarm": "Schwarm",
+    "Swift Fangs": "Flinke Zähne",
+    "Taxing Advance": "Ermüdender Vorstoß",
+    "Tip The Scales": "Das Blatt wenden",
+    "Toxic Explosion": "Giftige Explosion",
+    "Toxic Frenzy": "Giftraserei",
+    "Twin Missiles": "Zwillingsgeschoss",
+    "Unholy Flame": "Unheilige Flamme",
+    "Unstable Frenzy": "Instabile Raserei",
+    "Unstable Scratch": "Instabiler Kratzer",
+    "Vicious Spear": "Boshafter Speer",
+    "Vile Scourge": "Abscheuliche Plage",
+    "Violent Slam": "Brutaler Schlag",
+    "Weakening Bite": "Schwächender Biss",
+    "Whirlwind": "Wirbelwind"
+  },
+  "battleGoals": {
+    "286": {
+      "": "Akrobatisch",
+      "text": "Verliere eine Karte um 5 oder mehr Schaden zu negieren."
+    },
+    "287": {
+      "": "Platzangst",
+      "text": "Beende deine Züge immer angrenzend an eine Wand oder ein Hindernis."
+    },
+    "288": {
+      "": "Wohltätig",
+      "text": "Sammle weniger Münzmarker als jeder andere Charakter."
+    },
+    "289": {
+      "": "Hilfsbereit",
+      "text": "Töte ein Monster das in derselben Runde bereits von einem Verbündeten angegriffen wurde."
+    },
+    "290": {
+      "": "Provokant",
+      "text": "Verlasse nie ein an ein Monster angrenzendes Feld."
+    },
+    "291": {
+      "": "Aufräumen",
+      "text": "Töte das letzte Monster während des Szenarios."
+    },
+    "292": {
+      "": "Genügsam",
+      "text": "Verliere nie eine Karte, um Schaden zu negieren."
+    },
+    "293": {
+      "": "Zäher Hund",
+      "text": "Lass nicht zu, dass dein TP-Wert unter die Hälfte deines maximalen TP-Wertes (aufgerundet) sinkt."
+    },
+    "294": {
+      "": "Egoistisch",
+      "text": "Sammle mehr Münzmarker als jeder andere Charakter."
+    },
+    "295": {
+      "": "Heilfleisch",
+      "text": "Beende das Szenario mit deinem maximalen TP-Wert."
+    },
+    "296": {
+      "": "Volles Risiko",
+      "text": "Töte ein Monster durch einen Angriff, während du Nachteil hast."
+    },
+    "297": {
+      "": "Heißsporn",
+      "text": "Führe vor deiner ersten Rast 2 Aktionen mit Verloren-Symbol aus."
+    },
+    "298": {
+      "": "Schlaflos",
+      "text": "Erleide in einer Runde, in der du eine lange Rase machst, Schaden durch einen Angriff."
+    },
+    "299": {
+      "": "Masochistisch",
+      "text": "Beende das Szenario mit 3 oder weniger TP."
+    },
+    "300": {
+      "": "Ausgenommen",
+      "text": "Töte ein Monster und erbeute in demselben Zug den fallengelassenen Münzmarker."
+    },
+    "301": {
+      "": "Erstschlag",
+      "text": "Töte das erste Monster während des Szenarios."
+    },
+    "302": {
+      "": "Pazifistisch",
+      "text": "Töte 3 oder weniger Monster."
+    },
+    "303": {
+      "": "Profitorientiert",
+      "text": "Erbeute 1 oder mehr Münzmarker mir einer Beute-Aktion während du an 2 oder mehr Monster angrenzt."
+    },
+    "304": {
+      "": "Nadelkissen",
+      "text": "Werde in einer Runde zum Angriffsziel von 3 oder mehr Monstern."
+    },
+    "305": {
+      "": "Fußvolk",
+      "text": "Töte niemals ein Elite-Monster oder einen Boss."
+    },
+    "306": {
+      "": "Trocken",
+      "text": "Benutze niemals Tränke."
+    },
+    "307": {
+      "": "Verwüstung",
+      "text": "Führe 2 Aktionen mit Verlorenen-Symbol in demselben Zug aus."
+    },
+    "308": {
+      "": "Unabhängig",
+      "text": "Beende deinen Zug niemals angrenzend an einen Verbündeten."
+    },
+    "309": {
+      "": "Sadistisch",
+      "text": "Töte 5 oder mehr Monster."
+    },
+    "310": {
+      "": "Ruhelos",
+      "text": "Mache keine lange Rast."
+    },
+    "311": {
+      "": "Schatten",
+      "text": "Beende deinen Zug immer angrenzend an einen Verbündeten."
+    },
+    "312": {
+      "": "Um die Ecke",
+      "text": "Töte, während du an ein Monster angrenzt, ein anderes Monster, das nicht an dich angrenzt."
+    },
+    "313": {
+      "": "Spezialisiert",
+      "text": "Führe keine Standardaktion aus."
+    },
+    "314": {
+      "": "Schlusslicht",
+      "text": "Mache keine kurze Rast."
+    },
+    "315": {
+      "": "Hereingeplatzt",
+      "text": "Öffne eine Tür und beende denselben Zug in dem so aufgedeckten Raum."
+    },
+    "316": {
+      "": "Ansteckend",
+      "text": "Wende einen negativen Zustand auf ein Monster an, während du unter einem negativen Zustand leidest."
+    },
+    "317": {
+      "": "Ausgebrannt",
+      "text": "Werde als erster Charakter erschöpft."
+    }
+  },
+  "character": {
+    "jotl": {
+      "demolitionist": {
+        "": "Sprengmeisterin",
+        "mech": {
+          "": "Mechanikanzug",
+          "hint": "Dein maximaler TP-Wert erhöht sich um 5. Heilung %game.action.heal% 10, selbst."
+        }
+      },
+      "hatchet": "Axtwerfer",
+      "red-guard": "Rotgardist",
+      "voidwarden": "Leerehüterin"
+    }
+  },
+  "custom": {
+    "jotl": {
+      "basic-vermling-raider": {
+        "1": "Mische diese Karten am Ende der Runde.",
+        "2": "Werden sich bewegen um zu vermeiden an ihren Fokus anzugrenzen.",
+        "3": "Bewegen sich diese Runde nicht.",
+        "4": "Dies ist dasselbe Verhalten wie im vorherigen Szenario."
+      },
+      "black-sludge": {
+        "1": "Der nächste Gegner in Sichtlinie erleidet unabhängig der Reichweite %game.damage:[1+L/2{$math.ceil}]%"
+      },
+      "blood-horror": {
+        "1": "Springe zum am weitesten entfernen toten %data.monster.zealot% und belebe diesen wieder oder springe zum am weitesten entfernten Charakter und führe %game.action.attack%+0 aus",
+        "2": "Belebe alle toten %data.monster.zealot% um Raum"
+      },
+      "blood-monstrosity": {
+        "1": "Bei Tod: alle angrenzenden Figuren erleiden %game.damage:1%"
+      },
+      "chaos-demon": {
+        "1": "Wann immer der %data.monster.chaos-demon% in dieser Runde angegriffen wird, erleidet der Angreifer %game.damage:2%",
+        "2": "Alle an das Ziel angrenzenden Gegner erleiden %game.damage:1%"
+      },
+      "demolitionist": {
+        "1": "Alle angrenzenden Gegner erleiden %game.damage:1%"
+      },
+      "first-of-the-order": {
+        "1": "Alle Gegner in %game.action.range:2% erleiden %game.damage:2%",
+        "2": "innerhalb von %game.action.range:2% vom Ziel"
+      },
+      "flowChartGroup": {
+        "characters": "Charaktere",
+        "city-events": "Stadt-Ereignisse",
+        "intro": "Prolog",
+        "main": "Haupt"
+      },
+      "giant-viper": {
+        "1": "Alle Angriffe an %data.monster.giant-viper% erhalten in dieser Runde Nachteil.",
+        "2": "Füge +2 %game.action.attack% wenn das Ziel an einer %data.monster.giant-viper%'s Verbündeten angrenzt."
+      },
+      "giant-viper-scenario-21": {
+        "1": "Wann immer eine Figur eine Riesenviper angreift, erleidet diese Figur nach dem Angriff %game.damage:L%"
+      },
+      "living-corpse": {
+        "1": "Das Ziel erleidet ebenfalls %game.damage:1%.",
+        "2": "Falls eine Bewegung ausgeführt wird, erleidet die %data.monster.living-corpse% %game.damage:1%.",
+        "3": "Falls ein Angriff ausgeführt wird, erleidet die %data.monster.living-corpse% %game.damage:1%."
+      },
+      "monstrosity": {
+        "1": "Falls dieser Angriff ausgeführt wird, erleidet die %data.monster.monstrosity% %game.damage:1%.",
+        "2": "Füge +1 %game.action.attack% hinzu falls das Ziel an einen Verbündeten der %data.monster.monstrosity% angrenzt.",
+        "3": "Wann immer die %data.monster.monstrosity% in dieser Runde angegriffen wird, erleidet der Angreifer %game.damage:2%.",
+        "4": "%data.monster.monstrosity% erleidet %game.damage:1%"
+      },
+      "rat-monstrosity": {
+        "1": "alle angrenzenden Figuren erleiden %game.damage:1%",
+        "2": "alle angrenzenden Figuren erleiden %game.damage:2%",
+        "3": "alle angrenzenden Figuren erleiden %game.damage:3%",
+        "4": "alle angrenzenden Figuren erleiden %game.damage:4%"
+      },
+      "rat-monstrosity-16-2": {
+        "1": "Wenn eine Figur aufgrund des beim Tod einer Ratten-Monstrosität verursachten Schadens stirbt oder erschöpft wird"
+      },
+      "stone-golem": {
+        "1": "Jede Figur die den %data.monster.stone-golem% diese Runde angreift erleidet %game.damage:3%.",
+        "2": "Falls diese Bewegung ausgeführt wird erleidet der %data.monster.stone-golem% %game.damage:1%.",
+        "3": "Falls dieser Angriff ausgeführt wird erleidet der %data.monster.stone-golem% %game.damage:2%."
+      },
+      "vermling-raider": {
+        "1": "Erstelle eine %game.damage:3% Falle in einem an das Ziel angrenzenden freiem Feld."
+      },
+      "zealot": {
+        "1": "X ist der durch den Angriff erlittene %game.damage% des Ziels"
+      }
+    }
+  },
+  "deck": {
+    "boss": "Boss",
+    "imp": "Wicht",
+    "monstrosity": "Monstrosität"
+  },
+  "edition": {
+    "jotl": "Die Pranken des Löwen"
+  },
+  "monster": {
+    "basic-giant-viper": "Riesenviper (einfach)",
+    "basic-vermling-raider": "Ratzen-Räuber (einfach)",
+    "basic-zealot": "Fanatiker (einfach)",
+    "black-imp": "Schwarzwicht",
+    "black-sludge": "Schwarzschlick",
+    "blood-horror": "Blutschrecken",
+    "blood-imp": "Blutwicht",
+    "blood-monstrosity": "Blutmonstrosität",
+    "blood-tumor": "Blutgeschwür",
+    "chaos-demon": "Chaosdämon",
+    "common-vermling-raider": "Ratzen-Räuber (gewöhnlich)",
+    "first-of-the-order": "Erster des Ordens",
+    "giant-viper": "Riesenviper",
+    "living-corpse": "Wandelnde Leiche",
+    "living-spirit": "Wandelnde Seele",
+    "monstrosity": "Monstrosität",
+    "rat-monstrosity": "Rattenmonstrosität",
+    "stone-golem": "Steingolem",
+    "vermling-raider": "Ratzen-Räuber",
+    "vermling-scout": "Ratzen-Späher",
+    "zealot": "Fanatiker"
+  },
+  "scenario": {
+    "rules": {
+      "jotl": {
+        "10": {
+          "1": "Bewege Fallen in %game.mapMarker.1% ein Feld nach unten",
+          "2": "Bewege Fallen in %game.mapMarker.2% ein Feld näher an den nächsten Charakter"
+        },
+        "14": {
+          "1": "eine für jede normale Riesenviper und zwei für jede Elite-Riesenviper benachbart zu einem Fanatiker, die Riesenviper stirbt"
+        },
+        "15": {
+          "1": "ein für jeden Schwarzwicht in Rechweite 3 eines Fanatikers, welcher dann %game.condition.stun% erhält"
+        },
+        "20": {
+          "2": "Findet 1x Waren",
+          "3": "Findet Ring der Erholung (Gegenstand 32)"
+        },
+        "21": {
+          "1": "auf einem Feld des zuletzt zerstörten Zielobjekts",
+          "2": "Charaktere erleiden %game.damage:[L/2{$math.floor}]% für jedes Feld, das sie in diesem Raum betreten, bis der Chaosdämon %game.mapMarker.A% getötet wurde"
+        }
+      }
+    },
+    "title": {
+      "jotl": {
+        "1": "Straßenraub",
+        "10": "Das Wagnis",
+        "11": "Geschändete Kanalisation",
+        "12": "Trügerische Kanalisation",
+        "13": "Abscheuliche Ernte",
+        "14": "Giftige Ernte",
+        "15": "Beflecktes Blut",
+        "16": "Testergebnisse",
+        "17": "Rotes Zwielicht",
+        "18": "Der Raubzug",
+        "19": "Diebesnest",
+        "2": "Mauerloch",
+        "20": "Warenverkehr",
+        "21": "Handlanger des Chaos",
+        "22": "Eindeutige Botschaft",
+        "23": "Einsame Spitze",
+        "24": "Hüter der Leere",
+        "25": "Der beste Beruf der Welt",
+        "3": "Das schwarze Schiff",
+        "4": "Ritual der Steine",
+        "5": "Tieferes Verständnis",
+        "6": "Verdorbene Forschung",
+        "7": "Versunkenes Geschwür",
+        "8": "Verstecktes Geschwür",
+        "9": "Explosive Evolution"
+      }
+    }
+  }
+}

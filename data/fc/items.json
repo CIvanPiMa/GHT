@@ -1,0 +1,238 @@
+[
+  {
+    "id": 152,
+    "name": "Ring of Duality",
+    "cost": 50,
+    "count": 1,
+    "edition": "fc",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-152.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Minor Antidote",
+    "cost": 25,
+    "count": 2,
+    "edition": "fc",
+    "slot": "small",
+    "slots": 3,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-153.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Major Antidote",
+    "cost": 50,
+    "count": 2,
+    "edition": "fc",
+    "slot": "small",
+    "slots": 5,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-154.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Curseward Armor",
+    "cost": 75,
+    "count": 1,
+    "edition": "fc",
+    "slot": "body",
+    "spent": true,
+    "minusOne": 3,
+    "slots": 3,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-155.1%",
+        "small": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "immune",
+        "value": "curse",
+        "always": true
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Elemental Claymore",
+    "cost": 50,
+    "count": 2,
+    "edition": "fc",
+    "slot": "twohand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-156.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Ancient Bow",
+    "cost": 40,
+    "count": 2,
+    "edition": "fc",
+    "slot": "twohand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-157.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Rejuvenation Greaves",
+    "cost": 35,
+    "count": 2,
+    "edition": "fc",
+    "slot": "legs",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-158.1%",
+        "small": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "condition",
+        "value": "regenerate"
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "name": "Scroll of Haste",
+    "cost": 30,
+    "count": 2,
+    "edition": "fc",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-159.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Cutpurse Dagger",
+    "cost": 45,
+    "count": 1,
+    "edition": "fc",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-160.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Throwing Axe",
+    "cost": 35,
+    "count": 2,
+    "edition": "fc",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-161.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Rift Device",
+    "cost": 50,
+    "count": 1,
+    "edition": "fc",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-162.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Crystal Tiara",
+    "cost": 75,
+    "count": 1,
+    "edition": "fc",
+    "slot": "head",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-163.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "name": "Basin of Prophecy",
+    "cost": 50,
+    "count": 1,
+    "edition": "fc",
+    "solo": "diviner",
+    "slot": "twohand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-164.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Living Armor",
+    "cost": 125,
+    "count": 1,
+    "edition": "fc",
+    "slot": "body",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.fc-165.1%",
+        "small": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "index": "22C",
+  "name": "Lootpalooza",
+  "edition": "toa",
+  "parent": "73",
+  "parentSections": [
+    [
+      "22B"
+    ]
+  ],
+  "monsters": [
+    "lootbot"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "lootbot",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

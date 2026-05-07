@@ -1,0 +1,15 @@
+.button {
+  cursor: pointer;
+  font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+
+  display: flex;
+  width: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+  height: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+  filter: var(--ght-filter-yellow) var(--ght-filter-shadow);
+
+  a {
+    display: flex;
+    width: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    height: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+  }
+}

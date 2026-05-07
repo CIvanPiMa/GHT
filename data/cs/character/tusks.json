@@ -1,0 +1,428 @@
+{
+  "name": "tusks",
+  "characterClass": "orchid",
+  "edition": "cs",
+  "handSize": 10,
+  "unlockEvent": "37",
+  "retireEvent": "38",
+  "color": "#76c6c4",
+  "spoiler": true,
+  "stats": [
+    {
+      "level": 1,
+      "health": 8
+    },
+    {
+      "level": 2,
+      "health": 9
+    },
+    {
+      "level": 3,
+      "health": 11
+    },
+    {
+      "level": 4,
+      "health": 12
+    },
+    {
+      "level": 5,
+      "health": 14
+    },
+    {
+      "level": 6,
+      "health": 15
+    },
+    {
+      "level": 7,
+      "health": 17
+    },
+    {
+      "level": 8,
+      "health": 18
+    },
+    {
+      "level": 9,
+      "health": 20
+    }
+  ],
+  "availableSummons": [
+    {
+      "name": "fighting-bull",
+      "cardId": "088",
+      "level": 1,
+      "health": 4,
+      "attack": 2,
+      "movement": 2
+    },
+    {
+      "name": "speedy-ostrich",
+      "cardId": "089",
+      "level": 1,
+      "health": 4,
+      "attack": 1,
+      "movement": 3
+    },
+    {
+      "name": "giant-tortoise",
+      "cardId": "094",
+      "level": 1,
+      "health": 6,
+      "attack": 1,
+      "movement": 1
+    },
+    {
+      "name": "scout-dog",
+      "cardId": "096",
+      "level": 1,
+      "health": 4,
+      "attack": 1,
+      "movement": 3
+    },
+    {
+      "name": "pack-mule",
+      "cardId": "098",
+      "level": 1,
+      "health": 4,
+      "movement": 3
+    },
+    {
+      "name": "cavalry-camel",
+      "cardId": "100",
+      "level": 1,
+      "health": 5,
+      "attack": 1,
+      "movement": 2
+    },
+    {
+      "name": "swamp-hippo",
+      "level": 1,
+      "health": 6,
+      "attack": 3,
+      "movement": 1
+    },
+    {
+      "name": "warrior-hawk",
+      "level": 1,
+      "health": 4,
+      "attack": 1,
+      "movement": 3
+    },
+    {
+      "name": "black-panther",
+      "cardId": "104",
+      "level": 3,
+      "health": 5,
+      "attack": 1,
+      "movement": 3
+    },
+    {
+      "name": "lowland-gorilla",
+      "cardId": "107",
+      "level": 5,
+      "health": 7,
+      "attack": 2,
+      "movement": 3
+    },
+    {
+      "name": "cottonmouth-snake",
+      "cardId": "110",
+      "level": 6,
+      "health": 5,
+      "attack": 1,
+      "movement": 4
+    },
+    {
+      "name": "battle-rhinoceros",
+      "cardId": "111",
+      "level": 7,
+      "health": 7,
+      "attack": 2,
+      "movement": 2
+    },
+    {
+      "name": "war-elephant",
+      "cardId": "113",
+      "level": 8,
+      "health": 8,
+      "attack": 3,
+      "movement": 2
+    },
+    {
+      "name": "sabretooth-tiger",
+      "cardId": "116",
+      "level": 9,
+      "health": 8,
+      "attack": 3,
+      "movement": 3
+    }
+  ],
+  "perks": [
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "poison"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "heal",
+                "value": 1,
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "%data.characterIcon.tusks%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "heal",
+                "value": 1,
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "%data.custom.perks.tusks.1%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "bless",
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "self"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "immobilize"
+              },
+              {
+                "type": "push",
+                "value": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plusX",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.perks.tusks.2%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        },
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus1",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.perks.tusks.3%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "wound"
+              },
+              {
+                "type": "pierce",
+                "value": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "element",
+                "value": "earth"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "pierce",
+                "value": 2
+              },
+              {
+                "type": "custom",
+                "value": "%data.custom.perks.tusks.4%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "custom": "%game.custom.perks.ignoreNegativeScenario%",
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<div
+  class="random-item-dialog"
+  [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }"
+>
+  <div class="scroll-container">
+    <span
+      class="title"
+      [ght-label]="'game.loot.random_item.draw'"
+      [ght-label-args]="[character.name, gameManager.characterManager.characterName(character)]"
+    ></span>
+
+    <div class="item" [ngClass]="{ autosell: autoSell }">
+      <ght-item [item]="item" [flipped]="true" [editionLabel]="gameManager.currentEdition()" (click)="openDialog()"></ght-item>
+    </div>
+
+    <div class="menu">
+      <a class="cancel" (click)="close()"><span [ght-label]="'cancel'"></span></a>
+      <a class="apply" (click)="apply()"><span [ght-label]="'game.loot.random_item.apply'"></span></a>
+    </div>
+  </div>
+</div>

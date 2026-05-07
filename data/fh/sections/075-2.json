@@ -1,0 +1,180 @@
+{
+  "index": "75.2",
+  "name": "Skyhall",
+  "edition": "fh",
+  "parent": "19",
+  "monsters": [],
+  "objectives": [
+    {
+      "name": "Altar",
+      "health": "Cx(L+2)",
+      "marker": "1"
+    },
+    {
+      "name": "Altar",
+      "health": "Cx(L+2)",
+      "marker": "2"
+    },
+    {
+      "name": "Altar",
+      "health": "Cx(L+2)",
+      "marker": "3"
+    },
+    {
+      "name": "Altar",
+      "health": "Cx(L+2)",
+      "marker": "4"
+    },
+    {
+      "name": "Altar",
+      "health": "Cx(L+2)",
+      "marker": "5"
+    },
+    {
+      "name": "Dark Fog",
+      "health": "Cx(L+2)",
+      "initiative": 1,
+      "escort": true,
+      "tags": [
+        "Dark Fog"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "1"
+          },
+          "type": "dead"
+        }
+      ],
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 6,
+            "name": "Dark Fog"
+          }
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "2"
+          },
+          "type": "dead"
+        }
+      ],
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 6,
+            "name": "Dark Fog"
+          }
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "3"
+          },
+          "type": "dead"
+        }
+      ],
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 6,
+            "name": "Dark Fog"
+          }
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "4"
+          },
+          "type": "dead"
+        }
+      ],
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 6,
+            "name": "Dark Fog"
+          }
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "5"
+          },
+          "type": "dead"
+        }
+      ],
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 6,
+            "name": "Dark Fog"
+          }
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "16-B",
+      "initial": true,
+      "objectives": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ]
+}

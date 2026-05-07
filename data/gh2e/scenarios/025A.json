@@ -1,0 +1,87 @@
+{
+  "index": "25A",
+  "name": "Gloomhaven Battlements A (Merchant Allies)",
+  "flowChartGroup": "merchant-guild",
+  "edition": "gh2e",
+  "unlocks": [
+    "27"
+  ],
+  "forcedLinks": [
+    "27"
+  ],
+  "monsters": [
+    "dark-ritual-cultist-scenario-25A",
+    "earth-demon",
+    "flame-demon",
+    "frost-demon",
+    "living-bones",
+    "the-prime-demon-scenario-25",
+    "wind-demon"
+  ],
+  "allies": [
+    "dark-ritual-cultist-scenario-25A",
+    "living-bones"
+  ],
+  "objectives": [
+    {
+      "name": "Door",
+      "marker": "1",
+      "health": "10+(2xL)"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "dark-ritual-cultist-scenario-25A",
+          "type": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "type": "elite"
+        },
+        {
+          "name": "flame-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "type": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "player4": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "the-prime-demon-scenario-25",
+          "type": "boss"
+        },
+        {
+          "name": "wind-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "name": "elder-ooze",
+  "edition": "fh",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "health": "Cx16",
+    "movement": 3,
+    "attack": 3,
+    "immunities": [
+      "wound",
+      "poison",
+      "immobilize",
+      "stun"
+    ],
+    "special": [
+      [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fh.elder-ooze.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.elder-ooze.2%",
+          "small": true
+        }
+      ],
+      [
+        {
+          "type": "specialTarget",
+          "value": "focusEnemyFarthest",
+          "small": true,
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 1,
+              "valueType": "plus",
+              "subActions": [
+                {
+                  "type": "range",
+                  "value": 8,
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "push",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "target",
+              "value": "%game.target.all%",
+              "small": true
+            },
+            {
+              "type": "range",
+              "value": 1,
+              "small": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "Cx16",
+      "movement": 3,
+      "attack": 3
+    },
+    {
+      "level": 1,
+      "health": "Cx20",
+      "movement": 4,
+      "attack": 3
+    },
+    {
+      "level": 2,
+      "health": "Cx24",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 3,
+      "health": "Cx30",
+      "movement": 5,
+      "attack": 4
+    },
+    {
+      "level": 4,
+      "health": "Cx36",
+      "movement": 5,
+      "attack": 5
+    },
+    {
+      "level": 5,
+      "health": "Cx42",
+      "movement": 5,
+      "attack": 5
+    },
+    {
+      "level": 6,
+      "health": "Cx59",
+      "movement": 5,
+      "attack": 6
+    },
+    {
+      "level": 7,
+      "health": "Cx76",
+      "movement": 5,
+      "attack": 7
+    }
+  ]
+}

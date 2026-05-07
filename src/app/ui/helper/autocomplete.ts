@@ -1,0 +1,126 @@
+import { Directive, ElementRef, EventEmitter, Input, OnInit, Output, inject } from '@angular/core';
+import autocomplete, { AutocompleteEvent } from 'autocompleter';
+import { settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+
+export class AutocompleteItem {
+  label: string;
+  value: string;
+  revelead: boolean;
+  group: string;
+
+  constructor(label: string, value: string = '', revealed: boolean = false, group: string = '') {
+    this.label = label;
+    this.value = value;
+    this.revelead = revealed;
+    this.group = group;
+  }
+}
+
+@Directive({
+  selector: '[autocomplete]'
+})
+export class AutocompleteDirective implements OnInit {
+  private el = inject(ElementRef);
+
+  @Input('autocomplete') values: AutocompleteItem[] = [];
+  @Input() spoiler: boolean = false;
+  @Input() emptyLabel: string = '';
+  @Output('keyup.enter') selected: EventEmitter<string> = new EventEmitter<string>();
+
+  ngOnInit(): void {
+    const container = document.createElement('div');
+    this.el.nativeElement.after(container);
+    const select = this.selected;
+    autocomplete({
+      input: this.el.nativeElement,
+      container: container,
+      emptyMsg: this.emptyLabel ? settingsManager.getLabel(this.emptyLabel) : '',
+      minLength: 3,
+      disableAutoSelect: true,
+      fetch: (text: string, update: (items: AutocompleteItem[] | false) => void) => {
+        update(
+          this.values
+            .filter((value) => value.label && value.label.toLowerCase().startsWith(text.toLowerCase()))
+            .sort((a, b) => {
+              if (a.revelead && !b.revelead) {
+                return -1;
+              } else if (b.revelead && !a.revelead) {
+                return 1;
+              }
+              return 0;
+            })
+        );
+      },
+      onSelect: (item: AutocompleteItem) => {
+        this.el.nativeElement.value = item.label || '';
+        select.emit(item.label);
+      },
+      render: (item: AutocompleteItem): HTMLDivElement | undefined => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = item.label;
+        if (item.revelead) {
+          itemElement.classList.add('revealed');
+        }
+        return itemElement;
+      },
+      customize: () => {
+        if (this.spoiler && (container.children.length > 1 || this.el.nativeElement.value.length < 6)) {
+          for (let i = 0; i < container.children.length; i++) {
+            const child = container.children[i] as HTMLElement;
+            if (child.classList.contains('selected')) {
+              child.classList.remove('spoiler');
+            } else {
+              child.classList.add('spoiler');
+              child.addEventListener('touchstart', (ev: TouchEvent) => {
+                if (child.classList.contains('spoiler')) {
+                  ev.preventDefault();
+                  ev.stopPropagation();
+                }
+              });
+              child.addEventListener('touchend', (ev: TouchEvent) => {
+                if (child.classList.contains('spoiler')) {
+                  ev.preventDefault();
+                  ev.stopPropagation();
+                  child.classList.remove('spoiler');
+                  for (let i = 0; i < container.children.length; i++) {
+                    if (container.children[i] !== child) {
+                      container.children[i].classList.add('spoiler');
+                    }
+                  }
+                }
+              });
+            }
+          }
+        } else {
+          for (let i = 0; i < container.children.length; i++) {
+            container.children[i].classList.remove('spoiler');
+          }
+        }
+      },
+      keyup: (e: AutocompleteEvent<KeyboardEvent>) => {
+        const key = e.event.key;
+        switch (key) {
+          case 'ArrowUp':
+          case 'ArrowDown':
+          case 'Escape':
+          case 'Backspace':
+            if (this.spoiler && (container.children.length > 1 || this.el.nativeElement.value.length < 6)) {
+              for (let i = 0; i < container.children.length; i++) {
+                const child = container.children[i] as HTMLElement;
+                if (child.classList.contains('selected')) {
+                  child.classList.remove('spoiler');
+                } else {
+                  child.classList.add('spoiler');
+                }
+              }
+            } else {
+              for (let i = 0; i < container.children.length; i++) {
+                container.children[i].classList.remove('spoiler');
+              }
+            }
+            break;
+        }
+      }
+    });
+  }
+}

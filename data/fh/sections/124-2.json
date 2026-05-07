@@ -1,0 +1,40 @@
+{
+  "index": "124.2",
+  "name": "Bolt",
+  "edition": "fh",
+  "parent": "133",
+  "parentSections": [
+    [
+      "173.3",
+      "186.1"
+    ]
+  ],
+  "marker": "3",
+  "monsters": [
+    "polar-bear"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        34
+      ],
+      "monster": [
+        {
+          "name": "polar-bear",
+          "type": "normal"
+        },
+        {
+          "name": "polar-bear",
+          "type": "elite"
+        },
+        {
+          "name": "polar-bear",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

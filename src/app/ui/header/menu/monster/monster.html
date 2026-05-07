@@ -1,0 +1,95 @@
+<div class="menu-container monster-add">
+  <div
+    class="line filter-monster-menu"
+    [ngClass]="{
+      fh: settingsManager.settings.theme === 'fh',
+      modern: settingsManager.settings.theme === 'modern',
+      'all-editions': gameManager.game.edition
+    }"
+  >
+    <input [(ngModel)]="filter" type="text" [ght-label]="'monster.filter'" [ght-label-attribute]="'placeholder'" />
+    @if (gameManager.game.edition) {
+      <label>
+        <input tabclick type="checkbox" [checked]="allEditions" (change)="allEditions = !allEditions" />
+        <span [ght-label]="'character.filter.allEditions'"></span>
+      </label>
+    }
+    <label [ngClass]="{ disabled: !hasBossMonster() }">
+      <input
+        tabclick
+        type="checkbox"
+        [checked]="settingsManager.settings.showBossMonster"
+        (change)="settingsManager.toggle('showBossMonster')"
+      />
+      <span [ght-label]="'monster.showBoss'"></span>
+    </label>
+    <label [ngClass]="{ disabled: !hasHiddenMonster() }">
+      <input
+        tabclick
+        type="checkbox"
+        [checked]="settingsManager.settings.showHiddenMonster"
+        (change)="settingsManager.toggle('showHiddenMonster')"
+      />
+      <span [ght-label]="'monster.showHidden'"></span>
+    </label>
+  </div>
+  <div class="columns">
+    @for (edition of allEditions ? gameManager.editions(true, true) : gameManager.currentEditions(); track edition) {
+      @if (monsterData(edition, filter).length > 0) {
+        <div class="column spoilers bosses">
+          <div
+            class="line title sticky"
+            [ngClass]="{
+              'hide-title': !allEditions && gameManager.currentEditions().length === 1,
+              fh: settingsManager.settings.theme === 'fh',
+              modern: settingsManager.settings.theme === 'modern'
+            }"
+          >
+            <label><span [ght-label]="'data.edition.' + edition"></span></label>
+          </div>
+          @for (monsterData of monsterData(edition, filter) | trackUUID; track monsterData._trackUUID) {
+            <div
+              class="line"
+              [ngClass]="{
+                disabled: hasMonster(monsterData),
+                spoiler: monsterData.spoiler,
+                boss: monsterData.boss,
+                'hidden-monster': monsterData.hidden
+              }"
+            >
+              @if (isSpoiled(monsterData)) {
+                <a tabclick (click)="addMonster(monsterData)">
+                  @if (monsterData.boss) {
+                    <span class="boss-icon"><img src="./assets/images/monster/enemy.png" /></span>
+                  }
+                  <span [ght-label]="'data.monster.' + monsterData.name"></span>
+                  @if (monsterData.hidden) {
+                    <img class="ght-svg hidden-icon" src="./assets/images/hidden.svg" />
+                  }
+                </a>
+              }
+              @if (!isSpoiled(monsterData)) {
+                <a tabclick (click)="settingsManager.addSpoiler(monsterData.name)">
+                  <span class="name"><span [ght-label]="'spoiler.placeholder'"></span></span>
+                  <span class="add"><span [ght-label]="'spoiler.add'"></span></span>
+                </a>
+              }
+            </div>
+          }
+        </div>
+      }
+    }
+    @if (filter && noResults()) {
+      <div class="column">
+        <div class="line">
+          <label><span [ght-label]="'monster.filter.noResult'"></span></label>
+        </div>
+      </div>
+    }
+  </div>
+  @if (hasSpoilers(monsterData())) {
+    <div class="line">
+      <a tabclick (click)="settingsManager.addSpoilers(notSpoiled(monsterData()))"><span [ght-label]="'spoiler.all'"></span></a>
+    </div>
+  }
+</div>

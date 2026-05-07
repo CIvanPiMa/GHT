@@ -1,0 +1,41 @@
+{
+  "index": "32A",
+  "name": "Undead Terrors",
+  "edition": "cs",
+  "parent": "30",
+  "marker": "1",
+  "monsters": [
+    "black-imp",
+    "shadow-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        38
+      ],
+      "monster": [
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "shadow-demon",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

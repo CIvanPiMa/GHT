@@ -1,0 +1,11 @@
+{
+  "index": "81.1",
+  "name": "Random Scenario",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "random": true,
+  "unlocks": [
+    "110"
+  ]
+}

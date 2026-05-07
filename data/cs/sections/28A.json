@@ -1,0 +1,68 @@
+{
+  "index": "28A",
+  "name": "Thermal Stone Peak",
+  "edition": "cs",
+  "parent": "26",
+  "parentSections": [
+    [
+      "27C"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "frozen-cadaver",
+    "hail-demon"
+  ],
+  "objectives": [
+    {
+      "name": "Icy Flame thermal stone",
+      "health": "Cx6",
+      "marker": "c"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        13
+      ],
+      "monster": [
+        {
+          "name": "frozen-cadaver",
+          "type": "normal"
+        },
+        {
+          "name": "frozen-cadaver",
+          "type": "normal"
+        },
+        {
+          "name": "frozen-cadaver",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "frozen-cadaver",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "hail-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "hail-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

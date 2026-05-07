@@ -1,0 +1,134 @@
+{
+  "name": "lord-of-chaos",
+  "edition": "fh",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "health": "7xC",
+    "attack": 3,
+    "immunities": [
+      "wound",
+      "disarm",
+      "stun",
+      "curse"
+    ],
+    "special": [
+      [
+        {
+          "type": "spawn",
+          "value": "monsterStandee",
+          "valueObject": [
+            {
+              "monster": {
+                "name": "chaos-spark",
+                "player4": "boss"
+              },
+              "marker": "a"
+            },
+            {
+              "monster": {
+                "name": "chaos-spark",
+                "type": "boss"
+              },
+              "marker": "b"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "target",
+              "value": "[C]",
+              "small": true
+            },
+            {
+              "type": "range",
+              "value": 5,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "spawn",
+          "value": "monsterStandee",
+          "valueObject": [
+            {
+              "monster": {
+                "name": "chaos-spark",
+                "type": "boss"
+              },
+              "marker": "a"
+            },
+            {
+              "monster": {
+                "name": "chaos-spark",
+                "player3": "boss",
+                "player4": "boss"
+              },
+              "marker": "b"
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.lord-of-chaos.1%",
+          "small": true
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "Cx25",
+      "attack": 4
+    },
+    {
+      "level": 1,
+      "health": "Cx30",
+      "attack": 4
+    },
+    {
+      "level": 2,
+      "health": "Cx35",
+      "attack": 5
+    },
+    {
+      "level": 3,
+      "health": "Cx43",
+      "attack": 5
+    },
+    {
+      "level": 4,
+      "health": "Cx50",
+      "attack": 6
+    },
+    {
+      "level": 5,
+      "health": "Cx60",
+      "attack": 6
+    },
+    {
+      "level": 6,
+      "health": "Cx79",
+      "attack": 7
+    },
+    {
+      "level": 7,
+      "health": "Cx99",
+      "attack": 8
+    }
+  ]
+}

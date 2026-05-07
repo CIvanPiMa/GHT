@@ -1,0 +1,46 @@
+{
+  "index": "32.2",
+  "name": "Crackling Tunnel",
+  "edition": "fh",
+  "parent": "31",
+  "parentSections": [
+    [
+      "37.2"
+    ]
+  ],
+  "monsters": [
+    "flaming-bladespinner",
+    "robotic-boltshooter"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "All characters must lose one card from their hand or discard pile."
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "flaming-bladespinner",
+          "type": "elite"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

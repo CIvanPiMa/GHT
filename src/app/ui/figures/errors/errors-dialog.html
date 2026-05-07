@@ -1,0 +1,15 @@
+<div class="figure-errors-dialog">
+  <div class="figure-errors">
+    @for (error of figure.errors || [] | trackUUID; track error._trackUUID) {
+      <div class="figure-error">
+        <span class="error"><span [ght-label]="'game.figure.error.' + error.type"></span></span>
+        <span
+          class="hint"
+          [ght-label]="'game.figure.error.' + error.type + '.hint'"
+          [ght-label-args]="error.args"
+          [ght-label-args-replace]="false"
+        ></span>
+      </div>
+    }
+  </div>
+</div>

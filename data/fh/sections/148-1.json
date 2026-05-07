@@ -1,0 +1,103 @@
+{
+  "index": "148.1",
+  "name": "The Savvas Seal",
+  "edition": "fh",
+  "parent": "63",
+  "parentSections": [
+    [
+      "7.1"
+    ]
+  ],
+  "monsters": [
+    "savvas-icestorm",
+    "savvas-lavaflow"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "name": ".*"
+          },
+          "type": "permanentCondition",
+          "value": "wound"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "name": ".*"
+          },
+          "type": "permanentCondition",
+          "value": "muddle"
+        }
+      ],
+      "disableRules": [
+        {
+          "edition": "fh",
+          "scenario": "7.1",
+          "index": 0,
+          "section": true
+        }
+      ]
+    },
+    {
+      "round": "R == 9",
+      "start": true,
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "earth-demon",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "d"
+        },
+        {
+          "monster": {
+            "name": "flame-demon",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "e"
+        }
+      ]
+    },
+    {
+      "round": "R == 10",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "wind-demon",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "d"
+        },
+        {
+          "monster": {
+            "name": "frost-demon",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "e"
+        }
+      ]
+    },
+    {
+      "round": "R == 10",
+      "sections": [
+        "122.5"
+      ]
+    }
+  ]
+}

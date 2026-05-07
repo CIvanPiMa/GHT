@@ -1,0 +1,1859 @@
+{
+  "name": "demolitionist",
+  "edition": "jotl",
+  "character": true,
+  "abilities": [
+    {
+      "name": "Implode",
+      "cardId": 74,
+      "level": "A",
+      "initiative": 88,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "muddle",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.74.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.74.1%",
+          "small": true
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.74.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "Knock Out the Support",
+      "cardId": 75,
+      "level": "A",
+      "initiative": 20,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.75.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.75.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "strengthen",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.75.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "Piston Punch",
+      "cardId": 76,
+      "level": "A",
+      "initiative": 42,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.76.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "condition",
+          "value": "stun",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemyAdjacent",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.76.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "Explosive Blitz",
+      "cardId": 77,
+      "level": "A",
+      "initiative": 19,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 4,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.77.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.77.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "The Big One",
+      "cardId": 78,
+      "level": "A",
+      "initiative": 37,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.78.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.78.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "One-Two Punch",
+      "cardId": 79,
+      "level": "A",
+      "initiative": 66,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2
+        },
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.79.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.79.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "The Big One",
+      "cardId": 80,
+      "level": "B",
+      "initiative": 37,
+      "lost": true,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "area",
+              "value": "(0,1,target)|(1,0,target)|(1,1,target)|(1,2,target)|(2,0,target)|(2,1,target)|(2,2,target)"
+            },
+            {
+              "type": "range",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.80.hint%"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3
+        },
+        {
+          "type": "push",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemyAdjacent",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.80.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "One-Two Punch",
+      "cardId": 81,
+      "level": "B",
+      "initiative": 66,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.81.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "loot",
+          "value": 1
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.demolitionist.abilities.81.bottomHint%"
+        }
+      ]
+    },
+    {
+      "name": "Windup",
+      "cardId": 82,
+      "level": 1,
+      "initiative": 77,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.82.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "persistent"
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.82.2%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "persistent"
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crushing Weight",
+      "cardId": 83,
+      "level": 1,
+      "initiative": 22,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.83.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.83.2%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Knock Out the Support",
+      "cardId": 84,
+      "level": 1,
+      "initiative": 20,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.84.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "earth"
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.84.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "strengthen",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Explode",
+      "cardId": 85,
+      "level": 1,
+      "initiative": 28,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.85.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "stun"
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.85.2%",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.85.3%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4,
+          "enhancementTypes": [
+            "circle"
+          ],
+          "subActions": [
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "move",
+                  "value": 2,
+                  "valueType": "add",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Implode",
+      "cardId": 86,
+      "level": 1,
+      "initiative": 88,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "condition",
+                      "value": "muddle"
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.86.1%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Piston Punch",
+      "cardId": 87,
+      "level": 1,
+      "initiative": 42,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "push",
+              "value": 2,
+              "small": true,
+              "enhancementTypes": [
+                "diamond"
+              ]
+            },
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "push",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "condition",
+          "value": "stun",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemyAdjacent",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "condition",
+                  "value": "poison",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Explosive Blitz",
+      "cardId": 88,
+      "level": 1,
+      "initiative": 19,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 4,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire"
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.88.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "stun",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "enemiesRange:3",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Big One",
+      "cardId": 89,
+      "level": 1,
+      "initiative": 37,
+      "lost": true,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "area",
+              "value": "(0,1,target)|(1,0,target)|(1,1,target)|(1,2,target)|(2,0,target)|(2,1,target)|(2,2,target)"
+            },
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "concatenation",
+              "value": "",
+              "subActions": [
+                {
+                  "type": "element",
+                  "value": "fire"
+                },
+                {
+                  "type": "element",
+                  "value": "earth"
+                },
+                {
+                  "type": "card",
+                  "value": "experience:1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.89.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "bless",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ones-Two Punch",
+      "cardId": 90,
+      "level": 1,
+      "initiative": 66,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.90.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "loot",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rubble",
+      "cardId": 91,
+      "level": "X",
+      "initiative": 55,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.91.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "earth"
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.91.2%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Level",
+      "cardId": 92,
+      "level": "X",
+      "initiative": 0,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.92.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.92.2%",
+          "small": true
+        },
+        {
+          "type": "card",
+          "value": "round"
+        }
+      ]
+    },
+    {
+      "name": "Lobbed Charge",
+      "cardId": 93,
+      "level": "X",
+      "initiative": 52,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.93.1%",
+          "small": true
+        },
+        {
+          "type": "element",
+          "value": "fire"
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4,
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.93.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "concatenation",
+              "value": 0,
+              "small": true,
+              "subActions": [
+                {
+                  "type": "attack",
+                  "value": "X",
+                  "subActions": [
+                    {
+                      "type": "push",
+                      "value": 2,
+                      "small": true
+                    }
+                  ]
+                },
+                {
+                  "type": "card",
+                  "value": "experience:1"
+                }
+              ]
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.93.3%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Robotic Enhancement",
+      "cardId": 94,
+      "level": 2,
+      "initiative": 33,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "stun",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4,
+          "enhancementTypes": [
+            "circle"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.94.1%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crash Protocol",
+      "cardId": 95,
+      "level": 2,
+      "initiative": 74,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.95.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "persistent"
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "concatenationSpacer",
+              "value": ""
+            },
+            {
+              "type": "concatenationSpacer",
+              "value": ""
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "lost"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ],
+          "subActions": [
+            {
+              "type": "jump",
+              "value": "",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.95.2%",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.jotl.demolitionist.abilities.95.3%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fire Bombs",
+      "cardId": 96,
+      "level": 3,
+      "initiative": 24,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 4,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.96.1%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Nowhere to Run",
+      "cardId": 97,
+      "level": 3,
+      "initiative": 39,
+      "lost": true,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 4,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.97.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "value": "experience:2"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.97.2%",
+          "small": true
+        },
+        {
+          "type": "element",
+          "value": "earth"
+        }
+      ]
+    },
+    {
+      "name": "Remote Detonation",
+      "cardId": 98,
+      "level": 4,
+      "initiative": 63,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.98.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 2,
+              "enhancementTypes": [
+                "diamond"
+              ],
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.jotl.demolitionist.abilities.98.2%",
+                  "small": true
+                },
+                {
+                  "type": "element",
+                  "value": "fire",
+                  "valueType": "minus",
+                  "subActions": [
+                    {
+                      "type": "concatenation",
+                      "value": ",",
+                      "small": true,
+                      "subActions": [
+                        {
+                          "type": "attack",
+                          "value": 1,
+                          "valueType": "add"
+                        },
+                        {
+                          "type": "card",
+                          "value": "experience:1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.98.3%",
+          "small": true
+        },
+        {
+          "type": "card",
+          "value": "experience:2"
+        }
+      ]
+    },
+    {
+      "name": "Extra Fuel",
+      "cardId": 99,
+      "level": 4,
+      "initiative": 3,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.99.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 5,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 1,
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mech Suit",
+      "cardId": 101,
+      "level": 5,
+      "initiative": 80,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.101.1%",
+          "small": true
+        },
+        {
+          "type": "heal",
+          "value": 10,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:2"
+            },
+            {
+              "type": "shield",
+              "value": 1
+            },
+            {
+              "type": "card",
+              "value": "persistent"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "loot",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dust Cloud",
+      "cardId": 102,
+      "level": 6,
+      "initiative": 15,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesAdjacent",
+              "small": true
+            },
+            {
+              "type": "push",
+              "value": 1,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "muddle"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "earth"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.102.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "shield",
+              "value": 2
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drill Fist",
+      "cardId": 103,
+      "level": 6,
+      "initiative": 62,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.103.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.103.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Micro Missiles",
+      "cardId": 104,
+      "level": 7,
+      "initiative": 16,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "target",
+              "value": 4,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.104.1%",
+          "small": true
+        },
+        {
+          "type": "element",
+          "value": "earth"
+        }
+      ]
+    },
+    {
+      "name": "Insult to Injury",
+      "cardId": 105,
+      "level": 7,
+      "initiative": 64,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.105.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "persistent"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "concatenationSpacer",
+              "value": ""
+            },
+            {
+              "type": "concatenationSpacer",
+              "value": 0
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "lost"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.105.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.jotl.demolitionist.abilities.105.3%",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gut Punch",
+      "cardId": 106,
+      "level": 8,
+      "initiative": 26,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 5,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "push",
+                      "value": 2
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "condition",
+                      "value": "immobilize"
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "stun",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Bigger One",
+      "cardId": 107,
+      "level": 8,
+      "initiative": 31,
+      "lost": true,
+      "actions": [
+        {
+          "type": "grid",
+          "value": "1",
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 4,
+              "enhancementTypes": [
+                "diamond"
+              ],
+              "subActions": [
+                {
+                  "type": "area",
+                  "value": "(0,1,target)|(0,2,target)|(0,3,target)|(1,0,target)|(1,1,target)|(1,2,target)|(1,3,target)|(2,0,target)|(2,1,target)|(2,2,target)|(2,3,target)|(3,2,target)"
+                },
+                {
+                  "type": "range",
+                  "value": 2,
+                  "small": true
+                },
+                {
+                  "type": "concatenation",
+                  "value": "",
+                  "subActions": [
+                    {
+                      "type": "element",
+                      "value": "fire"
+                    },
+                    {
+                      "type": "element",
+                      "value": "earth"
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:2"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.107.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.107.2%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Collateral Damage",
+      "cardId": 108,
+      "level": 9,
+      "initiative": 15,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.108.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 4,
+              "enhancementTypes": [
+                "diamond"
+              ],
+              "subActions": [
+                {
+                  "type": "push",
+                  "value": 2,
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.jotl.demolitionist.abilities.108.2%",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "earth",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 2,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "card",
+                      "value": "experience:1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.108.3%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Wholesale Destruction",
+      "cardId": 109,
+      "level": 9,
+      "initiative": 34,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2
+        },
+        {
+          "type": "attack",
+          "value": 2
+        },
+        {
+          "type": "move",
+          "value": 2,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": ",",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "attack",
+                      "value": 1,
+                      "valueType": "add"
+                    },
+                    {
+                      "type": "condition",
+                      "value": "wound"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.demolitionist.abilities.109.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:2"
+            },
+            {
+              "type": "card",
+              "value": "persistent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

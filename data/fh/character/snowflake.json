@@ -1,0 +1,278 @@
+{
+  "name": "snowflake",
+  "characterClass": "algox",
+  "edition": "fh",
+  "handSize": 11,
+  "traits": [
+    "chaotic",
+    "nimble",
+    "persuasive"
+  ],
+  "color": "#83b5be",
+  "spoiler": true,
+  "specialActions": [
+    {
+      "name": "muddle-monster",
+      "perk": 9
+    }
+  ],
+  "stats": [
+    {
+      "level": 1,
+      "health": 8
+    },
+    {
+      "level": 2,
+      "health": 9
+    },
+    {
+      "level": 3,
+      "health": 11
+    },
+    {
+      "level": 4,
+      "health": 12
+    },
+    {
+      "level": 5,
+      "health": 14
+    },
+    {
+      "level": 6,
+      "health": 15
+    },
+    {
+      "level": 7,
+      "health": 17
+    },
+    {
+      "level": 8,
+      "health": 18
+    },
+    {
+      "level": 9,
+      "health": 20
+    }
+  ],
+  "availableSummons": [
+    {
+      "name": "snow-fox",
+      "cardId": "334",
+      "thumbnail": true,
+      "level": 1,
+      "health": 5,
+      "attack": 2,
+      "movement": 3
+    },
+    {
+      "name": "white-owl",
+      "cardId": "344",
+      "thumbnail": true,
+      "level": 2,
+      "health": 3,
+      "attack": 2,
+      "movement": 3,
+      "count": 2,
+      "action": {
+        "type": "fly",
+        "value": ""
+      }
+    },
+    {
+      "name": "polar-cat",
+      "cardId": "352",
+      "thumbnail": true,
+      "level": 6,
+      "health": 6,
+      "attack": 2,
+      "movement": 3,
+      "action": {
+        "type": "pierce",
+        "value": 3
+      },
+      "additionalAction": {
+        "type": "condition",
+        "value": "wound"
+      }
+    }
+  ],
+  "perks": [
+    {
+      "type": "replace",
+      "count": 3,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "heal",
+                "value": 1,
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "allyShort"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "immobilize"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 2,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "elementHalf",
+                "value": "ice|air"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.snowflake.1%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "strengthen",
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "allyShort"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "heal",
+                "value": "1",
+                "effects": [
+                  {
+                    "type": "condition",
+                    "value": "ward"
+                  },
+                  {
+                    "type": "specialTarget",
+                    "value": "allyShort"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.fh.snowflake.2%"
+    },
+    {
+      "type": "custom",
+      "custom": "%data.custom.fh.snowflake.3%",
+      "count": 2,
+      "combined": true
+    },
+    {
+      "type": "custom",
+      "custom": "%data.custom.fh.snowflake.4%",
+      "count": 2,
+      "combined": true
+    }
+  ],
+  "masteries": [
+    "%data.custom.fh.snowflake.5%",
+    "%data.custom.fh.snowflake.6%"
+  ]
+}

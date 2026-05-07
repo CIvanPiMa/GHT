@@ -1,0 +1,85 @@
+{
+  "index": "12",
+  "name": "Uncovering the Source",
+  "flowChartGroup": "sail",
+  "edition": "cs",
+  "unlocks": [
+    "15"
+  ],
+  "links": [
+    "15"
+  ],
+  "monsters": [
+    "giant-viper",
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "note": "All characters consume one small item as a scenario effect"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "D1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "giant-viper",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "giant-viper",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player2": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player2": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "type": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "type": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "type": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "type": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

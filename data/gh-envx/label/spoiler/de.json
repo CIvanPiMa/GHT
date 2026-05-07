@@ -1,0 +1,17 @@
+{
+  "character": {
+    "gh": {
+      "envx": "Klingenschwarm"
+    }
+  },
+  "summon": {
+    "angry-wasps": "Zornige Wespen",
+    "bloat-maggot": "Aufgeblähte Made",
+    "creeping-beetles": "Kriechende Käfer",
+    "lightning-moths": "Blitzende Motten",
+    "rage-hornets": "Wütende Hornissen",
+    "rust-vermin": "Rostiges Ungeziefer",
+    "soul-leeches": "Seelenblutegel",
+    "steel-scarabs": "Stahlskarabäus"
+  }
+}

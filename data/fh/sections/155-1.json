@@ -1,0 +1,58 @@
+{
+  "index": "155.1",
+  "name": "My Private Empire",
+  "edition": "fh",
+  "parent": "107",
+  "parentSections": [
+    [
+      "103.1"
+    ]
+  ],
+  "marker": "c",
+  "monsters": [
+    "flaming-bladespinner",
+    "robotic-boltshooter"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 7,
+      "initial": true,
+      "monster": [
+        {
+          "name": "flaming-bladespinner",
+          "type": "normal"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "type": "normal"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "player4": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "type": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "type": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

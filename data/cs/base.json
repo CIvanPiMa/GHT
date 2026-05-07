@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    "stun",
+    "immobilize",
+    "disarm",
+    "wound",
+    "muddle",
+    "poison",
+    "invisible",
+    "strengthen",
+    "regenerate",
+    "chill",
+    "infect",
+    "ward",
+    "rupture",
+    "poison_x",
+    "wound_x",
+    "curse",
+    "bless",
+    "empower"
+  ],
+  "edition": "cs",
+  "extensions": [
+    "gh",
+    "fc"
+  ],
+  "newAmStyle": true,
+  "logoUrl": "./assets/images/logos/cs.png"
+}

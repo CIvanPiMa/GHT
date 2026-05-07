@@ -1,0 +1,36 @@
+{
+  "index": "130.1",
+  "name": "Deadly Pastimes",
+  "edition": "fh",
+  "parent": "85",
+  "marker": "1",
+  "monsters": [
+    "black-imp",
+    "polar-bear"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 11,
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "polar-bear",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

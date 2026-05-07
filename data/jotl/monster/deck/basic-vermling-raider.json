@@ -1,0 +1,118 @@
+{
+  "name": "basic-vermling-raider",
+  "edition": "jotl",
+  "abilities": [
+    {
+      "name": "Screaming Shot",
+      "cardId": 368,
+      "initiative": 85,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "push",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesAdjacent",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.basic-vermling-raider.1%"
+        }
+      ]
+    },
+    {
+      "name": "Careful Throw",
+      "cardId": 369,
+      "initiative": 36,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.basic-vermling-raider.2%"
+        }
+      ]
+    },
+    {
+      "name": "Dual Daggers",
+      "cardId": 370,
+      "initiative": 59,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.basic-vermling-raider.3%"
+        }
+      ]
+    },
+    {
+      "name": "Nothing Special",
+      "cardId": 371,
+      "initiative": 50,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "hint",
+          "value": "%data.custom.jotl.basic-vermling-raider.4%"
+        }
+      ]
+    }
+  ]
+}

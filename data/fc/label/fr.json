@@ -1,0 +1,187 @@
+{
+  "ability": {
+    "Blistering Heat": "Chaleur Étouffante",
+    "Corrupting Presence": "Présence Corruptrice",
+    "Endless Legions": "Légions Innombrables",
+    "Flame Lance": "Lance de Feu",
+    "Harsh Entrapment": "Piège Cruel",
+    "Heed My Call": "Écoutez mon Appel",
+    "Legendary - Domination": "Légendaire - Contrôle",
+    "Legendary - Gloom": "Légendaire - L'Ombre",
+    "Legendary - Shadows": "Légendaire - Les Ténèbres",
+    "Legendary - Void": "Légendaire - Le Néant",
+    "Lure Them In": "Tous les attirer",
+    "Marked for Death": "Destiné à Mourir",
+    "Nightmare Spheres": "Sphères Cauchemardesques",
+    "Plaque Their Dreams": "Tourmenter leurs Rêves",
+    "Pulse of Malice": "Poussée Malveillante",
+    "Searing Vapors": "Émanation Brûlante",
+    "Toxic Blast": "Explosion Toxique",
+    "Unfathomable Fortitude": "Volonté Inflexible",
+    "What's Yours is Mine": "Ce qui est à vous m'appartient",
+    "You Date to Defy Me": "Vous Osez me Défier"
+  },
+  "character": {
+    "fc": {
+      "diviner": "Devineresse"
+    }
+  },
+  "custom": {
+    "fc": {
+      "ashblade": {
+        "1": "Se focalise sur l'adversaire ayant la plus haute initiative.",
+        "2": "Se %game.action.teleport% sur le plus près des hexagones inoccupés adjacents à sa cible en focus."
+      },
+      "manifestation-of-corruption": {
+        "1": "Joue les deux cartes du dessus du paquet ; utilise la première pour déterminer l'initiative. Effectue l'action inférieure de la première carte et l'action supérieur de la deuxième.",
+        "10": "Invoque deux Diablotins Noirs: normaux à deux aventuriers; un normal et un d'élite à trois aventuriers; d'élite à quatre aventuriers.",
+        "11": "Invoque un Diablotin Noir d'élite supplémentaire",
+        "12": "Cible tous les adversaires à %game.action.range%4",
+        "13": "Tous les adversaires adjacents subissent %game.damage:3%.",
+        "14": "Pour les trois prochaines attaques le ciblant et lui causant des dégâts, gagne %game.action.shield% 3.",
+        "15": "Crée un piège à %game.condition.disarm% et %game.condition.poison% sur chaque hexagone vide adjacent.",
+        "16": "Se %game.action.teleport% sur l'hexagone occupé par l'adversaire le plus éloigné à %game.action.range%+1 et le %game.action.teleport% simultanément sur l'hexagone qu'il occupait.",
+        "17": "Invoque un Valrath Sauvage normal sur un hexagone adjacent pour chaque adversaire à %game.action.range%5.",
+        "18": "Tous les attaquants le prenant pour cible gagnent %game.condition.curse%.",
+        "19": "Tous les attaquants le prenant pour cible gagnent Désavantage pour cette attaque.",
+        "2": "Effectue cette action lorsqu'elle est révélée, sans suivre l'ordre d'initiative normal.",
+        "20": "%game.action.attack%-1 sur un autre adversaire à %game.action.range%4 de la première cible, puis %game.action.attack%-2 sur un troisième adversaire à %game.action.range%3 de la seconde cible.",
+        "21": "Invoque un Éclaireur Esther : normal pour deux ou trois aventuriers, d'élite pour quatre aventuriers.",
+        "22": "Les trois prochaines fois qu'une source lui inflige des dégâts, il ne subit pas de dégâts à la place.",
+        "3": "L'aventurier possédant la plus grande valeur d'initiative doit agir ce round comme si ses adversaires étaient des alliées et vice versa. À son tour, il effectue \"%game.action.move%2\", puis l'action supérieure de sa carte Principale. Ensuite, il défausse les deux cartes jouées, même si normalement elles ne devaient pas être perdues.",
+        "4": "Tous les attaquants le ciblant gagnent %game.condition.curse% ce round.",
+        "5": "Invoque un Démon de Flamme : normal pour deux ou trois aventuriers, d'élite pour quatre aventuriers. Invoque un Démon de la Nuit : normal pour deux aventuriers, d'élite pour trois ou quatre aventuriers.",
+        "7": "Invoque un Démon de la Nuit normal supplémentaire",
+        "8": "Invoque un Démon de Flamme normal supplémentaire",
+        "9": "Invoque un Pisteur Valrath : normal pour deux aventuriers, d'élite pour trois ou quatre aventuriers."
+      },
+      "sraka-the-wise": {
+        "1": "Double toutes les valeurs de Soin. Si possible, les soins ciblent en priorité le Lion d'Acier",
+        "2": "Tous les états %game.condition.curse% et %game.condition.bless% appliqués sont doublés"
+      },
+      "the-steel-lion": {
+        "1": "Toutes les attaques ciblant un de ses alliés adjacents le prennent pour cible à la place, sans considération de portée",
+        "2": "Les [C] premières fois qu'il subit %game.damage:6% ou plus provenant d'une seule source, il n'en subit aucun à la place"
+      },
+      "tracker": {
+        "1": "Crée un piège à %game.condition.disarm% sur l'hexagone vide adjacent le plus proche d'un adversaire.",
+        "2": "Se focalise sur l'adversaire ayant le moins de points de vie."
+      },
+      "uyart-ikkuma": {
+        "1": "Les effets %game.element.consume.fire% et %game.element.consume.earth% de ses cartes s'appliquent si un Démon de l'élément correspondant est présent sur le plateau"
+      },
+      "valrath-savage": {
+        "1": "Tous les alliés adjacents ajoutent +1 %game.action.attack% à toutes leurs attaques",
+        "2": "Tous les alliés adjacents ajoutent +2 %game.action.attack% à toutes leurs attaques"
+      }
+    }
+  },
+  "deck": {
+    "ashblade": "Sabre de Cendre",
+    "savage": "Sauvage",
+    "tracker": "Pisteur"
+  },
+  "edition": {
+    "fc": "Les Cercles Oubliés"
+  },
+  "monster": {
+    "aesther-ashblade": "Esther Sabre de Cendre",
+    "aesther-scout": "Éclaireur Esther",
+    "avatar-of-ashtar": "Avatar d'Ashtar",
+    "avatar-of-thelija": "Avatar de Thelija",
+    "bear-drake-abomination": "Abomination Ours-Wyverne",
+    "elham": "Elham",
+    "guardian-of-the-firmament": "Gardien du Firmament",
+    "human-commander": "Commandante Humaine",
+    "manifestation-of-corruption": "Manifestation de la Corruption",
+    "naaret": "Naaret",
+    "selah-naberis": "Selah Naberis",
+    "sraka-the-wise": "Sraka la Sage",
+    "the-husk": "Le Karkass",
+    "the-steel-lion": "Le Lion d'Acier",
+    "uyart-ikkuma": "Uyart Ikkuma",
+    "valrath-commander": "Commandant Valrath",
+    "valrath-savage": "Valrath Sauvage",
+    "valrath-tracker": "Pisteur Valrath",
+    "wolf-viper-abomination": "Abomination Loup-Vipère",
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)"
+  },
+  "scenario": {
+    "title": {
+      "fc": {
+        "100": "Engrenages Perturbants",
+        "101": "La Crypte des Ténèbres",
+        "102": "Le Bazar du Savoir",
+        "103": "Nécessité fait Loi",
+        "104": "Une Plaie Béante",
+        "105": "Les Monstruosités d'un Culte",
+        "106": "Une Tâche Ardue",
+        "107": "Le Génie de la Mécanique",
+        "108": "Le Début de la Fin",
+        "109": "Les derniers Instants d'une Guerre",
+        "110": "Une Solution Circulaire",
+        "111": "L'Étau de Desserre",
+        "112": "Le Fond des Choses",
+        "113": "La Piste Perdue",
+        "114": "Une Encre Encore Humide",
+        "115": "Des Lendemains Incertains",
+        "96": "Des Visiteurs Inattendus",
+        "97": "Connaissances Secrètes",
+        "98": "Passé En Flammes",
+        "99": "Résurgences"
+      }
+    }
+  },
+  "section": {
+    "title": {
+      "fc": {
+        "1": "Landes Volcaniques",
+        "100": "La Fontaine de Sekhem",
+        "106": "Le Parc aux Étranglés",
+        "108": "Le Sceau de la Distorsion",
+        "112": "Le Hall d'Accès",
+        "119": "Des Ouvrages Innombrables",
+        "126": "Séance d'Entraînement",
+        "127": "La Crèche Protégée",
+        "129": "Un Combat Déloyal",
+        "13": "Le Mausolée d'Ashtar",
+        "132": "Près des Portes",
+        "133": "Un Étage Secret",
+        "134": "La Victore à portée de Pince",
+        "14": "Sol Rotatif",
+        "15": "Déversement d'ordures",
+        "17": "Pas si facile de fuir",
+        "22": "Un grondement",
+        "23": "L'Étroit Caveau",
+        "24": "Le Bosquet Flétri",
+        "26": "La Bibliothèque Secrète",
+        "28": "Une Wyverne Mal Léchée",
+        "30": "Le Sceau d'Attraction",
+        "32": "La Caravelle en feu",
+        "34": "La Grotte Gelée",
+        "35": "L'Oratoire de Thelija",
+        "37": "Au Service de Diamara",
+        "39": "Une nouvelle Rotation",
+        "4": "Barge en feu",
+        "40": "La Tombe des Vénérables",
+        "41": "La Sphère du Cauchemar",
+        "42": "L'Atrium Effonfré",
+        "46": "Rotation Rapide",
+        "50": "Rotation Douce",
+        "6": "Le Repaire des Créatures Hybrides",
+        "60": "Le Sceau de la Répulsion",
+        "64": "Les Catacombes Inondées",
+        "67": "L'Embranchement",
+        "71": "Rotation Silencieuse",
+        "72": "Brume Épaisse",
+        "8": "Une vie pour une vie",
+        "81": "La Ruelle",
+        "92": "Les Nids",
+        "93": "L'Obscurité Persistante",
+        "94": "Le Sceau de Réanimation",
+        "95": "La Cuisine de la Horde",
+        "96": "Un Trésor Hanté"
+      }
+    }
+  }
+}

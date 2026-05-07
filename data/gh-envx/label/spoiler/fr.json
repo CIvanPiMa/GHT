@@ -1,0 +1,17 @@
+{
+  "character": {
+    "gh": {
+      "envx": "Hordelames"
+    }
+  },
+  "summon": {
+    "angry-wasps": "Guêpes Irritées",
+    "bloat-maggot": "Ver Boursoufflé",
+    "creeping-beetles": "Scarabées Rampants",
+    "lightning-moths": "Phalènes de l'Éclair",
+    "rage-hornets": "Frelons Combattants",
+    "rust-vermin": "Vermine de la Rouille",
+    "soul-leeches": "Sangsues de l'Âme",
+    "steel-scarabs": "Scarabées d'Acier"
+  }
+}

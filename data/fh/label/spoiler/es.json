@@ -1,0 +1,1604 @@
+{
+  "campaignSticker": {
+    "42-temple": "Templo"
+  },
+  "challenges": {
+    "fh": {
+      "1482": {
+        "": "Prueba de armaduras",
+        "text": "Cada vez que cualquier personaje sufra %game.damage% de un ataque no este reducido por %game.action.shield%, se añade %game.action.push% 2 al ataque."
+      },
+      "1483": {
+        "": "Empatía",
+        "text": "Cada vez que algún enemigo sufra %game.damage%, todos los demás enemigos obtienen Ventaja en todos sus ataques durante la ronda en curso."
+      },
+      "1484": {
+        "": "Optimismo",
+        "text": "Cada vez que reveles una carta de Modificador de ataque negativa o %game.attackmodifier.null% del mazo de Modificadores de ataque de monstruo, trátala en su lugar como %game.attackmodifier.plus0%."
+      },
+      "1485": {
+        "": "Mala suerte",
+        "text": "Cada vez que reveles una carta de Modificador de ataque %game.attackmodifier.minus2% del mazo de Modificadores de ataque de monstruo, trátala en su lugar como %game.attackmodifier.double%."
+      },
+      "1486": {
+        "": "Intervención divina",
+        "text": "Añade 3 cartas de Modificador de ataque %game.attackmodifier.bless% al mazo de Modificadores de ataque de monstruo al comienzo del escenario."
+      },
+      "1487": {
+        "": "Hipocondria",
+        "text": "Cada vez que a un personaje se le aplique un estado negativo, también sufre %game.condition.wound%."
+      },
+      "1488": {
+        "": "Contra el viento",
+        "text": "Todos los ataques a distancia enemigos tienen %game.action.range% +1.<br>Añade %game.action.move%+1 a todas las capacidades de Movimiento de los enemigos."
+      },
+      "1489": {
+        "": "Patalear en sueños",
+        "text": "Cada vez que un personaje realice un descanso corto o largo, todos los aliados adyacentes sufren daño por terreno peligroso."
+      },
+      "1490": {
+        "": "La fuerza de la codicia",
+        "text": "Los enemigos realizan %game.action.loot%1 al final de cada uno de sus turnos. Cada vez que un enemigo saquee una ficha de botín, obtiene %game.condition.strengthen%. Si este escenario no tiene mazo de Botín, roba un nuevo desafío y pon esta carta debajo de su mazo."
+      },
+      "1491": {
+        "": "Tácticas alternativas",
+        "text": "Al determinar la iniciativa cada ronda, la iniciativa se ordena de mayor a menor."
+      },
+      "1492": {
+        "": "Púas",
+        "text": "Todos los enemigos no dañados tienen %game.action.retaliate%2."
+      },
+      "1493": {
+        "": "De otra pasta",
+        "text": "Todos los enemigos añaden N/2 (redondeando hacia arriba) a su valor máximo de puntos de vida."
+      },
+      "1494": {
+        "": "Vigilancia",
+        "text": "Cada vez que realices un ataque que tome como objetivo a un enemigo que aún no haya actuado durante esta ronda, sufre Desventaja en el ataque. Cada ves que realices un ataque que tome como objetivo a un enemigo que ya haya actuado durante esta ronda, obtén Ventaja en el ataque."
+      },
+      "1495": {
+        "": "Exterminación tóxica",
+        "text": "La primera vez que muera un enemigo en cada ronda, cada personaje adyacente a él sufre %game.condition.poison%."
+      },
+      "1496": {
+        "": "Festín o inanición",
+        "text": "Retira todas las cartas de Modificadores de ataque %game.attackmodifier.plus0% del mazo de Modificadores de ataque de monstruo al comienzo del escenario. Todos los enemigos son inmunes a %game.condition.curse%."
+      },
+      "1497": {
+        "": "Presas combustibles",
+        "text": "Cada vez que muera un enemigo, uno de los personajes que estén más cercanos a él sufre %game.damage:1% (o %game.damage:2% en escenarios de nivel 4 a 7)."
+      },
+      "1498": {
+        "": "Fuerza seductora",
+        "text": "Todos los ataques a distancia enemigos tienen %game.action.push%1."
+      },
+      "1499": {
+        "": "Distracción brillante",
+        "text": "Siempre que hay a3 o más fichas de Botín reveladas en el tablero al final de cualquier ronda, todos los personajes sufren %game.condition.impair%. Si este escenario no tiene mazo de Botín, roba un nuevo desafío y pon esta carta debajo de su mazo."
+      },
+      "1500": {
+        "": "Agresividad potenciada",
+        "text": "Siempre que se robe una carta de Modificador de ataque %game.attackmodifier.minus1% o %game.attackmodifier.minus2% del mazo de Modificadores de ataque de monstruo, después del ataque, retirar la carta del mazo para el resto del escenario."
+      },
+      "1501": {
+        "": "Reflejos aumentados",
+        "text": "Disminuye todos los valores de iniciativa de los enemigos en 10."
+      },
+      "1502": {
+        "": "Entumecidos de frío",
+        "text": "Los personajes no pueden usar %game.itemSlot:small%."
+      },
+      "1503": {
+        "": "Imitación",
+        "hint": "Por motivos de implementación, ¡el personaje se elige al azar!",
+        "text": "Toma 5 cartas de Modificador de ataque de Pericia al azar de cualquier personaje de Frosthaven desbloqueado ( a elección de los jugadores) que no participe en el escenario. Añádelas al mazo de Modificadores de ataque de monstruo."
+      },
+      "1504": {
+        "": "El oro de los tontos",
+        "text": "Cada vez que un personaje saquee 1 o más fichas e Botín sufre %game.condition.curse%. Si este escenario no tiene mazo de Botín, roba un nuevo desafío y pon esta carta debajo de su mazo."
+      },
+      "1505": {
+        "": "Resaca",
+        "text": "Aumenta todos los valores de iniciativa de los personajes en 10."
+      },
+      "1506": {
+        "": "Formación compacta",
+        "text": "Cada vez que cualquier personaje realice un ataque mientras no esté adyacente a un aliado, sufre %game.action.attack% -1 al ataque."
+      },
+      "1507": {
+        "": "Manufactura chapucera",
+        "text": "Cada vez que vaya a gastarse un objeto en vez de eso se pierde."
+      },
+      "1508": {
+        "": "Formación escalonada",
+        "text": "Al final del turno de cada personaje, todos los personajes adyacentes sufren %game.damage:1%."
+      },
+      "1509": {
+        "": "Raciones de saldo",
+        "text": "Cada vez que un pesonaje descanse, sufre %game.condition.curse%."
+      },
+      "1510": {
+        "": "Avance unido",
+        "text": "Cada vez que cualquier personaje termine su turno a más de 2 hexágonos de distancia de cualquier otro personaje (3 hexágonos de distancia si hay 3 personajes o 4 si hay 4 personajes) el personaje ha terminado su turno sufre %game.condition.muddle%."
+      },
+      "1511": {
+        "": "Niebla densa",
+        "text": "Todas las capacidades de Movimiento de valor 4 o superior de los personajes se reducen en 1."
+      },
+      "1512": {
+        "": "Armadura de pinchos",
+        "text": "Todos los personajes obtienen %game.action.retaliate%X,%game.action.range%3, donde X es u valor de %game.action.shield% . Añade %game.action.attack% -1 a todos los ataques de los personajes."
+      },
+      "1513": {
+        "": "Combate limpio",
+        "text": "Cada vez que un personaje mate a un enemigo, ese personaje sufre todos los estados negativos que tenía el enemigo cuando murió."
+      },
+      "1514": {
+        "": "Falange",
+        "text": "Cada enemigo obtiene %game.action.shield% 1 mientras esté adyacente a 1 o más de sus aliados."
+      },
+      "1515": {
+        "": "Presencia dominante",
+        "text": "Mientras cualquier enemigo ode élite esté presente en el tablero, todos los enemigos normales del mismo tipo obtienen %game.action.shield%1."
+      },
+      "1516": {
+        "": "Tácticas arcanas",
+        "text": "Cada vez que uno o más elementos pasen de Menguante a Inerte al final de una ronda, un personaje sufre daño por terreno peligroso."
+      },
+      "1517": {
+        "": "Calentamineto",
+        "text": "Mientras el valor de puntos de vida de cualquier personaje sea igual o superior a la mitad de su valor máximo de puntos de vida (redondeado hacia abajo) ese personaje sufre Desventaja en todos sus ataques."
+      },
+      "1518": {
+        "": "Enlace de sangre",
+        "text": "La primera vez que cualquier enemigo sufra %game.damage% en cada ronda, otro enemigo dañado realiza %game.action.heal% X, Personal, donde X es el daño sufrido."
+      },
+      "1519": {
+        "": "Abrojos",
+        "text": "Los personajes y sus aliados tratan todos los hexágonos como fichas de Botín como terreno peligroso. Esto no afecta a los enemigos."
+      },
+      "1520": {
+        "": "Dolor compartido",
+        "text": "Cada vez que un enemigo sufra %game.damage%, otro personaje sufre %game.damage:1%."
+      },
+      "1521": {
+        "": "Avasallamiento",
+        "text": "Todos los enemigos añaden %game.action.jump% a todas sus capacidades de Movimiento."
+      },
+      "1522": {
+        "": "Ofensiva ampliada",
+        "hint": "¡Solo se aplica a los monstruos!",
+        "text": "Todas las figuras añaden %game.action.attack% -1 y %game.action.target% +1 a todas sus capacidades de Ataque con un solo objetivo."
+      },
+      "1523": {
+        "": "Manada de caza",
+        "text": "Al comienzo de la tercera ronda, aparece un Sabueso normal en cualquier hexágono inicial por cada personaje del grupo. Si el escenario tiene Sabuesos en la primera sala o 6 tipos de monstruos sin contar los Sabuesos, roba un nuevo desafío y pon esta carta debajo de su mazo."
+      },
+      "1524": {
+        "": "Vigor saludable",
+        "text": "Cada enemigo obtiene %game.action.shield%1 mientras no tenga estados negativos. Cada vez que un enemigo pierda 1 o más estados negativos al final de su turno, sufre %game.damage:1%."
+      },
+      "1525": {
+        "": "Retribución rencorosa",
+        "text": "Cada vez que se reteñiré cualquier estado negativo de cualquier enemigo, este obtiene %game.condition.strengthen%."
+      },
+      "1526": {
+        "": "Atrincherarse",
+        "text": "Al determinar la iniciativa cada ronda, si hay menos monstruos que personajes en el tablero, todos los monstruos obtienen %game.condition.ward.%."
+      }
+    }
+  },
+  "character": {
+    "fh": {
+      "astral": {
+        "": "Inductora",
+        "imbue-with-life": {
+          "": "Imbuir de vida",
+          "hint": "Siempre que no tengas %game.condition.disarm%, sufre %game.condition.disarm%."
+        },
+        "veil-of-protection": {
+          "": "Velo de protección",
+          "hint": "Tus valores de puntos de vida actuales y máximos aumentan en 3."
+        }
+      },
+      "coral": "Marea restallante",
+      "drill": {
+        "": "Mosaico de Metal",
+        "high": "Alta",
+        "low": "Baja",
+        "over": "Excesiva",
+        "regular": "Normal"
+      },
+      "fist": {
+        "": "Puño helado",
+        "gift-of-the-mountain": {
+          "": "Don de la montaña",
+          "hint": "Al final de cada uno de tus turnos, realiza: %game.action.heal% 2, Personal"
+        },
+        "one-with-the-mountain": {
+          "": "Uno con la montaña",
+          "hint": "Siempre que no tengas %game.condition.regenerate%, obtén %game.condition.regenerate%."
+        }
+      },
+      "kelp": {
+        "": "Espectro abisal",
+        "tokens": {
+          "trophy": "Ficha de Trofeo"
+        },
+        "trophy_tokens": {
+          "": "Pericia 11",
+          "hint": "%data.custom.fh.kelp.4%"
+        }
+      },
+      "meteor": "Piroclasto",
+      "prism": {
+        "": "COLMENA",
+        "autoapply_mode": {
+          "": "Modo automático",
+          "hint": "Al activar %data.characterToken.prism.mode%, obtén automáticamente daño y condiciones."
+        },
+        "long_rest": {
+          "": "Pericia 8",
+          "hint": "%data.custom.fh.prism.8%"
+        },
+        "prism_mode": {
+          "": "%data.characterToken.prism.mode% Ficha de Modo",
+          "hint": "%data.characterToken.prism.mode% Modo está activado para invocar, la invocación no se activa en el turno."
+        },
+        "repair_mode": {
+          "": "Ayuda reparadora",
+          "hint": "%data.characterToken.prism.mode% Modo Dron de reparación: Al inicio de cada uno de tus turnos, realiza: %game.action.heal% 2, Personal"
+        },
+        "spider_mode": {
+          "": "Baluarte insectoide",
+          "hint": "%data.characterToken.prism.mode% Modo Araña escudo: Al inicio de cada uno e tus turnos, realiza: %game.condition.ward%, Personal"
+        },
+        "tokens": {
+          "mode": "Ficha de Modo"
+        }
+      },
+      "shackles": "Canalizador de dolor",
+      "shards": {
+        "": "Quiebrasonata",
+        "extra_resonance_tokens": {
+          "": "Pericia 10",
+          "hint": "%data.custom.fh.shards.5%"
+        },
+        "resonance_tokens": {
+          "": "%data.characterToken.shards.resonance% Fichas de Resonancia",
+          "hint": "Al final de cada uno de tus turnos, ganas 1 %data.characterToken.shards.resonance%"
+        },
+        "tokens": {
+          "resonance": "Ficha de Resonancia"
+        }
+      },
+      "snowflake": {
+        "": "Danzanieves",
+        "muddle-monster": {
+          "": "Perícia 9",
+          "hint": "%data.custom.fh.snowflake.4%"
+        }
+      },
+      "trap": "Trampero"
+    }
+  },
+  "custom": {
+    "fh": {
+      "astral": {
+        "1": "Mueve un elemento Menguante a Fuerte",
+        "2": "%game.action.attack% +1 por cada par de %game.action.custom.fh-infusion% activas",
+        "3": "Cuando el personaje quede agotado, mantén en juego todas tus bonificaciones activas y tus invocaciones actuarán a iniciativa 99 cada ronda",
+        "4": "Siempre que realices un descanso corto, puedes %game.element.consume.wild% para %game.card.recover% un Objeto %game.items.slots.onehand% o %game.items.slots.twohand% gastado",
+        "5": "Una vez por escenario, al determinar la iniciativa, después de que se hayan revelado todas las cartas de Capacidad, %game.element.wild%",
+        "6": "Ten 5 bonificaciones %game.action.custom.fh-infusion% activas",
+        "7": "Mata al menos 4 enemigos, pero no ataques nunca"
+      },
+      "coral": {
+        "1": "Si has realizado una acción %data.action.custom.fh-tides% esta ronda, %game.attackmodifier.plus2% en vez de lo anterior",
+        "2": "y, siempre que vayas a sufrir %game.condition.impair%, evítalo",
+        "3": "Siempre que declares un descanso largo durante la selección de cartas, obtén %game.action.shield:1% durante esa ronda",
+        "4": "Obtén Ventaja en todos tus ataques realizados mientras ocupes hexágonos de agua o elijas como objetivos a enemigos que ocupen hexágonos de agua",
+        "5": "No sufras nunca daños por ataques siendo el objetivo de al menos 5 ataques",
+        "6": "Al comienzo de cada uno de tus descansos, consigue tener más %game.action.custom.fh-tides% activas que cartas en tu pila de descartes"
+      },
+      "drill": {
+        "1": "%game.action.custom.fh-pressure-up% O BIEN %game.action.custom.fh-pressure-down%",
+        "2": "El objetivo y todos los enemigos adyacentes a él sufren %game.damage:1%",
+        "3": "Siempre que realices un descanso largo, puedes %game.action.custom.fh-pressure-up% O BIEN %game.action.custom.fh-pressure-down%",
+        "4": "Siempre que vayas a sufrir %game.condition.poison%, puedes sufrir %game.damage:1% para evitarlo",
+        "5": "Una vez por escenario, cuando este personaje vaya a quedar agotado, en su lugar obtienes %game.condition.stun% y %game.condition.invisible%, pierdes todas tus cartas, %game.card.recover% 4 cartas perdidas y luego descarta las cartas recuperadas",
+        "6": "No ataques nunca",
+        "7": "Durante 4 rondas consecutivas, sube o baja el manómetro 3 niveles desde donde empezó la ronda (%game.action.custom.fh-pressure-low% a %game.action.custom.fh-pressure-over%, o viceversa)"
+      },
+      "fist": {
+        "1": "Crea 1 pieza de terreno helado de 1 hexágono en un hexágono sin accesorios adyacente",
+        "2": "y, siempre que entres en terreno helado con una capacidad de Movimiento, puedes ignorar el efecto para sumar %game.action.move% +1",
+        "3": "Siempre que te cures con un descanso largo, puedes %game.elementHalf.consume:ice|earth% para añadir %game.action.heal%+2",
+        "4": "Una vez por escenario, cuando vayas a sufrir %game.damage%, puedes prevenir ese %game.damage%,",
+        "5": "%game.card.recover% al menos 1 carta de tu pila de descartes cada ronda",
+        "6": "En el mismo turno, entra en al menos 10 hexágonos diferentes con una capacidad de Movimiento y luego haz que un enemigo sufra al menos %game.damage:10% con una capacidad de Ataque"
+      },
+      "kelp": {
+        "1": "Obtén 1 %game.characterToken.kelp.trophy%",
+        "2": "Obtén 1 %game.action.custom.fh-trophy%",
+        "3": "Siempre que realices un descanso largo, puedes %game.action.loot% 1 hexágono adyacente; si obtienes alguna ficha de Botín, obtén también 1 %game.action.custom.fh-trophy%",
+        "4": "Al comienzo de cada escenario, obtén 2 %game.action.custom.fh-trophy%",
+        "5": "Mientras tengas %game.condition.invisible%, obtienes Ventaja en todos tus ataques",
+        "6": "Realiza todos tus ataques con Ventaja",
+        "7": "Imbuye %game.element.dark% cada ronda"
+      },
+      "meteor": {
+        "1": "Crea una pieza de terreno peligroso de 1 hexágono en un hexágono sin accesorios adyacente al objetivo",
+        "2": "Siempre que realices un descanso largo, puedes destruir un obstáculo adyacente para obtener %game.condition.ward%",
+        "3": "Siempre que realices un descanso corto, puedes %game.element.consume.fire% para realizar %game.condition.wound%, %game.action.target:1% enemigo que ocupe o esté adyacente a terreno peligroso",
+        "4": "A ti y a todos los aliados no os afecta el terreno peligroso que tú creas",
+        "5": "Crea o destruye al menos 1 pieza de obstáculo o terreno peligroso en cada ronda",
+        "6": "Mueve a enemigos por 6 hexágonos diferentes de terreno peligroso creados por ti en un mismo turno"
+      },
+      "prism": {
+        "1": "Al final del turno realiza:",
+        "10": "Siempre que vayas a sufrir %game.condition.wound%, evítalo",
+        "11": "%game.action.custom.fh-mode% todas las rondas",
+        "12": "%game.action.custom.fh-mode% a 4 invocaciones diferentes en una misma ronda",
+        "2": "Centra su atención en el enemigo más lejano a COLMENA.",
+        "3": "Todos los aliados adyacentes obtienen %game.action.shield% 1.",
+        "4": "Cuando te ataquen, reduce el %game.damage% en 1 por cada estado negativo que tenga el atacante.",
+        "5": "Aplica %game.condition.wound% a todas las figuras adyacentes y Personal al final del turno.",
+        "6": "Después de esta capacidad de Ataque, otorga a 1 de tus invocaciones: %game.action.move:2%",
+        "7": "Después de esta capacidad de Ataque, %game.action.custom.fh-mode%",
+        "8": "Siempre que realices un descanso largo, puedes hacerlo con cualquier valor de iniciativa, que eliges después de que se haya revelado todas las cartas de Capacidad, y tú decides cómo realizan sus capacidades tus invocaciones durante la ronda",
+        "9": "Al final de cada uno de tus descansos cortos, puedes %game.action.custom.fh-mode%"
+      },
+      "shackles": {
+        "1": "Al atacar, ignora %game.action.retaliate%",
+        "2": "todos los enemigos a 2 hexágonos o menos",
+        "3": "Añade %game.action.attack% + 1 por cada estado negativo que tengas",
+        "4": "Cada ronda en la que realices un descanso largo, puedes ignorar todos los estados negativos que tengas; si lo haces no se podrán retirar durante esa ronda",
+        "5": "Siempre que este personaje quede agotado, realiza primero %game.condition.curse%, %game.action.target% todos, %game.action.range:3%",
+        "6": "Aumenta tu valor máximo de puntos de vida en 5",
+        "7": "Consigue que otras figuras sufran un total de al menos %game.damage:40% en una misma ronda",
+        "8": "Empieza tu turno con %game.condition.wound%,%game.condition.brittle%,%game.condition.bane%,%game.condition.poison%,%game.condition.immobilize%,%game.condition.disarm%,%game.condition.stun% y %game.condition.muddle%"
+      },
+      "shards": {
+        "1": "Revela la primera carta del mazo de Capacidades de monstruo del objetivo",
+        "2": "Obtén 1 %game.characterToken.shards.resonance%",
+        "3": "Obtén 1 %game.action.custom.fh-resonance%",
+        "4": "Siempre que realices un descanso corto, puedes %game.element.consume.air% para realizar %game.condition.strengthen%, %game.action.range:3% y %game.element.consume.light% para realizar %game.condition.bless%, %game.action.range:3%",
+        "5": "Al comienzo de cada escenario, puedes sufrir %game.condition.brittle% para obtener 2 %game.action.custom.fh-resonance%",
+        "6": "Cada vez que se revele una nueva sala, puedes revelar la primera carta del mazo de Modificadores de ataque de monstruo y de todos los mazos de Modificadores de ataque de los aliados",
+        "7": "Ten siempre %game.action.custom.fh-resonance% 0 directamente antes de obtener %game.action.custom.fh-resonance% al final de cada uno de tus turnos",
+        "8": "Gasta 5 %game.action.custom.fh-resonance% en cada una de las 5 capacidades de Onda diferentes"
+      },
+      "snowflake": {
+        "1": "Si esta acción obliga al objetivo a moverse, este sufre %game.damage:1%",
+        "2": "Siempre que realices un descanso largo, puedes %game.elementHalf:ice|air%",
+        "3": "Siempre que realices un descanso corto, puedes %game.element.consume.ice% para realizar %game.condition.regenerate%, %game.action.range:3% y %game.element.consume.air% para realizar %game.condition.ward%, %game.action.range:3%",
+        "4": "Al comienzo de cada escenario, todos los enemigos sufren %game.condition.muddle%; cada vez que se revele una nueva sala, todos los enemigos de la nueva sala sufren %game.condition.muddle%",
+        "5": "Haz que al menos un aliado o enemigo se mueva en cada ronda",
+        "6": "Asegúrate de que el primer aliado que sufra %game.damage% en cada ronda tenga al menos un estado que tú hayas aplicado justo antes de sufrir el %game.damage%"
+      },
+      "trap": {
+        "1": "Crea 1 trampa %game.damage:2% en un hexágono adyacente vacío al final del turno.",
+        "10": "Mueve a enemigos por 7 o más trampas con una misma capacidad",
+        "2": "Crea 1 trampa %game.action.heal% 2 en un hexágono vacío adyacente al objetivo",
+        "3": "Crea 1 trampa %game.damage:1% en 1 hexágono vacío adyacente al objetivo",
+        "4": "Añade %game.damage:2% o %game.action.heal% 2 a una trampa a %game.action.range:2% o menos de ti",
+        "5": "Añade %game.action.push% 2 o %game.action.pull% 2",
+        "6": "Cada vez que realices un descanso largo, puedes crear 1 trampa %game.damage:1% en un hexágono vacío adyacente",
+        "7": "Siempre que entres en un hexágono con una trampa, puedes elegir no activarla",
+        "8": "Al comienzo de cada escenario, puedes crear 1 trampa %game.damage:2% en un hexágono vacío adyacente",
+        "9": "Ten 1 trampa %game.action.heal% en el tablero con un valor de al menos 20 (%game.damage:20% en la edición española)"
+      }
+    }
+  },
+  "items": {
+    "fh-1": {
+      "": "Catalejo",
+      "1": "Durante tu capacidad de Ataque, obtén Ventaja en 1 ataque."
+    },
+    "fh-10": {
+      "": "Escudo tosco",
+      "1": "Cuando un enemigo vaya a aplicarte un estado negativo, evita sufrir ese estado"
+    },
+    "fh-100": {
+      "": "Poción de resistencia mayor",
+      "1": "Durante tu turno, %game.card.recover% 1 carta de tu pila de descartes."
+    },
+    "fh-101": {
+      "": "Poción de poder mayor",
+      "1": "Durante tu turno, añade +2 %game.action.attack% a todos tus ataques."
+    },
+    "fh-102": {
+      "": "Poción elemental mayor",
+      "1": "Durante tu turno, %game.element.wild% %game.element.wild%"
+    },
+    "fh-103": {
+      "": "Poción de remedio mayor",
+      "1": "Durante tu turno, retira todos los estados negativos que sufras. Puedes usarla incluso si sufres %game.condition.impair% o %game.condition.stun%."
+    },
+    "fh-104": {
+      "": "Poción de agilidad",
+      "1": "Durante tu capacidad de Movimiento, añade %game.action.move% +3 y %game.action.jump%."
+    },
+    "fh-105": {
+      "": "Poción de piroescudo mayor",
+      "1": "Durante tu turno, realiza: %game.action.retaliate% 2 %game.action.range:3%"
+    },
+    "fh-106": {
+      "": "Poción de muro pétreo",
+      "1": "Durante tu turno, realiza %game.condition.ward% %game.action.target% 2 aliados adyacentes y Personal"
+    },
+    "fh-107": {
+      "": "Poción de vigor",
+      "1": "Durante tu turno, realiza: %game.condition.strengthen% %game.action.target% 2 aliados adyacentes y Personal"
+    },
+    "fh-108": {
+      "": "Lluvia bendita",
+      "1": "Durante tu turno, realiza: %game.condition.bless% %game.action.target% 2 aliados adyacentes y Personal"
+    },
+    "fh-109": {
+      "": "Poción revitalizadora mayor",
+      "1": "Durante tu turno, %game.card.recover% hasta 1 de tus pociones de 2 plantas perdidas."
+    },
+    "fh-11": {
+      "": "Amuleto sencillo",
+      "1": "Al inicio del escenario, retira 1 carta de Modificador de ataque %game.attackmodifier.minus1% de tu mazo de Modificadores de ataque."
+    },
+    "fh-110": {
+      "": "Poción de precisión",
+      "1": "Cuando reléeles una carta de Modificador de ataque %game.attackmodifier.null% de tu mazo de Modificadores de ataque, trátala en su lugar como %game.attackmodifier.plus2%."
+    },
+    "fh-111": {
+      "": "Poción de frenesí mayor",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-112": {
+      "": "Poción de martillo",
+      "1": "Durante tu turno, sufre %game.damage% 10."
+    },
+    "fh-113": {
+      "": "Poción de soltura",
+      "1": "Al inicio de tu turno, descarta 1 de tus cartas jugadas para realizar tanto la acción superior como la inferior de tu otra carta jugada. Solo una acción como máximo puede activar un símbolo %game.card.lost%."
+    },
+    "fh-114": {
+      "": "Poción de presciencia",
+      "1": "Durante tu turno, revela la primera carta de un mazo de Capacidades de monstruo. Puedes ponerla debajo del mazo."
+    },
+    "fh-115": {
+      "": "Poción de inducción",
+      "1": "Durante tu turno, ignora un símbolo de consumo elemental en una acción de hayas jugado y obtén su efecto."
+    },
+    "fh-116": {
+      "": "Petaca de plaga",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-117": {
+      "": "Petaca de infierno",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-118": {
+      "": "Petaca fulminante",
+      "1": "Durante tu turno, 1 enemigo a %game.action.range:2% o menos sufre %game.damage% 4."
+    },
+    "fh-119": {
+      "": "Mejunje letal",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-12": {
+      "": "Cota de malla tosca",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:2% para dicho ataque."
+    },
+    "fh-120": {
+      "": "Amuleto de vida",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-121": {
+      "": "Diadema de los elementos",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-122": {
+      "": "Túnica de centinela",
+      "1": "Cuando una de tus invocaciones sufre %game.damage% por un ataque, dicha invocación obtiene %game.action.shield:2% para dicho ataque."
+    },
+    "fh-123": {
+      "": "Armadura de cuero",
+      "1": "Cuando te ataquen, antes de robar una carta de Modificador de ataque, el atacante sufre Desventaja en el ataque."
+    },
+    "fh-124": {
+      "": "Zapatos alados",
+      "1": "Durante tu turno, añade %game.action.jump%a todas tus capacidades de Movimiento."
+    },
+    "fh-125": {
+      "": "Zapatos de velocidad",
+      "1": "Al determinar la iniciativa, después de que todas las cartas de Capacidad hayan sido reveladas, aumenta o disminuye tu iniciativa en 10."
+    },
+    "fh-126": {
+      "": "Red contrapesada",
+      "1": "Durante tu capacidad de Ataque a distancia, añade %game.condition.immobilize% a 1 ataque."
+    },
+    "fh-127": {
+      "": "Daga envenenada",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.condition.poison% a 1 ataque."
+    },
+    "fh-128": {
+      "": "Escudo gótico",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:1%para dicho ataque."
+    },
+    "fh-129": {
+      "": "Lentes ojo de águila",
+      "1": "Durante tu capacidad de Ataque, obtén Ventaja en todos los ataques."
+    },
+    "fh-13": {
+      "": "Zapatillas de baile",
+      "1": "Después de sufrir %game.damage% por un ataque, realiza:"
+    },
+    "fh-130": {
+      "": "Yelmo de hierro",
+      "1": "Cuando te ataquen, trata cualquier carta de Modificador de ataque %game.attackmodifier.double% que robe el enemigo como %game.attackmodifier.plus0% en su lugar."
+    },
+    "fh-131": {
+      "": "Cota de malla",
+      "1": "Para las 3 próximas fuentes de %game.damage% de ataques que te tomen como objetivo, obtén %game.action.shield:1% para dichos ataques."
+    },
+    "fh-132": {
+      "": "Capa de bolsillos",
+      "1": "Al inicio del escenario, lleva 1 objeto %game.items.slots.small% adicional."
+    },
+    "fh-133": {
+      "": "Perneras de ligereza",
+      "1": "Cuando un aliado adyacente vaya a ser el objetivo de un ataque, en su lugar te toma como objetivo a ti, independientemente del alcance y de la línea de visión."
+    },
+    "fh-134": {
+      "": "Zapatos cómodos",
+      "1": "Cuando uses la acción inferior básica de una carta de Capacidad, realiza %game.action.move% 3 en lugar de %game.action.move% 2."
+    },
+    "fh-135": {
+      "": "Arco rompearmaduras",
+      "1": "Durante tu turno, añade %game.action.pierce% a todos tus ataques a distancia."
+    },
+    "fh-136": {
+      "": "Hacha de batalla",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo con un solo objetivo, cambia el objetivo de la capacidad a:"
+    },
+    "fh-137": {
+      "": "Pavés",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:2% para dicho ataque."
+    },
+    "fh-138": {
+      "": "Bacinete pesado",
+      "1": "Siempre que un enemigo vaya a aplicarte %game.condition.disarm%, %game.condition.stun%, o %game.condition.muddle%, evita sufrir ese estado."
+    },
+    "fh-139": {
+      "": "Yelmo con cuernos",
+      "1": "Después de moverte 4 o más hexágonos en tu turno, añade +1 %game.action.attack% a tu próximo ataque cuerpo a cuerpo de este turno."
+    },
+    "fh-14": {
+      "": "Espada pesada",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.action.attack% +1 a 1 ataque."
+    },
+    "fh-140": {
+      "": "Manto de invocación",
+      "1": "Durante tu turno, otorga a 1 de tus invocaciones: %game.action.shield:2%."
+    },
+    "fh-141": {
+      "": "Cuero tachonado",
+      "1": "Cuando te ataquen, antes de robar una carta de Modificador de ataque, el atacante sufre Desventaja en el ataque y tu obtienes %game.action.shield:1% para el ataque."
+    },
+    "fh-142": {
+      "": "Botas de aceleración",
+      "1": "Al determinar la iniciativa, después de que todas las cartas de Capacidad hayan sido reveladas, aumenta o disminuye tu iniciativa en 20."
+    },
+    "fh-143": {
+      "": "Sandalias de robustez",
+      "1": "Después de moverte 4 o más hexágonos en tu turno, tras la capacidad de Movimiento, realiza:"
+    },
+    "fh-144": {
+      "": "Bastón de eminencia",
+      "1": "Durante tu turno, %game.element.consume.wild% para añadir %game.action.attack% +1 a todos tus ataques."
+    },
+    "fh-145": {
+      "": "Daga versátil",
+      "1": "Cuando uses la acción superior básica de una carta de Capacidad, realiza %game.action.attack% 3 en lugar de %game.action.attack% 2."
+    },
+    "fh-146": {
+      "": "Cadena con garfio",
+      "1": "Durante tu turno, añade %game.action.pull% 2 a todos tus ataques a distancia."
+    },
+    "fh-147": {
+      "": "Máscara del terror",
+      "1": "Durante tu ataque cuerpo a cuerpo, añade %game.action.push%."
+    },
+    "fh-148": {
+      "": "Diadema de santidad",
+      "1": "Después de los 3 próximos ataques que tomen como objeto a un aliado a %game.action.range:2% o menos, dale la vuelta a esta carta.",
+      "2": "Durante tu turno, realiza:",
+      "4": "y luego dale la vuelta a esta carta"
+    },
+    "fh-149": {
+      "": "Arnés",
+      "1": "Para las 5 próximas fuentes de %game.damage%de ataques que te tomen como objetivo, obtén %game.action.shield:1% para dichos ataques."
+    },
+    "fh-15": {
+      "": "Escudo reforzado",
+      "1": "Cuando un enemigo vaya a aplicarte un estado negativo, evita sufrir ese estado."
+    },
+    "fh-150": {
+      "": "Túnica del Roble",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-151": {
+      "": "Sandalias de serenidad",
+      "1": "Cuando uses la acción inferior básica de una carta de Capacidad, realiza %game.action.move% 4 en lugar de %game.action.move% 2."
+    },
+    "fh-152": {
+      "": "Escarpes de acero",
+      "1": "Al final de tu turno, si te has movido 1 o menos hexágonos durante tu turno, obtén %game.action.shield:1% durante esta ronda."
+    },
+    "fh-153": {
+      "": "Lanza larga",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo con un solo objetivo, cambia el objetivo de la capacidad a:"
+    },
+    "fh-154": {
+      "": "Bomba volátil",
+      "1": "Durante tu capacidad de Ataque a distancia con un solo objetivo, cambia el objetivo de la capacidad a:"
+    },
+    "fh-155": {
+      "": "Scutum",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:4% para dicho ataque."
+    },
+    "fh-156": {
+      "": "Pendiente de luna",
+      "1": "Cuando hagas un descanso corto, %game.card.recover% hasta 3 de tus objetos gastados."
+    },
+    "fh-157": {
+      "": "Anillo de acero",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:4% para dicho ataque."
+    },
+    "fh-158": {
+      "": "Broche de las profundidades",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-159": {
+      "": "Brazalete glorioso",
+      "1": "Después de tu capacidad de Ataque durante la cual un enemigo sufrió al menos %game.damage% 6, realiza:"
+    },
+    "fh-16": {
+      "": "Casco inspirador",
+      "1": "Durante tu turno, otorga a todos los aliados adyacentes: %game.action.move% 2"
+    },
+    "fh-160": {
+      "": "Pendiente de sol",
+      "1": "Cuando hagas un descanso corto, %game.card.recover% hasta 3 de tus objetos gastados y realiza:"
+    },
+    "fh-161": {
+      "": "Anillo de estratega",
+      "1": "Al final de tu turno, juega 1 carta de tu mano y realiza todas las capacidades continuas y obligatorias de la acción superior o inferior de la carta."
+    },
+    "fh-162": {
+      "": "Broche de hielo aullarte",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-163": {
+      "": "Pulsera aturdidora",
+      "1": "Durante tu turno, aplica %game.condition.stun% a. la mitad (redondeando hacia arriba) de los enemigos adyacentes a ti."
+    },
+    "fh-166": {
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-167": {
+      "": "Brazalete de atracción",
+      "1": "Al inicio del turno de un enemigo, antes de que centre su atención, realiza:"
+    },
+    "fh-17": {
+      "": "Armadura de cuero curtido",
+      "1": "Para los 2 próximos ataques que te tomen como objetivo, el atacante sufre Desventaja."
+    },
+    "fh-170": {
+      "": "Ojo de la Verdad",
+      "1": "Durante tu turno, revela la carta superior de cada mazo de habilidades de cada monstruo."
+    },
+    "fh-171": {
+      "": "Amuleto rejuvenecedor",
+      "1": "Siempre que pierdas una carta para prevenir %game.damage%, %game.card.recover% hasta 1 carta de tu pila de descartes y obtén %game.condition.regenerate%."
+    },
+    "fh-174": {
+      "1": "Durante tu turno, realiza: %game.action.teleport% 20 Este teletransporte debe finalizar en un hexágono adyacente a uno de tus aliados."
+    },
+    "fh-176": {
+      "1": "Durante tu turno, realiza: %game.action.teleport% 4 Este teletransporte debe finalizar en un hexágono adyacente a uno de tus enemigos."
+    },
+    "fh-177": {
+      "": "Botas de transferencia",
+      "1": "Cuando actives una trampa por entrar en su hexágono, puedes aplicar sus efectos a una figura a %game.action.range:3% o menos en lugar de a ti."
+    },
+    "fh-179": {
+      "": "Botas de prisa",
+      "1": "Durante tu capacidad de Movimiento, añade +4 %game.action.move%. Después de la capacidad de Movimiento, sufre %game.condition.immobilize%."
+    },
+    "fh-18": {
+      "": "Botas humildes",
+      "1": "Durante tu turno, añade %game.action.move% +1 a todas sus capacidades de Movimiento."
+    },
+    "fh-180": {
+      "": "Botas de avaricia",
+      "1": "Siempre que saquees 2 o más fichas de Botín a la vez, realiza: %game.condition.bless% Personal."
+    },
+    "fh-182": {
+      "": "Cortaalas",
+      "1": "Después de tu ataque cuerpo a cuerpo, pon una ficha de Personaje sobre el objetivo. El objetivo pierde %game.action.fly%."
+    },
+    "fh-183": {
+      "": "Jarra de nieblas",
+      "1": "Durante tu turno, todas las figuras sufren Desventaja y %game.action.range%-1 en todos sus ataques a distancia de esta ronda. "
+    },
+    "fh-185": {
+      "": "Cuchillo espejado",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, suma todos los estados negativos que tengas excepto %game.condition.brittle%, %game.condition.bane% y %game.condition.stun% a 1 ataque."
+    },
+    "fh-186": {
+      "": "Semillas de brote inusitado",
+      "1": "Durante tu turno, crea 1 obstáculo de 1 hexágono en un hexágono vacío adyacente."
+    },
+    "fh-188": {
+      "": "Cristal congelate",
+      "1": "Durante tu turno, crea 1 pieza de 1 hexágono de terreno peligroso, terreno helado o agua en un hexágono sin accesorios adyacente."
+    },
+    "fh-189": {
+      "": "Anillo de la noche",
+      "1": "Durante tu turno, realiza"
+    },
+    "fh-19": {
+      "": "Martillo tintineate",
+      "1": "Durante tu capacidad de Ataque, añade %game.condition.muddle% a todos tus ataques."
+    },
+    "fh-191": {
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-195": {
+      "": "Tricornio",
+      "1": "Durante tu turno, añade %game.action.range% +1 y %game.action.pierce% a 1 de tus ataques a distancia."
+    },
+    "fh-196": {
+      "1": "Durante tu turno, descarta 1 carta de botín excepto Objeto Aleatoria para realizar:"
+    },
+    "fh-197": {
+      "": "Diadema etérida",
+      "1": "Después de determinar la iniciativa, cambia 1 carta de tu mano por otra que hayas jugado. Tu iniciativa no se ve afectada."
+    },
+    "fh-198": {
+      "": "Collar del cazador",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-199": {
+      "": "Zapatos opulentos",
+      "1": "Desde el inicio del escenario y para el resto de este, considera que vas antes que tus invocaciones en orden de iniciativa a efectos de atención de los monstruos."
+    },
+    "fh-2": {
+      "": "Casco tosco",
+      "1": "Cuando te ataquen, trata cualquier carta de Modificador de ataque %game.attackmodifier.double% que robe el enemigo como %game.attackmodifier.plus1% en su lugar."
+    },
+    "fh-20": {
+      "": "Arco bien tensado",
+      "1": "Durante tu turno, añade %game.action.range% +1 a todos tus ataques a distancia."
+    },
+    "fh-204": {
+      "": "Pinza amputada",
+      "1": "Durante tu turno, 1 enemigo normal o de élite adyacente sufre %game.damage% igual a su valor de %game.action.shield%."
+    },
+    "fh-21": {
+      "": "Almófar",
+      "1": "Mientras estés adyacente a 3 o más enemigos, obtén %game.action.shield:1%."
+    },
+    "fh-211": {
+      "": "Barril explosivo",
+      "1": "Durante tu turno, designa 1 hexágono adyacente. Al final de tu turno, todas las figuras a %game.action.range:2% o menos del hexágono designado sufren %game.damage% 1."
+    },
+    "fh-212": {
+      "": "Gema elemental",
+      "1": "Después de determinar la iniciativa, elige un elemento. Ningún monstruo puede inducir o consumir este elemento durante esta ronda. "
+    },
+    "fh-215": {
+      "": "Jarra confundidora",
+      "1": "Durante tu turno, añade %game.action.attack% +1 y %game.condition.muddle% a todos tus ataques. Al final de tu turno, realiza:"
+    },
+    "fh-218": {
+      "": "Tomo de vida",
+      "1": "Durante tu turno, retira todos los estados de todas las figuras y otorga a todas las figuras:"
+    },
+    "fh-22": {
+      "": "Cota de malla pesada",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:3% para dicho ataque."
+    },
+    "fh-221": {
+      "": "Estilete de hielo",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, %game.element.consume.ice% para añadir %game.action.pierce% 3 a 1 ataque."
+    },
+    "fh-222": {
+      "1": "Durante tu turno, descarta 2 cartas de tu mano para realizar:"
+    },
+    "fh-223": {
+      "": "Pararayos",
+      "1": "Después de determinar la iniciativa, todos los monstruos consideran que vas primero en el orden de iniciativa al centrar su atención durante esta ronda. "
+    },
+    "fh-224": {
+      "": "Armadura de Empatía",
+      "1": "Después de los siguientes tres ataques dirigidos a ti, da la vuelta a esta carta.",
+      "2": "Durante tu turno, realiza:",
+      "4": "después, da la vuelta a esta carta."
+    },
+    "fh-225": {
+      "": "Figura algox",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, %game.element.consume.earth% para añadir %game.action.attack% +1 a 1 ataque, y luego dale la vuelta a esta carta.",
+      "2": "Durante tu capacidad de Ataque, %game.element.consume.air% para añadir %game.action.push% 2 a 1 ataque, y luego dale la vuelta a esta carta."
+    },
+    "fh-227": {
+      "": "Unidad de datos",
+      "1": "Cuando hagas un descanso corto, pon la mitad (redondeando hacia abajo) de tu pila de descartes encima de este objeto, pierde 1 de las cartas restantes al azar como es habitual, y luego roba las cartas que hay encima de este objeto."
+    },
+    "fh-23": {
+      "": "Grebas robustas",
+      "1": "Al inicio de tu turno, añade %game.action.move% -2 a todas tus capacidades de Movimiento para obtener %game.action.shield% durante esta ronda. "
+    },
+    "fh-231": {
+      "": "Cuchillo de desollar",
+      "1": "Cuando obtengas una ficha de Botín, obtén 3 Pieles en lugar de robar una carta de Botín."
+    },
+    "fh-233": {
+      "": "Cuervo muerto",
+      "1": "Durante la capacidad de Ataque a distancia de un aliado, aplica %game.condition.muddle% y %game.condition.curse% a 1 ataque."
+    },
+    "fh-236": {
+      "": "Espejo agrietado",
+      "1": "Durante tu turno, pierde 1 carta de tu mano para %game.card.recover% una carta de tu pila de perdida de un nivel igual o inferior."
+    },
+    "fh-239": {
+      "": "Ojo de la tormenta",
+      "1": "Durante tu turno, todos los aliados y enemigos a %game.action.range:2% o menos sufren %game.damage% 1."
+    },
+    "fh-24": {
+      "": "Filo corrupto",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.condition.wound%, %game.condition.poison%, y %game.condition.muddle% a 1 ataque."
+    },
+    "fh-240": {
+      "": "Gema del demonio",
+      "1": "Cuando falléis un escenario, sigues obteniendo todas las %game.checkmark% de tu Objetivo de batalla si lo has cumplido."
+    },
+    "fh-243": {
+      "": "Roca Maldita",
+      "1": "Este artículo no se puede vender, y se debe llevar y usar en cada escenario.",
+      "2": "Al inicio del escenario, realiza:"
+    },
+    "fh-244": {
+      "": "Ámbar de energía",
+      "1": "Durante tu turno, aumenta en 1 el valor numérico impreso de %game.action.attack%, %game.action.move%, %game.action.target%, o %game.action.range% de 1 de tus capacidades."
+    },
+    "fh-245": {
+      "": "Moneda antigua"
+    },
+    "fh-246": {
+      "": "Tarjeta llave"
+    },
+    "fh-247": {
+      "": "Red de adiestrador",
+      "1": "Durante tu turno, captura a 1 enemigo adyacente cuyo valor de puntos de vida sea 1 o 2."
+    },
+    "fh-25": {
+      "": "Centro sosegante",
+      "1": "Durante tu turno, realiza: %game.condition.regenerate% %game.action.target% 1 aliado, %game.action.range:2%"
+    },
+    "fh-26": {
+      "": "Anteojos de visión",
+      "1": "Durante tu capacidad de Ataque, trata todas las cartas de Modificador negativas y %game.attackmodifier.null% como %game.attackmodifier.plus0% en su lugar."
+    },
+    "fh-27": {
+      "": "Capa de salvaguarda",
+      "1": "Inmediatamente después de que un enemigo termine su capacidad de Movimiento adyacente a ti, realiza: %game.action.push% 1 %game.action.target% el enemigo"
+    },
+    "fh-28": {
+      "": "Botas robustas",
+      "1": "Durante tu turno, añade %game.action.move% +1 a todas tus capacidades de Movimiento e ignora el terreno impracticable."
+    },
+    "fh-29": {
+      "": "Hacha de verdugo",
+      "1": "Después de tu ataque cuerpo a cuerpo, un enemigo adyacente al objetivo sufre %game.damage% 2."
+    },
+    "fh-3": {
+      "": "Capa de viaje",
+      "1": "Al inicio del escenario, aumenta tu valor máximo de puntos de vida en 1."
+    },
+    "fh-30": {
+      "": "Guantelete de parada",
+      "1": "Inmediatamente después de que un enemigo termine su capacidad de Movimiento adyacente a ti, realiza: %game.action.attack% 3 %game.action.target% el enemigo"
+    },
+    "fh-31": {
+      "": "Amuleto contra la muerte",
+      "1": "Cuando vayas a sufrir %game.damage% de cualquier fuente, prevén el %game.damage%."
+    },
+    "fh-32": {
+      "": "Armadura de conchas",
+      "1": "Durante tu turno, realiza: %game.condition.ward% Personal"
+    },
+    "fh-33": {
+      "": "Botas volátiles",
+      "1": "Hasta una vez por turno, durante tu capacidad de Movimiento, añade %game.action.move% +1 y luego dale la vuelta a esta carta al final de tu turno.",
+      "2": "Hasta una vez por turno, durante tu capacidad de Movimiento, sufre %game.damage:1% y luego dale la vuelta a esta carta al final de tu turno."
+    },
+    "fh-34": {
+      "": "Bomba de metralla",
+      "1": "Después de tu ataque a distancia, todos los enemigos adyacentes al objetivo sufren %game.damage% 2."
+    },
+    "fh-35": {
+      "": "Escudo de lágrima",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:1% para dicho ataque y prevén cualquier estado negativo del ataque."
+    },
+    "fh-36": {
+      "": "Casco de penacho",
+      "1": "Cuando te ataquen con un ataque con Desventaja, trata todas las cartas de Modificador de ataque %game.attackmodifier.plus0% y %game.attackmodifier.plus1% como %game.attackmodifier.minus1%."
+    },
+    "fh-37": {
+      "": "Capa fantasmal",
+      "1": "Durante tu turno, sufre %game.damage% 3 para realizar:"
+    },
+    "fh-38": {
+      "": "Zapatos de duelista",
+      "1": "Durante tu turno, realiza: %game.action.move% 2 Este movimiento debe terminar adyacente a un enemigo."
+    },
+    "fh-39": {
+      "": "Hacha abisal",
+      "1": "Durante tu capacidad de Ataque, añade %game.action.attack% +3 y %game.action.pierce% 1 a un ataque que tenga como objetivo a un Cadáver helado, un Espectro de hielo o una Perdición viviente."
+    },
+    "fh-4": {
+      "": "Armadura de piel tosca",
+      "1": "Para los 2 próximos ataques que te tomen como objetivo, el atacante sufre Desventaja."
+    },
+    "fh-40": {
+      "": "Arco clavacorazones",
+      "1": "Durante tu turno, añade %game.action.attack% +1 y %game.action.range% +2 a 1 de tus ataques a distancia."
+    },
+    "fh-41": {
+      "": "Amuleto intrincado",
+      "1": "Al inicio del escenario, retira 1 carta de Modificador de ataque %game.attackmodifier.plus0% y 1 %game.attackmodifier.minus1% de tu mazo de Modificadores de ataque."
+    },
+    "fh-42": {
+      "": "Armadura ornamentada",
+      "1": "Para las 2 próximas fuentes de %game.damage% de ataques que te tomen como objetivo, obtén %game.action.shield:2% para dichos ataques."
+    },
+    "fh-43": {
+      "": "Botas de patear",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.action.push%2 a 1 ataque."
+    },
+    "fh-44": {
+      "": "Espada de absolución",
+      "1": "Cuando vayas a sufrir %game.condition.poison% o %game.condition.curse%, obtén %game.condition.bless% en su lugar."
+    },
+    "fh-45": {
+      "": "Cetro maestro",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-46": {
+      "": "Gafas de doble lente",
+      "1": "Durate tu capacidad de Ataque, obtén Ventaja en todos los ataque y trata todas las cartas de Modificador de ataque %game.attackmodifier.plus0% y %game.attackmodifier.minus1% como %game.attackmodifier.plus1% en su lugar."
+    },
+    "fh-47": {
+      "": "Túnica de condena",
+      "1": "Para las 2 próximas fuentes de %game.damage% de ataques que te tomen como objetivo, sufre %game.damage% 3 para aplicar %game.condition.brittle% al atacante."
+    },
+    "fh-48": {
+      "": "Zapatos vivientes",
+      "1": "Después de la capacidad de Curación de cualquier aliado que te tome como objetivo, realiza:"
+    },
+    "fh-49": {
+      "": "Daga cruel",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo añade %game.action.attack%+1 y %game.condition.wound% a 1 ataque."
+    },
+    "fh-5": {
+      "": "Botas toscas",
+      "1": "Durante tu capacidad de Movimiento, añade +1 %game.action.move%"
+    },
+    "fh-50": {
+      "": "Escudo de reprocidad",
+      "1": "Cuando sufras %game.damage% por un ataque, obtén %game.action.shield:1% para dicho ataque y luego dale la vuelta a esta carta.",
+      "2": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.action.pierce% 1 a 1 ataque y luego dale la vuelta a esta carta."
+    },
+    "fh-51": {
+      "": "Collar de púas",
+      "1": "Durante tu turno, realiza: %game.condition.wound% Personal"
+    },
+    "fh-52": {
+      "": "Anteojos láser",
+      "1": "Durante tu turno, %game.element.consume.fire% para hacer que hasta 2 enemigos a %game.action.range:4% o menos sufran %game.damage% 1."
+    },
+    "fh-53": {
+      "": "Botas de clavos",
+      "1": "Después de moverte 4 o más hexágonos durante tu turno, obtén %game.action.retaliate% 1 durante esta ronda."
+    },
+    "fh-54": {
+      "": "Zapatillas de descanso",
+      "1": "Durante tu descanso corto, en lugar de perder al azar 1 carta de tu pila de descartes, roba al azar 3 cartas de tu pila de descartes y elige 1 para perderla."
+    },
+    "fh-55": {
+      "": "Guantelete mordedor",
+      "1": "Cuando te ataque un enemigo adyacente, obtén %game.action.retaliate% 2 para dicho ataque."
+    },
+    "fh-56": {
+      "": "Imán de rapiñador",
+      "1": "Durante tu turno, %game.element.consume.earth% para saquear una ficha de Botín adyacente."
+    },
+    "fh-57": {
+      "": "Pala",
+      "1": "Durante tu turno, destruye una pieza adyacente de obstáculo, terreno peligroso, terreno impracticable, terreno helado o trampa."
+    },
+    "fh-58": {
+      "": "Espada resbaladiza",
+      "1": "Durante tu capacidad de Ataque cuerpo a cuerpo, añade %game.action.attack% +2 a 1 ataque. Después de la capacidad, sufre %game.condition.disarm%."
+    },
+    "fh-59": {
+      "": "Amuleto de soltura",
+      "1": "Al inicio del escenario, obtén solo durante este escenario 1 pericia de 1 sola marca de tu hoja de personajes que aún no hayas obtenido."
+    },
+    "fh-6": {
+      "": "Botines flexibles",
+      "1": "Durante tu saqueo del final del turno, saquea 1 hexágono adyacente en lugar del hexágono que ocupas."
+    },
+    "fh-60": {
+      "": "Capa de muchos bolsillos",
+      "1": "Al inicio del escenario, lleva hasta 2 objetos %game.items.slots.small% adicionales."
+    },
+    "fh-61": {
+      "": "Coraza de púas",
+      "1": "Inmediatamente después de que te ataque un enemigo adyacente, ese enemigo sufre %game.damage% X, donde X es tu valor de %game.action.shield% para ese ataque."
+    },
+    "fh-62": {
+      "": "Botas eternas",
+      "1": "Durante tu capacidad de Movimiento añade %game.action.move% +1 y obtén %game.condition.regenerate%"
+    },
+    "fh-63": {
+      "": "Escarpes de sombra",
+      "1": "Durante tu capacidad de Movimiento, %game.element.consume.dark% para añadir %game.action.move% +2"
+    },
+    "fh-67": {
+      "": "Gafas de convergencia",
+      "1": "Cuando te ataquen, añade %game.action.attack% +1 al ataque en lugar de robar una carta de Modificador de ataque y luego dale la vuelta a esta carta.",
+      "2": "Durante tu capacidad de Ataque, añade %game.action.attack% +1 a 1 ataque en lugar de robar una carta de Modificador de ataque y luego dale la vuelta a esta carta."
+    },
+    "fh-69": {
+      "": "Capa emplumada",
+      "1": "Cuando sufras %game.damage% por un ataque, %game.element.consume.air% para obtener %game.action.shield:3% para dicho ataque."
+    },
+    "fh-7": {
+      "": "Arco tosco",
+      "1": "Durante tu turno, añade %game.action.range% +1 a 1 de tus ataques a distancia."
+    },
+    "fh-71": {
+      "": "Botas de hueso",
+      "1": "Después de tu capacidad con la que mates a un enemigo, realiza:"
+    },
+    "fh-72": {
+      "": "Báculo de roble",
+      "1": "Durante tu turno, %game.element.consume.light% para realizar:"
+    },
+    "fh-73": {
+      "": "Porra energizante",
+      "1": "Cuando apliques un estado positivo a un aliado, otro aliado a %game.action.range:3% obtiene el mismo estado."
+    },
+    "fh-74": {
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-75": {
+      "": "Guantelete de rosa",
+      "1": "Después de que cualquier aliado a %game.action.range:2% o menos sufra %game.damage% de un ataque, retira todos los estados negativos del aliado y luego realiza:"
+    },
+    "fh-76": {
+      "": "Cuerno de mando",
+      "1": "Durante el turno de una de tus invocaciones, decide cómo realiza sus capacidades."
+    },
+    "fh-77": {
+      "": "Cañón de caos",
+      "1": "Durante tu turno, sustituye una pieza de 1 hexágono de obstáculo, terreno peligroso, terreno impracticable o terreno helado en un hexágono desocupado a %game.action.range:2% o menos por un tipo diferente de pieza de la lista anterior."
+    },
+    "fh-79": {
+      "1": "Durante tu turno,  añade %game.action.attack% +1 a todos tus ataques y realiza:"
+    },
+    "fh-8": {
+      "": "Lanza tosca",
+      "1": "Durante tu turno, 1 de tus capacidades de Ataque cuerpo a cuerpo con un solo objetivo puede tener como objetivo a un enemigo situado a 2 hexágonos de distancia."
+    },
+    "fh-81": {
+      "": "Efigie de dolor",
+      "1": "Cuando sufres %game.damage% 5 o menos por un ataque, un enemigo a %game.action.range:2% o menos también sufre la misma cantidad de %game.damage%."
+    },
+    "fh-83": {
+      "": "Poción curativa",
+      "1": "Durantu tu turno, realiza:<br>%game.action.heal% 3 Personal"
+    },
+    "fh-84": {
+      "": "Poción de resistencia",
+      "1": "Durante tu turno, %game.card.recover% 1 carta de nivel 1 de tu pila de descartes."
+    },
+    "fh-85": {
+      "": "Poción de poder",
+      "1": "Durante tu turno, añade %game.action.attack% +1 a todos tus ataques."
+    },
+    "fh-86": {
+      "": "Poción elemental",
+      "1": "Durante tu turno, %game.element.wild%"
+    },
+    "fh-87": {
+      "": "Poción de remedio",
+      "1": "Durante tu turno, retira 1 estado negativo que sufras.<br>Puedes usarla incluso si sufres %game.condition.impair% o %game.condition.stun%."
+    },
+    "fh-88": {
+      "": "Poción de piroescudo",
+      "1": "Durante tu turno, realiza: %game.action.retaliate% 1 %game.action.range:3% "
+    },
+    "fh-89": {
+      "": "Poción de piel pétrea",
+      "1": "Durante tu turno, realiza %game.condition.ward% Personal"
+    },
+    "fh-9": {
+      "": "Cetro protector",
+      "1": "Durante tu turno, otorga a 1 aliado a 2 %game.action.range:2% o menos:"
+    },
+    "fh-90": {
+      "": "Poción de músculo",
+      "1": "Durante tu turno, realiza: %game.condition.strengthen% Personal"
+    },
+    "fh-91": {
+      "": "Agua bendita",
+      "1": "Durante tu turno, realiza: %game.condition.bless% Personal"
+    },
+    "fh-92": {
+      "": "Poción revitalizadora",
+      "1": "Durante tu turno, %game.card.recover% hasta 2 de tus objetos gastados."
+    },
+    "fh-93": {
+      "": "Poción de observación",
+      "1": "Cuando reveles una carta de Modificador de ataque %game.attackmodifier.null% de tu mazo de Modificadores de ataque, trátala en su lugar como %game.attackmodifier.plus0%."
+    },
+    "fh-94": {
+      "": "Poción de frenesí",
+      "1": "Durante tu turno, realiza:"
+    },
+    "fh-95": {
+      "": "Frasco de veneno",
+      "1": "Durante tu turno, realiza: %game.condition.poison% %game.action.range:1%"
+    },
+    "fh-96": {
+      "": "Frasco de llama",
+      "1": "Durante tu turno, realiza: %game.condition.wound% %game.action.range:1%"
+    },
+    "fh-97": {
+      "": "Frasco explosivo",
+      "1": "Durante tu turno, 1 enemigo a %game.action.range:2% o menos sufre %game.damage% 2."
+    },
+    "fh-98": {
+      "": "Mejunje insalubre",
+      "1": "Durante tu turno, realiza: %game.condition.wound%, %game.condition.poison% Personal"
+    },
+    "fh-99": {
+      "": "Poción curativa mayor",
+      "1": "Durante tu turno, realiza: %game.action.heal% 6 Personal"
+    }
+  },
+  "pets": {
+    "fh-01": {
+      "": "Cerdo piraña",
+      "1": "Todos los personajes realizan de inmediato:"
+    },
+    "fh-02": {
+      "": "Sabueso",
+      "1": "Durante esta ronda, todos los personajes suman %game.action.attack% +1 a todos sus ataques cuerpo a cuerpo que tengan como objetivo enemigos adyacentes a cualquiera de los aliados del personaje."
+    },
+    "fh-03": {
+      "": "Draco escupidor",
+      "1": "Durante esta ronda, todos los personajes añaden %game.condition.poison% a todos sus ataques a distancia."
+    },
+    "fh-04": {
+      "": "Draco desgarrador",
+      "1": "Durante esta ronda, todos los personajes añaden %game.condition.wound% a todos sus ataques cuerpo a cuerpo."
+    },
+    "fh-05": {
+      "": "Duende negro",
+      "1": "En orden de iniciativa, todos los personajes realizan de inmediato:"
+    },
+    "fh-06": {
+      "": "Duende del bosque",
+      "1": "En orden de iniciativa, todos los personajes realizan de inmediato:"
+    },
+    "fh-07": {
+      "": "Duende de la nieve",
+      "1": "En orden de iniciativa, todos los personajes realizan de inmediato:"
+    },
+    "fh-08": {
+      "": "Cieno",
+      "1": "Crea un obstáculo de 1, 2 o 3 hexágonos en cualquier lugar revelado del tablero."
+    },
+    "fh-09": {
+      "": "Máquina ruinosa",
+      "1": "Todos los personajes realizan de inmediato:"
+    },
+    "fh-10": {
+      "": "Anguila relámpago",
+      "1": "Todos los personajes sufren %game.damage:2% para %game.card.recover% de sus cartas descartadas de nivel 1 o X."
+    },
+    "fh-11": {
+      "": "HE-RO-IC-O",
+      "1": "En orden de iniciativa, todos los personajes pueden elegir individualmente realizar de inmediato una de estas opciones:"
+    },
+    "fh-12": {
+      "": "Brummix",
+      "1": "Durante la selección de cartas, revela la primera carta del mazo de Capacidades de cada conjunto de monstruos activo de esta ronda antes de que cada personaje seleccione sus cartas."
+    }
+  },
+  "scenario": {
+    "recap": {
+      "fh": {
+        "1": {
+          "": "Tu grupo de mercenarios fue contratado para escoltar una caravana del Gremio de Comerciantes desde Roble Blanco, para llevar suministros (y comprobar el estado) de Frosthaven, un puesto fronterizo lejano y remoto que el Gremio ha estado tratando de expandir."
+        },
+        "10": {
+          "5": "Un Voz de hielo al que perseguías te atrajo a una especie de trampa: caíste por una fisura oculta a una cripta subterránea llena de espíritus. Tras acabar con ellos y conseguir un trineo, comenzaste a perseguir a estos Algox."
+        },
+        "108": {
+          "": "En un cofre, encontraste una tablilla de piedra grabada. La imagen representa un paisaje extrañamente familiar, y sentiste que podrías encontrar el lugar si lo buscabas con suficiente empeño."
+        },
+        "109": {
+          "": "Encontraste una delicada pieza de maquinaria curiosa en un cofre. Cuando la sacaste, cobró vida y proyectó un mapa sobre ella. Descubriste cómo manipular este mapa proyectado y encontraste la ubicación de lo que parece ser una fábrica de algún tipo."
+        },
+        "11": {
+          "6": "En tu ascenso, te sorprendió una avalancha. Has luchado por salir adelante y has conseguido equipo de escalada que te ayudará a alcanzar la cima."
+        },
+        "110": {
+          "": "Encontraste una losa de piedra tallada en un cofre. Tenía forma de piedra angular y sentiste que sabías dónde encajaba. Mentalmente te indicó el camino."
+        },
+        "111": {
+          "": "Encontraste un espejo de plata en un cofre. A diferencia de la mayoría de los espejos, este no reflejaba tu imagen, sino que mostraba una imagen de tu grupo caminando por el desierto hacia una cueva llena de tesoros."
+        },
+        "112": {
+          "": "Dentro de un cofre del tesoro, en lo más profundo de una aterradora mazmorra llena de peligrosos monstruos, encontraste un adorable cachorro de lobo que dormía plácidamente. Y estaba vivo, de alguna manera. Encerrado en un cofre. Quizás esto suene extraño o improbable, pero los cachorros son increíbles, así que ¿por qué hacer tantas preguntas? Te lo llevaste contigo a Frosthaven."
+        },
+        "113": {
+          "": "Mientras viajabas, te viste envuelto en una espesa niebla. Cuando se disipó, te encontraste en un frondoso bosque, donde no era invierno en absoluto, lleno de animales del bosque y polen. Parecía como si intentara mantenerte alejado de algo. Sin embargo, es difícil engañarte, así que te abriste paso a través de las ilusiones y encontraste una exuberante gruta. Decidiste investigar (quizás de inmediato, o quizás decidiste volver más tarde)."
+        },
+        "114": {
+          "4": "El ingeniero residente de Frosthaven, Pinter Droman, cree que hay una nueva oportunidad para crear un paso a través de las montañas tras un reciente desprendimiento de tierra. Esto podría ahorrar varios días en cada viaje. Pinter ha creado unas bombas para ayudar a despejar los escombros restantes, pero la fauna local no ha visto con buenos ojos esta medida. Te ha pedido que coloques algunos explosivos en determinados lugares, ya que, a diferencia de sus trabajadores habituales, tú puedes protegerte."
+        },
+        "115": {
+          "114": "Todo salió tan bien como cabía esperar cuando se mezclan dinamita y osos polares, pero saliste victorioso.<br>Unas semanas más tarde, él necesitaba más ayuda con el proyecto. Parte de la carretera pasa por debajo de un acantilado, por lo que el equipo de construcción instaló pilones para reforzarlo. Sin embargo, a algunos saqueadores Algox, un clan llamado los Cuernos de la Ruina, no les gusta nada esta nueva construcción. Pinter te pidió que fueras a proteger los pilones antes de que se produjera el ataque."
+        },
+        "116": {
+          "115": "Una vez hecho esto, Pinter y su equipo pudieron terminar la carretera. La alcaldesa Satha pidió a algunos comerciantes locales que probasen este nuevo atajo y te pidió que escoltases a las primeras caravanas que se dirigían al sur."
+        },
+        "117": {
+          "": "Después de pasar un tiempo lejos de Frosthaven, tu amigo el trampero Infestor regresó. Se instalaron en el bosque Fuegoblanco, pero los osos polares han estado ahuyentando a todos los animales más pequeños. Otros Infestores locales cazaban en excesos a los osos, expulsándolos de su hábitat natural. Tu viejo amigo te pidió que le ayudaras a reubicar a los osos en un lugar más adecuado."
+        },
+        "118": {
+          "": "La Esculpehuesos regresó y te sorprendió un día. Han estado buscando energía en nuevos planos de existencia, y ha descubierto una extraña energía mucho más cerca de casa, que emana de algún lugar cercano a Frosthaven."
+        },
+        "12": {
+          "6": "Durante el ascenso, te vio envuelto una avalancha. Te diste cuenta de que la avalancha había dejado al descubierto una estructura de piedra en ruinas que sobresalía del suelo, no muy lejos de allí, y decidiste que merecía la pena echarle un vistazo."
+        },
+        "128": {
+          "": "Un día de verano, encontraste a dos hermanos, Nits y Narb, borrachos al borde de la carretera. Se estaban peleando entre ellos y con la nieve, posiblemente alucinando. Intentaste ayudarles, quizá con éxito, y entonces decidiste seguir el escenario de Matthew G. Somers."
+        },
+        "129": {
+          "128": "Más tarde, viste a los dos en el Cráter; te saludaron efusivamente y borrachos, y te presentaron a un noble capitalista llamado Derrick. Empezaron a presumir ante él de tus logros (ficticios) y luego se produjo toda una serie de tonterías. Sin embargo, Derrick quedó impresionado y dijo que quizá tuviera un trabajo para ti más adelante. <br>Efectivamente, unas semanas más tarde, así sucedió. Te mostró una bolsa de ágatas solares, unas piedras preciosas raras y hermosas. Al parecer, son muy populares entre la Orden Radiante, fervientes adoradores del Gran Roble. Derrick encontró una mina cercana, explotada por Algox, y sugirió tomarla por la fuerza. Sin embargo, primero te pidió que robaras un trineo lleno de ellas, tendiéndoles una emboscada."
+        },
+        "13": {
+          "7": "Los perseguiste hasta el borde del Mar de los Mordiscos, donde te encontraste con los Acechadores en una cueva excavada en un acantilado. Encontraste una extraña esquirla de coral en el cráneo de un cadáver viviente; este te comunicó que quería que lo llevaras al norte, lejos del mar, lejos de los acantilados. Supusiste que eso era lo que buscaban los acechadores.<br>Antes de adentrarte en mar abierto, decidiste seguir la llamada de la esquiarla por tierra a lo largo de la costa norte."
+        },
+        "130": {
+          "129": "Con la ayuda de algunos mercenarios, capturaste el trineo y recuperaste todas las ágatas solares que pudiste, guardándolas en contenedores aislados. Partiste hacia Frosthaven."
+        },
+        "132": {
+          "": "Un anciano llamado Mulbrynn se presentó en el Cráter y se ofreció a contarte una leyenda a cambio de una bebida. Te habló de otro grupo de aventureros que encontraron un ídolo «oscuro y poderoso» que los obligó a subir a lo alto de las Montañas Imperiales, prometiéndoles que sus sueños se harían realidad. Nunca regresaron. Te entregó un mapa del lugar al que se dirigían."
+        },
+        "136": {
+          "": "Dinah Snapclaw, la tabernera infestora del de Frosthaven, te ha contado historias sobre un famoso pirata, Barty Mediaoreja. Te ha pedido que busques monedas antiguas, como la que ella lleva. Si las encuentras todas, se supone que te llevarán a un enorme tesoro.<br>Después de llevarle una de las monedas, te habló del botín de la Reina Pirata, un enorme tesoro que ella y Barty buscaban juntos antes de que él la traicionara. Necesitas cuatro monedas para encontrarlo; ella tiene una, él tiene otra, tú acabas de encontrar una tercera y aún falta la última.<br>Ella quiere vengarse y hacerse con el tesoro, así que te ha dado la ubicación del escondite de Barty. Está bastante segura de que ahí es donde él guarda su moneda. Tráele dos monedas más y todos seréis ricos."
+        },
+        "137": {
+          "136": "El escondite de Barty estaba al final de un río subterráneo infestado de anguilas. Su moneda estaba allí, junto con un buen botín. Con la moneda de Dinah, la de Barty y las otras dos que encontraste durante tus exploraciones, tenías todos los elementos que necesitabas. Dinah te llevó a una cueva no muy lejos de Frosthaven. Te contó más cosas sobre la Reina Pirata, una Quatryl que, al parecer, había intentado utilizar autómatas como tripulación. A los que seguían vivos no les gustó mucho la idea, así que se amotinaron. Creyeron que la tenían atrapada, pero ella se encerró a sí misma y a sus robots. Los piratas marcaron la ubicación de su tumba y sellaron esa información en una cueva, detrás de una cerradura que solo se podía abrir con cuatro monedas específicas. Descubriste la orientación correcta (o, lo viste al retirar a Dagacentella, gracias Asmodee ^^) y Dinah recuperó un antiguo pergamino de la caverna que había más allá. El botín de la Reina Pirata estaba a solo un corto viaje en barco."
+        },
+        "14": {
+          "7": "Los perseguiste hasta el borde del Mar de los Mordiscos, donde te encontraste con los Acechadores en una cueva excavada en un acantilado. Encontraste una extraña esquirla de coral en el cráneo de un cadáver viviente; esta te comunicó que quería que lo llevaras al norte, lejos del mar, lejos de los acantilados. Supusiste que eso era lo que buscaban los acechadores.<br>Tras construir un barco, decidiste adentrarte en el mar cubierto de hielo y ver dónde quería llevarte la esquirla."
+        },
+        "15": {
+          "8": "Corrías por un valle peligroso, perseguido por lobos, que se abría hacia los Campos de Cristal, llenos de enormes pilares de cristal tan altos como árboles.<br>Te fijaste en una aguja enorme, más grande y de color más oscuro que el resto, y decidiste ir a verla."
+        },
+        "16": {
+          "8": "Corrías por un valle peligroso, perseguido por lobos, que se abría hacia los Campos de Cristal, llenos de enormes pilares de cristal tan altos como árboles. <br>Te fijaste en una espiga lejana que te pareció un poco curiosa, más corta y ancha que el resto, y decidiste ir a verla."
+        },
+        "17": {
+          "9": "En la última sala de las catacumbas, encontraste una extraña puerta con engranajes y símbolos. Esto no significaba nada para ti hasta que el académico Quatryl, Crain, comenzó a pedirte que investigaras los \"lugares de muerte\" y las extrañas energías que permanecen en ciertas partes del norte, probablemente como resultado de una guerra librada hace mucho tiempo."
+        },
+        "18": {
+          "10": "Los Algox que encontraste canalizaban energía a través de extrañas puntas de cristal, conductos que aumentaban su poder. Los derrotaste, pero divisaste otro campo de estas puntas en la distancia. Este es mucho más grande, así que te dispusiste a buscar su origen."
+        },
+        "19": {
+          "11": "Derrotaste a la poderosa Voz de la Nieve, pero algo que ella hizo temblar el pico de la montaña; rápidamente descendiste en rappel."
+        },
+        "2": {
+          "1": "Ayudaste a repeler un ataque de los Algox; la alcaldesa Satha te pidió ayuda para seguir lidiando con ellos. El explorador Valrath de Satha avistó a un pequeño grupo que se dirigía a la mortal cara oriental de la montaña y sospecha que hay una entrada secreta en esa zona."
+        },
+        "20": {
+          "12": "Entraste en el templo y encontraste muchas criaturas metálicas; tras derrotarlas, descubriste una serie de hendiduras brillantes en el suelo. Parecían ser conductos para que las criaturas recuperaran su poder, y el poder sugiere una fuente de energía. Encontraste cables metálicos enterrados bajo el suelo y decidiste seguirlos para adentrarte más en el templo."
+        },
+        "21": {
+          "13": "Cruzaste un puente hecho con una antigua caja torácica y derrotaste a los demonios que lo custodiaban. Decidiste seguir el rastro de la Esquirla de Coral hacia el norte, con la esperanza de llegar a dondequiera que te estuviera llevando."
+        },
+        "22": {
+          "14": "Después de enfrentarte a una pesadilla de abaeles, anguilas y cerdos pirañas, rompiste una segunda esquirla de coral de una piedra. Un semicírculo de acechadores surgió del agua, incluida su líder. Te hablaron de una corona de coral que se hizo añicos, y con ella se hizo también añicos el gran reino de los acechadores. La mayoría de los acechadores entraron en un frenesí ciego después de eso; has aceptado ayudar a reunir la corona con la esperanza de que reconstruya la civilización de los acechadores.<br>La atracción psíquica de los fragmentos de coral te llevó al este y hacia las profundidades del mar."
+        },
+        "23": {
+          "15": "Derrotaste al teniente del Caos que custodiaba la entrada, el cual proclamó que se estaban preparando para destruir tu puesto fronterizo. Encontraste unas escaleras que conducían hacia abajo y un haz de luz que te llevaba hacia arriba. Optaste por bajar las escaleras."
+        },
+        "24": {
+          "15": "Derrotaste al teniente del Caos que custodiaba la entrada, el cual proclamó que se estaban preparando para destruir tu puesto fronterizo. Encontraste unas escaleras que conducían hacia abajo y un haz de luz que te llevaba hacia arriba. Entraste en el haz para ser transportado hacia arriba."
+        },
+        "25": {
+          "16": "Resultó ser una especie de edificio antiguo. Lo abriste y encontraste máquinas rotas, cristales y desorden. Encontraste un ascensor antiguo y conseguiste ponerlo en marcha, descendiendo hasta lo más profundo. En la parte inferior había una pasarela en dos direcciones: te dirigiste directamente hacia una alarma de seguridad para enfrentarte a ella."
+        },
+        "26": {
+          "16": "Resultó ser una especie de edificio antiguo. Lo abriste y encontraste máquinas rotas, cristales y desorden. Encontraste un ascensor antiguo y conseguiste ponerlo en marcha, descendiendo hasta lo más profundo. En la parte inferior había una pasarela en dos direcciones; Te alejaste de una alarma de seguridad con la esperanza de evitar a los defensores."
+        },
+        "28": {
+          "18": "Derrotaste a los Voz del Hielo, pero trajiste a un superviviente para que se reuniera con el jefe Lanprul. El superviviente informó de que Geryuu había enviado «excavadores» contra ellos y que estaba cansado de esta guerra. Mientras que el jefe Lanprul se mostró receptivo, otra persona, Denpang, animó a lanzar un ataque total con tu ayuda del lado de los Voz de la Nieve. Ella se marchó para planear la batalla. Tú te quedaste con el jefe Lanprul para planear la vía de la paz.",
+          "19": "Descubriste que los espíritus de Salón Celeste, un lugar de gran importancia religiosa, se habían vuelto contra los Voz del Hielo. Mientras los enterrabas, el jefe Elland declaró que esto no podía continuar, que la guerra estaba llevando a la ruina a todos los Algox. Una anciana del grupo, Putargal, instó a vengarse de los Voz de la Nieve por lo que le habían hecho a la Montaña del Desprecio Nevado y al Salón Celeste. Se marchó para planear un ataque contra sus enemigos, pero tú te quedaste con el jefe Elland para buscar la paz."
+        },
+        "29": {
+          "18": "Derrotaste a los Voz del Hielo, pero trajiste a un superviviente para que se encontrara con el jefe Lanprul. El superviviente informó de que Geryuu había enviado «excavadores» contra ellos y que estaba cansado de esta guerra. Mientras que el jefe Lanprul se mostró receptivo, otra persona, Denpang, animó a lanzar un ataque total con tu ayuda al lado de los Voz de la Nieve. Ella se marchó para planear la guerra. Te fuiste con Denpang para ayudar en el ataque y conseguir la victoria definitiva de los Voz de la Nieve."
+        },
+        "3": {
+          "1": "Ayudaste a repeler un ataque de los Algox; la alcaldesa Satha te pidió ayuda para seguir lidiando con ellos. El explorador Valrath de Satha avistó a un pequeño grupo que se dirigía a la mortal cara oriental de la montaña y sospecha que hay una entrada secreta en esa zona."
+        },
+        "30": {
+          "19": "Descubriste que los espíritus del Salón Celeste, un lugar de gran importancia religiosa, se habían vuelto contra los Voz del Hielo. Mientras los enterrabas, el jefe Elland declaró que esto no podía continuar, que la guerra estaba llevando a la ruina a todos los Algox. Una anciana del grupo, Putargal, instó a vengarse de los Voz de la Nieve por lo que le habían hecho a la montaña del Desprecio Nevado y el Salón Celeste. Se marchó para planear un ataque contra sus enemigos y tú la acompañaste para sumarte a la batalla."
+        },
+        "31": {
+          "20": "Para derrotar a todos los autómatas, era necesario destruir un extraño orbe brillante. Una vez derrotados, se podía investigar una extraña puerta sellada por un complejo rompecabezas con engranajes y símbolos. Esto no significaba nada para ti hasta que el académico Quatryl, Crain, comenzó a pedirte que investigaras los “lugares de la muerte” y las extrañas energías que permanecían en ciertas partes del norte, probablemente como resultado de una guerra librada hace mucho tiempo."
+        },
+        "32": {
+          "13": "Cruzaste un puente hecho con una antigua caja torácica y derrotaste a los demonios que lo custodiaban. Decidiste ignorar la atracción de la Esquirla por ahora e investigar el bosque occidental."
+        },
+        "33": {
+          "22": "Allí, fuiste atacado por los acechadores, atraídos por el poder de las Esquirlas que llevas contigo. Destrozaron tu barco, por lo que decidiste buscar otro medio de transporte. El inventor de Frosthaven, Pinter Droman, diseñó una batisfera, una nave para viajar con seguridad bajo el agua, pero necesitaba una fuente de energía. Te sugirió que podrías encontrar una en el corazón del Bosque Radiante."
+        },
+        "34": {
+          "23": "Sea cual sea tu elección, encontraste al menos una forma de ascender para frustrar el siniestro propósito de esta torre. Sabías que las respuestas se encontraban en la planta superior.",
+          "24": "Sea cual sea tu elección, encontraste al menos una forma de ascender para frustrar el siniestro propósito de esta torre. Sabías que las respuestas se encontraban en la planta superior."
+        },
+        "35": {
+          "25": "Allí rescataste a Crain, un erudito quatryl que estaba estudiando a los Desencadenados. Se ha estado recuperando en Frosthaven y cree haber desarrollado un dispositivo que desactivaría a los Desencadenados. Sin embargo, primero necesita materiales y te ha pedido que lo lleves de vuelta para poder encontrar las piezas que necesita."
+        },
+        "36": {
+          "26": "Allí rescataste a Crain, un erudito quatryl que estaba estudiando a los Desencadenados. Se ha estado recuperando en Frosthaven. Te mostró algunos mapas del complejo y dos posibles caminos hacia el núcleo. Decidistees colarte por encima de ellos a través de los conductos."
+        },
+        "37": {
+          "26": "Allí rescataste a Crain, un erudito quatryl que estaba estudiando a los Desencadenados. Se ha estado recuperando en Frosthaven. Te mostró algunos mapas del complejo y dos posibles caminos hacia el núcleo. Decidiste tomar el camino más profundo, que en su día pudo haber sido un sistema de transporte."
+        },
+        "38": {
+          "28": "Sea cual sea el grupo de Algox con el que te hayas aliado primero, has aceptado ayudar a su jefe a buscar una solución pacífica a su conflicto. Asististe a una cumbre entre dos emisarios de Algox, Gurndel y Barduu, como testigo y guardaespaldas. Sin embargo, tanto los Voz del Hielo como los Voz de la Nieve la atacaron, luchando contra ti y contra sus tribus enemigas. Lograste escapar con ellos; acordaron que la única forma de avanzar era buscar al Oráculo en el Bosque Fuegoblanco, Mar'ogh."
+        },
+        "39": {
+          "29": "Los Voz de la Nieve salieron victoriosos, pero desde entonces has estado sintiendo culpa y teniendo pesadillas. Así que cuando, unas semanas más tarde, te enteraste de la existencia de un campo de refugiados de los Voz del Hielo en el Bosque Radiante, decidiste intentar ayudar."
+        },
+        "40": {
+          "30": "Los Voz del Hielo salieron victoriosos, pero desde entonces has estado sintiendo culpa y teniendo pesadillas. Un pequeño grupo de Voz de la Nieve sobrevivió y le pidió ayuda la alcaldesa Satha. Llegaste a un acuerdo con Satha y te pusiste en marcha para ver si podías ayudar."
+        },
+        "41": {
+          "31": "Seguiste por el pasillo luminoso, derrotaste a más autómatas y descansaste antes de continuar."
+        },
+        "42": {
+          "33": "Allí, fuiste atacado por los Acechadores, atraídos por el poder de las Esquirlas que llevabas contigo. Destrozaron tu barco, por lo que decidiste buscar otro medio de transporte. El inventor de Frosthaven, Pinter Droman, diseñó una batisfera, una nave para viajar con seguridad bajo el agua, pero necesitaba una fuente de energía. Te sugirió que podrías encontrar una en el corazón del Bosque Radiante. <br>Recuperaste la fuente de energía y se la devolviste a Pinter. Tras unas semanas, la batisfera estaba lista, junto con un grupo de trajes submarinos. Era hora de seguir el rastro de las esquirlas de coral."
+        },
+        "43": {
+          "35": "Después de rebuscar entre los desechos, Crain terminó su dispositivo de desactivación. Ahora que está construido, puedes acompañarlo al núcleo del complejo."
+        },
+        "44": {
+          "36": "Allí rescataste a Crain, un erudito quatryl que estaba estudiando a los Desencadenados. Se ha estado recuperando en Frosthaven. Te mostró algunos mapas del complejo y dos posibles caminos hacia el núcleo. Elegiste uno y te pusiste en marcha.<br>Tras los peligros del viaje, llegaste a la cámara central. Ahora solo tienes que averiguar cómo desactivarlo.",
+          "37": "Allí rescataste a Crain, un erudito quatryl que estaba estudiando a los Desencadenados. Se ha estado recuperando en Frosthaven. Te mostró algunos mapas del complejo y dos posibles caminos hacia el núcleo. Elegiste uno y te pusiste en marcha.<br>Tras los peligros del viaje, llegaste a la cámara central. Ahora solo tienes que averiguar cómo desactivarlo."
+        },
+        "45": {
+          "38": "Barduu y Gurndel consultaron a Mar'ogh, quien dijo: «LA CORRUPCIÓN SE HA EXTENDIDO DEMASIADO. AQUEL QUE DUERME AHORA SE DESPIERTA. SU INFLUENCIA AVIVA EL CONFLICTO. EL CORAZÓN DE HIELO SE ENNEGRECE. SU IMPUREZA DEBE SER ERRADICADA Y SUSTITUIDA. FORMA UN NUEVO CORAZÓN HECHO DE HIELO Y NIEVE. UN CAMINO YACE OCULTO EN EL MAR: EL GLACIAR VIVO, FORMADO EN ÉPOCAS PASADAS. EL OTRO YACE EN LAS COLINAS DEL SUR: LA NIEVE NUEVA QUE GUARDA LA CANCIÓN DE LOS DÍAS POR VENIR. JUNTOS CONTENEN EL PODER DE DETENER LA CORRUPCIÓN. BÚSCALOS Y REGRESA».<br>Así, viajaste al glaciar viviente en busca de hielo."
+        },
+        "46": {
+          "38": "Barduu y Gurndel consultaron a Mar'ogh, quien dijo: «LA CORRUPCIÓN SE HA EXTENDIDO DEMASIADO. AQUEL QUE DUERME AHORA SE DESPIERTA. SU INFLUENCIA AVIVA EL CONFLICTO. EL CORAZÓN DE HIELO SE ENNEGRECE. SU IMPUREZA DEBE SER ERRADICADA Y SUSTITUIDA. FORMA UN NUEVO CORAZÓN HECHO DE HIELO Y NIEVE. UN CAMINO YACE OCULTO EN EL MAR: EL GLACIAR VIVO, FORMADO EN ÉPOCAS PASADAS. EL OTRO YACE EN LAS COLINAS DEL SUR: LA NIEVE NUEVA QUE GUARDA LA CANCIÓN DE LOS DÍAS POR VENIR. JUNTOS CONTENEN EL PODER DE DETENER LA CORRUPCIÓN. BÚSCALOS Y REGRESA».<br>Así, viajaste al Paso Muerto en busca de la Nieve Nueva."
+        },
+        "47": {
+          "39": "Los Voz del Hielo estaban siendo atacados por miembros poseídos de su propia tribu, y en lugar de acabar con el resto de estos Algox, los rescataste. Una Voz del Hielo llamada Putargal te dio las gracias y te pidió ayuda para erradicar al resto de los Algox poseídos y encontrar el origen de la corrupción."
+        },
+        "48": {
+          "40": "Encontraste a los refugiados de los Voz de la Nieve siendo atacados por los Desencadenados. Hiciste todo lo posible por salvar a tantos heridos como pudiste. Una joven de los Vozde la Nieve, Denpang, te dio las gracias y te pidió un poco más de ayuda: que llevaras al resto de su clan a una isla llamada Frai'd Tog, donde los Voz de la Nieve restantes podrían vivir en paz."
+        },
+        "49": {
+          "42": "La prueba de la batisfera fue un éxito. Unas semanas más tarde, Sol en los bajios visitó Frosthaven. Informó de que ella y un grupo de compañeros acechadores intentaron obtener una esquiarla corrompida por las sombras, pero ella y sus aliados fueron derrotados. Hasta que esa esquirla no se libere del mal, seguirá corrompiendo a los acechadores y Frosthaven nunca estará a salvo. Además, la Corona no puede ser reunificada sin ella. Pinter recomendó convertir tus esquirlas en una bomba psíquica para aturdir a los acechadores, pero tú decidiste buscar otra forma de entrar."
+        },
+        "4A": {
+          "2": "Rescataste a una sacerdotisa algox llamada Lanprul mientras investigabas una entrada secreta al Pico Helado. Ella pertenece a los Voz de la Nieve, un grupo de algox que cree que su dios (Geryuu) se comunica con ellos a través de la nieve que cae. Están en guerra con un grupo rival de algox, los Voz del Hielo, que creen que pueden comunicarse con su dios a través del hielo que emerge del suelo. Los Voz de Hielo ocupan actualmente el pico Helado, pero los Voz de la Nieve aprovecharon la oportunidad para tomarlo cuando estos se marcharon para atacar Frosthaven.",
+          "3": "Rescataste a una sacerdotisa algox llamada Lanprul mientras investigabas una entrada secreta al Pico Helado. Ella pertenece a los Voz de la Nieve, un grupo de algox que cree que su dios (Geryuu) se comunica con ellos a través de la nieve que cae. Están en guerra con un grupo rival de algox, los Voz del Hielo, que creen que pueden comunicarse con su dios a través del hielo que emerge del suelo. Los Voz de Hielo ocupan actualmente el pico Helado, pero los Voz de la Nieve aprovecharon la oportunidad para tomarlo cuando estos se marcharon para atacar Frosthaven."
+        },
+        "4B": {
+          "2": "Interrumpiste una batalla entre dos grupos rivales de Algox. Uno de los Algox luchadores, que se hacía llamar Voz de Hielo, te saludó y te dijo que los Voz de la Nieve habían invadido su hogar mientras ellos estaban fuera atacando Frosthaven. El pico tiene un significado religioso tanto para los Voz de la Nieve como para los Voz de Hielo, que difieren en cómo creen que deben comunicarse con su dios, Geryuu.",
+          "3": "Interrumpiste una batalla entre dos grupos rivales de Algox. Uno de los Algox luchadores, que se hacía llamar Voz de Hielo, te saludó y te dijo que los Voz de la Nieve habían invadido su hogar mientras ellos estaban fuera atacando Frosthaven. El pico tiene un significado religioso tanto para los Voz de la Nieve como para los Voz de Hielo, que difieren en cómo creen que deben comunicarse con su dios, Geryuu."
+        },
+        "5": {
+          "4": "Te pusiste del lado de los Voz de la Nieve en su batalla contra los Voz de Hielo al matar al jefe de los Voz de Hielo. Los Voz de la Nieve, que creen que se comunican con su dios a través de la nieve que cae, están en guerra con los Voz de Hielo, que creen que pueden comunicarse con su dios a través del hielo que emerge del suelo. El pico de la montaña es sagrado para ambos grupos.<br>La jefa de los Voz de la Nieve, Lanprul, te pidió que la ayudaras a poner fin a la guerra con los Voz de Hielo para garantizar la seguridad de Frosthaven frente a Algox. Ella vio a un grupo de Voz de Hielo al norte del bosque Fuegoblanco que lanzará un contraataque si no se les detiene."
+        },
+        "50": {
+          "42": "La prueba de la batisfera fue un éxito. Unas semanas más tarde, Sol en los bajios visitó Frosthaven. Informó de que ella y un grupo de compañeros acechadores intentaron obtener una esquiarla corrompida por las sombras, pero ella y sus aliados fueron derrotados. Hasta que esa esquirla no se libere del mal, seguirá corrompiendo a los acechadores y Frosthaven nunca estará a salvo. Además, la Corona no puede ser reunificada sin ella. Pinter recomendó convertir tus esquirlas en una bomba psíquica para aturdir a los acechadores y tu decidiste confiar en el."
+        },
+        "51": {
+          "43": "Despejasteis algunos túneles de acceso, donde pudisteis utilizar los dispositivos de desactivación con gran eficacia, y derribasteis el pasadizo detrás de vosotros para proteger vuestras espaldas. Seguisteis avanzando."
+        },
+        "52": {
+          "45": "Recuperaste un fragmento de hielo vivo y nieve nueva, y los llevaste al claro sagrado para combinarlos.",
+          "46": "Recuperaste un fragmento de hielo vivo y nieve nueva, y los llevaste al claro sagrado para combinarlos."
+        },
+        "53": {
+          "49": "De vuelta al Mar de los Mordiscos, encontraste la enorme cúpula submarina de la guarnición de los Acechadores, donde se encuentra la esquirla, y buscaste una forma de entrar. Por desgracia, los guardias te vieron, así que te retiraste a una estrecha cueva. De alguna manera, tú y tu batisfera lograsteis atravesarla y salisteis a una extraña estructura de coral con forma de flor. Detrás de un enorme trono, por pura suerte, viste otra esquirla de coral."
+        },
+        "54": {
+          "50": "Encontraste un lugar adecuado y comenzaste el proceso de armar el dispositivo, pero los guardias de los Acechadores te descubrieron antes de que terminaras. Sin embargo, el dispositivo funcionó: todos los guardias de los Acechadores quedaron aturdidos, pero muchas estructuras quedaron destruidas. La esquirla te llamó desde bajo los escombros, por lo que supiste que tenías que excavar."
+        },
+        "55": {
+          "52": "Mar'ogh abrió un extraño portal para completar el ritual. Sin embargo, nada es tan sencillo: descubriste que debías derrotar a criaturas de hielo y nieve y utilizar su esencia para formar un glifo. Una vez hecho esto, los dos emisarios completaron el ritual, combinando el hielo y la nieve para formar el Fragmento Indomable. En su interior, encontraron las verdaderas palabras de Geryuu y descubrieron que los Algox habían sido engañados por algún tipo de poder. Tenías que volver a la montaña del Desprecio Nevado para incrustar el Fragmento en el Corazón de Hielo, eliminar la oscuridad que se había apoderado de los Algox y devolverlos a Geryuu."
+        },
+        "56": {
+          "47": "Seguiste al Algox y encontraste un nido de Putrefactores y de Legión de Verdugos. Los eliminaste, pero la oscuridad permaneció. Encontraste un túnel que conducía más profundamente hacia el origen de la corrupción."
+        },
+        "57": {
+          "48": "Encontraste la isla en el Mar de los Mordiscos, pero estaba rodeada por un vórtice de nieve y viento y ocupada por demonios. Te dirigiste a una montaña de la isla, hacia el origen de este caos."
+        },
+        "6": {
+          "4": "Te pusiste del lado de los Voz del Hielo en su batalla contra los Voz de la Nieve al matar al jefe de estos últimos. Los Voz del Hielo creen que pueden comunicarse con su dios Geryuu a través del hielo que emerge del suelo. Están en guerra con los Voz de la Nieve, que creen que pueden comunicarse con su dios Geryuu a través de la nieve que cae.<br>El pico de la montaña es sagrado para ambos grupos. El jefe de los Voz del Hielo, Elland, cree que Geryuu te trajo para ayudar a derrotar a los Voz de la Nieve, y ha prometido cesar temporalmente las hostilidades contra Frosthaven.<br>Un poderoso Voz de la Nieve ha alcanzado la cima del pico de la montaña y amenaza con derribar toda la montaña. Elland te ha sugerido que demuestres tu fuerza y amistad derrotando a este Voz de la Nieve."
+        },
+        "60": {
+          "53": "Derrotaste y purificaste a un acechador corrupto, la Ballena Caída, que te mostró visiones de una corona reunificada. Y, tras obtener los seis fragmentos, llegó el momento de reunificarla.",
+          "54": "Descubriste que el derrumbe había despertado a muchos de los guardias. Derrotaste y purificaste a un acechador corrupto, la Ballena Caída, que te mostró visiones de una corona reunificada. Y, tras obtener los seis fragmentos, llegó el momento de reunificarla."
+        },
+        "65": {
+          "": "Los Etéridos están interesados en establecer un puesto de investigación en el norte. Tú te encargas del trabajo preliminar."
+        },
+        "66": {
+          "65": "Un grupo de ocho Etéridos se acercó a Frosthaven y se fusionó en un solo ser. Voz de los Ocho, su portavoz, te pidió ayuda a cambio de conocimientos. Localizaron una matriz elemental y te pidieron que la recuperaras. Los ocho Etéridos descubrieron que solo el Ancla del dispositivo seguía intacta y que necesitaba nuevos núcleos elementales. Unas semanas más tarde, informaron de que los habían encontrado y te pidieron que te reunieras con ellos en la matriz."
+        },
+        "67": {
+          "66": "Voz de los Ocho y Nera, una de las ocho especialistas en encantamientos, abrieron portales a cuatro planos elementales para ti. Recuperaste un núcleo de cada uno y los colocaste dentro de un receptáculo especial que Etéridos había preparado. Necesitaban tiempo para remodelar los núcleos y prometieron que te llamarían cuando volvieran a necesitar tu ayuda."
+        },
+        "68": {
+          "67": "Al regresar al puesto avanzado de los Etéridos, encontraste a los ocho Etéridos en apuros. Necesitabas potenciar los núcleos con tus propias energías. Los habitantes de los planos elementales acudieron para recuperar las piedras y tú luchaste contra ellos. Aunque lograste tu objetivo, algo salió mal... Se abrió una nueva grieta."
+        },
+        "69": {
+          "": "Has oído rumores sobre un Roble Verdadero en algún lugar del norte, plantado por un profeta a partir de una bellota del Gran Roble de la capital. Has estado recogiendo muestras de madera."
+        },
+        "7": {
+          "4": "Tras resolver el problema inmediato de Algox que amenazaba Frosthaven, la alcaldesa Satha mencionó que se habían avistado acechadores en las afueras del territorio de Frosthaven. Os ha pedido que lo investiguéis."
+        },
+        "70": {
+          "69": "Un botánico Savvas local, Listerius, estudió las muestras de madera. Te envió al Bosque Radiante para que recogieras también algunas muestras de tierra. Con ellas, estaba seguro de que podría triangular la ubicación. Después de traerlas, Listerius comenzó a analizarlas. Unas semanas más tarde, encontraste la cabaña de Listerius saqueada. La Orden Radiante de Roble Blanco se enteró de su \"blasfemia\", robó las notas y fue a destruir el Roble Verdadero que habías estado buscando."
+        },
+        "8": {
+          "4": "Tras ocuparse de la situación inmediata con los Algox, la alcaldesa Satha mencionó que unas extrañas construcciones metálicas avanzaban por los páramos. Los exploradores las rastrearon a través del Bosque Fuegoblanco y luego hasta un valle helado. Os pidió que investigaseis el asunto."
+        },
+        "87": {
+          "": "El capitán Olmstead te llevó hasta una chica Inox que encontraron casi congelada a las afueras de Frosthaven. Ella le dijo que \"El Coleccionista\" llevaba semanas reteniéndola a ella y a su família. La chica logró decirte donde se encuentra \"El Coleccionista\"."
+        },
+        "88": {
+          "87": "La guarida del Coleccionista era una estructura metálica situada en el Bosque Fuegoblanco. Luchaste contra los guardias del Coleccionista y rescataste a los dos hermanos de la chica. Ellos regresaron a Frosthaven para recibir atención médica, mientras que tú continuaste para acabar con el monstruo."
+        },
+        "9": {
+          "5": "Un Voz de hielo al que perseguías te atrajo a una especie de trampa: caíste por una fisura oculta a una cripta subterránea llena de espíritus. Después de ocuparte de ellos, decidiste explorar más a fondo esta zona subterránea."
+        },
+        "99": {
+          "": "Gem, una antigua orquídea, te encontró en el Cráter justo antes de irte a dormir. Sin dar demasiados detalles -se movía demasiado lentamente como para siquiera considerarlo-, te entregó una bolsa de antiguas monedas de oro y te contrató."
+        }
+      }
+    }
+  },
+  "summon": {
+    "animated-claymore": "Claymore animada",
+    "arcing-generator": "Generador de arco",
+    "armored-tank": "Tanque blindado",
+    "banner-of-courage": "Bandera de coraje",
+    "banner-of-doom": "Bandera de condena",
+    "banner-of-hope": "Bandera de esperanza",
+    "banner-of-strength": "Bandera de fuerza",
+    "banner-of-valor": "Bandera de valor",
+    "bombardier": "Bombarda",
+    "bone-horde": "Horda de huesos",
+    "dampening-unit": "Unidad de amortiguación",
+    "defense-grid": "Matriz defensiva",
+    "flesh-bomb": "Efigie inestable",
+    "flesh-fiend": "Efigie cicatrizada",
+    "jackal-mech": "Robot chacal",
+    "leaper": "Saltador",
+    "longbowman": "Arquero",
+    "machine-bolter": "Ametralladora automatizada",
+    "polar-cat": "Gato polar",
+    "raging-corpse": "Cadáver enfurecido",
+    "reinforcement": "Refuerzo",
+    "repair-drone": "Dron de reparación",
+    "shadow-beast": "Bestia de sombras",
+    "shadow-horror": "Horror de sombras",
+    "shaggy-lure": "Señuelo desgreñado",
+    "shambling-skeleton": "Esqueleto tambaleante",
+    "shield-spider": "Araña escudo",
+    "skeleton-sorcerer": "Hechicero esqueleto",
+    "sledge-driver": "Metal pesado",
+    "sniper-turret": "Torreta francotiradora",
+    "snow-fox": "Zorro de las nieves",
+    "spiritbound-falchion": "Alfanje espiritual",
+    "stitched-atrocity": "Atrocidad cosida",
+    "sword-propeller": "Espada hélice",
+    "torch-bearer": "Portador de antorcha",
+    "toxin-distributor": "Aspersor de toxinas",
+    "trained-falcon": "Halcón adiestrado",
+    "trapping-unit": "Unidad trampera",
+    "white-owl": "Búho blanco",
+    "wraith": "Espectro"
+  },
+  "treasures": {
+    "fh": {
+      "51": "Lee %data.section:78.1%",
+      "54": "¿Cofre? Aquí no había ningún cofre. Deja de empinar tanto el codo.",
+      "57": "¿Qué es esto? Un cofre vacío con una trampilla de plomo en la parte inferior. Anotas la ubicación para poder volver con la ayuda de Gem más tarde.",
+      "62": "Ganas el diseño del cubo mecánico %game.itemFh.82% cuando encuentres la otra mitad de este plano."
+    }
+  },
+  "trials": {
+    "fh": {
+      "348": {
+        "": "Debilidad",
+        "text": "Al inicio de cada escenario, devuelve tu mazo de Modificadores de ataque a su estado inicial, como si no hubieras conseguido pericias, y, a continuación, retira todos los modificadores positivos (incluido %game.attackmodifier.double%).<br>Superas esta prueba cuando completes un escenario<br> Devuelve tu mazo a su estado correcto cuando lo superes"
+      },
+      "349": {
+        "": "Estrategia",
+        "text": "Al inicio de cada escenario, no descartes ningún Objetivo de batalla. Si sacas dos excluyentes, descarta uno y saca otro para reemplazarlo.<br>Habrás superado esta prueba cuando completes un escenario habiendo conseguido todos los Objetivos de batalla robados."
+      },
+      "350": {
+        "": "Manipulación",
+        "text": "Convence al grupo para que tome elecciones de las cartas de Evento según el siguiente plan:<br>%game.eventCheckbox:A% %game.eventCheckbox:B% %game.eventCheckbox:B% %game.eventCheckbox:A%<br>Cuando el grupo haga una elección que coincida con la casilla sin marcar situada más a la Izquierda, márcala.<br>Superas esta prueba cuando todas las casillas están marcadas."
+      },
+      "351": {
+        "": "Pobreza",
+        "text": "Durante cada escenario, siempre que un aliado saquee una ficha de Botín, sufre%game.damage:N/3% (redondeado hacia arriba).<br>Superas esta prueba cuando completes un escenario."
+      },
+      "352": {
+        "": "Censura",
+        "text": "Durante cada escenario, no puedes decir las palabras \"atacar\", \"coger\" o \"dañar\" ni sus variantes (como los sustantivos \"ataque\" o \"daño). Siempre que lo hagas, sufres %game.damage:N/2% (redondeado hacia arriba).<br>Superas esta prueba cuando completes un escenario."
+      },
+      "353": {
+        "": "Orden",
+        "text": "Durante cada escenario, todas tus capacidades de Ataque deben tener como objetivo la figura con el número más bajo del tablero.<br>Superas esta prueba cuando completes un escenario."
+      },
+      "354": {
+        "": "Predicción",
+        "text": "Al inicio de cada escenario, predice el número de rondas que harán falta para completar el escenario colando esa mismo número de fichas de Daño delante de ti.<br>Habrás superado esta prueba cuando completes un escenario en el número de rondas predicho o 1 menos."
+      },
+      "355": {
+        "": "Inquisición",
+        "text": "Durante cualquier escenario, adivina públicamente el Objetivo de batalla de otro personaje (el nombre o el efecto) antes de que se revele. No puedes intentarlo más de una vez por personaje y escenario.<br>Has superado esta prueba cuando adivines correctamente un Objetivo de batalla."
+      },
+      "356": {
+        "": "Pruebas",
+        "text": "Durante cada escenario, roba 1 Objetivo de batalla adicional al final de cada ronda en la que hayas sufrido daño. En lo tocante a las condiciones de cada Objetivo de batalla recién robado, haz como si el escenario acabara de empezar. Solo obtienes marcas por 1 Objetivo de batalla completado en cada escenario.<br>Habrás superado esta prueba cuando completes un escenario habiendo conseguido al menos la mitad de los Objetivos de batalla robados."
+      },
+      "357": {
+        "": "Engaño",
+        "text": "Completa un escenario durante el cual tu personaje quede agotado.<br>Superas esta prueba cuando, antes de comenzar el siguiente escenario, convenzas a otro jugador de que tu prueba es imposible de superar y de que te debe permitir revelarla."
+      },
+      "358": {
+        "": "Expresión",
+        "text": "Al principio de cada escenario, selecciona un sustantivo. Si tu sustantivo seleccionado no es pronunciado en voz alta por otro jugador durante cada ronda, sufre %game.damage:N/2% (redondeado hacia arriba) al final de la ronda. El sustantivo seleccionado no puede ser \"carta\", \"ataque\", \"daño\", \"puerta\", \"monstruo\", \"hexágono\" o \"iniciativa\".<br>Superas esta prueba cuando completes un escenario."
+      },
+      "359": {
+        "": "Paciencia",
+        "text": "Superas esta prueba cuando el mazo de pruebas se agote y seas el último personaje con una prueba sin superar."
+      },
+      "360": {
+        "": "Victoria",
+        "text": "Al inicio de cada escenario, en lugar de que los personajes roben Objetivos de batalla de forma habitual, roba P+1 Objetivos de batalla de dos marcas y asigna 1 de ellos a cada personaje.<br>Habrás superado esta prueba cuando completes un escenario y todos los personajes hayan conseguido sus Objetivos de batalla."
+      }
+    }
+  }
+}

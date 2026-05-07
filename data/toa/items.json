@@ -1,0 +1,504 @@
+[
+  {
+    "id": 101,
+    "name": "Runic Visard",
+    "cost": 20,
+    "count": 1,
+    "edition": "toa",
+    "slot": "head",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-101.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Shoes of Ataraxy",
+    "cost": 35,
+    "count": 2,
+    "edition": "toa",
+    "slot": "legs",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-102.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Magnetic Relocator",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-103.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Shepherd's Flute",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "slot": "head",
+    "consumed": true,
+    "summon": {
+      "name": "Harrower Swarm",
+      "health": 3,
+      "attack": 2,
+      "movement": 3,
+      "range": 0,
+      "flying": true,
+      "action": {
+        "type": "condition",
+        "value": "poison"
+      }
+    }
+  },
+  {
+    "id": 105,
+    "name": "Tyrannical Staff",
+    "cost": 40,
+    "count": 1,
+    "edition": "toa",
+    "slot": "twohand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-105.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Crushing Mace",
+    "cost": 45,
+    "count": 2,
+    "edition": "toa",
+    "slot": "twohand",
+    "consumed": true,
+    "minusOne": 1,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-106.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Chief's Garb",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "body",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-107.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Iridescent Bracer",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "minusOne": 1,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-108.1%",
+        "small": true
+      }
+    ],
+    "actionsBack": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-108.2%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Talo's Staff",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-109.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Mask of Cruelty",
+    "cost": 35,
+    "count": 1,
+    "edition": "toa",
+    "slot": "head",
+    "minusOne": 1,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-110.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Staff of Equilibrium",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-111.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Voyager's Blade",
+    "cost": 40,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-112.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Looking Glass",
+    "cost": 30,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-113.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Runic Boots of Travel",
+    "cost": 34,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-114.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Battle Standard",
+    "cost": 45,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-115.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Matriarch's Warhorn",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-116.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Dawnbloom Nectar",
+    "cost": 15,
+    "count": 2,
+    "edition": "toa",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-117.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Graveweed Extract",
+    "cost": 15,
+    "count": 2,
+    "edition": "toa",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-118.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Thrice-Souled Warsword",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "solo": "three-eyes",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-119.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Rekindled Core",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "solo": "ice-meteor",
+    "slot": "onehand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-120.1%",
+        "small": true
+      }
+    ],
+    "actionsBack": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-120.2%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Crystal Catalyst",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "solo": "gemstone",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-121.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Crystal Spike",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "slot": "small",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-122.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Arclight Cladding",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "solo": "lightning-ball",
+    "slot": "body",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-123.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Arcbolt Lance",
+    "cost": 40,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-124.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Scroll of Evasion",
+    "cost": 40,
+    "count": 1,
+    "edition": "toa",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-125.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Arcstone Greaves",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "slot": "legs",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-126.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Arclight Hood",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "slot": "head",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-127.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Barbed Whip",
+    "cost": 50,
+    "count": 1,
+    "edition": "toa",
+    "solo": "spiked-ring",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-128.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Talo's Rosary",
+    "cost": 30,
+    "count": 2,
+    "edition": "toa",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-129.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Dynamic Sickle",
+    "cost": 35,
+    "count": 1,
+    "edition": "toa",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.toa-130.1%",
+        "small": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "ability": {
+    "Armed and Dangerous": "Armed and Dangerous",
+    "Bioluminescence": "Bioluminescence",
+    "Blood Drain": "Blood Drain",
+    "Bone Daggers": "Bone Daggers",
+    "Call of the Grave": "Call of the Grave",
+    "Corrupting Parasites": "Corrupting Parasites",
+    "Cyclone of Blades": "Cyclone of Blades",
+    "Death March": "Death March",
+    "Deflecting Blades": "Deflecting Blades",
+    "Endless": "Endless",
+    "Engulfing Stingers": "Engulfing Stingers",
+    "Focused Scourge": "Focused Scourge",
+    "Fury of the Horde": "Fury of the Horde",
+    "Grasping Advance": "Grasping Advance",
+    "Hive Mind": "Hive Mind",
+    "Incubation": "Incubation",
+    "Infest": "Infest",
+    "Oasis": "Oasis",
+    "Omniscient Assault": "Omniscient Assault",
+    "Overwhelming Offensive": "Overwhelming Offensive",
+    "Putrid Grubs": "Putrid Grubs",
+    "Repulsive Host": "Repulsive Host",
+    "Scattered Defense": "Scattered Defense",
+    "Sunstroke": "Sunstroke",
+    "Swarming Minions": "Swarming Minions",
+    "The Storm's Edge": "The Storm's Edge",
+    "Tomb of the Immortal": "Tomb of the Immortal",
+    "Unstoppable Army": "Unstoppable Army",
+    "Vampiric Tempest": "Vampiric Tempest",
+    "Wasteland": "Wasteland"
+  },
+  "character": {
+    "gh": {
+      "envx": {
+        "": "Bladeswarm",
+        "call-of-the-grave": {
+          "": "Call of the Grave",
+          "hint": "Enemies that have %game.condition.wound% suffer %game.damage:2% at the start of each of their turns instead of %game.damage:1%."
+        }
+      }
+    }
+  },
+  "custom": {
+    "gh": {
+      "envx": {
+        "abilities": {
+          "641": {
+            "1": "In addition to your current items, you may immediately equip up to four %game.items.slots.onehand% items, two %game.items.slots.twohand% items, or two %game.items.slots.onehand% and one %game.items.slots.twohand% items.",
+            "2": "All summoned allies you own perform",
+            "3": "with you controlling the actions."
+          },
+          "644": {
+            "1": "All summoned allies you own perform",
+            "2": "with you controlling the actions.",
+            "3": "All adjacent summoned allies add +1 %game.action.attack% to all their attacks"
+          }
+        }
+      }
+    }
+  },
+  "items": {
+    "gh-envx-151": {
+      "1": "During your melee attack, add %game.condition.poison% and %game.condition.wound% to the entire action."
+    }
+  },
+  "summon": {
+    "angry-wasps": "Angry Wasps",
+    "bloat-maggot": "Bloat Maggot",
+    "creeping-beetles": "Creeping Beetles",
+    "lightning-moths": "Lightning Moths",
+    "rage-hornets": "Rage Hornets",
+    "rust-vermin": "Rust Vermin",
+    "soul-leeches": "Soul Leeches",
+    "steel-scarabs": "Steel Scarabs"
+  }
+}

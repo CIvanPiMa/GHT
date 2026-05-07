@@ -1,0 +1,32 @@
+{
+  "index": "30.5",
+  "name": "Tower of Knowledge",
+  "edition": "fh",
+  "parent": "134",
+  "parentSections": [
+    [
+      "33.3"
+    ],
+    [
+      "147.4"
+    ]
+  ],
+  "marker": "b",
+  "monsters": [
+    "shrike-fiend"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "shrike-fiend",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

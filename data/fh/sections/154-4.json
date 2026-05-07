@@ -1,0 +1,48 @@
+{
+  "index": "154.4",
+  "name": "Tower of Knowledge",
+  "edition": "fh",
+  "parent": "134",
+  "parentSections": [
+    [
+      "11.6",
+      "30.5"
+    ]
+  ],
+  "monsters": [
+    "steel-automaton"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "steel-automaton"
+          },
+          "statEffect": {
+            "health": "[HxC/2{$math.ceil}]",
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fh.134%"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 8,
+      "initial": true,
+      "monster": [
+        {
+          "name": "steel-automaton",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

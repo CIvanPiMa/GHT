@@ -1,0 +1,31 @@
+<p><span [ght-label]="'game.loot.chooseCharacter'" [ght-label-args]="[lootValue, 'game.loot.' + loot.type]"></span></p>
+<div class="characters">
+  @for (character of characters | trackUUID; track character._trackUUID) {
+    <div class="character" (click)="toggleSelect(character.name)" [ngClass]="{ selected: character.name === selected }">
+      <img class="icon" [src]="character.iconUrl" />
+      <span>{{ gameManager.characterManager.characterName(character, true) }}</span>
+    </div>
+  }
+</div>
+
+<div class="menu">
+  @if (selected || data.selected) {
+    <a (click)="close()" [ngClass]="{ disabled: !selected && (!edit || !data.selected), remove: edit && !selected && data.selected }"
+      ><span
+        [ght-label]="
+          edit && !selected && data.selected
+            ? 'game.loot.remove'
+            : !edit || !data.selected || selected !== data.selected
+              ? 'game.loot.apply'
+              : 'game.loot.keep'
+        "
+        [ght-label-args]="[edition, selected || data.selected || '']"
+      ></span>
+    </a>
+  }
+  @if (!selected && !data.selected) {
+    <a (click)="close()" class="cancel">
+      <span [ght-label]="'cancel'"></span>
+    </a>
+  }
+</div>

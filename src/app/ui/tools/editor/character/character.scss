@@ -1,0 +1,39 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  ght-header {
+    z-index: 2;
+  }
+}
+
+.character-editor {
+  margin: calc(var(--ght-unit) * 2);
+}
+
+.character-data {
+  display: flex;
+  flex-direction: column;
+
+  .hp-grid {
+    max-width: 600px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+
+    span,
+    input {
+      text-align: center;
+    }
+
+    input {
+      background-color: transparent;
+      border: 1px solid var(--ght-color-red);
+      color: var(--ght-color-red);
+      min-width: 40px;
+      font-size: 1em;
+    }
+  }
+}

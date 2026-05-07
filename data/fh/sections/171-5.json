@@ -1,0 +1,12 @@
+{
+  "index": "171.5",
+  "name": "Return the sun agates to Derrick",
+  "edition": "fh",
+  "parent": "130",
+  "conclusion": true,
+  "rewards": {
+    "prosperity": 1,
+    "custom": "%data.section.rewards.fh.171-5%",
+    "morale": -3
+  }
+}

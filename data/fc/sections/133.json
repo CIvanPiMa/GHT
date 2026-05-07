@@ -1,0 +1,62 @@
+{
+  "index": "133",
+  "name": "A Secret Floor",
+  "edition": "fc",
+  "parent": "106",
+  "parentSections": [
+    [
+      "68"
+    ]
+  ],
+  "marker": "k",
+  "monsters": [
+    "ancient-artillery"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "ancient-artillery"
+          },
+          "statEffect": {
+            "actions": [
+              {
+                "type": "shield",
+                "value": 2
+              },
+              {
+                "type": "custom",
+                "value": "%data.section.rules.fc.133.2%"
+              }
+            ]
+          },
+          "note": "%data.section.rules.fc.133.1%"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "A1a",
+      "initial": true,
+      "treasures": [
+        "G"
+      ],
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

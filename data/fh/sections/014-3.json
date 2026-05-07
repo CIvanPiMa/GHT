@@ -1,0 +1,42 @@
+{
+  "index": "14.3",
+  "name": "Temple of Liberation",
+  "edition": "fh",
+  "parent": "20",
+  "monsters": [
+    "steel-automaton"
+  ],
+  "objectives": [
+    {
+      "name": "Glowing Orb",
+      "health": "(L+2)xC"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "steel-automaton",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "count": "2"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

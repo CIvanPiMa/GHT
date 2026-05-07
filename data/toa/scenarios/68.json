@@ -1,0 +1,101 @@
+{
+  "index": "68",
+  "name": "Rival Explorers",
+  "edition": "toa",
+  "unlocks": [
+    "69"
+  ],
+  "monsters": [
+    "ancient-artillery",
+    "smoke-spirit",
+    "vermling-scout-scenario-68",
+    "vermling-shaman-scenario-68"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [
+        54
+      ],
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "type": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "smoke-spirit",
+          "type": "elite"
+        },
+        {
+          "name": "smoke-spirit",
+          "type": "elite"
+        },
+        {
+          "name": "smoke-spirit",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-68",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-68",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-68",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-68",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-shaman-scenario-68",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-shaman-scenario-68",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-shaman-scenario-68",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

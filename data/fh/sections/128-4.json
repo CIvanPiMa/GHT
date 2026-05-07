@@ -1,0 +1,32 @@
+{
+  "index": "128.4",
+  "name": "The Titan",
+  "edition": "fh",
+  "parent": "123",
+  "parentSections": [
+    [
+      "104.2",
+      "158.1",
+      "193.3"
+    ]
+  ],
+  "marker": "4",
+  "monsters": [
+    "power-core"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        52
+      ],
+      "monster": [
+        {
+          "name": "power-core",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "index": "48",
+  "name": "Forest Fire",
+  "flowChartGroup": "road-events",
+  "edition": "cs",
+  "rewards": {
+    "gold": 20,
+    "experience": 10
+  },
+  "monsters": [
+    "giant-viper",
+    "inox-guard",
+    "spitting-drake"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "D1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "giant-viper",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "type": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

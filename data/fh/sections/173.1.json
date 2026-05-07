@@ -1,0 +1,13 @@
+{
+  "index": "173.1",
+  "name": "Hide Depot Built",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "summer-outpost:SO-56",
+      "summer-road:SR-41"
+    ]
+  }
+}

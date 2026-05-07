@@ -1,0 +1,19 @@
+.health-bar {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+
+  .health-bar-value {
+    height: 100%;
+    max-width: 1000%;
+    transition: width calc(var(--ght-animation-speed) * 500ms);
+    background-color: var(--ght-color-lightgreen);
+  }
+
+  &.critical {
+    .health-bar-value {
+      background-color: var(--ght-color-red);
+    }
+  }
+}

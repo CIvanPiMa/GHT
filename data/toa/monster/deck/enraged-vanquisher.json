@@ -1,0 +1,238 @@
+{
+  "name": "enraged-vanquisher",
+  "edition": "toa",
+  "abilities": [
+    {
+      "name": "Merciless Resolve",
+      "cardId": 689.2,
+      "level": "A",
+      "initiative": 15,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus"
+        },
+        {
+          "type": "shield",
+          "value": "",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "retaliate",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "grid",
+              "value": "",
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": "",
+                  "subActions": [
+                    {
+                      "type": "custom",
+                      "value": "%data.custom.toa.enraged-vanquisher.2%"
+                    },
+                    {
+                      "type": "condition",
+                      "value": "poison"
+                    }
+                  ]
+                },
+                {
+                  "type": "concatenation",
+                  "value": "",
+                  "subActions": [
+                    {
+                      "type": "custom",
+                      "value": "%data.custom.toa.enraged-vanquisher.3%"
+                    },
+                    {
+                      "type": "condition",
+                      "value": "wound"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Share our Anquish",
+      "cardId": 690.2,
+      "level": "B",
+      "initiative": 37,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.3%",
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 2,
+              "valueType": "plus",
+              "subActions": [
+                {
+                  "type": "area",
+                  "value": "(0,3,target:curse)|(0,4,target:immobilize)|(1,1,target:curse)|(1,2,active)|(2,0,target:immobilize)"
+                },
+                {
+                  "type": "custom",
+                  "value": "%data.custom.toa.enraged-vanquisher.4%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.5%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.2%",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.enraged-vanquisher.6%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reaching Malice",
+      "cardId": 691.2,
+      "level": "C",
+      "initiative": 75,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.2%",
+          "subActions": [
+            {
+              "type": "attack",
+              "value": 1,
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "focusEnemyFarthest",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.3%",
+          "subActions": [
+            {
+              "type": "move",
+              "value": 0,
+              "valueType": "plus"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "muddle",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enraged Destruction",
+      "cardId": 692.2,
+      "level": "D",
+      "initiative": 50,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.enraged-vanquisher.4%",
+              "small": true,
+              "subActions": [
+                {
+                  "type": "grid",
+                  "value": 2,
+                  "subActions": [
+                    {
+                      "type": "area",
+                      "value": "(0,1,target:muddle)|(0,2,active)|(1,0,target:wound)|(1,1,target:wound)|(1,2,target:muddle)|(2,2,target:wound)"
+                    },
+                    {
+                      "type": "area",
+                      "value": "(0,1,target:muddle)|(0,2,active)|(1,0,target:poison)|(1,1,target:poison)|(1,2,target:muddle)|(2,2,target:poison)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "shield",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.enraged-vanquisher.5%",
+          "small": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "index": "82",
+  "name": "Both Orchid records saved",
+  "edition": "fc",
+  "parent": "98",
+  "conclusion": true,
+  "named": true,
+  "unlocks": [
+    "102",
+    "103"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "knowledge-is-power"
+    ],
+    "partyAchievements": [
+      "custodians"
+    ],
+    "gold": 10,
+    "reputation": 1,
+    "prosperity": 1,
+    "events": [
+      "city:86"
+    ],
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"Knowledge is Power\" achievement gained, read section 27 on page 10)"
+      ]
+    }
+  }
+}

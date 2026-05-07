@@ -1,0 +1,95 @@
+<div class="garden-container">
+  <div class="menu">
+    <div class="title" [ght-label]="'data.buildings.garden.plots'"></div>
+
+    <div class="state-menu">
+      <div
+        class="state"
+        ght-pointer-input
+        (doubleClick)="flipGarden(true)"
+        [ght-label]="
+          level < 3
+            ? !garden.flipped
+              ? 'data.buildings.garden.plots.state.plant'
+              : 'data.buildings.garden.plots.state.harvest'
+            : 'data.buildings.garden.plots.state.both'
+        "
+      ></div>
+      <div class="hint-container">
+        <ght-action
+          class="flip"
+          [ngClass]="{ disabled: disabled }"
+          [action]="flipAction"
+          ght-pointer-input
+          (singleClick)="flipGarden()"
+          (doubleClick)="flipGarden(true)"
+          [ght-tooltip]="'data.buildings.garden.plots.state.toggle'"
+        ></ght-action>
+        <label [ngClass]="{ disabled: !settingsManager.settings.automaticPassTime }">
+          <input
+            type="checkbox"
+            (change)="toggleAutomation()"
+            [checked]="garden.automated && settingsManager.settings.automaticPassTime"
+            [disabled]="!settingsManager.settings.automaticPassTime"
+          />
+          <span [ght-label]="'data.buildings.garden.plots.automated'"></span>
+        </label>
+        <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+        <span class="hint">
+          <span class="text" [ght-label]="'data.buildings.garden.plots.automated.hint'"></span>
+        </span>
+      </div>
+
+      @if ((!garden.automated || !settingsManager.settings.automaticPassTime) && !harvested) {
+        <a (click)="harvest()" [ght-label]="'data.buildings.garden.plots.harvest'"></a>
+      }
+    </div>
+
+    <div class="herbs">
+      @for (herb of herbs; track herb) {
+        <a
+          class="herb"
+          ght-pointer-input
+          (singleClick)="setActive(herb)"
+          (doubleClick)="setActive(herb, true)"
+          [ngClass]="{ active: activeHerb === herb, disabled: (activeHerb !== herb && !resources[herb]) || garden.flipped }"
+        >
+          <img class="ght-svg" [src]="'./assets/images/fh/loot/' + herb + '.svg'" />
+          <span class="value">{{ resources[herb] }}</span>
+        </a>
+      }
+    </div>
+
+    @if (!settingsManager.settings.fhShareResources) {
+      <div class="sources">
+        <a
+          class="source"
+          (click)="selectSource(characters.length)"
+          [ngClass]="{ active: currentSource === characters.length, disabled: !currentResources[characters.length] }"
+        >
+          <span [ght-label]="'party.campaign.sheet.supply'"></span>:&nbsp;
+          <span class="value">{{ currentResources[characters.length] }}</span>
+        </a>
+        @for (character of characters | trackUUID; track character._trackUUID; let i = $index) {
+          <a class="source" (click)="selectSource(i)" [ngClass]="{ active: currentSource === i, disabled: !currentResources[i] }">
+            <img class="character-icon" [src]="character.iconUrl" />
+            <span class="value">{{ currentResources[i] }}</span>
+          </a>
+        }
+      </div>
+    }
+  </div>
+
+  <div class="garden" [ngClass]="{ 'level-1': level === 1, 'level-2': level === 2, 'level-3': level === 3, 'level-4': level === 4 }">
+    @for (slot of [] | ghsRange: slots; track slot) {
+      <div
+        class="plot"
+        ght-pointer-input
+        (singleClick)="plantHerb(slot)"
+        (doubleClick)="plantHerb(slot, true)"
+        [class]="'plot-' + (slot + 1) + (garden.plots[slot] ? ' ' + garden.plots[slot] : '') + (activeHerb ? ' plant-' + activeHerb : '')"
+        [ngClass]="{ harvest: garden.plots[slot], plant: !garden.plots[slot], disabled: garden.plots[slot] === activeHerb || disabled }"
+      ></div>
+    }
+  </div>
+</div>

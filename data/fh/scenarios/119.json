@@ -1,0 +1,115 @@
+{
+  "index": "119",
+  "name": "Radiant Dust",
+  "flowChartGroup": "other",
+  "coordinates": {
+    "x": 428.5,
+    "y": 365.5,
+    "width": 104,
+    "height": 70,
+    "gridLocation": "Q1"
+  },
+  "edition": "fh",
+  "complexity": 2,
+  "eventType": "road",
+  "recaps": [
+    {
+      "type": "section",
+      "value": "42.2"
+    }
+  ],
+  "requirements": [
+    {
+      "campaignSticker": [
+        "into-the-forest"
+      ]
+    }
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.fh.119%"
+  },
+  "monsters": [
+    "burrowing-blade",
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "objectives": [
+    {
+      "name": "Infuser",
+      "escort": true,
+      "health": "3xL+5",
+      "initiative": 99,
+      "marker": "a",
+      "actions": [
+        {
+          "type": "move",
+          "value": 2,
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.scenario.rules.fh.119.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fh.119.2%",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fh.119.3%",
+              "small": true,
+              "subActions": [
+                {
+                  "type": "heal",
+                  "value": "L+2",
+                  "small": true,
+                  "subActions": [
+                    {
+                      "type": "specialTarget",
+                      "value": "self",
+                      "small": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fh.119.4%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "burrowing-blade",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "rending-drake",
+          "type": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "index": "133.3",
+  "name": "Fleeting Permanence",
+  "edition": "fh",
+  "parent": "52",
+  "marker": "2",
+  "monsters": [
+    "snow-imp"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "treasures": [
+        1
+      ],
+      "monster": [
+        {
+          "name": "snow-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

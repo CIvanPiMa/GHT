@@ -1,0 +1,73 @@
+{
+  "index": "52",
+  "name": "Wishing Well",
+  "flowChartGroup": "side-quests",
+  "edition": "cs",
+  "rewards": {
+    "items": [
+      "37"
+    ]
+  },
+  "monsters": [
+    "ooze",
+    "spitting-drake"
+  ],
+  "rules": [
+    {
+      "round": "R % 4 == 2",
+      "spawns": [
+        {
+          "monster": {
+            "name": "spitting-drake",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "c"
+        }
+      ]
+    },
+    {
+      "round": "R % 4 == 0",
+      "spawns": [
+        {
+          "monster": {
+            "name": "spitting-drake",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "c"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "E1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "ooze",
+          "type": "normal"
+        },
+        {
+          "name": "ooze",
+          "type": "normal"
+        },
+        {
+          "name": "ooze",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

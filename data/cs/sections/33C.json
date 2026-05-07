@@ -1,0 +1,26 @@
+{
+  "index": "33C",
+  "name": "Eternal Portals",
+  "edition": "cs",
+  "parent": "31",
+  "parentSections": [
+    [
+      "33B"
+    ]
+  ],
+  "monsters": [
+    "eternal-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "eternal-demon",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

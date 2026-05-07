@@ -1,0 +1,9 @@
+{
+  "index": "140.3",
+  "name": "The Work Continues",
+  "edition": "fh",
+  "conclusion": true,
+  "rewards": {
+    "custom": "%data.section.rewards.fh.140-3%"
+  }
+}

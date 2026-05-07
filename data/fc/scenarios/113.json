@@ -1,0 +1,87 @@
+{
+  "index": "113",
+  "name": "The Lost Thread",
+  "flowChartGroup": "tainted-crypt",
+  "coordinates": {
+    "x": 2481,
+    "y": 1143.75,
+    "width": 176,
+    "height": 139,
+    "gridLocation": "H-16"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "114"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "a-peril-averted"
+    ],
+    "gold": 135,
+    "prosperity": 1,
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"A Peril Averted\" achievement gained, read section 118 on page 37)"
+      ],
+      "gold": "This money must be immediately be spend on any %game.action.move%, %game.action.range%, or %game.action.jump% enhancement"
+    }
+  },
+  "monsters": [
+    "stone-golem"
+  ],
+  "objectives": [
+    {
+      "name": "Naaret",
+      "escort": true,
+      "health": "4+(2xL)",
+      "initiative": 50,
+      "marker": "b"
+    },
+    {
+      "name": "Seal",
+      "health": "5xC",
+      "marker": "a"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "stone-golem"
+          },
+          "statEffect": {
+            "name": "warden",
+            "health": "-",
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fc.113%"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "D2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<div class="scenario-chart-popup scroll-container">
+  <div class="header">
+    @if (scenario.flowChartGroup) {
+      <span class="subtitle" [ght-label]="'data.custom.' + scenario.edition + '.flowChartGroup.' + scenario.flowChartGroup"></span>
+    }
+    <span class="title">
+      <span class="number text-white" [ght-label]="'%game.scenarioNumber:' + scenario.index + '%'"></span>
+      <span class="name text-white" [ght-label]="gameManager.scenarioManager.scenarioTitle(scenario)"></span>
+
+      @if (isSuccess || forceAll) {
+        <a [ngClass]="{ rewards: isSuccess }" (click)="openScenarioRewards()" [ght-tooltip]="'scenario.summary.rewards'">
+          <img class="ght-svg" src="./assets/images/scenario/conclusion.svg" />
+        </a>
+        @if (isSuccess) {
+          <a (click)="openStatisticsDialog()" [ght-tooltip]="'scenario.stats'">
+            <img class="ght-svg" src="./assets/images/stats.svg" />
+          </a>
+        }
+      }
+    </span>
+  </div>
+
+  @if (hasRequirements) {
+    <div class="spoiler-block visible">
+      <label [ght-label]="'scenario.requirements'"></label>
+      <ght-requirements [scenarioData]="scenario" [all]="true" [allToggle]="false"></ght-requirements>
+      <div class="background"></div>
+    </div>
+  }
+
+  <div class="spoiler-block" [ngClass]="{ visible: showSetup }">
+    <ght-scenario-setup
+      [scenario]="scenario"
+      [details]="false"
+      [title]="false"
+      [spoiler]="gameManager.scenarioManager.isSuccess(scenario)"
+    ></ght-scenario-setup>
+
+    <div class="background" (click)="showSetup = true">
+      @if (!showSetup) {
+        <label [ght-label]="'scenario.chart.setup'"></label>
+      }
+    </div>
+  </div>
+
+  <div class="spoiler-block" [ngClass]="{ visible: showTreasures }">
+    @if (!showTreasures || treasures.length) {
+      <div class="treasures">
+        @for (treasure of treasures; track treasure) {
+          <div class="hint-container">
+            <div
+              class="treasure hint-trigger"
+              (click)="openTreasureDialog(+treasure.split(':')[0])"
+              [ngClass]="{ looted: lootedTreasures.indexOf(+treasure.split(':')[0]) !== -1 }"
+            >
+              @if (('' + treasure).startsWith('G') || +('' + treasure).split(':')[0] >= 0) {
+                <span>
+                  @if (!('' + treasure).startsWith('G') && +treasure < 10 && +treasure >= 0) {
+                    <span>0</span>
+                  }
+                  {{ ('' + treasure).startsWith('G-') ? 'G' : ('' + treasure).split(':')[0] }}
+                </span>
+              }
+              @if (!('' + treasure).startsWith('G') && +('' + treasure).split(':')[0] < 0) {
+                <span>???</span>
+              }
+              <img class="overlay check" src="./assets/images/check.svg" />
+            </div>
+            <span class="hint above center">
+              @if (!('' + treasure).startsWith('G-')) {
+                <ght-treasure-label
+                  class="text placeholder text-white"
+                  [edition]="scenario.edition"
+                  [index]="+('' + treasure).split(':')[0] - 1"
+                  [rewardResults]="gameManager.scenarioManager.treasureRewardsFromString('' + treasure)"
+                ></ght-treasure-label>
+              }
+            </span>
+          </div>
+        }
+      </div>
+    }
+
+    @if (showTreasures && treasures.length === 0) {
+      <label [ght-label]="'scenario.chart.treasures.empty'"></label>
+    }
+
+    <div class="background" (click)="showTreasures = true">
+      @if (!showTreasures) {
+        <label [ght-label]="'scenario.chart.treasures'"></label>
+      }
+    </div>
+  </div>
+
+  <span class="predecessors">
+    @for (predecessor of predecessors | trackUUID; track predecessor._trackUUID; let i = $index) {
+      @if (i > 0 && i < predecessors.length) {
+        <img class="ght-svg" src="./assets/images/arrow-up.svg" />
+      }
+      <span class="text-white" [ght-label]="'%game.scenarioNumber:' + predecessor.index + '%'"></span>
+    }
+    @if (scenario.recaps && scenario.recaps.length) {
+      <a class="recap" [ght-label]="'scenario.recap'" (click)="openRecapDialog()"></a>
+    }
+  </span>
+
+  <div class="buttons">
+    <a
+      class="play"
+      [ngClass]="{
+        casual: !gameManager.game.party.campaignMode,
+        success: gameManager.scenarioManager.isSuccess(scenario),
+        locked: gameManager.scenarioManager.isLocked(scenario),
+        blocked: gameManager.scenarioManager.isBlocked(scenario)
+      }"
+      (click)="setScenario()"
+      [ght-label]="'scenario.chart.start'"
+    ></a>
+    @if (!isSuccess) {
+      <a class="success" (click)="addSuccess()" [ght-label]="'scenario.chart.success'"></a>
+    }
+  </div>
+</div>

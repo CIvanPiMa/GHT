@@ -1,0 +1,71 @@
+{
+  "index": "73",
+  "name": "Lootpalooza",
+  "edition": "toa",
+  "rewards": {
+    "custom": "%data.scenario.rewards.toa.73%"
+  },
+  "monsters": [
+    "bandit-guard",
+    "vermling-scavenger"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-guard",
+          "type": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "type": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scavenger",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scavenger",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scavenger",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scavenger",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scavenger",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scavenger",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

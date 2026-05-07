@@ -1,0 +1,156 @@
+{
+  "index": "99",
+  "name": "Aftershocks",
+  "flowChartGroup": "citizens",
+  "coordinates": {
+    "x": 2358.25,
+    "y": 247.5,
+    "width": 145,
+    "height": 71,
+    "gridLocation": "B-16"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "monsters": [
+    "black-imp",
+    "cultist",
+    "deep-terror",
+    "living-bones"
+  ],
+  "objectives": [
+    {
+      "name": "Civilian",
+      "escort": true,
+      "health": "2x(L+C)",
+      "initiative": 50,
+      "marker": "a"
+    }
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "muddle",
+          "scenarioEffect": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "cultist"
+          },
+          "statEffect": {
+            "deck": "cultist-scenario-99"
+          },
+          "note": "%data.scenario.rules.fc.99.1%"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "sections": [
+        "8"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "escort",
+            "name": "Civilian"
+          },
+          "type": "killed"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "N1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "type": "elite"
+        },
+        {
+          "name": "black-imp",
+          "type": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "player2": "elite",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ],
+      "objectives": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

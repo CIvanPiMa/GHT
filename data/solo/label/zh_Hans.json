@@ -1,0 +1,123 @@
+{
+  "custom": {
+    "fh": {
+      "algox-snowspeaker-trap-solo": {
+        "1": "在%game.action.range:2%内的所有敌人受到 %game.damage:2%"
+      },
+      "errata": {
+        "solo28": "特殊规则：“雪语者”应改为“冰语者”"
+      },
+      "lost-in-seaweed": {
+        "1": "以%game.action.range:6%内最远的敌人为目标",
+        "2": "在一个相邻的空格子中创造一个1格的水域地形。",
+        "3": "在一个相邻的未占据的水域地形格。"
+      }
+    },
+    "gh": {
+      "city-guard-saw-solo": {
+        "1": "在回合结束时受到%game.damage:1%，直到被完全治愈"
+      },
+      "ghost-wolf": {
+        "1": "在每个回合开始时："
+      }
+    },
+    "solo": {
+      "char-am-deck": "使用角色修正牌堆"
+    },
+    "toa": {
+      "glacier-demon": {
+        "1": "如果%game.condition.wound%失去%game.action.retaliate%"
+      },
+      "inferno-demon": {
+        "1": "如果%game.action.retaliate%失去%game.action.retaliate%"
+      },
+      "okeda": {
+        "1": "在化身行动后立即行动，与该化身执行相同的上下半区行动",
+        "2": "如果该化身没有在下半区行动中移动：",
+        "3": "如果该化身没有在上半区行动中攻击："
+      }
+    }
+  },
+  "edition": {
+    "solo": "单人剧情（全部版本）"
+  },
+  "monster": {
+    "abael-warlord": "渊鬼领主",
+    "algox-icespeaker-shards-solo": "冰角族冰语者（单人）",
+    "algox-snowspeaker-trap-solo": "冰角族雪语者",
+    "bandit-archer-music-note-solo": "%data.monster.bandit-archer% (%data.charactergh..music-note% %solo%)",
+    "bandit-archer-music-note2-solo": "%data.monster.bandit-archer%",
+    "bandit-guard-music-note-solo": "%data.monster.bandit-guard% (%data.character.gh.music-note% %solo%)",
+    "bandit-scout-music-note2-solo": "%data.monster.bandit-scout%",
+    "black-imp-deathwalker-solo": "黑色小鬼（单人）",
+    "cave-bear-circles-solo": "%data.monster.cave-bear% (%data.character.gh.circles% %solo%)",
+    "cave-bear-circles2-solo": "%data.monster.cave-bear%",
+    "chief-of-spikes": "尖刺酋长",
+    "city-guard-banner-spear-solo": "城市守卫（单人）",
+    "city-guard-saw-solo": "%data.monster.city-guard% (%data.character.gh.saw% %solo%)",
+    "city-guard-saw2-solo": "%data.monster.city-guard%",
+    "city-guard-scoundrel-solo": "%data.monster.city-guard% (%data.character.gh.scoundrel% %solo%)",
+    "city-guard-sun-solo": "%data.monster.city-guard% (%data.character.gh.sun% %solo%)",
+    "city-guard-sun2-solo": "%data.monster.city-guard%",
+    "city-guard-tinkerer-solo": "%data.monster.city-guard% (%data.character.gh.tinkerer% %solo%)",
+    "deep-earth": "大地深处",
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)",
+    "earth-demon-mindthief-solo": "%data.monster.earth-demon% (%data.character.gh.mindthief% %solo%)",
+    "energized-corpse": "充能尸体",
+    "hollow-scholar": "空洞学者",
+    "incarnation-of-ancestors": "先祖化身",
+    "living-spirit-squidface-solo": "%data.monster.living-spirit%",
+    "lost-in-seaweed": "迷失海藻",
+    "mountains-heart": "山之心",
+    "night-demon-deathwalker-solo": "黑夜恶魔（单人）",
+    "plea-for-help-without-answer": "无可救药",
+    "shape-blocks-out-the-sun": "蔽日之形",
+    "vermling-scout-mindthief2-solo": "%data.monster.vermling-scout%"
+  },
+  "scenario": {
+    "title": {
+      "fh": {
+        "solo-20": "自然奇迹",
+        "solo-21": "与时间赛跑",
+        "solo-22": "侦察伏击",
+        "solo-23": "黑夜消亡",
+        "solo-24": "冢中学者",
+        "solo-25": "分而治之",
+        "solo-26": "先祖之道",
+        "solo-27": "崩裂深渊",
+        "solo-28": "调谐共鸣",
+        "solo-29": "华丽的陷阱",
+        "solo-30": "苦难集",
+        "solo-31": "以雪制雪",
+        "solo-32": "冰层之下",
+        "solo-33": "充电",
+        "solo-34": "锅炉房",
+        "solo-35": "湿活",
+        "solo-36": "击浪"
+      }
+    }
+  },
+  "section": {
+    "title": {
+      "fh": {
+        "solo-20-1": "自然奇迹",
+        "solo-21-1": "与时间赛跑",
+        "solo-21-2": "与时间赛跑",
+        "solo-24-1": "冢中学者",
+        "solo-24-2": "冢中学者",
+        "solo-25-1": "分而治之",
+        "solo-27-1": "崩裂深渊",
+        "solo-27-2": "崩裂深渊",
+        "solo-28-1": "调谐共鸣",
+        "solo-32-1": "冰层之下",
+        "solo-33-1": "充电",
+        "solo-34-1": "锅炉房",
+        "solo-34-a": "锅炉房",
+        "solo-35-1": "湿活",
+        "solo-35-2": "湿活",
+        "solo-36-1": "击浪",
+        "solo-36-2": "击浪"
+      }
+    }
+  }
+}

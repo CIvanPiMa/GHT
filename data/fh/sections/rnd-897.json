@@ -1,0 +1,105 @@
+{
+  "index": "897",
+  "group": "randomMonsterCard",
+  "name": "Traitorous",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "chaos-demon",
+    "city-guard"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "light",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "chaos-demon",
+          "type": "normal",
+          "marker": "7"
+        },
+        {
+          "name": "chaos-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "2"
+        },
+        {
+          "name": "chaos-demon",
+          "player4": "normal",
+          "marker": "8"
+        },
+        {
+          "name": "city-guard",
+          "type": "elite",
+          "marker": "6"
+        },
+        {
+          "name": "city-guard",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "1"
+        },
+        {
+          "name": "city-guard",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "3"
+        },
+        {
+          "name": "city-guard",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "9"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "treasure",
+      "value": "recoverCards",
+      "values": [
+        5
+      ]
+    },
+    {
+      "type": "loot",
+      "marker": "4"
+    },
+    {
+      "type": "trap",
+      "value": "poison-trap",
+      "values": [
+        "wound",
+        "poison"
+      ],
+      "marker": "10"
+    },
+    {
+      "type": "trap",
+      "value": "poison-trap",
+      "values": [
+        "wound",
+        "poison"
+      ],
+      "marker": "11"
+    }
+  ]
+}

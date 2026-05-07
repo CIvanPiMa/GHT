@@ -1,0 +1,125 @@
+{
+  "name": "chaos-lieutenant",
+  "edition": "fh",
+  "deck": "chaos-demon",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "chaos-demon",
+  "baseStat": {
+    "type": "boss",
+    "actions": [
+      {
+        "type": "condition",
+        "value": "muddle"
+      },
+      {
+        "type": "custom",
+        "value": "%data.custom.fh.chaos-lieutenant.1%",
+        "small": true,
+        "subActions": [
+          {
+            "type": "heal",
+            "value": "X",
+            "subActions": [
+              {
+                "type": "specialTarget",
+                "value": "self",
+                "small": true
+              },
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.chaos-lieutenant.2%",
+                "small": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": 10,
+      "movement": 4,
+      "attack": 3,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 1,
+      "health": 12,
+      "movement": 4,
+      "attack": 4,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 2,
+      "health": 14,
+      "movement": 4,
+      "attack": 5,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 3,
+      "health": 18,
+      "movement": 5,
+      "attack": 5,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 4,
+      "health": 21,
+      "movement": 5,
+      "attack": 6,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 5,
+      "health": 26,
+      "movement": 5,
+      "attack": 6,
+      "immunities": [
+        "disarm",
+        "stun"
+      ]
+    },
+    {
+      "level": 6,
+      "health": 33,
+      "movement": 5,
+      "attack": 8,
+      "immunities": [
+        "disarm",
+        "stun",
+        "curse"
+      ]
+    },
+    {
+      "level": 7,
+      "health": 39,
+      "movement": 6,
+      "attack": 9,
+      "immunities": [
+        "disarm",
+        "stun",
+        "curse"
+      ]
+    }
+  ]
+}

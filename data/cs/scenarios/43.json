@@ -1,0 +1,49 @@
+{
+  "index": "43",
+  "name": "Mansion Maze",
+  "flowChartGroup": "city-events",
+  "edition": "cs",
+  "rewards": {
+    "prosperity": 1,
+    "custom": "%data.scenario.rewards.cs.random-orb%"
+  },
+  "monsters": [
+    "ancient-artillery",
+    "city-guard",
+    "stone-golem"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "I1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard",
+          "type": "normal"
+        },
+        {
+          "name": "city-guard",
+          "type": "normal"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

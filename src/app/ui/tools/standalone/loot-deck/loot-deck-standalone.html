@@ -1,0 +1,13 @@
+<div class="loot-deck-standalone" [ngClass]="{ vertical: vertical() }" ght-keyboard-shortcuts>
+  <ght-header [standalone]="true"></ght-header>
+  <ght-loot-deck
+    [deck]="gameManager.game.lootDeck"
+    [fullscreen]="false"
+    [standalone]="true"
+    [vertical]="vertical()"
+    (before)="beforeLootDeck($event)"
+    (after)="afterLootDeck($event)"
+    [characters]="false"
+  >
+  </ght-loot-deck>
+</div>

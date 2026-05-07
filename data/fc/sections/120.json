@@ -1,0 +1,20 @@
+{
+  "index": "120",
+  "edition": "fc",
+  "parent": "108",
+  "parentSections": [
+    [
+      "101"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "partyAchievements": [
+      "angels-of-death"
+    ],
+    "items": [
+      "155",
+      "161:2"
+    ]
+  }
+}

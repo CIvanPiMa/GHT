@@ -1,0 +1,149 @@
+{
+  "index": "10",
+  "name": "The Gauntlet",
+  "flowChartGroup": "main",
+  "coordinates": {
+    "x": 390.5,
+    "y": 1329.5,
+    "width": 300,
+    "height": 208,
+    "gridLocation": "E2"
+  },
+  "edition": "jotl",
+  "unlocks": [
+    "11",
+    "12"
+  ],
+  "rewards": {
+    "experience": 15
+  },
+  "monsters": [
+    "black-sludge",
+    "chaos-demon",
+    "stone-golem"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "start": true,
+      "requiredRooms": [
+        2
+      ],
+      "note": "%data.scenario.rules.jotl.10.1%"
+    },
+    {
+      "round": "true",
+      "start": true,
+      "requiredRooms": [
+        3
+      ],
+      "note": "%data.scenario.rules.jotl.10.2%"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl10-1",
+      "initial": true,
+      "rooms": [
+        2
+      ],
+      "monster": [
+        {
+          "name": "black-sludge",
+          "type": "normal"
+        },
+        {
+          "name": "black-sludge",
+          "type": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "black-sludge",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "jotl10-2",
+      "marker": "1",
+      "rooms": [
+        3
+      ],
+      "monster": [
+        {
+          "name": "stone-golem",
+          "type": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "stone-golem",
+          "player4": "normal"
+        }
+      ]
+    },
+    {
+      "roomNumber": 3,
+      "ref": "jotl10-3",
+      "marker": 2,
+      "treasures": [
+        8
+      ],
+      "monster": [
+        {
+          "name": "black-sludge",
+          "type": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "chaos-demon",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "chaos-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "chaos-demon",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

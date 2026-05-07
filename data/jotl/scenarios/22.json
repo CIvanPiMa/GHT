@@ -1,0 +1,114 @@
+{
+  "index": "22",
+  "name": "Unfriendly Message",
+  "flowChartGroup": "characters",
+  "coordinates": {
+    "x": 22.75,
+    "y": 842.75,
+    "width": 324,
+    "height": 238,
+    "gridLocation": "D1"
+  },
+  "edition": "jotl",
+  "rewards": {
+    "items": [
+      "33"
+    ]
+  },
+  "monsters": [
+    "giant-viper",
+    "stone-golem-scenario-22",
+    "vermling-raider-scenario-22"
+  ],
+  "rules": [
+    {
+      "round": "R > 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "jotl",
+            "name": "stone-golem-scenario-22"
+          },
+          "type": "damage",
+          "value": "[C/2{$math.floor}]"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "giant-viper",
+            "player2": "normal",
+            "player4": "elite"
+          },
+          "count": 2
+        },
+        {
+          "monster": {
+            "name": "giant-viper",
+            "player3": "normal"
+          }
+        },
+        {
+          "monster": {
+            "name": "giant-viper",
+            "player3": "elite"
+          }
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl22-1",
+      "initial": true,
+      "monster": [
+        {
+          "name": "giant-viper",
+          "type": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "giant-viper",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem-scenario-22",
+          "type": "boss"
+        },
+        {
+          "name": "vermling-raider-scenario-22",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "A"
+        },
+        {
+          "name": "vermling-raider-scenario-22",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "A"
+        }
+      ]
+    }
+  ]
+}

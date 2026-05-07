@@ -1,0 +1,10 @@
+{
+  "index": "56.3",
+  "name": "Enhancer Upgraded",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "custom": "%data.section.rewards.fh.056-3%"
+  }
+}

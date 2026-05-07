@@ -1,0 +1,83 @@
+{
+  "index": "900",
+  "group": "randomMonsterCard",
+  "name": "Decayed",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "frozen-corpse",
+    "living-bones"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "ice",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "frozen-corpse",
+          "type": "normal",
+          "marker": "10"
+        },
+        {
+          "name": "frozen-corpse",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "1"
+        },
+        {
+          "name": "frozen-corpse",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "2"
+        },
+        {
+          "name": "frozen-corpse",
+          "player4": "normal",
+          "marker": "11"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal",
+          "marker": "5"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "6"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "loot",
+      "marker": "4"
+    },
+    {
+      "type": "obstacle",
+      "value": "altar",
+      "marker": "7"
+    },
+    {
+      "type": "loot",
+      "marker": "12"
+    }
+  ]
+}

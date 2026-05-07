@@ -1,0 +1,89 @@
+{
+  "index": "12.2",
+  "name": "Avalanche",
+  "edition": "fh",
+  "parent": "6",
+  "marker": "1",
+  "monsters": [
+    "frost-demon",
+    "snow-imp"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "Remove all snowdrift tiles from tile 7-B",
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Snowdrift"
+          },
+          "type": "remove"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "objectiveSpawns": [
+        {
+          "objective": {
+            "id": 1,
+            "name": "Snowdrift"
+          },
+          "count": "6"
+        },
+        {
+          "objective": {
+            "id": 2,
+            "name": "Snow Rock"
+          },
+          "count": "2"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "02-G",
+      "initial": true,
+      "monster": [
+        {
+          "name": "frost-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "player4": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "player4": "normal"
+        },
+        {
+          "name": "snow-imp",
+          "type": "elite"
+        },
+        {
+          "name": "snow-imp",
+          "type": "elite"
+        },
+        {
+          "name": "snow-imp",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

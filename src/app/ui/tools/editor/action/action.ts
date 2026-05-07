@@ -1,0 +1,469 @@
+import { Dialog, DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
+import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
+import { ChangeDetectionStrategy, Component, EventEmitter, forwardRef, inject, Input, OnInit, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { ActionHex, ActionHexFromString, ActionHexToString, ActionHexType } from 'src/app/game/model/ActionHex';
+import { Character } from 'src/app/game/model/Character';
+import { Action, ActionCardType, ActionSpecialTarget, ActionType, ActionValueType } from 'src/app/game/model/data/Action';
+import { Condition, ConditionName, ConditionType } from 'src/app/game/model/data/Condition';
+import { Element } from 'src/app/game/model/data/Element';
+import { EnhancementType } from 'src/app/game/model/data/Enhancement';
+import { MonsterType } from 'src/app/game/model/data/MonsterType';
+import { SummonData } from 'src/app/game/model/data/SummonData';
+import { ActionComponent } from 'src/app/ui/figures/actions/action';
+import { ActionHexComponent } from 'src/app/ui/figures/actions/area/action-hex';
+import { ActionSummonComponent } from 'src/app/ui/figures/actions/summon/action-summon';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { GhsRangePipe } from 'src/app/ui/helper/Pipes';
+import { TrackUUIDPipe } from 'src/app/ui/helper/trackUUID';
+
+@Component({
+  imports: [
+    DragDropModule,
+    FormsModule,
+    GhsRangePipe,
+    GhsLabelDirective,
+    TrackUUIDPipe,
+    ActionHexComponent,
+    ActionSummonComponent,
+    forwardRef(() => EditorActionComponent)
+  ],
+  selector: 'ght-editor-action',
+  templateUrl: './action.html',
+  styleUrls: ['./action.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class EditorActionComponent implements OnInit {
+  private dialog = inject(Dialog);
+  private ghsManager = inject(GhsManager);
+
+  @Input() action!: Action;
+  @Input() actionTypes: ActionType[] = Object.values(ActionType);
+  @Input() hideValues: boolean = false;
+  @Input() subactionIndex: number | undefined;
+  @Input() character: Character | undefined;
+  @Input() cardId: number | undefined;
+  @Output() actionChange = new EventEmitter<Action>();
+  @Output() subActionRemoved = new EventEmitter<number>();
+  conditionNames: ConditionName[] = Object.values(ConditionName);
+  ActionType = ActionType;
+  ActionSpecialTarget: ActionSpecialTarget[] = Object.values(ActionSpecialTarget);
+  Elements: Element[] = Object.values(Element);
+  HalfElementsLeft: Element[] = Object.values(Element);
+  HalfElementsRight: Element[] = Object.values(Element);
+  ActionValueType = ActionValueType;
+  ActionValueTypes: ActionValueType[] = Object.values(ActionValueType);
+  ActionCardTypes: ActionCardType[] = Object.values(ActionCardType);
+  MonsterTypes: MonsterType[] = Object.values(MonsterType);
+  EnhancementTypes: EnhancementType[] = Object.values(EnhancementType);
+  hexAction: Action = new Action(ActionType.area, '(0,0,invisible)');
+  value: string = '';
+  subValue: string = '';
+  summon: SummonData | undefined;
+  monster: string = '';
+  monsterType: MonsterType | undefined;
+  monsters: string[] = [];
+
+  ngOnInit(): void {
+    this.monsters = gameManager.monstersData().map((monsterData) => monsterData.name);
+    if (this.action && this.action.type === ActionType.area) {
+      this.hexAction.value = this.action.value ? '' + this.action.value : '(0,0,invisible)';
+      const hexes: ActionHex[] = [];
+      this.hexAction.value.split('|').forEach((hexValue) => {
+        const hex: ActionHex | null = ActionHexFromString(hexValue);
+        if (hex !== null) {
+          hexes.push(hex);
+        }
+      });
+      hexes.forEach((other) => this.fillHexes(other, hexes));
+      this.hexAction.value = hexes.map((hex) => ActionHexToString(hex)).join('|');
+      this.ghsManager.triggerUiChange();
+    } else if (
+      this.action.type === ActionType.condition ||
+      this.action.type === ActionType.specialTarget ||
+      this.action.type === ActionType.card ||
+      this.action.type === ActionType.elementHalf
+    ) {
+      if (('' + this.action.value).includes(':')) {
+        this.value = ('' + this.action.value).split(':')[0];
+        this.subValue = ('' + this.action.value).split(':')[1];
+      } else {
+        this.value = '' + this.action.value;
+      }
+      if (this.action.type === ActionType.elementHalf) {
+        this.HalfElementsLeft = this.Elements.filter((e) => e !== Element.wild && (!this.subValue || e !== (this.subValue as Element)));
+        this.HalfElementsRight = this.Elements.filter((e) => e !== Element.wild && (!this.value || e !== (this.value as Element)));
+      }
+    } else if (this.action.type === ActionType.summon && this.action.valueObject) {
+      try {
+        this.summon = Object.assign(new SummonData(), this.action.valueObject);
+      } catch {
+        this.summon = undefined;
+        const summonValue = (this.action.value + '').split(':');
+        this.monster = summonValue[0];
+        if (summonValue.length > 1) {
+          this.monsterType = summonValue[1] as unknown as MonsterType;
+        }
+      }
+    }
+  }
+
+  valueChange(value: string): number | string {
+    if (!isNaN(+value)) {
+      return +value;
+    }
+    return value || '';
+  }
+
+  addSubAction() {
+    if (!this.action.subActions) {
+      this.action.subActions = [];
+    }
+    this.action.subActions = [...this.action.subActions, new Action(ActionType.attack)];
+    this.change();
+  }
+
+  changeSubAction(index: number, subAction: Action) {
+    this.action.subActions[index] = subAction;
+    setTimeout(() => {
+      this.change();
+    });
+  }
+
+  removeSubAction(index: number) {
+    this.action.subActions.splice(index, 1);
+    this.change();
+  }
+
+  changeType(actionType: ActionType) {
+    const oldType = this.action.type;
+    if (actionType !== oldType) {
+      this.action.type = actionType;
+      this.action.valueType = ActionValueType.fixed;
+      if (this.action.type === ActionType.area) {
+        this.hexAction.value = '(0,0,invisible)';
+        const hexes: ActionHex[] = [];
+        this.hexAction.value.split('|').forEach((hexValue) => {
+          const hex: ActionHex | null = ActionHexFromString(hexValue);
+          if (hex !== null) {
+            hexes.push(hex);
+          }
+        });
+        hexes.forEach((other) => this.fillHexes(other, hexes));
+        this.hexAction.value = hexes.map((hex) => ActionHexToString(hex)).join('|');
+        this.action.value = hexes
+          .filter((hex) => hex.type !== ActionHexType.invisible)
+          .map((hex) => ActionHexToString(hex))
+          .join('|');
+      } else if (this.action.type === ActionType.condition) {
+        this.value = this.conditionNames[0];
+        this.changeCondition();
+      } else if (this.action.type === ActionType.element) {
+        this.action.value = this.Elements[0];
+      } else if (this.action.type === ActionType.card) {
+        this.value = this.ActionCardTypes[0];
+        this.changeCard();
+      } else if ([ActionType.area, ActionType.condition, ActionType.element, ActionType.card].includes(oldType)) {
+        this.action.value = '1';
+      }
+      this.change();
+    }
+  }
+
+  change() {
+    this.actionChange.emit(this.action);
+    this.ghsManager.triggerUiChange();
+  }
+
+  toggleHex(hex: ActionHex) {
+    switch (hex.type) {
+      case ActionHexType.target:
+        hex.type = ActionHexType.active;
+        break;
+      case ActionHexType.active:
+        hex.type = ActionHexType.blank;
+        break;
+      case ActionHexType.blank:
+        hex.type = ActionHexType.ally;
+        break;
+      case ActionHexType.ally:
+        hex.type = ActionHexType.conditional;
+        break;
+      case ActionHexType.conditional:
+        hex.type = ActionHexType.enhance;
+        break;
+      case ActionHexType.enhance:
+        hex.type = ActionHexType.invisible;
+        break;
+      case ActionHexType.invisible:
+        hex.type = ActionHexType.target;
+        break;
+    }
+
+    const hexes: ActionHex[] = [];
+    ('' + this.hexAction.value).split('|').forEach((hexValue) => {
+      const hex: ActionHex | null = ActionHexFromString(hexValue);
+      if (hex !== null) {
+        hexes.push(hex);
+      }
+    });
+
+    const same = hexes.find((other) => hex.x === other.x && hex.y === other.y);
+
+    if (same) {
+      hexes.splice(hexes.indexOf(same), 1, hex);
+    } else {
+      hexes.push(hex);
+    }
+
+    this.fillHexes(hex, hexes);
+
+    this.hexAction.value = hexes.map((hex) => ActionHexToString(hex)).join('|');
+    this.action.value = hexes
+      .filter((hex) => hex.type !== ActionHexType.invisible)
+      .map((hex) => ActionHexToString(hex))
+      .join('|');
+    this.change();
+  }
+
+  changeHex(value: string) {
+    if (value !== this.hexAction.value) {
+      this.hexAction.value = value;
+      const hexes: ActionHex[] = [];
+      ('' + this.hexAction.value).split('|').forEach((hexValue) => {
+        const hex: ActionHex | null = ActionHexFromString(hexValue);
+        if (hex !== null) {
+          hexes.push(hex);
+        }
+      });
+
+      this.hexAction.value = hexes.map((hex) => ActionHexToString(hex)).join('|');
+      this.action.value = hexes
+        .filter((hex) => hex.type !== ActionHexType.invisible)
+        .map((hex) => ActionHexToString(hex))
+        .join('|');
+      this.change();
+    }
+  }
+
+  removeHex(hex: ActionHex) {
+    const hexes: ActionHex[] = [];
+    ('' + this.hexAction.value).split('|').forEach((hexValue) => {
+      const hex: ActionHex | null = ActionHexFromString(hexValue);
+      if (hex !== null) {
+        hexes.push(hex);
+      }
+    });
+
+    const same = hexes.find((other) => hex.x === other.x && hex.y === other.y);
+    if (same) {
+      if (same.x === 0 && same.y === 0) {
+        same.type = ActionHexType.invisible;
+      } else {
+        hexes.splice(hexes.indexOf(same), 1);
+      }
+
+      for (let x = -1; x < 2; x++) {
+        for (let y = -1; y < 2; y++) {
+          if ((hex.x + x !== hex.x || hex.y + y !== hex.y) && hex.x + x >= 0 && hex.y + y >= 0) {
+            const other = hexes.find((other) => hex.x + x === other.x && hex.y + y === other.y && other.type === ActionHexType.invisible);
+            if (other && (other.x !== 0 || other.y !== 0)) {
+              hexes.splice(hexes.indexOf(other), 1);
+            }
+          }
+        }
+      }
+    }
+
+    hexes.filter((other) => other.type !== ActionHexType.invisible).forEach((other) => this.fillHexes(other, hexes));
+
+    this.hexAction.value = hexes.map((hex) => ActionHexToString(hex)).join('|');
+    this.action.value = hexes
+      .filter((hex) => hex.type !== ActionHexType.invisible)
+      .map((hex) => ActionHexToString(hex))
+      .join('|');
+    this.change();
+  }
+
+  fillHexes(hex: ActionHex, hexes: ActionHex[]) {
+    for (let x = -1; x < 2; x++) {
+      for (let y = -1; y < 2; y++) {
+        if ((hex.x + x !== hex.x || hex.y + y !== hex.y) && hex.x + x >= 0 && hex.y + y >= 0) {
+          if (!hexes.find((other) => hex.x + x === other.x && hex.y + y === other.y)) {
+            hexes.push(new ActionHex(hex.x + x, hex.y + y, ActionHexType.invisible, ''));
+          }
+        }
+      }
+    }
+  }
+
+  changeSpecialTarget(value: string, subValue: string) {
+    if (settingsManager.getLabel('game.specialTarget.' + !value).includes('{0}')) {
+      subValue = '';
+    } else if (!subValue) {
+      subValue = '1';
+    }
+
+    this.value = value;
+    this.subValue = subValue;
+    this.action.value = this.value + (this.subValue ? ':' + this.subValue : '');
+    this.change();
+  }
+
+  changeCondition() {
+    if (new Condition(this.value).types.includes(ConditionType.value)) {
+      if (!this.subValue) {
+        this.subValue = '1';
+      }
+      this.action.value = this.value + ':' + this.subValue;
+    } else {
+      this.action.value = this.value;
+      this.subValue = '';
+    }
+    this.change();
+  }
+
+  hasCardValue(value: string): boolean {
+    return (
+      value === ActionCardType.experience ||
+      value === ActionCardType.slotXp ||
+      value === ActionCardType.slotXpFh ||
+      value === ActionCardType.slotEndXp ||
+      value === ActionCardType.slotStartXp
+    );
+  }
+
+  changeCard() {
+    if (this.hasCardValue(this.value)) {
+      if (!this.subValue) {
+        this.subValue = '1';
+      }
+      this.action.value = this.value + ':' + this.subValue;
+    } else {
+      this.action.value = this.value;
+      this.subValue = '';
+    }
+    this.change();
+  }
+
+  changeElementHalf() {
+    this.HalfElementsLeft = this.Elements.filter((e) => e !== Element.wild && (!this.subValue || e !== (this.subValue as Element)));
+    this.HalfElementsRight = this.Elements.filter((e) => e !== Element.wild && (!this.value || e !== (this.value as Element)));
+    this.value = this.value || this.HalfElementsLeft[0];
+    this.subValue = this.subValue || this.HalfElementsRight[0];
+    if (this.Elements.includes(this.value as Element) && this.Elements.includes(this.subValue as Element)) {
+      this.action.value = this.value + ':' + this.subValue;
+    }
+    this.change();
+  }
+
+  dropSubAction(event: CdkDragDrop<number>) {
+    moveItemInArray(this.action.subActions, event.previousIndex, event.currentIndex);
+    this.ghsManager.triggerUiChange();
+  }
+
+  changeSummonType(event: any) {
+    this.monster = '';
+    this.monsterType = undefined;
+    if (event.target.value === 'monster') {
+      this.summon = undefined;
+      this.changeSummonMonster();
+    } else if (event.target.value === 'summon') {
+      this.summon = new SummonData();
+      this.action.value = 'summonData';
+      this.action.valueObject = this.summon;
+    }
+  }
+
+  changeSummonMonster() {
+    this.action.value = this.monster + (this.monsterType ? ':' + this.monsterType : '');
+    this.ghsManager.triggerUiChange();
+  }
+
+  changeSummon() {
+    if (this.summon) {
+      this.action.valueObject = this.summon;
+    }
+    this.ghsManager.triggerUiChange();
+  }
+
+  editSummonAction() {
+    if (this.summon) {
+      if (!this.summon.action) {
+        this.summon.action = new Action(ActionType.attack);
+      }
+
+      const dialog = this.dialog.open(EditorActionDialogComponent, {
+        panelClass: ['dialog'],
+        data: { action: this.summon.action }
+      });
+
+      dialog.closed.subscribe({
+        next: (value) => {
+          if (value === false && this.summon) {
+            this.summon.action = undefined;
+          }
+          this.changeSummon();
+        }
+      });
+    }
+  }
+
+  editSummonAdditionalAction() {
+    if (this.summon) {
+      if (!this.summon.additionalAction) {
+        this.summon.additionalAction = new Action(ActionType.attack);
+      }
+
+      const dialog = this.dialog.open(EditorActionDialogComponent, {
+        panelClass: ['dialog'],
+        data: { action: this.summon.additionalAction }
+      });
+
+      dialog.closed.subscribe({
+        next: (value) => {
+          if (value === false && this.summon) {
+            this.summon.additionalAction = undefined;
+          }
+          this.changeSummon();
+        }
+      });
+    }
+  }
+
+  removeEnhancement(index: number) {
+    if (this.action.enhancementTypes && this.action.enhancementTypes[index]) {
+      this.action.enhancementTypes.splice(index, 1);
+      this.change();
+    }
+  }
+
+  addEnhancement() {
+    this.action.enhancementTypes = this.action.enhancementTypes || [];
+    this.action.enhancementTypes.push(this.EnhancementTypes[0]);
+    this.change();
+  }
+}
+
+@Component({
+  imports: [GhsLabelDirective, forwardRef(() => ActionComponent), EditorActionComponent],
+  selector: 'ght-editor-action-dialog',
+  templateUrl: './action-dialog.html',
+  styleUrls: ['./action-dialog.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class EditorActionDialogComponent {
+  private dialogRef = inject(DialogRef);
+
+  relative: boolean = true;
+  noPreview: ActionType[] = [];
+
+  data: { action: Action; character: Character; cardId: number } = inject(DIALOG_DATA);
+
+  deleteAction() {
+    this.dialogRef.close(false);
+  }
+}

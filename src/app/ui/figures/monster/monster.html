@@ -1,0 +1,140 @@
+<div
+  class="monster"
+  [ngClass]="{
+    off: off || nonDead === 0,
+    'full-ability': settingsManager.settings.showFullAbilityCard || settingsManager.settings.showExpandedAbilityCard,
+    'full-stats': settingsManager.settings.showExpandedStatCard,
+    modern: settingsManager.settings.theme === 'modern',
+    short: !settingsManager.settings.abilities || !settingsManager.settings.stats,
+    'short-abilities': !settingsManager.settings.stats,
+    'short-stats': !settingsManager.settings.abilities
+  }"
+>
+  <ght-monster-image
+    [monster]="monster"
+    [ngClass]="{
+      denied:
+        gameManager.stateManager.permissions &&
+        !gameManager.stateManager.permissions.round &&
+        !gameManager.stateManager.monsterPermissions[monster.name + '|' + monster.edition]
+    }"
+  >
+  </ght-monster-image>
+  @if (settingsManager.settings.abilities) {
+    <ght-monster-ability-card [monster]="monster"></ght-monster-ability-card>
+  }
+
+  <div
+    class="stats-container"
+    [ngClass]="{
+      'full-ability': settingsManager.settings.showFullAbilityCard || settingsManager.settings.showExpandedAbilityCard,
+      'full-stats': settingsManager.settings.showExpandedStatCard
+    }"
+  >
+    @if (settingsManager.settings.stats) {
+      <ght-monster-stats [monster]="monster"></ght-monster-stats>
+    }
+
+    @if (!monster.boss) {
+      <ght-monster-numberpicker
+        class="normal"
+        [monster]="monster"
+        [type]="MonsterType.normal"
+        [nonDead]="nonDead"
+        [count]="count"
+        [ngClass]="{
+          disabled: settingsManager.settings.standees && nonDead >= count,
+          denied: gameManager.stateManager.permissions && !gameManager.stateManager.monsterPermissions[monster.name + '|' + monster.edition]
+        }"
+      >
+      </ght-monster-numberpicker>
+    }
+    @if (!monster.boss && !monster.bb) {
+      <ght-monster-numberpicker
+        class="elite"
+        [monster]="monster"
+        [type]="MonsterType.elite"
+        [nonDead]="nonDead"
+        [count]="count"
+        [ngClass]="{
+          disabled: settingsManager.settings.standees && nonDead >= count,
+          denied: gameManager.stateManager.permissions && !gameManager.stateManager.monsterPermissions[monster.name + '|' + monster.edition]
+        }"
+      >
+      </ght-monster-numberpicker>
+    }
+    @if (monster.boss) {
+      <ght-monster-numberpicker
+        class="boss"
+        [monster]="monster"
+        [type]="MonsterType.boss"
+        [nonDead]="nonDead"
+        [count]="count"
+        [ngClass]="{
+          disabled: settingsManager.settings.standees && nonDead >= count,
+          denied: gameManager.stateManager.permissions && !gameManager.stateManager.monsterPermissions[monster.name + '|' + monster.edition]
+        }"
+      >
+      </ght-monster-numberpicker>
+    }
+  </div>
+
+  <ght-figure-errors [figure]="monster"></ght-figure-errors>
+</div>
+
+@if (settingsManager.settings.standees) {
+  <div
+    class="entities-container"
+    [ngClass]="{
+      empty: nonDead === 0,
+      'full-ability': settingsManager.settings.showFullAbilityCard || settingsManager.settings.showExpandedAbilityCard,
+      denied: gameManager.stateManager.permissions && !gameManager.stateManager.monsterPermissions[monster.name + '|' + monster.edition]
+    }"
+  >
+    <div class="spacer" [ngClass]="{ disabled: nonDead < 2 }">
+      <a
+        class="entities-menu all"
+        (click)="entitiesMenu($event)"
+        [ght-label]="'monster.selectStandees.all'"
+        [ght-label-attribute]="'title'"
+      >
+        <img src="./assets/images/up.svg" />
+      </a>
+      @if (hasEntitiesCache.boss) {
+        <a
+          class="entities-menu boss"
+          (click)="entitiesMenu($event, MonsterType.boss)"
+          [ght-label]="'monster.selectStandees.boss'"
+          [ght-label-attribute]="'title'"
+        >
+          <img src="./assets/images/up.svg" />
+        </a>
+      }
+      @if (hasEntitiesCache.elite) {
+        <a
+          class="entities-menu elite"
+          (click)="entitiesMenu($event, MonsterType.elite)"
+          [ght-label]="'monster.selectStandees.elite'"
+          [ght-label-attribute]="'title'"
+        >
+          <img src="./assets/images/up.svg" />
+        </a>
+      }
+      @if (hasEntitiesCache.normal) {
+        <a
+          class="entities-menu normal"
+          (click)="entitiesMenu($event, MonsterType.normal)"
+          [ght-label]="'monster.selectStandees.normal'"
+          [ght-label-attribute]="'title'"
+        >
+          <img src="./assets/images/up.svg" />
+        </a>
+      }
+    </div>
+    <div class="entities">
+      @for (entity of sortedEntites | trackUUID; track entity._trackUUID) {
+        <ght-standee [figure]="monster" [entity]="entity"> </ght-standee>
+      }
+    </div>
+  </div>
+}

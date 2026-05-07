@@ -1,0 +1,35 @@
+<div class="trial" #container>
+  <div
+    class="card"
+    [ngClass]="{ flipped: flipped || revealed, 'no-animations': !animate }"
+    [style.fontSize]="container.offsetWidth * 0.1 + 'px'"
+    card-reveal
+    [disabled]="!reveal"
+    (changed)="onChange($event)"
+  >
+    <div class="card-back">
+      <span class="revealed"><span class="text" [ght-label]="'game.cards.confirmReveal'"></span></span>
+    </div>
+    <div class="card-front">
+      @if (!!trialCard) {
+        <div class="title" [ght-label]="'data.trials.' + trialCard.edition + '.' + trialCard.cardId"></div>
+        <div class="automation">
+          @if (trialCard.automation && settingsManager.settings.fhChallengesApply) {
+            <img [ght-tooltip]="'campaign.trials.automation'" class="ght-svg" src="./assets/images/automation.svg" />
+          }
+        </div>
+        <div class="text">
+          <p class="placeholder margin-breaks" [ght-label]="'data.trials.' + trialCard.edition + '.' + trialCard.cardId + '.text'"></p>
+        </div>
+        <div class="card-id">
+          @if (trialCard.cardId < 1000) {
+            <span>0</span>
+          }
+          {{
+            settingsManager.settings.fhSecondEdition ? gameManager.trialsManager.cardIdSecondPrinting(trialCard.cardId) : trialCard.cardId
+          }}
+        </div>
+      }
+    </div>
+  </div>
+</div>

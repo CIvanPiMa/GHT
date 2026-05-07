@@ -1,0 +1,47 @@
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, DoCheck, Input, OnInit, inject } from '@angular/core';
+import { GameManager, gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { Entity } from 'src/app/game/model/Entity';
+import { GhsFloorPipe } from 'src/app/ui/helper/Pipes';
+
+@Component({
+  imports: [NgClass, GhsFloorPipe],
+  selector: 'ght-entity-index-key',
+  templateUrl: './entity-index-key.html',
+  styleUrls: ['./entity-index-key.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class EntityIndexKeyComponent implements OnInit, DoCheck {
+  private ghsManager = inject(GhsManager);
+
+  gameManager: GameManager = gameManager;
+  @Input() entity!: Entity;
+  @Input() show: boolean = false;
+
+  entityIndex: number = -1;
+  isKeyboardSelecting: 's' | 'w' | false = false;
+  keyboardSelect: number = -1;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.update());
+  }
+
+  ngOnInit(): void {
+    this.update();
+  }
+
+  ngDoCheck(): void {
+    this.isKeyboardSelecting = gameManager.stateManager.keyboardSelecting;
+    this.keyboardSelect = gameManager.stateManager.keyboardSelect;
+  }
+
+  update(): void {
+    this.isKeyboardSelecting = gameManager.stateManager.keyboardSelecting;
+    this.keyboardSelect = gameManager.stateManager.keyboardSelect;
+    this.entityIndex = gameManager.entityManager.getIndexForEntity(this.entity, this.isKeyboardSelecting === 'w');
+    if (this.entityIndex !== -1) {
+      this.entityIndex++;
+    }
+  }
+}

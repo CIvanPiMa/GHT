@@ -1,0 +1,37 @@
+{
+  "index": "26C",
+  "name": "Brightspark, Behold!",
+  "edition": "cs",
+  "parent": "25",
+  "marker": "1",
+  "monsters": [
+    "spitting-drake",
+    "sun-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "sun-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

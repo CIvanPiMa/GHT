@@ -1,0 +1,60 @@
+{
+  "index": "32b",
+  "name": "Confronting the Past B",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "requirements": [
+    {
+      "party": [
+        "take-the-money"
+      ]
+    }
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.cs.32%"
+  },
+  "monsters": [
+    "inox-archer",
+    "inox-bodyguard-scenario-32",
+    "inox-guard"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-bodyguard-scenario-32",
+          "type": "boss"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input, OnInit, ViewEncapsulation, inject } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { Element, ElementModel, ElementState } from 'src/app/game/model/data/Element';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+
+@Component({
+  imports: [NgClass, GhsLabelDirective],
+  selector: 'ght-element-icon',
+  templateUrl: './element-icon.html',
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./element-icon.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ElementIconComponent implements OnInit {
+  private sanitizer = inject(DomSanitizer);
+
+  @Input() type: string | undefined;
+  @Input() element!: ElementModel;
+  ElementState = ElementState;
+  svg: SafeHtml = '';
+
+  ngOnInit(): void {
+    if (this.type && !this.element) {
+      this.element = new ElementModel(this.type as Element);
+      this.element.state = ElementState.strong;
+    }
+
+    fetch('./assets/images/element/' + this.element.type + '.svg')
+      .then((response) => {
+        return response.text();
+      })
+      .then((data) => {
+        this.svg = this.sanitizer.bypassSecurityTrustHtml(data);
+      })
+      .catch(() => {
+        console.error('Invalid src: ' + './assets/images/element/' + this.element.type + '.svg');
+      });
+  }
+}

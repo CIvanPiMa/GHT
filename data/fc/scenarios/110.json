@@ -1,0 +1,202 @@
+{
+  "index": "110",
+  "name": "A Circular Solution",
+  "flowChartGroup": "orchid-society",
+  "coordinates": {
+    "x": 2785.5,
+    "y": 1707.5,
+    "width": 216,
+    "height": 192,
+    "gridLocation": "L-19"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "114"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "a-peril-averted"
+    ],
+    "items": [
+      "163"
+    ],
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"A Peril Averted\" achievement gained, read section 118 on page 37)"
+      ]
+    }
+  },
+  "monsters": [
+    "city-guard",
+    "savvas-lavaflow",
+    "valrath-tracker",
+    "vermling-shaman"
+  ],
+  "rules": [
+    {
+      "round": "R == 4",
+      "sections": [
+        "129"
+      ]
+    },
+    {
+      "round": "R == 8",
+      "sections": [
+        "134"
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fc",
+            "name": "valrath-tracker"
+          },
+          "statEffect": {
+            "name": "selah-naberis",
+            "actions": [
+              {
+                "type": "pierce",
+                "value": 10
+              },
+              {
+                "type": "target",
+                "value": "C"
+              }
+            ],
+            "count": 1
+          },
+          "note": "%data.scenario.rules.fc.110.1%"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "vermling-shaman"
+          },
+          "statEffect": {
+            "name": "sraka-the-wise",
+            "health": "[CxH/2{$math.ceil}]",
+            "actions": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fc.sraka-the-wise.1%",
+                "small": true
+              },
+              {
+                "type": "custom",
+                "value": "%data.custom.fc.sraka-the-wise.2%",
+                "small": true
+              },
+              {
+                "type": "shield",
+                "value": "[(L/3)+2{$math.ceil}]"
+              }
+            ],
+            "count": 1,
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fc.110.2%"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "city-guard"
+          },
+          "statEffect": {
+            "name": "the-steel-lion",
+            "health": "[CxH/2{$math.ceil}]",
+            "move": "M+1",
+            "actions": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fc.the-steel-lion.1%"
+              },
+              {
+                "type": "custom",
+                "value": "%data.custom.fc.the-steel-lion.2%"
+              },
+              {
+                "type": "shield",
+                "value": "[(L/4)+1{$math.ceil}]",
+                "subActions": [
+                  {
+                    "type": "specialTarget",
+                    "value": "selfAllies",
+                    "small": true
+                  }
+                ]
+              }
+            ],
+            "count": 1,
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fc.110.3%"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "savvas-lavaflow"
+          },
+          "statEffect": {
+            "name": "uyart-ikkuma",
+            "health": "[CxH/2{$math.ceil}]",
+            "deck": "uyart-ikkuma",
+            "actions": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fc.uyart-ikkuma.1%"
+              },
+              {
+                "type": "condition",
+                "value": "poison"
+              },
+              {
+                "type": "condition",
+                "value": "wound"
+              }
+            ],
+            "count": 1,
+            "absolute": true
+          },
+          "note": "%data.scenario.rules.fc.110.4%"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "C1a",
+      "initial": true,
+      "treasures": [
+        84
+      ],
+      "monster": [
+        {
+          "name": "city-guard",
+          "type": "elite"
+        },
+        {
+          "name": "savvas-lavaflow",
+          "type": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-shaman",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

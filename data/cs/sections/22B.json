@@ -1,0 +1,37 @@
+{
+  "index": "22B",
+  "name": "Imp Temple",
+  "edition": "cs",
+  "parent": "22",
+  "parentSections": [
+    [
+      "23A"
+    ]
+  ],
+  "marker": "6",
+  "monsters": [
+    "black-imp",
+    "forest-imp"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 7,
+      "initial": true,
+      "treasures": [
+        15
+      ],
+      "monster": [
+        {
+          "name": "black-imp",
+          "type": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

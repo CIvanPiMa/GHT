@@ -1,0 +1,1302 @@
+{
+  "character": {
+    "gh2e": {
+      "angry-face": "Doomstalker",
+      "circles": "Soultether",
+      "crossed-swords": {
+        "": "Bladeswarm",
+        "call-of-the-grave": {
+          "": "Call of the Grave",
+          "hint": "Enemies that have %game.condition.wound% suffer %game.damage:2% at the start of each of their turns instead of %game.damage:1%."
+        }
+      },
+      "eclipse": "Nightshroud",
+      "lightning": {
+        "": "Berserker",
+        "blood-pact": {
+          "": "Blood Pact",
+          "hint": "At the start of each of your turns, if your current hit point value is greater than 1, suffer %game.damage:1%."
+        },
+        "long_rest_heal": {
+          "": "Perk 9",
+          "hint": "%data.custom.gh2e.lightning.3%"
+        }
+      },
+      "music-note": "Soothsinger",
+      "saw": "Sawbones",
+      "squidface": "Plagueherald",
+      "sun": "Sunkeeper",
+      "three-spears": {
+        "": "Quartermaster",
+        "supply_tokens_perk": {
+          "": "Perk 11",
+          "hint": "Gain 1 Supply Token (10 supplies) during each long rest."
+        },
+        "supply_tokens_scenario": {
+          "": "Supply Tokens",
+          "hint": "Gain 1 Supply Token (10 supplies) at the start of the scenario"
+        },
+        "tokens": {
+          "supplies": "Supplies"
+        }
+      },
+      "triangles": {
+        "": "Elementalist",
+        "element_waning": {
+          "": "Perk 12",
+          "hint": "%data.custom.gh2e.triangles.3%"
+        }
+      },
+      "two-mini": "Wildfury"
+    }
+  },
+  "custom": {
+    "gh2e": {
+      "am": {
+        "demons-4": "reveal the top card of the monster ability deck",
+        "merchant-guild-4": "after this attack ability grant one ally: %game.action.move% 2",
+        "military-4": "create one %game.damage:2% tap in an empty hex adjacent to the target"
+      },
+      "angry-face": {
+        "1": "%game.characterIcon.angry-face% performs: %game.action.attack% 2, %game.action.range% 5",
+        "10": "After moving for the first time each round, add +2 %game.action.attack% to all attacks for the round.",
+        "2": "Grant one of your summons adjacent to the target: %game.action.attack% +0",
+        "3": "At the start of each scenario, reveal the top card of each monster ability card deck in the scenario",
+        "4": "Whenever you long rest, after you %game.card.recover% your cards from your discard pile, you may play one card from your hand to perform a %data.action.custom.gh2e-doom% action of the card",
+        "5": "On each of your summons' turns, you may have them skip their turn and instead perform %game.action.move% +0 treating you as their focus",
+        "6": "Kill 20 enemies that have %data.action.custom.gh2e-doom%",
+        "7": "In a single round, you and one of your summons must perform a combined total of 6 or more attack abilities",
+        "8": "Unaffected by difficult terrain.",
+        "9": "When attacking, ignore %game.action.retaliate%."
+      },
+      "circles": {
+        "1": "After the attack ability, grant one of your summons: %game.action.teleport% 2",
+        "10": "All allies within %game.action.range% 3 gain %game.action.retaliate% 1 %game.action.range% 3 while %game.element.fire% is strong or waning.",
+        "11": "At end of turn, %game.element.fire%, %game.element.air%, or %game.element.dark%.",
+        "2": "%game.action.target% 1 of your summons",
+        "3": "At the beginning of each round in which you long rest, all your summons gain %game.action.shield% 1 for the round",
+        "4": "Once each scenario, during your turn, %game.action.teleport% one of your summons to an empty hex adjacent to you",
+        "5": "Once each scenario, during ordering of initiative, after all ability cards have been revealed, all your summons gain %game.condition.invisible%",
+        "6": "Perform 3 different summon actions before your first rest and keep those cards in your active area for the entire scenario",
+        "7": "Perform 6 different summon abilities from your ability cards over the course of the first rounds of 6 scenarios",
+        "8": "At end of turn, grant one ally within %game.action.range% 3: %game.action.shield% 1",
+        "9": "+3 %game.action.move% if %game.element.air% is strong or waning."
+      },
+      "crossed-swords": {
+        "1": "Add +1 %game.action.attack% for each card with a %game.card.lost% in %game.characterIcon.envx%'s active area",
+        "10": "All adjacent allies gain %game.action.shield:1%.",
+        "11": "All adjacent enemies add -1 %game.action.attack% to all their attacks.",
+        "12": "All adjacent summons add +1 %game.action.attack% to all their attacks.",
+        "13": "Add +2 %game.action.attack% if the target is adjacent to any of your allies.",
+        "14": "Add %game.condition.disarm% if the target has any negative conditions.",
+        "2": "Whenever you long rest, you may %game.action.teleport% to a hex occupied by one of your summons and simultaneously %game.action.teleport% that summon to the hex you occupied",
+        "3": "Once each scenario, when you perform an action with %game.card.lost%, you may immediately play one card from your hand to perform an action with %game.card.lost% of the card",
+        "4": "You may additionally bring four %game.itemSlot:onehand% items, two %game.itemSlot:twohand% items, or two %game.itemSlot:onehand% items and one %game.itemSlot:twohand% item into each scenario.",
+        "5": "Perform 6 different %game.card.persistent%%game.card.lost% abilities with no more than 3 of the 6 being summon abilities",
+        "6": "Gain this mastery when you feel you deserve it",
+        "7": "X is the number of adjacent figures.",
+        "8": "At end of turn, grant all adjacent allies: %game.action.move:1%",
+        "9": "At end of turn, all adjacent allies and enemies suffer %game.action.damage:2%."
+      },
+      "eclipse": {
+        "1": "After the attack ability, grant one adjacent ally or self: %game.action.teleport% 2",
+        "2": "If this attack kills the target, shuffle one %game.condition.curse% card into the monster attack modifier deck",
+        "3": "Place one %data.action.custom.gh2e-tear% in a hex adjacent to the target",
+        "4": "Whenever you long rest, you may %game.element.dark%",
+        "5": "Once each scenario, during your turn, place one %data.action.custom.gh2e-tear% in an adjacent hex",
+        "6": "If a %game.condition.curse% causes an enemy to deal no %game.damage% during its attack, that enemy suffers %game.damage:3%",
+        "7": "In a single scenario, infuse or consume %game.element.dark% during each of your turns",
+        "8": "In a single scenario, perform an attack ability during your turn in 5 consecutive rounds",
+        "abilities": {
+          "267": {
+            "1": "Whenever you kill an enemy, you may discard this card to place one %game.customAction:gh2e-tear% in the hex they occupied.",
+            "2": "%game.action.teleport% to the hex occupied by one ally within eight hexes of you and simultaneously %game.action.teleport% that ally to the hex occupied by you."
+          },
+          "268": {
+            "1": "Reveal the top card of each monster within %game.action.range:2%'s ability card deck.",
+            "2": "Place one %game.customAction:gh2e-tear% in a hex within %game.action.range:2%."
+          },
+          "269": {
+            "1": "Place your character token on an ally within %game.action.range:3% and one %game.customAction:gh2e-tear% in a hex adjacent to them. On the next source of %game.damage% that ally would suffer, negate the %game.damage%."
+          },
+          "270": {
+            "1": "After the attack, if the target has 2 or fewer hit points, kill the target.",
+            "2": "Place one %game.customAction:gh2e-tear% in an adjacent hex."
+          },
+          "271": {
+            "1": "Enemies within %game.action.range:2% add -1 %game.action.attack% to all their attacks this round.",
+            "2": "Place one %game.customAction:gh2e-tear% in a hex within %game.action.range:2%."
+          },
+          "273": {
+            "1": "Add +1 %game.action.attack% to the second attack if the first attack kills an enemy."
+          },
+          "274": {
+            "1": "Whenever an enemy dies within %game.action.range:2% (of you), you may discard this card to grant whoever killed that enemy:"
+          },
+          "275": {
+            "1": "If the target is pushed into one or more hexes with a %game.customAction:gh2e-tear%, they gain %game.condition.muddle%, %game.condition.curse%, and suffer hazardous terrain damage."
+          },
+          "276": {
+            "1": "You and all allies add +1 %game.action.attack%, %game.action.pierce:1% to all attacks targeting enemies within %game.action.range:1% (of you) this round.",
+            "2": "Place one %game.customAction:gh2e-tear% in an adjacent hex."
+          },
+          "277": {
+            "1": "Place your character token on an enemy within %game.action.range:3% and one %game.customAction:gh2e-tear% in a hex adjacent to them. On your next attack targeting that enemy, add +2%game.action.attack% and gain advantage.",
+            "2": "This %game.action.teleport% must end in a hex containing a %game.customAction:gh2e-tear%."
+          },
+          "278": {
+            "1": "Place one %game.customAction:gh2e-tear% in a hex within %game.action.range:2%.",
+            "2": "Whenever an enemy enters a hex within %game.action.range:2% (of you) this round, that enemy gains %game.condition.wound%.",
+            "3": "At the end of this round, all enemies that have %game.condition.wound% suffer %game.damage:1%, %game.card.experience:1%."
+          },
+          "279": {
+            "1": "Negate the next source of %game.damage% you would suffer this round.",
+            "2": "All attacks targeting you this round gain disadvantage.",
+            "3": "All attacks targeting allies within %game.action.range:2% (of you) this round gain disadvantage, %game.card.experience:1%."
+          },
+          "280": {
+            "1": "If the target is adjacent to none of its allies after the push, it suffers %game.damage:2%.",
+            "2": "Place two %game.customAction:gh2e-tear% in hexes within %game.action.range:3% that are not adjacent to each other and %game.action.teleport% to one those hexes.",
+            "3": "On your next two attacks, double the value of the attack."
+          },
+          "281": {
+            "1": "Whenever you remove a %game.customAction:gh2e-tear% you may discard this card to gain %game.condition.strengthen% and have all adjacent enemies suffer %game.damage:2%."
+          },
+          "282": {
+            "1": "You and all allies gain advantage on all attacks targeting enemies that have %game.condition.poison% this round.",
+            "2": "Whenever you or an ally attack an enemy within %game.action.range:2% (of you) this round, after the attack ability the attacker may perform:"
+          },
+          "284": {
+            "1": "all targets of the stun ability",
+            "2": "Grant one adjacent ally:",
+            "3": "This %game.action.teleport% must and in a hex containing a %game.customAction:gh2e-tear%."
+          },
+          "285": {
+            "1": "If you have %game.condition.invisible%, place one %game.customAction:gh2e-tear% in a hex adjacent to the target. If you do not have %game.condition.invisible%, the target suffers %game.damage:4%.",
+            "2": "The targets suffer %game.damage:1%, %game.card.experience:1%."
+          },
+          "286": {
+            "1": "At the end of your next turn, if you do not have %game.condition.invisible%, you may perform:",
+            "2": "When you next kill an enemy this round, place one %game.customAction:gh2e-tear% in the hex they occupied."
+          },
+          "287": {
+            "1": "Reveal the top card of each monster within %game.action.range:3%'s ability card deck.",
+            "2": "Place one %game.customAction:gh2e-tear% in a hex within %game.action.range:3%."
+          },
+          "290": {
+            "1": "If the target of the attack ability's current hit point value is half (rounded down) their maximum or less, gain %game.card.experience:1% and perform:",
+            "2": "that enemy"
+          },
+          "291": {
+            "1": "Enemies in the red hexes suffer %game.damage:2%.",
+            "2": "%game.action.teleport% to %game.custom:gh2e-tear-hex% of the damage ability.",
+            "3": "Play a card from your hand to perform the top or bottom action of the card, %game.card.experience:1%.",
+            "4": "This attack does not cause you to gain %game.condition.invisible% at the end of the round, %game.card.experience:1%."
+          },
+          "292": {
+            "1": "If you have %game.condition.invisible%, place one %game.customAction:gh2e-tear% in a hex adjacent to the target. If you do not have %game.condition.invisible% and the target is a normal enemy occupying a hex containing a %game.customAction:gh2e-tear%, you may remove the %game.customAction:gh2e-tear% and gain %game.condition.invisible% to kill the target and gain %game.card.experience:1%.",
+            "2": "During this an the next four rounds, you may perform attack abilities while you have %game.condition.invisible%. When this card is moved from you active area to your lost pile, you become exhausted."
+          },
+          "293": {
+            "1": "Grant all allies in the red hexes:",
+            "2": "1 ally or enemy",
+            "3": "If the target enters a hex containing a %game.customAction:gh2e-tear% you may remove the %game.customAction:gh2e-tear% to have the target gain %game.condition.invisible%."
+          }
+        }
+      },
+      "lightning": {
+        "1": "You may suffer %game.damage:2% to add +2 %game.action.attack%",
+        "2": "Suffer %game.damage% equal to half your current hit point value (rounded down)",
+        "3": "Whenever you heal from a long rest, add +1 %game.action.heal%",
+        "4": "Once each scenario, when %game.damage% from an attack would reduce your current hit point value to less than 1, instead set your current hit point value to 1 and perform: %game.action.attack% 2, %game.action.target% the attacker",
+        "5": "At the end of each of your turns, you may control all adjacent enemies: %game.action.attack% +0 %game.action.target% %game.characterIcon.lightning%",
+        "6": "Kill 20 enemies with your retaliate",
+        "7": "In a single scenario, end all your turns with your hit point value at half your maximum or lower without exhausting"
+      },
+      "music-note": {
+        "1": "Skip moving your character tokens on active %data.action.custom.gh2e-song% at the end of this round",
+        "2": "Grant one ally: %game.action.move% 2 or %game.action.attack% 2",
+        "3": "At the end of each scenario, each character in that scenario gains %game.card.experience:8% if you completed your battle goal",
+        "4": "Whenever you perform a %data.action.custom.gh2e-song%, if you have any unused Notes, gain one Note of your choice in addition to any other Note gained that round",
+        "5": "During ordering of initiative in rounds in which you declare a long rest, gain one Note of your choice, and each of your allies may decrease their initiative by 10",
+        "6": "In a single scenario, perform 7 different %data.action.custom.gh2e-song% actions",
+        "7": "In a single scenario, create 20 or more Notes and use each Note you create in a %data.action.custom.gh2e-song%",
+        "abilities": {
+          "351": {
+            "1": "At the end of each of your turns, grant the ally closest to you:",
+            "2": "Grant one adjacent ally:"
+          },
+          "352": {
+            "1": "At the end of each of your turns, the enemy with the highest current hit point value suffers %game.damage:1% and gains %game.condition.muddle%.",
+            "2": "Grant one adjacent ally:"
+          },
+          "353": {
+            "1": "At the end of each of your turns, the closest enemy to you that does not have %game.condition.disarm% or %game.condition.stun% gains %game.condition.disarm%."
+          },
+          "354": {
+            "1": "You and each ally add +1%game.action.attack% to your first attack each turn."
+          },
+          "355": {
+            "1": "At the end of each of your turns, perform:",
+            "2": "the enemy closest to you"
+          },
+          "356": {
+            "1": "At the end of this an your next five turns, gain one Note of your choice in addition to any other Note gained."
+          },
+          "357": {
+            "1": "On your allies' next five attacks, add +X%game.action.attack% where X is the number of use slots the character token has passed (0, 1, 2, 3, 4)."
+          },
+          "358": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "360": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "361": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "362": {
+            "1": "You and all allies gain %game.action.shield:1%."
+          },
+          "363": {
+            "1": "You and all allies gain %game.action.retaliate:1% %game.action.range:2%."
+          },
+          "365": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "366": {
+            "1": "At the end of each of your turns, perform:",
+            "2": "Place your character token on a monster within %game.action.range:3%. At the end of that enemy's turn this round, remove your character token and that enemy gains %game.condition.disarm%."
+          },
+          "367": {
+            "1": "You may immediately play up to three cards from your hand to perform one 1-Note %data.customAction:gh2e-song% action, one 2-Note %data.customAction:gh2e-song% action, and one 3-Note %data.customAction:gh2e-song% action, ignoring the Note requirements of those actions."
+          },
+          "368": {
+            "1": "You and each ally may individually choose (after revealing the card) to treat the first attack modifier card drawn each turn as %game.attackmodifier.rolling%.",
+            "2": "Force one enemy within %game.action.range:5% to perform",
+            "3": "targeting another enemy with you controlling the action."
+          },
+          "369": {
+            "1": "Grant all allies:"
+          },
+          "370": {
+            "1": "At the end of each of your turns, perform:"
+          },
+          "372": {
+            "1": "Immediately after you perform your first attack ability from your ability cards each round, you may repeat that attack ability, adding +1%game.action.attack% (you may choose a new target)."
+          },
+          "373": {
+            "1": "Control the target of the attach ability:",
+            "2": "Control one enemy within %game.action.range:5%:"
+          },
+          "374": {
+            "1": "All enemies gain disadvantage on all their attacks.",
+            "2": "Negate the next %game.damage% an ally within %game.action.range:2% would suffer this round."
+          },
+          "375": {
+            "1": "Grant one ally:"
+          },
+          "376": {
+            "1": "You and each ally add %game.condition.wound% to your first attack each turn.",
+            "2": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "377": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "378": {
+            "1": "You and all allies gain %game.action.shield:1% and %game.action.retaliate:1% %game.action.range:2%."
+          },
+          "379": {
+            "1": "Control all enemies moved through with the move ability:",
+            "2": "Gain one Note of your choice in addition to any other Note you gain this round.",
+            "3": "You may immediately play any number of cards from your hand and discard pile to perform %data.customAction:gh2e-song% actions of the cards, ignoring all Note requirements. Skip moving your character token on active %data.customAction:gh2e-song% this round."
+          },
+          "380": {
+            "1": "At the end of each of your turns, perform:",
+            "2": "Move you character tokens on each of your active %data.customAction:gh2e-song% abilities backward one slot."
+          }
+        }
+      },
+      "saw": {
+        "1": "Give one adjacent ally or self one medical pack",
+        "2": "You may gain %game.condition.disarm% to add %game.condition.stun%",
+        "3": "Add +1 %game.action.attack% if an ally has an active %data.action.custom.gh2e-prescription%",
+        "4": "Add +1 %game.action.heal% to all heal abilities on \"Medical Pack\" ability cards",
+        "5": "Each City Phase after completing a scenario, your or one ally's donation to the Sanctuary of the Great Oak is free",
+        "6": "At the end of each of your rests, if an ally as an active %data.action.custom.gh2e-prescription%, gain one \"Medical Pack\" ability card and move the token on one ally's active %data.action.custom.gh2e-prescription% backward one slot",
+        "7": "In a single scenario, give an ally a medical pack or %data.action.custom.gh2e-prescription% each round except when performing a long rest",
+        "8": "In a single scenario, never attack an undamaged enemy while there are any damaged monsters alive, and perform at least 10 attacks",
+        "abilities": {
+          "411": {
+            "1": "Give one adjacent ally one medical pack to gain %game.card.experience:1%."
+          },
+          "413": {
+            "1": "Before the heal, remove one negative condition from the target.",
+            "2": "Remove one negative condition from one adjacent ally."
+          },
+          "414": {
+            "1": "Add +1 %game.action.attack%, %game.condition.wound% and gain %game.card.experience:1% if an ally has an active %data.action.custom.gh2e-prescription%."
+          },
+          "415": {
+            "1": "When you next perform a %data.action.custom.gh2e-prescription% action this round, grant all adjacent allies and self:"
+          },
+          "416": {
+            "1": "Give one adjacent ally one medical pack to gain %game.card.experience:1%."
+          },
+          "417": {
+            "1": "On the next four source of %game.damage% from attacks targeting you, gain %game.action.shield:1% for the attack."
+          },
+          "418": {
+            "1": "On the next four attacks, add +1 %game.action.attack%."
+          },
+          "420": {
+            "1": "Add +1 %game.action.attack% to all your attacks targeting damaged enemies."
+          },
+          "421": {
+            "1": "Add +1 %game.action.target% and gain %game.card.experience:1% if the target is damaged (for a maximum of one additional target).",
+            "2": "On the next three negative conditions an enemy would apply to you, prevent the condition."
+          },
+          "422": {
+            "1": "Grant one adjacent ally:"
+          },
+          "423": {
+            "1": "Add %game.condition.stun% and gain %game.card.experience:1% if the target is damaged.",
+            "2": "You may treat all your attack abilities and move abilities from your ability cards as heal abilities of equal value plus one. In such cases, ignore all added effects of those abilities. When treating a move ability as a heal ability, it has %game.action.range:1%."
+          },
+          "425": {
+            "1": "Grant all allies and self:",
+            "2": "Each ally may move the character token backward one slot on one active %data.action.custom.gh2e-prescription% they have."
+          },
+          "426": {
+            "1": "At the start of your next three turns where your current hit point value is less than your maximum hit point value, perform:"
+          },
+          "427": {
+            "1": "Where X is the amount of %game.damage% enemies suffered from the attack ability.",
+            "2": "Remove all negative conditions from the target and give them one medical pack."
+          },
+          "428": {
+            "1": "Grant one adjacent ally:",
+            "2": "If the target has an active %data.action.custom.gh2e-prescription%, gain %game.card.experience:1% and negate the next %game.damage% they would suffer this round."
+          },
+          "429": {
+            "1": "Place a character token on the target. The next three times they lose %game.condition.stun%, they gain %game.condition.stun%."
+          },
+          "430": {
+            "1": "If this attack kills the target, all enemies adjacent to the hex the target occupied gain %game.condition.wound%."
+          },
+          "431": {
+            "1": "At the start of your next four turns where you do not have %game.condition.ward%, perform:",
+            "2": "Whenever an adjacent ally would suffer %game.damage% this round, negate the %game.damage%."
+          },
+          "432": {
+            "1": "1 ally, enemy, or self",
+            "2": "the target of the heal ability"
+          },
+          "433": {
+            "1": "Grant one adjacent ally who has an active %data.action.custom.gh2e-prescription%:",
+            "2": "Remove one negative condition from one adjacent ally. If you do, gain %game.card.experience:1% and you may give one adjacent enemey the negative condition you removed."
+          },
+          "434": {
+            "1": "Give one adjacent ally one medical pack to gain %game.card.experience:1%."
+          },
+          "435": {
+            "1": "At the start of your next three turns, perform:"
+          },
+          "436": {
+            "1": "At the start of your next three turns, gain one medical pack.",
+            "2": "In initiative order, each of your allies may immediately play one \"Medical Pack\" ability card from their hand to perform one action of the card"
+          },
+          "437": {
+            "1": "Kill one adjacent damaged enemy that has at least two negative conditions and whose current hit point value is 8 or less.",
+            "2": "The target suffers %game.damage:1%."
+          },
+          "438": {
+            "1": "Before the heal, remove all negative conditions from the target.",
+            "2": "If the target of the heal ability has an active %data.action.custom.gh2e-prescription%, gain %game.card.experience:1% and grant them:",
+            "3": "Whenever you or an ally perform a heal ability on a \"Medical Pack\" ability card, that character may add +4 %game.action.attack% to their next attack that round of +4 %game.action.move% to their next move ability that round."
+          },
+          "439": {
+            "1": "Add +1 %game.action.target% to your next melee attack ability this round."
+          }
+        }
+      },
+      "squidface": {
+        "1": "Give the target or one enemy within %game.action.range% 2 of the target %game.condition.plague%",
+        "2": "Give the target or one enemy within %game.action.range% 2 of the target %game.condition.poison%",
+        "3": "You have %game.action.fly%",
+        "4": "Whenever you heal from a long rest, you may remove %game.condition.poison% from on ally to add +1 %game.action.heal%",
+        "5": "Once each scenario, when an enemy that has a %game.condition.plague% would die, you first control that enemy and have it perform the abilities on its ability card, adding %game.condition.plague% to all its attack, then it dies",
+        "6": "In a single turn, kill 3 or more enemies without drawing an attack modifier card",
+        "7": "In a single scenario, either apply or remove %game.condition.poison% from an ally or enemy each round"
+      },
+      "sun": {
+        "1": "You or an adjacent ally may %game.card.recover% on level 1 card from the discard pile",
+        "2": "Whenever you open one or more doors during your turn, gain %game.action.shield% 1, %game.action.retaliate% 1 for the round",
+        "3": "Whenever you long rest, you may %game.element.light%",
+        "4": "Whenever one of your heals would cause an ally's hit point value to increase beyond their maximum hit point value, that ally gains %game.condition.ward%",
+        "5": "In a single scenario, infuse or consume %game.element.light% during each of your turns",
+        "6": "In a single scenario, deal 8 or more %game.damage% with an attack 3 or more times"
+      },
+      "three-spears": {
+        "1": "Gain 10 %data.action.custom.gh2e-supplies%",
+        "2": "Gain the <i>Barbed Strip</i> or <i>Iron Plate</i> item",
+        "3": "Gain the <i>Scroll of Relocation</i> or <i>Sharpened Dirk</i> item",
+        "4": "You may bring one additional %game.itemSlot:small% item into each scenario",
+        "5": "Your party may purchase items from each faction as though the items' costs were five gold less and your reputation with that faction was two greater",
+        "6": "Whenever you long rest, gain 10 %data.action.custom.gh2e-supplies%",
+        "7": "In a single scenario, spend 50 %data.action.custom.gh2e-supplies% to refresh 50 gold of lost items 3 times",
+        "8": "For an entire scenario, give yourself or an ally an item from the Quartermaster Item Supply each round except when performing a long rest"
+      },
+      "triangles": {
+        "1": "At the start of each scenario, you may %game.element.wild%",
+        "2": "Whenever you long rest, %game.element.consume.wild%: %game.element.wild%",
+        "3": "%game.element.fire%,%game.element.ice%,%game.element.air%, and %game.element.earth% do not wane at the end of each round",
+        "4": "In a single scenario, consume 4 or more elements in a single turn 5 times",
+        "5": "Once in 3 different scenarios, have all 6 elements strong or waning at the same time",
+        "6": "Add +1 %game.action.attack% for each element that is strong or waning.",
+        "7": "After each attack, %game.element.wild%.",
+        "abilities": {
+          "447": {
+            "1": "Add +1 %game.action.target% and gain %game.card.experience:1% if you consume two or more elements.",
+            "2": "Move one waning element to the strong column."
+          },
+          "448": {
+            "1": "At the start of each of your turns, you may %game.element.wild:minus% to add +1 %game.action.attack% to all your attacks this turn."
+          },
+          "449": {
+            "1": "Add +1 %game.action.target% and gain %game.card.experience:1% if you consume two or more elements."
+          },
+          "450": {
+            "1": "Add +1 %game.action.move% if one or more elements are strong or waning."
+          },
+          "451": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "452": {
+            "1": "Add +1 %game.action.move% if one or more elements are strong or waning."
+          },
+          "453": {
+            "1": "Add +1 %game.action.move% if one or more elements are strong or waning."
+          },
+          "454": {
+            "1": "At the end of this and your next five turns, in order: %game.elementHalf:fire|ice%, %game.elementHalf:air|earth%, %game.elementHalf:light|dark% (repeat the same order for turns 4-6)."
+          },
+          "455": {
+            "1": "Add +1 %game.action.move% if one or more elements are strong or waning."
+          },
+          "456": {
+            "1": "Whenever an enemy consumes an element, you may infuse that element."
+          },
+          "457": {
+            "1": "You or one ally within %game.action.range:3% may %game.card.recover% one level 1 card from the discard pile."
+          },
+          "458": {
+            "1": "All attacks targeting you or adjacent allies this round gain disadvantage."
+          },
+          "459": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :",
+            "2": "Create one %game.damage:2% trap in an empty hex within %game.action.range:3%. All enemies adjacent to the trap suffer %game.damage:1%"
+          },
+          "462": {
+            "1": "Grant one ally within %game.action.range:2%:"
+          },
+          "464": {
+            "1": "Add -1 %game.action.attack%, +2 %game.action.range% to each attack for each enemy already attacked with this ability. Each target after the first must be within %game.action.range:2% of the previous target."
+          },
+          "465": {
+            "1": "On the next two sources of %game.damage% you or an adjacent ally would suffer, negate the %game.damage%."
+          },
+          "466": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square% :"
+          },
+          "467": {
+            "1": "The target may %game.card.recover% one level 1 card from the discard pile, %game.elementHalf:air|earth%.",
+            "2": "Grant the target:"
+          },
+          "468": {
+            "1": "All allies in the red hexes gain %game.condition.invisible%."
+          },
+          "469": {
+            "1": "Add +1 %game.action.attack% for each element that is strong or waning."
+          },
+          "471": {
+            "1": "Create one 1-hex hazardous terrain tile in the featureless hex occupied by the target, %game.card.experience:1%.",
+            "2": "Add +1%game.action.heal%, gain %game.card.experience:1%, and %game.element.light% if you consume two or more elements."
+          },
+          "472": {
+            "1": "all enemies adjacent to the target of the heal ability",
+            "2": "all enemies at exactly %game.action.range:2% from the target of the heal ability",
+            "3": "Add +1%game.action.attack%, gain %game.card.experience:1%, and %game.element.dark% if you consume two or more elements."
+          },
+          "473": {
+            "1": "After each attack, %game.element.wild%."
+          },
+          "474": {
+            "1": "The target suffers %game.damage:5%.",
+            "2": "Grant one ally within %game.action.range:4%:",
+            "3": "advantage",
+            "4": "%game.card.recover% one card from your discard pile, %game.element.dark%."
+          }
+        }
+      },
+      "two-mini": {
+        "1": "Add +1 %game.action.attack% if the Wildfury and %data.action.custom.gh2e-bear-summon% are within %game.action.range% 4 of each other",
+        "2": "Whenever %data.action.custom.gh2e-bear-summon% is attacked, treat and %game.attackmodifier.double% attack modifier card the enemy draws as %game.attackmodifier.plus0% instead",
+        "3": "Once each scenario, during your turn, %data.action.custom.gh2e-command%: %game.action.move% 4.<br>If %data.action.custom.gh2e-bear-summon% exits a hex adjacent to you during this movement, you may %game.action.teleport% to an empty hex adjacent to %data.action.custom.gh2e-bear-summon% at the end of the movement",
+        "4": "At the start or end of each of your long rests, you may %game.elementHalf:air|earth% and reduce your current hit point value by X (X must be at least 1) to %data.action.custom.gh2e-command%: %game.action.heal% X, self",
+        "5": "In a single scenario, infuse or consume %game.element.air% or %game.element.earth% during each of your turns",
+        "6": "In a single scenario, kill 4 or more enemies with %data.action.custom.gh2e-command% attacks of 7 or greater (after all bonuses, before attack modifiers)",
+        "7": "All allies within %game.action.range% 3 add %game.action.pierce% 1 to all their attacks.",
+        "8": "All allies within %game.action.range% 3 gain %game.action.shield% 1.",
+        "9": "All allies within %game.action.range% 3 add +2 %game.action.attack% to their first attack each round."
+      }
+    }
+  },
+  "items": {
+    "gh2e-1": {
+      "": "Weathered Boots",
+      "1": "During your move<br>ability, add +1 %game.action.move%."
+    },
+    "gh2e-10": {
+      "": "Simple Bow",
+      "1": "During your ranged attack ability, gain advantage on one attack."
+    },
+    "gh2e-100": {
+      "": "Charged Boots",
+      "1": "After your next three turns during which you do not perform a move ability, flip this card over.",
+      "2": "During your move ability, add +2 %game.action.move% and flip this card over."
+    },
+    "gh2e-101": {
+      "": "Cure Potion",
+      "1": "During your turn, remove one negative condition you have. This item can be used while you have %game.condition.stun%."
+    },
+    "gh2e-102": {
+      "": "Steel Ring",
+      "1": "When you suffer %game.damage% from an attack, gain %game.action.shield% 4 for the attack."
+    },
+    "gh2e-103": {
+      "": "Ranger's Hood",
+      "1": "During one of your summon's attack abilities, before drawing attack modifier cards, reveal the top two cards of your attack modifier deck. You may put any of them on the bottom of your deck."
+    },
+    "gh2e-104": {
+      "": "Warding Rod",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-105": {
+      "": "Lucky Eye",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-106": {
+      "": "Steam Armor",
+      "1": "On the next five sources of %game.damage% from attacks targeting you, gain %game.action.shield% 1 for the attacks."
+    },
+    "gh2e-107": {
+      "": "Necklace of Teeth",
+      "1": "Whenever you kill a monster, perform:"
+    },
+    "gh2e-108": {
+      "": "Thief's Hood",
+      "1": "During your turn, if you've killed an enemy this turn, perform:"
+    },
+    "gh2e-109": {
+      "": "Ancient Drill",
+      "1": "During your melee attack ability, add +2 %game.action.attack%, %game.action.pierce% 2 to all attacks."
+    },
+    "gh2e-11": {
+      "": "Healing Potion",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-110": {
+      "": "Fueled Falchion",
+      "1": "During your turn, add +1 %game.action.attack% to your next melee attack. If %game.element.fire% is strong or waning, all enemies adjacent to the target of that attack suffer %game.damage% 1."
+    },
+    "gh2e-111": {
+      "": "Skull of Hatred",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-112": {
+      "": "Curious Gear",
+      "1": "During your turn, destroy one trap within %game.action.range% 3. If an enemy is adjacent to that trap, you may instead spring the trap and apply its effects do that enemy."
+    },
+    "gh2e-113": {
+      "": "Black Card",
+      "1": "During your turn, place a character token on one normal or elite enemy within %game.action.range% 3. You and all allies add +1 %game.action.attack% to all attacks targeting this enemy."
+    },
+    "gh2e-114": {
+      "": "Gust Striders",
+      "1": "During your turn. add %game.action.jump% to your next move ability. If %game.element.air% is strong or waning also add +2 %game.action.move%."
+    },
+    "gh2e-115": {
+      "": "Rod of Transference",
+      "1": "When an ally within %game.action.range% 3 would suffer %game.damage% you suffer the %game.damage% instead"
+    },
+    "gh2e-116": {
+      "": "Fated Verses",
+      "1": "During your attack ability, you may gain disadvantage on one attack to flip this card over at the end of your turn.",
+      "2": "During an ally's attack ability, that ally gains advantage on one of their attacks and you flip this card over."
+    },
+    "gh2e-117": {
+      "": "Dawnblade",
+      "1": "During your turn, if %game.element.dark% is strong or waning add +1 %game.action.attack% to your next melee attack. If you brought Duskbrand %game.element.light%."
+    },
+    "gh2e-118": {
+      "": "Duskbrand",
+      "1": "During your turn if %game.element.light% is strong or waning add +1 %game.action.attack% to your next melee attack. If you brought Dawnblade %game.element.dark%."
+    },
+    "gh2e-119": {
+      "": "Drakescale Boots",
+      "1": "During your move ability, add +1 %game.action.move% and ignore difficult and hazardous terrain."
+    },
+    "gh2e-12": {
+      "": "Stamina Potion",
+      "1": "During your turn, %game.card.recover% one level 1 card from your discard pile."
+    },
+    "gh2e-120": {
+      "": "Drakescale Armor",
+      "1": "Whenever you long rest, gain %game.condition.strengthen%."
+    },
+    "gh2e-121": {
+      "": "Drakescale Helm",
+      "1": "During your turn, perform:",
+      "2": "If you brought Drakescale Boots and Drakescale Armor, add +1 %game.action.target%."
+    },
+    "gh2e-122": {
+      "": "Frost Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-123": {
+      "": "Storm Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-124": {
+      "": "Ignition Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-125": {
+      "": "Tremor Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-126": {
+      "": "Brilliant Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-127": {
+      "": "Twilight Beetle Lantern",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-128": {
+      "": "Pendant of Dark Pacts",
+      "1": "During your turn, %game.card.recover% one of your lost %game.items.slots.small% items, and flip this card over.",
+      "2": "On your next three rests, gain %game.condition.curse%. After the third rest, flip this card over."
+    },
+    "gh2e-129": {
+      "": "Helm of the Mountain",
+      "1": "When you are attacked, before drawing an attack modifier card, if %game.element.earth% is strong or waning, gain %game.condition.ward%."
+    },
+    "gh2e-13": {
+      "": "Element Potion",
+      "1": "During your turn, %game.element.wild%."
+    },
+    "gh2e-130": {
+      "": "Mountain Hammer"
+    },
+    "gh2e-131": {
+      "": "Wave Crest",
+      "1": "During your turn, if %game.element.ice% is strong or waning, perform either:",
+      "2": "or"
+    },
+    "gh2e-132": {
+      "": "Doomed Compass",
+      "1": "During your turn, control one enemy within %game.action.range:5%."
+    },
+    "gh2e-133": {
+      "": "Heart of the Betrayer",
+      "1": "When you would be attacked by an adjacent normal enemy, instead control that enemy:"
+    },
+    "gh2e-134": {
+      "": "Power Core"
+    },
+    "gh2e-135": {
+      "": "Resonant Crystal",
+      "1": "During your turn, suffer %game.damage:4% or destroy an adjacent obstacle to have an enemy within %game.action.range:3% suffer %game.damage:4%."
+    },
+    "gh2e-136": {
+      "": "Helix Ring",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-137": {
+      "": "Flea-Bitten Shawl",
+      "1": "All monsters consider you to be last in initiative order when determining their focus."
+    },
+    "gh2e-138": {
+      "": "Bloody Axe",
+      "1": "During your melee attack ability, suffer %game.damage:2% to add +1 %game.action.attack% to all attacks."
+    },
+    "gh2e-139": {
+      "": "Otherworldly Scepter",
+      "1": "When you perform a summon action, each summon summoned by that action gains %game.condition.ward%, %game.condition.invisible% and %game.condition.strengthen%."
+    },
+    "gh2e-14": {
+      "": "Studded Leather",
+      "1": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack and you gain %game.action.shield:1% for the attack."
+    },
+    "gh2e-140": {
+      "": "Remote Attack Spider",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-141": {
+      "": "Remote Aid Spider",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-142": {
+      "": "Magma Waders",
+      "1": "During your move ability, add +1 %game.action.move% and create one 1-hex hazardous terrain tile in the featureless hex you end your movement occupying."
+    },
+    "gh2e-143": {
+      "": "Boots of Bracing",
+      "1": "During your ranged attack ability, gain %game.condition.immobilize% to add +1 %game.action.attack% to one attack."
+    },
+    "gh2e-144": {
+      "": "Temporal Matrix",
+      "1": "During ordering of initiative, after all ability cards have been revealed, order initiatives for the round from highest to lowest instead of lowest to highest."
+    },
+    "gh2e-145": {
+      "": "Harrow-Hook",
+      "1": "During your turn, perform:",
+      "2": "This movement must end adjacent to an obstacle or wall."
+    },
+    "gh2e-146": {
+      "": "Amberhollow",
+      "1": "This item must be brought into the scenario and is returned to the unavailable item supply at the end of the scenario.",
+      "2": "During your turn, perform:"
+    },
+    "gh2e-147": {
+      "": "Scepter of Xorn",
+      "1": "During your turn, if you do not have %game.condition.poison%, gain %game.condition.poison% to perform:"
+    },
+    "gh2e-148": {
+      "": "Shield of the Righteous",
+      "1": "When you suffer %game.damage% from an attack, negate the %game.damage% and infuse %game.element.light%"
+    },
+    "gh2e-149": {
+      "": "Aesther Spyglass",
+      "1": "This item may only be used if you are adjacent to at least one obstacle.",
+      "2": "During your turn, perform:"
+    },
+    "gh2e-15": {
+      "": "Comfortable Shoes",
+      "1": "When you use the basic bottom action of an ability card, perform %game.action.move% 3 instead of %game.action.move% 2."
+    },
+    "gh2e-150": {
+      "": "Experimental Armor",
+      "1": "This item cannot be sold and must be brought into each scenario.",
+      "2": "When you suffer %game.damage% from an attack, you may suffer %game.damage:2% to have all adjacent allies and enemies suffer %game.damage:2%."
+    },
+    "gh2e-151": {
+      "": "Sword of the Sands",
+      "1": "During your melee attack ability, add %game.condition.wound%, %game.condition.poison% to all attacks."
+    },
+    "gh2e-152": {
+      "": "Ruby Talisman",
+      "1": "During your turn if, an ally within %game.action.range:3% has a negative condition, you may gain %game.condition.disarm% to remove one negative condition from that ally and give them %game.condition.safeguard%, %game.condition.bless%."
+    },
+    "gh2e-153": {
+      "": "Hooked Shield",
+      "1": "After you push an enemy, perform:",
+      "2": "This movement may only enter hexes that the pushed enemy exited."
+    },
+    "gh2e-154": {
+      "": "Focusing Ray",
+      "1": "During your heal ability, add +1 %game.action.heal% and %game.condition.strengthen% one heal targeting an ally."
+    },
+    "gh2e-155": {
+      "": "Etheric Elixir",
+      "1": "When you perform the top %game.card.lost% action of <i>Reviving Ether</i>, remove the %game.attackmodifier.null% card from your attack modifier deck for the remainder of the scenario."
+    },
+    "gh2e-156": {
+      "": "Silent Stiletto",
+      "1": "Add %game.action.pierce% 1 to all your attacks."
+    },
+    "gh2e-157": {
+      "": "Stone Charm",
+      "1": "During your turn, perform your next attack or heal ability this turn as if you occupied the same hex as any obstacle."
+    },
+    "gh2e-158": {
+      "": "Psychic Knife",
+      "1": "Add +1 %game.action.attack% to all your attacks from your %data.action.custom.gh2e-augment% actions."
+    },
+    "gh2e-159": {
+      "": "Insignia of the Divine",
+      "1": "During your turn, grant self or one adjacent ally:"
+    },
+    "gh2e-16": {
+      "": "Circlet of Elements",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-160": {
+      "": "Utility Belt",
+      "1": "During your turn, gain 10 %data.action.custom.gh2e-supplies% and give one adjacent ally one item of your choice from the %game.characterIcon.three-spears% item supply."
+    },
+    "gh2e-161": {
+      "": "Phasing Idol",
+      "1": "When one of your summons suffers %game.action.damage% from an attack, negate the %game.action.damage% and that summon gains %game.condition.invisible%."
+    },
+    "gh2e-162": {
+      "": "The Night's Caress",
+      "1": "When you lose %game.condition.invisible%, flip this card over and perform:",
+      "2": "When you gain %game.condition.invisible%, flip this card over and look at the top card of your attack modifier deck. You may put that card on the bottom of your deck."
+    },
+    "gh2e-163": {
+      "": "Pendant of the Plague",
+      "1": "During your turn, perform:",
+      "2": "You may give one ally within %game.action.range:3% (of you) %game.condition.poison% to add +1 %game.action.target%."
+    },
+    "gh2e-164": {
+      "": "Mask of Death",
+      "1": "When you reveal cards from any deck, reveal one additional card."
+    },
+    "gh2e-165": {
+      "": "Master's Lute",
+      "1": "When you perform a %data.action.custom.gh2e-song% action, gain one %data.characterColored.music-note:Note% of your choice in addition to any other %data.characterColored.music-note:Note% you gain this round."
+    },
+    "gh2e-166": {
+      "": "Cloak of the Hunter",
+      "1": "Whenever you perform a %data.action.custom.gh2e-doom% action, immediately afterwards grant self or one of your summons:",
+      "2": "This movement must move toward the enemy that has %data.action.custom.gh2e-doom%."
+    },
+    "gh2e-167": {
+      "": "Doctor's Coat",
+      "1": "When an ally within %game.action.range:3% suffers %game.action.damage% from an attack, after the attack ability perform:",
+      "2": "This movement must end adjacent to the attacked ally."
+    },
+    "gh2e-168": {
+      "": "Elemental Vest",
+      "1": "At the end of your turn, for every two elements you consumed that turn: %game.element.wild%."
+    },
+    "gh2e-169": {
+      "": "Staff of Command",
+      "1": "During your turn, %data.action.custom.gh2e-command%:"
+    },
+    "gh2e-17": {
+      "": "Boots of Speed",
+      "1": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 10."
+    },
+    "gh2e-170": {
+      "": "Crawling Carapace",
+      "1": "On the first source of %game.action.damage% from an attack you or one of your summons would suffer each round, the attacked figure gains %game.action.shield:1% for the attack."
+    },
+    "gh2e-18": {
+      "": "Heavy Bassinet",
+      "1": "Whenever an enemy would give you  %game.condition.disarm%, %game.condition.stun% or %game.condition.muddle%, prevent the condition."
+    },
+    "gh2e-19": {
+      "": "Warden's Robes",
+      "1": "When one of your summons suffers %game.damage% from an attack, that summon gains %game.action.shield:2% for the attack."
+    },
+    "gh2e-2": {
+      "": "Winged Shoes",
+      "1": "During your movement, add %game.action.jump% to the movement."
+    },
+    "gh2e-20": {
+      "": "Hooked Chain",
+      "1": "During your turn, add %game.action.pull:2% to all your ranged attacks."
+    },
+    "gh2e-21": {
+      "": "Power Potion",
+      "1": "During your turn, add +1 %game.action.attack% to all your attacks."
+    },
+    "gh2e-22": {
+      "": "Iron Spear",
+      "1": "During your turn, one of your single-target melee attack abilities may target an enemy two hexes away."
+    },
+    "gh2e-23": {
+      "": "Jagged Sword",
+      "1": "During your melee attack ability, add %game.condition.wound% to one attack."
+    },
+    "gh2e-24": {
+      "": "Black Knife",
+      "1": "During your melee attack ability, add %game.condition.curse% to one attack."
+    },
+    "gh2e-25": {
+      "": "Weighted Net",
+      "1": "During your ranged attack ability, add %game.condition.immobilize% to one attack."
+    },
+    "gh2e-26": {
+      "": "Eagle-Eye Goggles",
+      "1": "During your attack ability, gain advantage on all attacks."
+    },
+    "gh2e-27": {
+      "": "Iron Helmet",
+      "1": "When you are attacked, treat any %game.attackmodifier.double% attack modifier card the enemy draws as a %game.attackmodifier.plus0% instead."
+    },
+    "gh2e-28": {
+      "": "Chainmail",
+      "1": "On the next three sources of %game.damage% from attacks targeting you, gain %game.action.shield:1% for the attacks."
+    },
+    "gh2e-29": {
+      "": "Nimble Legguards",
+      "1": "When an adjacent ally would be targeted by an attack, you are targeted instead, regardless of range and line-of-sight."
+    },
+    "gh2e-3": {
+      "": "Hide Armor",
+      "1": "On the next two sources of %game.damage% from attacks targeting you, gain %game.action.shield:1% for the attacks."
+    },
+    "gh2e-30": {
+      "": "Armorbane Bow",
+      "1": "During your turn, add %game.action.pierce:3% to all your ranged attacks."
+    },
+    "gh2e-31": {
+      "": "Staff of Summoning",
+      "1": "During your turn, grant one of your summons:",
+      "2": "%game.action.move% +0"
+    },
+    "gh2e-32": {
+      "": "Black Censer",
+      "1": "During your turn, perform:",
+      "2": "All enemies that have %game.condition.muddle% add -1 %game.action.attack% to all their attacks this round."
+    },
+    "gh2e-33": {
+      "": "Second Skin",
+      "1": "At the start of the scenario, remove one %game.attackmodifier.minus1% attack modifier card from your attack modifier deck."
+    },
+    "gh2e-34": {
+      "": "Battle Axe",
+      "1": "During your singe-target melee attack ability, change the targeting of the ability to:"
+    },
+    "gh2e-35": {
+      "": "Tower Shield",
+      "1": "When you suffer %game.damage% from an attack, gain %game.action.shield:2% for the attack."
+    },
+    "gh2e-36": {
+      "": "Moon Earing",
+      "1": "When you short rest, %game.card.recover% up to three of your spent items."
+    },
+    "gh2e-37": {
+      "": "Major Healing Potion",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-38": {
+      "": "Heavy Greaves",
+      "1": "During your move ability, add +1 %game.action.move%. After the move ability, perform:"
+    },
+    "gh2e-39": {
+      "": "Ring of Skulls"
+    },
+    "gh2e-4": {
+      "": "Leather Armor",
+      "1": "When you are attacked, before drawing an attack modifier card, the attacker gains disadvantage on the attack."
+    },
+    "gh2e-40": {
+      "": "Shadow Amor",
+      "1": "When you suffer %game.damage% from an attack, negate the %game.damage% and infuse %game.element.dark%."
+    },
+    "gh2e-41": {
+      "": "Kinetic Treads",
+      "1": "At the end of your move ability, grant one adjacent ally:"
+    },
+    "gh2e-42": {
+      "": "Endurance Footwraps",
+      "1": "After you move 4 or more hexes on your turn, after the move ability, perform:"
+    },
+    "gh2e-43": {
+      "": "Hawk Helm",
+      "1": "During your turn, add +1 %game.action.range% to all your ranged attacks."
+    },
+    "gh2e-44": {
+      "": "Precision Bow",
+      "1": "After your ranged attack ability, perform:",
+      "2": "%game.action.target% 1 target of the attack<br>ability at any %game.action.range%, %game.action.pierce% 1"
+    },
+    "gh2e-45": {
+      "": "Major Element Potion",
+      "1": "During your turn, %game.element.wild% %game.element.wild%."
+    },
+    "gh2e-46": {
+      "": "Light Targe",
+      "1": "When you suffer %game.damage% from an attack, gain %game.action.shield:1% for the attack. After the attack but before any %game.action.retaliate%, perform:"
+    },
+    "gh2e-47": {
+      "": "Cloak of Pockets",
+      "1": "At the start of the scenario, bring one additional %game.items.slots.small% item."
+    },
+    "gh2e-48": {
+      "": "Staff of Elements",
+      "1": "During your turn, %game.element.wild%."
+    },
+    "gh2e-49": {
+      "": "Horned Helm",
+      "1": "After you move 4 of more hexes on your turn, add +1 %game.action.attack% to your next melee attack this turn."
+    },
+    "gh2e-5": {
+      "": "Scouting Lens",
+      "1": "During your attack ability, add %game.action.pierce% 1 to one attack."
+    },
+    "gh2e-50": {
+      "": "Robes of the Oak",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-51": {
+      "": "Heavy Mace",
+      "1": "After you are attacked by an adjacent enemy, perform:",
+      "2": "This attack is unaffected by %game.action.retaliate%."
+    },
+    "gh2e-52": {
+      "": "Sun Earring",
+      "1": "When you short rest, %game.card.recover% up to three of your spent items and perform:"
+    },
+    "gh2e-53": {
+      "": "Major Power Potion",
+      "1": "During your turn, add +2 %game.action.attack% to all your attacks."
+    },
+    "gh2e-54": {
+      "": "Circlet of Sanctity",
+      "1": "After the next three attacks targeting an ally within %game.action.range:2% flip this card over.",
+      "2": "During your turn, perform:",
+      "3": "then flip this card over."
+    },
+    "gh2e-55": {
+      "": "Volatile Bomb",
+      "1": "During your single-target ranged attack ability, change the targeting of the ability to:"
+    },
+    "gh2e-56": {
+      "": "Steel Sabatons",
+      "1": "At the end of the turn, if you have moved 1 or fewer hexes during your turn, gain %game.action.shield:1% for the round."
+    },
+    "gh2e-57": {
+      "": "Strategist's Ring",
+      "1": "At the end of the turn, play one card from your hand perform all persistent and mandatory abilities on either the top or bottom action of the card."
+    },
+    "gh2e-58": {
+      "": "Major Stamina Potion",
+      "1": "During your turn, %game.card.recover% one card from your discard pile."
+    },
+    "gh2e-59": {
+      "": "Telescopic Lens",
+      "1": "During your turn, add +2 %game.action.range% to all your ranged attacks."
+    },
+    "gh2e-6": {
+      "": "Amulet of Life",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-60": {
+      "": "Staff of Eminence",
+      "1": "During your turn, %game.element.consume.wild% to add +1 %game.action.attack% to all your attacks."
+    },
+    "gh2e-61": {
+      "": "War Hammer",
+      "1": "During your melee attack ability, add %game.condition.stun% to all attacks."
+    },
+    "gh2e-62": {
+      "": "Mask of Terror",
+      "1": "During your melee attack, add %game.action.push:1%."
+    },
+    "gh2e-63": {
+      "": "Star Earring",
+      "1": "When you short rest, %game.card.recover% up to three of your spent items, choose which card to lose during the rest, and perform:"
+    },
+    "gh2e-64": {
+      "": "Empowering Talisman",
+      "1": "During your turn, %game.card.recover% one of your lost %game.items.slots.small% items."
+    },
+    "gh2e-65": {
+      "": "Long Spear",
+      "1": "During your single-target melee attack ability, change the targeting of the ability to:"
+    },
+    "gh2e-66": {
+      "": "Cloak of Invisibility",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-67": {
+      "": "Spiked Shoes",
+      "1": "When you use the basic bottom action of an ability card, you may perform %game.action.attack:3% instead of %game.action.move:2%."
+    },
+    "gh2e-68": {
+      "": "Ring of Haste",
+      "1": "At the end of your turn, play one card from your hand and perform the bottom action of the card."
+    },
+    "gh2e-69": {
+      "": "Plate Mail",
+      "1": "On the next five sources of %game.damage% from attacks targeting you, gain %game.action.shield:1% for the attacks."
+    },
+    "gh2e-7": {
+      "": "Poison Dagger",
+      "1": "During your melee attack ability, add %game.condition.poison% to one attack."
+    },
+    "gh2e-70": {
+      "": "Standard Rations",
+      "1": "Whenever you heal from a long rest, add +2 %game.action.heal%."
+    },
+    "gh2e-71": {
+      "": "Mastercraft Crossbow",
+      "1": "During your ranged attack ability, add %game.condition.wound% to one attack. One enemy adjacent to that target and further from you than that target suffers %game.damage:2%."
+    },
+    "gh2e-72": {
+      "": "Commander's Cap",
+      "1": "Allies gain advantage on the next three attacks performed while adjacent to you. Then flip this card over.",
+      "2": "After the next three attack abilities you perform while within %game.action.range:2% of one or more allies, flip this card over."
+    },
+    "gh2e-73": {
+      "": "Mantle of Summoning",
+      "1": "During your turn, grant one of your summons:"
+    },
+    "gh2e-74": {
+      "": "Concealed Dagger",
+      "1": "During your turn, place a character token on one adjacent enemy. At the start of each of the enemy's turns, they suffer %game.damage:1%. When that enemy dies, flip this card over.",
+      "2": "Place the character token in the hex in which the enemy died. You may loot that token to flip this card over."
+    },
+    "gh2e-75": {
+      "": "Opulent Hood",
+      "1": "During your turn, grant one adjacent ally:"
+    },
+    "gh2e-76": {
+      "": "Merchant's Insignia",
+      "1": "Whenever you complete a scenario, gain 10 gold."
+    },
+    "gh2e-77": {
+      "": "Robes of Evocation",
+      "1": "During your attack ability, %game.element.consume.wild% to add +1 %game.action.attack% to all your attacks."
+    },
+    "gh2e-78": {
+      "": "Reaping Scythe",
+      "1": "During your melee attack ability, add +1 %game.action.attack% and gain advantage on one attack. If this attack kills the target, after the attack perform:"
+    },
+    "gh2e-79": {
+      "": "Doom Powder",
+      "1": "During your attack ability, add %game.condition.poison%, %game.condition.stun%, and %game.condition.curse% to one attack."
+    },
+    "gh2e-8": {
+      "": "Heater Shield",
+      "1": "When you suffer %game.damage% from an attack, gain %game.action.shield:1% for the attack."
+    },
+    "gh2e-80": {
+      "": "Demonic Skull",
+      "1": "During your turn, %game.element.wild% and flip this card over at the end of your turn.",
+      "2": "When you kill a monster, flip this card over at the end of your turn."
+    },
+    "gh2e-81": {
+      "": "Frigid Blade",
+      "1": "During your melee attack ability, %game.element.consume.ice% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-82": {
+      "": "Storm Blade",
+      "1": "During your melee attack ability, %game.element.consume.air% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-83": {
+      "": "Inferno Blade",
+      "1": "During your melee attack ability, %game.element.consume.fire% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-84": {
+      "": "Tremor Blade",
+      "1": "During your melee attack ability, %game.element.consume.earth% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-85": {
+      "": "Brilliant Blade",
+      "1": "During your melee attack ability, %game.element.consume.light% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-86": {
+      "": "Night Blade",
+      "1": "During your melee attack ability, %game.element.consume.dark% to add +2 %game.action.attack% to one attack."
+    },
+    "gh2e-87": {
+      "": "Versatile Dagger",
+      "1": "When you use the basic top action of an ability card, perform %game.action.attack:3% instead of %game.action.attack:2%."
+    },
+    "gh2e-88": {
+      "": "Spiked Shield",
+      "1": "When you suffer %game.action.damage% from an attack, gain %game.action.shield:1% and %game.action.retaliate:2% for the attack."
+    },
+    "gh2e-89": {
+      "": "Swordedge Armor",
+      "1": "On the next three sources of %game.action.damage% from attacks targeting you, gain %game.action.shield:1%, %game.action.retaliate:1% for the attacks"
+    },
+    "gh2e-9": {
+      "": "Focusing Rod",
+      "1": "During your turn, if you've performed an action with %game.card.lost%, perform:"
+    },
+    "gh2e-90": {
+      "": "Blinking Cape",
+      "1": "During your turn, perform:",
+      "2": "This teleport must end in a hex adjacent to an enemy."
+    },
+    "gh2e-91": {
+      "": "Boots of Quickness",
+      "1": "During ordering of initiative, after all ability cards have been revealed, increase or decrease your initiative by 20."
+    },
+    "gh2e-92": {
+      "": "Stun Powder",
+      "1": "During your attack ability, add %game.condition.stun% to one attack."
+    },
+    "gh2e-93": {
+      "": "Scroll of Ferocity",
+      "1": "During your turn, grant one ally within %game.action.range:5%:"
+    },
+    "gh2e-94": {
+      "": "Scroll of Healing",
+      "1": "During your turn, perform:"
+    },
+    "gh2e-95": {
+      "": "Scroll of Shielding",
+      "1": "When one ally within %game.action.range:5% suffers %game.action.damage% from an attack, grant them %game.action.shield:3% for the attack."
+    },
+    "gh2e-96": {
+      "": "Scroll of Swiftness",
+      "1": "During one ally within %game.action.range:5%'s move ability, add +1 %game.action.move% and %game.action.jump%."
+    },
+    "gh2e-97": {
+      "": "Shoes of Happiness",
+      "1": "During your move ability, add +1 %game.action.move%. If you move 4 or more hexes and end on a money token or treasure tile with that move ability, gain %game.card.experience:1%."
+    },
+    "gh2e-98": {
+      "": "Cloak of Phasing",
+      "1": "During your turn, designate the hex you are occupying and add %game.action.jump% to all your move abilities. At the end of your turn, %game.action.teleport% to the designated hex."
+    },
+    "gh2e-99": {
+      "": "Unstable Explosives",
+      "1": "During your turn, perform:"
+    }
+  },
+  "summon": {
+    "angry-wasps": "Angry Wasps",
+    "battle-boar": "Battle Boar",
+    "battle-bot": "Battle Bot",
+    "bloat-maggot": "Bloat Maggots",
+    "chromatic-construct": "Chromatic Construct",
+    "covetous-imp": "Covetous Imp",
+    "creeping-beetles": "Creeping Beetles",
+    "decoy": "Decoy",
+    "elemental-conduit": "Elemental Conduit",
+    "ember-sprite": "Ember Sprite",
+    "fey-subjugator": "Fey Subjugator",
+    "floating-jellyfish": "Floating Jellyfish",
+    "great-archinotl": "Great Archinotl",
+    "green-snake": "Green Snake",
+    "horned-hristek": "Horned Hristek",
+    "iron-beast": "Iron Beast",
+    "kill-bot": "Kill Bot",
+    "lightning-moth": "Lightning Moth",
+    "monolith": "Monolith",
+    "prismatic-unicorn": "Prismatic Unicorn",
+    "rage-hornets": "Rage Hornets",
+    "rat-king": "Rat King",
+    "rat-monstrosity": "Rat Monstrosity",
+    "rat-swarm": "Rat Swarm",
+    "rift-spirit": "Rift Spirit",
+    "rock-colossus": "Rock Colossus",
+    "rust-vermin": "Rust Vermin",
+    "shadow-wolf": "Shadow Wolf",
+    "skeleton": "Skeleton",
+    "slime-spirit": "Slime Spirit",
+    "soul-leeches": "Soul Leeches",
+    "staunch-garralev": "Staunch Garralev",
+    "steel-construct": "Steel Construct",
+    "steel-scarabs": "Steel Scarabs",
+    "thorn-shooter": "Thorn Shooter",
+    "two-mini": "Bear",
+    "vicious-jackal": "Vicious Jackal",
+    "vital-force": "Vital Force",
+    "void-eater": "Void Eater",
+    "war-raptor": "War Raptor",
+    "warrior-spirit": "Warrior Spirit",
+    "wind-idol": "Wind Idol"
+  }
+}

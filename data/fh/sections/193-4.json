@@ -1,0 +1,13 @@
+{
+  "index": "193.4",
+  "name": "Metal Depot Built",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "winter-outpost:WO-72",
+      "winter-outpost:WO-74"
+    ]
+  }
+}

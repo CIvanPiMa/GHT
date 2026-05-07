@@ -1,0 +1,714 @@
+import { Dialog, DialogRef } from '@angular/cdk/dialog';
+import { CdkDragDrop, CdkDragRelease, CdkDragStart, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, inject, isDevMode, OnInit, ViewChild } from '@angular/core';
+import { SwUpdate } from '@angular/service-worker';
+import { Subscription } from 'rxjs';
+import { GameManager, gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { SettingsManager, settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { storageManager } from 'src/app/game/businesslogic/StorageManager';
+import { Character } from 'src/app/game/model/Character';
+import { MonsterType } from 'src/app/game/model/data/MonsterType';
+import { Figure } from 'src/app/game/model/Figure';
+import { GameState } from 'src/app/game/model/Game';
+import { Monster } from 'src/app/game/model/Monster';
+import { CharacterComponent } from 'src/app/ui/figures/character/character';
+import { CharacterFullViewComponent } from 'src/app/ui/figures/character/fullview/fullview';
+import { MonsterNumberPickerDialog } from 'src/app/ui/figures/monster/dialogs/numberpicker-dialog';
+import { MonsterComponent } from 'src/app/ui/figures/monster/monster';
+import { ObjectiveContainerComponent } from 'src/app/ui/figures/objective-container/objective-container';
+import { FooterComponent } from 'src/app/ui/footer/footer';
+import { HeaderComponent } from 'src/app/ui/header/header';
+import { SubMenu } from 'src/app/ui/header/menu/menu';
+import { FigureAutoscrollDirective } from 'src/app/ui/helper/autoscroll';
+import { KeyboardShortcuts } from 'src/app/ui/helper/keyboard-shortcuts';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { PointerInputDirective } from 'src/app/ui/helper/pointer-input';
+import { PointerInputService } from 'src/app/ui/helper/pointer-input-service';
+import { GhsTooltipDirective } from 'src/app/ui/helper/tooltip/tooltip';
+import { TrackUUIDPipe } from 'src/app/ui/helper/trackUUID';
+import { environment } from 'src/environments/environment';
+
+@Component({
+  imports: [
+    NgClass,
+    DragDropModule,
+    CharacterComponent,
+    CharacterFullViewComponent,
+    MonsterComponent,
+    ObjectiveContainerComponent,
+    FooterComponent,
+    HeaderComponent,
+    FigureAutoscrollDirective,
+    KeyboardShortcuts,
+    GhsLabelDirective,
+    PointerInputDirective,
+    GhsTooltipDirective,
+    TrackUUIDPipe
+  ],
+  selector: 'ght-main',
+  templateUrl: './main.html',
+  styleUrls: ['./main.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class MainComponent implements OnInit {
+  private element = inject(ElementRef);
+  private swUpdate = inject(SwUpdate);
+  private dialog = inject(Dialog);
+  private pointerInputService = inject(PointerInputService);
+  private ghsManager = inject(GhsManager);
+
+  private cdr = inject(ChangeDetectorRef);
+
+  gameManager: GameManager = gameManager;
+  settingsManager: SettingsManager = settingsManager;
+  GameState = GameState;
+
+  figures: Figure[] = [];
+  grid: number[] = [];
+
+  SubMenu = SubMenu;
+
+  initialized: boolean = false;
+  loading: boolean = true;
+  cancelLoading: boolean = false;
+  welcome: boolean = false;
+  welcomeOtherEditions: boolean = false;
+  welcomeEditionHint: boolean = false;
+  fullviewChar: Character | undefined;
+  showBackupHint: boolean = false;
+
+  draggingEnabled: boolean = false;
+  draggingeTimeout: any = null;
+  isTouch: boolean = false;
+
+  lastScroll: number = -1;
+  lastScrollColumn: number = -1;
+
+  currentZoom: number = 0;
+  zoomDiff: number = -1;
+
+  standeeDialog: DialogRef<unknown, MonsterNumberPickerDialog> | undefined;
+  standeeDialogSubscription: Subscription | undefined;
+
+  serverPing: number = 0;
+  serverPingInterval: any;
+
+  @ViewChild('footer') footer!: FooterComponent;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => {
+      this.figures = gameManager.game.figures.filter(
+        (figure) =>
+          (settingsManager.settings.monsters || !(figure instanceof Monster)) &&
+          (!(figure instanceof Character) || !figure.absent || !settingsManager.settings.hideAbsent)
+      );
+      if (this.initialized) {
+        const figure = gameManager.game.figures.find((figure) => figure instanceof Character && figure.fullview);
+        if (figure) {
+          this.fullviewChar = figure as Character;
+          this.welcome = false;
+        } else if (gameManager.game.figures.length === 0) {
+          this.welcome = true;
+          this.welcomeOtherEditions = settingsManager.settings.editions.length < gameManager.editionData.length;
+          this.welcomeEditionHint =
+            (gameManager.game.edition && settingsManager.getLabel('data.edition.' + gameManager.game.edition + '.hint') !== 'hint') ||
+            false;
+        } else {
+          this.fullviewChar = undefined;
+          this.welcome = false;
+          this.calcColumns();
+          if (
+            settingsManager.settings.automaticStandeesDialog &&
+            settingsManager.settings.automaticStandees &&
+            settingsManager.settings.standees &&
+            !settingsManager.settings.randomStandees &&
+            settingsManager.settings.scenarioRooms
+          ) {
+            if (this.standeeDialog && gameManager.stateManager.lastAction === 'undo') {
+              this.standeeDialog.close();
+            }
+            if (this.dialog.openDialogs.length === 0) {
+              this.automaticStandeeDialogs();
+            } else if (!this.standeeDialogSubscription) {
+              this.standeeDialogSubscription = this.dialog.afterAllClosed.subscribe({
+                next: () => {
+                  this.automaticStandeeDialogs();
+                }
+              });
+            }
+          }
+          this.showBackupHint =
+            settingsManager.settings.backupHint &&
+            !this.loading &&
+            !gameManager.game.scenario &&
+            (gameManager.game.party.scenarios.length > 0 ||
+              gameManager.game.party.casualScenarios.length > 0 ||
+              gameManager.game.parties.some((party) => party.casualScenarios.length > 0));
+        }
+      }
+      if (this.serverPing !== settingsManager.settings.serverPing) {
+        if (this.serverPingInterval) {
+          clearInterval(this.serverPingInterval);
+          this.serverPingInterval = null;
+        }
+        this.serverPing = settingsManager.settings.serverPing;
+        if (this.serverPing > 0) {
+          this.serverPingInterval = setInterval(() => {
+            gameManager.stateManager.sendPing();
+          }, 1000 * this.serverPing);
+        }
+      }
+    });
+
+    this.swUpdate.versionUpdates.subscribe((evt) => {
+      this.loading = false;
+      if (evt.type === 'VERSION_READY') {
+        gameManager.stateManager.hasUpdate = true;
+      } else if (evt.type === 'VERSION_INSTALLATION_FAILED') {
+        console.error(`Failed to install version '${evt.version.hash}': ${evt.error}`);
+      }
+    });
+
+    this.swUpdate.unrecoverable.subscribe(() => {
+      this.loading = false;
+    });
+
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.checkForUpdate();
+      // check for PWA update every 30s
+      setInterval(() => {
+        this.swUpdate.checkForUpdate();
+      }, 30000);
+    } else {
+      this.loading = false;
+    }
+
+    setInterval(() => {
+      this.cancelLoading = true;
+      this.cdr.markForCheck();
+    }, 10000);
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      gameManager.stateManager.installPrompt = e;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      gameManager.stateManager.installPrompt = null;
+    });
+
+    window.addEventListener('visibilitychange', async () => {
+      if (
+        document.visibilityState === 'hidden' &&
+        settingsManager.settings.gameClock &&
+        settingsManager.settings.automaticGameClock &&
+        !gameManager.stateManager.storageBlocked
+      ) {
+        await this.automaticClockOut();
+      }
+    });
+
+    window.addEventListener('blur', async () => {
+      if (
+        settingsManager.settings.gameClock &&
+        settingsManager.settings.automaticGameClock &&
+        settingsManager.settings.automaticGameClockFocus &&
+        !gameManager.stateManager.storageBlocked
+      ) {
+        await this.automaticClockOut();
+      }
+    });
+  }
+
+  onFigureScroll() {
+    this.pointerInputService.cancel();
+  }
+
+  async ngOnInit() {
+    this.isTouch = window.matchMedia('(pointer: coarse)').matches;
+    document.body.classList.add('no-select');
+    try {
+      await storageManager.init();
+    } catch {
+      // continue
+    }
+    await settingsManager.init(!environment.production);
+    this.initialized = true;
+    await gameManager.stateManager.init();
+    this.currentZoom = settingsManager.settings.zoom;
+    document.body.style.setProperty('--ght-factor', settingsManager.settings.zoom + '');
+    document.body.style.setProperty('--ght-barsize', settingsManager.settings.barsize + '');
+    document.body.style.setProperty('--ght-fontsize', settingsManager.settings.fontsize + '');
+    document.body.style.setProperty('--ght-global-fontsize', settingsManager.settings.globalFontsize + '');
+    document.body.style.setProperty('--ght-animation-speed', settingsManager.settings.animationSpeed + '');
+
+    if (settingsManager.settings.gameClock && settingsManager.settings.automaticGameClock) {
+      this.automaticClockIn();
+    }
+
+    const figure = this.figures.find((figure) => figure instanceof Character && figure.fullview);
+    if (figure) {
+      this.fullviewChar = figure as Character;
+    } else {
+      this.fullviewChar = undefined;
+      this.calcColumns();
+    }
+
+    if (this.swUpdate.isEnabled || this.isAppDevMode()) {
+      document.body.addEventListener('click', () => {
+        if (
+          settingsManager.settings.fullscreen &&
+          (this.swUpdate.isEnabled || this.isAppDevMode()) &&
+          !document.body.classList.contains('fullscreen')
+        ) {
+          if (!!document.body.requestFullscreen) {
+            document.body.requestFullscreen();
+          }
+          if ((navigator as any).keyboard?.lock) {
+            (navigator as any).keyboard.lock(['Escape']).catch(() => {});
+          }
+        }
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (!this.fullviewChar) {
+        this.calcColumns();
+      }
+    });
+
+    window.addEventListener('fullscreenchange', () => {
+      if (!this.fullviewChar) {
+        this.calcColumns();
+      }
+    });
+
+    window.addEventListener('focus', () => {
+      if (settingsManager.settings.serverAutoconnect && gameManager.stateManager.wsState() !== WebSocket.OPEN) {
+        gameManager.stateManager.connect();
+      }
+
+      if (
+        settingsManager.settings.gameClock &&
+        settingsManager.settings.automaticGameClock &&
+        settingsManager.settings.automaticGameClockFocus
+      ) {
+        this.automaticClockIn();
+      }
+    });
+
+    if (settingsManager.settings.wakeLock && 'wakeLock' in navigator) {
+      try {
+        gameManager.stateManager.wakeLock = await navigator.wakeLock.request('screen');
+      } catch (e) {
+        console.error(e);
+      }
+
+      document.addEventListener('visibilitychange', async () => {
+        if (gameManager.stateManager.wakeLock !== null && document.visibilityState === 'visible') {
+          gameManager.stateManager.wakeLock = await navigator.wakeLock.request('screen');
+        }
+      });
+    }
+
+    this.debugTesting();
+  }
+
+  automaticClockIn() {
+    const lastGameClockTimestamp = gameManager.game.gameClock.length ? gameManager.game.gameClock[0] : undefined;
+    if (!lastGameClockTimestamp || lastGameClockTimestamp.clockOut) {
+      // 7 seconds refresh timeout
+      if (lastGameClockTimestamp && lastGameClockTimestamp.clockOut && new Date().getTime() - lastGameClockTimestamp.clockOut < 7000) {
+        lastGameClockTimestamp.clockOut = undefined;
+      } else {
+        gameManager.toggleGameClock();
+      }
+    }
+  }
+
+  async automaticClockOut() {
+    const lastGameClockTimestamp = gameManager.game.gameClock.length ? gameManager.game.gameClock[0] : undefined;
+    if (lastGameClockTimestamp && !lastGameClockTimestamp.clockOut) {
+      gameManager.stateManager.before('gameClock.automaticGameClockOut');
+      gameManager.toggleGameClock();
+      await gameManager.stateManager.after();
+    }
+  }
+
+  zoom(value: number) {
+    this.currentZoom += value;
+    document.body.style.setProperty('--ght-factor', this.currentZoom + '');
+  }
+
+  touchmove(event: TouchEvent) {
+    if (settingsManager.settings.pinchZoom) {
+      if (event.touches.length === 2) {
+        const curDiff = Math.abs(event.touches[0].clientX - event.touches[1].clientX);
+        if (this.zoomDiff > 0) {
+          if (curDiff > this.zoomDiff) {
+            this.zoom(-1);
+          }
+          if (curDiff < this.zoomDiff) {
+            this.zoom(1);
+          }
+        }
+        this.zoomDiff = curDiff;
+      }
+    }
+  }
+
+  touchend(event: TouchEvent) {
+    if (settingsManager.settings.pinchZoom) {
+      if (event.touches.length < 2 && this.zoomDiff > -1) {
+        this.zoomDiff = -1;
+        settingsManager.setZoom(this.currentZoom);
+      }
+    }
+  }
+
+  startCampaign(edition: string) {
+    gameManager.stateManager.before('startCampaign', 'data.edition.' + edition);
+    settingsManager.automaticTheme(edition, gameManager.game.edition);
+    gameManager.game.edition = edition;
+    gameManager.game.party.campaignMode = true;
+    gameManager.game.party.edition = edition;
+    this.welcomeEditionHint = (edition && settingsManager.getLabel('data.edition.' + edition + '.hint') !== 'hint') || false;
+    gameManager.game.party.eventDecks = {};
+    gameManager.eventCardManager.buildPartyDeckMigration(edition);
+    gameManager.stateManager.after();
+  }
+
+  cancelCampaign(edition: string) {
+    gameManager.stateManager.before('cancelCampaign', 'data.edition.' + edition);
+    gameManager.game.edition = undefined;
+    gameManager.game.party.campaignMode = false;
+    gameManager.game.party.eventDecks = {};
+    gameManager.stateManager.after();
+  }
+
+  toggleCampaignMode() {
+    gameManager.stateManager.before(gameManager.game.party.campaignMode ? 'disablePartyCampaignMode' : 'enablePartyCampaignMode');
+    gameManager.game.party.campaignMode = !gameManager.game.party.campaignMode;
+    gameManager.stateManager.after();
+  }
+
+  calcColumns(scrollTo: HTMLElement | undefined = undefined, skipAnimation: boolean = false): void {
+    this.grid = [999];
+    if (!settingsManager.settings.columns) {
+      setTimeout(() => {
+        const containerElement = this.element.nativeElement.getElementsByClassName('figures')[0];
+        if (containerElement) {
+          this.translate(scrollTo, skipAnimation);
+        }
+        this.cdr.markForCheck();
+      }, 1);
+    } else {
+      setTimeout(() => {
+        const containerElement = this.element.nativeElement.getElementsByClassName('figures')[0];
+        if (containerElement) {
+          this.lastScroll = this.lastActive();
+          const figureElements: any[] = Array.from(containerElement.getElementsByClassName('figure'));
+          if (figureElements.length > 0) {
+            const figureWidth = figureElements[0].firstChild.clientWidth;
+            const maxColumns = Math.floor(containerElement.clientWidth / (figureWidth * 1.025));
+            if (maxColumns > 1) {
+              const activeFigureElementHeights = figureElements.slice(0, this.lastScroll + 1).map((element) => element.clientHeight);
+              const columns = this.calcColumnsHelper(
+                activeFigureElementHeights,
+                containerElement.clientHeight,
+                containerElement.clientWidth,
+                figureWidth * 1.025
+              ).filter((column) => column.length);
+              this.grid = columns.map(
+                (column, index, self) =>
+                  self
+                    .map((value) => value.length)
+                    .slice(0, index + 1)
+                    .reduce((a, b) => a + b),
+                0
+              );
+            }
+          }
+          this.lastScrollColumn = this.grid.length > 1 ? this.grid.length - 1 : -1;
+
+          this.translate(scrollTo, skipAnimation);
+        }
+        this.cdr.markForCheck();
+      }, 1);
+    }
+  }
+
+  calcColumnsHelper(elementHeights: number[], containerHeight: number, containerWidth: number, columnWidth: number): number[][] {
+    if (!elementHeights || elementHeights.length === 0) {
+      return [];
+    }
+
+    const totalHeight = elementHeights.reduce((a, b) => a + b, 0);
+    const numColumns = Math.floor(containerWidth / columnWidth);
+
+    if (!Number.isFinite(numColumns) || numColumns <= 0 || numColumns > Number.MAX_SAFE_INTEGER) {
+      return [elementHeights];
+    }
+
+    const targetHeight = Math.max(totalHeight / numColumns, settingsManager.settings.columnsForce ? 0 : containerHeight);
+    let columns: number[][] = Array.from({ length: numColumns }, () => []);
+    let columnHeights: number[] = Array(numColumns).fill(0);
+
+    let distributionColumn = 0;
+    elementHeights.forEach((elementHeight) => {
+      if (columnHeights[distributionColumn] + elementHeight > targetHeight && distributionColumn < numColumns - 1) {
+        distributionColumn++;
+      }
+      columns[distributionColumn].push(elementHeight);
+      columnHeights[distributionColumn] += elementHeight;
+    });
+
+    columns = columns.filter((column) => column.length);
+    columnHeights = columnHeights.filter((height) => height);
+
+    let iterate = true;
+    let oldDiff = 0;
+    while (iterate) {
+      let maxIndex = -1;
+      let minIndex = -1;
+      let diff = 0;
+
+      for (let i = 0; i < columnHeights.length; i++) {
+        if (Math.abs(columnHeights[i] - columnHeights[i + 1]) > diff) {
+          diff = Math.abs(columnHeights[i] - columnHeights[i + 1]);
+          if (columnHeights[i] < columnHeights[i + 1]) {
+            minIndex = i;
+            maxIndex = i + 1;
+          } else {
+            minIndex = i + 1;
+            maxIndex = i;
+          }
+        }
+      }
+
+      if (diff <= oldDiff) {
+        iterate = false;
+        break;
+      }
+
+      if (minIndex !== -1 && maxIndex !== -1) {
+        const elementHeight = columns[maxIndex].splice(maxIndex > minIndex ? 0 : columns[maxIndex].length - 1, 1)[0];
+        columns[minIndex].push(elementHeight);
+        columnHeights[minIndex] += elementHeight;
+        columnHeights[maxIndex] -= elementHeight;
+        oldDiff = diff;
+      } else {
+        iterate = false;
+        break;
+      }
+    }
+
+    return columns;
+  }
+
+  lastActive(): number {
+    let lastActive = 0;
+    this.figures.forEach((figure, index) => {
+      if (index > lastActive && gameManager.gameplayFigure(figure)) {
+        lastActive = index;
+      }
+    });
+    return lastActive;
+  }
+
+  translate(scrollTo: HTMLElement | undefined = undefined, skipAnimation: boolean = false) {
+    setTimeout(() => {
+      const containerElement = this.element.nativeElement.getElementsByClassName('figures')[0];
+      if (containerElement) {
+        if (skipAnimation) {
+          containerElement.classList.add('no-animations');
+        }
+
+        const figures = containerElement.getElementsByClassName('figure');
+        const columnMiddle = Math.ceil(this.grid.length / 2);
+        for (let index = 0; index < figures.length; index++) {
+          let start = 0;
+          let left = '0';
+          let column = this.grid.length - 1;
+          let factor = 0;
+          for (let c = this.grid.length; c > 0; c--) {
+            if (index < this.grid[c - 1]) {
+              column = c - 1;
+            }
+          }
+
+          factor = column - columnMiddle;
+          if (this.grid.length % 2 === 1) {
+            factor += 0.5;
+          }
+
+          left = 'calc(100% * ' + factor + ')';
+
+          start = column === 0 ? 0 : this.grid[column - 1];
+
+          let height = 0;
+          for (let i = start; i < index; i++) {
+            height += figures[i].clientHeight;
+          }
+
+          figures[index].style.transform = 'scale(1) translate(' + left + ',' + height + 'px)';
+
+          if (scrollTo) {
+            setTimeout(
+              () => {
+                scrollTo.scrollIntoView({
+                  behavior: !settingsManager.settings.animations ? 'auto' : 'smooth',
+                  block: index === this.lastScroll || index === this.lastScrollColumn ? 'end' : 'center',
+                  inline: 'center'
+                });
+
+                if (skipAnimation) {
+                  containerElement.classList.remove('no-animations');
+                }
+                this.cdr.markForCheck();
+              },
+              !settingsManager.settings.animations || skipAnimation ? 0 : 250 * settingsManager.settings.animationSpeed
+            );
+          } else if (skipAnimation) {
+            setTimeout(
+              () => {
+                containerElement.classList.remove('no-animations');
+                this.cdr.markForCheck();
+              },
+              settingsManager.settings.animations ? 250 * settingsManager.settings.animationSpeed : 0
+            );
+          }
+          this.cdr.markForCheck();
+        }
+      }
+    }, 1);
+  }
+
+  startedDrag(event: CdkDragStart, element: HTMLElement) {
+    this.pointerInputService.cancel();
+    this.draggingEnabled = true;
+    element.classList.add('dragging');
+    event.source.getPlaceholderElement().classList.add('dragging');
+    window.document.body.classList.add('dragging');
+    if (this.draggingeTimeout) {
+      clearTimeout(this.draggingeTimeout);
+    }
+  }
+
+  releasedDrag(event: CdkDragRelease, element: HTMLElement) {
+    this.draggingEnabled = false;
+    element.classList.remove('dragging');
+    window.document.body.classList.remove('dragging');
+    event.source.getPlaceholderElement().classList.remove('dragging');
+    if (this.draggingeTimeout) {
+      clearTimeout(this.draggingeTimeout);
+    }
+  }
+
+  drop(event: CdkDragDrop<number>) {
+    if (
+      event.previousContainer !== event.container &&
+      ((event.currentIndex === 0 && event.container.data !== event.previousContainer.data + 1) ||
+        (event.currentIndex !== 0 && event.container.data !== event.previousContainer.data - event.currentIndex))
+    ) {
+      const prev = event.previousContainer.data;
+      let next = event.container.data;
+      if (event.currentIndex > 0 && event.previousContainer.data > event.container.data) {
+        next++;
+      } else if (event.currentIndex === 0 && event.previousContainer.data < event.container.data) {
+        next--;
+      }
+      gameManager.stateManager.before('reorder');
+      moveItemInArray(gameManager.game.figures, prev, next);
+      gameManager.stateManager.after();
+      this.calcColumns(event.item.element.nativeElement, true);
+    } else {
+      this.translate(undefined, true);
+    }
+    this.draggingEnabled = false;
+  }
+
+  entered() {
+    this.translate();
+  }
+
+  exited() {
+    this.translate();
+  }
+
+  automaticStandeeDialogs() {
+    if (
+      !gameManager.stateManager.standeeDialogCanceled &&
+      this.dialog.openDialogs.length === 0 &&
+      gameManager.game.scenarioRules.length === 0
+    ) {
+      const figure = gameManager.game.figures.find(
+        (figure) =>
+          figure instanceof Monster && figure.entities.find((entity) => entity.number < 1 && gameManager.entityManager.isAlive(entity))
+      );
+      if (figure) {
+        const monster = figure as Monster;
+        let entity = monster.entities.find(
+          (entity) =>
+            entity.number < 1 &&
+            gameManager.entityManager.isAlive(entity) &&
+            ((settingsManager.settings.eliteFirst && entity.type === MonsterType.elite) ||
+              (!settingsManager.settings.eliteFirst && entity.type === MonsterType.normal))
+        );
+        if (!entity) {
+          entity = monster.entities.find((entity) => entity.number < 1 && gameManager.entityManager.isAlive(entity));
+        }
+        this.standeeDialog = this.dialog.open(MonsterNumberPickerDialog, {
+          panelClass: ['dialog'],
+          disableClose: true,
+          data: {
+            monster: monster,
+            type: entity && entity.type,
+            entity: entity,
+            range: [],
+            entities: monster.entities,
+            automatic: true
+          }
+        });
+
+        this.standeeDialog.closed.subscribe({
+          next: (cancel) => {
+            if (cancel) {
+              gameManager.stateManager.standeeDialogCanceled = true;
+            }
+            this.standeeDialog = undefined;
+            if (this.standeeDialogSubscription) {
+              this.standeeDialogSubscription.unsubscribe();
+              this.standeeDialogSubscription = undefined;
+            }
+            this.ghsManager.triggerUiChange();
+          }
+        });
+      }
+    }
+  }
+
+  async exportDataDump() {
+    try {
+      const datadump: any = await storageManager.datadump();
+      const downloadButton = document.createElement('a');
+      downloadButton.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(datadump)));
+      downloadButton.setAttribute('download', 'ght-data-dump_' + new Date().toISOString() + '.json');
+      document.body.appendChild(downloadButton);
+      downloadButton.click();
+      document.body.removeChild(downloadButton);
+    } catch {
+      console.warn('Could not read datadump');
+    }
+  }
+
+  isAppDevMode(): boolean {
+    return isDevMode();
+  }
+
+  debugTesting() {
+    // Helper for local testing
+  }
+}

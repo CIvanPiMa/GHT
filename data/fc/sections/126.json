@@ -1,0 +1,69 @@
+{
+  "index": "126",
+  "name": "Training Maneuvers",
+  "edition": "fc",
+  "parent": "107",
+  "resetRound": "hidden",
+  "monsters": [
+    "vermling-scout-107",
+    "vermling-shaman-107"
+  ],
+  "rules": [
+    {
+      "round": "R == 2",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "vermling-scout-scenario-107"
+          },
+          "type": "transfer",
+          "value": "vermling-scout"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "vermling-shaman-scenario-107"
+          },
+          "type": "transfer",
+          "value": "vermling-shaman"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "ref": "B2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "vermling-scout-scenario-107",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-shaman-scenario-107",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

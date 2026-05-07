@@ -1,0 +1,86 @@
+{
+  "index": "7.2",
+  "name": "Frozen Crypt",
+  "edition": "fh",
+  "parent": "5",
+  "marker": "1",
+  "resetRound": "visible",
+  "monsters": [
+    "frozen-corpse"
+  ],
+  "objectives": [
+    {
+      "name": "Altar",
+      "health": "(L+3)xC",
+      "marker": "a"
+    }
+  ],
+  "rules": [
+    {
+      "round": "R == 3",
+      "start": true,
+      "spawns": [
+        {
+          "marker": "b",
+          "monster": {
+            "name": "frozen-corpse",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 5",
+      "start": true,
+      "spawns": [
+        {
+          "marker": "c",
+          "monster": {
+            "name": "frozen-corpse",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          }
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "13-E",
+      "initial": true,
+      "treasures": [
+        46
+      ],
+      "monster": [
+        {
+          "name": "frozen-corpse",
+          "type": "elite"
+        },
+        {
+          "name": "frozen-corpse",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "frozen-corpse",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "frozen-corpse",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

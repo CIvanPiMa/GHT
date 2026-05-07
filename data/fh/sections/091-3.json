@@ -1,0 +1,43 @@
+{
+  "index": "91.3",
+  "name": "Corrupted Camp",
+  "edition": "fh",
+  "parent": "39",
+  "marker": "4",
+  "monsters": [
+    "algox-scout",
+    "deep-terror"
+  ],
+  "allies": [
+    "algox-scout"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        41
+      ],
+      "monster": [
+        {
+          "name": "algox-scout",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "type": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

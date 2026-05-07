@@ -1,0 +1,131 @@
+<div class="container">
+  <ght-header [standalone]="true"></ght-header>
+
+  <div class="character-editor">
+    <h1><span [ght-label]="'editor.character'"></span> (<span [ght-label]="'wip'"></span>)</h1>
+    <div class="columns">
+      <div class="input">
+        <div class="character-data">
+          <h2><span [ght-label]="'editor.character.data'"></span></h2>
+
+          <div class="base-data dialog">
+            <div class="dialog-container">
+              <label><span [ght-label]="'editor.character.data.name'"></span></label>
+              <input
+                [(ngModel)]="characterData.name"
+                [ght-label]="'editor.character.data.name'"
+                [ght-label-attribute]="'placeholder'"
+                (change)="characterDataToJson()"
+                (keyup)="characterDataToJson()"
+              />
+
+              <label><span [ght-label]="'edition'"></span></label>
+              <input
+                [(ngModel)]="characterData.edition"
+                [ght-label]="'edition'"
+                [ght-label-attribute]="'placeholder'"
+                (change)="characterDataToJson()"
+                (keyup)="characterDataToJson()"
+              />
+
+              <label><span [ght-label]="'editor.character.data.color'"></span></label>
+              <input
+                [(ngModel)]="characterData.color"
+                type="color"
+                [ght-label]="'editor.character.data.color'"
+                [ght-label-attribute]="'placeholder'"
+                (change)="characterDataToJson()"
+                (keyup)="characterDataToJson()"
+              />
+
+              <label><span [ght-label]="'editor.character.data.spoiler'"></span></label>
+              <input type="checkbox" [(ngModel)]="characterData.spoiler" (change)="characterDataToJson()" />
+
+              <label><span [ght-label]="'editor.character.data.deck'"></span></label>
+              <input
+                [(ngModel)]="characterData.deck"
+                [ght-label]="'editor.character.data.deck'"
+                [ght-label-attribute]="'placeholder'"
+                (change)="characterDataToJson()"
+                (keyup)="characterDataToJson()"
+              />
+
+              <label><span [ght-label]="'editor.character.data.class'"></span></label>
+              <select [(ngModel)]="characterData.characterClass" (change)="characterDataToJson()">
+                @for (class of CharacterClasses; track class) {
+                  <option [value]="class" [selected]="characterData.characterClass === class">
+                    <span [ght-label]="'character.class.' + class"></span>
+                  </option>
+                }
+              </select>
+
+              <label><span [ght-label]="'editor.character.data.hp'"></span></label>
+              <div class="hp-container">
+                <select [(ngModel)]="hpIndex" (change)="changeHpIndex()">
+                  @for (index of [] | ghsRange: 4; track index) {
+                    <option [value]="index - 1">
+                      <span [ght-label]="'editor.character.data.hp.' + (index - 1)"></span>
+                    </option>
+                  }
+                </select>
+                <div class="hp-grid">
+                  @for (stat of characterData.stats; track stat) {
+                    <span>{{ stat.level }}</span>
+                    @if (hpIndex !== -1) {
+                      <input disabled [(ngModel)]="stat.health" />
+                    }
+                    @if (hpIndex === -1) {
+                      <input type="number" [(ngModel)]="stat.health" />
+                    }
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="output">
+        <h2>
+          <span [ght-label]="'editor.character.data.json'"></span>
+
+          <select (change)="loadCharacterData($event)">
+            <option [value]="-1">&lt;<span [ght-label]="'editor.character.new'"></span>&gt;</option>
+            @for (cD of charactersData | trackUUID; track cD._trackUUID; let index = $index) {
+              <option [value]="index" [selected]="cD.edition === characterData.edition && cD.name === characterData.name">
+                @if (isSpoiled(cD)) {
+                  <span [ght-label]="'data.character.' + cD.edition + '.' + cD.name"></span>
+                }
+                {{ cD.name }}
+                (<span [ght-label]="'data.edition.' + cD.edition"></span>) [{{ cD.name }}]
+              </option>
+            }
+          </select>
+
+          <select (change)="selectEdition($event)">
+            <option></option>
+            @for (edition of editions; track edition) {
+              <option [value]="edition">
+                <span [ght-label]="'data.edition.' + edition"></span>
+              </option>
+            }
+          </select>
+        </h2>
+
+        <div>{{ characterError }}</div>
+        <textarea #inputCharacterData></textarea>
+
+        <a
+          class="button"
+          [href]="'data:application/json;charset=utf-8,' + encodeURIComponent(inputCharacterData.value)"
+          [download]="characterData.name + '.json'"
+          ><img class="ght-icon" src="./assets/images/export.svg" /> <span [ght-label]="'editor.character.data.json.download'"></span
+        ></a>
+      </div>
+    </div>
+
+    @if (init) {
+      <ght-deck-editor [character]="getCharacter()" [standalone]="false" [edition]="edition"> </ght-deck-editor>
+    }
+  </div>
+</div>

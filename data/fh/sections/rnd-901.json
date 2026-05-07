@@ -1,0 +1,76 @@
+{
+  "index": "901",
+  "group": "randomMonsterCard",
+  "name": "Domesticated",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "abael-herder",
+    "abael-scout",
+    "piranha-pig"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "abael-herder",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "4"
+        },
+        {
+          "name": "abael-herder",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "11"
+        },
+        {
+          "name": "abael-scout",
+          "type": "elite",
+          "marker": "8"
+        },
+        {
+          "name": "piranha-pig",
+          "type": "normal",
+          "marker": "5"
+        },
+        {
+          "name": "piranha-pig",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "3"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "difficultTerrain",
+      "value": "rubble",
+      "marker": "1"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "rubble",
+      "marker": "2"
+    },
+    {
+      "type": "loot",
+      "marker": "7"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "rubble",
+      "marker": "10"
+    },
+    {
+      "type": "loot",
+      "marker": "12"
+    }
+  ]
+}

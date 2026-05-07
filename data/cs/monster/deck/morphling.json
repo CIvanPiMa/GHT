@@ -1,0 +1,68 @@
+{
+  "name": "morphling",
+  "edition": "cs",
+  "abilities": [
+    {
+      "cardId": 0,
+      "initiative": 0,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.morphling.7%"
+        }
+      ]
+    },
+    {
+      "cardId": 0,
+      "initiative": 0,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.morphling.8%"
+        }
+      ]
+    },
+    {
+      "cardId": 0,
+      "initiative": 0,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.morphling.7%"
+        }
+      ]
+    },
+    {
+      "cardId": 0,
+      "initiative": 0,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.morphling.9%"
+        }
+      ]
+    },
+    {
+      "cardId": 574,
+      "initiative": 17,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "special",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "cardId": 575,
+      "initiative": 85,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "special",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.scroll-container {
+  color: var(--ght-color-white);
+  font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+}
+
+li {
+  display: flex;
+  align-items: center;
+
+  kbd {
+    margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+  }
+
+  .hint {
+    margin-left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+    font-style: italic;
+    font-size: 0.8em;
+  }
+}

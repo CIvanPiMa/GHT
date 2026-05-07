@@ -1,0 +1,19 @@
+<div class="requirements-dialog">
+  <div class="header">
+    <span class="title">
+      <span [ght-label]="'scenario.requirements'"></span>
+      <span class="name"
+        >#{{ data.scenarioData.index }} <span [ght-label]="gameManager.scenarioManager.scenarioTitle(data.scenarioData)"></span
+      ></span>
+    </span>
+  </div>
+
+  <ght-requirements [scenarioData]="data.scenarioData"></ght-requirements>
+
+  @if (!data.hideMenu) {
+    <div class="buttons">
+      <a class="cancel" (click)="close()"><span [ght-label]="'scenario.requirements.cancel'"></span></a>
+      <a class="start" (click)="startScenario()"><span [ght-label]="'scenario.requirements.start'"></span></a>
+    </div>
+  }
+</div>

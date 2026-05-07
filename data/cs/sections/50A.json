@@ -1,0 +1,78 @@
+{
+  "index": "50A",
+  "name": "Defend the Swamp",
+  "edition": "cs",
+  "parent": "45",
+  "marker": "1",
+  "monsters": [
+    "black-imp",
+    "cave-bear",
+    "forest-imp",
+    "giant-viper",
+    "land-leviathan:+1",
+    "lurker",
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "allies": [
+    "cave-bear",
+    "giant-viper",
+    "lurker",
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "type": "normal"
+        },
+        {
+          "name": "black-imp",
+          "type": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "type": "normal"
+        },
+        {
+          "name": "forest-imp",
+          "type": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "forest-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player4": "elite"
+        },
+        {
+          "name": "land-leviathan:+1",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

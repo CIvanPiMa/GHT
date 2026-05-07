@@ -1,0 +1,38 @@
+{
+  "index": "159.3",
+  "name": "Deadly Pastimes",
+  "edition": "fh",
+  "parent": "85",
+  "parentSections": [
+    [
+      "56.1"
+    ],
+    [
+      "82.3"
+    ]
+  ],
+  "marker": "7",
+  "monsters": [
+    "lightning-eel"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 14,
+      "initial": true,
+      "monster": [
+        {
+          "name": "lightning-eel",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "lightning-eel",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

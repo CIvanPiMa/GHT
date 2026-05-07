@@ -1,0 +1,12 @@
+<div class="challenge-deck-fullscreen" [ngClass]="{ vertical: vertical() }">
+  <ght-challenge-deck
+    [deck]="deck"
+    [fullscreen]="false"
+    [vertical]="vertical()"
+    (before)="beforeChallengeDeck($event)"
+    (after)="afterChallengeDeck($event)"
+  >
+  </ght-challenge-deck>
+  <div class="close-container" (click)="close()"></div>
+</div>
+<div class="close-container" (click)="close()"></div>

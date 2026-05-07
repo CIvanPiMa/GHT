@@ -1,0 +1,48 @@
+{
+  "index": "12",
+  "name": "Gathering Materials",
+  "edition": "bb",
+  "level": 3,
+  "unlocks": [
+    "12.5",
+    "13"
+  ],
+  "requirements": [
+    {
+      "characters": [
+        "tinkerer"
+      ]
+    }
+  ],
+  "links": [
+    "13"
+  ],
+  "monsters": [
+    "sewer-rat",
+    "spitting-moth"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "sewer-rat",
+          "number": 3
+        },
+        {
+          "name": "sewer-rat",
+          "number": 4
+        },
+        {
+          "name": "spitting-moth",
+          "number": 1
+        },
+        {
+          "name": "spitting-moth",
+          "number": 2
+        }
+      ]
+    }
+  ]
+}

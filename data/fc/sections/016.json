@@ -1,0 +1,25 @@
+{
+  "index": "16",
+  "edition": "fc",
+  "parent": "99",
+  "conclusion": true,
+  "unlocks": [
+    "104",
+    "105"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "knowledge-is-power"
+    ],
+    "gold": 10,
+    "prosperity": 1,
+    "itemDesigns": [
+      "153"
+    ],
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"Knowledge is Power\" achievement gained, read section 27 on page 10)"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "index": "33",
+  "name": "Siege Tower",
+  "flowChartGroup": "personal-quests",
+  "edition": "cs",
+  "unlocks": [
+    "34"
+  ],
+  "links": [
+    "34"
+  ],
+  "rewards": {
+    "reputation": 1
+  },
+  "monsters": [
+    "inox-archer",
+    "inox-guard",
+    "inox-shaman"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "N1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-archer",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-shaman",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

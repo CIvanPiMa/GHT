@@ -1,0 +1,14 @@
+<span class="perk-label capitalize">
+  @if (perk.custom) {
+    <span [ght-label]="perk.custom"></span>
+    @if (perk.type !== PerkType.custom) {
+      <span class="spacing" [ght-label]="'and'"></span>
+    }
+  }
+  @if (perk.type !== PerkType.custom) {
+    <span class="label" [ght-label]="'game.attackModifiers.perks.type.' + perk.type" [ght-label-args]="perkLabel"></span>
+  }
+  @if (perk.monsterDeck) {
+    <span class="spacing" [ght-label]="'game.attackModifiers.perks.monsterDeck'"></span>
+  }
+</span>

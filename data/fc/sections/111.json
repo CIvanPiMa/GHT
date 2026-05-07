@@ -1,0 +1,19 @@
+{
+  "index": "111",
+  "edition": "fc",
+  "parent": "108",
+  "parentSections": [
+    [
+      "37"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "partyAchievements": [
+      "diamaras-aid"
+    ],
+    "items": [
+      "161:2"
+    ]
+  }
+}

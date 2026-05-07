@@ -1,0 +1,35 @@
+{
+  "index": "49A",
+  "name": "Haunted Manor",
+  "edition": "cs",
+  "parent": "44",
+  "marker": "1",
+  "monsters": [
+    "living-spirit",
+    "night-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        5
+      ],
+      "monster": [
+        {
+          "name": "living-spirit",
+          "type": "elite"
+        },
+        {
+          "name": "night-demon",
+          "type": "elite"
+        },
+        {
+          "name": "night-demon",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

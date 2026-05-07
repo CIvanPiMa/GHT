@@ -1,0 +1,35 @@
+{
+  "index": "20.3",
+  "name": "A Grand View",
+  "edition": "fh",
+  "parent": "94",
+  "parentSections": [
+    [
+      "150.2"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "ancient-artillery",
+    "ruined-machine"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        12
+      ],
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "type": "normal"
+        },
+        {
+          "name": "ruined-machine",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

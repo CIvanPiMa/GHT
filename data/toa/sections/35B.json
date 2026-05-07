@@ -1,0 +1,32 @@
+{
+  "index": "35B",
+  "name": "Ternion Tomb",
+  "edition": "toa",
+  "parent": "78",
+  "parentSections": [
+    [
+      "35A"
+    ]
+  ],
+  "marker": "a",
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "monster": [
+        {
+          "name": "conqueror",
+          "type": "normal"
+        },
+        {
+          "name": "reaver",
+          "type": "normal"
+        },
+        {
+          "name": "ritualist",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "index": "13",
+  "name": "Corpse Cavern",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "rewards": {
+    "prosperity": 1,
+    "custom": "%data.scenario.rewards.cs.13%"
+  },
+  "monsters": [
+    "living-corpse-scenario-13",
+    "lurker",
+    "ooze"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "poison",
+          "scenarioEffect": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "E1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "living-corpse-scenario-13",
+          "type": "elite"
+        },
+        {
+          "name": "living-corpse-scenario-13",
+          "type": "elite"
+        },
+        {
+          "name": "living-corpse-scenario-13",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "living-corpse-scenario-13",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

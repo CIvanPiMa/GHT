@@ -1,0 +1,273 @@
+<div class="item-container">
+  @if (!!item) {
+    <div
+      class="card vertical reverse item"
+      [ngClass]="{ flipped: flipped, random: item.random, fh: fhStyle, craft: craft, bb: bb }"
+      [style.fontSize]="fontsize"
+      card-reveal
+      [disabled]="!reveal"
+      (changed)="emitRevealed($event)"
+    >
+      @if (!item.actionsBack || item.actionsBack.length === 0) {
+        <div class="card-back back">
+          <span class="revealed"><span class="text" [ght-label]="'game.cards.confirmReveal'"></span></span>
+          <div class="id">
+            @if (edition) {
+              <span class="edition">{{ edition }}&nbsp;</span>
+            }
+            @if (idNumber && +item.id < 100) {
+              <span>0</span>
+            }
+            @if (idNumber && +item.id < 10) {
+              <span>0</span>
+            }
+            <span>{{ item.id }}</span>
+          </div>
+        </div>
+      }
+      @if (!!item.actionsBack && item.actionsBack.length > 0) {
+        <div class="card-back front">
+          <span class="revealed"><span class="text" [ght-label]="'game.cards.confirmReveal'"></span></span>
+          @if (!item.noArtwork) {
+            <img
+              class="artwork"
+              [src]="
+                './assets/artwork/items/' +
+                item.edition +
+                '-' +
+                (idNumber && +item.id < 100 ? '0' : '') +
+                (idNumber && +item.id < 10 ? '0' : '') +
+                item.id +
+                (item.backArtwork ? '-back' : '') +
+                '.png'
+              "
+            />
+          }
+          <div class="name" [ght-label]="'data.items.' + item.edition + '-' + item.id"></div>
+          <div class="content">
+            <div class="actions">
+              <ght-actions [actions]="item.actionsBack" [style]="fhStyle || bb ? 'fh' : 'gh'" [noDivider]="true"></ght-actions>
+            </div>
+            @if (slotsBack.length > 0) {
+              <div class="actions slot-actions" [ngClass]="{ wide: slotsBack.length < 4 }">
+                @for (slot of slotsBack | trackUUID; track slot._trackUUID; let i = $index) {
+                  <span
+                    class="slot-action"
+                    [ngClass]="{ interactive: clickedSlotBack.observed, usable: usable }"
+                    ght-pointer-input
+                    (singleClick)="clickedSlotBack.emit(i)"
+                  >
+                    <ght-action [action]="slot" [style]="fhStyle || bb ? 'fh' : 'gh'"></ght-action>
+                    @if (slotsBackMarked.length >= i - 1 && slotsBackMarked[i]) {
+                      <span
+                        class="marker"
+                        [ngClass]="{ fh: settingsManager.settings.fhStyle }"
+                        [ght-label]="'%game.characterToken.' + slotsBackMarked[i] + '%'"
+                      ></span>
+                    }
+                  </span>
+                }
+              </div>
+            }
+          </div>
+          @if (item.count) {
+            <div class="count">{{ count }}/{{ item.count }}</div>
+          }
+          @if (!!item.actionsBack && item.actionsBack.length > 0) {
+            <div class="flip" ght-pointer-input (singleClick)="flipped = !flipped">
+              <span class="placeholder text-white" [ght-label]="'%game.card.flipItem%'"></span>
+            </div>
+          }
+          @if (item.slot) {
+            <div class="slot">
+              <img class="ght-svg" [src]="'./assets/images/items/slots/' + item.slot + '.svg'" />
+            </div>
+          }
+          <div class="id">
+            @if (edition) {
+              <span class="edition">{{ edition }}&nbsp;</span>
+            }
+            @if (idNumber && +item.id < 100) {
+              <span>0</span>
+            }
+            @if (idNumber && +item.id < 10) {
+              <span>0</span>
+            }
+            <span>{{ item.id }}</span>
+          </div>
+          @if (item.solo) {
+            <div class="solo" [ngClass]="{ fh: settingsManager.settings.fhStyle }">
+              <span [ght-label]="'%game.characterToken.' + item.solo + '%'"></span>
+            </div>
+          }
+        </div>
+      }
+      <div class="card-front front">
+        @if (!bb && !item.noArtwork) {
+          <img
+            class="artwork"
+            [src]="
+              './assets/artwork/items/' +
+              item.edition +
+              '-' +
+              (idNumber && +item.id < 100 ? '0' : '') +
+              (idNumber && +item.id < 10 ? '0' : '') +
+              item.id +
+              '.png'
+            "
+          />
+        }
+        <div class="name" [ght-label]="'data.items.' + item.edition + '-' + item.id"></div>
+        <div class="content">
+          @if (!!item.actions && item.actions.length > 0) {
+            <div class="actions">
+              <ght-actions [actions]="item.actions" [style]="fhStyle || bb ? 'fh' : 'gh'" [noDivider]="true"></ght-actions>
+            </div>
+          }
+          @if (slots.length > 0) {
+            <div class="actions slot-actions" [ngClass]="{ wide: slots.length < 4 }">
+              @for (slot of slots | trackUUID; track slot._trackUUID; let i = $index) {
+                <span
+                  class="slot-action"
+                  [ngClass]="{ interactive: clickedSlot.observed, usable: usable }"
+                  ght-pointer-input
+                  (singleClick)="clickedSlot.emit(i)"
+                >
+                  <ght-action [action]="slot" [style]="fhStyle || bb ? 'fh' : 'gh'"></ght-action>
+                  @if (slotsMarked.length >= i - 1 && slotsMarked[i]) {
+                    <span
+                      class="marker"
+                      [ngClass]="{ fh: settingsManager.settings.fhStyle }"
+                      [ght-label]="'%game.characterToken.' + slotsMarked[i] + '%'"
+                    ></span>
+                  }
+                </span>
+              }
+            </div>
+          }
+        </div>
+        @if (item.count && (!bb || item.count > 1)) {
+          <div class="count">{{ count }}/{{ item.count }}</div>
+        }
+        @if (craft) {
+          <div class="craft">
+            @if (item.requiredItems) {
+              @for (requiredItem of item.requiredItems; track requiredItem) {
+                <span class="required-item" [ght-label]="'%game.itemFh.' + requiredItem + '%'"> </span>
+              }
+            }
+            @if (item.resources) {
+              @for (resource of item.resources | keyvalue; track resource) {
+                <span class="resource">
+                  <img [src]="'./assets/images/fh/loot/' + resource.key + '.svg'" />
+                  @if (resource.value && resource.value > 1) {
+                    <span class="value">x{{ resource.value }}</span>
+                  }
+                </span>
+              }
+            }
+            @for (anyResource of item.resourcesAny || []; track anyResource) {
+              @for (resource of anyResource | keyvalue; track resource) {
+                <span class="resource">
+                  <span class="any" [ght-label]="'game.items.anyResource'" [ght-label-args]="[resource.key]"></span>
+                  @if (resource.value && resource.value > 1) {
+                    <span class="value">x{{ resource.value }}</span>
+                  }
+                </span>
+              }
+            }
+          </div>
+        }
+        @if (item.cost && !item.solo) {
+          <div class="costs">
+            <span class="value">{{ item.cost }}</span>
+          </div>
+        }
+        @if (item.consumed) {
+          <div
+            class="consumed"
+            [ngClass]="{ interactive: clickedConsumed.observed, usable: usable }"
+            ght-pointer-input
+            (singleClick)="clickedConsumed.emit()"
+            (doubleClick)="clickedConsumed.emit(true)"
+          >
+            <span class="placeholder text-white" [ght-label]="'%game.card.lost%'"></span>
+          </div>
+        }
+        @if (item.spent) {
+          <div
+            class="spent"
+            [ngClass]="{ interactive: clickedSpent.observed, usable: usable }"
+            ght-pointer-input
+            (singleClick)="clickedSpent.emit()"
+            (doubleClick)="clickedSpent.emit(true)"
+          >
+            <span class="placeholder text-white" [ght-label]="'%game.card.spent%'"></span>
+          </div>
+        }
+        @if (!!item.actionsBack && item.actionsBack.length > 0) {
+          <div
+            class="flip"
+            [ngClass]="{ interactive: clickedFlip.observed, usable: usable }"
+            ght-pointer-input
+            (singleClick)="flipped = !flipped; clickedFlip.emit()"
+            (doubleClick)="clickedFlip.emit(true)"
+          >
+            <span class="placeholder text-white" [ght-label]="'%game.card.flipItem%'"></span>
+          </div>
+        }
+        @if (item.persistent) {
+          <div
+            class="persistent"
+            [ngClass]="{ interactive: clickedPersistent.observed, usable: usable }"
+            ght-pointer-input
+            (singleClick)="clickedPersistent.emit()"
+            (doubleClick)="clickedPersistent.emit(true)"
+          >
+            <span class="placeholder text-white" [ght-label]="'%game.card.persistent%'"></span>
+          </div>
+        }
+        @if (item.loss) {
+          <div class="loss">
+            <span class="placeholder text-white" [ght-label]="'%game.card.loss%'"></span>
+          </div>
+        }
+        @if (item.round) {
+          <div class="round">
+            <span class="placeholder text-white" [ght-label]="'%game.card.round%'"></span>
+          </div>
+        }
+        @if (item.minusOne) {
+          <div class="minus-one">
+            <span class="card-icon small">
+              <img class="icon" [src]="'./assets/images' + (fhStyle || bb ? '/fh/attackmodifier/icons/minus1.png' : '/items/minus1.svg')" />
+            </span>
+            <span class="value">x{{ item.minusOne }}</span>
+          </div>
+        }
+        @if (item.slot) {
+          <div class="slot">
+            <img class="ght-svg" [src]="'./assets/images/items/slots/' + item.slot + '.svg'" />
+          </div>
+        }
+        <div class="id">
+          @if (edition) {
+            <span class="edition">{{ edition }}&nbsp;</span>
+          }
+          @if (idNumber && +item.id < 100) {
+            <span>0</span>
+          }
+          @if (idNumber && +item.id < 10) {
+            <span>0</span>
+          }
+          <span>{{ item.id }}</span>
+        </div>
+        @if (item.solo) {
+          <div class="solo" [ngClass]="{ fh: settingsManager.settings.fhStyle }">
+            <span [ght-label]="'%game.characterToken.' + item.solo + '%'"></span>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

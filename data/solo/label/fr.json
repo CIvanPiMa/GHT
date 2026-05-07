@@ -1,0 +1,85 @@
+{
+  "custom": {
+    "gh": {
+      "city-guard-saw-solo": {
+        "1": "Subit 1 dégât à la fin de chaque round tant qu'il n'a pas récupéré tous ses PV"
+      },
+      "ghost-wolf": {
+        "1": "Au début de chaque round:"
+      }
+    },
+    "solo": {
+      "char-am-deck": "Utilise le paquet de modificateur d'attaque du personnage"
+    }
+  },
+  "edition": {
+    "solo": "Scénarios solo (toutes éditions)"
+  },
+  "monster": {
+    "bandit-archer-music-note-solo": "%data.monster.bandit-archer% (%data.character.gh.music-note% %solo%)",
+    "bandit-guard-music-note-solo": "%data.monster.bandit-guard% (%data.character.gh.music-note% %solo%)",
+    "cave-bear-circles-solo": "%data.monster.cave-bear% (%data.character.gh.circles% %solo%)",
+    "city-guard-saw-solo": "%data.monster.city-guard% (%data.character.gh.saw% %solo%)",
+    "city-guard-scoundrel-solo": "%data.monster.city-guard% (%data.character.gh.scoundrel% %solo%)",
+    "city-guard-sun-solo": "%data.monster.city-guard% (%data.character.gh.sun% %solo%)",
+    "city-guard-tinkerer-solo": "%data.monster.city-guard% (%data.character.gh.tinkerer% %solo%)",
+    "deep-earth": "Terre Profonde",
+    "deep-earth-gh2e": "Terre Profonde",
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)",
+    "earth-demon-mindthief-solo": "%data.monster.earth-demon% (%data.character.gh.mindthief% %solo%)",
+    "ghost-wolf": "Loup Fantôme",
+    "giant-viper-angry-face-solo": "%data.monster.giant-viper% (%data.character.gh.angry-face% %solo%)",
+    "high-flame": "Haute Flamme",
+    "inox-necromancer": "Nécromancien Inox",
+    "lieutenant": "Lieutenant",
+    "song-of-the-deep": "Chanson des Profondeurs",
+    "stone-golem-scoundrel-solo": "%data.monster.stone-golem% (%data.character.gh.scoundrel% %solo%)",
+    "vermling-scout-mindthief-solo": "%data.monster.vermling-scout% (%data.character.gh.mindthief% %solo%)"
+  },
+  "scenario": {
+    "Aftermath": "Conséquences",
+    "An Unfortunate Intrusion": "Une Intrustion Mavenue",
+    "Armory Heist": "Casse à l'Armurerie",
+    "Battle of the Bards": "La Bataille des Bardes",
+    "Caravan Escort": "L'Escorte de la Caravane",
+    "Corrupted Hunt": "Chasse Perverse",
+    "Corrupted Laboratory": "Le Laboratoire Corrompu",
+    "Elemental Secrets": "Les Secrets Élémentaires",
+    "Forecast of the Inevitable": "Un Aperçu de l'Inévitable",
+    "Harvesting the Night": "Récolte Nocturne",
+    "Plagued Crypt": "La Crypte Pesteuse",
+    "Plane of Wild Beasts": "La Dimension des Bêtes Sauvages",
+    "Return to the Black Barrow": "Retour au Tertre Noir",
+    "Rodent Liberation": "La Libération des Rongeurs",
+    "Stone Defense": "Une Défense de Pierre",
+    "Storage Fees": "Frais de Stockage",
+    "The Caged Bear": "L'Ours en Cage",
+    "The Sands of Time": "Les Sables du Temps",
+    "Unnatural Insults": "Insultes Anormales",
+    "group": {
+      "solo": "Scénarios solo"
+    },
+    "title": {
+      "gh": {
+        "solo-1": "Retour au Tertre Noir",
+        "solo-10": "Récolte Nocturne",
+        "solo-11": "La Crypte Pesteuse",
+        "solo-12": "Insultes Anormales",
+        "solo-13": "La Bataille des Bardes",
+        "solo-14": "Chasse Perverse",
+        "solo-15": "Conséquences",
+        "solo-16": "Les Secrets Élémentaires",
+        "solo-17": "L'Ours en Cage",
+        "solo-18": "Les Sables du Temps",
+        "solo-2": "Une Intrusion Malvenue",
+        "solo-3": "Le Laboratoire Corrompu",
+        "solo-4": "Casse à l'Armurerie",
+        "solo-5": "Une Défense de Pierre",
+        "solo-6": "La Libération des Rongeurs",
+        "solo-7": "L'Escorte de la Caravane",
+        "solo-8": "Frais de Stockage",
+        "solo-9": "La Dimension des Bêtes Sauvages"
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+.garden-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--ght-color-white);
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      text-align: center;
+      font-family: var(--ght-font-title);
+      font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    }
+
+    .state-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .state {
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hint-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ght-action {
+          cursor: pointer;
+          font-size: 1.6em;
+          margin-right: 0.5em;
+
+          &.disabled {
+            cursor: initial;
+            filter: grayscale(0.5);
+          }
+        }
+
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          &.disabled {
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      a {
+        cursor: pointer;
+        font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+      }
+    }
+
+    .herbs,
+    .sources {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .herb,
+      .source {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+        color: var(--ght-color-gray);
+
+        img {
+          width: calc(var(--ght-unit) * 4 * var(--ght-dialog-factor));
+          height: auto;
+
+          &.ght-svg {
+            filter: var(--ght-filter-gray);
+          }
+
+          &.character-icon {
+            filter: grayscale(0.2) brightness(0.6);
+          }
+        }
+
+        &.active {
+          color: var(--ght-color-white);
+
+          .ght-svg {
+            filter: var(--ght-filter-white);
+          }
+
+          .character-icon {
+            filter: none;
+          }
+        }
+
+        &:hover {
+          color: var(--ght-color-white);
+
+          .ght-svg {
+            filter: var(--ght-filter-white);
+          }
+
+          .character-icon {
+            filter: none;
+          }
+        }
+
+        &.disabled {
+          cursor: initial;
+          color: var(--ght-color-darkgray);
+
+          .ght-svg {
+            filter: var(--ght-filter-darkgray);
+          }
+
+          .character-icon {
+            filter: brightness(0) var(--ght-filter-darkgray);
+          }
+
+          &:hover {
+            .ght-svg {
+              filter: var(--ght-filter-darkgray);
+            }
+
+            .character-icon {
+              filter: brightness(0) var(--ght-filter-darkgray);
+            }
+
+            .value {
+              color: var(--ght-color-darkgray);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .garden {
+    position: relative;
+    display: block;
+    width: calc(var(--ght-unit) * 31 * var(--ght-dialog-factor));
+    height: calc(var(--ght-unit) * 27.1 * var(--ght-dialog-factor));
+    margin-top: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.level-1 {
+      background-image: url('../../../../../../assets/images/world-map/fh/buildings/fh-24-garden-1.png');
+    }
+
+    &.level-2 {
+      background-image: url('../../../../../../assets/images/world-map/fh/buildings/fh-24-garden-2.png');
+    }
+
+    &.level-3 {
+      background-image: url('../../../../../../assets/images/world-map/fh/buildings/fh-24-garden-3.png');
+    }
+
+    &.level-4 {
+      background-image: url('../../../../../../assets/images/world-map/fh/buildings/fh-24-garden-4.png');
+    }
+
+    .plot {
+      position: absolute;
+      display: block;
+      width: calc(var(--ght-unit) * 5.7 * var(--ght-dialog-factor));
+      height: calc(var(--ght-unit) * 9.9 * var(--ght-dialog-factor));
+      background-repeat: no-repeat;
+      background-size: 0;
+      transform: rotate(-45deg);
+      cursor: pointer;
+
+      &:hover {
+        background-size: contain;
+        filter: brightness(1.2);
+      }
+
+      &.disabled {
+        cursor: initial;
+
+        &:hover {
+          filter: brightness(0.7) grayscale(0.3);
+        }
+      }
+
+      &.arrowvine,
+      &.plant-arrowvine:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-arrowvine.png');
+      }
+
+      &.axenut,
+      &.plant-axenut:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-axenut.png');
+      }
+
+      &.corpsecap,
+      &.plant-corpsecap:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-corpsecap.png');
+      }
+
+      &.flamefruit,
+      &.plant-flamefruit:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-flamefruit.png');
+      }
+
+      &.rockroot,
+      &.plant-rockroot:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-rockroot.png');
+      }
+
+      &.snowthistle,
+      &.plant-snowthistle:hover {
+        background-image: url('../../../../../../assets/images/world-map/fh/overlays/fh-24-garden-snowthistle.png');
+      }
+
+      &.harvest {
+        background-size: contain;
+      }
+
+      &.plot-1 {
+        top: calc(var(--ght-unit) * 14.3 * var(--ght-dialog-factor));
+        left: calc(var(--ght-unit) * 12.5 * var(--ght-dialog-factor));
+      }
+
+      &.plot-2 {
+        top: calc(var(--ght-unit) * 7.2 * var(--ght-dialog-factor));
+        left: calc(var(--ght-unit) * 5.5 * var(--ght-dialog-factor));
+      }
+
+      &.plot-3 {
+        top: calc(var(--ght-unit) * 3.6 * var(--ght-dialog-factor));
+        left: calc(var(--ght-unit) * 10.5 * var(--ght-dialog-factor));
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "index": "909",
+  "group": "randomMonsterCard",
+  "name": "Segmented",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "burrowing-blade",
+    "spitting-drake"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "earth",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "burrowing-blade",
+          "type": "normal",
+          "marker": "5"
+        },
+        {
+          "name": "burrowing-blade",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "12"
+        },
+        {
+          "name": "burrowing-blade",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "4"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "7"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "9"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "difficultTerrain",
+      "value": "snowdrift",
+      "marker": "1"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "snowdrift",
+      "marker": "2"
+    },
+    {
+      "type": "loot",
+      "marker": "3"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "snowdrift",
+      "marker": "6"
+    },
+    {
+      "type": "loot",
+      "marker": "10"
+    },
+    {
+      "type": "loot",
+      "marker": "11"
+    }
+  ]
+}

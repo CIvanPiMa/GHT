@@ -1,0 +1,21 @@
+{
+  "index": "130",
+  "edition": "fc",
+  "parent": "112",
+  "conclusion": true,
+  "rewards": {
+    "globalAchievements": [
+      "mechanical-splendor",
+      "a-peril-averted"
+    ],
+    "gold": 10,
+    "experience": 5,
+    "hints": {
+      "globalAchievements": [
+        "(read section 62 on page 21)",
+        "(If this is the second \"A Peril Averted\" achievement gained, read section 118 on page 37)"
+      ],
+      "gold": "This money must be immediately be spend on any %game.action.move%, %game.action.range%, or %game.action.jump% enhancement"
+    }
+  }
+}

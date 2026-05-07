@@ -1,0 +1,39 @@
+{
+  "index": "40B",
+  "name": "Hunters Bounty",
+  "edition": "cs",
+  "parent": "36",
+  "marker": "2",
+  "monsters": [
+    "hound",
+    "terrible-two-guard"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        30
+      ],
+      "monster": [
+        {
+          "name": "hound",
+          "type": "normal"
+        },
+        {
+          "name": "hound",
+          "type": "normal"
+        },
+        {
+          "name": "hound",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "terrible-two-guard",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

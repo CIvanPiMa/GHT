@@ -1,0 +1,92 @@
+{
+  "index": "906",
+  "group": "randomMonsterCard",
+  "name": "Rusted",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "flaming-bladespinner",
+    "ruined-machine",
+    "steel-automaton"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "fire",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "flaming-bladespinner",
+          "type": "normal",
+          "marker": "1"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "player4": "normal",
+          "marker": "9"
+        },
+        {
+          "name": "ruined-machine",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "2"
+        },
+        {
+          "name": "steel-automaton",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "7"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "trap",
+      "value": "bear-trap",
+      "values": [
+        "wound"
+      ],
+      "marker": "3"
+    },
+    {
+      "type": "trap",
+      "value": "bear-trap",
+      "values": [
+        "wound"
+      ],
+      "marker": "6"
+    },
+    {
+      "type": "trap",
+      "value": "bear-trap",
+      "values": [
+        "wound"
+      ],
+      "marker": "10"
+    },
+    {
+      "type": "loot",
+      "marker": "11"
+    },
+    {
+      "type": "loot",
+      "marker": "12"
+    }
+  ]
+}

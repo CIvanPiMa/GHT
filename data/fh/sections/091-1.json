@@ -1,0 +1,24 @@
+{
+  "index": "91.1",
+  "name": "The Lurker Problem",
+  "edition": "fh",
+  "parent": "78",
+  "parentSections": [
+    [
+      "19.1"
+    ]
+  ],
+  "blockedSections": [
+    "51.2"
+  ],
+  "marker": "a",
+  "rooms": [
+    {
+      "roomNumber": 6,
+      "initial": true,
+      "treasures": [
+        13
+      ]
+    }
+  ]
+}

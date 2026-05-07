@@ -1,0 +1,46 @@
+{
+  "index": "24",
+  "name": "Eerie Grotto",
+  "flowChartGroup": "chilly",
+  "edition": "cs",
+  "unlocks": [
+    "26"
+  ],
+  "links": [
+    "26"
+  ],
+  "rewards": {
+    "partyAchievements": [
+      "frozen-warrior"
+    ],
+    "custom": "%data.scenario.rewards.cs.random-orb%"
+  },
+  "monsters": [
+    "frozen-cadaver",
+    "harrower-icecrawlers"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "B3b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "frozen-cadaver",
+          "type": "elite"
+        },
+        {
+          "name": "frozen-cadaver",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "index": "80",
+  "name": "Relic Renewed",
+  "flowChartGroup": "job-postings",
+  "coordinates": {
+    "x": 493.5,
+    "y": 1869.5,
+    "width": 132,
+    "height": 71,
+    "gridLocation": "FR"
+  },
+  "edition": "fh",
+  "complexity": 2,
+  "eventType": "road",
+  "recaps": [
+    {
+      "type": "scenario",
+      "value": "79"
+    }
+  ],
+  "rewards": {
+    "morale": 2,
+    "collectiveResources": [
+      {
+        "type": "lumber",
+        "value": 2
+      },
+      {
+        "type": "metal",
+        "value": 2
+      },
+      {
+        "type": "hide",
+        "value": 2
+      }
+    ]
+  },
+  "monsters": [
+    "robotic-boltshooter",
+    "ruined-machine",
+    "steel-automaton",
+    "the-relic"
+  ],
+  "objectives": [
+    {
+      "name": "Metal Cabinet",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "a",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.scenario.rules.fh.80.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fh.80.2%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metal Cabinet",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "b",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.scenario.rules.fh.80.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "shield",
+              "value": "[1+(L/2){$math.ceil}]",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metal Cabinet",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "c",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.scenario.rules.fh.80.3%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fh.80.4%",
+              "small": true,
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%game.action.move%+2, %game.action.jump%",
+                  "small": true
+                },
+                {
+                  "type": "custom",
+                  "value": "%data.scenario.rules.fh.80.5%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metal Cabinet",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "d",
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.scenario.rules.fh.80.6%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "summon",
+              "value": "monsterStandee",
+              "valueObject": [
+                {
+                  "monster": {
+                    "name": "ruined-machine",
+                    "player2": "normal",
+                    "player4": "elite"
+                  },
+                  "count": "2"
+                },
+                {
+                  "monster": {
+                    "name": "ruined-machine",
+                    "player3": "normal"
+                  }
+                },
+                {
+                  "monster": {
+                    "name": "ruined-machine",
+                    "player3": "elite"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lootDeckConfig": {
+    "money": 8,
+    "lumber": 2,
+    "metal": 3,
+    "hide": 2,
+    "rockroot": 1,
+    "axenut": 1,
+    "random_item": 1
+  },
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [
+        62,
+        69
+      ],
+      "monster": [
+        {
+          "name": "robotic-boltshooter",
+          "type": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "type": "normal"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player4": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "type": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player4": "normal"
+        },
+        {
+          "name": "the-relic",
+          "type": "boss"
+        }
+      ],
+      "objectives": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "index": "86",
+  "edition": "fc",
+  "parent": "106",
+  "parentSections": [
+    [
+      "133"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "globalAchievements": [
+      "pieces-of-an-artifact"
+    ],
+    "gold": 175,
+    "prosperity": 1,
+    "hints": {
+      "globalAchievements": [
+        "(If this is the third \"Pieces of an Artifact\" achievement gained, read section 49 on page 17)"
+      ],
+      "gold": "This money must be immediately be spend on any %game.element.air%, %game.element.ice%, %game.element.fire%, %game.element.earth%, %game.element.light%, or %game.element.dark% enhancement"
+    }
+  }
+}

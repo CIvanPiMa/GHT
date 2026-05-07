@@ -1,0 +1,351 @@
+[
+    {
+        "cardId": "581",
+        "altId": "01",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.581.1%",
+                "counter": 5,
+                "checkbox": [
+                    "%game.resource.arrowvine%",
+                    "%game.resource.axenut%",
+                    "%game.resource.corpsecap%",
+                    "%game.resource.flamefruit%",
+                    "%game.resource.rockroot%",
+                    "%game.resource.snowthistle%"
+                ],
+                "autotrack": "differentHerbs"
+            }
+        ],
+        "openEnvelope": "24:42",
+        "errata": "env24"
+    },
+    {
+        "cardId": "582",
+        "altId": "02",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.582.1%",
+                "counter": 8,
+                "autotrack": "looted:lumber"
+            },
+            {
+                "name": "%data.personalQuest.fh.582.2%",
+                "counter": 1,
+                "autotrack": "scenario:69|70",
+                "requires": [
+                    1
+                ]
+            }
+        ],
+        "openEnvelope": "24:42",
+        "errata": "env24"
+    },
+    {
+        "cardId": "583",
+        "altId": "03",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.583.1%",
+                "counter": 3,
+                "autotrack": "itemType:head"
+            },
+            {
+                "name": "%data.personalQuest.fh.583.2%",
+                "counter": 3,
+                "autotrack": "itemType:body"
+            },
+            {
+                "name": "%data.personalQuest.fh.583.3%",
+                "counter": 3,
+                "autotrack": "itemType:legs"
+            },
+            {
+                "name": "%data.personalQuest.fh.583.4%",
+                "counter": 3,
+                "autotrack": "itemType:onehand|twohand"
+            },
+            {
+                "name": "%data.personalQuest.fh.583.5%",
+                "counter": 4,
+                "autotrack": "itemType:small"
+            }
+        ],
+        "openEnvelope": "37:74",
+        "errata": "env37"
+    },
+    {
+        "cardId": "584",
+        "altId": "04",
+        "requirements": [
+            {
+                "name": "%character.progress.gold%",
+                "counter": "80+20xP",
+                "autotrack": "gold"
+            }
+        ],
+        "openEnvelope": "37:74",
+        "errata": "env37"
+    },
+    {
+        "cardId": "585",
+        "altId": "05",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.585.1%",
+                "counter": 12,
+                "autotrack": "buildings"
+            }
+        ],
+        "openEnvelope": "85:21",
+        "errata": "env85"
+    },
+    {
+        "cardId": "586",
+        "altId": "06",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.586.1%",
+                "counter": 8
+            }
+        ],
+        "openEnvelope": "85:21",
+        "errata": "env85"
+    },
+    {
+        "cardId": "587",
+        "altId": "07",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.587.1%",
+                "counter": 1,
+                "autotrack": "scenario:65|66"
+            }
+        ],
+        "openEnvelope": "44:88",
+        "errata": "env44"
+    },
+    {
+        "cardId": "588",
+        "altId": "08",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.588.1%",
+                "counter": 2
+            },
+            {
+                "name": "%data.personalQuest.fh.588.2%",
+                "counter": 2
+            },
+            {
+                "name": "%data.personalQuest.fh.588.3%",
+                "counter": 2
+            }
+        ],
+        "openEnvelope": "44:88",
+        "errata": "env44"
+    },
+    {
+        "cardId": "589",
+        "altId": "09",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.589.1%",
+                "counter": 150,
+                "autotrack": "abilityXP"
+            }
+        ],
+        "openEnvelope": "90:83",
+        "errata": "env90"
+    },
+    {
+        "cardId": "590",
+        "altId": "10",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.590.1%",
+                "counter": 5,
+                "autotrack": "scenarioRequirements:board|climbing-gear|sled"
+            }
+        ],
+        "openEnvelope": "90:83",
+        "errata": "env90"
+    },
+    {
+        "cardId": "505",
+        "altId": "11",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.505.1%",
+                "counter": 15,
+                "autotrack": "craftableItems"
+            }
+        ],
+        "openEnvelope": "39:72"
+    },
+    {
+        "cardId": "509",
+        "altId": "12",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.509.1%",
+                "counter": 1,
+                "autotrack": "scenario:71|72"
+            }
+        ],
+        "openEnvelope": "90:42"
+    },
+    {
+        "cardId": "514",
+        "altId": "13",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.514.1%",
+                "counter": 15
+            }
+        ],
+        "openEnvelope": "44:74"
+    },
+    {
+        "cardId": "519",
+        "altId": "14",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.519.1%",
+                "counter": 1
+            },
+            {
+                "name": "%data.personalQuest.fh.519.2%",
+                "counter": 1
+            },
+            {
+                "name": "%data.personalQuest.fh.519.3%",
+                "counter": 1
+            },
+            {
+                "name": "%data.personalQuest.fh.519.4%",
+                "counter": 1
+            },
+            {
+                "name": "%data.personalQuest.fh.519.5%",
+                "counter": 1
+            }
+        ],
+        "openEnvelope": "37:72"
+    },
+    {
+        "cardId": "523",
+        "altId": "15",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.523.1%",
+                "counter": 70,
+                "autotrack": "donatedGold"
+            }
+        ],
+        "openEnvelope": "65:85"
+    },
+    {
+        "cardId": "527",
+        "altId": "16",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.527.1%",
+                "counter": 5
+            }
+        ],
+        "openEnvelope": "85:88"
+    },
+    {
+        "cardId": "538",
+        "altId": "17",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.538.1%",
+                "counter": 16,
+                "autotrack": "battleGoals"
+            }
+        ],
+        "openEnvelope": "81:67",
+        "errata": "env81"
+    },
+    {
+        "cardId": "542",
+        "altId": "18",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.542.1%",
+                "counter": 8,
+                "autotrack": "scenario:65|66"
+            }
+        ],
+        "openEnvelope": "44:67"
+    },
+    {
+        "cardId": "545",
+        "altId": "19",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.545.1%",
+                "counter": 1,
+                "autotrack": "itemBlueprint:39"
+            },
+            {
+                "name": "%data.personalQuest.fh.545.2%",
+                "counter": 10,
+                "requires": [
+                    1
+                ]
+            }
+        ],
+        "openEnvelope": "81:67",
+        "errata": "env81"
+    },
+    {
+        "cardId": "549",
+        "altId": "20",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.549.1%",
+                "counter": 15
+            }
+        ],
+        "openEnvelope": "24:21"
+    },
+    {
+        "cardId": "552",
+        "altId": "21",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.552.1%",
+                "counter": 8
+            }
+        ],
+        "openEnvelope": "39:72"
+    },
+    {
+        "cardId": "557",
+        "altId": "22",
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.557.1%",
+                "counter": 12
+            }
+        ],
+        "openEnvelope": "37:83",
+        "errata": "env37"
+    },
+    {
+        "cardId": "543",
+        "altId": "23",
+        "spoiler": true,
+        "requirements": [
+            {
+                "name": "%data.personalQuest.fh.543.1%",
+                "counter": 10,
+                "autotrack": "exchaustedChars"
+            }
+        ],
+        "openEnvelope": "A"
+    }
+]

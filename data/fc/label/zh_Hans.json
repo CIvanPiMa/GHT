@@ -1,0 +1,11 @@
+{
+  "ability": {
+    "Marked for Death": "死亡印记"
+  },
+  "edition": {
+    "fc": "遗忘之环"
+  },
+  "monster": {
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)"
+  }
+}

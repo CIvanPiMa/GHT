@@ -1,0 +1,147 @@
+{
+  "name": "terrorscale-drake-section-3",
+  "edition": "cs",
+  "deck": "boss",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "terrorscale-drake",
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "immobilize",
+      "curse",
+      "poison",
+      "stun",
+      "disarm"
+    ],
+    "special": [
+      [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "jump",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemyRange:4 or 5",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "poison",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "value": "strengthen",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "selfAlliesAffect",
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "move",
+          "value": 2,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "jump",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesRange:3",
+              "small": true
+            },
+            {
+              "type": "push",
+              "value": "2",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "muddle",
+              "small": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "9xC",
+      "movement": 4,
+      "attack": 3
+    },
+    {
+      "level": 1,
+      "health": "10xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 2,
+      "health": "13xC",
+      "movement": 5,
+      "attack": 4
+    },
+    {
+      "level": 3,
+      "health": "14xC",
+      "movement": 5,
+      "attack": 4
+    },
+    {
+      "level": 4,
+      "health": "18xC",
+      "movement": 5,
+      "attack": 5
+    },
+    {
+      "level": 5,
+      "health": "20xC",
+      "movement": 6,
+      "attack": 5
+    },
+    {
+      "level": 6,
+      "health": "25xC",
+      "movement": 6,
+      "attack": 5
+    },
+    {
+      "level": 7,
+      "health": "27xC",
+      "movement": 6,
+      "attack": 6
+    }
+  ]
+}

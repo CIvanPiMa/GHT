@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Acrobatic",
+    "checks": 1,
+    "alias": {
+      "name": "Acrobatic",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Ambusher",
+    "checks": 1
+  },
+  {
+    "name": "Assassin",
+    "checks": 1,
+    "alias": {
+      "name": "Assasin",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Assistant",
+    "checks": 1,
+    "alias": {
+      "name": "Assistant",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Bastion",
+    "checks": 1,
+    "alias": {
+      "name": "Bastion",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Bully",
+    "checks": 1,
+    "alias": {
+      "name": "Bully",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Contagious",
+    "checks": 1
+  },
+  {
+    "name": "Covetous",
+    "checks": 1
+  },
+  {
+    "name": "Cuddler",
+    "checks": 1
+  },
+  {
+    "name": "Discriminating",
+    "checks": 1
+  },
+  {
+    "name": "Distracted",
+    "checks": 1
+  },
+  {
+    "name": "Drowsy",
+    "checks": 1
+  },
+  {
+    "name": "Elitist",
+    "checks": 1
+  },
+  {
+    "name": "Exterminator",
+    "checks": 2,
+    "alias": {
+      "name": "Exterminator",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Fearful",
+    "checks": 1
+  },
+  {
+    "name": "Feeble",
+    "checks": 1
+  },
+  {
+    "name": "Feral",
+    "checks": 1
+  },
+  {
+    "name": "Finisher",
+    "checks": 1,
+    "alias": {
+      "name": "Finisher",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Hesitant",
+    "checks": 1
+  },
+  {
+    "name": "Hothead",
+    "checks": 2,
+    "alias": {
+      "name": "Hothead",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Instigator",
+    "checks": 1
+  },
+  {
+    "name": "Insulting",
+    "checks": 1
+  },
+  {
+    "name": "Limping",
+    "checks": 2
+  },
+  {
+    "name": "Lucky",
+    "checks": 2
+  },
+  {
+    "name": "Marksman",
+    "checks": 1
+  },
+  {
+    "name": "Miser",
+    "checks": 2,
+    "alias": {
+      "name": "Miser",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Mugger",
+    "checks": 1,
+    "alias": {
+      "name": "Mugger",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Multitasker",
+    "checks": 2
+  },
+  {
+    "name": "Paranoid",
+    "checks": 2,
+    "alias": {
+      "name": "Agoraphobe",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Peacemonger",
+    "checks": 2,
+    "alias": {
+      "name": "Peacemonger",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Perforated",
+    "checks": 1
+  },
+  {
+    "name": "Pickpocket",
+    "checks": 1,
+    "alias": {
+      "name": "Pickpocket",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Pincushion",
+    "checks": 1,
+    "alias": {
+      "name": "Pincushion",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Prosperous",
+    "checks": 1
+  },
+  {
+    "name": "Ravager",
+    "checks": 1,
+    "alias": {
+      "name": "Ravager",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Recluse",
+    "checks": 1,
+    "alias": {
+      "name": "Recluse",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Reserved",
+    "checks": 1
+  },
+  {
+    "name": "Restless",
+    "checks": 1
+  },
+  {
+    "name": "Retaliator",
+    "checks": 1
+  },
+  {
+    "name": "Ritualistic",
+    "checks": 1
+  },
+  {
+    "name": "Scavenger",
+    "checks": 1
+  },
+  {
+    "name": "Shadow",
+    "checks": 1,
+    "alias": {
+      "name": "Shadow",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Sharpshooter",
+    "checks": 1
+  },
+  {
+    "name": "Slayer",
+    "checks": 1,
+    "alias": {
+      "name": "Slayer",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Sleepless",
+    "checks": 1
+  },
+  {
+    "name": "Sober",
+    "checks": 1
+  },
+  {
+    "name": "Sociable",
+    "checks": 1
+  },
+  {
+    "name": "Specialized",
+    "checks": 1,
+    "alias": {
+      "name": "Specialist",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Stalwart",
+    "checks": 2,
+    "alias": {
+      "name": "Challenger",
+      "edition": "jotl"
+    }
+  },
+  {
+    "name": "Stubborn",
+    "checks": 1
+  },
+  {
+    "name": "Thorough",
+    "checks": 1
+  },
+  {
+    "name": "Untouchable",
+    "checks": 2
+  },
+  {
+    "name": "Wasteful",
+    "checks": 1,
+    "alias": {
+      "name": "Wastrel",
+      "edition": "fh"
+    }
+  },
+  {
+    "name": "Winded",
+    "checks": 1
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "name": "active-mechanism",
+  "edition": "toa",
+  "deck": "boss",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "deep-terror",
+  "standeeShareEdition": "gh",
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "stun",
+      "push",
+      "pull"
+    ],
+    "special": [
+      [
+        {
+          "type": "custom",
+          "value": "All enemies that are adjacent to two pillars suffer L damage."
+        },
+        {
+          "type": "custom",
+          "value": "%game.action.teleport% to the next pillar in order %game.mapMarker.c%, %game.mapMarker.d%, %game.mapMarker.e%, %game.mapMarker.f%"
+        }
+      ],
+      [
+        {
+          "type": "heal",
+          "value": "(L+C)-3",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "push",
+          "value": "1",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%game.action.target% all enemies adjacent to exactly one pillar",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%game.action.teleport% to the opposite pillar"
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "3x(Cx5)",
+      "attack": 3
+    },
+    {
+      "level": 1,
+      "health": "3x(Cx6)",
+      "attack": 3,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "health": "3x(Cx7)",
+      "attack": 4,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "health": "3x(Cx8)",
+      "attack": 4,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "health": "3x(Cx9)",
+      "attack": 5,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "health": "3x(Cx11)",
+      "attack": 5,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "health": "3x(Cx13)",
+      "attack": 6,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "health": "3x(Cx15)",
+      "attack": 6,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "index": "18",
+  "name": "The Heist",
+  "flowChartGroup": "main",
+  "coordinates": {
+    "x": 1106.25,
+    "y": 288.75,
+    "width": 220,
+    "height": 205,
+    "gridLocation": "A5"
+  },
+  "edition": "jotl",
+  "rewards": {
+    "experience": 10
+  },
+  "monsters": [
+    "stone-golem"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "stone-golem",
+            "type": "elite"
+          },
+          "marker": "A"
+        }
+      ],
+      "treasures": [
+        2
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "stone-golem",
+            "type": "elite"
+          },
+          "marker": "A"
+        }
+      ],
+      "treasures": [
+        6
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "stone-golem",
+            "type": "elite"
+          },
+          "marker": "A"
+        }
+      ],
+      "treasures": [
+        7
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "stone-golem",
+            "type": "elite"
+          },
+          "marker": "A"
+        }
+      ],
+      "treasures": [
+        13
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "stone-golem",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "B"
+        },
+        {
+          "monster": {
+            "name": "stone-golem",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "B"
+        }
+      ],
+      "treasures": "C"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl18-1",
+      "initial": true,
+      "rooms": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "top-left",
+      "treasures": [
+        7
+      ]
+    },
+    {
+      "roomNumber": 3,
+      "ref": "bottom-left",
+      "treasures": [
+        6
+      ]
+    },
+    {
+      "roomNumber": 4,
+      "ref": "right",
+      "treasures": [
+        2
+      ]
+    },
+    {
+      "roomNumber": 5,
+      "ref": "bottom",
+      "treasures": [
+        13
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "index": "127",
+  "name": "Guarded Nursery",
+  "edition": "fc",
+  "parent": "107",
+  "resetRound": "hidden",
+  "monsters": [
+    "vermling-scout-107",
+    "vermling-shaman-107"
+  ],
+  "rules": [
+    {
+      "round": "R == 2",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "vermling-scout-scenario-107"
+          },
+          "type": "transfer",
+          "value": "vermling-scout"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "vermling-shaman-scenario-107"
+          },
+          "type": "transfer",
+          "value": "vermling-shaman"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "ref": "A3b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "vermling-scout-scenario-107",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "player2": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-107",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-shaman-scenario-107",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "index": "85.2",
+  "name": "Living Glacier",
+  "edition": "fh",
+  "parent": "45",
+  "marker": "1",
+  "monsters": [
+    "abael-herder",
+    "abael-scout",
+    "lightning-eel",
+    "piranha-pig"
+  ],
+  "objectives": [
+    {
+      "name": "Ice Pillar",
+      "health": "(L+2)xCx2"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "sections": [
+        "39.2"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Ice Pillar"
+          },
+          "type": "dead"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        15
+      ],
+      "monster": [
+        {
+          "name": "abael-herder",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "abael-scout",
+          "type": "elite"
+        },
+        {
+          "name": "abael-scout",
+          "player4": "normal"
+        },
+        {
+          "name": "lightning-eel",
+          "type": "elite"
+        },
+        {
+          "name": "lightning-eel",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "type": "normal"
+        },
+        {
+          "name": "piranha-pig",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

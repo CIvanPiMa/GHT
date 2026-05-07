@@ -1,0 +1,101 @@
+{
+  "index": "82.2",
+  "name": "Life and Death",
+  "edition": "fh",
+  "parent": "61",
+  "parentSections": [
+    [
+      "105.1"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "deep-terror",
+    "earth-demon",
+    "harrower-infester"
+  ],
+  "objectives": [
+    {
+      "name": "Moonshard",
+      "escort": true,
+      "allyDeck": true,
+      "health": "(L+(2xC))x2",
+      "initiative": 50,
+      "marker": "a",
+      "actions": [
+        {
+          "type": "move",
+          "value": 3
+        },
+        {
+          "type": "attack",
+          "value": "L+3",
+          "subActions": [
+            {
+              "type": "custom",
+              "small": true,
+              "value": "Attacks are unaffected by %game.action.retaliate%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "marker": "a",
+            "edition": "escort",
+            "name": "Moonshard"
+          },
+          "type": "transfer",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "All monsters add +1 %game.action.attack% to all their attacks targeting characters or character summons"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        76
+      ],
+      "monster": [
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-infester",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

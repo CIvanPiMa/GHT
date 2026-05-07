@@ -1,0 +1,163 @@
+{
+  "name": "ruinmaw-section-2",
+  "edition": "cs",
+  "deck": "boss",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "ruinmaw",
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "poison",
+      "wound",
+      "stun",
+      "disarm",
+      "immobilize",
+      "curse"
+    ],
+    "special": [
+      [
+        {
+          "type": "move",
+          "value": "1",
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": "0",
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "pierce",
+              "value": "1",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "rupture",
+              "small": true
+            },
+            {
+              "type": "area",
+              "value": "(0,0,target)|(0,1,active)|(1,0,target)|(1,1,target)",
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "condition",
+          "value": "invisible",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.ruinmaw-section-2.1%",
+          "small": true
+        },
+        {
+          "type": "attack",
+          "value": "1",
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "wound",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.ruinmaw-section-2.2%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.cs.ruinmaw-section-2.3%",
+          "small": true
+        },
+        {
+          "type": "move",
+          "value": "4",
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": "0",
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%game.custom.advantage%",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.ruinmaw-section-2.2%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "9xC",
+      "movement": 3,
+      "attack": 2
+    },
+    {
+      "level": 1,
+      "health": "10xC",
+      "movement": 3,
+      "attack": 3
+    },
+    {
+      "level": 2,
+      "health": "12xC",
+      "movement": 3,
+      "attack": 3
+    },
+    {
+      "level": 3,
+      "health": "13xC",
+      "movement": 3,
+      "attack": 4
+    },
+    {
+      "level": 4,
+      "health": "15xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 5,
+      "health": "17xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 6,
+      "health": "20xC",
+      "movement": 4,
+      "attack": 5
+    },
+    {
+      "level": 7,
+      "health": "24xC",
+      "movement": 5,
+      "attack": 5
+    }
+  ]
+}

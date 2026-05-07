@@ -1,0 +1,61 @@
+{
+  "index": "73.1",
+  "name": "The Collection",
+  "edition": "fh",
+  "parent": "87",
+  "parentSections": [
+    [
+      "77.2",
+      "184.6"
+    ]
+  ],
+  "marker": "4",
+  "monsters": [
+    "algox-archer",
+    "algox-guard",
+    "brother",
+    "flaming-bladespinner"
+  ],
+  "allies": [
+    "brother"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "algox-archer",
+          "type": "elite"
+        },
+        {
+          "name": "algox-archer",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "algox-guard",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "algox-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "brother",
+          "type": "boss"
+        },
+        {
+          "name": "brother",
+          "type": "boss"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

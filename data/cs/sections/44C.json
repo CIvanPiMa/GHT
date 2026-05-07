@@ -1,0 +1,43 @@
+{
+  "index": "44C",
+  "name": "Smugglers Hideout",
+  "edition": "cs",
+  "parent": "40",
+  "marker": "1",
+  "monsters": [
+    "drake-porter",
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        21
+      ],
+      "monster": [
+        {
+          "name": "drake-porter",
+          "type": "boss"
+        },
+        {
+          "name": "rending-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

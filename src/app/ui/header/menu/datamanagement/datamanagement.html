@@ -1,0 +1,481 @@
+<div class="menu-container data">
+  @if (!editionsOnly) {
+    <div class="columns columns-break">
+      <div class="column">
+        <div class="line">
+          <a tabclick (click)="exportGame()"><span [ght-label]="'datamanagement.exportGame'"></span></a>
+        </div>
+        <div class="line">
+          <a tabclick (click)="resetGame()" [ngClass]="{ 'confirm-delete': confirm === 'resetGame' }" (mouseleave)="cancelConfirm()"
+            >&lt;<span [ght-label]="'datamanagement.resetGame'"></span>(!)&gt;</a
+          >
+        </div>
+        <div class="line">
+          <div class="hint-container">
+            <label
+              tabclick
+              class="input-file hint-trigger"
+              (click)="importFileCheck($event)"
+              [ngClass]="{ 'confirm-delete': confirm === 'importFile' }"
+              (mouseleave)="cancelConfirm()"
+            >
+              <input
+                type="file"
+                [ngClass]="{ disabled: confirm !== 'importFile' }"
+                [disabled]="confirm !== 'importFile'"
+                accept="application/json"
+                (change)="importFile($event)"
+              />
+              &lt;<span [ght-label]="'datamanagement.importFile'"></span>(!)&gt;
+            </label>
+            <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+            <span class="hint">
+              <span class="text" [ght-label]="'datamanagement.importFile.hint'"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="line">
+          <a tabclick (click)="exportSettings()"><span [ght-label]="'datamanagement.exportSettings'"></span></a>
+        </div>
+        <div class="line">
+          <a tabclick (click)="resetSettings()" [ngClass]="{ 'confirm-delete': confirm === 'resetSettings' }" (mouseleave)="cancelConfirm()"
+            >&lt;<span [ght-label]="'datamanagement.resetSettings'"></span>(!)&gt;</a
+          >
+        </div>
+      </div>
+      <div class="column">
+        <div class="line">
+          <a tabclick (click)="exportDataDump()"><span [ght-label]="'datamanagement.exportDataDump'"></span></a>
+        </div>
+        <div class="line">
+          <a tabclick (click)="clearAllData()" [ngClass]="{ 'confirm-delete': confirm === 'clearAllData' }" (mouseleave)="cancelConfirm()"
+            >&lt;<span [ght-label]="'datamanagement.clearAll'"></span>(!)&gt;</a
+          >
+        </div>
+        <div class="line">
+          <label>
+            <input
+              tabclick
+              type="checkbox"
+              [checked]="settingsManager.settings.autoBackup !== -1"
+              (change)="
+                settingsManager.settings.autoBackup === -1
+                  ? (settingsManager.settings.autoBackup = 25)
+                  : (settingsManager.settings.autoBackup = -1)
+              "
+            />
+            <span [ght-label]="'datamanagement.backup.auto'"></span>
+          </label>
+        </div>
+        @if (settingsManager.settings.autoBackup !== -1) {
+          <div class="line">
+            <div class="hint-container">
+              <label class="label"
+                ><span [ght-label]="'datamanagement.backup.auto.count'"></span>
+                <input
+                  tabclick
+                  type="number"
+                  #autoBackup
+                  [value]="settingsManager.settings.autoBackup"
+                  min="0"
+                  (keyup)="(0)"
+                  (change)="settingsManager.set('autoBackup', +autoBackup.value)"
+                  [size]="autoBackup.value.length"
+                  [ght-label]="'datamanagement.backup.auto.count'"
+                  [ght-label-attribute]="'placeholder'"
+              /></label>
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.countHint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line">
+            <label>
+              <input
+                tabclick
+                type="checkbox"
+                [checked]="settingsManager.settings.autoBackupFinish"
+                (change)="settingsManager.setAutoBackupFinish(!settingsManager.settings.autoBackupFinish)"
+              />
+              <span [ght-label]="'datamanagement.backup.auto.onFinish'"></span>
+            </label>
+          </div>
+          <div class="line">
+            <div class="hint-container input-container">
+              <label class="label"><span [ght-label]="'datamanagement.backup.auto.uploadUrl'"></span></label>
+              <input
+                tabclick
+                type="text"
+                #autoBackupuploadUrl
+                [value]="settingsManager.settings.autoBackupUrl?.url"
+                (keyup)="(0)"
+                (change)="
+                  settingsManager.setAutoBackupUrl({
+                    url: autoBackupuploadUrl.value,
+                    method: autoBackupPostMethod.value,
+                    fileUpload: autoBackupPostFileUpload.checked,
+                    username: autoBackupPostUsername.value,
+                    password: autoBackupPostPassword.value,
+                    authorization: autoBackupPostAuthorization.value
+                  })
+                "
+                [ght-label]="'datamanagement.backup.auto.uploadUrl'"
+                [ght-label-attribute]="'placeholder'"
+              />
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrl.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line" [ngClass]="{ hidden: !autoBackupuploadUrl.value }">
+            <div class="hint-container input-container">
+              <label class="label"><span [ght-label]="'datamanagement.backup.auto.uploadUrlMethod'"></span></label>
+              <select
+                tabclick
+                #autoBackupPostMethod
+                [value]="settingsManager.settings.autoBackupUrl?.method"
+                (change)="
+                  settingsManager.setAutoBackupUrl({
+                    url: autoBackupuploadUrl.value,
+                    method: autoBackupPostMethod.value,
+                    fileUpload: autoBackupPostFileUpload.checked,
+                    username: autoBackupPostUsername.value,
+                    password: autoBackupPostPassword.value,
+                    authorization: autoBackupPostAuthorization.value
+                  })
+                "
+              >
+                <option value="POST"><span [ght-label]="'datamanagement.backup.auto.uploadUrlMethod.post'"></span></option>
+                <option value="PUT"><span [ght-label]="'datamanagement.backup.auto.uploadUrlMethod.put'"></span></option>
+                <option value="GET"><span [ght-label]="'datamanagement.backup.auto.uploadUrlMethod.get'"></span></option>
+              </select>
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrlMethod.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line" [ngClass]="{ hidden: !autoBackupuploadUrl.value }">
+            <div class="hint-container input-container">
+              <label class="label">
+                <input
+                  tabclick
+                  type="checkbox"
+                  #autoBackupPostFileUpload
+                  [checked]="settingsManager.settings.autoBackupUrl?.fileUpload"
+                  (change)="
+                    settingsManager.setAutoBackupUrl({
+                      url: autoBackupuploadUrl.value,
+                      method: autoBackupPostMethod.value,
+                      fileUpload: autoBackupPostFileUpload.checked,
+                      username: autoBackupPostUsername.value,
+                      password: autoBackupPostPassword.value,
+                      authorization: autoBackupPostAuthorization.value
+                    })
+                  " />
+                <span [ght-label]="'datamanagement.backup.auto.uploadUrlFileUpload'"></span
+              ></label>
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrlFileUpload.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line" [ngClass]="{ hidden: !autoBackupuploadUrl.value }">
+            <div class="hint-container input-container">
+              <label class="label"><span [ght-label]="'datamanagement.backup.auto.uploadUrlAuthorization'"></span></label>
+              <input
+                tabclick
+                type="text"
+                #autoBackupPostAuthorization
+                [value]="settingsManager.settings.autoBackupUrl?.authorization"
+                (keyup)="(0)"
+                (change)="
+                  settingsManager.setAutoBackupUrl({
+                    url: autoBackupuploadUrl.value,
+                    method: autoBackupPostMethod.value,
+                    fileUpload: autoBackupPostFileUpload.checked,
+                    username: autoBackupPostUsername.value,
+                    password: autoBackupPostPassword.value,
+                    authorization: autoBackupPostAuthorization.value
+                  })
+                "
+                [ght-label]="'datamanagement.backup.auto.uploadUrlAuthorization'"
+                [ght-label-attribute]="'placeholder'"
+              />
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrlAuthorization.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line" [ngClass]="{ hidden: !autoBackupuploadUrl.value }">
+            <div class="hint-container input-container">
+              <label class="label"><span [ght-label]="'datamanagement.backup.auto.uploadUrlUsername'"></span></label>
+              <input
+                tabclick
+                type="text"
+                #autoBackupPostUsername
+                [value]="settingsManager.settings.autoBackupUrl?.username"
+                (keyup)="(0)"
+                (change)="
+                  settingsManager.setAutoBackupUrl({
+                    url: autoBackupuploadUrl.value,
+                    method: autoBackupPostMethod.value,
+                    fileUpload: autoBackupPostFileUpload.checked,
+                    username: autoBackupPostUsername.value,
+                    password: autoBackupPostPassword.value,
+                    authorization: autoBackupPostAuthorization.value
+                  })
+                "
+                [ght-label]="'datamanagement.backup.auto.uploadUrlUsername'"
+                [ght-label-attribute]="'placeholder'"
+              />
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrlUsername.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line" [ngClass]="{ hidden: !autoBackupuploadUrl.value }">
+            <div class="hint-container input-container">
+              <label class="label"><span [ght-label]="'datamanagement.backup.auto.uploadUrlPassword'"></span></label>
+              <input
+                tabclick
+                type="text"
+                #autoBackupPostPassword
+                [value]="settingsManager.settings.autoBackupUrl?.password"
+                (keyup)="(0)"
+                (change)="
+                  settingsManager.setAutoBackupUrl({
+                    url: autoBackupuploadUrl.value,
+                    method: autoBackupPostMethod.value,
+                    fileUpload: autoBackupPostFileUpload.checked,
+                    username: autoBackupPostUsername.value,
+                    password: autoBackupPostPassword.value,
+                    authorization: autoBackupPostAuthorization.value
+                  })
+                "
+                [ght-label]="'datamanagement.backup.auto.uploadUrlPassword'"
+                [ght-label-attribute]="'placeholder'"
+              />
+              <img src="./assets/images/hint.svg" class="hint-trigger ght-svg" />
+              <div class="hint">
+                <div class="text">
+                  <div [ght-label]="'datamanagement.backup.auto.uploadUrlPassword.hint'"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+  @if (!editionsOnly) {
+    <div class="separator"></div>
+  }
+  <div class="columns columns-break">
+    @if (!editionsOnly) {
+      <div class="column">
+        <div
+          class="line title sticky"
+          [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }"
+        >
+          <label><span [ght-label]="'datamanagement.unlocks'"></span></label>
+        </div>
+        <div class="line">
+          <span class="input-button">
+            <input
+              tabclick
+              type="text"
+              #inputUnlock
+              (keyup.enter)="addUnlock($event.target)"
+              (keyup)="inputUnlock.classList.remove('error')"
+              [ght-label]="'datamanagement.addUnlock'"
+              [ght-label-attribute]="'placeholder'"
+            />
+            <span class="add-button" (click)="addUnlock(inputUnlock)" [ngClass]="{ disabled: !inputUnlock.value }"></span>
+          </span>
+        </div>
+        <div class="line spoilers">
+          @for (character of gameManager.game.unlockedCharacters; track character) {
+            <a class="spoiler-item">
+              {{ character }}
+              <span class="spacer"></span>
+              <span
+                tabclick
+                (click)="removeUnlock(character)"
+                [ght-label]="'datamanagement.removeUnlock'"
+                [ght-label-attribute]="'title'"
+                class="remove"
+              ></span>
+            </a>
+          }
+        </div>
+        <div class="spacer"></div>
+        @if (gameManager.game.unlockedCharacters.length > 0) {
+          <div class="line separator">
+            <a tabclick (click)="removeAllUnlocks()"><span [ght-label]="'datamanagement.removeAllUnlocks'"></span></a>
+          </div>
+        }
+        <div
+          class="line title sticky"
+          [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }"
+        >
+          <label><span [ght-label]="'datamanagement.spoilers'"></span></label>
+        </div>
+        <div class="line">
+          <span class="input-button">
+            <input
+              tabclick
+              type="text"
+              #inputSpoiler
+              (keyup.enter)="addSpoiler($event.target)"
+              (keyup)="(0)"
+              [ght-label]="'datamanagement.addSpoiler'"
+              [ght-label-attribute]="'placeholder'"
+            />
+            <span class="add-button" (click)="addSpoiler(inputSpoiler)" [ngClass]="{ disabled: !inputSpoiler.value }"></span>
+          </span>
+        </div>
+        <div class="line spoilers">
+          @for (spoiler of settingsManager.settings.spoilers; track spoiler) {
+            <a class="spoiler-item">
+              {{ spoiler }}
+              <span class="spacer"></span>
+              <span
+                tabclick
+                (click)="removeSpoiler(spoiler)"
+                [ght-label]="'datamanagement.removeSpoiler'"
+                [ght-label-attribute]="'title'"
+                class="remove"
+              ></span>
+            </a>
+          }
+        </div>
+        <div class="spacer"></div>
+        @if (settingsManager.settings.spoilers.length > 0) {
+          <div class="line separator">
+            <a tabclick (click)="settingsManager.removeAllSpoilers()"><span [ght-label]="'datamanagement.removeAllSpoilers'"></span></a>
+          </div>
+        }
+      </div>
+    }
+
+    <div class="column">
+      <div
+        class="line title sticky"
+        [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }"
+      >
+        <label><span [ght-label]="'datamanagement.editionDataUrls'"></span></label>
+      </div>
+      <div class="line">
+        <span class="input-button">
+          <input
+            tabclick
+            type="text"
+            #inputEditionDataUrl
+            (keyup.enter)="addEditionDataUrl($event.target)"
+            (keyup)="inputEditionDataUrl.classList.remove('error')"
+            [ght-label]="'datamanagement.addEditionDataUrl'"
+            [ght-label-attribute]="'placeholder'"
+          />
+          <span
+            class="add-button"
+            (click)="addEditionDataUrl(inputEditionDataUrl)"
+            [ngClass]="{ disabled: !inputEditionDataUrl.value }"
+          ></span>
+        </span>
+      </div>
+      <div class="line editions" cdkDropList (cdkDropListDropped)="drop($event)">
+        @for (editionData of gameManager.editionData | trackUUID; track editionData._trackUUID) {
+          <a class="edition" cdkDrag>
+            <label
+              [ght-label]="
+                settingsManager.settings.editions.includes(editionData.edition)
+                  ? 'datamanagement.editionDataUrls.disable'
+                  : 'datamanagement.editionDataUrls.enable'
+              "
+              [ght-label-attribute]="'title'"
+            >
+              <input
+                tabclick
+                type="checkbox"
+                [checked]="settingsManager.settings.editions.includes(editionData.edition)"
+                (change)="toggleEdition(editionData)"
+              />
+              <span [ght-label]="'data.edition.' + editionData.edition"></span>
+            </label>
+            @if (!settingsManager.defaultEditionDataUrls.includes(editionData.url)) {
+              <span class="custom" [ght-label]="'datamanagement.editionDataUrls.custom'" [ght-label-attribute]="'title'">
+                <img src="./assets/images/hint.svg" />
+                <span class="url">{{ editionData.url }}</span>
+              </span>
+            }
+            <span class="spacer"></span>
+            <span
+              (click)="removeEditionDataUrl(editionData.url)"
+              [ght-label]="'datamanagement.editionDataUrls.remove'"
+              [ght-label-attribute]="'title'"
+              class="remove"
+            ></span>
+          </a>
+        }
+      </div>
+      <div class="spacer"></div>
+      @if (!hasDefaultEditionData()) {
+        <div class="line separator">
+          <a tabclick (click)="settingsManager.restoreDefaultEditionDataUrls()">
+            <span [ght-label]="'datamanagement.restoreEditionDataUrls'"></span>
+          </a>
+        </div>
+      }
+    </div>
+
+    @if (!editionsOnly) {
+      <div class="column">
+        @if (backups > 0) {
+          <div class="line title">
+            <label><span [ght-label]="'datamanagement.backup'"></span></label>
+          </div>
+          <div class="line">
+            <a tabclick (click)="exportLatestBackup()"><span [ght-label]="'datamanagement.backup.latest'"></span></a>
+          </div>
+          @if (backups > 1) {
+            <div class="line">
+              <a tabclick (click)="exportAllBackups()">
+                <span [ght-label]="'datamanagement.backup.all'" [ght-label-args]="[backups]"></span>
+              </a>
+            </div>
+          }
+          <div class="line">
+            <a
+              tabclick
+              (click)="deleteBackups()"
+              [ngClass]="{ 'confirm-delete': confirm === 'deleteBackups' }"
+              (mouseleave)="cancelConfirm()"
+              >&lt;<span [ght-label]="'datamanagement.backup.delete'"></span>(!)&gt;</a
+            >
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="move-resources-dialog">
+  <div class="scroll-container">
+    <label class="title">
+      <span [ght-label]="'character.progress.resources.move'"></span>
+      <span class="name">
+        <img class="icon character-icon" [src]="character.iconUrl" />
+        <span class="character-title" [ngClass]="{ absent: character.absent }">{{
+          gameManager.characterManager.characterName(character, true)
+        }}</span>
+      </span>
+    </label>
+    <div class="values">
+      @for (type of lootTypes; track type) {
+        @if (character.progress.loot[type]) {
+          <label
+            ><img
+              class="ght-svg"
+              [src]="
+                './assets/images/fh/loot/' + (type === LootType.special1 || type === LootType.special2 ? LootType.money : type) + '.svg'
+              " />
+            <span [ght-label]="'game.loot.' + type"></span
+          ></label>
+          <a class="button" [ngClass]="{ disabled: !loot[type] || loot[type] === 0 }" (click)="changeLoot(type, -1)">
+            <img class="ght-svg" src="./assets/images/minus.svg" />
+          </a>
+          <span class="value" [ght-label]="'game.loot.' + type" [ght-label-attribute]="'title'">
+            {{ loot[type] || '-' }} / {{ character.progress.loot[type] }}
+          </span>
+          <a class="button" [ngClass]="{ disabled: loot[type] === character.progress.loot[type] }" (click)="changeLoot(type, 1)">
+            <img class="ght-svg" src="./assets/images/plus.svg" />
+          </a>
+        }
+      }
+    </div>
+    <div class="menu">
+      <a class="cancel" (click)="close()"><span [ght-label]="'cancel'"></span></a>
+      <a class="apply" (click)="moveLoot()"><span [ght-label]="'character.progress.resources.apply'"></span></a>
+    </div>
+  </div>
+</div>

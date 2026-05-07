@@ -1,0 +1,122 @@
+{
+  "index": "41B",
+  "name": "Burning Stones",
+  "edition": "cs",
+  "parent": "37",
+  "monsters": [
+    "frost-demon",
+    "night-demon",
+    "vermling-scout"
+  ],
+  "objectives": [
+    {
+      "name": "Shadow Stone",
+      "health": "L+C+2",
+      "marker": "c"
+    },
+    {
+      "name": "Frost Stone",
+      "health": "L+C+2",
+      "marker": "d"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Shadow Stone"
+          },
+          "type": "present"
+        }
+      ],
+      "elements": [
+        {
+          "type": "dark",
+          "state": "strong"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Frost Stone"
+          },
+          "type": "present"
+        }
+      ],
+      "elements": [
+        {
+          "type": "ice",
+          "state": "strong"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        26
+      ],
+      "monster": [
+        {
+          "name": "frost-demon",
+          "type": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "type": "elite"
+        },
+        {
+          "name": "frost-demon",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "night-demon",
+          "type": "normal"
+        },
+        {
+          "name": "night-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "night-demon",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "normal",
+          "player3": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        2
+      ]
+    }
+  ]
+}

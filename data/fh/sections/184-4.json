@@ -1,0 +1,65 @@
+{
+  "index": "184.4",
+  "name": "The Tempus Forge",
+  "edition": "fh",
+  "parent": "106",
+  "marker": "2",
+  "monsters": [
+    "earth-demon"
+  ],
+  "objectives": [
+    {
+      "name": "Altar",
+      "health": "[(L+2)xC/2{$math.floor}]",
+      "marker": "2"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "figures": [
+        {
+          "type": "present",
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "2"
+          }
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": ".*"
+          },
+          "type": "heal",
+          "value": "2"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "monster": [
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

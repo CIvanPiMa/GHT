@@ -1,0 +1,135 @@
+{
+  "index": "20",
+  "name": "Midnight Ritual",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "unlocks": [
+    "22"
+  ],
+  "requirements": [
+    {
+      "party": [
+        "!fallen-lava"
+      ]
+    }
+  ],
+  "links": [
+    "22"
+  ],
+  "rewards": {
+    "reputation": 1,
+    "prosperity": 1,
+    "custom": "%data.scenario.rewards.cs.random-orb%"
+  },
+  "monsters": [
+    "deep-terror",
+    "living-spirit",
+    "the-cultist"
+  ],
+  "objectives": [
+    {
+      "name": "Altar",
+      "health": "3x(C+L)",
+      "marker": "a"
+    },
+    {
+      "name": "Altar",
+      "health": "3x(C+L)",
+      "marker": "b"
+    },
+    {
+      "name": "Altar",
+      "health": "3x(C+L)",
+      "marker": "c"
+    }
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "muddle",
+          "scenarioEffect": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "K2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "the-cultist",
+          "type": "boss"
+        }
+      ],
+      "objectives": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

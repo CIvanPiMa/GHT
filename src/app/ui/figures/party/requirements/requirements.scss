@@ -1,0 +1,41 @@
+.requirements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(var(--ght-unit) * 3 * var(--ght-text-factor));
+
+  .achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkbox {
+    cursor: pointer;
+    margin-top: calc(var(--ght-unit) * 3 * var(--ght-text-factor));
+    display: flex;
+    align-items: center;
+    font-family: var(--ght-font-text);
+    color: var(--ght-color-gray);
+    font-size: calc(var(--ght-unit) * 2 * var(--ght-text-factor));
+  }
+
+  .scenarios {
+    font-size: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .requires {
+      text-align: center;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .separator {
+      margin: 0 calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
+    }
+  }
+}

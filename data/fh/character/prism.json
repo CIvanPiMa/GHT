@@ -1,0 +1,497 @@
+{
+  "name": "prism",
+  "characterClass": "unfettered",
+  "edition": "fh",
+  "tokens": [
+    "mode"
+  ],
+  "handSize": 11,
+  "traits": [
+    "armored",
+    "educated",
+    "resourceful"
+  ],
+  "color": "#d7ad47",
+  "spoiler": true,
+  "specialActions": [
+    {
+      "name": "autoapply_mode"
+    },
+    {
+      "name": "long_rest",
+      "perk": 8
+    },
+    {
+      "name": "prism_mode",
+      "summon": true
+    },
+    {
+      "name": "repair_mode",
+      "expire": true
+    },
+    {
+      "name": "spider_mode",
+      "level": 8,
+      "expire": true
+    }
+  ],
+  "stats": [
+    {
+      "level": 1,
+      "health": 8
+    },
+    {
+      "level": 2,
+      "health": 9
+    },
+    {
+      "level": 3,
+      "health": 11
+    },
+    {
+      "level": 4,
+      "health": 12
+    },
+    {
+      "level": 5,
+      "health": 14
+    },
+    {
+      "level": 6,
+      "health": 15
+    },
+    {
+      "level": 7,
+      "health": 17
+    },
+    {
+      "level": 8,
+      "health": 18
+    },
+    {
+      "level": 9,
+      "health": 20
+    }
+  ],
+  "availableSummons": [
+    {
+      "name": "armored-tank",
+      "cardId": "387",
+      "thumbnail": true,
+      "level": 1,
+      "health": 6,
+      "attack": 2,
+      "movement": 2,
+      "action": {
+        "type": "shield",
+        "value": 1
+      }
+    },
+    {
+      "name": "repair-drone",
+      "cardId": "388",
+      "thumbnail": true,
+      "level": 1,
+      "health": 3,
+      "attack": 1,
+      "movement": 2,
+      "range": 3,
+      "flying": true,
+      "action": {
+        "type": "grid",
+        "value": "1",
+        "subActions": [
+          {
+            "type": "custom",
+            "value": "%data.custom.fh.prism.1%",
+            "small": true
+          },
+          {
+            "type": "heal",
+            "value": 1,
+            "small": true,
+            "subActions": [
+              {
+                "type": "range",
+                "value": 3,
+                "small": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "jackal-mech",
+      "cardId": "389",
+      "thumbnail": true,
+      "level": 1,
+      "health": 4,
+      "attack": 2,
+      "movement": 3,
+      "action": {
+        "type": "condition",
+        "value": "wound"
+      },
+      "additionalAction": {
+        "type": "retaliate",
+        "value": 1
+      }
+    },
+    {
+      "name": "leaper",
+      "cardId": "390",
+      "thumbnail": true,
+      "level": 1,
+      "health": 7,
+      "attack": 1,
+      "movement": 5,
+      "action": {
+        "type": "shield",
+        "value": 1,
+        "subActions": [
+          {
+            "type": "custom",
+            "value": "%data.custom.fh.prism.2%",
+            "small": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "sniper-turret",
+      "cardId": "391",
+      "thumbnail": true,
+      "level": 1,
+      "health": 3,
+      "attack": 2,
+      "range": 4
+    },
+    {
+      "name": "arcing-generator",
+      "cardId": "398",
+      "thumbnail": true,
+      "level": 1,
+      "health": 5,
+      "attack": 2,
+      "movement": 4,
+      "action": {
+        "type": "pierce",
+        "value": 2,
+        "subActions": [
+          {
+            "type": "specialTarget",
+            "value": "enemiesAdjacent",
+            "small": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "dampening-unit",
+      "cardId": "401",
+      "thumbnail": true,
+      "level": 2,
+      "health": 5,
+      "attack": 1,
+      "movement": 2,
+      "range": 2,
+      "action": {
+        "type": "custom",
+        "value": "%data.custom.fh.prism.3%",
+        "small": true
+      }
+    },
+    {
+      "name": "machine-bolter",
+      "cardId": "403",
+      "thumbnail": true,
+      "level": 3,
+      "health": 3,
+      "attack": 2,
+      "range": 3,
+      "action": {
+        "type": "target",
+        "value": 2
+      }
+    },
+    {
+      "name": "toxin-distributor",
+      "cardId": "405",
+      "thumbnail": true,
+      "level": 4,
+      "health": 6,
+      "attack": 2,
+      "movement": 2,
+      "action": {
+        "type": "condition",
+        "value": "poison"
+      }
+    },
+    {
+      "name": "trapping-unit",
+      "cardId": "407",
+      "thumbnail": true,
+      "level": 5,
+      "health": 7,
+      "attack": 2,
+      "movement": 3,
+      "action": {
+        "type": "custom",
+        "value": "%data.custom.fh.prism.4%",
+        "small": true
+      },
+      "additionalAction": {
+        "type": "condition",
+        "value": "immobilize"
+      }
+    },
+    {
+      "name": "sword-propeller",
+      "cardId": "409",
+      "thumbnail": true,
+      "level": 6,
+      "health": 1,
+      "attack": 2,
+      "movement": 5,
+      "action": {
+        "type": "custom",
+        "value": "%data.custom.fh.prism.5%",
+        "small": true
+      }
+    },
+    {
+      "name": "bombardier",
+      "cardId": "411",
+      "thumbnail": true,
+      "level": 7,
+      "health": 5,
+      "attack": 2,
+      "movement": 1,
+      "range": 4,
+      "action": {
+        "type": "area",
+        "value": "(0,0,target)|(0,1,target)|(1,0,target)",
+        "small": true
+      }
+    },
+    {
+      "name": "shield-spider",
+      "cardId": "413",
+      "thumbnail": true,
+      "level": 8,
+      "health": 7,
+      "attack": 2,
+      "movement": 3,
+      "action": {
+        "type": "grid",
+        "value": "1",
+        "subActions": [
+          {
+            "type": "custom",
+            "value": "%data.custom.fh.prism.1%",
+            "small": true
+          },
+          {
+            "type": "condition",
+            "value": "ward",
+            "small": true,
+            "subActions": [
+              {
+                "type": "range",
+                "value": 4,
+                "small": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "sledge-driver",
+      "cardId": "415",
+      "thumbnail": true,
+      "level": 9,
+      "health": 9,
+      "attack": 4,
+      "movement": 2,
+      "action": {
+        "type": "shield",
+        "value": 1
+      },
+      "additionalAction": {
+        "type": "pierce",
+        "value": 3
+      }
+    }
+  ],
+  "perks": [
+    {
+      "type": "remove",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 3,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.prism.6%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 3,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.prism.7%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 3,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "heal",
+                "value": 1,
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "self"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus2",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "muddle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "condition",
+                "value": "poison"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "condition",
+                "value": "wound"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "count": 2,
+      "combined": true,
+      "custom": "%data.custom.fh.prism.8%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.fh.prism.9%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "immunity": "wound",
+      "custom": "%data.custom.fh.prism.10%"
+    }
+  ],
+  "masteries": [
+    "%data.custom.fh.prism.11%",
+    "%data.custom.fh.prism.12%"
+  ]
+}

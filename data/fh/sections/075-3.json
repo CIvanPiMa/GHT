@@ -1,0 +1,43 @@
+{
+  "index": "75.3",
+  "name": "The Way Forward",
+  "edition": "fh",
+  "parent": "38",
+  "parentSections": [
+    [
+      "23.1"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "sun-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        16
+      ],
+      "monster": [
+        {
+          "name": "sun-demon",
+          "type": "normal"
+        },
+        {
+          "name": "sun-demon",
+          "type": "normal"
+        },
+        {
+          "name": "sun-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "sun-demon",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

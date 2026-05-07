@@ -1,0 +1,53 @@
+{
+  "index": "35A",
+  "name": "Ternion Tomb",
+  "edition": "toa",
+  "parent": "78",
+  "marker": "1",
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "type": "normal"
+        },
+        {
+          "name": "cultist",
+          "player2": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "player2": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal"
+        }
+      ]
+    }
+  ]
+}

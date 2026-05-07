@@ -1,0 +1,34 @@
+<div class="container">
+  <ght-header [standalone]="true"></ght-header>
+
+  <div class="menu">
+    <label>
+      <span [ght-label]="'settings.edition'"></span>
+      <select [(ngModel)]="edition" (change)="update(); updateQueryParams()">
+        @for (edition of gameManager.editions(true); track edition) {
+          <option [value]="edition">
+            <span [ght-label]="'data.edition.' + edition"></span>
+          </option>
+        }
+      </select>
+    </label>
+    <label>
+      <span [ght-label]="'settings.edition'"></span>
+      <select [(ngModel)]="comparisonEdition" (change)="update(); updateQueryParams()">
+        <option value="" [ght-label]="'settings.edition'"></option>
+        @for (edition of gameManager.editions(true); track edition) {
+          <option [value]="edition">
+            <span [ght-label]="'data.edition.' + edition"></span>
+          </option>
+        }
+      </select>
+    </label>
+    <input [(ngModel)]="filter" (change)="update(); updateQueryParams()" />
+  </div>
+
+  <div class="items">
+    @for (itemData of items | trackUUID; track itemData._trackUUID) {
+      <ght-item [item]="itemData" [flipped]="true" [editionLabel]="'show'"></ght-item>
+    }
+  </div>
+</div>

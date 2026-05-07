@@ -1,0 +1,101 @@
+{
+  "index": "25",
+  "name": "Brightspark, Behold!",
+  "flowChartGroup": "wonderous",
+  "edition": "cs",
+  "unlocks": [
+    "31"
+  ],
+  "rewards": {
+    "reputation": 1,
+    "events": [
+      "road:57"
+    ]
+  },
+  "monsters": [
+    "giant-viper",
+    "spitting-drake"
+  ],
+  "objectives": [
+    {
+      "name": "Brightspark",
+      "escort": true,
+      "health": "C+(Lx3)",
+      "initiative": 50,
+      "marker": "a",
+      "actions": [
+        {
+          "type": "move",
+          "value": 2
+        },
+        {
+          "type": "attack",
+          "value": 1
+        },
+        {
+          "type": "element",
+          "value": "wild",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "heal",
+              "value": 2,
+              "small": true,
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "I1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "giant-viper",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<div class="item-dialog" [ngClass]="{ closed: !opened, opened: opened }" (click)="!character && close()">
+  @if (!character) {
+    <ght-item [item]="item" [flipped]="opened" [editionLabel]="gameManager.currentEdition()"></ght-item>
+  }
+  @if (!!character) {
+    <ght-character-item [character]="character" [item]="item" [setup]="setup" [flipped]="opened" [dialog]="true"></ght-character-item>
+  }
+  @if (!!character) {
+    <a class="close-dialog" (click)="close()"></a>
+  }
+</div>
+<div class="close-container" (click)="close()"></div>

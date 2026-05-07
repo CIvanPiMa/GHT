@@ -1,0 +1,51 @@
+<div class="hint-dialog">
+  <div class="hint">
+    @if (isEmpty) {
+      <p><span [ght-label]="'round.hint.empty'"></span></p>
+    }
+    @if (isMissingInitiative) {
+      <p><span [ght-label]="'round.hint.missingInitiative'"></span></p>
+    }
+    @if (isActive) {
+      <p><span [ght-label]="'round.hint.active'"></span></p>
+    }
+    @if (isActive) {
+      <a (click)="confirm()"><span [ght-label]="'round.hint.confirm'"></span></a>
+    }
+    @if (isActive) {
+      <a (click)="next()" class="small"><span [ght-label]="'round.hint.confirmTurns'"></span></a>
+    }
+    @if (isFinish) {
+      <p><span [ght-label]="'round.hint.finish'"></span></p>
+    }
+    @if (isFinish) {
+      <a (click)="finishScenario(true)"><span [ght-label]="'round.hint.confirmFinish'"></span></a>
+    }
+    @if (isFailed) {
+      <p><span [ght-label]="'round.hint.failed'"></span></p>
+    }
+    @if (isFailed) {
+      <a (click)="finishScenario(false)"><span [ght-label]="'round.hint.confirmFailed'"></span></a>
+    }
+    @if (isFailed) {
+      <a (click)="resetScenario()"><span [ght-label]="'round.hint.confirmReset'"></span></a>
+    }
+    @if (isFinish || isFailed) {
+      <a (click)="confirm()"
+        ><span [ght-label]="gameManager.game.state === GameState.next ? 'round.hint.continueNext' : 'round.hint.continueDraw'"></span
+      ></a>
+    }
+    @if (isBattleGoals) {
+      <p><span [ght-label]="'round.hint.battleGoals'"></span></p>
+    }
+    @if (isBattleGoals) {
+      <a (click)="confirm()"><span [ght-label]="'round.hint.confirm'"></span></a>
+    }
+    @if (isEventDraw && gameManager.game.eventDraw) {
+      <p><span [ght-label]="'round.hint.eventDraw'" [ght-label-args]="[gameManager.game.eventDraw]"></span></p>
+    }
+    @if (isEventDraw) {
+      <a (click)="confirm()"><span [ght-label]="'round.hint.confirm'"></span></a>
+    }
+  </div>
+</div>

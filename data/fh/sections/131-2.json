@@ -1,0 +1,75 @@
+{
+  "index": "131.2",
+  "name": "Fish King's Ascension",
+  "edition": "fh",
+  "parent": "77",
+  "monsters": [
+    "wind-demon"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "Read %data.section:184.5%",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "wind-demon"
+          },
+          "type": "dead"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "sections": [
+        "102.2"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "fish-king",
+            "health": "[H/2{$math.ceil}]"
+          },
+          "type": "present"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "fish-king"
+          },
+          "type": "setHp",
+          "value": "[H/2{$math.ceil}]"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "wind-demon",
+          "type": "normal"
+        },
+        {
+          "name": "wind-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "wind-demon",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

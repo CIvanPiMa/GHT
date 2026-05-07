@@ -1,0 +1,84 @@
+.character-add {
+  min-width: calc(var(--ght-unit) * 45 * var(--ght-dialog-factor));
+}
+
+.level-container {
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(5, calc(var(--ght-unit) * 8 * var(--ght-dialog-factor)));
+  margin: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+  background-image: url('../../../../../assets/images/dialog_background.png');
+  z-index: 2;
+
+  &.fh {
+    background-image: url('../../../../../assets/images/fh/dialog_background_fh.png');
+  }
+
+  &.modern {
+    background-image: url('../../../../../assets/images/modern/dialog_background_modern.png');
+  }
+
+  span.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+    width: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+  }
+
+  img {
+    height: calc(var(--ght-unit) * 4 * var(--ght-dialog-factor));
+    width: auto;
+  }
+
+  .level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+    width: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+    cursor: pointer;
+    font-family: var(--ght-font-title);
+    font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    color: var(--ght-color-white);
+    text-shadow: var(--ght-outline);
+
+    &:hover {
+      border: calc(var(--ght-unit) / 5) var(--ght-color-gray) solid;
+      border-radius: 100%;
+    }
+
+    &.active {
+      pointer-events: none;
+      border: calc(var(--ght-unit) / 4) var(--ght-color-white) solid;
+      border-radius: 100%;
+    }
+  }
+
+  .search {
+    grid-column: 5 span;
+  }
+
+  & + .columns .column .line.sticky,
+  & + .columns .column .line:not(sticky):first-child {
+    padding-top: calc(var(--ght-unit) * 20.5 * var(--ght-dialog-factor));
+  }
+}
+
+.reveal-all {
+  position: absolute;
+  bottom: 0;
+  border-top: calc(var(--ght-unit) * 0.1) solid var(--ght-color-gray) !important;
+  width: auto !important;
+}
+
+.spoilers .line:nth-child(2),
+.spoilers .reveal-all + .line {
+  border-top: none !important;
+}
+
+.spoilers .line:last-child {
+  margin-bottom: calc(var(--ght-unit) * 6 * var(--ght-dialog-factor));
+}

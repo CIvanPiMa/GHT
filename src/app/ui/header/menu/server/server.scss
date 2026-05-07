@@ -1,0 +1,105 @@
+.server {
+  .server-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    column-gap: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    font-family: var(--ght-font-normal);
+    font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+
+    label {
+      color: var(--ght-color-disabled);
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      margin-right: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    }
+
+    p {
+      color: var(--ght-color-gray);
+      align-self: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .server-version {
+      color: var(--ght-color-gray);
+      align-self: center;
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+
+      span {
+        margin-right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+
+        &.unknown {
+          font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+          color: var(--ght-color-darkgray);
+        }
+
+        &.latest {
+          color: var(--ght-color-darkgreen);
+        }
+
+        &.update {
+          color: var(--ght-color-yellow);
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      color: var(--ght-color-gray);
+      align-self: center;
+      justify-self: center;
+      padding: 0;
+      margin: 0;
+
+      &:hover {
+        color: var(--ght-color-white);
+      }
+    }
+  }
+
+  .line {
+    label.label {
+      color: var(--ght-color-disabled) !important;
+      pointer-events: none;
+    }
+
+    &.characters,
+    &.monsters {
+      margin-left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .server-run {
+      font-family: var(--ght-font-normal);
+      font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+    }
+
+    .code-container {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  .hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px), (orientation: portrait) {
+  .menu-container.two-column {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+
+    .separator,
+    .span {
+      grid-column: 1 span;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "index": "106",
+  "name": "Intricate Work",
+  "flowChartGroup": "the-rift",
+  "coordinates": {
+    "x": 1751.75,
+    "y": 1314.75,
+    "width": 153,
+    "height": 160,
+    "gridLocation": "I-12"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "requirements": [
+    {
+      "global": [
+        "knowledge-is-power:2"
+      ]
+    }
+  ],
+  "links": [
+    "112"
+  ],
+  "monsters": [
+    "aesther-scout"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "M1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "aesther-scout",
+          "type": "elite"
+        },
+        {
+          "name": "aesther-scout",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "aesther-scout",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "aesther-scout",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

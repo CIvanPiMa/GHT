@@ -1,0 +1,8 @@
+{
+  "edition": "sox",
+  "additional": true,
+  "extensions": [
+    "gh",
+    "fc"
+  ]
+}

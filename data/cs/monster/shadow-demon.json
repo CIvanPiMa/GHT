@@ -1,0 +1,75 @@
+{
+  "name": "shadow-demon",
+  "edition": "cs",
+  "deck": "night-demon",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "night-demon",
+  "standeeShareEdition": "gh",
+  "baseStat": {
+    "type": "boss",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%game.custom.disadvantage%"
+      }
+    ],
+    "immunities": [
+      "immobilize",
+      "disarm",
+      "stun",
+      "curse"
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "5xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 1,
+      "health": "8xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 2,
+      "health": "11xC",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 3,
+      "health": "13xC",
+      "movement": 4,
+      "attack": 5
+    },
+    {
+      "level": 4,
+      "health": "15xC",
+      "movement": 5,
+      "attack": 5
+    },
+    {
+      "level": 5,
+      "health": "17xC",
+      "movement": 5,
+      "attack": 6
+    },
+    {
+      "level": 6,
+      "health": "21xC",
+      "movement": 5,
+      "attack": 6
+    },
+    {
+      "level": 7,
+      "health": "21xC",
+      "movement": 5,
+      "attack": 8
+    }
+  ]
+}

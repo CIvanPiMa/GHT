@@ -1,0 +1,80 @@
+{
+  "index": "71",
+  "name": "Invasion of the Dock",
+  "flowChartGroup": "personal-quests",
+  "coordinates": {
+    "x": 1958.5,
+    "y": 2431,
+    "width": 132,
+    "height": 116,
+    "gridLocation": "FR"
+  },
+  "edition": "fh",
+  "complexity": 3,
+  "allyDeck": true,
+  "recaps": [
+    {
+      "type": "other",
+      "value": "%character.progress.personalQuest% 02 - %data.personalQuest.fh.509%"
+    }
+  ],
+  "rewards": {
+    "experience": 10,
+    "custom": "%data.scenario.rewards.fh.071%",
+    "calendarSection": [
+      "149.5-5"
+    ]
+  },
+  "monsters": [
+    "abael-scout",
+    "piranha-pig"
+  ],
+  "allied": [
+    "abael-scout",
+    "piranha-pig"
+  ],
+  "lootDeckConfig": {
+    "money": 8,
+    "lumber": 4,
+    "metal": 4,
+    "hide": 4
+  },
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "09-D",
+      "initial": true,
+      "monster": [
+        {
+          "name": "abael-scout",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "abael-scout",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "piranha-pig",
+          "type": "normal"
+        },
+        {
+          "name": "piranha-pig",
+          "type": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "piranha-pig",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

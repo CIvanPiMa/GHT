@@ -1,0 +1,80 @@
+{
+  "custom": {
+    "ir": {
+      "beast-rider": {
+        "1": "All enemies suffer %game.damage:2%",
+        "2": "All enemies suffer %game.damage:3%",
+        "3": "All enemies suffer %game.damage:4%",
+        "4": "All enemies suffer %game.damage:5%",
+        "5": "All enemies suffer %game.damage:6%",
+        "6": "All enemies suffer %game.damage:7%"
+      },
+      "thrax": {
+        "1": "Performs no actions"
+      }
+    }
+  },
+  "edition": {
+    "ir": "Ice Rift &lt;%wip%(!)&gt;"
+  },
+  "monster": {
+    "beast-rider": "Beast Rider",
+    "frost-wurm": "Frost Wurm",
+    "savvas-bookkeeper": "Savvas Bookkeeper",
+    "thrax": "Thrax"
+  },
+  "personalQuest": {
+    "ir": {
+      "A1": {
+        "": "Addictive Intoxication",
+        "1": "Became poisoned"
+      },
+      "A2": {
+        "": "The origin of the species",
+        "1": "Witnessed creatures being summoned by enemies"
+      },
+      "B1": {
+        "": "I see the future",
+        "1": "Correctly guessed battle goal completions"
+      },
+      "B2": {
+        "": "Against the odds",
+        "1": "Scenarios on hard difficulty completed"
+      },
+      "D1": {
+        "": "Essential fuel",
+        "1": "Frost Demons killed",
+        "2": "Flame Demons killed"
+      },
+      "D2": {
+        "": "The cog and the wheel",
+        "1": "Traps sprung or disarmed"
+      },
+      "LF1": {
+        "": "Now you see me...",
+        "1": "Killing blow dealt to enemies before they took turn"
+      },
+      "LF2": {
+        "": "Chroma flux",
+        "1": "Scenarios with Sun or Night Demons completed"
+      }
+    }
+  },
+  "scenario": {
+    "rewards": {
+      "ir": {
+        "04": "Minus 10 gold for each further upgrade to the ship.",
+        "05": "Minus 10 gold for each further upgrade to the ship. If you spend at least 20 gold each for upgrades, +1 reputation instead."
+      }
+    },
+    "title": {
+      "ir": {
+        "1": "The Stray Otter",
+        "2": "Unusual Customs",
+        "3": "A Ship Besieged",
+        "4": "Gloomhaven Secure Storage",
+        "5": "Gloomhaven Secure Storage"
+      }
+    }
+  }
+}

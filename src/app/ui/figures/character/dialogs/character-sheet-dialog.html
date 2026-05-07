@@ -1,0 +1,23 @@
+<div class="light character-sheet-dialog">
+  <div class="scroll-container">
+    <div class="lock-toggle" [ght-tooltip]="'character.progress.lock'" [ngClass]="{ denied: data.viewOnly && !data.forceEdit }">
+      <a ght-pointer-input (singleClick)="settingsManager.toggle('characterSheetLocked')">
+        <img
+          [src]="
+            './assets/images/lock' +
+            (settingsManager.settings.characterSheetLocked || (data.viewOnly && !data.forceEdit) ? '' : '-open') +
+            '.svg'
+          "
+        />
+      </a>
+    </div>
+
+    <ght-character-sheet
+      #characterSheet
+      [character]="data.character"
+      [editable]="!data.viewOnly"
+      [forceEdit]="data.forceEdit"
+      [dialogRef]="dialogRef"
+    ></ght-character-sheet>
+  </div>
+</div>

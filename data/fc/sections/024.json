@@ -1,0 +1,69 @@
+{
+  "index": "24",
+  "name": "Withered Grove",
+  "edition": "fc",
+  "parent": "96",
+  "marker": "c",
+  "monsters": [
+    "earth-demon"
+  ],
+  "objectives": [
+    {
+      "name": "Altar of Rot",
+      "health": "Cx2+L+4",
+      "marker": "e"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar of Rot",
+            "marker": "e"
+          },
+          "type": "dead"
+        }
+      ],
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "96",
+          "index": 2,
+          "section": false
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "ref": "C2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "earth-demon",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player4": "normal"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

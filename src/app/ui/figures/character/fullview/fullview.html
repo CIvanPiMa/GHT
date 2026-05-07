@@ -1,0 +1,99 @@
+<div class="container">
+  <div
+    class="summons-container"
+    [ngClass]="{ empty: summonCount === 0, off: character.off || character.exhausted || character.health <= 0 }"
+  >
+    <span class="spacer"></span>
+    <span class="icon" [ngClass]="{ empty: summonCount === 0 }" [entityAnimation]="summonCount === 0">
+      <img [src]="character.iconUrl" />
+    </span>
+    <div class="summons">
+      @for (summon of character.summons | trackUUID; track summon._trackUUID) {
+        <ght-standee [figure]="character" [entity]="summon"> </ght-standee>
+      }
+    </div>
+  </div>
+
+  <div class="fullview">
+    <div class="row">
+      <ght-character-image
+        [character]="character"
+        [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.round }"
+      >
+      </ght-character-image>
+
+      <ght-pointer-input
+        class="drag-initiative"
+        (dragMove)="gameManager.stateManager.characterPermissions[character.name + '|' + character.edition] && dragInitiativeMove($event)"
+        (dragEnd)="gameManager.stateManager.characterPermissions[character.name + '|' + character.edition] && dragInitiativeEnd($event)"
+        [draggingDisabled]="!settingsManager.settings.dragValuesInitiative"
+        (singleClick)="toggleFigure($event)"
+        (doubleClick)="
+          gameManager.stateManager.characterPermissions[character.name + '|' + character.edition] && initiativeDoubleClick($event)
+        "
+        [ngClass]="{
+          'outer-denied':
+            gameManager.stateManager.permissions &&
+            !gameManager.stateManager.permissions.round &&
+            !gameManager.stateManager.characterPermissions[character.name + '|' + character.edition]
+        }"
+      >
+      </ght-pointer-input>
+
+      <ght-character-initiative [figure]="character"></ght-character-initiative>
+
+      <ght-highlight-conditions [entity]="character" [figure]="character"></ght-highlight-conditions>
+    </div>
+
+    <div class="row">
+      <div class="conditions">
+        @for (entityCondition of activeConditions | trackUUID; track entityCondition._trackUUID) {
+          <span class="condition">
+            <img
+              [src]="'./assets/images' + (settingsManager.settings.fhStyle ? '/fh' : '') + '/condition/' + entityCondition.name + '.svg'"
+              [style.z-index]="entityCondition.value"
+            />
+            @if (entityCondition.types.includes(ConditionType.stack)) {
+              @for (i of [] | ghsRange: entityCondition.value - 1; track i) {
+                <img
+                  class="stack"
+                  [style.z-index]="entityCondition.value - i - 1"
+                  [src]="
+                    './assets/images' + (settingsManager.settings.fhStyle ? '/fh' : '') + '/condition/' + entityCondition.name + '.svg'
+                  "
+                />
+              }
+            }
+            @if (entityCondition.types.includes(ConditionType.value)) {
+              <span class="value">{{ entityCondition.value }}</span>
+            }
+          </span>
+        }
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="dialog">
+        <div class="dialog-container">
+          <ght-conditions
+            [entity]="character"
+            [figure]="character"
+            [entityConditions]="character.entityConditions"
+            [immunities]="character.immunities"
+            type="character"
+            [columns]="6"
+          >
+          </ght-conditions>
+        </div>
+      </div>
+    </div>
+
+    <div class="row sheet">
+      <ght-character-sheet [character]="character" [standalone]="true"></ght-character-sheet>
+    </div>
+  </div>
+
+  <a class="wip" (click)="cancel()"
+    ><img class="ght-svg" src="./assets/images/warning.svg" /> <span [ght-label]="'wip'"></span>!&nbsp;<span [ght-label]="'cancel'"></span>!
+  </a>
+</div>

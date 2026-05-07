@@ -1,0 +1,142 @@
+import { Dialog } from '@angular/cdk/dialog';
+import { Overlay } from '@angular/cdk/overlay';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, OnInit, inject } from '@angular/core';
+import { gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { SettingsManager, settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { MonsterType } from 'src/app/game/model/data/MonsterType';
+import { GameState } from 'src/app/game/model/Game';
+import { Monster } from 'src/app/game/model/Monster';
+import { MonsterNumberPickerDialog } from 'src/app/ui/figures/monster/dialogs/numberpicker-dialog';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { PointerInputDirective } from 'src/app/ui/helper/pointer-input';
+import { ghsDefaultDialogPositions } from 'src/app/ui/helper/Static';
+
+@Component({
+  imports: [GhsLabelDirective, NgClass, PointerInputDirective],
+  selector: 'ght-monster-numberpicker',
+  templateUrl: 'numberpicker.html',
+  styleUrls: ['./numberpicker.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class MonsterNumberPicker implements OnInit {
+  private elementRef = inject(ElementRef);
+  private dialog = inject(Dialog);
+  private overlay = inject(Overlay);
+  private ghsManager = inject(GhsManager);
+
+  @Input() monster!: Monster;
+  @Input() type!: MonsterType;
+  @Input() range: number[] = [];
+  @Input() nonDead: number = 0;
+  @Input() count: number = 0;
+
+  settingsManager: SettingsManager = settingsManager;
+
+  maxStandees: number = 0;
+  usedStandees: number = 0;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.update());
+  }
+
+  ngOnInit(): void {
+    this.update();
+  }
+
+  update() {
+    this.maxStandees = gameManager.monsterManager.monsterStandeeMax(this.monster);
+    this.usedStandees = gameManager.monsterManager.monsterStandeeCount(this.monster);
+  }
+
+  hasEntity(): boolean {
+    return (
+      this.monster.entities.find((monsterEntity) => gameManager.entityManager.isAlive(monsterEntity) && monsterEntity.type === this.type) !=
+      undefined
+    );
+  }
+
+  open(): void {
+    if (!settingsManager.settings.standees) {
+      if (this.hasEntity()) {
+        this.monster.entities = this.monster.entities.filter((monsterEntity) => monsterEntity.type !== this.type);
+      } else {
+        this.nextStandee();
+      }
+      this.ghsManager.triggerUiChange();
+      return;
+    }
+
+    if (this.nonDead >= this.count) {
+      return;
+    }
+
+    if (this.maxStandees === this.count && this.nonDead === this.count - 1 && this.monster.entities.every((me) => me.number > 0)) {
+      for (let i = 0; i < this.count; i++) {
+        if (!this.monster.entities.some((me) => gameManager.entityManager.isAlive(me) && me.number === i + 1)) {
+          this.pickNumber(i + 1);
+        }
+      }
+    } else if (settingsManager.settings.randomStandees) {
+      this.randomStandee();
+    } else {
+      this.dialog.open(MonsterNumberPickerDialog, {
+        panelClass: ['dialog'],
+        data: {
+          monster: this.monster,
+          type: this.type,
+          range: this.range
+        },
+        positionStrategy: this.overlay
+          .position()
+          .flexibleConnectedTo(this.elementRef)
+          .withPositions(ghsDefaultDialogPositions(this.type === MonsterType.elite ? 'left' : 'right'))
+      });
+    }
+  }
+
+  randomStandee() {
+    const number = gameManager.monsterManager.monsterRandomStandee(this.monster);
+    this.pickNumber(number, true, false);
+  }
+
+  nextStandee() {
+    let number = 1;
+    while (this.monster.entities.some((monsterEntity) => monsterEntity.number === number)) {
+      number += 1;
+    }
+    this.pickNumber(number, true, true);
+  }
+
+  pickNumber(number: number, automatic: boolean = false, next: boolean = false) {
+    if (!gameManager.monsterManager.monsterStandeeUsed(this.monster, number) && this.type) {
+      let undoType = 'addStandee';
+      if (automatic && !next) {
+        undoType = 'addRandomStandee';
+      } else if (automatic) {
+        undoType = 'addNextStandee';
+      }
+      gameManager.stateManager.before(undoType, 'data.monster.' + this.monster.name, 'monster.' + this.type, '' + number);
+      const dead = this.monster.entities.find((monsterEntity) => monsterEntity.number === number);
+      if (dead) {
+        gameManager.monsterManager.removeMonsterEntity(this.monster, dead);
+      }
+      const entity = gameManager.monsterManager.addMonsterEntity(
+        this.monster,
+        number,
+        this.monster.bb && this.monster.tags.includes('bb-elite') ? MonsterType.elite : this.type,
+        false
+      );
+
+      if (gameManager.game.state === GameState.next && entity) {
+        this.monster.active = !gameManager.game.figures.some((figure) => figure.active);
+        if (this.monster.active) {
+          gameManager.sortFigures(this.monster);
+          entity.active = true;
+        }
+      }
+      gameManager.stateManager.after();
+    }
+  }
+}

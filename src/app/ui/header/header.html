@@ -1,0 +1,201 @@
+<header [ngClass]="settingsManager.settings.theme">
+  <div class="main-menu">
+    <a #mainMenuButton class="menu-button active-outline" [ght-label]="'menu.main'" [ght-label-attribute]="'title'" (click)="openMenu()">
+      <img class="ght-svg" src="./assets/images/menu.svg" />
+    </a>
+  </div>
+  @if (!standalone || connection) {
+    @if (gameManager.stateManager.serverError) {
+      <img
+        src="./assets/images/warning.svg"
+        [ght-tooltip]="gameManager.stateManager.serverError"
+        class="ght-svg server-connection closed"
+        [ght-label]="'server.error'"
+        [ght-label-attribute]="'title'"
+      />
+    }
+    @switch (wsState) {
+      @case (WebSocket.OPEN) {
+        <a
+          (click)="openMenu(SubMenu.server)"
+          [ght-label]="'server.connected'"
+          [ght-label-attribute]="'title'"
+          class="server-connection-status"
+        >
+          <img
+            src="./assets/images/server-connection.svg"
+            class="ght-svg server-connection connected"
+            [ght-label]="'server.connected'"
+            [ght-label-attribute]="'title'"
+          />
+        </a>
+      }
+      @case (WebSocket.CONNECTING) {
+        <img
+          src="./assets/images/server-connection.svg"
+          class="ght-svg server-connection connecting"
+          [ght-label]="'server.connecting'"
+          [ght-label-attribute]="'title'"
+        />
+      }
+      @case (WebSocket.CLOSING) {
+        <img
+          src="./assets/images/server-connection.svg"
+          class="ght-svg server-connection closing"
+          [ght-label]="'server.closing'"
+          [ght-label-attribute]="'title'"
+        />
+      }
+      @case (WebSocket.CLOSED) {
+        <a
+          (click)="settingsManager.settings.serverAutoconnect ? gameManager.stateManager.connect() : openMenu(SubMenu.server)"
+          [ght-label]="'server.reconnected'"
+          [ght-label-attribute]="'title'"
+          class="server-connection-status"
+        >
+          <img
+            src="./assets/images/warning.svg"
+            class="ght-svg server-connection closed"
+            [ght-label]="'server.closed'"
+            [ght-label-attribute]="'title'"
+          />
+          <img
+            src="./assets/images/server-connection.svg"
+            class="ght-svg server-connection closed"
+            [ght-label]="'server.closed'"
+            [ght-label-attribute]="'title'"
+          />
+        </a>
+      }
+      @case (-1) {
+        <a
+          (click)="settingsManager.settings.serverAutoconnect ? gameManager.stateManager.connect() : openMenu(SubMenu.server)"
+          [ght-label]="'server.reconnected'"
+          [ght-label-attribute]="'title'"
+          class="server-connection-status"
+        >
+          <img
+            src="./assets/images/server-connection.svg"
+            class="ght-svg server-connection disconnected"
+            [ght-label]="'server.disconnected'"
+            [ght-label-attribute]="'title'"
+          />
+        </a>
+      }
+    }
+  }
+
+  @if (!standalone) {
+    @if (syncing) {
+      <img src="./assets/images/shuffle.svg" class="server-connection syncing" />
+    }
+    @if (!syncing && gameManager.stateManager.wsState() !== -99 && gameManager.game.server) {
+      <span class="game-server">°</span>
+    }
+    @if (settingsManager.settings.hints) {
+      <div class="hints" [ngClass]="{ visible: init }">
+        @switch (hintState) {
+          @case ('characters') {
+            <a class="menu-hint" (click)="openMenu(SubMenu.character_add)">
+              <span
+                [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.characters }"
+                [ght-label]="'hints.addCharacters'"
+              >
+              </span>
+            </a>
+          }
+          @case ('scenario') {
+            <a
+              class="menu-hint"
+              [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.scenario }"
+            >
+              <span (click)="openMenu(SubMenu.scenario)" [ght-label]="'hints.setScenario'"></span>
+            </a>
+            <span [ght-label]="'or'"></span>
+            <a
+              class="menu-hint"
+              [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.monsters }"
+            >
+              <span (click)="openMenu(SubMenu.monster_add)" [ght-label]="'hints.addMonsters'"></span>
+            </a>
+          }
+          @case ('monsters') {
+            <a class="menu-hint" (click)="openMenu(SubMenu.monster_add)">
+              <span
+                [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.monsters }"
+                [ght-label]="'hints.addMonsters'"
+              >
+              </span>
+            </a>
+          }
+          @default {
+            <span [ght-label]="'hints.' + hintState"></span>
+          }
+        }
+      </div>
+    }
+    <span class="spacer"></span>
+    @if (!gameManager.bbRules() && !!gameManager.game.scenario && (characterCount > 0 || settingsManager.settings.partySheet)) {
+      <div
+        class="event-effects"
+        ght-pointer-input
+        (singleClick)="openEventEffects()"
+        (doubleClick)="openEventEffects(false)"
+        [ght-tooltip]="'entities.event.menu'"
+        [originX]="'center'"
+        [overlayX]="'center'"
+        [originY]="'bottom'"
+        [overlayY]="'top'"
+      >
+        <img
+          class="ght-svg"
+          [src]="
+            './assets/images/event' + (gameManager.game.round > 0 || gameManager.game.state === GameState.next ? '-effects' : '') + '.svg'
+          "
+        />
+      </div>
+    }
+    @if (!gameManager.bbRules() && settingsManager.settings.partySheet) {
+      <ght-party-sheet #partySheet></ght-party-sheet>
+    }
+    @if (gameManager.buildingsManager.petsEnabled) {
+      <div class="pets" (click)="openPets()">
+        <img class="ght-svg" src="./assets/images/fh/catching.svg" />
+      </div>
+    }
+    @if (settingsManager.settings.gameClock) {
+      <div
+        class="game-clock"
+        ght-pointer-input
+        (singleClick)="openGameClockDialog()"
+        (doubleClick)="toggleGameClock()"
+        [ght-tooltip]="
+          'duration.gameClock.' +
+          (lastGameClockTimestamp && !lastGameClockTimestamp.clockOut
+            ? currentGameClock === overallGameClock
+              ? 'running'
+              : 'runningTotal'
+            : overallGameClock
+              ? 'paused'
+              : 'off')
+        "
+        [ght-label-args]="[
+          overallGameClock ? (overallGameClock | ghsDurationLabel) : '',
+          currentGameClock ? (currentGameClock | ghsDurationLabel) : ''
+        ]"
+        [overlayX]="'center'"
+      >
+        <img
+          class="ght-svg"
+          [src]="'./assets/images/' + (lastGameClockTimestamp && !lastGameClockTimestamp.clockOut ? 'clock-out' : 'clock-in') + '.svg'"
+        />
+      </div>
+    }
+    <span class="spacer"></span>
+    <div class="elements" [ngClass]="{ denied: gameManager.stateManager.permissions && !gameManager.stateManager.permissions.elements }">
+      @for (element of gameManager.game.elementBoard | trackUUID; track element._trackUUID) {
+        <ght-element [element]="element"></ght-element>
+      }
+    </div>
+  }
+</header>

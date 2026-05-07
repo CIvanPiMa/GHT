@@ -1,0 +1,58 @@
+{
+  "index": "21",
+  "name": "A Fiery Death",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "unlocks": [
+    "27"
+  ],
+  "rewards": {
+    "partyAchievements": [
+      "fallen-lava"
+    ],
+    "items": [
+      "99-gh"
+    ]
+  },
+  "monsters": [
+    "earth-demon",
+    "flame-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "G1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "earth-demon",
+          "type": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player4": "normal"
+        },
+        {
+          "name": "flame-demon",
+          "type": "normal"
+        },
+        {
+          "name": "flame-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "flame-demon",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

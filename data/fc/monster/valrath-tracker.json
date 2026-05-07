@@ -1,0 +1,223 @@
+{
+  "name": "valrath-tracker",
+  "edition": "fc",
+  "deck": "tracker",
+  "count": 6,
+  "baseStat": {
+    "type": "normal"
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": 5,
+      "movement": 2,
+      "attack": 2,
+      "range": 2
+    },
+    {
+      "level": 1,
+      "health": 6,
+      "movement": 3,
+      "attack": 2,
+      "range": 2
+    },
+    {
+      "level": 2,
+      "health": 7,
+      "movement": 3,
+      "attack": 3,
+      "range": 2
+    },
+    {
+      "level": 3,
+      "health": 8,
+      "movement": 3,
+      "attack": 3,
+      "range": 3,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%game.custom.advantage%"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "health": 10,
+      "movement": 4,
+      "attack": 3,
+      "range": 3,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%game.custom.advantage%"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "health": 12,
+      "movement": 4,
+      "attack": 4,
+      "range": 3,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%game.custom.advantage%"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "health": 14,
+      "movement": 4,
+      "attack": 4,
+      "range": 4,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%game.custom.advantage%"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "health": 17,
+      "movement": 5,
+      "attack": 4,
+      "range": 4,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%game.custom.advantage%"
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 0,
+      "health": 9,
+      "movement": 2,
+      "attack": 3,
+      "range": 4
+    },
+    {
+      "type": "elite",
+      "level": 1,
+      "health": 11,
+      "movement": 2,
+      "attack": 3,
+      "range": 5,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 2,
+      "health": 12,
+      "movement": 2,
+      "attack": 4,
+      "range": 5,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 3,
+      "health": 14,
+      "movement": 2,
+      "attack": 4,
+      "range": 6,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 1
+        },
+        {
+          "type": "push",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 4,
+      "health": 16,
+      "movement": 3,
+      "attack": 4,
+      "range": 7,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 2
+        },
+        {
+          "type": "push",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 5,
+      "health": 18,
+      "movement": 3,
+      "attack": 5,
+      "range": 7,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 2
+        },
+        {
+          "type": "push",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 6,
+      "health": 21,
+      "movement": 3,
+      "attack": 5,
+      "range": 8,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 2
+        },
+        {
+          "type": "push",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "type": "elite",
+      "level": 7,
+      "health": 24,
+      "movement": 3,
+      "attack": 6,
+      "range": 8,
+      "actions": [
+        {
+          "type": "pierce",
+          "value": 3
+        },
+        {
+          "type": "push",
+          "value": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+.element-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #bg {
+    transition: clip-path calc(var(--ght-animation-speed) * 1000ms);
+  }
+
+  &.inert {
+    #bg {
+      clip-path: inset(100% 0px 0px 0px);
+    }
+  }
+
+  &.full,
+  &.always,
+  &.new {
+    #bg {
+      clip-path: inset(0% 0px 0px 0px);
+    }
+  }
+
+  &.new {
+    opacity: 0.7;
+  }
+
+  &.consumed {
+    #bg {
+      opacity: 0.3 !important;
+    }
+  }
+
+  &.half {
+    #bg {
+      clip-path: inset(50% 0px 0px 0px);
+    }
+  }
+}

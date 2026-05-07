@@ -1,0 +1,21 @@
+{
+  "index": "155.4",
+  "name": "Hall of Revelry Built: Playing Frosthaven Solo",
+  "edition": "fh",
+  "parentSections": [
+    [
+      "196.1"
+    ],
+    [
+      "153.2"
+    ]
+  ],
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "winter-road:WR-40"
+    ],
+    "custom": "%data.section.rewards.fh.155-4%"
+  }
+}

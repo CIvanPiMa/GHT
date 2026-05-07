@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    "stun",
+    "immobilize",
+    "disarm",
+    "wound",
+    "muddle",
+    "poison",
+    "invisible",
+    "strengthen",
+    "regenerate",
+    "ward",
+    "brittle",
+    "bane",
+    "impair",
+    "curse",
+    "bless"
+  ],
+  "edition": "fh",
+  "worldMap": {
+    "width": 2500,
+    "height": 3179
+  },
+  "extensions": [
+    "fh-crossover"
+  ],
+  "newAmStyle": true,
+  "newItemStyle": true,
+  "logoUrl": "./assets/images/logos/fh.png"
+}

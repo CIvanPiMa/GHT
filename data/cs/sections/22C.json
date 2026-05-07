@@ -1,0 +1,35 @@
+{
+  "index": "22C",
+  "name": "Imp Temple",
+  "edition": "cs",
+  "parent": "22",
+  "parentSections": [
+    [
+      "23A"
+    ]
+  ],
+  "marker": "5",
+  "monsters": [
+    "black-imp",
+    "harrower-infester"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 6,
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-infester",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "index": "36",
+  "name": "Hunters Bounty",
+  "flowChartGroup": "personal-quests",
+  "edition": "cs",
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.chain-helmet%"
+    ],
+    "gold": 10
+  },
+  "monsters": [
+    "bandit-archer",
+    "bandit-guard"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "A4a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-archer",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-archer",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "type": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

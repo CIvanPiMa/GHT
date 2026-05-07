@@ -1,0 +1,19 @@
+{
+  "index": "104",
+  "edition": "fc",
+  "parent": "108",
+  "parentSections": [
+    [
+      "44"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "partyAchievements": [
+      "xangroths-aid"
+    ],
+    "items": [
+      "155"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+<div class="menu-container debug">
+  <div class="line">
+    <label>
+      <input
+        tabclick
+        type="checkbox"
+        [checked]="settingsManager.settings.debugRightClick"
+        (change)="settingsManager.toggle('debugRightClick')"
+      />
+      <span [ght-label]="'settings.debug.rightClick'"></span>
+    </label>
+  </div>
+  <div class="separator"></div>
+  <div class="line">
+    <label>
+      <input
+        tabclick
+        type="checkbox"
+        [checked]="settingsManager.settings.logServerMessages"
+        (change)="settingsManager.toggle('logServerMessages')"
+      />
+      <span [ght-label]="'settings.debug.logServerMessages'"></span>
+    </label>
+  </div>
+  <div class="line ping">
+    <label class="label"><span [ght-label]="'server.ping'"></span></label>
+    <input
+      type="number"
+      #serverPing
+      [value]="settingsManager.settings.serverPing || '0'"
+      (keyup)="(0)"
+      (change)="setServerPing($event)"
+      [ght-label]="'server.ping'"
+      [ght-label-attribute]="'placeholder'"
+    />
+  </div>
+  <div class="separator"></div>
+  <div class="line">
+    <a tabclick (click)="clearFeedbackErrors()"><span [ght-label]="'settings.feedbackErrors.clear'"></span></a>
+  </div>
+  <div class="line title span">
+    <label><span [ght-label]="'editor'"></span></label>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/editor/monster'"><span [ght-label]="'editor.monster'"></span></a>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/editor/character'"><span [ght-label]="'editor.character'"></span></a>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/editor/deck'"><span [ght-label]="'editor.deck'"></span></a>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/editor/edition'"><span [ght-label]="'editor.edition'"></span></a>
+  </div>
+  <div class="line title span">
+    <label><span [ght-label]="'tools'"></span></label>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/tools/decks'"><span [ght-label]="'tools.decks'"></span></a>
+  </div>
+  <div class="line">
+    <a tabclick [routerLink]="'/tools/attackmodifier'"><span [ght-label]="'tools.attackModifier'"></span></a>
+  </div>
+  <div class="separator"></div>
+  <div class="line">
+    <a tabclick (click)="settingsManager.validateEditionData()"><span [ght-label]="'tools.validateEditionData'"></span></a>
+  </div>
+  <div class="separator"></div>
+  <div class="line">
+    <a tabclick [routerLink]="'/'"><span [ght-label]="'tools.backToGhs'"></span></a>
+  </div>
+</div>

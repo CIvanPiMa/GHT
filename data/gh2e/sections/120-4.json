@@ -1,0 +1,34 @@
+{
+  "index": "120.4",
+  "edition": "gh2e",
+  "parent": "81",
+  "monsters": [
+    "bloated-victim"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "gh2e",
+          "scenario": "74.2",
+          "index": 0,
+          "section": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "bloated-victim",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

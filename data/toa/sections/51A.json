@@ -1,0 +1,10 @@
+{
+  "index": "51.A",
+  "name": "Inevitable (%game.characterIconColored.gemstone% Retires)",
+  "edition": "toa",
+  "conclusion": true,
+  "rewards": {
+    "custom": "%data.section.rewards.toa.51A%"
+  },
+  "retirement": "gemstone"
+}

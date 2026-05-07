@@ -1,0 +1,51 @@
+{
+  "index": "16",
+  "name": "Preto Krisanta",
+  "flowChartGroup": "sail",
+  "edition": "cs",
+  "rewards": {
+    "gold": 10,
+    "custom": "%data.scenario.rewards.cs.16%"
+  },
+  "monsters": [
+    "flame-demon",
+    "sun-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "C2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "flame-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "flame-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "sun-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "sun-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "sun-demon",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

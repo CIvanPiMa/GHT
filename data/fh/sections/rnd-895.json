@@ -1,0 +1,92 @@
+{
+  "index": "895",
+  "group": "randomMonsterCard",
+  "name": "Tamed",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "polar-bear",
+    "vermling-priest",
+    "vermling-scout"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "polar-bear",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "3"
+        },
+        {
+          "name": "vermling-priest",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "2"
+        },
+        {
+          "name": "vermling-priest",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "10"
+        },
+        {
+          "name": "vermling-scout",
+          "type": "elite",
+          "marker": "1"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "8"
+        },
+        {
+          "name": "vermling-scout",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "11"
+        },
+        {
+          "name": "vermling-scout",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "7"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "trap",
+      "value": "spike-pit-trap",
+      "values": [
+        "damage"
+      ],
+      "marker": "4"
+    },
+    {
+      "type": "trap",
+      "value": "spike-pit-trap",
+      "values": [
+        "damage"
+      ],
+      "marker": "5"
+    },
+    {
+      "type": "loot",
+      "marker": "6"
+    },
+    {
+      "type": "loot",
+      "marker": "12"
+    }
+  ]
+}

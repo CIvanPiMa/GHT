@@ -1,0 +1,54 @@
+{
+  "index": "36.1",
+  "name": "A Contained Fire",
+  "edition": "fh",
+  "parent": "89",
+  "parentSections": [
+    [
+      "83.1"
+    ]
+  ],
+  "marker": "c",
+  "objectives": [
+    {
+      "name": "Altar",
+      "health": "[(L+1)xC/2{$math.floor}]",
+      "marker": "a"
+    },
+    {
+      "name": "Altar",
+      "health": "[(L+1)xC/2{$math.floor}]",
+      "marker": "b"
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "sections": [
+        "119.2"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "a"
+          },
+          "type": "dead"
+        },
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar",
+            "marker": "b"
+          },
+          "type": "dead"
+        }
+      ]
+    }
+  ]
+}

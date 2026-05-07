@@ -1,0 +1,841 @@
+import { Dialog } from '@angular/cdk/dialog';
+import { Overlay } from '@angular/cdk/overlay';
+import { NgClass } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  ViewChild,
+  inject
+} from '@angular/core';
+import { CharacterManager } from 'src/app/game/businesslogic/CharacterManager';
+import { GameManager, gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { SettingsManager, settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { Character } from 'src/app/game/model/Character';
+import { Action, ActionType } from 'src/app/game/model/data/Action';
+import { AttackModifierType } from 'src/app/game/model/data/AttackModifier';
+import { CharacterSpecialAction } from 'src/app/game/model/data/CharacterStat';
+import { ConditionName, ConditionType, EntityCondition, EntityConditionState } from 'src/app/game/model/data/Condition';
+import { EntityValueFunction } from 'src/app/game/model/Entity';
+import { GameState } from 'src/app/game/model/Game';
+import { Summon, SummonState } from 'src/app/game/model/Summon';
+import { ActionComponent } from 'src/app/ui/figures/actions/action';
+import { AttackModifierDrawComponent } from 'src/app/ui/figures/attackmodifier/attackmodifier-draw';
+import { AttackModiferDeckChange, AttackModifierDeckComponent } from 'src/app/ui/figures/attackmodifier/attackmodifierdeck';
+import { AttackModifierDeckFullscreenComponent } from 'src/app/ui/figures/attackmodifier/attackmodifierdeck-fullscreen';
+import { CharacterBattleGoalsDialog } from 'src/app/ui/figures/battlegoal/dialog/battlegoal-dialog';
+import { CharacterImageComponent } from 'src/app/ui/figures/character/cards/image';
+import { CharacterInitiativeComponent } from 'src/app/ui/figures/character/cards/initiative';
+import { CharacterInitiativeDialogComponent } from 'src/app/ui/figures/character/cards/initiative-dialog';
+import { CharacterSheetDialog } from 'src/app/ui/figures/character/dialogs/character-sheet-dialog';
+import { CharacterLootCardsDialog } from 'src/app/ui/figures/character/dialogs/loot-cards';
+import { CharacterSummonDialog } from 'src/app/ui/figures/character/dialogs/summondialog';
+import { CharacterItemListComponent } from 'src/app/ui/figures/character/item-list/item-list';
+import { AbilityCardsDialogComponent } from 'src/app/ui/figures/character/sheet/abilities/ability-cards-dialog';
+import { HighlightConditionsComponent } from 'src/app/ui/figures/conditions/highlight';
+import { EntitiesMenuDialogComponent } from 'src/app/ui/figures/entities-menu/entities-menu-dialog';
+import { FigureErrorsComponent } from 'src/app/ui/figures/errors/errors';
+import { ItemsCharacterDialogComponent } from 'src/app/ui/figures/items/character/items-character-dialog';
+import { ItemsDialogComponent } from 'src/app/ui/figures/items/dialog/items-dialog';
+import { LootComponent } from 'src/app/ui/figures/loot/loot-card';
+import { EntityIndexKeyComponent } from 'src/app/ui/figures/standee/entity-index-key/entity-index-key';
+import { StandeeComponent } from 'src/app/ui/figures/standee/standee';
+import { EntityAnimationDirective } from 'src/app/ui/helper/EntityAnimation';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { GhsMinZeroPipe, GhsRangePipe } from 'src/app/ui/helper/Pipes';
+import { PointerInputDirective } from 'src/app/ui/helper/pointer-input';
+import { ghsDefaultDialogPositions, ghsValueSign } from 'src/app/ui/helper/Static';
+import { GhsTooltipDirective } from 'src/app/ui/helper/tooltip/tooltip';
+import { TrackUUIDPipe } from 'src/app/ui/helper/trackUUID';
+import { ValueSignDirective } from 'src/app/ui/helper/ValueSign';
+
+@Component({
+  imports: [
+    NgClass,
+    EntityAnimationDirective,
+    GhsLabelDirective,
+    GhsTooltipDirective,
+    PointerInputDirective,
+    GhsMinZeroPipe,
+    GhsRangePipe,
+    TrackUUIDPipe,
+    ValueSignDirective,
+    ActionComponent,
+    AttackModifierDeckComponent,
+    AttackModifierDrawComponent,
+    CharacterImageComponent,
+    CharacterInitiativeComponent,
+    CharacterItemListComponent,
+    EntityIndexKeyComponent,
+    FigureErrorsComponent,
+    HighlightConditionsComponent,
+    LootComponent,
+    StandeeComponent
+  ],
+  selector: 'ght-character',
+  templateUrl: './character.html',
+  styleUrls: ['./character.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class CharacterComponent implements OnInit {
+  private dialog = inject(Dialog);
+  private overlay = inject(Overlay);
+  protected ghsManager = inject(GhsManager);
+  protected cdr = inject(ChangeDetectorRef);
+
+  @Input() character!: Character;
+
+  @ViewChild('charactertitle', { static: false }) titleInput!: ElementRef;
+  @ViewChild('characterName') characterName!: ElementRef;
+  @ViewChild('summonButton') summonButton!: ElementRef;
+
+  gameManager: GameManager = gameManager;
+  settingsManager: SettingsManager = settingsManager;
+  characterManager: CharacterManager = gameManager.characterManager;
+
+  GameState = GameState;
+  ConditionType = ConditionType;
+  EntityConditionState = EntityConditionState;
+  AttackModifierType = AttackModifierType;
+  levelDialog: boolean = false;
+
+  characterHp: number = 0;
+  characterMaxHp: number = 0;
+
+  characterTitle: string = '';
+  initiative: number = -1;
+  health: number = 0;
+  experience: number = 0;
+  loot: number = 0;
+  maxHp: number = 0;
+  token: number = 0;
+  amAnimationDrawing: boolean = false;
+  compact: boolean = false;
+  short: boolean = false;
+  shortMenu: boolean = false;
+
+  summons: Summon[] = [];
+  skullSpirits: Summon[] = [];
+  summonCount: number = 0;
+  skullSpiritCount: number = 0;
+  activeConditions: EntityCondition[] = [];
+  specialActions: CharacterSpecialAction[] = [];
+  exhausted: boolean = false;
+  off: boolean = false;
+  absent: boolean = false;
+  battleGoalSelected: boolean = false;
+  identityIcon: string = '';
+
+  bb: boolean = false;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.update());
+  }
+
+  ngOnInit(): void {
+    this.update();
+  }
+
+  update(): void {
+    this.characterHp = this.character.health;
+    this.characterMaxHp = this.character.maxHealth;
+    this.characterTitle = gameManager.characterManager.characterName(this.character);
+    this.summons = this.character.summons.filter((summon) => !summon.tags.includes('cs-skull-spirit'));
+    this.skullSpirits = this.character.summons.filter((summon) => summon.tags.includes('cs-skull-spirit'));
+    this.summonCount = this.summons.filter((summon) => gameManager.entityManager.isAlive(summon)).length;
+    this.skullSpiritCount = this.skullSpirits.filter((summon) => gameManager.entityManager.isAlive(summon)).length;
+    this.activeConditions = gameManager.entityManager.activeConditions(this.character);
+    this.character.immunities.forEach((immunity) => {
+      if (!this.activeConditions.find((entityCondition) => entityCondition.name === immunity)) {
+        this.activeConditions.push(new EntityCondition(immunity));
+      }
+    });
+
+    if (
+      settingsManager.settings.characterAttackModifierDeckPermanent &&
+      settingsManager.settings.characterAttackModifierDeckPermanentActive &&
+      gameManager.game.state === GameState.next
+    ) {
+      if (this.character.active) {
+        this.character.attackModifierDeck.active = true;
+      }
+    }
+
+    this.compact = settingsManager.settings.characterCompact && settingsManager.settings.theme !== 'modern';
+    this.short = (!settingsManager.settings.abilities || !settingsManager.settings.stats) && settingsManager.settings.theme !== 'modern';
+    this.shortMenu = false;
+    this.bb = gameManager.bbRules() || this.character.bb;
+    this.specialActions = this.character.specialActions.filter((specialAction) => this.character.tags.includes(specialAction.name));
+    this.exhausted = this.character.exhausted;
+    this.off = this.character.off || this.exhausted || this.character.health <= 0;
+    this.absent = this.character.absent;
+    this.battleGoalSelected = this.character.battleGoal && this.character.battleGoals.length > 0;
+    this.identityIcon =
+      this.character.identities && this.character.identities.length
+        ? gameManager.characterManager.characterIdentityIcon(this.character.name, this.character.identity)
+        : '';
+  }
+
+  beforeAttackModifierDeck(change: AttackModiferDeckChange) {
+    gameManager.stateManager.before(
+      'updateAttackModifierDeck.' + change.type,
+      gameManager.characterManager.characterName(this.character, true, true),
+      ...change.values
+    );
+  }
+
+  afterAttackModifierDeck(change: AttackModiferDeckChange) {
+    this.character.attackModifierDeck = change.deck;
+    gameManager.stateManager.after();
+  }
+
+  dragInitiativeMove(value: number) {
+    if (value > 99) {
+      value = 99;
+    } else if (value < 0) {
+      value = 0;
+    }
+
+    if (gameManager.game.state === GameState.next && value === 0 && settingsManager.settings.initiativeRequired) {
+      value = 1;
+    }
+
+    this.initiative = value;
+    this.cdr.markForCheck();
+  }
+
+  dragInitiativeEnd(value: number) {
+    if (value > 99) {
+      value = 99;
+    } else if (value < 0) {
+      value = 0;
+    }
+
+    if (gameManager.game.state === GameState.next && value === 0 && settingsManager.settings.initiativeRequired) {
+      value = 1;
+    }
+
+    if (this.character.initiative !== this.initiative) {
+      this.character.initiative = this.initiative;
+      gameManager.entityManager.before(this.character, this.character, 'setInitiative', value);
+      this.character.initiative = value;
+      if (value === 99) {
+        this.character.longRest = true;
+      } else if (!value || this.character.name !== 'prism' || !this.character.tags.includes('long_rest')) {
+        this.character.longRest = false;
+      }
+      this.initiative = -1;
+      this.character.initiativeVisible = true;
+      if (gameManager.game.state === GameState.next) {
+        gameManager.sortFigures(this.character);
+      }
+      gameManager.stateManager.after();
+    }
+  }
+
+  toggleFigure(event: any): void {
+    if (!this.character.absent) {
+      if (
+        gameManager.game.state === GameState.next &&
+        !this.character.exhausted &&
+        (!settingsManager.settings.initiativeRequired || this.character.initiative > 0)
+      ) {
+        const activeSummon = this.character.summons.find((summon) => summon.active);
+        const csSprits = this.character.summons.filter((summon) => summon.tags.includes('cs-skull-spirit'));
+        if (
+          settingsManager.settings.activeSummons &&
+          !activeSummon &&
+          this.character.active &&
+          csSprits.length &&
+          !csSprits.find((summon) => summon.active)
+        ) {
+          gameManager.stateManager.before(
+            'summonInactive',
+            gameManager.characterManager.characterName(this.character, true, true),
+            'data.summon.' + csSprits[0].name
+          );
+          csSprits.forEach((spirit) => spirit.tags.push('cs-skull-spirit-turn'));
+        } else if (settingsManager.settings.activeSummons && this.character.active && activeSummon) {
+          gameManager.stateManager.before(
+            'summonInactive',
+            gameManager.characterManager.characterName(this.character, true, true),
+            'data.summon.' + activeSummon.name
+          );
+        } else {
+          gameManager.stateManager.before(
+            this.character.active ? 'unsetActive' : 'setActive',
+            gameManager.characterManager.characterName(this.character, true, true)
+          );
+        }
+        gameManager.roundManager.toggleFigure(this.character);
+        gameManager.stateManager.after();
+      } else if (
+        (settingsManager.settings.initiativeRequired && this.character.initiative <= 0) ||
+        gameManager.game.state === GameState.draw
+      ) {
+        this.openInitiativeDialog(event);
+      }
+    }
+  }
+
+  nextIdentity(event: any): void {
+    if (settingsManager.settings.characterIdentities && this.character.identities && this.character.identities.length > 1) {
+      const timeTokens =
+        this.character.name === 'blinkblade' && this.character.tags.includes('time_tokens') && this.character.primaryToken === 0;
+
+      if (
+        (gameManager.game.state === GameState.next ||
+          (gameManager.game.state === GameState.draw && this.character.identity === 0 && this.character.tokenValues[0] === 0)) &&
+        timeTokens
+      ) {
+        return;
+      }
+
+      let next = this.character.identity + 1;
+      if (next >= this.character.identities.length) {
+        next = 0;
+      }
+
+      gameManager.entityManager.before(
+        this.character,
+        this.character,
+        'identity',
+        this.character.edition,
+        this.character.name,
+        next,
+        this.character.identities[next]
+      );
+      this.character.identity = next;
+      gameManager.stateManager.after();
+      event.preventDefault();
+    } else {
+      this.openEntityMenu();
+    }
+  }
+
+  openInitiativeDialog(event: any) {
+    this.dialog.open(CharacterInitiativeDialogComponent, {
+      panelClass: ['dialog'],
+      data: this.character,
+      positionStrategy: this.overlay.position().flexibleConnectedTo(event.target).withPositions(ghsDefaultDialogPositions())
+    });
+  }
+
+  initiativeDoubleClick(event: any) {
+    if (
+      this.character.active &&
+      this.character.summons
+        .filter((summon) => gameManager.entityManager.isAlive(summon) && summon.state !== SummonState.new)
+        .find((summon, index, self) => summon.active && index < self.length - 1)
+    ) {
+      this.character.summons.forEach((summon) => (summon.active = false));
+    } else {
+      this.openInitiativeDialog(event);
+    }
+  }
+
+  dragHpMove(value: number) {
+    this.health = value;
+    let maxHealth = EntityValueFunction(this.character.maxHealth);
+    if (this.character.name === 'lightning' && this.character.tags.find((tag) => tag === 'unbridled-power')) {
+      maxHealth = Math.max(maxHealth, 26);
+    }
+
+    if (this.character.health + this.health > maxHealth) {
+      this.health = maxHealth - this.character.health;
+    }
+  }
+
+  dragHpEnd() {
+    if (this.health !== 0) {
+      gameManager.entityManager.before(this.character, this.character, 'changeHP', ghsValueSign(this.health));
+      gameManager.entityManager.changeHealth(this.character, this.character, this.health);
+      this.health = 0;
+      gameManager.stateManager.after();
+    }
+  }
+
+  dragXpMove(value: number) {
+    this.experience = value;
+    if (this.character.experience + this.experience < 0) {
+      this.experience = -this.character.experience;
+    }
+  }
+
+  dragXpEnd() {
+    if (this.experience !== 0) {
+      gameManager.entityManager.before(this.character, this.character, 'changeXP', ghsValueSign(this.experience));
+      this.character.experience += this.experience;
+      this.experience = 0;
+      gameManager.stateManager.after();
+    }
+  }
+
+  addExperience(value: number) {
+    this.experience = value;
+    if (this.character.experience + this.experience >= 0) {
+      gameManager.entityManager.before(this.character, this.character, 'changeXP', ghsValueSign(this.experience));
+      this.character.experience += this.experience;
+      gameManager.stateManager.after();
+    }
+    this.experience = 0;
+  }
+
+  dragTokenMove(value: number) {
+    this.token = value;
+    if (this.character.primaryToken < 0 && this.character.token + this.token < 0) {
+      this.token = -this.character.token;
+    } else if (this.character.primaryToken >= 0 && this.character.tokenValues[this.character.primaryToken] + this.token < 0) {
+      this.token = -this.character.tokenValues[this.character.primaryToken];
+    } else if (
+      this.character.name === 'blinkblade' &&
+      this.character.tags.find((tag) => ['time_tokens', 'resonance_token'].indexOf(tag) >= 0) &&
+      this.character.primaryToken === 0 &&
+      this.character.tokenValues[0] + this.token > 5
+    ) {
+      this.token = 5 - this.character.tokenValues[this.character.primaryToken];
+    }
+  }
+
+  dragTokenEnd() {
+    if (this.token !== 0) {
+      if (this.character.primaryToken < 0) {
+        gameManager.entityManager.before(
+          this.character,
+          this.character,
+          'characterToken',
+          this.character.name,
+          this.character.token + this.token
+        );
+        this.character.token += this.token;
+        this.token = 0;
+        gameManager.stateManager.after();
+      } else {
+        gameManager.entityManager.before(
+          this.character,
+          this.character,
+          'characterTokenValue',
+          this.character.name,
+          this.character.tokens[this.character.primaryToken],
+          this.character.tokenValues[this.character.primaryToken] + this.token
+        );
+        this.character.tokenValues[this.character.primaryToken] += this.token;
+
+        if (
+          this.character.name === 'blinkblade' &&
+          this.character.tags.find((tag) => ['time_tokens', 'resonance_token'].indexOf(tag) >= 0) &&
+          this.character.primaryToken === 0 &&
+          this.character.tokenValues[0] > 5
+        ) {
+          this.character.tokenValues[0] = 5;
+        }
+
+        this.token = 0;
+        gameManager.stateManager.after();
+      }
+    }
+  }
+
+  dragLootMove(value: number) {
+    this.loot = value;
+    if (this.character.loot + this.loot < 0) {
+      this.loot = -this.character.loot;
+    }
+  }
+
+  dragLootEnd() {
+    if (this.loot !== 0) {
+      gameManager.entityManager.before(this.character, this.character, 'changeLoot', ghsValueSign(this.loot));
+      this.character.loot += this.loot;
+      this.loot = 0;
+      gameManager.stateManager.after();
+    }
+  }
+
+  addLoot(value: number) {
+    this.loot = value;
+    if (this.character.loot + this.loot >= 0) {
+      gameManager.entityManager.before(this.character, this.character, 'changeLoot', ghsValueSign(this.loot));
+      this.character.loot += this.loot;
+      gameManager.stateManager.after();
+    }
+    this.loot = 0;
+  }
+
+  dragCancel() {
+    this.health = 0;
+    this.experience = 0;
+    this.loot = 0;
+    this.token = 0;
+  }
+
+  openEntityMenu(): void {
+    this.dialog.open(EntitiesMenuDialogComponent, {
+      panelClass: ['dialog'],
+      data: {
+        entity: this.character,
+        figure: this.character,
+        positionElement: this.characterName
+      },
+      positionStrategy: this.overlay.position().flexibleConnectedTo(this.characterName).withPositions(ghsDefaultDialogPositions())
+    });
+  }
+
+  toggleDamageHP() {
+    if (this.compact) {
+      this.openCharacterSheet();
+    } else if (settingsManager.settings.damageHPToggle) {
+      settingsManager.toggle('damageHP');
+    }
+  }
+
+  openEntitiesMenu(event: any) {
+    this.dialog.open(EntitiesMenuDialogComponent, {
+      panelClass: ['dialog'],
+      data: {
+        figure: this.character
+      },
+      positionStrategy: this.overlay.position().flexibleConnectedTo(event.target).withPositions(ghsDefaultDialogPositions())
+    });
+  }
+
+  openSummonDialog(): void {
+    this.dialog.open(CharacterSummonDialog, {
+      panelClass: ['dialog'],
+      data: this.character,
+      positionStrategy: this.overlay.position().flexibleConnectedTo(this.summonButton).withPositions(ghsDefaultDialogPositions('left'))
+    });
+  }
+
+  openCharacterSheet(): void {
+    this.dialog.open(CharacterSheetDialog, {
+      panelClass: ['dialog-invert'],
+      data: { character: this.character }
+    });
+  }
+
+  removeCondition(entityCondition: EntityCondition) {
+    gameManager.entityManager.before(this.character, this.character, 'removeCondition', entityCondition.name);
+    const immunityIndex = this.character.immunities.indexOf(entityCondition.name);
+    if (immunityIndex !== -1) {
+      this.character.immunities.splice(immunityIndex, 1);
+    }
+    if (entityCondition.types.indexOf(ConditionType.stackable) && entityCondition.value > 1) {
+      entityCondition.value--;
+    } else {
+      gameManager.entityManager.removeCondition(this.character, this.character, entityCondition, entityCondition.permanent);
+    }
+    gameManager.stateManager.after();
+  }
+
+  removeMarker(marker: string) {
+    const edition = marker.split('-')[0];
+    const name = marker.split('-').slice(1).join('-');
+    gameManager.entityManager.before(this.character, this.character, 'removeCharacterMarker', marker, edition + '.' + name);
+    this.character.markers = this.character.markers.filter((value) => value !== marker);
+    gameManager.stateManager.after();
+  }
+
+  openBattleGoals(): void {
+    this.dialog.open(CharacterBattleGoalsDialog, {
+      panelClass: ['dialog'],
+      data: { character: this.character, draw: !this.character.battleGoals || this.character.battleGoals.length === 0 }
+    });
+  }
+
+  openItems(force: boolean = false): void {
+    if (settingsManager.settings.characterItemsPermanent && !force) {
+      this.character.itemsVisible = !this.character.itemsVisible;
+      gameManager.stateManager.saveLocal();
+      this.ghsManager.triggerUiChange();
+    } else if ((this.character.progress.items.length === 0 || force) && !this.bb) {
+      this.dialog.open(ItemsDialogComponent, {
+        panelClass: ['dialog'],
+        data: { edition: gameManager.game.edition, select: this.character, affordable: true }
+      });
+    } else {
+      this.dialog.open(ItemsCharacterDialogComponent, {
+        panelClass: ['dialog'],
+        data: this.character
+      });
+    }
+  }
+
+  characterFullView() {
+    if (settingsManager.settings.characterFullView) {
+      gameManager.game.figures.forEach((figure) => {
+        if (figure instanceof Character) {
+          figure.fullview = false;
+        }
+      });
+      this.character.fullview = true;
+      gameManager.stateManager.saveLocal();
+      this.ghsManager.triggerUiChange();
+    } else if (settingsManager.settings.characterSheet) {
+      this.openCharacterSheet();
+    } else {
+      this.openEntityMenu();
+    }
+  }
+
+  toggleAttackModifierDeckVisible() {
+    if (settingsManager.settings.characterAttackModifierDeckActiveBottom) {
+      if (!this.character.attackModifierDeckVisible) {
+        gameManager.game.figures.forEach((figure) => {
+          if (figure instanceof Character) {
+            figure.attackModifierDeckVisible = false;
+          }
+        });
+        this.character.attackModifierDeckVisible = true;
+      } else {
+        this.character.attackModifierDeckVisible = false;
+        if (settingsManager.settings.characterAttackModifierDeckPermanentActive && !this.character.active) {
+          gameManager.game.figures.forEach((figure) => {
+            if (figure instanceof Character && figure.active) {
+              figure.attackModifierDeckVisible = true;
+            }
+          });
+        }
+      }
+    } else if (
+      this.character.attackModifierDeckVisible &&
+      (!settingsManager.settings.characterAttackModifierDeckPermanent ||
+        !settingsManager.settings.characterAttackModifierDeckPermanentActive ||
+        !this.character.active)
+    ) {
+      this.character.attackModifierDeck.active = false;
+      this.character.attackModifierDeckVisible = false;
+    } else if (settingsManager.settings.characterAttackModifierDeckPermanent) {
+      this.character.attackModifierDeck.active = true;
+      this.character.attackModifierDeckVisible = true;
+      this.character.lootCardsVisible = false;
+    } else if (
+      settingsManager.settings.automaticAttackModifierFullscreen &&
+      settingsManager.settings.portraitMode &&
+      (window.innerWidth < 800 || window.innerHeight < 400)
+    ) {
+      this.character.lootCardsVisible = false;
+
+      const before = new EventEmitter<AttackModiferDeckChange>();
+      const after = new EventEmitter<AttackModiferDeckChange>();
+
+      before.subscribe({ next: (change: AttackModiferDeckChange) => this.beforeAttackModifierDeck(change) });
+      after.subscribe({ next: (change: AttackModiferDeckChange) => this.afterAttackModifierDeck(change) });
+
+      const dialog = this.dialog.open(AttackModifierDeckFullscreenComponent, {
+        panelClass: ['fullscreen-panel'],
+        backdropClass: ['fullscreen-backdrop'],
+        data: {
+          deck: this.character.attackModifierDeck,
+          character: this.character,
+          ally: false,
+          numeration: '' + this.character.number,
+          before: before,
+          after: after
+        }
+      });
+
+      dialog.closed.subscribe({
+        next: () => {
+          before.unsubscribe();
+          after.unsubscribe();
+        }
+      });
+    } else {
+      this.character.attackModifierDeck.active = true;
+      this.character.attackModifierDeckVisible = true;
+      this.character.lootCardsVisible = false;
+    }
+    gameManager.stateManager.saveLocal();
+    this.ghsManager.triggerUiChange();
+  }
+
+  toggleLootCardsVisible() {
+    if (this.character.lootCardsVisible) {
+      this.character.lootCardsVisible = false;
+    } else if (
+      settingsManager.settings.automaticAttackModifierFullscreen &&
+      settingsManager.settings.portraitMode &&
+      (window.innerWidth < 800 || window.innerHeight < 400)
+    ) {
+      this.character.lootCardsVisible = false;
+      this.openLootDeckDialog();
+    } else {
+      this.character.lootCardsVisible = true;
+      this.character.attackModifierDeck.active = false;
+      this.character.attackModifierDeckVisible = false;
+    }
+    gameManager.stateManager.saveLocal();
+  }
+
+  openLootDeckDialog() {
+    this.dialog.open(CharacterLootCardsDialog, {
+      panelClass: ['dialog'],
+      data: this.character
+    });
+  }
+
+  removeShield() {
+    gameManager.entityManager.before(this.character, this.character, 'changeShield', 0);
+    this.character.shield = undefined;
+    gameManager.stateManager.after();
+  }
+
+  removeShieldPersistent() {
+    gameManager.entityManager.before(this.character, this.character, 'changeShieldPersistent', 0);
+    this.character.shieldPersistent = undefined;
+    gameManager.stateManager.after();
+  }
+
+  removeRetaliate(index: number) {
+    const retaliate: Action[] = JSON.parse(JSON.stringify(this.character.retaliate));
+    const remove = retaliate.splice(index, 1)[0];
+    if (retaliate.length > 0) {
+      gameManager.entityManager.before(
+        this.character,
+        this.character,
+        'changeRetaliate',
+        retaliate
+          .map(
+            (action) =>
+              '%game.action.retaliate% ' +
+              EntityValueFunction(action.value) +
+              (action.subActions &&
+              action.subActions[0] &&
+              action.subActions[0].type === ActionType.range &&
+              EntityValueFunction(action.subActions[0].value) > 1
+                ? ' %game.action.range% ' + EntityValueFunction(action.subActions[0].value)
+                : '')
+          )
+          .join(', ')
+      );
+    } else {
+      gameManager.entityManager.before(
+        this.character,
+        this.character,
+        'changeRetaliate',
+        '%game.action.retaliate% ' + EntityValueFunction(remove.value)
+      );
+    }
+    this.character.retaliate = retaliate;
+    gameManager.stateManager.after();
+  }
+
+  removeRetaliatePersistent(index: number) {
+    const retaliatePersistent: Action[] = JSON.parse(JSON.stringify(this.character.retaliatePersistent));
+    const remove = retaliatePersistent.splice(index, 1)[0];
+    if (retaliatePersistent.length > 0) {
+      gameManager.entityManager.before(
+        this.character,
+        this.character,
+        'changeRetaliatePersistent',
+        retaliatePersistent
+          .map(
+            (action) =>
+              '%game.action.retaliate% ' +
+              EntityValueFunction(action.value) +
+              (action.subActions &&
+              action.subActions[0] &&
+              action.subActions[0].type === ActionType.range &&
+              EntityValueFunction(action.subActions[0].value) > 1
+                ? ' %game.action.range% ' + EntityValueFunction(action.subActions[0].value)
+                : '')
+          )
+          .join(', ')
+      );
+    } else {
+      gameManager.entityManager.before(
+        this.character,
+        this.character,
+        'changeRetaliate',
+        '%game.action.retaliate% ' + EntityValueFunction(remove.value)
+      );
+    }
+    this.character.retaliatePersistent = retaliatePersistent;
+    gameManager.stateManager.after();
+  }
+
+  removeSpecialAction(specialAction: string) {
+    gameManager.entityManager.before(
+      this.character,
+      this.character,
+      'removeSpecialTags',
+      '%data.character.' + this.character.edition + '.' + this.character.name + '.' + specialAction + '%'
+    );
+    this.character.tags = this.character.tags.filter((specialTag) => specialTag !== specialAction);
+
+    if (this.character.name === 'lightning' && specialAction === 'careless-charge') {
+      this.character.immunities = [];
+    }
+
+    if (this.character.name === 'shackles' && specialAction === 'delayed_malady') {
+      this.character.immunities = [];
+    }
+
+    if (this.character.name === 'boneshaper') {
+      if (specialAction === 'solid-bones' || specialAction === 'unholy-prowess') {
+        this.character.summons.forEach((summon) => {
+          if (summon.name === 'shambling-skeleton') {
+            summon.maxHealth -= 1;
+            if (summon.health > summon.maxHealth) {
+              summon.health = summon.maxHealth;
+            } else {
+              summon.health -= 1;
+            }
+            gameManager.entityManager.checkHealth(summon, this.character);
+
+            if (specialAction === 'solid-bones') {
+              summon.movement -= 1;
+              summon.action = undefined;
+            }
+          }
+        });
+      }
+    }
+
+    if (this.character.name === 'astral') {
+      if (specialAction === 'veil-of-protection') {
+        this.character.health -= 3;
+        this.character.maxHealth -= 3;
+
+        this.character.summons.forEach((summon) => {
+          summon.health -= 3;
+          summon.maxHealth -= 3;
+        });
+      }
+
+      if (specialAction === 'imbue-with-life') {
+        this.character.entityConditions = this.character.entityConditions.filter(
+          (entityCondition) => entityCondition.name !== ConditionName.disarm || !entityCondition.permanent
+        );
+      }
+    }
+
+    gameManager.stateManager.after();
+  }
+
+  inHandCount(): number {
+    const abilities = gameManager.deckData(this.character, true).abilities;
+    return abilities.filter((_, i) =>
+      !(this.character.discardedAbilities || []).includes(i) &&
+      !(this.character.lostAbilities || []).includes(i) &&
+      !(this.character.activatedAbilities || []).includes(i) &&
+      !(this.character.inactiveAbilities || []).includes(i) &&
+      (this.character.progress.deck.includes(i) || abilities[i].level === 1 || abilities[i].level === 'X')
+    ).length;
+  }
+
+  openAbilityCards() {
+    if (gameManager.deckData(this.character, true).abilities.length > 0) {
+      this.dialog.open(AbilityCardsDialogComponent, {
+        panelClass: ['dialog'],
+        data: { character: this.character }
+      });
+    }
+  }
+}

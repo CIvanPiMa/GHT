@@ -1,0 +1,45 @@
+{
+  "index": "55.3",
+  "name": "Spire Basement",
+  "edition": "fh",
+  "parent": "23",
+  "parentSections": [
+    [
+      "38.4"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "hateful-corpse",
+    "living-bones"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "hateful-corpse",
+          "type": "boss"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "living-bones",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

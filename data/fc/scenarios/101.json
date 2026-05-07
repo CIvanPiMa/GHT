@@ -1,0 +1,138 @@
+{
+  "index": "101",
+  "name": "Shrouded Crypt",
+  "flowChartGroup": "tainted-crypt",
+  "coordinates": {
+    "x": 1358.75,
+    "y": 1591.75,
+    "width": 155,
+    "height": 123,
+    "gridLocation": "K-9"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "108",
+    "109"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "knowledge-is-power"
+    ],
+    "collectiveGold": 20,
+    "reputation": 1,
+    "prosperity": 1,
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"Knowledge is Power\" achievement gained, read section 27 on page 10)"
+      ]
+    }
+  },
+  "monsters": [
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "amAdd",
+          "value": "curse:3",
+          "scenarioEffect": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "spitting-drake"
+          },
+          "type": "gainCondition",
+          "value": "immobilize"
+        }
+      ]
+    },
+    {
+      "round": "R % 2 == 0",
+      "note": "%data.scenario.rules.fc.101.1%",
+      "spawns": [
+        {
+          "monster": {
+            "name": "rending-drake",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "a"
+        }
+      ]
+    },
+    {
+      "round": "R % 2 == 0",
+      "note": "%data.scenario.rules.fc.101.1%",
+      "spawns": [
+        {
+          "monster": {
+            "name": "rending-drake",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "b"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "D1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "rending-drake",
+          "player4": "normal"
+        }
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "H3b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "rending-drake",
+          "type": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

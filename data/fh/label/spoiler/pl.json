@@ -1,0 +1,1593 @@
+{
+  "campaignSticker": {
+    "42-temple": "Świątynia"
+  },
+  "challenges": {
+    "fh": {
+      "1482": {
+        "": "Test Pancerza",
+        "text": "Za każdym razem, gdy dowolna postać otrzymuje %game.damage% od ataku i nie redukuje ich przez żadną %game.action.shield%, do tego ataku zostaje dodane %game.action.push%2."
+      },
+      "1483": {
+        "": "Empatia",
+        "text": "Za każdym razem, gdy dowolny wróg otrzymuje %game.damage%, wszyscy pozostali wrogowie zyskują korzyść na wszystkie swoje ataki do końca rundy."
+      },
+      "1484": {
+        "": "Optymizm",
+        "text": "Traktuj wszystkie negatywne i %game.attackmodifier.null% modyfikatory ataku dobrane z talii modyfikatorów ataku potworów jako %game.attackmodifier.plus0%."
+      },
+      "1485": {
+        "": "Zezowate Szczęście",
+        "text": "Traktuj każdy modyfikator ataku %game.attackmodifier.minus2% dobrany z talii modyfikatorów ataku potworów jako %game.attackmodifier.double%."
+      },
+      "1486": {
+        "": "Boska Interwencja",
+        "text": "Na początku scenariusza do talii modyfikatorów ataku potworów dodaj trzy karty modyfikatora ataku %game.attackmodifier.bless%."
+      },
+      "1487": {
+        "": "Hipochondria",
+        "text": "Kiedy dowolna postać zyskuje negatywny stan, zyskuje również %game.condition.wound%."
+      },
+      "1488": {
+        "": "Z Wiatrem",
+        "text": "Wszyscy wrogowie dodają +1%game.action.range% do wszystkich swoich ataków dystansowych.<br>Dodaj +1%game.action.move% do wszystkich wrogich zdolności ruchu."
+      },
+      "1489": {
+        "": "Plugawy Sen",
+        "text": "Kiedy dowolna postać wykonuje krótki lub długi odpoczynek, wszyscy sąsiadujący sojusznicy otrzymują obrażenia od niebezpiecznego terenu."
+      },
+      "1490": {
+        "": "Chciwość Jest Dobra",
+        "text": "Wrogowie wykonują %game.action.loot%1 na koniec każdej swojej tury. Za każdym razem, gdy wróg zbiera żeton łupu, zyskuje %game.condition.strengthen%. Jeśli w tym scenariuszu nie ma talii łupów, dobierz nową kartę wyzwania, a tę odłóż na spód talii."
+      },
+      "1491": {
+        "": "Taktyki Alternatywne",
+        "text": "W każdej rundzie podczas ustalania inicjatywy inicjatywa jest ustawiana od najwyższej do najniższej."
+      },
+      "1492": {
+        "": "Kolczatka",
+        "text": "Wszyscy niezranieni wrogowie mają %game.action.retaliate%2."
+      },
+      "1493": {
+        "": "Twardziele",
+        "text": "Wszyscy wrogowie dodają S/2 (zaokrąglając w górę) do swojej maksymalnej wartości punktów życia."
+      },
+      "1494": {
+        "": "Zachowaj Czujność",
+        "text": "Za każdym razem, gdy wykonujesz atak, biorąc na cel wroga, który jeszcze nie wykonał akcji w tej rundzie, dodaj niekorzyść do ataku. Za każdym razem, gdy wykonujesz atak, biorąc na cel wroga, który już działał w tej rundzie, dodaj korzyść do ataku."
+      },
+      "1495": {
+        "": "Toksyczne Uśmiercenie",
+        "text": "Za każdym razem, gdy w trakcie rundy ginie pierwszy wróg, wszystkie sąsiadujące z nim postacie zyskują %game.condition.poison%."
+      },
+      "1496": {
+        "": "Uczta lub Głód",
+        "text": "Na początku scenariusza usuń wszystkie karty modyfikatorów ataku %game.attackmodifier.plus0% z talii modyfikatorów ataku potworów.<br>Wszyscy wrogowie są niewrażliwi na %game.condition.curse%."
+      },
+      "1497": {
+        "": "Łatwopalność",
+        "text": "Gdy zginie dowolny wróg, jedna postać, znajdująca się najbliżej niego, otrzymuje %game.damage:1% (lub %game.damage:2% dla poziomów scenariusza 4-7)."
+      },
+      "1498": {
+        "": "Porywcza Siła",
+        "text": "Wszystkie wrogie ataki dystansowe mają %game.action.push%1."
+      },
+      "1499": {
+        "": "Lśniące Rozproszenie",
+        "text": "Kiedy na koniec rundy na planszy znajdują się co najmniej 3 żetony łupów, wszystkie postacie zyskują %game.condition.impair%. Jeśli w tym scenariuszu nie ma talii łupów, dobierz nową kartę wyzwania, a tę odłóż na spód talii."
+      },
+      "1500": {
+        "": "Rosnąca Agresja",
+        "text": "Kiedy modyfikator ataku %game.attackmodifier.minus1% lub %game.attackmodifier.minus2% zostanie dobrany z talii modyfikatorów ataku potworów, po zakończeniu tego ataku usuń go z talii do końca scenariusza."
+      },
+      "1501": {
+        "": "Wzmożony Refleks",
+        "text": "Zmniejsz o 10 wartość inicjatywy wszystkich wrogów."
+      },
+      "1502": {
+        "": "Mróz Po Same Kości",
+        "text": "Postacie nie mogą używać %game.itemSlot:small%."
+      },
+      "1503": {
+        "": "Imitacja",
+        "hint": "Aby zaimplementować to do aplikacji, postać jest wybierana losowo!",
+        "text": "Dodaj pięć losowych kart modyfikatorów ataku do talii modyfikatorów ataku potworów. Karty modyfikatorów będą pochodzić z talii profitów dowolnej postaci z Frosthaven (wybranej przez graczy), która nie bierze udziału w scenariuszu."
+      },
+      "1504": {
+        "": "Złoto Głupców",
+        "text": "Za każdym razem, gdy dowolna postać zdobywa co najmniej jeden żeton łupu, zyskuje %game.condition.curse%. Jeśli w tym scenariuszu nie ma talii łupów, dobierz nową kartę wyzwania, a tę odłóż na spód talii."
+      },
+      "1505": {
+        "": "Kac",
+        "text": "Zwiększ o 10 wartości inicjatywy wszystkich postaci."
+      },
+      "1506": {
+        "": "Zwarta Formacja",
+        "text": "Gdy dowolna postać wykonuje atak nie sąsiadując z sojusznikiem, dodaj -1%game.action.attack% do tego ataku."
+      },
+      "1507": {
+        "": "Tandetne Rzemiosło",
+        "text": "Za każdym razem, gdy jakikolwiek przedmiot zostanie użyty, zamiast tego jest tracony."
+      },
+      "1508": {
+        "": "Rozproszona Formacja",
+        "text": "Na końcu tury każdej postaci, wszystkie sąsiadujące postacie otrzymują %game.damage:1%."
+      },
+      "1509": {
+        "": "Budżetowe Racje",
+        "text": "Za każdym razem, gdy postać odpoczywa, zyskuje %game.condition.curse%."
+      },
+      "1510": {
+        "": "Wspólny Postęp",
+        "text": "Gdy dowolna postać zakończy swoją turę w odległości większej niż dwa pola od jakiejkolwiek innej postaci (trzy pola w przypadku trzech postaci lub cztery pola w przypadku czterech postaci), postać kończąca swoją turę zyskuje %game.condition.muddle%."
+      },
+      "1511": {
+        "": "Gęsta Mgła",
+        "text": "Wszystkie akcje ruchu wszystkich postaci o wartości 4 lub większej zostają zmniejszone o 1."
+      },
+      "1512": {
+        "": "Kolczasta Zbroja",
+        "text": "Wszystkie postacie zyskują %game.action.retaliate%X, %game.action.range%3, gdzie X to ich wartość %game.action.shield%.<br>Dodaj -1%game.action.attack% do wszystkich ataków postaci."
+      },
+      "1513": {
+        "": "Uczciwa Walka",
+        "text": "Gdy dowolna postać zabije wroga, otrzymuje ona wszystkie negatywne stany, które ten wróg posiadał w momencie śmierci."
+      },
+      "1514": {
+        "": "Falanga",
+        "text": "Wszyscy wrogowie zyskują %game.action.shield% 1, gdy sąsiadują z co najmniej jednym ze swoich sojuszników."
+      },
+      "1515": {
+        "": "Dominująca Obecność",
+        "text": "Gdy na mapie obecny jest dowolny elitarny wróg, wszyscy zwykli wrogowie tego samego typu zyskują %game.action.shield%1."
+      },
+      "1516": {
+        "": "Tajemna Taktyka",
+        "text": "Kiedy na koniec rundy co najmniej jeden żywioł przechodzi ze słabnącego do wygaszonego, jedna postać otrzymuje obrażenia od niebezpiecznego terenu."
+      },
+      "1517": {
+        "": "Rozgrzewka",
+        "text": "Gdy wartość punktów życia dowolnej postaci jest równa lub większa niż połowa jej maksymalnej wartości punktów życia (zaokrąglając w dół), dodaj niekorzyść do wszystkich ataków tej postaci."
+      },
+      "1518": {
+        "": "Więzy Krwi",
+        "text": "Za pierwszym razem, gdy w trakcie rundy dowolny wróg otrzymuje %game.damage%, jeden inny ranny wróg wykonuje %game.action.heal%X na siebie, gdzie X to wartość zadanych obrażeń."
+      },
+      "1519": {
+        "": "Kolczatki",
+        "text": "Postacie i ich sojusznicy traktują wszystkie pola z żetonami łupów jako niebezpieczny teren. Zasada ta nie ma wpływu na wrogów."
+      },
+      "1520": {
+        "": "Współcierpienie",
+        "text": "Za każdym razem, gdy dowolny wróg sprawia, że postać otrzymuje %game.damage%, inna postać otrzymuje %game.damage:1%."
+      },
+      "1521": {
+        "": "Taktyka Roju",
+        "text": "Wszyscy wrogowie dodają %game.action.jump% do wszystkich swoich zdolności ruchu."
+      },
+      "1522": {
+        "": "Ofensywne Rozprzestrzenienie",
+        "hint": "Zastosowano tylko dla potworów!",
+        "text": "Wszystkie figurki dodają -1%game.action.attack% i +1%game.action.target% do wszystkich swoich zdolności ataku skierowanych w jeden cel."
+      },
+      "1523": {
+        "": "Polowanie w Stadzie",
+        "text": "Na początku trzeciej rundy rozstaw jednego normalnego Ogara na dowolnym polu startowym za każdą postać w drużynie. Jeśli scenariusz zawiera Ogary w pierwszym pomieszczeniu lub w scenariuszu jest sześć rodzajów potworów, nie licząc Ogarów, dobierz nową kartę wyzwania, a tę odłóż na spód talii."
+      },
+      "1524": {
+        "": "Zdrowotny Wigor",
+        "text": "Wszyscy wrogowie zyskują %game.action.shield%1, gdy nie mają negatywnych stanów. Za każdym razem, gdy na koniec swojej tury wróg traci co najmniej jeden negatywny stan, otrzymuje %game.damage:1%."
+      },
+      "1525": {
+        "": "Złośliwa Zemsta",
+        "text": "Za każdym razem, gdy jakikolwiek negatywny stan zostanie usunięty z dowolnego wroga, zyskuje on %game.condition.strengthen%."
+      },
+      "1526": {
+        "": "Zaszycie Się",
+        "text": "Podczas ustalania inicjatywy w każdej rundzie, jeśli na mapie jest mniej potworów niż postaci, wszystkie potwory zyskują %game.condition.ward%."
+      }
+    }
+  },
+  "character": {
+    "fh": {
+      "astral": {
+        "": "Infuzorka",
+        "imbue-with-life": {
+          "": "Tchnienie Życia",
+          "hint": "Ilekroć nie masz %game.condition.disarm%, zyskaj %game.condition.disarm%."
+        },
+        "veil-of-protection": {
+          "": "Zasłona Ochronna",
+          "hint": "Twoje aktualne i maksymalne wartości punktów życia zostają zwiększone o 3."
+        }
+      },
+      "coral": "Miażdżąca Fala",
+      "meteor": "Piroklasta",
+      "shackles": "Przekaźnik Bólu",
+      "snowflake": {
+        "": "Tancerz Śniegu"
+      },
+      "trap": "Traper"
+    }
+  },
+  "custom": {
+    "fh": {
+      "astral": {
+        "1": "Przesuń jeden słabnący żywioł do silnej kolumny",
+        "2": "+1 %game.action.attack% za każdą parę aktywnych premii %game.action.custom.fh-infusion%",
+        "3": "Za każdym razem, gdy staniesz się wyczerpany, zachowaj wszystkie swoje aktywne premie w grze, a twoje przywołania działają z inicjatywą 99 w każdej rundzie",
+        "4": "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz %game.element.consume.wild%, aby %game.card.recover% jeden zużyty przedmiot %game.items.slots.onehand% lub %game.items.slots.twohand%",
+        "5": "Raz na scenariusz, podczas ustalania inicjatywy, po tym, jak wszystkie kart zdolności zostały ujawnione, %game.element.wild%",
+        "6": "Miej pięć aktywnych premii %game.action.custom.fh-infusion%",
+        "7": "Zabij co najmniej czterech wrogów, ale nigdy nie atakuj"
+      },
+      "coral": {
+        "1": "Jeśli w tej rundzie wykonałeś akcję %data.action.custom.fh-tides%, zamiast tego %game.attackmodifier.plus2%",
+        "2": "Za każdym razem, gdy masz zyskać %game.condition.impair%, zapobiegnij temu stanowi",
+        "3": "Za każdym razem, gdy podczas wyboru kart zadeklarujesz długi odpoczynek, na daną rundę zyskujesz %game.action.shield:1%",
+        "4": "Otrzymaj korzyść dla wszystkich twoich ataków wykonanych podczas zajmowania lub atakowania wrogów zajmujących pola wody",
+        "5": "Nigdy nie otrzymaj obrażeń od ataków i bądź wzięty na cel przez co najmniej pięć ataków",
+        "6": "Na początku każdego ze swoich odpoczynków miej więcej aktywnych %game.action.custom.fh-tides% niż kart na stosie kart odrzuconych"
+      },
+      "meteor": {
+        "1": "Stwórz jeden kafelek niebezpiecznego terenu o wielkości 1 pola na pozbawionym cech polu sąsiadującym z celem",
+        "2": "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz zniszczyć jedną sąsiadującą przeszkodę, aby zyskać %game.condition.ward%",
+        "3": "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz %game.element.consume.fire% aby wykonać %game.condition.wound%, %game.action.target:1% wróg zajmujący lub sąsiadujący z niebezpiecznym terenem",
+        "4": "Ty i wszyscy twoi sojusznicy jesteście niewrażliwi na niebezpieczny teren, który tworzysz",
+        "5": "W każdej rundzie stwórz lub zniszcz co najmniej jedną przeszkodę lub kafelek niebezpiecznego terenu",
+        "6": "W jednej turze przemieść wrogów przez sześć różnych pól niebezpiecznego terenu, które stworzyłeś"
+      },
+      "prism": {
+        "1": "Na koniec tury wykonaj akcję:"
+      },
+      "shackles": {
+        "1": "Gdy atakuje, ignoruj %game.action.retaliate%",
+        "2": "Wszyscy wrogowie w zasięgu 2 pól",
+        "3": "Dodaj +1 %game.action.attack% za każdy posiadany negatywny stan",
+        "4": "W każdej rundzie, w której wykonujesz długi odpoczynek możesz zignorować wszystkie negatywne stany. Jeżeli to zrobisz, nie mogą być one usunięte w tej rundzie",
+        "5": "Za każdym razem, gdy staniesz się wyczerpany, najpierw wykonaj %game.condition.curse%, %game.action.target% wszyscy, %game.action.range:3%",
+        "6": "Zwiększ swoją maksymalną wartość punktów życia o 5",
+        "7": "W trakcie jednej rundy zadaj innym figurkom obrażenia o łącznej wartości co najmniej %game.damage:40%",
+        "8": "Rozpocznij turę z %game.condition.wound%,%game.condition.brittle%,%game.condition.bane%,%game.condition.poison%,%game.condition.immobilize%,%game.condition.disarm%,%game.condition.stun% oraz %game.condition.muddle%"
+      },
+      "shards": {
+        "4": "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz %game.element.consume.air%, aby wykonać %game.condition.strengthen%, %game.action.range:3% oraz %game.element.consume.light%, aby wykonać %game.condition.bless%, %game.action.range:3%"
+      },
+      "snowflake": {
+        "1": "Jeżeli ta akcja zmusza cel do poruszenia, otrzymuje on %game.damage:1%",
+        "2": "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz %game.elementHalf:ice|air%",
+        "3": "Za każdym razem, gdy wykonujesz krótki odpoczynek, możesz %game.element.consume.ice% aby wykonać %game.condition.regenerate%, %game.action.range:3% i %game.element.consume.air% aby wykonać %game.condition.ward%, %game.action.range:3%",
+        "4": "Na początku każdego scenariusza wszyscy wrogowie zyskują %game.condition.muddle%.<br>Za każdym razem, gdy zostanie odkryte nowe pomieszczenie, wszyscy wrogowie którzy się w nim znajdują, zyskują %game.condition.muddle%",
+        "5": "Spraw, żeby w każdej rundzie poruszył się co najmniej jeden sojusznik lub wróg",
+        "6": "Upewnij się, że pierwszy sojusznik, który otrzyma %game.damage% w każdej rundzie, zanim otrzyma %game.damage%, będzie posiadał co najmniej jeden stan, który wcześniej na niego nałożyłeś"
+      },
+      "trap": {
+        "1": "Na koniec tury, stwórz jedną pułapkę %game.damage:2% na pustym sąsiadującym polu.",
+        "10": "Za pomocą jednej zdolności, przemieść wrogów przez co najmniej siedem pułapek",
+        "2": "Stwórz jedną pułapkę %game.action.heal% 2 na pustym polu sąsiadującym z celem",
+        "3": "Stwórz jedną pułapkę %game.damage:1% na pustym polu sąsiadującym z celem",
+        "4": "Dodaj %game.damage:2% lub %game.action.heal% 2 do pułapki w zasięgu %game.action.range:2% od ciebie",
+        "5": "Dodaj %game.action.push% 2 lub %game.action.pull% 2",
+        "6": "Za każdym razem, gdy wykonujesz długi odpoczynek, możesz stworzyć jedną pułapkę %game.damage:1% na sąsiednim pustym polu",
+        "7": "Za każdym razem gdy wchodzisz na pole z pułapką, możesz zdecydować, że nie aktywujesz danej pułapki",
+        "8": "Na początku każdego scenariusza, możesz stworzyć jedną pułapkę %game.damage:2% na sąsiednim pustym polu",
+        "9": "Miej na mapie jedną pułapkę %game.action.heal% o wartości co najmniej 20"
+      }
+    }
+  },
+  "favors": {
+    "fh": {
+      "capacity": {
+        "": "Pojemność"
+      },
+      "discovery": {
+        "": "Odkrycie",
+        "automation": "Należy zastosować ręcznie w menu talii łupów!"
+      },
+      "potential": {
+        "": "Potencjalnie",
+        "automation": "Brak automatyzacji. Należy stosować fizycznie."
+      }
+    }
+  },
+  "items": {
+    "fh-1": {
+      "": "Luneta",
+      "1": "Podczas swojej zdolności ataku otrzymujesz korzyść na jeden atak."
+    },
+    "fh-10": {
+      "": "Siermiężna Tarcza",
+      "1": "Kiedy wróg miałby nałożyć na ciebie negatywny stan, zapobiegasz temu stanowi"
+    },
+    "fh-100": {
+      "": "Mikstura Większej Wytrzymałośc",
+      "1": "Podczas twojej tury %game.card.recover% jedną kartę z twoich kart odrzuconych."
+    },
+    "fh-101": {
+      "": "Mikstura Większej Mocy",
+      "1": "Podczas twojej tury dodaj +2 %game.action.attack% do wszystkich twoich ataków."
+    },
+    "fh-102": {
+      "": "Mikstura Większych Żywiołów",
+      "1": "Podczas twojej tury %game.element.wild% %game.element.wild%"
+    },
+    "fh-103": {
+      "": "Mikstura Większego Zdrowia",
+      "1": "Podczas twojej tury usuń z siebie wszystkie negatywne stany. Ten przedmiot może zostać użyty, gdy masz %game.condition.impair% lub %game.condition.stun%."
+    },
+    "fh-104": {
+      "": "Mikstura Szybkości",
+      "1": "Podczas twojej zdolności ruchu dodaj +3 %game.action.move% i %game.action.jump%."
+    },
+    "fh-105": {
+      "": "Mikstura Większej Ogniowej Tarczy",
+      "1": "Podczas twojej tury wykonaj: %game.action.retaliate% 2 %game.action.range:3%"
+    },
+    "fh-106": {
+      "": "Mikstura Kamiennej Ściany",
+      "1": "Podczas twojej tury wykonaj %game.condition.ward% %game.action.target% 2 sąsiadujących sojuszników oraz na siebie"
+    },
+    "fh-107": {
+      "": "Mikstura Wigoru",
+      "1": "Podczas twojej tury wykonaj %game.condition.strengthen% %game.action.target% 2 sąsiadujących sojuszników oraz na siebie"
+    },
+    "fh-108": {
+      "": "Święty Deszcz",
+      "1": "Podczas twojej tury wykonaj: %game.condition.bless% %game.action.target% 2 sąsiadujących sojuszników oraz na siebie"
+    },
+    "fh-109": {
+      "": "Mikstura Większego Odnowienia",
+      "1": "Podczas twojej tury %game.card.recover% jedną z twoich utraconych mikstur z 2 ziół."
+    },
+    "fh-11": {
+      "": "Prosty Wisiorek",
+      "1": "Na początku scenariusza usuń z twojej talii modyfikatorów ataku jedną kartę %game.attackmodifier.minus1% ."
+    },
+    "fh-110": {
+      "": "Mikstura Precyzji",
+      "1": "Kiedy ujawniasz kartę z modyfikatorem ataku %game.attackmodifier.null% z twojej talii modyfikatorów ataku, potraktuj ją jako %game.attackmodifier.plus2%."
+    },
+    "fh-111": {
+      "": "Mikstura Większego Szału",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-112": {
+      "": "Mikstura Młota",
+      "1": "Podczas twojej tury otrzymujesz %game.damage% 10."
+    },
+    "fh-113": {
+      "": "Mikstura Biegłości",
+      "1": "Na początku twojej tury odrzuć jedną z zagranych przez ciebie kart, aby wykonać zarówno górną, jak i dolną akcję drugiej zagranej karty. Co najwyżej jedna akcja może aktywować ikonę %game.card.lost%."
+    },
+    "fh-114": {
+      "": "Mikstura Przewidywania",
+      "1": "Podczas twojej tury ujawnij wierzchnią kartę z talii zdolności jednego potwora. Możesz umieścić tę kartę na spodzie talii."
+    },
+    "fh-115": {
+      "": "Mikstura Nasycenia",
+      "1": "Podczas twojej tury zignoruj jeden symbol zużycia żywiołu na zagranej przez ciebie akcji i otrzymaj jego efekt."
+    },
+    "fh-116": {
+      "": "Fiolka Zarazy",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-117": {
+      "": "Fiolka Inferna",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-118": {
+      "": "Piorunująca Fiolka",
+      "1": "Podczas twojej tury jeden wróg w promieniu %game.action.range% 2 otrzymuje %game.damage% 4."
+    },
+    "fh-119": {
+      "": "Zabójczy Wywar",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-12": {
+      "": "Siermiężna Kolczuga",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:2% na ten atak."
+    },
+    "fh-120": {
+      "": "Amulet Życia",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-121": {
+      "": "Diadem Żywiołów",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-122": {
+      "": "Szaty Stróża",
+      "1": "Kiedy jeden z twoich przywołańców otrzyma %game.damage% od ataku, ten przywołaniec zyskuje %game.action.shield:2% na ten atak."
+    },
+    "fh-123": {
+      "": "Skórzana Zbroja",
+      "1": "Kiedy jesteś atakowany, przed dobraniem karty modyfikatora ataku, atakujący otrzymuje niekorzyść na ten atak."
+    },
+    "fh-124": {
+      "": "Uskrzydlone Buty",
+      "1": "Podczas twojej tury dodaj %game.action.jump% do wszystkich twoich zdolności ruchu."
+    },
+    "fh-125": {
+      "": "Buty Szybkości",
+      "1": "Podczas ustalania inicjatywy po ujawnieniu wszystkich kart zdolności zwiększ lub zmniejsz swoją inicjatywę o 10."
+    },
+    "fh-126": {
+      "": "Obciążona Sieć",
+      "1": "Podczas twojej zdolności ataku dystansowego dodaj %game.condition.immobilize% do jednego ataku."
+    },
+    "fh-127": {
+      "": "Zatruty Sztylet",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj %game.condition.poison% do jednego ataku."
+    },
+    "fh-128": {
+      "": "Kuta Tarcza",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:1% na ten atak."
+    },
+    "fh-129": {
+      "": "Gogle Sokolego Wzroku",
+      "1": "Podczas twojej zdolności ataku otrzymujesz korzyść przy wszystkich atakach."
+    },
+    "fh-13": {
+      "": "Taneczne Pantofle",
+      "1": "Po otrzymaniu %game.damage% z ataku wykonaj:"
+    },
+    "fh-130": {
+      "": "Żelazny Hełm",
+      "1": "Kiedy jesteś atakowany, traktuj każdą dobraną przez wroga kartę z modyfikatorem ataku %game.attackmodifier.double% jako %game.attackmodifier.plus0% ."
+    },
+    "fh-131": {
+      "": "Kolczuga",
+      "1": "Przy następnych trzech źródłach %game.damage% z ataków skierowanych w ciebie zyskujesz %game.action.shield:1% dla tych ataków."
+    },
+    "fh-132": {
+      "": "Peleryna Kieszeni",
+      "1": "Na początku scenariusza weź ze sobą jeden dodatkowy przedmiot %game.items.slots.small%."
+    },
+    "fh-133": {
+      "": "Nagolenniki Zwinności",
+      "1": "Kiedy sąsiadujący sojusznik miałby zostać celem ataku, stajesz się celem, niezależnie od zasięgu i linii wzroku."
+    },
+    "fh-134": {
+      "": "Wygodne Buty",
+      "1": "Kiedy używasz podstawowej dolnej akcji karty zdolności, wykonaj %game.action.move% 3 zamiast %game.action.move% 2."
+    },
+    "fh-135": {
+      "": "Przebijający Łuk",
+      "1": "Podczas twojej tury dodaj %game.action.pierce% 3 do wszystkich twoich ataków dystansowych."
+    },
+    "fh-136": {
+      "": "Topór Bojowy",
+      "1": "Podczas twojej zdolności ataku wręcz skierowanej w jeden cel zmień cel tej zdolności na:"
+    },
+    "fh-137": {
+      "": "Pawęż",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:2% na ten atak."
+    },
+    "fh-138": {
+      "": "Ciężki Basinet",
+      "1": "Kiedy wróg miałby dać ci %game.condition.disarm%, %game.condition.stun% lub %game.condition.muddle%, zapobiegnij temu stanowi."
+    },
+    "fh-139": {
+      "": "Rogaty Hełm",
+      "1": "Po poruszeniu się o 4 lub więcej pól w twojej turze dodaj +1 %game.action.attack% do twojego następnego ataku w walce wręcz w tej turze."
+    },
+    "fh-14": {
+      "": "Ciężki Miecz",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj +1 %game.action.attack% do jednego ataku."
+    },
+    "fh-140": {
+      "": "Opończa Przywołania",
+      "1": "Podczas twojej tury daj jednemu z twoich przywołańców: %game.action.shield:2%."
+    },
+    "fh-141": {
+      "": "Ćwiekowana Skóra",
+      "1": "Kiedy jesteś atakowany, przed dobraniem karty modyfikatora ataku atakujący otrzymuje niekorzyść na ten atak, a ty zyskujesz %game.action.shield:1% na ten atak."
+    },
+    "fh-142": {
+      "": "Buty Inicjatywy",
+      "1": "Podczas ustalania inicjatywy po ujawnieniu wszystkich kart zdolności zwiększ lub zmniejsz swoją inicjatywę o 20."
+    },
+    "fh-143": {
+      "": "Onuce Wytrzymałości",
+      "1": "Po poruszeniu się o co najmniej 4 pola w twojej turze i po zakończeniu zdolności ruchu wykonaj:"
+    },
+    "fh-144": {
+      "": "Kostur Eminencji",
+      "1": "Podczas twojej tury %game.element.consume.wild% dodaj +1 %game.action.attack% do wszystkich twoich ataków."
+    },
+    "fh-145": {
+      "": "Wszechstronny Sztylet",
+      "1": "Kiedy używasz podstawowej górnej akcji karty zdolności, wykonaj %game.action.attack% 3 zamiast %game.action.attack% 2."
+    },
+    "fh-146": {
+      "": "Hak na Łańcuchu",
+      "1": "Podczas twojej tury dodaj %game.action.pull% 2 do wszystkich twoich ataków dystansowych."
+    },
+    "fh-147": {
+      "": "Maska Grozy",
+      "1": "Podczas twojego ataku wręcz dodaj %game.action.push% 1."
+    },
+    "fh-148": {
+      "": "Diadem Świętości",
+      "1": "Po kolejnych trzech atakach, których celem będzie sojusznik w promieniu %game.action.range% 2, odwróć tę kartę.",
+      "2": "Podczas twojej tury wykonaj:",
+      "4": "następnie odwróć tę kartę."
+    },
+    "fh-149": {
+      "": "Zbroja Płytowa",
+      "1": "Przy następnych pięciu źródłach %game.damage% z ataków, których jesteś celem, zyskujesz %game.action.shield:1% na te ataki."
+    },
+    "fh-15": {
+      "": "Wzmocniona Tarcza",
+      "1": "Kiedy wróg miałby nałożyć na ciebie negatywny stan, zapobiegasz temu stanowi."
+    },
+    "fh-150": {
+      "": "Szaty Dębu",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-151": {
+      "": "Chyże Sandały",
+      "1": "Kiedy używasz podstawowej dolnej akcji karty zdolności, wykonaj %game.action.move% 4 zamiast %game.action.move% 2."
+    },
+    "fh-152": {
+      "": "Stalowe Sabatony",
+      "1": "Na koniec twojej tury, jeśli podczas niej poruszyłeś się o 1 lub mniej pól, zyskaj %game.action.shield:1% na tę rundę."
+    },
+    "fh-153": {
+      "": "Długa Włócznia",
+      "1": "Podczas twojej zdolności ataku wręcz skierowanej w jeden cel zmień cel tej zdolności na:"
+    },
+    "fh-154": {
+      "": "Niestabilna Bomba",
+      "1": "Podczas twojej zdolności ataku dystansowego skierowanej w jeden cel zmień cel tej zdolności na:"
+    },
+    "fh-155": {
+      "": "Wielki Pawęż",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:4% na ten atak."
+    },
+    "fh-156": {
+      "": "Kolczyk Księżyca",
+      "1": "Podczas krótkiego odpoczynku %game.card.recover% do trzech twoich zużytych przedmiotów."
+    },
+    "fh-157": {
+      "": "Stalowy Pierścień",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:4% na ten atak."
+    },
+    "fh-158": {
+      "": "Brosza Głębokiej Ziemi",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-159": {
+      "": "Wspaniała Bransoleta",
+      "1": "Po twojej zdolności ataku, podczas której jeden wróg otrzymał co najmniej %game.damage% 6, wykonaj:"
+    },
+    "fh-16": {
+      "": "Inspirujący Hełm",
+      "1": "Podczas twojej tury daj wszystkim sąsiadującym sojusznikom: %game.action.move% 2"
+    },
+    "fh-160": {
+      "": "Kolczyk Słońca",
+      "1": "Podczas krótkiego odpoczynku %game.card.recover% do trzech twoich zużytych przedmiotów i wykonaj:"
+    },
+    "fh-161": {
+      "": "Pierścień Stratega",
+      "1": "Na koniec twojej tury zagraj jedną kartę z ręki i wykonaj wszystkie trwałe i obowiązkowe zdolności na górnej lub dolnej akcji karty."
+    },
+    "fh-162": {
+      "": "Brosza Wyjącego Lodu",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-163": {
+      "": "Oszałamiająca Bransoleta",
+      "1": "Podczas twojej tury daj %game.condition.stun% połowie (zaokrąglij w górę) wrogów sąsiadujących z tobą."
+    },
+    "fh-164": {
+      "": "Kolczyk Gwiazdy",
+      "1": "Podczas krótkiego odpoczynku %game.card.recover% do trzech twoich zużytych przedmiotów, wybierz kartę do utracenia podczas odpoczynku i wykonaj:"
+    },
+    "fh-165": {
+      "": "Pierścień Pośpiechu",
+      "1": "Na koniec twojej tury zagraj jedną kartę z ręki i wykonaj jej dolną akcję."
+    },
+    "fh-166": {
+      "": "Brosza Gorejącego Słońca",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-167": {
+      "": "Przyciągająca Bransoleta",
+      "1": "Na początku tury wroga, zanim określi on swój punkt skupienia, wykonaj:",
+      "2": "przeciwnik"
+    },
+    "fh-168": {
+      "": "Diadem Oczu",
+      "1": "Podczas twojej zdolności ataku dystansowego dodaj +1 %game.action.target%."
+    },
+    "fh-169": {
+      "": "Znamienny Talizman",
+      "1": "Podczas twojej tury ujawnij wierzchnią kartę z twojej talii modyfikatorów ataku. Możesz umieścić tę kartę na spodzie talii."
+    },
+    "fh-17": {
+      "": "Garbowana Zbroja",
+      "1": "Przy następnych dwóch atakach skierowanych w ciebie atakujący otrzymuje niekorzyść."
+    },
+    "fh-170": {
+      "": "Oko Prawdy",
+      "1": "Podczas twojej tury ujawnij wierzchnią kartę z każdej talii zdolności ataku potworów."
+    },
+    "fh-171": {
+      "": "Odmładzający Talizman",
+      "1": "Za każdym razem, gdy tracisz kartę, aby zanegować %game.damage%, %game.card.recover% jedną kartę ze stosu kart odrzuconych i otrzymujesz %game.condition.regenerate%."
+    },
+    "fh-172": {
+      "": "Czapka Przeczucia",
+      "1": "Podczas twojej tury przejrzyj cztery wierzchnie karty z twojej talii modyfikatorów ataku i odłóż je w dowolnej kolejności."
+    },
+    "fh-173": {
+      "": "Wielokolorowy Płaszcz",
+      "1": "Kiedy zostaniesz zaatakowany: %game.element.wild%."
+    },
+    "fh-174": {
+      "": "Magnetyczna Peleryna",
+      "1": "Podczas twojej tury wykonaj: %game.action.teleport% 20 Ten teleport musi zakończyć się na polu sąsiadującym z jednym z twoich sojuszników."
+    },
+    "fh-175": {
+      "": "Lustrzana Zbroja",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, atakujący otrzymuje taką samą liczbę %game.damage%."
+    },
+    "fh-176": {
+      "": "Migająca Peleryna",
+      "1": "Podczas twojej tury wykonaj: %game.action.teleport% 4 Ten teleport musi zakończyć się na polu sąsiadującym z wrogiem."
+    },
+    "fh-177": {
+      "": "Buty Przeniesienia",
+      "1": "Kiedy odpalisz pułapkę wchodząc na jej pole, możesz zastosować jej efekty na figurkę w promieniu %game.action.range:3% zamiast na siebie."
+    },
+    "fh-178": {
+      "": "Spokojne Buty",
+      "1": "Na początku twojej tury, w której twoja inicjatywa wynosi 60 lub więcej i nie wykonujesz długiego odpoczynku, wykonaj: %game.action.heal% 1 na siebie."
+    },
+    "fh-179": {
+      "": "Zrywne Buty",
+      "1": "Podczas twojej zdolności ruchu dodaj +4 %game.action.move%. Po wykonaniu zdolności ruchu otrzymujesz %game.condition.immobilize%."
+    },
+    "fh-18": {
+      "": "Twarde Buty",
+      "1": "Podczas twojej tury dodaj +1 %game.action.move% do wszystkich twoich zdolności ruchu."
+    },
+    "fh-180": {
+      "": "Buty Chciwości",
+      "1": "Za każdym razem, gdy zdobędziesz co najmniej dwa łupy naraz, wykonaj: %game.condition.bless% na siebie."
+    },
+    "fh-181": {
+      "": "Różdżka Translokacji",
+      "1": "Podczas twojej tury wyznacz dwóch dowolnych sojuszników lub dowolne dwa zwykłe lub elitarne potwory. Każda wyznaczona figurka jednocześnie %game.action.teleport% na pole zajmowane przez drugą wyznaczoną figurkę."
+    },
+    "fh-182": {
+      "": "Obcinacze Skrzydeł",
+      "1": "Po twoim ataku wręcz umieść żeton postaci na celu. Cel traci %game.action.fly%."
+    },
+    "fh-183": {
+      "": "Karafka Mgieł",
+      "1": "Podczas twojej tury wszystkie figurki otrzymują niekorzyść i dodają -1 %game.action.range% do wszystkich ataków dystansowych w tej rundzie. "
+    },
+    "fh-184": {
+      "": "Błyskający Topór",
+      "1": "Podczas twojej zdolności ataku wręcz skierowanej w wiele celów dodaj +1 %game.action.target%."
+    },
+    "fh-185": {
+      "": "Lustrzany Nóż",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj do jednego ataku wszystkie posiadane przez ciebie negatywne stany (oprócz %game.condition.brittle%, %game.condition.bane% i %game.condition.stun%)."
+    },
+    "fh-186": {
+      "": "Nasiona Dzikiego Wzrostu",
+      "1": "Podczas twojej tury stwórz na sąsiednim pustym polu jedną przeszkodę o wielkości 1 pola."
+    },
+    "fh-187": {
+      "": "Niebezpieczna Przekładnia",
+      "1": "Podczas twojej tury stwórz na sąsiednim pustym polu jedną pułapkę %game.damage% 3."
+    },
+    "fh-188": {
+      "": "Mrożący Kryształ",
+      "1": "Podczas twojej tury na sąsiednim, pozbawionym cech polu kafelek niebezpiecznego terenu, oblodzonego terenu lub wody o wielkości 1 pola."
+    },
+    "fh-189": {
+      "": "Pierścień Nocy",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-19": {
+      "": "Dźwięczny Młot",
+      "1": "Podczas twojej zdolności ataku dodaj %game.condition.muddle% do wszystkich ataków."
+    },
+    "fh-190": {
+      "": "Biała Karta",
+      "1": "Podczas twojej tury umieść żeton postaci na jednym zwykłym lub elitarnym wrogu w promieniu %game.action.range:3%. Ten wróg dodaje -1 %game.action.attack% do wszystkich swoich ataków."
+    },
+    "fh-191": {
+      "": "Spaczony Zwój",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-192": {
+      "": "Kuszący Dzwonek",
+      "1": "Na koniec twojej tury wyznacz jednego wroga w promieniu %game.action.range:3%. Jesteś jego głównym punktem skupienia i nie unika on negatywnych pól podczas określania ruchu w tej rundzie. "
+    },
+    "fh-193": {
+      "": "Hełm Kradzieży Myśli",
+      "1": "Podczas twojej tury kontroluj jednego wroga w promieniu %game.action.range:3%:"
+    },
+    "fh-194": {
+      "": "Temporalny Amulet",
+      "1": "Podczas ustalania inicjatywy po ujawnieniu wszystkich kart zdolności zwiększ lub zmniejsz inicjatywę zestawu potworów o 30."
+    },
+    "fh-195": {
+      "": "Trójgraniasty Kapelusz",
+      "1": "Podczas twojej tury dodaj +1 %game.action.range% i %game.action.pierce% 1 do jednego z twoich ataków dystansowych."
+    },
+    "fh-196": {
+      "": "Naszyjnik Poświęcenia",
+      "1": "Podczas twojej tury odrzuć jedną kartę łupów, aby wykonać:"
+    },
+    "fh-197": {
+      "": "Diadem Esterów",
+      "1": "Po ustaleniu inicjatywy wymień zagraną kartę na kartę z twojej ręki. Nie ma to wpływu na twoją inicjatywę."
+    },
+    "fh-198": {
+      "": "Naszyjnik Łowcy",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-199": {
+      "": "Strojne Trzewiki",
+      "1": "Na początku scenariusza uznaj, że podczas określania punktu skupienia potworów na resztę scenariusza w kolejności inicjatywy jesteś przed swoimi przywołańcami."
+    },
+    "fh-2": {
+      "": "Siermiężny Hełm",
+      "1": "Kiedy jesteś atakowany, traktuj każdą dobraną przez wroga kartę z modyfikatorem ataku %game.attackmodifier.double% jako %game.attackmodifier.plus1%."
+    },
+    "fh-20": {
+      "": "Dobrze Napięty Łuk",
+      "1": "Podczas swojej tury dodaj +1 %game.action.range% do wszystkich twoich ataków dystansowych."
+    },
+    "fh-200": {
+      "": "Berło Wieczoru",
+      "1": "Podczas twojej zdolności leczenia, której celem jest sojusznik, %game.element.consume.light%, aby dodać %game.condition.regenerate% do jednego leczenia i odwróć tę kartę.",
+      "2": "Podczas twojej zdolności ataku, %game.element.consume.dark%, aby dodać %game.condition.curse% do jednego ataku i odwróć tę kartę."
+    },
+    "fh-201": {
+      "": "Ostrze Fali",
+      "1": "Podczas twojej zdolności ataku wręcz wykonywanej w czasie przebywania na polu kafelka wody lub sąsiadowania z nim, dodaj %game.action.push% 1 i %game.condition.immobilize% do jednego ataku."
+    },
+    "fh-202": {
+      "": "Kręgosłup Olbrzymiej Świniopiranii",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj %game.action.pierce:2% i %game.condition.wound% do jednego ataku."
+    },
+    "fh-203": {
+      "": "Berło Kontroli",
+      "1": "Po twojej zdolności ataku przejmij kontrolę nad jednym celem:"
+    },
+    "fh-204": {
+      "": "Odcięty Szpon",
+      "1": "Podczas twojej tury jeden sąsiadujący zwykły lub elitarny wróg otrzymuje %game.damage% równe jego wartości %game.action.shield%."
+    },
+    "fh-205": {
+      "": "Harpun",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-206": {
+      "": "Olbrzymi Miecz",
+      "1": "Podczas twojej zdolności ataku wręcz, jeśli nie poruszyłeś się w tej rundzie, dodaj +2 %game.action.attack% do jednego ataku. Wtedy nie możesz wykonywać innych zdolności ruchu w tej rundzie."
+    },
+    "fh-207": {
+      "": "Rybi Haczyk",
+      "1": "Po twoim ataku, jeśli aktualna wartość punktów życia celu wynosi 3 lub mniej, daj celowi %game.condition.bane%"
+    },
+    "fh-208": {
+      "": "Gwóźdź Tytana",
+      "1": "Podczas twojej zdolności ataku dodaj %game.action.pierce% 3 do jednego ataku skierowanego we wroga, którego aktualna wartość punktów życia wynosi 4 lub mniej."
+    },
+    "fh-209": {
+      "": "Miecz Biegłości",
+      "1": "Podczas twojej zdolności ataku wręcz otrzymujesz korzyść przy jednym ataku. Za każdą ukończoną biegłość dodaj do ataku jedną z poniższych cech: +1 %game.action.attack%, %game.condition.wound% lub %game.condition.poison%. "
+    },
+    "fh-21": {
+      "": "Kolczy Kaptur",
+      "1": "Gdy sąsiadujesz z co najmniej trzema wrogami, otrzymujesz %game.action.shield:1%."
+    },
+    "fh-210": {
+      "": "Tandżo",
+      "1": "Podczas twojej tury dodaj -3 %game.action.attack% do wszystkich ataków Czychaczy, które w tej rundzie wycelują w ciebie. "
+    },
+    "fh-211": {
+      "": "Wybuchowa Beczka",
+      "1": "Podczas twojej tury wyznacz jedno sąsiednie pole. Na koniec twojej tury wszystkie figurki w promieniu %game.action.range:2% od wskazanego pola otrzymują %game.damage% 1."
+    },
+    "fh-212": {
+      "": "Kamień Żywiołów",
+      "1": "Po ustaleniu inicjatywy jeden żywioł. W tej rundzie wybrany żywioł nie może zostać nasycony ani wykorzystany przez żadnego potwora. "
+    },
+    "fh-213": {
+      "": "Klucz Pór Roku",
+      "1": "Podczas twojej zdolności ataku %game.element.consume.ice% aby dodać %game.condition.immobilize% do jednego ataku, a następnie odwróć tę kartę na koniec twojej tury.",
+      "2": "Podczas twojej zdolności ataku %game.element.consume.fire% aby dodać %game.condition.wound% do jednego ataku, a następnie odwróć tę kartę."
+    },
+    "fh-214": {
+      "": "Kielich Ventilliona",
+      "1": "Podczas twojej zdolności leczenia dodaj do jednego leczenia jeden pozytywny stan posiadany przez ciebie."
+    },
+    "fh-215": {
+      "": "Mącący Kufel",
+      "1": "Podczas twojej tury dodaj +1 %game.action.attack% i %game.condition.muddle% do wszystkich twoich ataków. Na koniec twojej tury wykonaj:"
+    },
+    "fh-216": {
+      "": "Księga Żywiołów",
+      "1": "Podczas twojej tury,",
+      "3": "Na koniec tej rundy żywioły nie przechodzą z silnych do słabnących. "
+    },
+    "fh-217": {
+      "": "Księga Czasu",
+      "1": "Podczas ustalania inicjatywy po ujawnieniu wszystkich kart zdolności przetasuj wszystkie talie zdolności potworów i dobierz nową kartę dla każdego zestawu potworów."
+    },
+    "fh-218": {
+      "": "Księga Życia",
+      "1": "Podczas twojej tury usuń wszystkie stany z wszystkich figurek, a następnie daj wszystkim figurkom:"
+    },
+    "fh-219": {
+      "": "Księga Konfliktu",
+      "1": "Podczas twojej tury wszystkie figurki otrzymują %game.condition.strengthen%. Dopóki nie zostanie zabity jakikolwiek potwór, pierwsza karta modyfikatora ataku dobrana dla każdego ataku jest traktowana jako sekwencyjna."
+    },
+    "fh-22": {
+      "": "Ciężka Kolczuga",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:3% na ten atak."
+    },
+    "fh-220": {
+      "": "Pióro Belary",
+      "1": "Podczas twojej tury %game.card.recover% maksymalnie jedną Księgę."
+    },
+    "fh-221": {
+      "": "Lodowy Kosior",
+      "1": "Podczas twojej zdolności ataku wręcz %game.element.consume.ice%, aby dodać %game.action.pierce% 3 do jednego ataku."
+    },
+    "fh-222": {
+      "": "Czarna Skrzynka",
+      "1": "Podczas twojej tury odrzuć dwie karty z twojej ręki, aby wykonać:"
+    },
+    "fh-223": {
+      "": "Piorunochron",
+      "1": "Po ustaleniu inicjatywy wszystkie potwory uznają cię za pierwszego w kolejności inicjatywy podczas określania swojego punktu skupienia w tej rundzie. "
+    },
+    "fh-224": {
+      "": "Zbroja Empatii",
+      "1": "Po kolejnych trzech atakach, których jesteś celem, odwróć tę kartę.",
+      "2": "Podczas twojej tury wykonaj:",
+      "4": "następnie odwróć tę kartę."
+    },
+    "fh-225": {
+      "": "Rzeźba Algoksów",
+      "1": "Podczas twojej zdolności ataku wręcz %game.element.consume.earth%, aby dodać +1 %game.action.attack% i odwróć tę kartę.",
+      "2": "Podczas twojej zdolności ataku dystansowego %game.element.consume.air%, aby dodać %game.action.push% 2 i odwróć tę kartę."
+    },
+    "fh-226": {
+      "": "Ramię Nieposkromionego",
+      "1": "Podczas twojej zdolności ataku podwój wartość liczbową następnej dobranej karty modyfikatora ataku. Nie ma to wpływu na karty %game.attackmodifier.double% i %game.attackmodifier.null%."
+    },
+    "fh-227": {
+      "": "Dysk Danych",
+      "1": "Kiedy wykonujesz krótki odpoczynek, umieść na tym przedmiocie połowę (zaokrąglij w dół) kart z twojego stosu kart odrzuconych, strać losowo jedną z pozostałych kart w normalny sposób, a następnie dobierz karty z tego przedmiotu."
+    },
+    "fh-228": {
+      "": "Teleskopowa Tyczka",
+      "1": "Podczas twojej tury otwórz jedne odblokowane drzwi w promieniu %game.action.range:2%."
+    },
+    "fh-229": {
+      "": "Znakomita Mapa",
+      "1": "Podczas twojej tury przyznaj jednemu sojusznikowi w promieniu %game.action.range:3%:"
+    },
+    "fh-23": {
+      "": "Solidne Nagolenniki",
+      "1": "Na początku twojej tury dodaj -2 %game.action.move% do wszystkich twoich zdolności ruchu, aby w tej rundzie zyskać %game.action.shield:1%. "
+    },
+    "fh-230": {
+      "": "Lupa Badacza",
+      "1": "Po dobraniu jednej karty łupów dobierz jedną dodatkową kartę, zatrzymaj jedną z nich, a drugą umieść na wierzchu lub na spodzie talii łupów."
+    },
+    "fh-231": {
+      "": "Skórujący Nóż",
+      "1": "Kiedy zdobywasz żeton łupów, otrzymujesz 3 %game.resource.hide% zamiast dobierania karty łupów."
+    },
+    "fh-232": {
+      "": "Różdżka Orchidów",
+      "1": "Podczas twojej tury strać 1 morale, aby wykonać:"
+    },
+    "fh-233": {
+      "": "Martwy Kruk",
+      "1": "Podczas zdolności ataku dystansowego sojusznika dodaj %game.condition.muddle% i %game.condition.curse% do jednego ataku."
+    },
+    "fh-234": {
+      "": "Fiolka Szlamu",
+      "1": "Podczas twojej tury stwórz jedną pułapkę %game.condition.poison%, %game.condition.immobilize% na pustym polu w promieniu %game.action.range:2%."
+    },
+    "fh-235": {
+      "": "Mały Szczur",
+      "1": "Podczas twojej tury zbierz jeden żeton łupów w promieniu %game.action.range:2%."
+    },
+    "fh-236": {
+      "": "Pęknięte Lusterko",
+      "1": "Podczas twojej tury strać jedną kartę z ręki, aby %game.card.recover% jedną kartę z twojego stosu kart straconych."
+    },
+    "fh-237": {
+      "": "Hipnotyzująca Muszla",
+      "1": "Podczas twojej tury wybierz jeden z sześciu kierunków. Ty i wszystkie figurki w promieniu %game.action.range:2% jesteście zmuszeni poruszyć się o 2 pola w wybranym kierunku."
+    },
+    "fh-238": {
+      "": "Pęknięty Bożek",
+      "1": "Kiedy masz paść z wyczerpania z powodu %game.damage%, zamiast tego ustaw swoją wartość punktów życia na 1."
+    },
+    "fh-239": {
+      "": "Oko Burzy",
+      "1": "Podczas twojej tury wszyscy sojusznicy i wrogowie w promieniu %game.action.range:2% otrzymują %game.damage% 1."
+    },
+    "fh-24": {
+      "": "Spaczone Ostrze",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj %game.condition.wound%, %game.condition.poison% i %game.condition.muddle% do jednego ataku."
+    },
+    "fh-240": {
+      "": "Klejnot Demona",
+      "1": "Gdy nie uda ci się ukończyć scenariusza, nadal zdobywasz wszystkie %game.checkmark% z twojego celu bitewnego, jeśli został on ukończony."
+    },
+    "fh-241": {
+      "": "Lśniący Pył",
+      "1": "Po dobraniu jednej karty łupów dobierz jedną dodatkową kartę łupów."
+    },
+    "fh-242": {
+      "": "Szczęśliwe Kości",
+      "1": "Podczas twojej zdolności ataku potraktuj trzy kolejne dobrane karty modyfikatorów ataku jako sekwencyjne"
+    },
+    "fh-243": {
+      "": "Przeklęty Kamień",
+      "1": "Ten przedmiot nie może zostać sprzedany i musi zostać użyty w każdym scenariuszu.",
+      "2": "Na początku scenariusza wykonaj:"
+    },
+    "fh-244": {
+      "": "Źródło Ognistej Energii",
+      "1": "Podczas twojej tury zwiększ o 1 wydrukowaną wartość liczbową %game.action.attack%, %game.action.move%, %game.action.target% lub %game.action.range% jednej ze swoich zdolności."
+    },
+    "fh-245": {
+      "": "Starożytna Moneta"
+    },
+    "fh-246": {
+      "": "Karta Klucz"
+    },
+    "fh-247": {
+      "": "Siatka Trenera",
+      "1": "Podczas twojej tury chwytaj sąsiadującego wroga, którego wartość punktów życia wynosi 1 lub 2."
+    },
+    "fh-25": {
+      "": "Kojące Berło",
+      "1": "Podczas twojej tury wykonaj: %game.condition.regenerate% %game.action.target% 1 sojusznik, %game.action.range:2%"
+    },
+    "fh-26": {
+      "": "Okulary Prawdziwego Widzenia",
+      "1": "Podczas twojej zdolności ataku traktuj wszystkie karty z modyfikatorami ujemnymi i %game.attackmodifier.null% jako %game.attackmodifier.plus0%."
+    },
+    "fh-27": {
+      "": "Płaszcz Osłony",
+      "1": "Natychmiast po tym, jak wróg zakończy swoją zdolność ruchu, sąsiadując z tobą, wykonaj: %game.action.push% 1 %game.action.target% ten wróg"
+    },
+    "fh-28": {
+      "": "Solidne Buty",
+      "1": "Podczas twojej tury dodaj +1 %game.action.move% do wszystkich twoich zdolności ruchu oraz ignoruj trudny teren."
+    },
+    "fh-29": {
+      "": "Rozłupujący Topór",
+      "1": "Po twoim ataku w walce wręcz jeden wróg sąsiadujący z celem otrzymuje %game.damage% 2."
+    },
+    "fh-3": {
+      "": "Płaszcz Podróżny",
+      "1": "Na początku scenariusza zwiększ swoją maksymalną wartość punktów życia o 1."
+    },
+    "fh-30": {
+      "": "Rękawica Parowania",
+      "1": "Natychmiast po tym, jak wróg zakończy swoją zdolność ruchu, sąsiadując z tobą, wykonaj: %game.action.attack% 3, %game.action.target% ten wróg"
+    },
+    "fh-31": {
+      "": "Talizman Negacji Śmierci",
+      "1": "Kiedy masz otrzymać %game.damage% z dowolnego źródła, zaneguj te %game.damage%."
+    },
+    "fh-32": {
+      "": "Pancerz Muszli",
+      "1": "Podczas twojej tury wykonaj: %game.condition.ward% na siebie"
+    },
+    "fh-33": {
+      "": "Niestabilne Buty",
+      "1": "Maksymalnie raz na turę podczas twojej zdolności ruchu dodaj +1 %game.action.move% . Następnie odwróć tę kartę na koniec twojej tury.",
+      "2": "Maksymalnie raz na turę podczas twojej zdolności ruchu otrzymaj %game.damage:1%. Następnie odwróć tę kartę na koniec twojej tury."
+    },
+    "fh-34": {
+      "": "Bomba Odłamkowa",
+      "1": "Po twoim ataku dystansowym wszyscy wrogowie sąsiadujący z celem otrzymują %game.damage% 2."
+    },
+    "fh-35": {
+      "": "Trójkątna Tarcza",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, zyskujesz %game.action.shield:1% na ten atak i zapobiegasz wszelkim negatywnym stanom wynikającym z tego ataku."
+    },
+    "fh-36": {
+      "": "Hełm z Pióropuszem",
+      "1": "Kiedy jesteś atakowany atakiem z niekorzyścią, traktuj wszystkie karty modyfikatorów ataku %game.attackmodifier.plus0% i %game.attackmodifier.plus1% jako %game.attackmodifier.minus1% ."
+    },
+    "fh-37": {
+      "": "Widmowy Płaszcz",
+      "1": "Podczas twojej tury otrzymaj %game.damage% 3, aby wykonać:"
+    },
+    "fh-38": {
+      "": "Trzewiki Szampierza",
+      "1": "Podczas twojej tury wykonaj: %game.action.move% 2 Ten ruch musi zakończyć się w sąsiedztwie wroga."
+    },
+    "fh-39": {
+      "": "Topór Otchłani",
+      "1": "Podczas twojej zdolności ataku dodaj +3 %game.action.attack% i %game.action.pierce% 1 do jednego ataku, którego celem są Zamarznięte Zwłoki, Lodowy Upiór lub Ożywiona Zagłada."
+    },
+    "fh-4": {
+      "": "Siermiężna Skórzana Zbroja",
+      "1": "Przy następnych dwóch atakach skierowanych w ciebie atakujący otrzymuje niekorzyść."
+    },
+    "fh-40": {
+      "": "Nieomylny Łuk",
+      "1": "Podczas twojej tury dodaj +1 %game.action.attack% i +2 %game.action.range% do jednego z twoich ataków dystansowych."
+    },
+    "fh-41": {
+      "": "Misterny Wisiorek",
+      "1": "Na początku scenariusza usuń z twojej talii modyfikatorów ataku jedną kartę %game.attackmodifier.plus0% oraz jedną kartę %game.attackmodifier.minus1%."
+    },
+    "fh-42": {
+      "": "Ozdobna Zbroja",
+      "1": "Przy następnych dwóch źródłach %game.damage% z ataków, których jesteś celem, zyskujesz %game.action.shield:2% na te ataki."
+    },
+    "fh-43": {
+      "": "Kopiące Buty",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj %game.action.push% 2 do jednego ataku."
+    },
+    "fh-44": {
+      "": "Miecz Rozgrzeszenia",
+      "1": "Kiedy masz otrzymać %game.condition.poison% lub %game.condition.curse%, zamiast tego otrzymujesz %game.condition.bless%."
+    },
+    "fh-45": {
+      "": "Mistrzowskie Berło",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-46": {
+      "": "Podwójne Gogle",
+      "1": "Podczas twojej zdolności ataku otrzymujesz korzyść przy wszystkich atakach i traktujesz wszystkie karty z modyfikatorami ataku %game.attackmodifier.plus0% i %game.attackmodifier.minus1% jako %game.attackmodifier.plus1% ."
+    },
+    "fh-47": {
+      "": "Szaty Zagłady",
+      "1": "Przy następnych dwóch źródłach %game.damage% z ataków, których jesteś celem, otrzymaj %game.damage% 3, aby dać atakującemu %game.condition.brittle%."
+    },
+    "fh-48": {
+      "": "Żyjące Buty",
+      "1": "Po dowolnej zdolności leczniczej sojusznika skierowanej w ciebie wykonaj:"
+    },
+    "fh-49": {
+      "": "Okrutny Sztylet",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj +1 %game.action.attack% i %game.condition.wound% do jednego ataku."
+    },
+    "fh-5": {
+      "": "Siermiężne Buty",
+      "1": "Podczas twojej zdolności ruchu dodaj +1 %game.action.move%"
+    },
+    "fh-50": {
+      "": "Tarcza Wzajemności",
+      "1": "Kiedy otrzymujesz %game.damage% z ataku, zyskujesz %game.action.shield:1% na ten atak i odwracasz tę kartę.",
+      "2": "Podczas twojej zdolności ataku wręcz dodaj %game.action.pierce% 1 i odwróć tę kartę."
+    },
+    "fh-51": {
+      "": "Kolczasta Obroża",
+      "1": "Podczas twojej tury wykonaj: %game.condition.wound% na siebie"
+    },
+    "fh-52": {
+      "": "Laserowe Soczewki",
+      "1": "Podczas twojej tury %game.element.consume.fire%, aby maksymalnie dwóch wrogów w promieniu %game.action.range:4% otrzymało %game.damage% 1."
+    },
+    "fh-53": {
+      "": "Ćwiekowane Buty",
+      "1": "Po poruszeniu się o co najmniej 4 pola podczas twojej tury otrzymujesz %game.action.retaliate% 1 na tę rundę."
+    },
+    "fh-54": {
+      "": "Wygodne Pantofle",
+      "1": "Podczas twojego krótkiego odpoczynku, zamiast losowo tracić jedną kartę z twojego stosu kart odrzuconych, wylosuj trzy karty z tego stosu i wybierz jedną do stracenia."
+    },
+    "fh-55": {
+      "": "Kąsająca Rękawica",
+      "1": "Kiedy jesteś atakowany przez sąsiadującego wroga, zyskujesz %game.action.retaliate% 2 na ten atak."
+    },
+    "fh-56": {
+      "": "Magnes Poszukiwacza",
+      "1": "Podczas twojej tury %game.element.consume.earth% aby zebrać jeden sąsiedni żeton łupów."
+    },
+    "fh-57": {
+      "": "Łopata",
+      "1": "Podczas twojej tury zniszcz jeden sąsiedni kafelek przeszkody, niebezpiecznego terenu, trudnego terenu, oblodzonego terenu albo pułapki."
+    },
+    "fh-58": {
+      "": "Śliski Miecz",
+      "1": "Podczas twojej zdolności ataku wręcz dodaj +2 %game.action.attack% do jednego ataku. Po zakończeniu zdolności otrzymujesz %game.condition.disarm%."
+    },
+    "fh-59": {
+      "": "Wisiorek Ekspertyzy",
+      "1": "Na początku scenariusza otrzymujesz na ten scenariusz jeden wcześniej niezdobyty profit ze swojego arkusza postaci z 1 znacznikiem."
+    },
+    "fh-6": {
+      "": "Miękkie Pantofle",
+      "1": "Podczas zbierania na koniec tury możesz zebrać łupy z sąsiedniego pola zamiast z pola, które zajmujesz."
+    },
+    "fh-60": {
+      "": "Płaszcz Wielu Kieszeni",
+      "1": "Na początku scenariusza możesz zabrać do dwóch dodatkowych przedmiotów %game.items.slots.small%."
+    },
+    "fh-61": {
+      "": "Kolczasta Skorupa",
+      "1": "Natychmiast po tym, jak zaatakuje cię sąsiadujący wróg, wróg ten otrzymuje %game.damage% X, gdzie X to twoja wartość %game.action.shield% dla tego ataku."
+    },
+    "fh-62": {
+      "": "Wieczne Buty",
+      "1": "Podczas twojej zdolności ruchu dodaj +1 %game.action.move% i zyskaj %game.condition.regenerate%"
+    },
+    "fh-63": {
+      "": "Trzewiki Cienia",
+      "1": "Podczas twojej zdolności ruchu %game.element.consume.dark% aby dodać +2 %game.action.move%"
+    },
+    "fh-64": {
+      "": "Detonator",
+      "1": "Kiedy jeden z twoich przywołańców zostanie zabity, wszyscy sąsiadujący z nim wrogowie otrzymują %game.damage% 2 i %game.condition.wound%."
+    },
+    "fh-65": {
+      "": "Rdzawy Pył",
+      "1": "Podczas twojej tury umieść żeton postaci na jednym zwykłym lub elitarnym wrogu w promieniu %game.action.range:3%. Ten wróg otrzymuje -1 %game.action.shield% na ten scenariusz."
+    },
+    "fh-66": {
+      "": "Amulet Wiecznego Życia",
+      "1": "Na początku twojego odpoczynku wykonujesz:"
+    },
+    "fh-67": {
+      "": "Zbieżne Soczewki",
+      "1": "Kiedy jesteś atakowany, zamiast dobierać kartę modyfikatora ataku, dodaj +1 %game.action.attack% do ataku i odwróć tę kartę.",
+      "2": "Podczas twojej zdolności ataku, zamiast dobierać kartę modyfikatora ataku, dodaj +1 %game.action.attack% do ataku i odwróć tę kartę."
+    },
+    "fh-68": {
+      "": "Zbroja Łuskowa",
+      "1": "Przy następnych trzech źródłach 2 lub mniej %game.damage%, które masz otrzymać, zaneguj te %game.damage%."
+    },
+    "fh-69": {
+      "": "Pierzasty Płaszcz",
+      "1": "Kiedy otrzymujesz %game.damage% od ataku, %game.element.consume.air% aby zyskać %game.action.shield:3% na ten atak."
+    },
+    "fh-7": {
+      "": "Siermiężny Łuk",
+      "1": "Podczas twojej tury dodaj +1 %game.action.range% do jednego z twoich ataków dystansowych."
+    },
+    "fh-70": {
+      "": "Szata Estera",
+      "1": "Za każdym razem, gdy otrzymujesz %game.damage% z %game.action.retaliate%, zmniejsz %game.damage% do 1. Jeśli %game.damage% już wynosi 1, zamiast tego zmniejsz je do 0."
+    },
+    "fh-71": {
+      "": "Kościane Buty",
+      "1": "Po twojej zdolności, w której zabijasz wroga, wykonaj:"
+    },
+    "fh-72": {
+      "": "Dębowy Kostur",
+      "1": "Podczas twojej tury %game.element.consume.light% aby wykonać:"
+    },
+    "fh-73": {
+      "": "Energetyzująca Pałka",
+      "1": "Kiedy nakładasz pozytywny stan na sojusznika, inny sojusznik w promieniu %game.action.range:3% zyskuje ten sam stan."
+    },
+    "fh-74": {
+      "": "Granaty Porażające",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-75": {
+      "": "Różana Rękawica",
+      "1": "Po tym, jak dowolny sojusznik w promieniu %game.action.range:2% otrzyma %game.damage% od ataku, usuń wszystkie negatywne stany z tego sojusznika, a następnie wykonaj:",
+      "2": "sojusznik"
+    },
+    "fh-76": {
+      "": "Róg Dowodzenia",
+      "1": "Podczas tury jednego z twoich przywołańców zdecyduj, w jaki sposób wykona on swoje zdolności."
+    },
+    "fh-77": {
+      "": "Działo Chaosu",
+      "1": "Podczas twojej tury zamień jeden kafelek przeszkody, niebezpiecznego, trudnego lub oblodzonego terenu o wielkości 1 pola znajdujący się na niezajętym polu w promieniu %game.action.range:2% na kafelek innego typu wymieniony powyżej."
+    },
+    "fh-78": {
+      "": "Dokładna Waga",
+      "1": "Raz na turę podczas twojej zdolności ataku możesz otrzymać korzyść na jeden atak, a następnie odwróć tę kartę na koniec twojej tury.",
+      "2": "Raz na turę podczas twojej zdolności ataku możesz otrzymać niekorzyść na jeden atak, a następnie odwróć tę kartę na koniec twojej tury."
+    },
+    "fh-79": {
+      "": "Pieczony Drób",
+      "1": "Podczas twojej tury dodaj +1 %game.action.attack% do wszystkich twoich ataków i wykonaj:"
+    },
+    "fh-8": {
+      "": "Siermiężna Włócznia",
+      "1": "Podczas twojej tury jedna z twoich zdolności ataku wręcz w jeden cel może zostać skierowana we wroga oddalonego o dwa pola."
+    },
+    "fh-80": {
+      "": "Żyjący Kamień",
+      "1": "Kiedy masz otrzymać 4 lub mniej %game.damage% od ataku, zaneguj te %game.damage% i wykonaj: %game.action.heal% X na siebie, gdzie X to liczba obrażeń, które miałbyś otrzymać."
+    },
+    "fh-81": {
+      "": "Symulator Bólu",
+      "1": "Kiedy otrzymujesz 5 lub mniej %game.damage% od ataku, jeden wróg w promieniu %game.action.range:2% również otrzymuje taką samą liczbę %game.damage%."
+    },
+    "fh-82": {
+      "": "Mechaniczna Kostka",
+      "1": "Podczas twojej zdolności ruchu po wejściu na dowolne pole daj %game.condition.immobilize% wszystkim sąsiadującym wrogom."
+    },
+    "fh-83": {
+      "": "Mikstura Leczenia",
+      "1": "Podczas twojej tury wykonaj %game.action.heal% 3 na siebie"
+    },
+    "fh-84": {
+      "": "Mikstura Wytrzymałości",
+      "1": "Podczas twojej tury %game.card.recover% jedną kartę poziomu 1 ze stosu kart odrzuconych."
+    },
+    "fh-85": {
+      "": "Mikstura Mocy",
+      "1": "Podczas twojej tury dodaj +1 %game.action.attack% do wszystkich twoich ataków."
+    },
+    "fh-86": {
+      "": "Mikstura Żywiołów",
+      "1": "Podczas twojej tury %game.element.wild%"
+    },
+    "fh-87": {
+      "": "Mikstura Zdrowia",
+      "1": "Podczas twojej tury usuń z siebie jeden negatywny stan. Ten przedmiot może zostać użyty, gdy masz %game.condition.impair% lub %game.condition.stun%."
+    },
+    "fh-88": {
+      "": "Mikstura Ogniowej Tarczy",
+      "1": "Podczas twojej tury wykonaj: %game.action.retaliate% 1 %game.action.range:3% "
+    },
+    "fh-89": {
+      "": "Mikstura Kamiennej Skóry",
+      "1": "Podczas twojej tury wykonaj: %game.condition.ward% na siebie"
+    },
+    "fh-9": {
+      "": "Ochronne Berło",
+      "1": "Podczas twojej tury daj jednemu sojusznikowi w promieniu %game.action.range% 2:"
+    },
+    "fh-90": {
+      "": "Mikstura Siły",
+      "1": "Podczas twojej tury wykonaj: %game.condition.strengthen% na siebie"
+    },
+    "fh-91": {
+      "": "Woda Święcona",
+      "1": "Podczas twojej tury wykonaj: %game.condition.bless% na siebie"
+    },
+    "fh-92": {
+      "": "Mikstura Odnowienia",
+      "1": "Podczas twojej tury %game.card.recover% do dwóch z twoich zużytych przedmiotów."
+    },
+    "fh-93": {
+      "": "Mikstura Odbicia",
+      "1": "Kiedy ujawniasz kartę z modyfikatorem ataku %game.attackmodifier.null% z twojej talii modyfikatorów ataku, potraktuj ją jako %game.attackmodifier.plus0%."
+    },
+    "fh-94": {
+      "": "Mikstura Szału",
+      "1": "Podczas twojej tury wykonaj:"
+    },
+    "fh-95": {
+      "": "Fiolka Trucizny",
+      "1": "Podczas twojej tury wykonaj: %game.condition.poison% %game.action.range:1%"
+    },
+    "fh-96": {
+      "": "Fiolka Płomieni",
+      "1": "Podczas twojej tury wykonaj: %game.condition.wound% %game.action.range:1%"
+    },
+    "fh-97": {
+      "": "Fiolka Eksplozji",
+      "1": "Podczas twojej tury jeden wróg w promieniu %game.action.range:2% otrzymuje %game.damage% 2."
+    },
+    "fh-98": {
+      "": "Niezdrowa Mikstura",
+      "1": "Podczas twojej tury wykonaj: %game.condition.wound%, %game.condition.poison% na siebie"
+    },
+    "fh-99": {
+      "": "Mikstura Większego Leczenia",
+      "1": "Podczas twojej tury wykonaj: %game.action.heal% 6 na siebie"
+    }
+  },
+  "pets": {
+    "fh-01": {
+      "": "Świniopirania",
+      "1": "Wszystkie postacie natychmiast wykonują:"
+    },
+    "fh-02": {
+      "": "Ogar",
+      "1": "W tej rundzie, wszystkie postacie dodają +1%game.action.attack% do wszystkich swoich ataków wręcz, wymierzonych we wrogów sąsiadujących z dowolnym sojusznikiem postaci."
+    },
+    "fh-03": {
+      "": "Plujący Drakon",
+      "1": "Wszystkie postacie dodają %game.condition.poison% do wszystkich swoich ataków dystansowych w tej rundzie."
+    },
+    "fh-04": {
+      "": "Rozszarpujący Drakon",
+      "1": "Wszystkie postacie dodają %game.condition.wound% do wszystkich swoich ataków wręcz w tej rundzie."
+    },
+    "fh-05": {
+      "": "Czarny Chochlik",
+      "1": "W kolejności inicjatywy, wszystkie postacie natychmiast wykonują:"
+    },
+    "fh-06": {
+      "": "Leśny Chochlik",
+      "1": "W kolejności inicjatywy, wszystkie postacie natychmiast wykonują:"
+    },
+    "fh-07": {
+      "": "Śnieżny Chochlik",
+      "1": "W kolejności inicjatywy, wszystkie postacie natychmiast wykonują:"
+    },
+    "fh-08": {
+      "": "Szlam",
+      "1": "Stwórz przeszkodę o wielkości 1, 2 lub 3 pól w dowolnym miejscu na ujawnionej części mapy."
+    },
+    "fh-09": {
+      "": "Zrujnowana Maszyna",
+      "1": "Wszystkie postacie natychmiast wykonują:"
+    },
+    "fh-10": {
+      "": "Węgorz Elektryczny",
+      "1": "Wszystkie postacie otrzymują %game.damage:2%, aby %game.card.recover% jedną ze swoich odrzuconych kart poziomu 1 lub X."
+    },
+    "fh-11": {
+      "": "BO-HA-TY-R",
+      "1": "W kolejności inicjatywy wszystkie postacie mogą indywidualnie zdecydować się na natychmiastowe wykonanie akcji:"
+    },
+    "fh-12": {
+      "": "Brummix",
+      "1": "Podczas wybierania kart ujawnij wierzchnią kartę z talii umiejętności każdego aktywnego potwora, zanim wszystkie postacie wybiorą swoje karty."
+    }
+  },
+  "scenario": {
+    "recap": {
+      "fh": {
+        "1": {
+          "": "Twoja grupa najemników została wynajęta do eskortowania karawany Gildii Kupieckiej z Białego Dębu. Waszym zadaniem jest dostarczenie zapasów do (oraz sprawdzenie stanu) Frosthaven - odległej, samotnej placówki, którą Gildia od jakiegoś czasu pragnie rozbudować."
+        },
+        "10": {
+          "5": "Lodomówca, którego ścigaliście, zwabił was w swego rodzaju pułapkę - wpadliście przez ukrytą szczelinę do podziemnej krypty pełnej duchów. Po rozprawieniu się z nimi i zdobyciu sań, ruszyliście w pościg za tymi Algoksami."
+        },
+        "100": {
+          "99": "Zaprowadziła was do starego i odległego więzienia, w którym strażnicy (rzecz jasna) nie byli tak martwi, jak obiecywano. \"Więzień\" zdawał się być przetrzymywany w drewnianej skrzyni na piedestale. W skrzyni znajdował się Dreszczowiec o imieniu Zu, który ewidentnie nieco oszalał z powodu długiego uwięzienia. Iskra wysłała was do umysłu roju Dreszczowca, aby spróbować przywrócić mu zmysły."
+        },
+        "101": {
+          "100": "Podczas gdy wasze świadome umysły trwały we śnie, wasza podświadomość skierowała się ku rdzeniowi umysłu Zu. Okazało się, że jest to replika dawnej kryjówki jego i Iskry. Rozprawiliście się z ostatnimi urojeniami mącącymi świadomość Zu i przywróciliście mu przytomność.<br>Zu narzekał, że to miał być wyrok dożywocia i że nie odprawił jeszcze swojej pokuty. Iskra powiedziała mu, że muszą odnaleźć i pomóc pewnemu Sawasowi imieniem \"Bartlet\", oraz żeby przestał narzekać. Zu ustąpił."
+        },
+        "102": {
+          "101": "Aby odnaleźć Bartleta, Iskra i Zu zaprowadzili was do starożytnej \"biblioteki\" Dreszczowców – magazynu ich wspomnień, dostępnego tylko dla innych Dreszczowców. Odkryliście miejsce pobytu Bartleta, a także dowiedzieliście się, że cała trójka (plus tajemniczy czwarty towarzysz) była niegdyś najemnikami takimi jak wy, zanim popełnili jakiegoś rodzaju błąd."
+        },
+        "104": {
+          "": "W skrzyni znaleźliście tęczowy klucz. Gdy go trzymaliście, w powietrzu pojawiła się dziurka od klucza, przez którą dostrzegliście słoneczny, wiosenny krajobraz. Próbowaliście użyć klucza, aby otworzyć drzwi, ale to nie zadziałało. Postanowiliście spróbować ponownie później."
+        },
+        "108": {
+          "": "W skrzyni znaleźliście pomalowaną kamienną tabliczkę. Obraz przedstawia dziwnie znajomy krajobraz i poczuliście, że bylibyście w stanie odnaleźć to miejsce, gdybyście tylko dostatecznie dobrze poszukali."
+        },
+        "112": {
+          "": "Wewnątrz skrzyni ze skarbami, głęboko w przerażającym lochu pełnym niebezpiecznych potworów, znaleźliście uroczego wilczego szczeniaka, który po prostu spokojnie spał. I jakimś cudem żył. Zamknięty w skrzyni. Może brzmi to dziwnie lub nieprawdopodobnie, ale szczeniaki są super, więc po co zadawać zbyt wiele pytań? Zabraliście go ze sobą z powrotem do Frosthaven."
+        },
+        "114": {
+          "4": "Majsterkowicz z Frosthaven, <strong>%ui.tooltip:data.scenario.recap.fh.character.pinter-droman%</strong>, uważa, że niedawne osunięcie ziemi stworzyło nową okazję do wytyczenia przejścia przez Góry Miedzianej Turni. Mogłoby to zaoszczędzić kilka dni podczas każdej podróży. Pinter stworzył kilka bomb, które mają pomóc uprzątnąć pozostały gruz, jednak lokalna fauna nie patrzy przychylnym okiem na te działania. Poprosił was o podłożenie materiałów wybuchowych w wyznaczonych miejscach, ponieważ – w przeciwieństwie do jego zwykłych pracowników – wy potraficie się obronić."
+        },
+        "115": {
+          "114": "Wyszło tak dobrze, jak można było oczekiwać, biorąc pod uwagę połączenie dynamitu z niedźwiedziami polarnymi, ale odnieśliście zwycięstwo i przekazaliście plac budowy z powrotem Pinterowi.<br>Kilka tygodni później potrzebował kolejnej pomocy przy projekcie. Część drogi przebiega pod klifem; ekipa budowlana zainstalowała pylony, aby ją podtrzymać. Jednak algokscy bandyci – klan zwany [Horns of Ruin] – nie są zbyt zadowoleni z tej nowej konstrukcji. Pinter poprosił was, byście udali się tam i ochronili pylony przed atakiem."
+        },
+        "116": {
+          "115": "Gdy to zostało zrobione, Pinter i jego ekipa mogli ukończyć drogę. <strong>%ui.tooltip:data.scenario.recap.fh.character.mayor-satha%</strong> poprosiła lokalnych kupców o wykonanie kursu próbnego tym nowym skrótem oraz poprosiła was o eskortowanie pierwszych karawan zmierzających na południe."
+        },
+        "118": {
+          "": "Pewnego dnia Kościodziej powrócił i was zaskoczył. Poszukiwał energii z nowych sfer egzystencji - i znalazł dziwną energię znacznie bliżej domu, emanującą skądś w pobliżu Frosthaven."
+        },
+        "120": {
+          "": "Jakaś siła mąci w umysłach mieszkańców Frosthaven, w tym niektórych strażników – jeden z nich pchnął nożem drugiego. <strong>%ui.tooltip:data.scenario.recap.fh.character.captain-olmstead%</strong> zameldował, że w tym tygodniu działo się to wielokrotnie. Jest niemal pewien, że coś zadomowiło się w opuszczonej chacie. Cokolwiek to było, próbowało następnie zmusić was, byście sami się wypatroszyli. Uznaliście, że powinniście to sprawdzić."
+        },
+        "122": {
+          "": "Podczas waszych podróży napotkaliście starszą Kwatrylkę, która pielęgnowała wyśmienicie pachnące papryczki. Nazwała je „ognistymi papryczkami” - i opowiedziała wam historię o bestii zwanej Głodną Paszczą, która żyje pod Górami Miedzianej Turni. Podobno pożera ona całe wioski, ale można ją nasycić jedynie gulaszem z ognistej papryczki. Zapytała, czy jesteście gotowi na wyzwanie."
+        },
+        "13": {
+          "7": "Ścigaliście ich do brzegu Kąsającego Morza, gdzie natknęliście się na Czychaczy w jaskini wykutej w klifie. W czaszce Ożywionych Zwłok znaleźliście osobliwy Odłamek Koralowca; przekazał wam on, że chce, abyście zabrali go na północ, daleko w morze, z dala od klifów. Uznaliście, że to właśnie tego szukali Czychacze. Zanim wypłynęliście na otwarte morze, postanowiliście podążyć za przyciąganiem odłamka drogą lądową wzdłuż północnego wybrzeża."
+        },
+        "134": {
+          "": "<strong>%ui.tooltip:data.scenario.recap.fh.character.eddica%</strong>, valracka Bibliotekarka, badała pewne magiczne księgi, napisane przez Sawasa, czarownika o imieniu Belara. Uważa, że odnalazła lokalizację Księgi Konfliktu. W starszych tekstach mowa jest o wieży, która rzekomo znajduje się w Promiennym Lesie – ale nie ma jej na żadnych nowszych mapach. Podejrzewa, że to tam można odnaleźć Księgę."
+        },
+        "14": {
+          "7": "Ścigaliście ich do brzegu Kąsającego Morza, gdzie natknęliście się na Czychaczy w jaskini wykutej w klifie. W czaszce Ożywionych Zwłok znaleźliście osobliwy Odłamek Koralowca; przekazał wam on, że chce, abyście zabrali go na północ, daleko w morze, z dala od klifów. Uznaliście, że to właśnie tego szukali Czychacze.<br>Po zbudowaniu statku postanowiliście wypłynąć na skute lodem morze i sprawdzić, dokąd Odłamek chce was zaprowadzić."
+        },
+        "15": {
+          "8": "Biegliście przez niebezpieczną dolinę, ścigani przez wilki, aż dotarliście do Kryształowych Pól - miejsca pełnego olbrzymich kryształowych filarów wysokich niczym drzewa.<br>Zauważyliście jedną masywną iglicę, większą i o ciemniejszym kolorze niż pozostałe, i postanowiliście ją zbadać."
+        },
+        "16": {
+          "8": "Biegliście przez niebezpieczną dolinę, ścigani przez wilki, aż dotarliście do Kryształowych Pól - miejsca pełnego olbrzymich kryształowych filarów wysokich niczym drzewa.<br>Dostrzegliście w oddali jeden kolec, który wyglądał dość intrygująco - był niższy i szerszy od pozostałych - i postanowiliście go zbadać."
+        },
+        "17": {
+          "9": "W ostatnim pomieszczeniu Katakumb znaleźliście dziwne drzwi z zagadką, pełne kół zębatych i symboli. Nie znaczyło to dla was nic, dopóki Kwatryl, naukowiec <strong>%ui.tooltip:data.scenario.recap.fh.character.crain-tallengyr%</strong>, nie zaczął prosić was o zbadanie \"Miejsc Śmierci\" oraz dziwnych energii, które utrzymują się w niektórych częściach Północy – prawdopodobnie jako skutek wojny stoczonej przed wiekami."
+        },
+        "18": {
+          "10": "Algoksi, których napotkaliście, skupiali energię poprzez dziwne kryształowe kolce - przekaźniki - które wzmacniały ich moc. Pokonaliście ich, ale w oddali dostrzegliście kolejne pole takich kolców. To jest znacznie większe, więc wyruszyliście na poszukiwania ich źródła."
+        },
+        "19": {
+          "11": "Pokonaliście potężną Śniegomówczynię, ale coś, co zrobiła, sprawiło, że Szczyt Śnieżnicy zadrżał; szybko zjechaliście na linie na dół."
+        },
+        "2": {
+          "1": "Pomogliście odeprzeć atak Algoksów; <strong>%ui.tooltip:data.scenario.recap.fh.character.mayor-satha%</strong> poprosiła was o pomoc w dalszym rozprawieniu się z nimi. Valracki zwiadowca Sathy zauważył niewielką grupę kierującą się na zabójcze wschodnie zbocze Śnieżnicy i podejrzewał, że znajduje się tam ukryte wejście."
+        },
+        "21": {
+          "13": "Przekroczyliście most zbudowany ze starożytnych kości i pokonaliście strzegących go Dzierzbiarzy. Postanowiliście podążyć za przyciąganiem Odłamka Koralowca dalej na północ, mając nadzieję, że dotrzecie do miejsca, do którego was prowadził."
+        },
+        "22": {
+          "14": "Po zmierzeniu się z koszmarem złożonym z abael, węgorzy i świń-piranii, wydobyliście z kamienia drugi Odłamek Koralowca. Z wody wyłonił się półokrąg Czychaczy, w tym jeden o imieniu <strong>%ui.tooltip:data.scenario.recap.fh.character.sun-in-shallows%</strong>. Opowiedzieli wam o Koralowej Koronie, która rozpadła się na kawałki – a wraz z nią legło w gruzach wielkie Królestwo Czychaczy. Od tamtej pory większość Czychaczy wpadła w ślepy szał; zgodziliście się pomóc w ponownym scaleniu korony w nadziei, że pozwoli to odbudować cywilizację Czychaczy.<br>Psychiczne przyciąganie Odłamków Koralowca powiodło was dalej na wschód, w głębiny morza."
+        },
+        "23": {
+          "15": "Pokonaliście Przybocznego Chaosu strzegącego wejścia, który obwieścił, że przygotowują się do zniszczenia waszego posterunku. Znaleźliście zarówno klatkę schodową prowadzącą w dół, jak i promień światła, który mógłby zabrać was w górę. Zdecydowaliście się zejść po schodach na dół."
+        },
+        "24": {
+          "15": "Pokonaliście Przybocznego Chaosu strzegącego wejścia, który obwieścił, że przygotowują się do zniszczenia waszego posterunku. Znaleźliście zarówno klatkę schodową prowadzącą w dół, jak i promień światła, który mógłby zabrać was w górę. Weszliście w promień, aby zostać wciągniętym wyżej."
+        },
+        "28": {
+          "18": "Pokonaliście Lodomówców, ale przyprowadziliście jednego ocalałego, aby spotkał się z Przywódczynią <strong>%ui.tooltip:data.scenario.recap.fh.character.lanprul%</strong>. Ocalały doniósł, że <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong> nasłał na nich \"Ostrzylce\" i że ma już dość tej wojny. Choć Przywódczyni Lanprul była na to otwarta, inna członkini plemienia – <strong>%ui.tooltip:data.scenario.recap.fh.character.denpang%</strong> – zachęcała do zmasowanego ataku z wami u boku Śniegomówców. Odeszła, by planować wojnę. Wy natomiast zostaliście z Przywódczynią Lanprul, by planować pokój.",
+          "19": "Odkryliście, że duchy z Sali Niebios – miejsca o wielkim znaczeniu religijnym – zwróciły się przeciwko Lodomówcom. Podczas gdy wy zapewnialiście im wieczny spoczynek, <strong>%ui.tooltip:data.scenario.recap.fh.character.chief-elland%</strong> oświadczył, że tak dalej być nie może – że wojna sprowadza ruinę na wszystkich Algoksów. Starsza kobieta pośród nich, <strong>%ui.tooltip:data.scenario.recap.fh.character.putargal%</strong>, zamiast tego nawoływała do zemsty na Śniegomówcach za to, co zrobili ze Śnieżnicą i Salą Niebios. Odeszła, by zaplanować atak na ich wrogów, ale wy zostaliście z Wodzem Ellandem, aby planować pokój."
+        },
+        "29": {
+          "18": "Pokonaliście Lodomówców, ale przyprowadziliście jednego ocalałego, aby spotkał się z Przywódczynią <strong>%ui.tooltip:data.scenario.recap.fh.character.lanprul%</strong>. Ocalały doniósł, że <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong> nasłał na nich \"Ostrzylce\" i że ma już dość tej wojny. Choć Przywódczyni Lanprul była na to otwarta, inna członkini plemienia – <strong>%ui.tooltip:data.scenario.recap.fh.character.denpang%</strong> – zachęcała do zmasowanego ataku z wami u boku Śniegomówców. Odeszła, by planować wojnę. Odeszliście wraz z Denpang, aby wspomóc atak i zapewnić Śniegomówcom ostateczne zwycięstwo."
+        },
+        "3": {
+          "1": "Pomogliście odeprzeć atak Algoksów; <strong>%ui.tooltip:data.scenario.recap.fh.character.mayor-satha%</strong> poprosiła was o pomoc w dalszym rozprawieniu się z nimi. Valracki zwiadowca Sathy zauważył niewielką grupę kierującą się na zabójcze wschodnie zbocze Śnieżnicy i podejrzewał, że znajduje się tam ukryte wejście."
+        },
+        "30": {
+          "19": "Odkryliście, że duchy z Sali Niebios – miejsca o wielkim znaczeniu religijnym – zwróciły się przeciwko Lodomówcom. Podczas gdy wy zapewnialiście im wieczny spoczynek, <strong>%ui.tooltip:data.scenario.recap.fh.character.chief-elland%</strong> oświadczył, że tak dalej być nie może – że wojna sprowadza ruinę na wszystkich Algoksów. Starsza kobieta pośród nich, <strong>%ui.tooltip:data.scenario.recap.fh.character.putargal%</strong>, zamiast tego nawoływała do zemsty na Śniegomówcach za to, co zrobili ze Śnieżnicą i Salą Niebios. Odeszła, by zaplanować atak na ich wrogów; udaliście się wraz z nią, by dołączyć do bitwy."
+        },
+        "31": {
+          "20": "Aby pokonać wszystkie automaty, musieliście zniszczyć dziwną, świecącą kulę. Gdy je pokonaliście, mogliście zbadać dziwne drzwi, zamknięte przy pomocy złożonego mechanizmu z kołami zębatymi i symbolami. Nie znaczyło to dla was nic, dopóki Kwatryl, naukowiec <strong>%ui.tooltip:data.scenario.recap.fh.character.crain-tallengyr%</strong>, nie zaczął prosić was o zbadanie \"Miejsc Śmierci\" oraz dziwnych energii, które utrzymują się w niektórych częściach Północy – prawdopodobnie jako skutek wojny stoczonej przed wiekami."
+        },
+        "32": {
+          "13": "Przekroczyliście most zbudowany ze starożytnych kości i pokonaliście strzegących go Dzierzbiarzy. Postanowiliście na razie zignorować przyciąganie Odłamka i zbadać zachodni las."
+        },
+        "33": {
+          "22": "Tam napadli na was Czychacze, zwabieni przyciąganiem Odłamków, które niesiecie. Zniszczyli waszą łódź, więc zdecydowaliście się poszukać innego środka transportu. Majsterkowicz z Frosthaven, <strong>%ui.tooltip:data.scenario.recap.fh.character.pinter-droman%</strong>, zaprojektował batysferę – jednostkę do bezpiecznego podróżowania pod wodą – lecz potrzebowała ona źródła zasilania. Sugerował, że możecie znaleźć je w sercu [Radiant Forest]."
+        },
+        "34": {
+          "23": "Niezależnie od dokonanego wyboru, znaleźliście przynajmniej jeden sposób, by dostać się na górę - za pomocą promienia lub platformy - aby udaremnić mroczne przeznaczenie tej wieży. Wiedzieliście, że odpowiedzi znajdziecie na samym szczycie.",
+          "24": "Niezależnie od waszego wyboru, znaleźliście przynajmniej jeden sposób, by dostać się na górę - za pomocą promienia lub windy - aby udaremnić mroczne przeznaczenie tej wieży. Wiedzieliście, że odpowiedzi czekają na samym szczycie."
+        },
+        "35": {
+          "25": "Tam uratowaliście Kwatryla, naukowca <strong>%ui.tooltip:data.scenario.recap.fh.character.crain-tallengyr%</strong>, który badał Nieposkromionych. W Frosthaven wracał do zdrowia i uważa, że opracował urządzenie, które dezaktywowałoby Nieposkromionych. Potrzebuje jednak najpierw materiałów i poprosił was, byście zabrali go z powrotem, aby mógł znaleźć części, których potrzebuje."
+        },
+        "36": {
+          "26": "Tam uratowaliście Kwatryla, naukowca <strong>%ui.tooltip:data.scenario.recap.fh.character.crain-tallengyr%</strong>, który badał Nieposkromionych. W Frosthaven wracał do zdrowia. Pokazał wam mapy kompleksu oraz dwie możliwe ścieżki do rdzenia. Wybraliście przekradnięcie się nad nimi przez [ducts]."
+        },
+        "37": {
+          "26": "Tam uratowaliście Kwatryla, naukowca <strong>%ui.tooltip:data.scenario.recap.fh.character.crain-tallengyr%</strong>, który badał Nieposkromionych. W Frosthaven wracał do zdrowia. Pokazał wam mapy kompleksu oraz dwie możliwe ścieżki do rdzenia. Wybraliście głębszą ścieżkę, która mogła niegdyś służyć jako system transportu."
+        },
+        "38": {
+          "28": "Niezależnie od tego, po której stronie Algoksów stanęliście na początku, zgodziliście się pomóc ich wodzowi w znalezieniu pokojowego rozwiązania konfliktu. Braliście udział w tajnym spotkaniu dwóch algokskich emisariuszy, <strong>%ui.tooltip:data.scenario.recap.fh.character.gurndel%</strong> oraz <strong>%ui.tooltip:data.scenario.recap.fh.character.barduu%</strong>, jako świadkowie i ochroniarze. Zarówno Lodomówcy, jak i Śniegomówcy zaatakowali jednak spotkanie, walcząc przeciwko wam oraz swoim wrogim plemionom. Udało wam się z nimi uciec; zgodziliście się, że jedyną drogą naprzód jest odnalezienie Wyroczni w Lesie Białego Ognia, <strong>%ui.tooltip:data.scenario.recap.fh.character.marogh%</strong>."
+        },
+        "42": {
+          "33": "Tam napadli na was Czychacze, zwabieni przyciąganiem Odłamków, które niesiecie. Zniszczyli waszą łódź, więc zdecydowaliście się poszukać innego środka transportu. Majsterkowicz z Frosthaven, <strong>%ui.tooltip:data.scenario.recap.fh.character.pinter-droman%</strong>, zaprojektował batysferę – jednostkę do bezpiecznego podróżowania pod wodą – lecz potrzebowała ona źródła zasilania. Sugerował, że możecie znaleźć je w sercu [Radiant Forest].<br>Odzyskaliście Źródło Energii i wróciliście z nim do Pintera. Po kilku tygodniach batysfera była gotowa – wraz z zestawem podwodnych skafandrów. Nadszedł czas, by dalej podążać za przyciąganiem Odłamków Koralowca."
+        },
+        "45": {
+          "38": "<strong>%ui.tooltip:data.scenario.recap.fh.character.barduu%</strong> i <strong>%ui.tooltip:data.scenario.recap.fh.character.gurndel%</strong> skonsultowali się z <strong>%ui.tooltip:data.scenario.recap.fh.character.marogh%</strong>, który przemówił: \"ZEPSUCIE ZASZŁO ZBYT DALEKO. TEN, KTÓRY ŚPI, ZACZYNA SIĘ BUDZIĆ. JEGO WPŁYW PODSYCA KONFLIKT. SERCE LODU CZERNIEJE. JEGO SKAZA MUSI ZOSTAĆ WYKORZENIONA - ZASTĄPIONA.<br>UFORMUJCIE NOWE SERCE STWORZONE Z LODU I ŚNIEGU. JEDNA ŚCIEŻKA LEŻY UKRYTA W MORZU - ŻYWY LODOWIEC, ZRODZONY W MINIONYCH EPOKACH. DRUGA LEŻY NA POŁUDNIOWYCH WZGÓRZACH - ŚWIEŻY ŚNIEG, KTÓRY NIESIE PIEŚŃ NADCHODZĄCYCH DNI. RAZEM KRYJĄ W SOBIE MOC POWSTRZYMANIA ZEPSUCIA. ODSZUKAJCIE JE I POWRÓĆCIE.\"<br>Tym samym, udaliście się do Żywego Lodowca w poszukiwaniu lodu."
+        },
+        "46": {
+          "38": "<strong>%ui.tooltip:data.scenario.recap.fh.character.barduu%</strong> i <strong>%ui.tooltip:data.scenario.recap.fh.character.gurndel%</strong> skonsultowali się z <strong>%ui.tooltip:data.scenario.recap.fh.character.marogh%</strong>, który przemówił: \"ZEPSUCIE ZASZŁO ZBYT DALEKO. TEN, KTÓRY ŚPI, ZACZYNA SIĘ BUDZIĆ. JEGO WPŁYW PODSYCA KONFLIKT. SERCE LODU CZERNIEJE. JEGO SKAZA MUSI ZOSTAĆ WYKORZENIONA - ZASTĄPIONA.<br>UFORMUJCIE NOWE SERCE STWORZONE Z LODU I ŚNIEGU. JEDNA ŚCIEŻKA LEŻY UKRYTA W MORZU - ŻYWY LODOWIEC, ZRODZONY W MINIONYCH EPOKACH. DRUGA LEŻY NA POŁUDNIOWYCH WZGÓRZACH - ŚWIEŻY ŚNIEG, KTÓRY NIESIE PIEŚŃ NADCHODZĄCYCH DNI. RAZEM KRYJĄ W SOBIE MOC POWSTRZYMANIA ZEPSUCIA. ODSZUKAJCIE JE I POWRÓĆCIE.\"<br>Tym samym, udaliście się do Martwej przełęczy w poszukiwaniu Świeżego Śniegu."
+        },
+        "4A": {
+          "2": "Uratowaliście algokską Kapłankę o imieniu <strong>%ui.tooltip:data.scenario.recap.fh.character.lanprul%</strong> podczas badania ukrytego wejścia na Szczyt Śnieżnicy. Należy ona do Śniegomówców – grupy Algoksów wierzących, że ich bóg (<strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong>) przemawia do nich poprzez padający śnieg. Toczą oni wojnę z rywalizującą grupą Algoksów, Lodomówcami, którzy z kolei wierzą, że mogą komunikować się ze swoim bóstwem poprzez lód wyłaniający się z głębi ziemi. Lodomówcy obecnie zajmują Szczyt Śnieżnicy, ale Śniegomówcy wykorzystali okazję, by go przejąć, gdy tamci wyruszyli do ataku na Frosthaven.",
+          "3": "Uratowaliście algokską Kapłankę o imieniu <strong>%ui.tooltip:data.scenario.recap.fh.character.lanprul%</strong> podczas badania ukrytego wejścia na Szczyt Śnieżnicy. Należy ona do Śniegomówców – grupy Algoksów wierzących, że ich bóg (<strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong>) przemawia do nich poprzez padający śnieg. Toczą oni wojnę z rywalizującą grupą Algoksów, Lodomówcami, którzy z kolei wierzą, że mogą komunikować się ze swoim bóstwem poprzez lód wyłaniający się z głębi ziemi. Lodomówcy obecnie zajmują Szczyt Śnieżnicy, ale Śniegomówcy wykorzystali okazję, by go przejąć, gdy tamci wyruszyli do ataku na Frosthaven."
+        },
+        "4B": {
+          "2": "Przerwaliście bitwę między dwiema rywalizującymi grupami Algoksów. Jeden z walczących Algoksów, tytułujący się Lodomówcą, przywitał was i stwierdził, że Śniegomówcy najechali ich dom, podczas gdy oni sami byli zajęci atakiem na Frosthaven. Szczyt Śnieżnicy ma ogromne znaczenie religijne zarówno dla Śniegomówców, jak i Lodomówców, którzy różnią się w swoich przekonaniach na temat tego, jak powinni komunikować się ze swoim bogiem, <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong>.",
+          "3": "Przerwaliście bitwę między dwiema rywalizującymi grupami Algoksów. Jeden z walczących Algoksów, tytułujący się Lodomówcą, przywitał was i stwierdził, że Śniegomówcy najechali ich dom, podczas gdy oni sami byli zajęci atakiem na Frosthaven. Szczyt Śnieżnicy ma ogromne znaczenie religijne zarówno dla Śniegomówców, jak i Lodomówców, którzy różnią się w swoich przekonaniach na temat tego, jak powinni komunikować się ze swoim bogiem, <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong>."
+        },
+        "5": {
+          "4": "Opowiedzieliście się po stronie Śniegomówców w ich bitwie przeciwko Lodomówcom, zabijając wodza Lodomówców. Śniegomówcy, którzy wierzą, że komunikują się ze swoim bogiem poprzez padający śnieg, toczą wojnę z Lodomówcami, którzy z kolei wierzą, że mogą komunikować się z bogiem poprzez lód wyłaniający się z głębi ziemi. Szczyt Śnieżnicy to miejsce święte dla obu tych grup.<br>Przywódczyni Śniegomówców, <strong>%ui.tooltip:data.scenario.recap.fh.character.lanprul%</strong>, poprosiła was o pomoc w zakończeniu wojny z Lodomówcami, aby zagwarantować bezpieczeństwo Frosthaven przed Algoksami. Zauważyła grupę Lodomówców na północ od Lasu Białego Ognia, która przypuści kontratak, jeśli nie zostanie powstrzymana."
+        },
+        "52": {
+          "45": "Odzyskaliście zarówno odłamek żywego lodu lodowcowego, jak i świeży śnieg, i przynieśliście je z powrotem na świętą polanę, aby je połączyć.",
+          "46": "Odzyskaliście zarówno odłamek żywego lodu lodowcowego, jak i świeży śnieg, i przynieśliście je z powrotem na świętą polanę, aby je połączyć."
+        },
+        "55": {
+          "52": "<strong>%ui.tooltip:data.scenario.recap.fh.character.marogh%</strong> otworzył dziwny portal, aby ukończyć rytuał. Nic jednak nie jest aż tak proste; odkryliście, że musicie pokonać istoty lodu i śniegu i wykorzystać ich esencję do uformowania [glyph]. Gdy to się stało, dwaj emisariusze dokończyli rytuał, łącząc lód i śnieg, by stworzyć [Unyielding Shard]. W jego wnętrzu odnaleźli prawdziwe słowa <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong> i dowiedzieli się, że Algoksi zostali zwiedzeni przez jakąś inną moc. Musieliście wrócić na Śnieżnicę, aby osadzić Odłamek w [Heart of Ice], usunąć ciemność, która spadła na Algoksów, i przywrócić ich Geryuu."
+        },
+        "6": {
+          "4": "Opowiedzieliście się po stronie Lodomówców w ich walce przeciwko Śniegomówcom, zabijając wodza Śniegomówców. Lodomówcy wierzą, że mogą komunikować się ze swoim bogiem <strong>%ui.tooltip:data.scenario.recap.fh.character.geryuu%</strong> poprzez lód wyłaniający się z głębi ziemi. Toczą oni wojnę ze Śniegomówcami, którzy wierzą, że mogą komunikować się ze swoim bogiem Geryuu poprzez padający śnieg. Szczyt Śnieżnicy jest świętym miejscem dla obu grup.<br>Wódz Lodomówców, <strong>%ui.tooltip:data.scenario.recap.fh.character.chief-elland%</strong>, wierzy, że to Geryuu sprowadził was, byście pomogli pokonać Śniegomówców, i obiecał tymczasowo zaprzestać wrogich działań przeciwko Frosthaven.<br>Potężny Śniegomówca dotarł na wierzchołek Szczytu Śnieżnicy i grozi zawaleniem całej góry. Elland zasugerował, abyście udowodnili swoją siłę i przyjaźń, pokonując tego Śniegomówcę."
+        },
+        "65": {
+          "": "Estrowie są zainteresowani założeniem placówki badawczej na Północy. Wy wykonujecie czarną robotę. Nie ma w tym wielkiej filozofii – %game.scenarioNumber:65% sam nakreśla tutaj tło tych wydarzeń."
+        },
+        "66": {
+          "65": "Grupa ośmiu Estrowów podeszła do Frosthaven, połączywszy się w jedną istotę. Głos Ósemki, ich rzecznik, poprosił was o pomoc w zamian za wiedzę. Zlokalizowali matrycę żywiołów i poprosili was o jej odzyskanie.<br>Ośmiu Estrowów odkryło, że tylko Kotwica urządzenia była wciąż nienaruszona i że potrzebuje nowych źródeł żywiołów. Kilka tygodni później donieśli, że je znaleźli i poprosili was o spotkanie przy matrycy."
+        },
+        "67": {
+          "66": "Głos Ósemki i Nera, jedna z ośmiorga specjalizująca się w zaklinaniu, otworzyli dla was portale do czterech sfer żywiołów. Odzyskaliście rdzeń z każdego z nich i umieściliście je w specjalnych obudowach przygotowanych przez Estrowów. Musieli oni poświęcić czas na przekształcenie rdzeni i obiecali, że wezwą was, gdy znów będą potrzebować waszej pomocy."
+        },
+        "68": {
+          "67": "Po powrocie do Posterunku Esterów zastaliście ośmiu Esterów w kłopotach. Musieliście zasilić rdzenie własną energią. Byty sfer żywiołów przybyły, aby odzyskać kamienie, a wy ich odparliście.<br>Choć wykonaliście swoje zadanie, coś poszło nie tak... Otworzyła się nowa wyrwa."
+        },
+        "69": {
+          "": "Słyszeliście plotki o Prawdziwym Dębie gdzieś na Północy, zasadzonym przez proroka z żołędzia Wielkiego Dębu w stolicy. Zbieraliście próbki drewna."
+        },
+        "7": {
+          "4": "Po zażegnaniu bezpośredniego zagrożenia ze strony Algoksów wiszącego nad Frosthaven, <strong>%ui.tooltip:data.scenario.recap.fh.character.mayor-satha%</strong> wspomniała, że na obrzeżach terytorium Frosthaven dostrzeżono Czychaczy. Zostaliście poproszeni o sprawdzenie tej sytuacji."
+        },
+        "8": {
+          "4": "Po zażegnaniu bezpośredniego zagrożenia ze strony Algoksów, <strong>%ui.tooltip:data.scenario.recap.fh.character.mayor-satha%</strong> wspomniała, że przez pustkowia maszerują dziwne metalowe konstrukty. Zwiadowcy tropili je przez Las Białego Ognia, a następnie do zamarzniętej doliny. Poprosiła was, abyście przyjrzeli się tej sprawie."
+        },
+        "9": {
+          "5": "Lodomówca, którego ścigaliście, zwabił was w swego rodzaju pułapkę - wpadliście przez ukrytą szczelinę do podziemnej krypty pełnej duchów. Po rozprawieniu się z nimi, postanowiliście podjąć się dalszej eksploracji tego podziemnego obszaru."
+        },
+        "99": {
+          "": "\"Iskra\", sędziwa Orchidka, odnalazła was przy karczmie tuż przed snem. Bez zbędnych szczegółów - poruszała się o wiele za wolno, by w ogóle o tym myśleć - wręczyła wam worek starożytnych złotych monet i was wynajęła."
+        },
+        "character": {
+          "barduu": {
+            "tooltip": "Emisariusz Algoksów.<br>Pierwszy raz pojawia się w: %game.scenarioNumber:28%"
+          },
+          "captain-olmstead": {
+            "": "Kapitan Olmsted",
+            "tooltip": "Kapitan straży miejskiej w Frosthaven."
+          },
+          "denpang": {
+            "tooltip": "Gniewna, młoda Algokska nawołująca do wojny.<br>Pierwsze pojawienie się: %game.scenarioNumber:18% %game.section:13.1%"
+          },
+          "eddica": {
+            "": "Eddika",
+            "tooltip": "Valradzka bibliotekarka."
+          },
+          "geryuu": {
+            "tooltip": "Bóg Algoksów, czczony zarówno przez Śniegomówców, jak i Lodomówców – jednak sposób oddawania mu czci leży u podstaw religijnego rozłamu wśród Algoksów."
+          },
+          "gurndel": {
+            "tooltip": "Emisariusz Algoksów.<br>Pierwszy raz pojawia się w: %game.scenarioNumber:28%"
+          },
+          "lanprul": {
+            "": "Lanprul",
+            "tooltip": "Algoks, Kapłanka Śniegomówców.<br>Pierwsze pojawienie się: %game.scenarioNumber:2% %game.section:77.3%"
+          },
+          "marogh": {
+            "tooltip": "Starożytna wyrocznia w Lesie Białego Ognia."
+          },
+          "mayor-satha": {
+            "": "Burmistrzyni Satha",
+            "tooltip": "Człowiek, Burmistrzyni Frosthaven; 'Dostała' pracę po tym jak jej wszyscy poprzednicy zmarli. <br>Pierwsze pojawienie: %game.section:9.1%"
+          },
+          "pinter-droman": {
+            "": "Pinter Droman",
+            "tooltip": "Druciarz, Mieszkaniec Frosthaven."
+          }
+        }
+      }
+    }
+  },
+  "summon": {
+    "animated-claymore": "Ożywiony Claymore",
+    "banner-of-courage": "Sztandar Odwagi",
+    "banner-of-doom": "Sztandar Zagłady",
+    "banner-of-hope": "Sztandar Nadziei",
+    "banner-of-strength": "Sztandar Siły",
+    "banner-of-valor": "Sztandar Męstwa",
+    "bone-horde": "Kościana Horda",
+    "defense-grid": "Siatka Obronna",
+    "flesh-bomb": "Mięsna Bomba",
+    "flesh-fiend": "Mięsisty Nikczemnik",
+    "longbowman": "Łucznik",
+    "polar-cat": "Kot Polarny",
+    "raging-corpse": "Wściekłe Zwłoki",
+    "reinforcement": "Wsparcie",
+    "shadow-beast": "Bestia Cienia",
+    "shadow-horror": "Cienista Groza",
+    "shaggy-lure": "Kudłata przynęta",
+    "shambling-skeleton": "Człapiący Szkielet",
+    "skeleton-sorcerer": "Szkielet Czarnoksiężnik",
+    "snow-fox": "Śnieżny Lis",
+    "spiritbound-falchion": "Duszosplątany Falcjon",
+    "stitched-atrocity": "Zszyte Okrucieństwo",
+    "torch-bearer": "Nosiciel Pochodni",
+    "trained-falcon": "Wyszkolony Sokół",
+    "white-owl": "Biała Sowa",
+    "wraith": "Upiór"
+  }
+}

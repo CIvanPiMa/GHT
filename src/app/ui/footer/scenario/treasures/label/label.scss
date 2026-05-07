@@ -1,0 +1,21 @@
+.treasure-label {
+  display: inline-block;
+  line-height: 1em;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    ght-item {
+      position: relative;
+      margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+      width: calc(var(--ght-unit) * 20 * var(--ght-dialog-factor));
+    }
+  }
+}

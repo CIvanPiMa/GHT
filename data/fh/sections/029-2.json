@@ -1,0 +1,66 @@
+{
+  "index": "29.2",
+  "name": "The Tempus Forge",
+  "edition": "fh",
+  "parent": "106",
+  "parentSections": [
+    [
+      "8.1",
+      "183.1",
+      "184.4",
+      "189.2"
+    ]
+  ],
+  "marker": "5",
+  "monsters": [
+    "blacksmith"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "figures": [
+        {
+          "type": "present",
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "blacksmith"
+          }
+        },
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "damage",
+          "value": "1"
+        },
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "blacksmith"
+          },
+          "type": "heal",
+          "value": "2"
+        }
+      ],
+      "noteTop": "The Blacksmith performs %game.action.push%1, %game.action.target% all characters, %game.action.range%5, %game.condition.muddle%"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        68
+      ],
+      "monster": [
+        {
+          "name": "blacksmith",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

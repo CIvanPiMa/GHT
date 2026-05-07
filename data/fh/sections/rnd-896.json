@@ -1,0 +1,93 @@
+{
+  "index": "896",
+  "group": "randomMonsterCard",
+  "name": "Swarming",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "forest-imp",
+    "harrower-infester",
+    "shrike-fiend"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "dark",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "10"
+        },
+        {
+          "name": "forest-imp",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "4"
+        },
+        {
+          "name": "forest-imp",
+          "player4": "normal",
+          "marker": "6"
+        },
+        {
+          "name": "harrower-infester",
+          "type": "normal",
+          "marker": "1"
+        },
+        {
+          "name": "harrower-infester",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "11"
+        },
+        {
+          "name": "shrike-fiend",
+          "type": "elite",
+          "marker": "5"
+        },
+        {
+          "name": "shrike-fiend",
+          "player4": "normal",
+          "marker": "2"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "obstacle",
+      "value": "nest",
+      "marker": "3"
+    },
+    {
+      "type": "loot",
+      "marker": "7"
+    },
+    {
+      "type": "obstacle",
+      "value": "nest",
+      "marker": "9"
+    },
+    {
+      "type": "loot",
+      "marker": "12"
+    }
+  ]
+}

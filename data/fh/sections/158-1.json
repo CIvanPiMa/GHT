@@ -1,0 +1,42 @@
+{
+  "index": "158.1",
+  "name": "The Titan",
+  "edition": "fh",
+  "parent": "123",
+  "parentSections": [
+    [
+      "104.2"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "algox-snowspeaker",
+    "ancient-artillery"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "monster": [
+        {
+          "name": "algox-snowspeaker",
+          "type": "elite"
+        },
+        {
+          "name": "algox-snowspeaker",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "type": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

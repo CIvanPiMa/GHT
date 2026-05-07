@@ -1,0 +1,23 @@
+.figure-errors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .figure-error {
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor)) 0;
+
+    .error {
+      font-family: var(--ght-font-text);
+      font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+      color: var(--ght-color-red);
+    }
+
+    .hint {
+      font-family: var(--ght-font-normal);
+      font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+      color: var(--ght-color-white);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "index": "194.2",
+  "name": "The Dancing Iceberg",
+  "edition": "fh",
+  "parent": "131",
+  "parentSections": [
+    [
+      "185.1"
+    ]
+  ],
+  "monsters": [
+    "lurker-conductor"
+  ],
+  "rules": [
+    {
+      "round": "R % 2 == 1",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "lurker-wavethrower",
+            "player3": "normal",
+            "player4": "normal"
+          },
+          "marker": "d"
+        },
+        {
+          "monster": {
+            "name": "lurker-soldier",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "e"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "monster": [
+        {
+          "name": "lurker-conductor",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

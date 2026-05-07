@@ -1,0 +1,89 @@
+{
+  "index": "4-3",
+  "group": "RM",
+  "name": "Terrorscale Lair",
+  "edition": "cs",
+  "parent": "RM4",
+  "parentSections": [
+    [
+      "4-2"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "gnashing-drake",
+    "rending-drake",
+    "spitting-drake",
+    "terrorscale-drake-section-3"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "cs",
+            "name": "terrorscale-drake"
+          },
+          "type": "remove"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "gnashing-drake",
+            "type": "normal"
+          },
+          "count": "C-1"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "gnashing-drake",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "gnashing-drake",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "gnashing-drake",
+          "player2": "normal"
+        },
+        {
+          "name": "gnashing-drake",
+          "player2": "normal"
+        },
+        {
+          "name": "rending-drake",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "terrorscale-drake-section-3",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

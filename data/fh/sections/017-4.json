@@ -1,0 +1,12 @@
+{
+  "index": "17.4",
+  "name": "Puzzle Solution",
+  "edition": "fh",
+  "parent": "122",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "experience": 15,
+    "battleGoals": 1
+  }
+}

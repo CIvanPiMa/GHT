@@ -1,0 +1,19 @@
+{
+  "character": {
+    "bb": {
+      "cragheart": "Cuore di Roccia",
+      "mindthief": "Ladro Mentale",
+      "spellweaver": "Tessimagie",
+      "tinkerer": "Inventore"
+    }
+  },
+  "edition": {
+    "bb": "Button & Bugs"
+  },
+  "monster": {
+    "bandit-guard": "Bandito Guardia",
+    "earth-demon": "Demone della Terra",
+    "flame-demon": "Demone della Fiamma",
+    "wind-demon": "Demone del Vento"
+  }
+}

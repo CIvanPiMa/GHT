@@ -1,0 +1,31 @@
+{
+  "index": "26C",
+  "name": "Sunken Temple",
+  "edition": "toa",
+  "parent": "75",
+  "parentSections": [
+    [
+      "26B"
+    ]
+  ],
+  "monsters": [
+    "active-mechanism",
+    "active-mechanism-extra"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "active-mechanism",
+          "type": "normal"
+        },
+        {
+          "name": "active-mechanism-extra",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "index": "80.2B",
+  "name": "Frozen Fist not unlocked",
+  "edition": "fh",
+  "parent": "55",
+  "parentSections": [
+    [
+      "80.2"
+    ]
+  ],
+  "named": true,
+  "blockedSections": [
+    "80.2A"
+  ],
+  "monsters": [
+    "frozen-fist"
+  ],
+  "objectives": [
+    {
+      "name": "Large Ice Crystal",
+      "health": "(L+2)xCx4"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        41
+      ],
+      "monster": [
+        {
+          "name": "frozen-fist",
+          "type": "boss"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

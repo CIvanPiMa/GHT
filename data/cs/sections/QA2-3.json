@@ -1,0 +1,22 @@
+{
+  "index": "2-3",
+  "group": "QA",
+  "name": "Mother Lode",
+  "edition": "cs",
+  "parent": "QA2",
+  "monsters": [
+    "steel-construct"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "monster": [
+        {
+          "name": "steel-construct",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

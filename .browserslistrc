@@ -1,0 +1,20 @@
+# Primary supported browsers (Angular 20 baseline)
+Chrome > 110
+ChromeAndroid > 110
+Edge > 110
+Firefox > 111
+FirefoxAndroid >=111
+Safari > 16.3
+iOS > 16.3
+
+# Broader coverage - warns but still builds
+> 0.6%
+not dead
+
+# Explicit exclusions to prevent Angular warnings
+not and_uc > 0
+not op_mob > 0
+not samsung > 0
+not android > 0
+not chrome < 110
+not opera < 123

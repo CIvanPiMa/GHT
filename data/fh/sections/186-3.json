@@ -1,0 +1,68 @@
+{
+  "index": "186.3",
+  "name": "Guardian's Temple",
+  "edition": "fh",
+  "parent": "110",
+  "monsters": [
+    "living-doom",
+    "living-spirit"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fh",
+          "scenario": "110",
+          "index": 1,
+          "section": false
+        },
+        {
+          "edition": "fh",
+          "scenario": "110",
+          "index": 2,
+          "section": false
+        },
+        {
+          "edition": "fh",
+          "scenario": "110",
+          "index": 3,
+          "section": false
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "note": "Remaining two Ice Pillars are always active"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        75
+      ],
+      "monster": [
+        {
+          "name": "living-doom",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player3": "normal"
+        }
+      ]
+    }
+  ]
+}

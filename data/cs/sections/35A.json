@@ -1,0 +1,58 @@
+{
+  "index": "35A",
+  "name": "Confronting the Past A",
+  "edition": "cs",
+  "parent": "32a",
+  "marker": "1",
+  "monsters": [
+    "inox-archer",
+    "inox-bodyguard-scenario-32",
+    "inox-guard"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "All characters Recover %game.card.recover% one lost card"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-bodyguard-scenario-32",
+          "type": "boss"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "index": "79",
+  "name": "The Second Portal",
+  "edition": "fc",
+  "parent": "104",
+  "parentSections": [
+    [
+      "52"
+    ]
+  ],
+  "marker": "2",
+  "resetRound": "hiddenKeep",
+  "objectives": [
+    {
+      "name": "Hail",
+      "escort": true,
+      "health": "6+2xL",
+      "marker": "a",
+      "tags": [
+        "79"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fc.104.3%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "R % 4 == 2",
+      "spawns": [
+        {
+          "monster": {
+            "name": "spitting-drake",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "3"
+        }
+      ]
+    },
+    {
+      "round": "R % 4 == 0",
+      "spawns": [
+        {
+          "monster": {
+            "name": "harrower-infester",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "4"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "escort",
+            "name": "Hail",
+            "tags": [
+              "52"
+            ]
+          },
+          "type": "transfer",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "104",
+          "index": -1,
+          "section": false
+        },
+        {
+          "edition": "fc",
+          "scenario": "52",
+          "index": -1,
+          "section": true
+        }
+      ]
+    }
+  ]
+}

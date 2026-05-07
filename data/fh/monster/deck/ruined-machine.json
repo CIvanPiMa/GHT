@@ -1,0 +1,205 @@
+{
+  "name": "ruined-machine",
+  "edition": "fh",
+  "abilities": [
+    {
+      "name": "Latch On",
+      "cardId": 594,
+      "initiative": 31,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "concatenation",
+          "value": ",:2",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "poison"
+            },
+            {
+              "type": "condition",
+              "value": "immobilize"
+            },
+            {
+              "type": "range",
+              "value": 1,
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hasty Assault",
+      "cardId": 595,
+      "initiative": 41,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus"
+        }
+      ]
+    },
+    {
+      "name": "Nothing Special",
+      "cardId": 596,
+      "initiative": 63,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        }
+      ]
+    },
+    {
+      "name": "Calculated Strike",
+      "cardId": 597,
+      "initiative": 85,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus"
+        }
+      ]
+    },
+    {
+      "name": "Fuel Leak",
+      "cardId": 598,
+      "initiative": 29,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.ruined-machine.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "sufferDamage",
+              "value": 1,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        }
+      ]
+    },
+    {
+      "name": "Devastating Tackle",
+      "cardId": 599,
+      "initiative": 42,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.ruined-machine.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "sufferDamage",
+              "value": 1,
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Signal Jam",
+      "cardId": 600,
+      "initiative": 56,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "condition",
+          "value": "muddle",
+          "subActions": [
+            {
+              "type": "target",
+              "value": "%game.target.all%",
+              "small": true
+            },
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "sufferDamage",
+          "value": 1,
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Self-Destruct",
+      "cardId": 601,
+      "initiative": 93,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.ruined-machine.3%",
+          "small": true
+        }
+      ]
+    }
+  ]
+}

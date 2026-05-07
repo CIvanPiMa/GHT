@@ -1,0 +1,46 @@
+{
+  "index": "133.5",
+  "name": "The Lurker Problem",
+  "edition": "fh",
+  "parent": "78",
+  "parentSections": [
+    [
+      "51.2"
+    ],
+    [
+      "92.3"
+    ]
+  ],
+  "marker": "5",
+  "monsters": [
+    "lurker-soldier",
+    "lurker-wavethrower"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 8,
+      "initial": true,
+      "monster": [
+        {
+          "name": "lurker-soldier",
+          "type": "elite"
+        },
+        {
+          "name": "lurker-soldier",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "lurker-soldier",
+          "player4": "normal"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

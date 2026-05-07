@@ -1,0 +1,185 @@
+{
+  "index": "13",
+  "name": "Vile Harvest",
+  "flowChartGroup": "main",
+  "coordinates": {
+    "x": 660.25,
+    "y": 901.5,
+    "width": 248,
+    "height": 179,
+    "gridLocation": "D3"
+  },
+  "edition": "jotl",
+  "unlocks": [
+    "15"
+  ],
+  "rewards": {
+    "battleGoals": 1
+  },
+  "monsters": [
+    "black-sludge",
+    "blood-imp",
+    "zealot"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "jotl",
+            "name": "black-sludge",
+            "marker": "A"
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "blood-imp",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "A"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl13-1",
+      "initial": true,
+      "rooms": [
+        2
+      ],
+      "monster": [
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "type": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "type": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "player4": "elite"
+        }
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "jotl13-2",
+      "rooms": [
+        3
+      ],
+      "treasures": [
+        5
+      ],
+      "monster": [
+        {
+          "name": "blood-imp",
+          "type": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "blood-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "type": "elite"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "zealot",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ]
+    },
+    {
+      "roomNumber": 3,
+      "ref": "jotl13-3",
+      "marker": "1",
+      "monster": [
+        {
+          "name": "black-sludge",
+          "type": "elite",
+          "marker": "A"
+        },
+        {
+          "name": "black-sludge",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-sludge",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "black-sludge",
+          "player4": "normal"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

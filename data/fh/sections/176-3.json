@@ -1,0 +1,101 @@
+{
+  "index": "176.3",
+  "name": "A Tall Drunken Tale",
+  "edition": "fh",
+  "parent": "128",
+  "parentSections": [
+    [
+      "152.2"
+    ]
+  ],
+  "monsters": [
+    "abael-scout",
+    "steel-automaton"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "bane"
+        },
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "impair"
+        },
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "amAdd",
+          "value": "curse:1"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "sections": [
+        "172.2"
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "all",
+            "name": ".*"
+          },
+          "type": "initiative",
+          "value": ">=67"
+        }
+      ],
+      "finish": "round"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 5,
+      "initial": true,
+      "monster": [
+        {
+          "name": "abael-scout",
+          "type": "normal"
+        },
+        {
+          "name": "abael-scout",
+          "type": "normal"
+        },
+        {
+          "name": "abael-scout",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "abael-scout",
+          "player4": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "type": "elite"
+        },
+        {
+          "name": "steel-automaton",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

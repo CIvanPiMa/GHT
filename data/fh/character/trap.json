@@ -1,0 +1,265 @@
+{
+  "name": "trap",
+  "characterClass": "vermling",
+  "edition": "fh",
+  "handSize": 9,
+  "traits": [
+    "nimble",
+    "outcast",
+    "resourceful"
+  ],
+  "color": "#ddb586",
+  "spoiler": true,
+  "stats": [
+    {
+      "level": 1,
+      "health": 6
+    },
+    {
+      "level": 2,
+      "health": 7
+    },
+    {
+      "level": 3,
+      "health": 8
+    },
+    {
+      "level": 4,
+      "health": 9
+    },
+    {
+      "level": 5,
+      "health": 10
+    },
+    {
+      "level": 6,
+      "health": 11
+    },
+    {
+      "level": 7,
+      "health": 12
+    },
+    {
+      "level": 8,
+      "health": 13
+    },
+    {
+      "level": 9,
+      "health": 14
+    }
+  ],
+  "availableSummons": [
+    {
+      "name": "shaggy-lure",
+      "cardId": "274",
+      "thumbnail": true,
+      "level": 1,
+      "health": 2,
+      "action": {
+        "type": "grid",
+        "value": 1,
+        "subActions": [
+          {
+            "type": "custom",
+            "value": "Perform:",
+            "small": true
+          },
+          {
+            "type": "pull",
+            "value": 2,
+            "subactions": [
+              {
+                "type": "range",
+                "small": true,
+                "value": 2
+              }
+            ]
+          },
+          {
+            "type": "custom",
+            "value": "at end of turn",
+            "small": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "defense-grid",
+      "cardId": "296",
+      "thumbnail": true,
+      "level": 7,
+      "health": 8,
+      "attack": 2,
+      "range": 3,
+      "action": {
+        "type": "custom",
+        "value": "%data.custom.fh.trap.1%",
+        "small": true
+      }
+    }
+  ],
+  "perks": [
+    {
+      "type": "remove",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2"
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.trap.2%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 3,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.trap.3%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 3,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "%data.custom.fh.trap.4%"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        },
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus2",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "immobilize"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 3,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "or",
+                "value": "",
+                "note": "%data.custom.fh.trap.5%",
+                "effects": [
+                  {
+                    "type": "push",
+                    "value": 2
+                  },
+                  {
+                    "type": "pull",
+                    "value": 2
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%game.custom.perks.ignoreScenario%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.fh.trap.6%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.fh.trap.7%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.fh.trap.8%"
+    }
+  ],
+  "masteries": [
+    "%data.custom.fh.trap.9%",
+    "%data.custom.fh.trap.10%"
+  ]
+}

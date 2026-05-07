@@ -1,0 +1,45 @@
+{
+  "index": "11",
+  "name": "Voyage Abound",
+  "flowChartGroup": "sail",
+  "edition": "cs",
+  "unlocks": [
+    "12"
+  ],
+  "links": [
+    "12"
+  ],
+  "monsters": [
+    "inox-archer",
+    "inox-guard"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "note": "%data.scenario.rules.cs.11.1%",
+      "spawns": [
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "inox-guard",
+            "type": "normal"
+          }
+        },
+        {
+          "count": "[C]",
+          "monster": {
+            "name": "inox-archer",
+            "type": "elite"
+          }
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "B4a",
+      "initial": true
+    }
+  ]
+}

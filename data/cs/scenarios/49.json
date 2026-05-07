@@ -1,0 +1,64 @@
+{
+  "index": "49",
+  "name": "Oak Invasion A",
+  "flowChartGroup": "city-events",
+  "edition": "cs",
+  "requirements": [
+    {
+      "party": [
+        "oaks-alliance"
+      ]
+    }
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.cs.49%"
+  },
+  "monsters": [
+    "inox-archer",
+    "inox-guard",
+    "inox-shaman"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "K1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "inox-archer",
+          "type": "elite"
+        },
+        {
+          "name": "inox-archer",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "inox-guard",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-shaman",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

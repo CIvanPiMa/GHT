@@ -1,0 +1,88 @@
+<div class="scenario-chart-container">
+  <div #chart class="scenario-chart" id="chart"></div>
+  <div class="menu">
+    @if (worldMap) {
+      <a (click)="openWorldMap()" [ght-tooltip]="'party.campaign.map'" [originY]="'top'" [overlayY]="'bottom'">
+        <img src="./assets/images/map.svg" />
+      </a>
+    }
+    @if (!gameManager.bbRules()) {
+      <a (click)="openCampaignSheet()" [ght-tooltip]="'party.campaign.manage'" [originY]="'top'" [overlayY]="'bottom'">
+        <img src="./assets/images/sheet.svg" />
+      </a>
+    }
+    @if (gameManager.game.party.campaignMode) {
+      <div
+        class="checkbox-container"
+        [ght-tooltip]="'scenario.chart.campaign.' + (campaignMode ? 'force' : 'back')"
+        [originY]="'top'"
+        [overlayY]="'bottom'"
+        ght-pointer-input
+        (singleClick)="toggleCampaignMode($event)"
+        (doubleClick)="toggleCampaignMode($event, true)"
+      >
+        <input type="checkbox" [checked]="campaignMode" [disabled]="campaignMode" />
+        <span [ght-label]="'scenario.chart.campaign'"></span>
+      </div>
+    }
+  </div>
+  <div class="menu right">
+    <div class="legend" (click)="legend = !legend" [ngClass]="{ open: legend }">
+      <a><span [ght-label]="'scenario.chart.legend'"></span> <img class="ght-svg" src="./assets/images/select-arrow.svg" /></a>
+      @if (legend) {
+        <ul>
+          <li [ght-tooltip]="'scenario.chart.legend.unplayed.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol unplayed">U</span>
+            <span [ght-label]="'scenario.chart.legend.unplayed'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.success.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol success">S</span>
+            <span [ght-label]="'scenario.chart.legend.success'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.locked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol locked">L</span>
+            <span [ght-label]="'scenario.chart.legend.locked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.blocked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol blocked">B</span>
+            <span [ght-label]="'scenario.chart.legend.blocked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.success-locked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol success-locked">SL</span>
+            <span [ght-label]="'scenario.chart.legend.success-locked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.success-blocked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol success-blocked">SB</span>
+            <span [ght-label]="'scenario.chart.legend.success-blocked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.not-campaign.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol not-campaign">NC</span>
+            <span [ght-label]="'scenario.chart.legend.not-campaign'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.not-unlocked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="symbol not-unlocked">NU</span>
+            <span [ght-label]="'scenario.chart.legend.not-unlocked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.linked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="link">🔗</span>
+            <span [ght-label]="'scenario.chart.legend.linked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.force-linked.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="link">❗🔗</span>
+            <span [ght-label]="'scenario.chart.legend.force-linked'"></span>
+          </li>
+          <li [ght-tooltip]="'scenario.chart.legend.exclusive.hint'" [originY]="'top'" [overlayY]="'bottom'">
+            <span class="link">🔓</span>
+            <span [ght-label]="'scenario.chart.legend.exclusive'"></span>
+          </li>
+          @if (gameManager.fhRules(false) || this.edition === 'fh') {
+            <li [ght-tooltip]="'scenario.chart.legend.calendar.hint'" [originY]="'top'" [overlayY]="'bottom'">
+              <span class="link">🗓️</span>
+              <span [ght-label]="'scenario.chart.legend.calendar'"></span>
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  </div>
+</div>

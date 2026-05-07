@@ -1,0 +1,176 @@
+{
+  "index": "52.1",
+  "name": "Nerve Center",
+  "edition": "fh",
+  "parent": "44",
+  "marker": "1",
+  "monsters": [
+    "ancient-artillery",
+    "ruined-machine",
+    "steel-automaton"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "ancient-artillery",
+            "tags": [
+              "ancient-artillery-normal-1"
+            ]
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "normal"
+          },
+          "summon": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "ancient-artillery",
+            "tags": [
+              "ancient-artillery-normal-2"
+            ]
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "normal"
+          },
+          "summon": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "ancient-artillery",
+            "tags": [
+              "ancient-artillery-elite-1"
+            ]
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "elite"
+          },
+          "summon": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "ancient-artillery",
+            "tags": [
+              "ancient-artillery-elite-2"
+            ]
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "elite"
+          },
+          "summon": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        61
+      ],
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "tags": [
+            "ancient-artillery-normal-1"
+          ]
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "tags": [
+            "ancient-artillery-normal-2"
+          ]
+        },
+        {
+          "name": "ancient-artillery",
+          "player3": "elite",
+          "player4": "elite",
+          "tags": [
+            "ancient-artillery-elite-1"
+          ]
+        },
+        {
+          "name": "ancient-artillery",
+          "player4": "elite",
+          "tags": [
+            "ancient-artillery-elite-2"
+          ]
+        },
+        {
+          "name": "ruined-machine",
+          "player3": "normal"
+        },
+        {
+          "name": "ruined-machine",
+          "player3": "normal"
+        },
+        {
+          "name": "ruined-machine",
+          "player3": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        "1:4"
+      ]
+    }
+  ]
+}

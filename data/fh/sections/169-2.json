@@ -1,0 +1,20 @@
+{
+  "index": "169.2",
+  "name": "Sled Build",
+  "edition": "fh",
+  "conclusion": true,
+  "rewards": {
+    "prosperity": 1,
+    "overlayCampaignSticker": {
+      "name": "sled",
+      "location": "B",
+      "coordinates": {
+        "x": 1579.375,
+        "y": 2462.375,
+        "width": 111,
+        "height": 71
+      }
+    },
+    "custom": "%data.section.rewards.fh.169-2%"
+  }
+}

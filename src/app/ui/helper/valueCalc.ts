@@ -1,0 +1,101 @@
+import { Directive, ElementRef, Input, OnChanges, OnInit, inject } from '@angular/core';
+import { gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { EntityExpressionRegex, EntityValueFunction, EntityValueRegex } from 'src/app/game/model/Entity';
+import { ghsLabelRegex } from 'src/app/ui/helper/label';
+
+export function valueCalc(value: string | number, level: number | undefined = undefined, empty: boolean = false): string | number {
+  if (typeof value === 'number') {
+    if (empty && value === 0) {
+      return '-';
+    }
+
+    return value;
+  }
+
+  if (typeof value === 'string' && value === '0') {
+    return '-';
+  } else if (!value) {
+    return empty ? '-' : '';
+  }
+
+  let L = gameManager.game.level;
+  if (level && level > 0) {
+    L = level;
+  }
+
+  if (settingsManager.settings.calculate && (value.match(EntityExpressionRegex) || value.match(EntityValueRegex))) {
+    try {
+      return EntityValueFunction(value, L);
+    } catch {
+      console.error('Could not calculate value for: ', value);
+      return value;
+    }
+  }
+
+  const match = value.match(EntityValueRegex);
+  if (match) {
+    let func = match[3];
+    let funcArgs: string[] = [];
+    const funcLabel = func && func.startsWith('$');
+    if (funcLabel) {
+      func = func.replace('$', '');
+      if (func.includes(':')) {
+        funcArgs = [func.split(':')[1]];
+        func = func.split(':')[0];
+      }
+    }
+    return funcLabel ? match[1] + ' ' + settingsManager.getLabel('game.custom.' + func, funcArgs) : match[1];
+  }
+
+  while (value.match(ghsLabelRegex)) {
+    value = value.replace(ghsLabelRegex, (match, ...args) => {
+      return settingsManager.getLabel(args[0]);
+    });
+  }
+
+  return value ? value : empty ? '-' : '';
+}
+
+@Directive({
+  selector: ' [value-calc]'
+})
+export class ValueCalcDirective implements OnInit, OnChanges {
+  private el = inject(ElementRef);
+  private ghsManager = inject(GhsManager);
+
+  @Input('value-calc') value!: string | number;
+  @Input() level: number | undefined;
+  @Input() empty: boolean = false;
+
+  private C: number;
+  private L: number;
+  private calc: boolean;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => {
+      if (
+        this.calc !== settingsManager.settings.calculate ||
+        this.C !== Math.max(2, gameManager.characterManager.characterCount()) ||
+        this.L !== gameManager.game.level
+      ) {
+        this.C = Math.max(2, gameManager.characterManager.characterCount());
+        this.L = gameManager.game.level;
+        this.calc = settingsManager.settings.calculate;
+        this.el.nativeElement.innerHTML = valueCalc(this.value, this.level, this.empty);
+      }
+    });
+    this.C = Math.max(2, gameManager.characterManager.characterCount());
+    this.L = gameManager.game.level;
+    this.calc = settingsManager.settings.calculate;
+  }
+
+  ngOnChanges(): void {
+    this.el.nativeElement.innerHTML = valueCalc(this.value, this.level, this.empty);
+  }
+
+  ngOnInit(): void {
+    this.el.nativeElement.innerHTML = valueCalc(this.value, this.level, this.empty);
+  }
+}

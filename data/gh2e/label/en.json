@@ -1,0 +1,1911 @@
+{
+  "ability": {
+    "Aid from the Ether": "Aid from the Ether",
+    "Alluring Serenade": "Alluring Serenade",
+    "Amputate": "Amputate",
+    "Arcane Bolt": "Arcane Bolt",
+    "Arctic Shards": "Arctic Shards",
+    "Armor of the Night": "Armor of the Night",
+    "Arresting Gale": "Arresting Gale",
+    "Auto Turret": "Auto Turret",
+    "Avalanche": "Avalanche",
+    "Backstab": "Backstab",
+    "Backup Ammunition": "Backup Ammunition",
+    "Balanced Measure": "Balanced Measure",
+    "Battlefield Medicine": "Battlefield Medicine",
+    "Bewildering Instrumental": "Bewildering Instrumental",
+    "Black Knives": "Black Knives",
+    "Blood Transfusion": "Blood Transfusion",
+    "Bloody Saw": "Bloody Saw",
+    "Blunt Force": "Blunt Force",
+    "Booster Shot": "Booster Shot",
+    "Brain Leech": "Brain Leech",
+    "Brutal Momentum": "Brutal Momentum",
+    "Brute Force": "Brute Force",
+    "Burial": "Burial",
+    "Burrow": "Burrow",
+    "Call to Action": "Call to Action",
+    "Captivating Performance": "Captivating Performance",
+    "Cataclysm": "Cataclysm",
+    "Chain Lightning": "Chain Lightning",
+    "Change Tempo": "Change Tempo",
+    "Chimeric Formula": "Chimeric Formula",
+    "Chromatic Explosion": "Chromatic Explosion",
+    "Claws of the Night": "Claws of the Night",
+    "Clear the Way": "Clear the Way",
+    "Cold Fire": "Cold Fire",
+    "Commanding Presence": "Commanding Presence",
+    "Confluence of Elements": "Confluence of Elements",
+    "Cool Down": "Cool Down",
+    "Corrupting Embrace": "Corrupting Embrace",
+    "Cranium Overload": "Cranium Overload",
+    "Crank Bow": "Crank Bow",
+    "Crater": "Crater",
+    "Crippling Offensive": "Crippling Offensive",
+    "Crippling Poison": "Crippling Poison",
+    "Crushing Grasp": "Crushing Grasp",
+    "Cryonic Snare": "Cryonic Snare",
+    "Cull the Weak": "Cull the Weak",
+    "Curative Mixture": "Curative Mixture",
+    "Cursed Blades": "Cursed Blades",
+    "Dance of Daggers": "Dance of Daggers",
+    "Dancing Gales": "Dancing Gales",
+    "Dancing Shadows": "Dancing Shadows",
+    "Dangerous Contraption": "Dangerous Contraption",
+    "Dark Cloud": "Dark Cloud",
+    "Dark Frenzy": "Dark Frenzy",
+    "Defensive Ditty": "Defensive Ditty",
+    "Defensive Tactics": "Defensive Tactics",
+    "Dig Pit": "Dig Pit",
+    "Dirt Tornado": "Dirt Tornado",
+    "Disintegration Beam": "Disintegration Beam",
+    "Disorienting Dirge": "Disorienting Dirge",
+    "Dissonant Rhythm": "Dissonant Rhythm",
+    "Do No Harm": "Do No Harm",
+    "Domination": "Domination",
+    "Dual Nature": "Dual Nature",
+    "Duelist's Advance": "Duelist's Advance",
+    "Duskstorm": "Duskstorm",
+    "Earth's Embrace": "Earth's Embrace",
+    "Earthen Bulwark": "Earthen Bulwark",
+    "Earthen Clod": "Earthen Clod",
+    "Echoing Aria": "Echoing Aria",
+    "Elemental Juggernaut": "Elemental Juggernaut",
+    "Elemental Rays": "Elemental Rays",
+    "Emberfrost": "Emberfrost",
+    "Empathetic Assault": "Empathetic Assault",
+    "Empowering Flame": "Empowering Flame",
+    "Empowering Void": "Empowering Void",
+    "Encompassing Shadow": "Encompassing Shadow",
+    "Enervating Wound": "Enervating Wound",
+    "Enhancement Field": "Enhancement Field",
+    "Entomb": "Entomb",
+    "Ethereal Manifestation": "Ethereal Manifestation",
+    "Etheric Echo": "Etheric Echo",
+    "Euthanize": "Euthanize",
+    "Exacting Anger": "Exacting Anger",
+    "Experimental Stimulants": "Experimental Stimulants",
+    "Eye for an Eye": "Eye for an Eye",
+    "Eye of the Hurricane": "Eye of the Hurricane",
+    "Eyes of the Night": "Eyes of the Night",
+    "Face Your End": "Face Your End",
+    "Fearsome Blade": "Fearsome Blade",
+    "Fearsome Taunt": "Fearsome Taunt",
+    "Feedback Loop": "Feedback Loop",
+    "Fire Orbs": "Fire Orbs",
+    "First Aid": "First Aid",
+    "Flame Strike": "Flame Strike",
+    "Flameswell": "Flameswell",
+    "Flamethrower": "Flamethrower",
+    "Flanking Strike": "Flanking Strike",
+    "Flash of Brilliance": "Flash of Brilliance",
+    "Flintlock": "Flintlock",
+    "Flurry of Blades": "Flurry of Blades",
+    "Formless Power": "Formless Power",
+    "Fortifying Injection": "Fortifying Injection",
+    "Freezing Nova": "Freezing Nova",
+    "Freezing Vortex": "Freezing Vortex",
+    "Frenzied Onslaught": "Frenzied Onslaught",
+    "Frigid Apparition": "Frigid Apparition",
+    "Frigid Torrent": "Frigid Torrent",
+    "Frost Strike": "Frost Strike",
+    "Frostflare Orbs": "Frostflare Orbs",
+    "Frozen Shiv": "Frozen Shiv",
+    "Gangling Abomination": "Gangling Abomination",
+    "Gas Canister": "Gas Canister",
+    "Gnawing Horde": "Gnawing Horde",
+    "Grab and Go": "Grab and Go",
+    "Grand Finale": "Grand Finale",
+    "Gravel Guard": "Gravel Guard",
+    "Gravity Bomb": "Gravity Bomb",
+    "Grisly Trauma": "Grisly Trauma",
+    "Gruesome Advantage": "Gruesome Advantage",
+    "Hack to Bits": "Hack to Bits",
+    "Hamstring": "Hamstring",
+    "Hand of the Surgeon": "Hand of the Surgeon",
+    "Harmless Contraption": "Harmless Contraption",
+    "Harsh Stimulants": "Harsh Stimulants",
+    "Heatwave": "Heatwave",
+    "Heaving Swing": "Heaving Swing",
+    "Hidden Daggers": "Hidden Daggers",
+    "Hidden in the Shadows": "Hidden in the Shadows",
+    "Hired Help": "Hired Help",
+    "Hook Gun": "Hook Gun",
+    "Hook and Chain": "Hook and Chain",
+    "Hostile Takeover": "Hostile Takeover",
+    "Hymn to the Oak": "Hymn to the Oak",
+    "Ice Armor": "Ice Armor",
+    "Ice Spikes": "Ice Spikes",
+    "Icy Blast": "Icy Blast",
+    "Immovable Phalanx": "Immovable Phalanx",
+    "Impaling Eruption": "Impaling Eruption",
+    "Increase Cadence": "Increase Cadence",
+    "Infernal Vortex": "Infernal Vortex",
+    "Inferno": "Inferno",
+    "Ink Bomb": "Ink Bomb",
+    "Inspiring Anthem": "Inspiring Anthem",
+    "Intensifying Amplitude": "Intensifying Amplitude",
+    "Intimidating Growl": "Intimidating Growl",
+    "Into the Night": "Into the Night",
+    "Invigorating Aerosol": "Invigorating Aerosol",
+    "Jet Propulsion": "Jet Propulsion",
+    "Juggernaut": "Juggernaut",
+    "Kinetic Assault": "Kinetic Assault",
+    "Leaping Cleave": "Leaping Cleave",
+    "Let Fly": "Let Fly",
+    "Lingering Essence": "Lingering Essence",
+    "Lurking Ruin": "Lurking Ruin",
+    "Magma Scales": "Magma Scales",
+    "Malleable Evocation": "Malleable Evocation",
+    "Many as One": "Many as One",
+    "Marching Beat": "Marching Beat",
+    "Marked for Death": "Marked for Death",
+    "Mass Hysteria": "Mass Hysteria",
+    "Massive Boulder": "Massive Boulder",
+    "Medical Pack": "Medical Pack",
+    "Messenger of Death": "Messenger of Death",
+    "Meteor": "Meteor",
+    "Mobilizing Measure": "Mobilizing Measure",
+    "Mud Eruption": "Mud Eruption",
+    "Murderous Contraption": "Murderous Contraption",
+    "Needle Gun": "Needle Gun",
+    "Net Shooter": "Net Shooter",
+    "Nightfall": "Nightfall",
+    "Noxious Vials": "Noxious Vials",
+    "Obsidian Shards": "Obsidian Shards",
+    "Ode to the Gambler": "Ode to the Gambler",
+    "Onward to Battle": "Onward to Battle",
+    "Open Wound": "Open Wound",
+    "Opposing Strike": "Opposing Strike",
+    "Overwhelming Assault": "Overwhelming Assault",
+    "Pernicious Fogger": "Pernicious Fogger",
+    "Perverse Edge": "Perverse Edge",
+    "Petrify": "Petrify",
+    "Phantasmal Killer": "Phantasmal Killer",
+    "Pilfer": "Pilfer",
+    "Possession": "Possession",
+    "Potent Potable": "Potent Potable",
+    "Potent Potables": "Potent Potables",
+    "Power Ballad": "Power Ballad",
+    "Practiced Reflexes": "Practiced Reflexes",
+    "Pragmatic Reinforcement": "Pragmatic Reinforcement",
+    "Precaution": "Precaution",
+    "Prep for Surgery": "Prep for Surgery",
+    "Prepare for the Kill": "Prepare for the Kill",
+    "Prevention Is Key": "Prevention Is Key",
+    "Prey on the Weak": "Prey on the Weak",
+    "Primal Duality": "Primal Duality",
+    "Prismatic Barrage": "Prismatic Barrage",
+    "Provoke Terror": "Provoke Terror",
+    "Proximity Mine": "Proximity Mine",
+    "Psychic Blade": "Psychic Blade",
+    "Psychic Projection": "Psychic Projection",
+    "Pull the Strings": "Pull the Strings",
+    "Pulsing Cores": "Pulsing Cores",
+    "Push Through": "Push Through",
+    "Quick Hands": "Quick Hands",
+    "Quiet Frenzy": "Quiet Frenzy",
+    "Regenerative Tissue": "Regenerative Tissue",
+    "Reinvigorating Elixir": "Reinvigorating Elixir",
+    "Repulsor Gun": "Repulsor Gun",
+    "Restorative Mist": "Restorative Mist",
+    "Return the Favor": "Return the Favor",
+    "Reviving Ether": "Reviving Ether",
+    "Rock Slide": "Rock Slide",
+    "Rocky End": "Rocky End",
+    "Rumbling Advance": "Rumbling Advance",
+    "Run Through": "Run Through",
+    "Scurry": "Scurry",
+    "Searing Glacier": "Searing Glacier",
+    "Secret of the Oak": "Secret of the Oak",
+    "Seeping Tendrils": "Seeping Tendrils",
+    "Selfish Retribution": "Selfish Retribution",
+    "Sentient Growth": "Sentient Growth",
+    "Serrated Arrow": "Serrated Arrow",
+    "Shadowstrike": "Shadowstrike",
+    "Shaping the Ether": "Shaping the Ether",
+    "Shared Nightmare": "Shared Nightmare",
+    "Shield Bash": "Shield Bash",
+    "Shroud in Shade": "Shroud in Shade",
+    "Silent Force": "Silent Force",
+    "Silent Scream": "Silent Scream",
+    "Singing Arrow": "Singing Arrow",
+    "Single Out": "Single Out",
+    "Sinister Opportunity": "Sinister Opportunity",
+    "Skewer": "Skewer",
+    "Skirmishing Maneuver": "Skirmishing Maneuver",
+    "Slice Through": "Slice Through",
+    "Smoke Bomb": "Smoke Bomb",
+    "Solidify": "Solidify",
+    "Soothing Lullaby": "Soothing Lullaby",
+    "Spare Dagger": "Spare Dagger",
+    "Special Mixture": "Special Mixture",
+    "Spell Mastery": "Spell Mastery",
+    "Spirit of the Night": "Spirit of the Night",
+    "Spring the Trap": "Spring the Trap",
+    "Stamina Booster": "Stamina Booster",
+    "Stick to the Shadows": "Stick to the Shadows",
+    "Stiletto Storm": "Stiletto Storm",
+    "Stoking Hail": "Stoking Hail",
+    "Stone Pummel": "Stone Pummel",
+    "Stun Shot": "Stun Shot",
+    "Submissive Affliction": "Submissive Affliction",
+    "Surgeon's Satchel": "Surgeon's Satchel",
+    "Swallowed by Fear": "Swallowed by Fear",
+    "Swallowed by Night": "Swallowed by Night",
+    "Sweeping Blow": "Sweeping Blow",
+    "Swift Bow": "Swift Bow",
+    "Symphonic Medley": "Symphonic Medley",
+    "Syringe": "Syringe",
+    "Take Your Medicine": "Take Your Medicine",
+    "Teamwork": "Teamwork",
+    "Telepathic Command": "Telepathic Command",
+    "Teleportation Pad": "Teleportation Pad",
+    "Terror Blade": "Terror Blade",
+    "The Mind's Weakness": "The Mind's Weakness",
+    "Thrilling Solo": "Thrilling Solo",
+    "Throwing Knives": "Throwing Knives",
+    "Toughening Trill": "Toughening Trill",
+    "Toxic Bolt": "Toxic Bolt",
+    "Trample": "Trample",
+    "Trickster's Reversal": "Trickster's Reversal",
+    "Tuning the Outcome": "Tuning the Outcome",
+    "Twin Beams": "Twin Beams",
+    "Unseen Dread": "Unseen Dread",
+    "Unstable Upheaval": "Unstable Upheaval",
+    "Unstoppable Charge": "Unstoppable Charge",
+    "Vaccine": "Vaccine",
+    "Venom Shiv": "Venom Shiv",
+    "Visage of the Inevitable": "Visage of the Inevitable",
+    "Vital Strikes": "Vital Strikes",
+    "Voice of the Night": "Voice of the Night",
+    "Volatile Concoction": "Volatile Concoction",
+    "Wall of Doom": "Wall of Doom",
+    "Warding Strength": "Warding Strength",
+    "Warm Up": "Warm Up",
+    "Watch It Burn": "Watch It Burn",
+    "Wave of Destruction": "Wave of Destruction",
+    "Wave of Frost": "Wave of Frost",
+    "Wearying Chant": "Wearying Chant",
+    "Whirlwind": "Whirlwind",
+    "Winter's Edge": "Winter's Edge",
+    "Wistful Wounding": "Wistful Wounding",
+    "Withering Claw": "Withering Claw"
+  },
+  "battleGoals": {
+    "1016": {
+      "": "Accountant",
+      "text": "Have zero cards in your hand each time you rest."
+    },
+    "1017": {
+      "": "Acrobat",
+      "text": "Lose a card to negate suffering 5 or more damage."
+    },
+    "1018": {
+      "": "Ascetic",
+      "text": "Collect fewer loot tokens than any other character."
+    },
+    "1019": {
+      "": "Assistant",
+      "text": "Kill an enemy attacked by any of your allies earlier in the same round."
+    },
+    "1020": {
+      "": "Bastion",
+      "text": "Occupy a door hex adjacent to two or more enemies at the end of a round."
+    },
+    "1021": {
+      "": "Bully",
+      "text": "Kill an enemy that has two or more negative conditions."
+    },
+    "1022": {
+      "": "Cleaner",
+      "text": "Collect three or more loot tokens in the same turn."
+    },
+    "1023": {
+      "": "Closer",
+      "text": "Kill the last enemy to die in the scenario."
+    },
+    "1024": {
+      "": "Conservator",
+      "text": "Never perform an action with a lost icon."
+    },
+    "1025": {
+      "": "Diehard",
+      "text": "Never have your hit point value drop below half your maximum hit point value (rounded up)."
+    },
+    "1026": {
+      "": "Dynamo",
+      "text": "Kill an enemy with an attack that would have caused at least 4 more points of damage than necessary."
+    },
+    "1027": {
+      "": "Egoist",
+      "text": "Collect more loot tokens than any other character."
+    },
+    "1028": {
+      "": "Executioner",
+      "text": "Kill an undamaged enemy with a single attack action."
+    },
+    "1029": {
+      "": "Gambler",
+      "text": "Kill an enemy with an attack that has disadvantage."
+    },
+    "1030": {
+      "": "Hunter",
+      "text": "Kill one or more elite enemies, or two or more for four characters."
+    },
+    "1031": {
+      "": "Insomniac",
+      "text": "Suffer damage from an attack in the same round you long rest."
+    },
+    "1032": {
+      "": "Masochist",
+      "text": "End the scenario with a hit point value of 3 or less."
+    },
+    "1033": {
+      "": "Mugger",
+      "text": "Kill an enemy and loot the loot token it drops in the same round."
+    },
+    "1034": {
+      "": "Opener",
+      "text": "Kill the first enemy to die in the scenario."
+    },
+    "1035": {
+      "": "Optimist",
+      "text": "Remove a negative condition from yourself or an ally two or more times."
+    },
+    "1036": {
+      "": "Pacifist",
+      "text": "Kill three or fewer enemies."
+    },
+    "1037": {
+      "": "Pauper",
+      "text": "Never collect a loot token from end-of-turn looting."
+    },
+    "1038": {
+      "": "Pedestrian",
+      "text": "Never enter a hex occupied by an ally, enemy, objective, or obstacle."
+    },
+    "1039": {
+      "": "Perfectionist",
+      "text": "End the scenario with your hit point value equal to your maximum hit point value."
+    },
+    "1040": {
+      "": "Pickpocket",
+      "text": "Collect two or more loot tokens by performing a loot ability while adjacent to one or more enemies."
+    },
+    "1041": {
+      "": "Pincushion",
+      "text": "Be targeted by attacks from three or more enemies in the same round."
+    },
+    "1042": {
+      "": "Plebeian",
+      "text": "Never kill an elite enemy, named enemy or boss."
+    },
+    "1043": {
+      "": "Prohibitionist",
+      "text": "Never use a potion."
+    },
+    "1044": {
+      "": "Promoter",
+      "text": "Perform an ability targeting an ally before your first rest and in between each of your rests."
+    },
+    "1045": {
+      "": "Rambler",
+      "text": "End no more than three of your turns in the hex in which you started the turn, except when long resting."
+    },
+    "1046": {
+      "": "Ravager",
+      "text": "Perform two actions with lost icons in the same turn."
+    },
+    "1047": {
+      "": "Recluse",
+      "text": "Never end your turn adjacent to any other character (gain one additional %game.checkmark% for four characters)."
+    },
+    "1048": {
+      "": "Ritualist",
+      "text": "Kill an enemy while three or more elements are strong or waning."
+    },
+    "1049": {
+      "": "Sadist",
+      "text": "Kill five or more enemies."
+    },
+    "1050": {
+      "": "Scrambler",
+      "text": "Never long rest."
+    },
+    "1051": {
+      "": "Shirker",
+      "text": "Kill an enemy not adjacent to you while you are adjacent to another enemy."
+    },
+    "1052": {
+      "": "Sleeper",
+      "text": "Have one or more cards in your hand each time you rest."
+    },
+    "1053": {
+      "": "Sluggard",
+      "text": "Perform a long rest while at your maximum hit point value, after you have already suffered damage."
+    },
+    "1054": {
+      "": "Straggler",
+      "text": "Never short rest."
+    },
+    "1055": {
+      "": "Streamliner",
+      "text": "Have five or more total cards in your hand and discard pile at the end of the scenario."
+    },
+    "1056": {
+      "": "Tormentor",
+      "text": "Apply a different negative condition to an enemy that already has one or more negative conditions."
+    },
+    "1057": {
+      "": "Wastrel",
+      "text": "Lose a card to negate 2 or less damage from an attack."
+    },
+    "1058": {
+      "": "Weakling",
+      "text": "Become exhausted before any other character."
+    },
+    "1059": {
+      "": "Workhorse",
+      "text": "Gain 13 or more experience before any bonus scenario experience."
+    },
+    "1060": {
+      "": "Zealot",
+      "text": "Have three or fewer total cards in your hand and discard pile while also not exhausted at the end of the scenario."
+    },
+    "1061": {
+      "": "Assassin",
+      "text": "Kill an enemy before it takes its first turn."
+    },
+    "1062": {
+      "": "Daredevil",
+      "text": "Add two cards to your lost pile before your first rest."
+    },
+    "1063": {
+      "": "Dawdler",
+      "text": "Never use your lowest initiative played card as your initiative card."
+    },
+    "1064": {
+      "": "Duelist",
+      "text": "Never exit a hex adjacent to an enemy except through forced movement."
+    },
+    "1065": {
+      "": "Exterminator",
+      "text": "Kill one or more enemies of each monster type that appears in the scenario."
+    },
+    "1066": {
+      "": "Layabout",
+      "text": "Gain 7 or fewer experience before any bonus scenario experience."
+    },
+    "1067": {
+      "": "Miser",
+      "text": "Never exit a room with loot tokens in it."
+    },
+    "1068": {
+      "": "Overachiever",
+      "text": "Kill an enemy and open a door in the same turn, in either order."
+    },
+    "1069": {
+      "": "Peacemonger",
+      "text": "Never kill an enemy."
+    },
+    "1070": {
+      "": "Prepper",
+      "text": "Perform no attack abilities in the first three rounds."
+    },
+    "1071": {
+      "": "Slayer",
+      "text": "Kill two or more enemies in the same round."
+    },
+    "1072": {
+      "": "Slowpoke",
+      "text": "Move no more than two hexes on each turn."
+    },
+    "1073": {
+      "": "Specialist",
+      "text": "Never perform a basic action."
+    },
+    "1074": {
+      "": "Vanguard",
+      "text": "Never attack an enemy that has already acted in the round."
+    },
+    "1075": {
+      "": "Wallflower",
+      "text": "End each of your turns adjacent to a wall, obstacle, or objective."
+    }
+  },
+  "character": {
+    "gh2e": {
+      "bruiser": "Bruiser",
+      "cragheart": "Cragheart",
+      "mindthief": "Mindthief",
+      "silent-knife": "Silent Knife",
+      "spellweaver": "Spellweaver",
+      "tinkerer": "Tinkerer"
+    },
+    "traits": {
+      "arcane": "Arcane",
+      "armored": "Armored",
+      "blackmailer": "Blackmailer",
+      "carapace-combatant": "Carapace Combatant",
+      "chaotic": "Chaotic",
+      "educated": "Educated",
+      "friend-of-the-hero": "Friend of the Hero",
+      "friend-of-the-silent-knife": "Friend of the Silent Knife",
+      "hero": "Hero",
+      "immunity": "Immunity",
+      "indebted": "Indebted",
+      "intimidating": "Intimidating",
+      "memory-of-serenity": "Memory of Serenity",
+      "night": "Night",
+      "nimble": "Nimble",
+      "outcast": "Outcast",
+      "persuasive": "Persuasive",
+      "resourceful": "Resourceful",
+      "strong": "Strong"
+    }
+  },
+  "custom": {
+    "city-guard-saw2-solo": {
+      "1": "When given a medical pack, perform:",
+      "2": "Remove %data.monster.city-guard-saw2-solo% from the map after being healed fully or given a medical pack."
+    },
+    "city-guard-sun2-solo": {
+      "1": "Acts immediately after %game.characterIcon.sun%."
+    },
+    "gh2e": {
+      "ancient-artillery": {
+        "1": "Focus on the enemy<br>farthest away within %game.action.range:7%",
+        "2": "All enemies adjacent to<br>the target suffer %game.damage:2%."
+      },
+      "archer": {
+        "1": "Create one %game.damage:3% trap in an adjacent<br>empty hex closest to an enemy."
+      },
+      "bruiser": {
+        "1": "Add this card to your active area. On the next attack targeting you performed by an adjacent enemy, discard this card to gain %game.action.retaliate% 2 for the attack",
+        "2": "Once each scenario, during your turn, you may perform: %game.action.loot%1, if this ability loots at least one money token, you may %game.card.recover% one %game.itemSlot:body% item",
+        "3": "Whenever you long rest, add +1 %game.action.move% to your first move ability the following round",
+        "4": "Each character gains advantage on their first attack during the first round of each scenario",
+        "5": "In 3 different scenarios, kill an enemy that you Pushed or Pulled that round",
+        "6": "In a single scenario, across 3 consecutive rounds, play 6 different ability cards and cause enemies to suffer 7 or more damage during each of those rounds",
+        "abilities": {
+          "1": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "11": {
+            "1": "Add +1%game.action.attack% on each undamaged target."
+          },
+          "12": {
+            "1": "Whenever an enemy would attack one of your adjacent allies this round, you may have that attack target you instead, regardless of the attack's range and line-of-sight limitations."
+          },
+          "13": {
+            "1": "Gain %game.card.experience:1% the next time you retaliate this round."
+          },
+          "14": {
+            "1": "On your nex two move abilities, add +1%game.action.move%."
+          },
+          "15": {
+            "1": "On the next four sources of %game.damage% you would suffer, negate that %game.damage%."
+          },
+          "16": {
+            "1": "If you moved in a straight line in one direction with the move ability, perform:",
+            "2": "where X is the number of hexes you moved."
+          },
+          "17": {
+            "1": "Add +2%game.action.attack% and gain %game.card.experience:1% if you have moved this turn."
+          },
+          "18": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "19": {
+            "1": "During you next attack ability this round, add +1%game.action.attack% to all attacks."
+          },
+          "2": {
+            "1": "Gain %game.card.experience:1% the next time you retaliate this round."
+          },
+          "21": {
+            "1": "The first time each round that you gain %game.action.shield% or %game.action.retaliate% from one of your ability or attack modifier cards, gain %game.action.shield:1% and %game.action.retaliate:1% for the round."
+          },
+          "22": {
+            "1": "Add +1%game.action.attack% on each undamaged target."
+          },
+          "23": {
+            "1": "Once each turn, you may treat one move ability from your ability cards as an attack ability of equal value."
+          },
+          "24": {
+            "1": "Each enemy occupying a hex the target enters suffers %game.damage:4% and gains %game.condition.wound%."
+          },
+          "25": {
+            "1": "Gain %game.card.experience:1% the next time you retaliate this round."
+          },
+          "26": {
+            "1": "where X is the amount of %game.damage% you have dealt this turn."
+          },
+          "28": {
+            "1": "After each attack targeting you this round, perform:",
+            "2": "Add +1%game.action.attack% to each of your %game.action.push% and %game.action.pull%. Whenever you %game.action.push% or %game.action.pull% an enemy at least one hex, after the forced movement, that enemy and all enemies adjacent to it siffer %game.damage:1%."
+          },
+          "29": {
+            "1": "Add +3%game.action.attack% and gain %game.card.experience:1% if the target's current hit point value is lower than yours."
+          },
+          "5": {
+            "1": "where X is the number of hexes you have moved this turn.",
+            "2": "where X is the amount of %game.damage% you have dealt this turn."
+          },
+          "7": {
+            "1": "On the next six sources of %game.damage% from attacks targeting you, gain %game.action.shield:1%, %game.action.retaliate:1% for the attack."
+          }
+        }
+      },
+      "chaos-demon": {
+        "1": "%game.custom.advantage%"
+      },
+      "cragheart": {
+        "1": "Create one 1-hex obstacle tile in an empty hex adjacent to the target",
+        "2": "Once each scenario, during your turn, you may destroy one 1-hex obstacle within %game.action.range:5% to %game.action.teleport% to the hex it occupied",
+        "3": "At the end of each of your rests, you may destroy one 1-hex obstacle within %game.action.range:3% to %game.element.earth%",
+        "4": "Whenever a new room is revealed, control all enemies in the newly revealed room: %game.action.move% 1, this movement must end in an empty hex",
+        "5": "For an entire scenario, create, destroy, or move at least one obstacle tile each round",
+        "6": "In a single scenario, heal 8 or more hit points during a single round, deal 8 or more damage with a ranged attack ability, and deal 8 or more damage with a melee attack ability",
+        "abilities": {
+          "116": {
+            "1": "At the end of this an your next four turns, perform:"
+          },
+          "117": {
+            "1": "Create a 1-hex obstacle tile in an adjacent empty hex. All allies an enemies adjacent to the created tile suffer %game.damage:1%."
+          },
+          "119": {
+            "1": "All adjacent allies and enemies suffer %game.damage:1%."
+          },
+          "120": {
+            "1": "All allies and enemies adjacent to the target suffer %game.damage:1%."
+          },
+          "121": {
+            "1": "On your next four single-target ranged attack abilities, add +1%game.action.target%."
+          },
+          "122": {
+            "1": "Create two 1-hex obstacle tiles in empty hexes within %game.action.range:3% %game.enhancement.square% .",
+            "2": "All allies adjacent to at least one created tile suffer %game.damage:1% and gain %game.condition.ward%, %game.card.experience:1%."
+          },
+          "123": {
+            "1": "all enemies up to two hexes away instead",
+            "2": "All adjacent allies suffer %game.damage:2%."
+          },
+          "124": {
+            "1": "All adjacent allies and enemies suffer %game.damage:1%."
+          },
+          "125": {
+            "1": "all allies in the red hexes of the attack ability."
+          },
+          "126": {
+            "1": "Add +1%game.action.attack% for each obstacle or objective adjacent to the target."
+          },
+          "127": {
+            "1": "You may push the target into hexes containing obstacles. In each case, destroy the obstacle, the target suffers %game.damage:2%, and you gain %game.card.experience:1%.",
+            "2": "Destroy an adjacent obstacle or suffer %game.damage:1% to add +3%game.action.attack% to your next melee attack this round."
+          },
+          "128": {
+            "1": "For each target killed, gain %game.card.experience:1% and create one 1-hex obstacle tile in the featureless hex they occupied."
+          },
+          "130": {
+            "1": "4 enemies within 4 hexes",
+            "2": "Create one 1-hex obstacle tile in the featureless hex each target previously occupied."
+          },
+          "131": {
+            "1": "all allies in the red hexes of the attack ability"
+          },
+          "132": {
+            "1": "Relocate one adjacent 1-hex obstacle tile to an empty hex within %game.action.range:4% to perform:",
+            "2": "all enemies adjacent to the relocated tile",
+            "3": "Destroy all obstacles, hazardous terrain, difficult terrain, and traps in hexes you enter."
+          },
+          "134": {
+            "1": "Create three 1-hex obstacle tiles in empty hexes within %game.action.range:3% %game.enhancement.square% .",
+            "2": "All allies and enemies adjacent to at least one created tile suffer %game.damage:1% and gain %game.condition.muddle%.",
+            "3": "Designate one enemy within %game.action.range:4%. Destroy all obstacles within %game.action.range:2% of the designated enemy to perform:",
+            "4": "the designated enemy",
+            "5": "where X is twice the number of destroyed obstacles."
+          },
+          "135": {
+            "1": "All allies and enemies adjacent to the target suffer %game.damage:1%."
+          },
+          "136": {
+            "1": "Grant one ally within %game.action.range:3%:",
+            "2": "Suffer %game.damage:1%."
+          },
+          "137": {
+            "1": "Whenever you attack an adjacent enemy, you may destroy one 1-hex obstacle adjacent to both you and that enemy to add +2%game.action.attack% to the attack."
+          },
+          "138": {
+            "1": "Create one %game.damage:2%, %game.condition.stun% trap in an adjacent empty hex.",
+            "2": "Create one 1-hex obstacle tile in an empty hex adjacent to the created trap."
+          },
+          "139": {
+            "1": "all allies in the red hexes of the attack ability."
+          },
+          "140": {
+            "1": "Whenever you perform a ranged attack this round, all allies and enemies adjacent to the target suffer %game.damage:1%, %game.card.experience:1%.",
+            "2": "Destroy any number of adjacent obstacles. For each obstacle destroyed, perform:",
+            "3": "All adjacent allies and enemies suffer %game.damage:1%."
+          },
+          "141": {
+            "1": "Add +1%game.action.attack%, +1%game.action.push% for each hex containing an obstacle or wall adjacent to you.",
+            "2": "At the start of your next four turns, perform:",
+            "3": "Add +3%game.action.attack% to your next melee attack this turn."
+          },
+          "142": {
+            "1": "all allies in the red hexes of the attack ability",
+            "2": "Create 1-hex obstacle tiles in each empty red hex of the attack ability, %game.card.experience:1%.",
+            "3": "Create 1-hex obstacle tiles in each featureless hex the target exists with the push."
+          },
+          "143": {
+            "1": "Create two 1-hex obstacle tiles in empty hexes adjacent to the target but not adjacent to you. All allies and enemies adjacent to at least one created tile suffer %game.damage:1%, %game.card.experience:1%.",
+            "2": "Create 1-hex obstacle tiles in an adjacent empty hex.",
+            "3": "Destroy any number of obstacles within %game.action.range:3%. For each obstacle destroyed, give %game.condition.ward% to one ally adjacent to the hex that obstacle occupied."
+          },
+          "144": {
+            "1": "For each target, add +X%game.action.attack%, where X is the %game.action.range% to the target.",
+            "2": "You may enter hexes containing obstacles with this movement. When you do, destroy the obstacle.",
+            "3": "Add +X%game.action.attack% to your next attack this turn, where X is twice the number of obstacles destroyed with the move ability."
+          },
+          "145": {
+            "1": "You may push the targets into hexes containing obstacles. In each case, destroy the obstacle, the target suffers %game.damage:2%, and you gain %game.card.experience:1%.",
+            "2": "At the end of each of your turns, perform:",
+            "3": "where X is the number of adjacent obstacles."
+          }
+        }
+      },
+      "crystal-rot": {
+        "1": "Add %game.condition.disarm% if there are no Living Bones, Living Corpses or Living Spirits within %game.action.range% 3."
+      },
+      "cultist": {
+        "1": "If Cultist dies this round, first remove all negative conditions and perform:",
+        "2": "where X is the amount of damage suffered by the target of the attack ability."
+      },
+      "deep-terror": {
+        "1": "If the attack ability was performed",
+        "2": "in an empty hex adjacent to the target<br>of the attack ability"
+      },
+      "flame-demon": {
+        "1": "Create one %game.damage:4% trap in an adjacent<br>empty hex closest to an enemy",
+        "2": "%game.damage:1%",
+        "3": "All adjacent<br>enemies suffer %game.damage:2%"
+      },
+      "flowChartGroup": {
+        "city-guards": "City Guard/The Shields",
+        "demons": "Demons/The Sect",
+        "events": "Events",
+        "hail": "Hail",
+        "intro": "Intro",
+        "merchant-guild": "Merchant's Guild",
+        "personal-quests": "Personal Quests",
+        "puzzle": "Puzzle Book",
+        "random": "Random Side Scenarios",
+        "the-gloom": "The Gloom",
+        "the-sewers": "The Sewers",
+        "the-voice": "The Voice and the Drake"
+      },
+      "frost-demon": {
+        "1": "%game.damage:1%"
+      },
+      "giant-viper": {
+        "1": "All attacks targeting Giant Viper this round gain disadvantage.",
+        "2": "Add +2 %game.action.attack% if the target is adjacent to any of the Giant Viper's allies"
+      },
+      "hound": {
+        "1": "Add +2 %game.action.attack% if the target is adjacent<br>to any of the Hound's allies."
+      },
+      "living-corpse": {
+        "1": "If the move ability was performed, Living Corpse suffers %game.damage:1%.",
+        "2": "If the attack ability was performed, Living Corpse suffers %game.damage:1%.",
+        "3": "If Living Corpse dies this round, all figures adjacent to the hex it occupied suffer %game.damage:1% and gain %game.condition.poison%."
+      },
+      "lurker": {
+        "1": "2 enemies within 2 hexes"
+      },
+      "mindthief": {
+        "1": "Add +1 %game.action.attack% if the target has a negative condition",
+        "2": "Where X is half the Rat King's current hit point value (rounded up).",
+        "3": "After the attack ability, control the target: %game.action.move% 1",
+        "4": "Add +1 %game.action.attack% for each negative condition the target has",
+        "5": "Whenever you control the attack of an enemy, you may have the enemy use your attack modifier deck",
+        "6": "You are considered to be last in initiative order when determining monster focus",
+        "7": "At the end of each of your rests, you may %game.elementHalf.consume:ice|dark% to control one enemy within %game.action.range:5%: %game.action.attack% 1",
+        "8": "In a single scenario, kill 5 or more enemies with control abilities",
+        "9": "In a single scenario, trigger the on-attack effect from four different Augments at least 3 times each",
+        "abilities": {
+          "146": {
+            "1": "Add +1 %game.action.attack% for each negative condition the target has.",
+            "2": "Control one enemy within %game.action.range:4%:",
+            "3": "The controlled enemy suffers %game.damage:2%"
+          },
+          "147": {
+            "1": "If the attack ability killed an enemy, perform:",
+            "2": "If you have not moved this round, perform:",
+            "3": "You cannot perform move abilities this round. At the end of the round, lose %game.condition.invisible%."
+          },
+          "149": {
+            "1": "Add %game.condition.poison%, %game.condition.muddle% to all your melee attacks.",
+            "2": "Control one enemy within %game.action.range:4%:"
+          },
+          "151": {
+            "1": "Add +1 %game.action.attack% to all your melee attacks.",
+            "2": "Control the target of the attack ability:"
+          },
+          "152": {
+            "1": "If this attack does not kill the target, gain a money token."
+          },
+          "153": {
+            "1": "Add +2 %game.action.attack% and gain %game.card.experience:1% for each negative condition the target has."
+          },
+          "155": {
+            "1": "Your single-target melee attack abilities may target enemies within 2 hexes (of you).",
+            "2": "Control the target of the attack ability:",
+            "3": "Add %game.condition.curse% to all your melee attacks this round."
+          },
+          "156": {
+            "1": "After each of your melee attack abilities, grant one of your summons:",
+            "2": "Grant one of your summons:",
+            "3": "If you end this movement in the same hex as you start, all enemies moved through gain %game.condition.muddle%."
+          },
+          "157": {
+            "1": "Control one enemy within %game.action.range:4%:",
+            "2": "Grant one of your summons:"
+          },
+          "160": {
+            "1": "Place a character token on a normal or elite enemy within %game.action.range:4%. This round, during that enemy's turn, it treats its enemies as allies and its allies as enemies, with you controlling its abilities."
+          },
+          "161": {
+            "1": "Control one enemy within %game.action.range:4%:",
+            "2": "If you performed the attack ability, perform:"
+          },
+          "162": {
+            "1": "Designate a hex containing an enemy within %game.action.range:4% to perform:",
+            "2": "the enemy in the designated hex, %game.action.pierce:5%",
+            "3": "If the attack ability killed an enemy, perform:",
+            "4": "all enemies adjacent to the designated hex"
+          },
+          "164": {
+            "1": "After each of your melee attack abilities, perform:",
+            "2": "Control one enemy within %game.action.range:4%:"
+          },
+          "165": {
+            "1": "All enemies moved through gain %game.condition.poison%."
+          },
+          "166": {
+            "1": "Add +1 %game.action.attack% if the target has a negative condition."
+          },
+          "167": {
+            "1": "Grant one of your summons:"
+          },
+          "168": {
+            "1": "Control two enemies within %game.action.range:4%:",
+            "2": "The controlled enemies suffer %game.damage:1%, %game.card.experience:1%."
+          },
+          "169": {
+            "1": "Control two enemies within %game.action.range:4% that are adjacent to each other:",
+            "2": "You may have two %game.customAction:gh2e-augment% active at once. If you play a third %game.customAction:gh2e-augment%, you must discard either of the other two. If you discard this card and you have two active %game.customAction:gh2e-augment%, you must discard one."
+          },
+          "170": {
+            "1": "Add +1 %game.action.attack% to your melee attacks for each negative condition the target has.",
+            "2": "Designate an unoccupied hex within %game.action.range:4%.",
+            "3": "Perform this attack as though you occupied the designated hex."
+          },
+          "172": {
+            "1": "On your next four melee attacks, add %game.condition.stun%, %game.condition.curse% to the attack."
+          },
+          "173": {
+            "1": "Where X is half the Rat King's current hit point value (rounded up).",
+            "2": "Each round, the first of your allies who performs a melee attack ability gains the effects of each of your active %game.customAction:gh2e-augment% for that attack ability."
+          },
+          "174": {
+            "1": "After each of your melee attack abilities, control one target of the attack ability:",
+            "2": "After each of your control abilities, you may perform:",
+            "3": "One controlled enemy suffers %game.damage:3%."
+          }
+        },
+        "augment": "%game.customAction:gh2e-augment% Augment"
+      },
+      "night-demon": {
+        "1": "All adjacent allies and<br>enemies suffer %game.damage:1%.",
+        "2": "%game.custom.disadvantage%"
+      },
+      "ooze": {
+        "1": "with H equal to the<br>summoning Ooze's current hit point<br>value (limited by a normal Ooze's<br>maximum hit point values)."
+      },
+      "savvas-icestorm": {
+        "1": "Grant all allies within %game.action.range:2% and self:"
+      },
+      "savvas-lavaflow": {
+        "1": "All allies and enemies adjacent<br>to the target suffer %game.damage:2%",
+        "2": "All enemies within %game.action.range:4% suffer %game.damage:2%."
+      },
+      "silent-knife": {
+        "1": "Gain one money token if this attack targeted an adjacent enemy",
+        "2": "At the end of each of your rests, you may place one of your money tokens in the hex occupied by an enemy within %game.action.range:3% to perform: %game.action.attack% 1, %game.action.target% that enemy, %game.action.range:3%",
+        "3": "Whenever you complete a city event, draw an attack modifier card as though you were performing an %game.action.attack% 4. Gain an amount of gold equal to the %game.damage% the attack would have dealt",
+        "4": "Once each scenario, during your turn, you may perform: %game.condition.invisible%, self",
+        "5": "For an entire scenario, only attack enemies that are adjacent to one of your allies or adjacent to none of their allies, and perform at least 10 attacks",
+        "6": "End 3 scenarios with 12 or more money tokens",
+        "abilities": {
+          "100": {
+            "1": "Add %game.condition.wound% and gain %game.card.experience:1% if the target is adjacent to any of your allies."
+          },
+          "101": {
+            "1": "On your next tree attacks, add +1 %game.action.attack%, %game.condition.poison%.",
+            "2": "If you are adjacent to no enemies, gain %game.condition.invisible%. At the end of the round, lose %game.condition.invisible%."
+          },
+          "102": {
+            "1": "Add +1 %game.action.attack% on each target that is adjacent to none of its allies."
+          },
+          "103": {
+            "1": "You may place one of your money tokens in the hex occupied by the target to add +2 %game.action.attack%, %game.action.pierce:2%.",
+            "2": "Create one %game.condition.poison%, %game.condition.immobilize% trap in the empty hex of one looted money token."
+          },
+          "105": {
+            "1": "Add +2 %game.action.attack% and gain %game.card.experience:1% if the target is adjacent to any of your allies or is adjacent to none of its allies.",
+            "2": "When you next perform a melee attack targeting an enemy that has %game.condition.poison% this round, after the attack ability, perform:"
+          },
+          "107": {
+            "1": "On your next attack targeting an enemy that is both adjacent to any of your allies and none of its allies, double the value of the attack."
+          },
+          "108": {
+            "1": "Negate the %game.damage% and added effects of all attacks targeting you this round.",
+            "2": "Immediately after each attack ability targeting you this round, gain %game.card.experience:1% and perform:",
+            "3": "the enemy that attacked you",
+            "4": "Gain advantage on all your attacks this round."
+          },
+          "109": {
+            "1": "Add +1 %game.action.attack% and gain advantage, %game.card.experience:1% if the target is a normal monster.",
+            "2": "2 enemies whose current hit point value is 2 or less, %game.action.range:2%"
+          },
+          "110": {
+            "1": "If all the targets of the attack ability were adjacent to none of their allies, perform:"
+          },
+          "111": {
+            "1": "This action my be performed while you have %game.condition.stun%.",
+            "2": "Remove all negative conditions you have.",
+            "3": "Designate one adjacent trap.",
+            "4": "Relocate the designated trap to an adjacent featureless hex. If that hex is occupied by an enemy, spring the trap on that enemy and gain %game.card.experience:1%."
+          },
+          "112": {
+            "1": "Add %game.condition.disarm% and gain %game.condition.invisible%, %game.card.experience:1% if the target is both adjacent to any of your allies and none of its allies."
+          },
+          "113": {
+            "1": "Add %game.condition.poison% to all your attacks. Add +1 %game.action.attack% to all your attacks targeting enemies that have %game.condition.poison%.",
+            "2": "Add %game.condition.immobilize% to all your attacks targeting enemies adjacent to none of their allies this round."
+          },
+          "114": {
+            "1": "You may lose one of your money tokens to place a character token on an adjacent normal enemy. For the remainder of the scenario, that enemy is an ally to you and an enemy to all other monsters. You may replace its base with a blue base to more easily identify it. When that enemy dies, it drops an additional money token."
+          },
+          "115": {
+            "1": "If you attacked at least three enemies with the attack ability, gain %game.card.experience:1% and perform:",
+            "2": "During you turn, you may play this card from your hand to perform this action (in addition to the two cards you have played for the round)."
+          },
+          "88": {
+            "1": "Add +2 %game.action.attack% and gain %game.card.experience:1% if the target is adjacent to none of its allies.",
+            "2": "On your next four attacks targeting enemies adjacent to none of their allies, add +3 %game.action.attack%"
+          },
+          "89": {
+            "1": "Add +2 %game.action.attack% and gain %game.card.experience:1% if the target is adjacent to any of your allies."
+          },
+          "90": {
+            "1": "%game.action.loot% each hex you entered with the move ability."
+          },
+          "92": {
+            "1": "Add +1 %game.action.attack% if the target is adjacent to any of your allies, add +1 %game.action.attack% if the target is adjacent to none of its allies, and gain advantage and %game.card.experience:1% if both are true."
+          },
+          "93": {
+            "1": "Add %game.action.pierce:2% to all your ranged attacks this round."
+          },
+          "95": {
+            "1": "You may choose not to spring traps in hexes you enter with this movement.",
+            "2": "Destroy one trap in a hex you entered with the move ability to gain %game.card.experience:1%."
+          },
+          "97": {
+            "1": "Add +2 %game.action.attack% and gain %game.card.experience:1% if the target is adjacent to any of your allies."
+          },
+          "98": {
+            "1": "On your next attack while you have %game.condition.invisible%, double the value of the attack.",
+            "2": "Control one adjacent enemy:",
+            "3": "This movement must end in a hex adjacent to the Silent Knife."
+          },
+          "99": {
+            "1": "On your next melee attack targeting an enemy that has %game.action.shield%, add +(X+2)%game.action.attack%, where X is the %game.action.shield% value of the target.",
+            "2": "Negate the next %game.damage% you would suffer this round."
+          }
+        }
+      },
+      "spellweaver": {
+        "1": "Add +2 %game.action.attack% if drawn during an action with %game.card.lost%",
+        "2": "Once each scenario, when you would suffer %game.damage%, you may gain %game.condition.invisible% and %game.condition.stun% to negate the %game.damage%",
+        "3": "Whenever you short rest, if <i>Reviving Ether</i> is in your discard pile, first %game.card.recover% it",
+        "4": "At the end of each of your turns during which you performed an action with %game.card.lost%, gain %game.condition.bless%",
+        "5": "In a single scenario, consume both %game.element.fire% and %game.element.ice% during the same turn 6 times",
+        "6": "In a single scenario, perform 4 different %game.card.lost% actions twice each",
+        "abilities": {
+          "61": {
+            "1": "%game.card.recover% all cards in your lost pile."
+          },
+          "66": {
+            "1": "When you next perform an action with %game.card.lost% this round, %game.element.wild%."
+          },
+          "67": {
+            "1": "Gain advantage on all your attacks this round, %game.card.experience:1%."
+          },
+          "68": {
+            "1": "Grant one ally within %game.action.range:3% %game.enhancement.square%:"
+          },
+          "69": {
+            "1": "On your next four single-target ranged attack abilities, add +2%game.action.attack% to the attack."
+          },
+          "70": {
+            "1": "Place a character token on one ally within %game.action.range:3%. On the next three sources of 2 or more %game.damage% they would suffer, negate the %game.damage%.",
+            "2": "On the next tree sources of 2 or more %game.damage% you would suffer, negate the %game.damage%."
+          },
+          "72": {
+            "1": "the 4 enemies closest to you within 5 hexes"
+          },
+          "73": {
+            "1": "Play one Level 1 card from your lost pile other than Reviving Ether to perform an action with %game.card.lost% of the card.",
+            "2": "When you next perform an action with %game.card.lost% this round, gain %game.condition.ward%."
+          },
+          "74": {
+            "1": "The target add +2%game.action.attack% to their next attack this round."
+          },
+          "77": {
+            "1": "Add +1%game.action.attack% to all your attacks this round, %game.card.experience:1%."
+          },
+          "78": {
+            "1": "On the next attack ability you perform from an action with %game.card.lost%, add +1%game.action.attack% to all your attacks."
+          },
+          "81": {
+            "1": "When you next perform an action with %game.card.lost% this round, %game.card.recover% one card from your discard pile."
+          },
+          "82": {
+            "1": "You may play one card from your discard pile to perform an action with %game.card.lost% of the card (the card is moved to your lost pile)."
+          },
+          "83": {
+            "1": "all allies in the red hexes of the attack ability",
+            "2": "Choose an ally within %game.action.range:3%. That ally gains %game.action.shield:3% for the next attack targeting them this round.",
+            "3": "The attacker suffers %game.damage:3%, %game.card.experience:1%."
+          },
+          "85": {
+            "1": "When you next perform an action with %game.card.lost% this round, after the action perform:"
+          },
+          "86": {
+            "1": "After the attack ability, kill each target whose hit point value is 2 or less and create one 1-hex obstacle tile in the featureless hex they occupied.",
+            "2": "Designate a hex within %game.action.range:4%.",
+            "3": "all enemies within %game.action.range:4% of the designated hex",
+            "4": "Pull toward the designated hex."
+          },
+          "87": {
+            "1": "all enemies within 2 hexes",
+            "2": "All allies within %game.action.range:2% suffer %game.damage:2%.",
+            "3": "All allies and enemies in the same room as you suffer %game.damage:4%."
+          }
+        }
+      },
+      "stone-construct": {
+        "1": "If the move ability was performed, Stone Construct suffers %game.damage:1%.",
+        "2": "If the attack ability was performed, Stone Construct suffers %game.damage:1%."
+      },
+      "tinkerer": {
+        "1": "Once each scenario, one adjacent ally may use one of your <i>potion</i> %game.itemSlot:small% items during their turn without it becoming %game.card.lost%",
+        "2": "Whenever you perform an action with %game.card.lost%, you may %game.element.wild%",
+        "3": "Whenever you long rest, you may perform: %game.action.heal% 2, %game.action.range:3%",
+        "4": "For an entire scenario, during each of your turns, give an enemy a negative condition, give an ally a positive condition, heal an ally, or grant an ally shield",
+        "5": "Perform 11 different %game.card.lost% actions",
+        "abilities": {
+          "30": {
+            "1": "On your next four single-target heal abilities, add +1 %game.action.target%."
+          },
+          "32": {
+            "1": "Grant all adjacent allies and self:"
+          },
+          "33": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "34": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "35": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "37": {
+            "1": "One ally within %game.action.range:3% may %game.card.recover% all their cards from their discard pile."
+          },
+          "40": {
+            "1": "Place the \"Enhancement Field\" token in an empty hex within %game.action.range:3%.",
+            "2": "Add +1 %game.action.attack% to all attacks you and all allies perform while within %game.action.range:1% of the token.",
+            "3": "You and all adjacent allies add +1 %game.action.attack% to all attacks this round."
+          },
+          "42": {
+            "1": "Create one %game.damage:4% %game.enhancement.square% ,%game.condition.muddle% trap in an adjacent empty hey."
+          },
+          "43": {
+            "1": "The target may %game.card.recover% one level 1 card from their discard pile.",
+            "2": "Create one %game.damage:2% %game.enhancement.square% ,%game.condition.poison% trap in an adjacent empty hey."
+          },
+          "47": {
+            "1": "Place two \"Teleportation Pad\" tokens in empty hexes within %game.action.range:5%.",
+            "2": "You and all allies may threat the two hexes containing the tokens as being adjacent to each other during move abilities."
+          },
+          "48": {
+            "1": "One ally within %game.action.range:3% may %game.card.recover% one card from their lost pile."
+          },
+          "49": {
+            "1": "Grant one adjacent ally:"
+          },
+          "50": {
+            "1": "All enemies adjacent to the target gain %game.condition.muddle%.",
+            "2": "Create one %game.damage:2% %game.enhancement.square% ,%game.condition.immobilize% trap in an empty hey within %game.action.range:2% %game.enhancement.square% ."
+          },
+          "51": {
+            "1": "Gain %game.card.experience:1% for each enemy targeted."
+          },
+          "52": {
+            "1": "Kill all enemies in the targeted area whose current hit point value is less than or equal to 5. Gain %game.card.experience:1% for each enemy killed."
+          },
+          "53": {
+            "1": "At the end of this and your next four turns, perform:"
+          },
+          "54": {
+            "1": "At the end of this and your next three turns, perform the following twice:"
+          },
+          "56": {
+            "1": "Place the \"Pernicious Fogger\" token in an empty hex within %game.action.range:3%.",
+            "2": "At the end of each of their turns, all allies and enemies within %game.action.range:1% of the token suffer %game.damage:2%."
+          },
+          "57": {
+            "1": "Create one %game.damage:4% %game.enhancement.square% ,%game.condition.wound%, %game.condition.stun% trap in an empty hey within %game.action.range:2% %game.enhancement.square% .",
+            "2": "Grant one adjacent ally:"
+          },
+          "58": {
+            "1": "Grant one ally within %game.action.range:3%:",
+            "2": "Suffer %game.damage:2%.",
+            "3": "Control one enemy within %game.action.range:3 %%game.enhancement.square% :",
+            "4": "then that enemy gains %game.condition.stun%."
+          },
+          "59": {
+            "1": "Place the \"Gravity Bomb\" token in an empty hex within %game.action.range:4%. At the end of your next turn, perform:",
+            "2": "all enemies within %game.action.range:2% of the token",
+            "3": "Pull toward the token. Then any enemy occupying the hex containing the token suffers %game.damage:5%, all enemies occupying hexes adjacent to the token suffer %game.damage:1%, and you discard this card."
+          },
+          "60": {
+            "1": "The target of the heal ability may immediately play up to two cards from their hand, performing at most one top and one bottom action of the cards.",
+            "2": "One ally within %game.action.range:3% may %game.card.recover% one card from the lost pile of one ally adjacent to them."
+          }
+        }
+      }
+    },
+    "hawthorne": {
+      "1": "Adds +1 %game.action.attack% to all attacks while undamaged"
+    },
+    "living-spirit-squidface-solo": {
+      "1": "Base armor is 0 while %data.monster.living-spirit-squidface-solo% does not have %game.condition.poison%",
+      "2": "%data.monster.living-spirit-squidface-solo%s without %game.condition.poison% do not act.",
+      "3": "%game.characterIcon.squidface% may have the %data.monster.living-spirit-squidface-solo% lose %game.condition.poison% to add %game.condition.poison%."
+    }
+  },
+  "deck": {
+    "archer": "Archer",
+    "boss": "Boss",
+    "guard": "Guard",
+    "imp": "Imp",
+    "priest": "Priest",
+    "scout": "Scout"
+  },
+  "edition": {
+    "gh2e": {
+      "": "Gloomhaven 2nd Edition",
+      "hint": "Gloomhaven 2nd Edition currently has most of the non-scenario sections missing, as well as most of the artwork."
+    }
+  },
+  "factions": {
+    "gh2e": {
+      "demons": "Demons",
+      "merchant-guild": "Merchant's Guild",
+      "military": "Military"
+    }
+  },
+  "globalAchievements": {
+    "activating-the-device": "Activating the Device",
+    "an-uneasy-peace": "An Uneasy Peace",
+    "ancient-technology": "Ancient Technology",
+    "city-rule-demons": "City Rule: Demons",
+    "city-rule-merchants": "City Rule: Merchants",
+    "city-rule-military": "City Rule: Military",
+    "elements-mastered": "Elements Mastered",
+    "end-of-corruption": "End of Corruption",
+    "end-of-gloom": "End of Gloom",
+    "hallowed-waters": "Hallowed Waters",
+    "into-the-depths": "Into the Depths",
+    "peace-through-bloodshed": "Peace Through Bloodshed",
+    "the-candle-extinguished": "The Candle Extinguished",
+    "the-candle-kept": "The Candle Kept",
+    "the-darkness-retreats": "The Darkness Retreats",
+    "the-drake-aided": "The Drake Aided",
+    "the-drake-slain": "The Drake Slain",
+    "the-power-of-enhancement": "The Power of Enhancement",
+    "the-voice-freed": "The Voice Freed",
+    "the-voice-silenced": "The Voice Silenced"
+  },
+  "monster": {
+    "alpha-lurker": "Alpha Lurker",
+    "ancient-artillery": "Ancient Artillery",
+    "arcane-construct": "Arcane Construct",
+    "bandit-archer": "Bandit Archer",
+    "bandit-archer-music-note2-solo": "%data.monster.bandit-archer%",
+    "bandit-commander": "Bandit Commander",
+    "bandit-scout": "Bandit Scout",
+    "bandit-scout-music-note2-solo": "%data.monster.bandit-scout%",
+    "black-imp": "Black Imp",
+    "bloated-victim": "Bloated Victim",
+    "candlekeeper-trice": "Candlekeeper Trice",
+    "cave-bear": "Cave Bear",
+    "cave-bear-circles2-solo": "%data.monster.cave-bear%",
+    "chaos-demon": "Chaos Demon",
+    "city-archer": "City Archer",
+    "city-guard": "City Guard",
+    "city-guard-saw2-solo": "%data.monster.city-guard%",
+    "city-guard-sun2-solo": "%data.monster.city-guard%",
+    "corrupt-city-guard": "Corrupt City Guard",
+    "crystal-rot": "Crystal Rot",
+    "cultist": "Cultist",
+    "dark-ritual-cultist": "Dark Ritual Cultist",
+    "deep-earth-gh2e": "Deep Earth",
+    "deep-terror": "Deep Terror",
+    "disjointed-twin": "Disjointed Twin",
+    "doomcannon": "Doomcannon",
+    "earth-demon": "Earth Demon",
+    "egg-scenario-50": "Egg 50",
+    "first-shield-harmon": "First Shield Harmon",
+    "flame-demon": "Flame Demon",
+    "forest-imp": "Forest Imp",
+    "frost-demon": "Frost Demon",
+    "giant-ooze": "Giant Ooze",
+    "giant-viper": "Giant Viper",
+    "harrower-infester": "Harrower Infester",
+    "hawthorne": "Hawthorne",
+    "hound": "Hound",
+    "inox-archer": "Inox Archer",
+    "inox-bodyguard": "Inox Bodyguard",
+    "inox-guard": "Inox Guard",
+    "inox-priest": "Inox Priest",
+    "jekserah": "Jekserah",
+    "living-bomb": "Living Bomb",
+    "living-bones": "Living Bones",
+    "living-corpse": "Living Corpse",
+    "living-spirit": "Living Spirit",
+    "living-spirit-squidface-solo": "%data.monster.living-spirit%",
+    "lurker-soldier": "Lurker Soldier",
+    "merciless-taskmaster": "Merciless Taskmaster",
+    "night-demon": "Night Demon",
+    "ooze": "Ooze",
+    "rending-drake": "Rending Drake",
+    "savvas-icestorm": "Savvas Icestorm",
+    "savvas-lavaflow": "Savvas Lavaflow",
+    "shyreth": "Shyreth",
+    "spitting-drake": "Spitting Drake",
+    "spymaster-argeise": "Spymaster Argeise",
+    "stone-construct": "Stone Construct",
+    "stone-construct-tinkerer-solo": "%data.monster.stone-construct%",
+    "sun-demon": "Sun Demon",
+    "the-betrayer": "The Betrayer",
+    "the-colorless": "The Colorless",
+    "the-convergence": "The Convergence",
+    "the-dark-rider": "The Dark Rider",
+    "the-elder-drake": "The Elder Drake",
+    "the-gloom": "The Gloom",
+    "the-harvester": "The Harvester",
+    "the-prime-demon": "The Prime Demon",
+    "the-sightless-eye": "The Sightless Eye",
+    "the-winged-horror": "The Winged Horror",
+    "training-dummy": "Training Dummy",
+    "training-partner": "Training Partner",
+    "tyrant-of-the-tides": "Tyrant of the Tides",
+    "usurper": "Usurper",
+    "vermling-priest": "Vermling Priest",
+    "vermling-scout": "Vermling Scout",
+    "vermling-scout-mindthief2-solo": "%data.monster.vermling-scout%",
+    "wind-demon": "Wind Demon"
+  },
+  "personalQuest": {
+    "gh2e": {
+      "01": {
+        "": "Political Intrigue",
+        "1": "Votes",
+        "2": "Solved %game.section:136.1%"
+      },
+      "02": {
+        "": "Inn to Hospitality",
+        "1": "Money Tokens looted"
+      },
+      "03": {
+        "": "Augmented Abilities",
+        "1": "Enhancements",
+        "2": "Read %game.section:71.2%"
+      },
+      "04": {
+        "": "The Fall of Man",
+        "1": "%game.itemFh.149% used",
+        "2": "Read %game.section:115.2%"
+      },
+      "05": {
+        "": "Seeker of Xorn",
+        "1": "\"Crypt Basement\" %game.scenario:57% completed",
+        "2": "Item gained",
+        "3": "%game.condition.poison% gained",
+        "4": "\"Palace of Ice\" %game.scenario:58% completed"
+      },
+      "06": {
+        "": "Zealot of the Blood God",
+        "1": "Scenarios completed with max. half HP",
+        "2": "Solved %game.section:122.3%"
+      },
+      "07": {
+        "": "A Tale to Tell",
+        "1": "Treasures looted",
+        "2": "Read %game.section:12.3%"
+      },
+      "08": {
+        "": "Take Back the Trees",
+        "1": "Road Events",
+        "2": "Read %game.section:64.3%"
+      },
+      "09": {
+        "": "Finding the Cure",
+        "1": "Scenario Locations",
+        "2": "Copperneck Mountains",
+        "3": "Corpsewood",
+        "4": "Dagger Forest",
+        "5": "Gloomhaven",
+        "6": "Lingering Swamp",
+        "7": "Misty Sea",
+        "8": "Watcher Mountains",
+        "9": "Read %game.section:55.3%"
+      },
+      "10": {
+        "": "Aberrant Slayer",
+        "1": "%game.element.wild% Enhancment",
+        "2": "Read %game.section:14.3%"
+      },
+      "11": {
+        "": "Adoptive Parent",
+        "1": "Scenarios with 3 or more Money Tokens looted",
+        "2": "Read %game.section:122.5%"
+      },
+      "12": {
+        "": "Implement of Light",
+        "1": "Negated %game.damage:4% or more",
+        "2": "Read %game.section:82.1%"
+      },
+      "13": {
+        "": "Merchant Class",
+        "1": "%game.items.slots.head% items",
+        "2": "%game.items.slots.body% items",
+        "3": "%game.items.slots.legs% items",
+        "4": "%game.items.slots.onehand% or %game.items.slots.twohand% items",
+        "5": "%game.items.slots.small% items",
+        "6": "Read %game.section:129.1%"
+      },
+      "14": {
+        "": "Eternal Wanderer",
+        "1": "Scenarios completed",
+        "2": "Read %game.section:52.2%"
+      },
+      "15": {
+        "": "Escaping the Sin-Ra",
+        "1": "Side Scenarios (> 56) completed",
+        "2": "Read %game.section:128.2%"
+      },
+      "16": {
+        "": "The Perfect Poison",
+        "1": "%game.condition.poison% Enemies",
+        "2": "Read %game.section:8.3%"
+      },
+      "17": {
+        "": "Living on the Edge",
+        "1": "Enemies suffered %game.damage%",
+        "2": "Read %game.section:47.4%"
+      },
+      "18": {
+        "": "Battle Legend",
+        "1": "Earned %game.checkmark% from completed battle goals",
+        "2": "Read %game.section:23.3%"
+      },
+      "19": {
+        "": "Martial Study",
+        "1": "%game.items.slots.onehand% or %game.items.slots.twohand% different items used",
+        "2": "Read %game.section:67.2%"
+      },
+      "20": {
+        "": "Piety in All Things",
+        "1": "Gold donated to the Temple of the Great Oak",
+        "2": "Read %game.section:51.5%"
+      },
+      "21": {
+        "": "Pursuit of Proficiency",
+        "1": "%game.experience% from ability cards",
+        "2": "Read %game.section:17.2%"
+      },
+      "22": {
+        "": "Trophy Hunt",
+        "1": "Different types of monsters killed",
+        "2": "Read %game.section:21.1%"
+      }
+    }
+  },
+  "scenario": {
+    "rules": {
+      "gh2e": {
+        "10": {
+          "1": "Each Character occupying tile 01-D, 02-H, or any corridor tiles connecting those two tiles suffers hazardous terrain damage."
+        },
+        "8": {
+          "1": "At the end of his turn the Bandit Commander Performs %game.action.move% 20 %game.action.jump% to end on door %game.mapMarker.2% opening it.",
+          "2": "At the end of his turn the Bandit Commander Performs %game.action.move% 20 %game.action.jump% to end on door %game.mapMarker.3% opening it.",
+          "3": "At the end of his turn the Bandit Commander Performs %game.action.move% 20 %game.action.jump% to end on door %game.mapMarker.4% opening it.",
+          "4": "At the end of his turn the Bandit Commander Performs %game.action.move% 20 %game.action.jump% to end on door %game.mapMarker.5% opening it."
+        },
+        "9": {
+          "1": "Draw a token and spawn the monster on %game.mapMarker.b%.",
+          "2": "Draw a token and spawn the monster on %game.mapMarker.c%.",
+          "3": "Draw two tokens and spawn the monsters on %game.mapMarker.b% and %game.mapMarker.c%.",
+          "4": "Draw two tokens and spawn the monsters on %game.mapMarker.d% and %game.mapMarker.e%."
+        }
+      }
+    },
+    "title": {
+      "gh2e": {
+        "0": "Training Course",
+        "1": "Bandit Camp",
+        "10": "Mountain Pass",
+        "100": "Silence Falls",
+        "11": "Ritual Chamber",
+        "12": "Inox Encampment",
+        "13": "Icecrag Ascent",
+        "14": "Echo Chamber",
+        "15": "Plane of Elemental Power",
+        "16": "Diamond Mine",
+        "17": "Demonic Rift",
+        "18": "Investigation",
+        "19": "Military Outpost",
+        "2": "Ruinous Crypt",
+        "20": "Gloomhaven Warehouse",
+        "21": "The Ghost Fortress",
+        "22": "Doomcannon Demolition",
+        "23A": "Gloomhaven Square A (Demon Allies)",
+        "23B": "Gloomhaven Square A (Military Allies)",
+        "24": "Gloomhaven Square B",
+        "25A": "Gloomhaven Battlements A (Merchant Allies)",
+        "25B": "Gloomhaven Battlements A (Military Allies)",
+        "26": "Gloomhaven Battlements B",
+        "27": "Infernal Throne",
+        "28": "Temple of the Seer",
+        "29": "Scorched Summit",
+        "3": "Frozen Hollow",
+        "30": "Shrine of the Depths",
+        "31": "Decrepit Wood",
+        "32": "Savvas Armory",
+        "33": "Ancient Defense Network",
+        "34": "Timeworn Tomb",
+        "35": "Realm of the Voice",
+        "36": "Abandoned Sewers",
+        "37": "Deep Ruins",
+        "38": "Drake Nest",
+        "39": "Vibrant Grotto",
+        "4": "Crypt of the Damned",
+        "40": "Wetlands Ambush",
+        "41": "Ancient Cistern",
+        "42": "Secluded Valley",
+        "43": "Chasing Secrets",
+        "44": "Temple of the Elements",
+        "45": "Plane of Night",
+        "46": "Doom Trench",
+        "47": "Slave Pens",
+        "48": "Treacherous Divide",
+        "49": "Tribal Assault",
+        "5": "Forgotten Crypt",
+        "50": "Nightmare Peak",
+        "51": "Lair of the Unseeing Eye",
+        "52": "Shadow Weald",
+        "53": "Shrine of Strength",
+        "54": "The Void",
+        "55": "The Last Stand",
+        "56": "The Gloom",
+        "57": "Crypt Basement",
+        "58": "Palace of Ice",
+        "59": "Foggy Thicket",
+        "6": "Decaying Crypt",
+        "60": "Bandit's Wood",
+        "61": "Dangerous Grove",
+        "62": "Alchemy Lab",
+        "63": "Fading Lighthouse",
+        "64": "Roots of Chaos",
+        "65": "Hero's Mausoleum",
+        "66": "A Friend in Need",
+        "67": "Temple of the Eclipse",
+        "68": "Sunken Vessel",
+        "69": "Corrupted Cove",
+        "7": "Black Barrow",
+        "70": "Underwater Lagoon",
+        "71": "Clockwork Factory",
+        "72": "Well of the Unfortunate",
+        "73": "Chained Isle",
+        "74": "Windswept Highlands",
+        "75": "Rockslide Ridge",
+        "76": "Oozing Grove",
+        "77": "Harrower Hive",
+        "78": "Vault of Secrets",
+        "79": "Lurker Assault",
+        "8": "Barrow Lair",
+        "80": "Lost Temple",
+        "81": "Overgrown Graveyard",
+        "82": "Syndicate Hideout",
+        "83": "Lost Island",
+        "84": "Wild Melee",
+        "85": "Crossroads Station",
+        "86": "Magma Pit",
+        "87": "Sulfur Mine",
+        "88": "Arcane Library",
+        "89": "Community Service",
+        "9": "Ruinous Rift",
+        "90": "Burning Mountain",
+        "91": "Shadows Within",
+        "92": "Chronal Anchor",
+        "93": "Harried Village",
+        "94": "A Watery Rescue",
+        "95": "Cargo Ship",
+        "96": "Back Alley Brawl",
+        "97": "Vermling Camp",
+        "98": "Metamorphic Fault",
+        "99": "Sintering Forge",
+        "S": "Challenger's Rift",
+        "solo-100": "Elemental Secrets",
+        "solo-101": "The Caged Bear",
+        "solo-102": "The Sands of Time",
+        "solo-85": "A Night Out",
+        "solo-86": "An Unfortunate Intrusion",
+        "solo-87": "Corrupted Apothecary",
+        "solo-88": "Material Concerns",
+        "solo-89": "Stone Defense",
+        "solo-90": "Vermling Liberation",
+        "solo-91": "Caravan Escort",
+        "solo-92": "Storage Fees",
+        "solo-93": "Plane of Wild Beasts",
+        "solo-94": "Harvesting the Night",
+        "solo-95": "Plagued Crypt",
+        "solo-96": "Unnatural Insults",
+        "solo-97": "Battle of the Bards",
+        "solo-98": "Corrupted Hunt",
+        "solo-99": "Aftermath"
+      }
+    }
+  },
+  "section": {
+    "rewards": {
+      "gh2e": {
+        "68-4": {
+          "1": "Open the puzzle book to the first spread.",
+          "2": "When the first character retires, read %game.section:68.4%"
+        }
+      }
+    },
+    "title": {
+      "gh2e": {
+        "10-2": "Merchant Reputation 16",
+        "10-3": "Plane of Elemental Power",
+        "101-2": "Slave Pens",
+        "101-3": "Chronal Anchor",
+        "102-1": "Crypt Basement",
+        "102-2": "Imbuement 30",
+        "102-5": "Well of the Unfortunate",
+        "102-6": "Slave Pens",
+        "103-1": "Chronal Anchor",
+        "103-2": "Tribal Assault",
+        "103-5": "Vermling Camp",
+        "103-6": "Shrine of Strength",
+        "104-1": "Lost Island",
+        "106-1": "Chasing Secrets",
+        "106-5": "Harrower Hive",
+        "107-1": "Clockwork Factory",
+        "107-4": "Shrine of Strength",
+        "108-1": "Crypt Basement",
+        "108-3": "Vault of Secrets",
+        "108-4": "Harrower Hive",
+        "109-1": "The Void",
+        "11-1": "Bandit Camp",
+        "110-1": "Harrower Hive",
+        "110-3": "Syndicate Hideout",
+        "111-3": "Chained Isle",
+        "112-1": "Syndicate Hideout",
+        "113-1": "Vermling Camp",
+        "113-3": "Burning Mountain",
+        "113-5": "Doom Trench",
+        "113-6": "Chained Isle",
+        "114-4": "Sunken Vessel",
+        "115-1": "Vault of Secrets",
+        "115-3": "Crypt Basement",
+        "116-1": "Alchemy Lab",
+        "116-3": "Syndicate Hideout",
+        "117-1": "Burning Mountain",
+        "117-5": "Clockwork Factory",
+        "118-2": "Crossroads Station",
+        "119-3": "Imbuement 60",
+        "119-7": "Vault of Secrets",
+        "12-2": "Gloomhaven Warehouse",
+        "120-5": "Magma Pit",
+        "121-1": "Alchemy Lab",
+        "121-3": "Well of the Unfortunate",
+        "121-4": "Dangerous Grove",
+        "123-1": "Syndicate Hideout",
+        "123-3": "Sulfur Mine",
+        "123-4": "Harried Village",
+        "124-3": "Harrower Hive",
+        "125-3": "Shadows Within",
+        "126-3": "Magma Pit",
+        "127-1": "Sulfur Mine",
+        "128-3": "Chained Isle",
+        "128-5": "Imbuement 80",
+        "129-3": "Vermling Camp",
+        "13-3": "Tribal Assault",
+        "131-3": "Sulfur Mine",
+        "132-4": "Chasing Secrets",
+        "133-2": "Imbuement 10",
+        "133-3": "Sulfur Mine",
+        "133-5": "Demon Reputation 12",
+        "134-3": "Chronal Anchor",
+        "135-6": "Imbuement 70",
+        "136-2": "Rockslide Ridge",
+        "136-4": "Sulfur Mine",
+        "136-5": "Alchemy Lab",
+        "14-1": "Icecrag Ascent",
+        "15-1": "Forgotten Crypt",
+        "15-2": "Barrow Lair",
+        "15-4": "Lost Island",
+        "16-1": "Ruinous Crypt",
+        "16-4": "Echo Chamber",
+        "16-5": "Prosperity 5",
+        "16-6": "Investigation",
+        "17-1": "Gloomhaven Warehouse",
+        "17-4": "Inox Encampment",
+        "18-2": "Ruinous Crypt",
+        "18-5": "Gloomhaven Warehouse",
+        "19-1": "Gloomhaven Square B",
+        "2-3": "The Last Stand",
+        "2-4": "Windswept Highlands",
+        "2-5": "Imbuement 50",
+        "20-1": "Merchant Reputation 20",
+        "20-2": "Infernal Throne",
+        "20-3": "The Ghost Fortress",
+        "21-2": "Mountain Pass",
+        "22-2": "Temple of the Seer",
+        "22-3": "Barrow Lair",
+        "23-1": "Frozen Hollow",
+        "24-1": "Inox Encampment",
+        "24-2": "Investigation",
+        "25-1": "Frozen Hollow",
+        "26-1": "Crypt of the Damned",
+        "26-3": "Inox Encampment",
+        "28-1": "Crypt of the Damned",
+        "28-3": "Military Outpost",
+        "28-5": "Drake Nest",
+        "29-1": "Demon Reputation 6",
+        "29-3": "Gloomhaven Square A (Military Allies)",
+        "3-3": "Gloomhaven Square A (Demon Allies)",
+        "30-1": "Crypt of the Damned",
+        "30-2": "Diamond Mine",
+        "30-4": "Ritual Chamber",
+        "31-1": "Military Outpost",
+        "31-3": "Forgotten Crypt",
+        "31-4": "Abandoned Sewers",
+        "31-5": "Military Reputation 20",
+        "32-1": "Forgotten Crypt",
+        "32-2": "Lost Island",
+        "32-4": "Gloomhaven Battlements B",
+        "33-1": "Ancient Defense Network",
+        "34-1": "Echo Chamber",
+        "34-3": "Imbuement 20",
+        "34-5": "Decaying Crypt",
+        "35-3": "Icecrag Ascent",
+        "35-4": "Timeworn Tomb",
+        "36-1": "Decaying Crypt",
+        "37-1": "Forgotten Crypt",
+        "37-2": "Doomcannon Demolition",
+        "37-4": "Inox Encampment",
+        "38-1": "Decaying Crypt",
+        "38-4": "The Ghost Fortress",
+        "39-1": "Infernal Throne",
+        "39-2": "Vibrant Grotto",
+        "39-3": "Military Reputation 12",
+        "4-1": "The Void",
+        "40-1": "Decaying Crypt",
+        "41-1": "Decrepit Wood",
+        "41-3": "Merchant Reputation 12",
+        "42-1": "Black Barrow",
+        "42-2": "Clockwork Factory",
+        "42-5": "Investigation",
+        "43-2": "Bandit Camp",
+        "44-1": "Mountain Pass",
+        "44-2": "Echo Chamber",
+        "44-5": "Clockwork Factory",
+        "45-1": "Military Outpost",
+        "45-2": "Black Barrow",
+        "46-1": "Wild Melee",
+        "46-3": "Military Reputation 6",
+        "47-2": "Ancient Cistern",
+        "48-1": "Echo Chamber",
+        "48-2": "Prosperity 3",
+        "48-3": "Decrepit Wood",
+        "48-5": "Drake Nest",
+        "49-1": "Merchant Reputation 6",
+        "49-3": "Barrow Lair",
+        "5-2": "Training Course",
+        "50-3": "The Ghost Fortress",
+        "50-4": "Imbuement 40",
+        "50-5": "Drake Nest",
+        "51-3": "Inox Encampment",
+        "51-4": "Ritual Chamber",
+        "52-1": "Hero's Mausoleum",
+        "53-1": "Military Reputation 16",
+        "53-4": "Gloomhaven Square A (Military Allies)",
+        "54-2": "Prosperity 4",
+        "54-3": "Ancient Defense Network",
+        "55-1": "Slave Pens",
+        "55-4": "The Void",
+        "56-2": "Bandit's Wood",
+        "58-1": "Timeworn Tomb",
+        "60-1": "Sulfur Mine",
+        "60-4": "Gloomhaven Square A (Demon Allies)",
+        "61-3": "Deep Ruins",
+        "62-1": "Barrow Lair",
+        "62-2": "Plane of Elemental Power",
+        "62-3": "Prosperity 6",
+        "63-1": "Infernal Throne",
+        "64-2": "The Ghost Fortress",
+        "65-1": "Hero's Mausoleum",
+        "65-2": "Savvas Armory",
+        "66-3": "Fading Lighthouse",
+        "66-4": "Drake Nest",
+        "67-1": "The Last Stand",
+        "68-1": "Wetlands Ambush",
+        "68-2": "Arcane Library",
+        "68-4": "Puzzle Book",
+        "69-3": "Investigation",
+        "7-1": "Training Course",
+        "70-1": "Decrepit Wood",
+        "70-5": "Clockwork Factory",
+        "71-1": "The Last Stand",
+        "71-4": "Savvas Armory",
+        "72-2": "The Last Stand",
+        "73-3": "Demon Reputation 16",
+        "74-4": "Harrower Hive",
+        "75-1": "Investigation",
+        "75-2": "Treacherous Divide",
+        "76-3": "Ancient Defense Network",
+        "77-2": "Demon Reputation 20",
+        "77-3": "Merchant Reputation 9",
+        "77-4": "Windswept Highlands",
+        "78-1": "Tribal Assault",
+        "78-2": "Dangerous Grove",
+        "78-3": "Demon Reputation 9",
+        "79-1": "Secluded Valley",
+        "79-4": "Alchemy Lab",
+        "8-1": "Barrow Lair",
+        "80-1": "Deep Ruins",
+        "80-2": "Underwater Lagoon",
+        "80-3": "Chasing Secrets",
+        "81-1": "Vibrant Grotto",
+        "82-3": "Ancient Defense Network",
+        "82-4": "Windswept Highlands",
+        "83-2": "Vibrant Grotto",
+        "83-3": "Military Reputation 9",
+        "84-1": "Vibrant Grotto",
+        "84-4": "Well of the Unfortunate",
+        "84-5": "Timeworn Tomb",
+        "85-1": "Bandit's Wood",
+        "86-2": "Chasing Secrets",
+        "86-3": "Chronal Anchor",
+        "86-4": "Sunken Vessel",
+        "89-1": "Wild Melee",
+        "89-4": "Fading Lighthouse",
+        "9-2": "Gloomhaven Square B",
+        "9-4": "Temple of the Eclipse",
+        "90-3": "Sunken Vessel",
+        "91-1": "Abandoned Sewers",
+        "91-3": "Underwater Lagoon",
+        "93-3": "Plane of Night",
+        "93-4": "Deep Ruins",
+        "93-5": "The Last Stand",
+        "95-4": "Clockwork Factory",
+        "95-5": "Drake Nest",
+        "97-2": "Burning Mountain",
+        "97-4": "Ancient Defense Network",
+        "97-5": "Temple of the Elements",
+        "98-1": "Ancient Defense Network",
+        "98-2": "Temple of the Eclipse",
+        "98-3": "Shrine of Strength",
+        "randomMonsterCard-554": "Mangy",
+        "randomMonsterCard-555": "Drowned",
+        "randomMonsterCard-556": "Hopeless",
+        "randomMonsterCard-557": "Defiled",
+        "randomMonsterCard-558": "Wild",
+        "randomMonsterCard-559": "Fortified",
+        "randomMonsterCard-560": "Cutthroat",
+        "randomMonsterCard-561": "Rotting",
+        "randomMonsterCard-562": "Foggy",
+        "randomMonsterCard-563": "Crushing",
+        "randomMonsterCard-564": "Tribal",
+        "randomMonsterCard-565": "Horrific",
+        "randomMonsterCard-566": "Archaic",
+        "randomMonsterCard-567": "Scaled",
+        "randomMonsterCard-568": "Venomous",
+        "randomMonsterCard-569": "Unstable",
+        "randomMonsterCard-570": "Corrupted",
+        "randomMonsterCard-571": "Infected",
+        "randomMonsterCard-572": "Putrid",
+        "randomMonsterCard-573": "Frigid",
+        "solo-100-1": "Elemental Secrets",
+        "solo-100-2": "Elemental Secrets",
+        "solo-100-3": "Elemental Secrets",
+        "solo-100-4": "Elemental Secrets",
+        "solo-101-1": "The Caged Bear",
+        "solo-101-2": "The Caged Bear",
+        "solo-101-3": "The Caged Bear",
+        "solo-102-1": "The Sands of Time",
+        "solo-102-2": "The Sands of Time",
+        "solo-85-1": "A Night Out",
+        "solo-85-2": "A Night Out",
+        "solo-86-1": "An Unfortunate Intrusion",
+        "solo-86-2": "An Unfortunate Intrusion",
+        "solo-87-1": "Corrupted Apothecary",
+        "solo-87-2": "Corrupted Apothecary",
+        "solo-88-1": "Material Concerns",
+        "solo-88-2": "Material Concerns",
+        "solo-90-1": "Vermling Liberation",
+        "solo-90-2": "Vermling Liberation",
+        "solo-91-1": "Caravan Escort",
+        "solo-91-2": "Caravan Escort",
+        "solo-92-1": "Storage Fees",
+        "solo-92-2": "Storage Fees",
+        "solo-92-3": "Storage Fees",
+        "solo-93-1": "Plane of Wild Beasts",
+        "solo-94-1": "Harvesting the Night",
+        "solo-94-2": "Harvesting the Night",
+        "solo-95-1": "Plagued Crypt",
+        "solo-95-2": "Plagued Crypt",
+        "solo-96-1": "Unnatural Insults",
+        "solo-96-2": "Unnatural Insults",
+        "solo-97-1": "Battle of the Bards",
+        "solo-97-2": "Battle of the Bards",
+        "solo-98-1": "Corrupted Hunt",
+        "solo-98-2": "Corrupted Hunt",
+        "solo-98-3": "Corrupted Hunt",
+        "solo-98-4": "Corrupted Hunt",
+        "solo-99-1": "Aftermath"
+      }
+    }
+  }
+}

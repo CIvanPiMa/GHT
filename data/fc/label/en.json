@@ -1,0 +1,533 @@
+{
+  "ability": {
+    "Anguish and Salvation": "Anguish and Salvation",
+    "Anticipate Intricacies": "Anticipate Intricacies",
+    "Bad Omen": "Bad Omen",
+    "Blistering Heat": "Blistering Heat",
+    "Call of the Nether": "Call of the Nether",
+    "Careful Attunement": "Careful Attunement",
+    "Clairvoyance": "Clairvoyance",
+    "Cleansing Rite": "Cleansing Rite",
+    "Corrupting Presence": "Corrupting Presence",
+    "Curative Flux": "Curative Flux",
+    "Cursed Ground": "Cursed Ground",
+    "Deep Contemplation": "Deep Contemplation",
+    "Dimensional Divide": "Dimensional Divide",
+    "Dimensional Transfer": "Dimensional Transfer",
+    "Duality Shards": "Duality Shards",
+    "Endless Legions": "Endless Legions",
+    "Enfeebling Hex": "Enfeebling Hex",
+    "Envision the Course": "Envision the Course",
+    "Ethereal Vortex": "Ethereal Vortex",
+    "Flame Lance": "Flame Lance",
+    "Gift of the Void": "Gift of the Void",
+    "Hand of Destiny": "Hand of Destiny",
+    "Harsh Entrapment": "Harsh Entrapment",
+    "Heed My Call": "Heed My Call",
+    "Inspiration from Beyond": "Inspiration from Beyond",
+    "Legendary - Domination": "Legendary - Domination",
+    "Legendary - Gloom": "Legendary - Gloom",
+    "Legendary - Shadows": "Legendary - Shadows",
+    "Legendary - Void": "Legendary - Void",
+    "Lure Them In": "Lure Them In",
+    "Marked for Death": "Marked for Death",
+    "Nightmare Spheres": "Nightmare Spheres",
+    "Otherworldly Journey": "Otherworldly Journey",
+    "Peer into Battle": "Peer into Battle",
+    "Planar Fissure": "Planar Fissure",
+    "Plaque Their Dreams": "Plaque Their Dreams",
+    "Preordain the Path": "Preordain the Path",
+    "Protective Aura": "Protective Aura",
+    "Pulse of Malice": "Pulse of Malice",
+    "Ray of Light": "Ray of Light",
+    "Revitalizing Fount": "Revitalizing Fount",
+    "Seal Their Fate": "Seal Their Fate",
+    "Searing Vapors": "Searing Vapors",
+    "Toxic Blast": "Toxic Blast",
+    "Unfathomable Fortitude": "Unfathomable Fortitude",
+    "Void Snare": "Void Snare",
+    "What's Yours is Mine": "What's Yours is Mine",
+    "You Date to Defy Me": "You Date to Defy Me"
+  },
+  "character": {
+    "fc": {
+      "diviner": "Diviner"
+    }
+  },
+  "custom": {
+    "fc": {
+      "ashblade": {
+        "1": "Focus on the enemy with the highest initiative.",
+        "2": "%game.action.teleport% to the closest unoccupied hex adjacent to the focus."
+      },
+      "diviner": {
+        "abilities": {
+          "574": {
+            "1": "Reveal the top four cards of any attack modifier deck, then place them back in any order.",
+            "2": "Reveal the top six cards instead, %game.card.experience:1%."
+          },
+          "575": {
+            "1": "Reveal the top three cards of any attack modifier deck, then place up to one card on the bottom of the deck and the rest on top in any order.",
+            "2": "Reveal the top five cards instead, then place up to two cards on the bottom of the deck and the rest on top in any order, %game.card.experience:1%."
+          },
+          "576": {
+            "1": "Reveal the top two cards of any non-boss monster ability card deck, then place them back in any order.",
+            "2": "Reveal the top four cards instead, %game.card.experience:1%."
+          },
+          "577": {
+            "1": "When any ally within %game.action.range:3% %game.enhancement.circle% is attacked this round, consider any positive and %game.attackmodifier.double% attack modifier card the enemy draws to be a %game.attackmodifier.plus0% instead.",
+            "2": "Reveal the top card of any two non-boss monster ability card decks, then place up to one card of each deck on the bottom of its deck, and the rest on top of their respective decks in any order.",
+            "3": "Reveal the top two cards of both decks instead, %game.card.experience:1%."
+          },
+          "578": {
+            "1": "Force one enemy within %game.action.range:3% to %game.action.teleport% to any unoccupied hex within 2 %game.enhancement.circle% hexes of you.",
+            "2": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% in the hex occupied by you.",
+            "3": "%game.action.teleport% to any unoccupied hex within 4 %game.enhancement.circle% hexes of you."
+          },
+          "580": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% in the hex occupied by you.",
+            "2": "%game.action.teleport% to any unoccupied hex within 4 %game.enhancement.circle% hexes of you."
+          },
+          "581": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:3%.",
+            "2": "When an enemy enters a hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% this round, it gains %game.condition.disarm%."
+          },
+          "582": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:4%.",
+            "2": "When an enemy enters a hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% this round, it suffers 1 damage and gains %game.condition.curse%."
+          },
+          "583": {
+            "1": "The next six times an enemy would shuffle a %game.attackmodifier.curse% card into their attack modifier deck, you may place it as the sixth card from the top instead.",
+            "2": "Move one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% up to six hexes. This movement triggers all active Rift effects as if an ally or enemy would have entered the hex containing the %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%.",
+            "3": "%game.action.teleport% to any unoccupied hex within 6 %game.enhancement.circle% hexes of you."
+          },
+          "584": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:4%.",
+            "2": "Whenever an ally enters each hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% for the first time this round, they gain %game.condition.bless%."
+          },
+          "586": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:3%.",
+            "2": "Affect one ally adjacent to that %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%",
+            "3": "Target one enemy within %game.action.range:3% of any %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% and pull them toward that %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%."
+          },
+          "587": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% in the hex occupied by you.",
+            "2": "Remove all negative conditions on one ally within %game.action.range:2%"
+          },
+          "588": {
+            "1": "Reveal the top five cards of any attack modifier deck, then place them back in any order.",
+            "2": "Reveal the top five cards of a second attack modifier deck, then place them back in any order, %game.card.experience:1%."
+          },
+          "589": {
+            "1": "%game.action.teleport% to a hex occupied by an enemy within 4 hexes of you and simultaneously %game.action.teleport% that enemy to the hex occupied by you.",
+            "2": "Target an enemy occupying or adjacent to any %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%"
+          },
+          "590": {
+            "1": "You and all allies within %game.action.range:3% may perform",
+            "2": "If any affected ally is a summon or non player character, you may control the action for that ally.",
+            "3": "Reveal the top card of all non-boss monster ability card decks.",
+            "4": "Additionally, you may place any number of revealed cards on the bottoms of their decks, %game.card.experience:1%."
+          },
+          "591": {
+            "1": "Remove all CURSE %game.attackmodifier.curse% cards from the attack modifier deck any healed figure, then shuffle their discard pile back into their deck, %game.card.experience:1%.",
+            "2": "Recover %game.card.recover% up to one of your lost cards.",
+            "3": "All allies may Recover %game.card.recover% a collective total of up to six of their discarded cards."
+          },
+          "592": {
+            "1": "If an enemy draws any negative or %game.attackmodifier.null% attack modifier card during its attack, this enemy suffers 1 damage for each card drawn of that kind."
+          },
+          "593": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:5%.",
+            "2": "When an enemy enters a hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% this round, it gains %game.condition.wound% and %game.condition.immobilize%.",
+            "3": "%game.action.teleport% to any unoccupied hex within 5 %game.enhancement.circle% hexes."
+          },
+          "594": {
+            "1": "Shuffle four %game.attackmodifier.minus1% cards into the monster attack modifier deck.",
+            "2": "Shuffle eight %game.attackmodifier.minus1% cards into the deck instead, %game.card.experience:1%.",
+            "3": "When an ally enters a hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% this round, they gain %game.condition.strengthen%."
+          },
+          "595": {
+            "1": "Reveal the top six cards of any attack modifier deck, then place up to three cards on the bottom of the deck and the rest on top in any order.",
+            "2": "Additionally, reveal the top three cards of all other attack modifier decks, then pace them back in any order, %game.card.experience:1%.",
+            "3": "When an ally within %game.action.range:3% %game.enhancement.circle% is attacked this round, consider any positive and %game.attackmodifier.double% attack modifier card the enemy draws to be a %game.attackmodifier.minus1% instead."
+          },
+          "596": {
+            "1": "Remove all negative conditions on all allies within %game.action.range:3%."
+          },
+          "597": {
+            "1": "Move all %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%s up to three hexes.",
+            "2": "Target all enemies occupying a hex containing a %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%",
+            "3": "Place one of your character tokens on each of two separate %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%s. Until the end of the round, the hexes containing these %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%s are considered adjacent to each other for the purpose of movement for you and your allies."
+          },
+          "598": {
+            "1": "Reveal the top three cards of any monster ability card deck, then place them back in any order.",
+            "2": "Reveal the top three cards of a second monster ability card deck, then place them back in any order, %game.card.experience:1%."
+          },
+          "600": {
+            "1": "Reveal the top four cards of all attack modifier decks, then place any number of them on the bottom of their respective decks and the rest on top in any order.",
+            "2": "Reveal the top six cards instead, %game.card.experience:1%.",
+            "3": "Search any non-boss monster ability card deck for a card of your choice and remove it from that deck for the remainder of the scenario.",
+            "4": "Search the same deck for a second monster ability card, this one without a %game.card.shuffle% icon, and remove it as well"
+          },
+          "601": {
+            "1": "Place one %data.characterColored.diviner:Rift% %data.characterColored.diviner:token% on any unoccupied hex within %game.action.range:4%.",
+            "2": "Target all enemies within %game.action.range:2% of this %data.characterColored.diviner:Rift% %data.characterColored.diviner:token%"
+          }
+        }
+      },
+      "flowChartGroup": {
+        "citizens": "Citizens of Gloomhaven",
+        "corruption": "Corruption",
+        "diviner": "Diviner",
+        "orchid-society": "Orchid society",
+        "tainted-crypt": "Tainted crypt",
+        "the-rift": "The rift device"
+      },
+      "manifestation-of-corruption": {
+        "1": "Play top two cards, using the first card as initiative. Perform the bottom action of the first card, then the top action of the second card",
+        "10": "Summon two %data.monster.black-imp%s: both normal for two characters; one normal, one elite for three characters; both elite for four characters.",
+        "11": "Summon one additional elite %data.monster.black-imp%",
+        "12": "Target all enemies within %game.action.range%4",
+        "13": "All adjacent enemies suffer %game.damage:3%.",
+        "14": "On the next three sources of damage from attacks targeting you, gain %game.action.shield% 3.",
+        "15": "Create one %game.condition.disarm% and %game.condition.poison% trap in each adjacent empty hex.",
+        "16": "%game.action.teleport% to the hex occupied by the farthest enemy within %game.action.range%+1 and simultaneously %game.action.teleport% that enemy to the hex you occupy.",
+        "17": "adjacent to each enemy character within %game.action.range%5.",
+        "18": "All attackers targeting you gain %game.condition.curse%.",
+        "19": "All attackers targeting you gain Disadvantage for the attack.",
+        "2": "Perform this action immediately when revealed, not in normal initiative order.",
+        "20": "%game.action.attack%-1 on a new enemy within %game.action.range%4 of the first target, then %game.action.attack%-2 on a third enemy within %game.action.range%3 of the second target.",
+        "21": "Summon one %game.monster.aesther-scout%: normal for two or three characters, elite for four characters.",
+        "22": "On the next three sources of damage to you, suffer no damage instead.",
+        "23": "(Elite Aesther Ashblade with [H/2xC] hit points, where H is an elite Aesther Ashlblade's regular hit point value.<br>Immunte to %game.condition.stun%, %game.condition.disarm%, %game.condition.poison%, and %game.condition.immobilize%)",
+        "3": "The character with the highest initiative is forced to act as if their enemies were allies and their allies were enemies this round. On their turn, they will perform \"%game.action.move%2\" and then the top action of their leading initiative card. Afterwards, they discard both played cards, regardless of wherever the cards would normally be lost.",
+        "4": "All attackers targeting you gain %game.condition.curse% this round.",
+        "5": "Summon one %data.monster.flame-demon%: normal for two or three characters, elite for four characters.<br>Summon one %data.monster.night-demon%: normal for two characters, elite for three or four characters.",
+        "7": "Summon one additional %data.monster.night-demon%",
+        "8": "Summon one additional %data.monster.flame-demon%",
+        "9": "Summon one %data.monster.valrath-tracker%: normal for two characters, elite for three or four characters."
+      },
+      "sraka-the-wise": {
+        "1": "Double all Heal values. Heals target The Steel Lion if able",
+        "2": "If you apply %game.condition.curse% or %game.condition.bless%, apply a second %game.condition.curse% or %game.condition.bless%"
+      },
+      "the-steel-lion": {
+        "1": "Attacks targeting adjacent allies, target you instead",
+        "2": "The first [C] times you suffer 6 or more damage, suffer no damage instead"
+      },
+      "tracker": {
+        "1": "Create one %game.condition.disarm% trap in any adjacent empty hex closest to an enemy.",
+        "2": "Focus on the enemy with the lowest current hit point value."
+      },
+      "uyart-ikkuma": {
+        "1": "It may consume %game.element.consume.fire% / %game.element.consume.earth% as if the element is currently strong when a %data.monster.flame-demon% / %data.monster.earth-demon% is present on the map"
+      },
+      "valrath-savage": {
+        "1": "All adjacent allies add +1 %game.action.attack% to all attacks",
+        "2": "All adjacent allies add +2 %game.action.attack% to all attacks"
+      }
+    }
+  },
+  "deck": {
+    "ashblade": "Ashblade",
+    "savage": "Savage",
+    "tracker": "Tracker"
+  },
+  "edition": {
+    "fc": "Forgotten Circles"
+  },
+  "globalAchievements": {
+    "a-peril-averted": "A Peril Averted",
+    "knowledge-is-power": "Knowledge is Power",
+    "mechanical-splendor": "Mechanical Splendor",
+    "pieces-of-an-artifact": "Pieces of an Artifact",
+    "severed-ties": "Severed Ties",
+    "through-the-portal": "Through the Portal"
+  },
+  "monster": {
+    "aesther-ashblade": "Aesther Ashblade",
+    "aesther-scout": "Aesther Scout",
+    "avatar-of-ashtar": "Avatar of Ashtar",
+    "avatar-of-thelija": "Avatar of Thelija",
+    "bear-drake-abomination": "Bear-Drake Abomination",
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)",
+    "elham": "Elham",
+    "guardian-of-the-firmament": "Guardian of the Firmament",
+    "human-commander": "Human Commander",
+    "manifestation-of-corruption": "Manifestation Of Corruption",
+    "naaret": "Naaret",
+    "selah-naberis": "Selah Naberis",
+    "sraka-the-wise": "Sraka The Wise",
+    "the-husk": "The Husk",
+    "the-steel-lion": "The Steel Lion",
+    "uyart-ikkuma": "Uyart Ikkuma",
+    "valrath-commander": "Valrath Commander",
+    "valrath-savage": "Valrath Savage",
+    "valrath-tracker": "Valrath Tracker",
+    "warden": "Warden",
+    "wolf-viper-abomination": "Wolf-Viper Abomination"
+  },
+  "objective": {
+    "Altar": "Altar",
+    "Altar of Blizzards": "Altar of Blizzards",
+    "Altar of Rot": "Altar of Rot",
+    "Altar of Wildfire": "Altar of Wildfire",
+    "Civilian": "Civilian",
+    "Hail": "Hail",
+    "Naaret": "Naaret",
+    "Orchid Caravan": "Orchid Caravan",
+    "Seal": "Seal",
+    "Ship": "Ship"
+  },
+  "partyAchievements": {
+    "a-strongbox": "A Strongbox",
+    "accomplices": "Accomplices",
+    "angels-of-death": "Angels of Death",
+    "beauty-in-freedom": "Beauty in Freedom",
+    "custodians": "Custodians",
+    "diamaras-aid": "Diamara's Aid",
+    "dimensional-equilibrium": "Dimensional Equilibrium",
+    "guard-detail": "Guard Detail",
+    "hunted-prey": "Hunted Prey",
+    "hunting-the-hunter": "Hunting the Hunter",
+    "northern-expedition": "Nothern Expedition",
+    "opportunists": "Opportunists",
+    "saboteurs": "Saboteurs",
+    "xangroths-aid": "Xangroth's Aid"
+  },
+  "scenario": {
+    "group": {
+      "Challenge": "Challenge"
+    },
+    "rewards": {
+      "fc": {
+        "challenge1": "All characters may add one new card of their class to their active card pool. The card selected must have a level equal or less then the character's level minus 2."
+      }
+    },
+    "rules": {
+      "fc": {
+        "101": {
+          "1": "if adjacent Spitting Drake is alive and without %game.condition.stun%."
+        },
+        "103": {
+          "1": "Towards safety %game.mapMarker.d% on tile M1b, opening doors and springing traps if necessary."
+        },
+        "104": {
+          "1": "towards portal %game.mapMarker.1%",
+          "2": "towards portal %game.mapMarker.2%",
+          "3": "towards portal %game.mapMarker.3%",
+          "4": "towards portal %game.mapMarker.4%"
+        },
+        "105": {
+          "1": "Only apply if Dimensional Equilibrium (Party) is incomplete:"
+        },
+        "106": {
+          "1": "All characters must discard one card from their hand or lose one at random from their discard pile."
+        },
+        "110": {
+          "1": "The Valrath Tracker is Selah Naberis and has hit points equal to an elite Valrath Tracker's regular hit point value. He adds \"%game.target% C\" and \"%game.action.pierce% 10\" to all his attacks.",
+          "2": "The Vermling Shaman is Sraka the Wise and has CxH/2 (rounded up) hit points, where H is an elite Vermling Shaman's regular hit point value. The value of all her heals are doubled, and all %game.condition.curse% and %game.condition.bless% conditions she applies are applied twice. Any time she performs a Heal action, if the City Guard is within range and is damaged, she will prioritize healing him.",
+          "3": "The City Guard is The Steel Lion and has CxH/2 (rounded up) hit points, where H is an elite City Guard's regular hit point value. He adds +1 to all his Move actions. As long as he is alive, all his allies gain \"%game.action.shield% X\", where X is the shield value printed on his stat card. The first C times he suffers 6 or more damage from a single source, he suffers no damage instead. All attacks targeting his allies when they are adjacent to him, target him instead, regardless of range.",
+          "4": "The Savvas Lavaflow is Uyart Ikkuma and has CxH/2 (rounded up) hit points, where H is an elite Savvas Lavaflow's regular hit point value. All its summons are elite for three or four characters. Any consume element effects on its ability cards are applied if the element's corresponding demon is present on the map."
+        },
+        "111": {
+          "1": "The elite Aesther Ashblade is the Husk. It has HxC hit points, where H is an elite Aesther Ashblade's regular hit point value, and is immune to %game.condition.stun%, %game.condition.disarm%, %game.condition.immobilize%, and all forced movement",
+          "2": "Immune to forced movement",
+          "3": "The Husk is now considered to have %game.action.shield% 1 and adds +1 %game.action.attack% to all its attacks.",
+          "4": "The Husk is now considered to have %game.action.shield% 2 and adds +3 %game.action.attack% to all its attacks."
+        },
+        "113": "The Stone Golem is the Warden. It cannot be damaged in any way.",
+        "115": {
+          "1": "Remove one damage token from each altar %game.mapMarker.a% and %game.mapMarker.b%. The Manifestation of Corruption heals [C/2{$math.floor}] hit points for each damage token removed.",
+          "2": "Remove two damage tokens from each altar %game.mapMarker.a% and %game.mapMarker.b%. The Manifestation of Corruption heals [C/2{$math.floor}] hit points for each damage token removed.",
+          "3": "at %game.mapMarker.c% if alter %game.mapMarker.a% has no damage token on it",
+          "4": "at %game.mapMarker.d% if altar %game.mapMarker.b% has no damage tokens."
+        },
+        "98": {
+          "1": "Whenever the Ancient Artillery would perform an Attack action, place 1 damage token next to ship %game.mapMarker.a% instead. If that ship has 2 or more damage tokens next to it, place 1 damage token next to ship %game.mapMarker.b% instead.",
+          "2": "Place 1 damage token next to ship %game.mapMarker.a%/%game.mapMarker.b%."
+        },
+        "99": {
+          "1": "Whenever a Cultist would summon a Living Bones, it summons one Black Imp instead. Normal Cultists summon normal Black Imps, and elite Cultists summon elite Black Imps."
+        }
+      }
+    },
+    "title": {
+      "fc": {
+        "100": "Shifting Gears",
+        "101": "Shrouded Crypt",
+        "102": "Bazaar of Knowledge",
+        "103": "Where It Is Needed",
+        "104": "A Gaping Wound",
+        "105": "Monstrosities of a Cult",
+        "106": "Intricate Work",
+        "107": "Mechanical Genius",
+        "108": "Prologue to the End",
+        "109": "Epilogue of a War",
+        "110": "A Circular Solution",
+        "111": "The Shackles Loosen",
+        "112": "The Bottom of It",
+        "113": "The Lost Thread",
+        "114": "Ink Not Yet Dry",
+        "115": "Future Uncertain",
+        "96": "Unexpected Visitors",
+        "97": "Lore Untold",
+        "98": "Past In Flames",
+        "99": "Aftershocks",
+        "Challenge-1": "Tower to the Stars",
+        "solo-19": "Forecast of the Inevitable"
+      }
+    }
+  },
+  "section": {
+    "rules": {
+      "fc": {
+        "10": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.3%, %game.mapMarker.8%, %game.mapMarker.9% and %game.mapMarker.10%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.q%, %game.mapMarker.n%, %game.mapMarker.r%, %game.mapMarker.t%, %game.mapMarker.a4% and %game.mapMarker.a6%"
+        },
+        "114": "towards cabinet %game.mapMarker.b%",
+        "123": {
+          "1": "adjacent and to the right of any door %game.mapMarker.4%"
+        },
+        "128": {
+          "1": "%game.action.teleport% %data.monster.the-husk% to %game.mapMarker.c% and remove wall section %game.mapMarker.d%"
+        },
+        "13": "The Savvas Lavaflow is the Avatar of Ashtar.",
+        "132": {
+          "1": "Immediately resolve it!",
+          "2": "After ability is resolved:"
+        },
+        "133": {
+          "1": "The Ancient Artillery has %game.action.shield% 2 and is immune to all forced movement.",
+          "2": "Immune to all forced movement"
+        },
+        "17": "Unaffected by difficult terrain",
+        "19": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.1%, %game.mapMarker.6%, %game.mapMarker.7% and %game.mapMarker.10%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.q%, %game.mapMarker.p%, %game.mapMarker.t%, %game.mapMarker.a1%, %game.mapMarker.a2% and %game.mapMarker.a6%"
+        },
+        "28": "The elite Cave Bear is the Bear-Drake Abomination. It has (HxC)/2 hit points (rounded up), where H is an elite Cave Bear's regular hit point value, and it is immune to %game.condition.immobilize%, %game.condition.disarm% and %game.condition.stun%. Additionally, it is considered to have %game.action.fly%.<br><br>Instead of using all the Cave Bear ability cards, use only those with initiative values of 03, 14, 61, and 80. Shuffle these together with the Rending Drake ability cards with initiative values of 12, 13, 25, and 59.",
+        "31": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.2%, %game.mapMarker.3%, %game.mapMarker.4% and %game.mapMarker.9%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.q%, %game.mapMarker.o%, %game.mapMarker.r%, %game.mapMarker.t%, %game.mapMarker.a4% and %game.mapMarker.a6%"
+        },
+        "35": "The Savvas Icestorm is the Avatar of Thelija.",
+        "43": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.4%, %game.mapMarker.6%, %game.mapMarker.8% and %game.mapMarker.9%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.m%, %game.mapMarker.s%, %game.mapMarker.p%, %game.mapMarker.a2%, %game.mapMarker.a4% and %game.mapMarker.a6%"
+        },
+        "5": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.3%, %game.mapMarker.5%, %game.mapMarker.8% and %game.mapMarker.11%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.p%, %game.mapMarker.t%, %game.mapMarker.s%, %game.mapMarker.a1%, %game.mapMarker.a5% and %game.mapMarker.a6%"
+        },
+        "56": {
+          "1": "Flip over the numbered tokens on doors %game.mapMarker.1%, %game.mapMarker.2%, %game.mapMarker.5% and %game.mapMarker.7%",
+          "2": "Move the six iron walls to positions: %game.mapMarker.m%, %game.mapMarker.q%, %game.mapMarker.s%, %game.mapMarker.a2%, %game.mapMarker.a4% and %game.mapMarker.a5%"
+        },
+        "6": "All Hounds are Wolf-Viper Abominations. They have H+3 hit points, where H is a Hound's regular hit point value.<br><br>Instead of using all the Hound ability cards, use only those with initiative values of 06, 72, and both 19s. Shuffle these together with the Giant Viper ability cards with initiative values of 23, both 43s, and the one 58 with \"Move+1, Jump\". All references to Hounds or Giant Vipers apply to Wolf-Viper Abominations.",
+        "64": {
+          "1": "Both barrels move two hexes along the water tiles towards water tile %game.mapMarker.9%"
+        },
+        "66": {
+          "1": "%game.action.teleport% %data.monster.the-husk% to %game.mapMarker.b%"
+        },
+        "72": {
+          "1": "adjacent and to the right of any door %game.mapMarker.3%"
+        },
+        "84": {
+          "1": "The Aesther Ashblade is Elham.",
+          "2": "All Savvas Icestorms and Lavaflows are Guardians of the Firmament.",
+          "3": "All named monsters are immune to %game.condition.stun% and have Advantage on all their attacks."
+        }
+      }
+    },
+    "title": {
+      "fc": {
+        "1": "Volcanic Wasteland",
+        "10": "Moving Walls",
+        "100": "Sekhem Fountain",
+        "101": "Getting Both Records",
+        "106": "Strangler's Park",
+        "108": "Seal of Distortion",
+        "11": "A Tear in the Fabric",
+        "110": "A Passage Revealed",
+        "112": "Access Hall",
+        "114-A": "Intimidated ≤ 2+C inhabitants",
+        "114-B": "Intimidated > 2+C inhabitants",
+        "119": "A Multitude of Tomes",
+        "123": "Lingering Darkness",
+        "124": "From a Hostile Plane",
+        "126": "Training Maneuvers",
+        "127": "Guarded Nursery",
+        "128": "Cracked Facade",
+        "129": "Fighting Dirty",
+        "13": "Shrine of Ashtar",
+        "132": "Near the Gates",
+        "133": "A Secret Floor",
+        "134": "Clawing at Victory",
+        "14": "The Floor Moves",
+        "15": "Trash Dump",
+        "17": "Escape is Not So Easy",
+        "18": "Toxic Fumes",
+        "19": "Moving Walls",
+        "22": "A Rumbling Sound",
+        "23": "Narrow Vault",
+        "24": "Withered Grove",
+        "26": "Secret Library",
+        "28": "A Bear of a Drake",
+        "30": "Seal of Attraction",
+        "31": "Moving Walls",
+        "32": "Flaming Caravel",
+        "34": "Frozen Cave",
+        "35": "Shrine of Thelija",
+        "37": "Aiding Diamara",
+        "39": "Another Revolution",
+        "4": "Barge Ablaze",
+        "40": "Venerated Tomb",
+        "41": "A Sphere of Nightmares",
+        "42": "Collapsed Atrium",
+        "43": "Moving Walls",
+        "44": "Aiding Xangroth",
+        "46": "Quick Turn",
+        "49": "Pieces of an Artifact 3/3",
+        "5": "Moving Walls",
+        "50": "Slow Turn",
+        "52": "The First Portal",
+        "53": "A Steep, Rocky Path",
+        "55": "Record of Journey saved",
+        "56": "Moving Walls",
+        "59": "Record of Accounts saved",
+        "6": "Kennel of Things",
+        "60": "Seal of Repulsion",
+        "64": "Flooded Catacombs",
+        "66": "Sardonic Smile",
+        "67": "Branching Alleyway",
+        "68": "A Tale Well-Recited",
+        "71": "Quiet Rotation",
+        "72": "Clinging Fog",
+        "79": "The Second Portal",
+        "8": "A Life Taken, a Life Given",
+        "81": "Narrow Street",
+        "82": "Both Orchid records saved",
+        "85": "The Third Portal",
+        "87": "Elemental Storm",
+        "9": "Crossing a Stream",
+        "91": "A Burning Regret",
+        "92": "Nesting Grounds",
+        "93": "Lingering Darkness",
+        "94": "Seal of Reanimation",
+        "95": "The Horde's Kitchen",
+        "96": "Haunted Treasury",
+        "Challenge-103": "The Thorns of Hate",
+        "Challenge-47": "Hall of Horrors",
+        "Challenge-84": "Gateway to the Firmament",
+        "randomMonsterCard-622": "Arid",
+        "randomMonsterCard-623": "Ethereal",
+        "solo-19-29": "Forecast of the Inevitable",
+        "solo-19-73": "Forecast of the Inevitable",
+        "solo-19-90": "Forecast of the Inevitable"
+      }
+    }
+  }
+}

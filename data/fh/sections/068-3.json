@@ -1,0 +1,43 @@
+{
+  "index": "68.3",
+  "name": "Depths of Delirium",
+  "edition": "fh",
+  "parent": "27",
+  "marker": "2",
+  "monsters": [
+    "deep-terror",
+    "living-bones"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "All characters must move one card from their hand or discard pile to their taken pile."
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "deep-terror",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        "1:C>2?1:0"
+      ]
+    }
+  ]
+}

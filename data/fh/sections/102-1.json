@@ -1,0 +1,87 @@
+{
+  "index": "102.1",
+  "name": "Inside the Swarm",
+  "edition": "fh",
+  "parent": "100",
+  "parentSections": [
+    [
+      "141.3"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "burrowing-blade",
+    "earth-demon",
+    "lurker-mindsnipper",
+    "shrike-fiend"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "%data.section.rules.fh.102-1.1%"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "treasures": [
+        79
+      ],
+      "monster": [
+        {
+          "name": "burrowing-blade",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "burrowing-blade",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "burrowing-blade",
+          "player4": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker-mindsnipper",
+          "type": "normal"
+        },
+        {
+          "name": "lurker-mindsnipper",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker-mindsnipper",
+          "player4": "normal"
+        },
+        {
+          "name": "shrike-fiend",
+          "type": "normal"
+        },
+        {
+          "name": "shrike-fiend",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

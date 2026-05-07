@@ -1,0 +1,60 @@
+{
+  "index": "26.1",
+  "name": "Crypt of the Damned",
+  "edition": "gh2e",
+  "parent": "4",
+  "marker": "1",
+  "monsters": [
+    "bandit-archer",
+    "cultist",
+    "living-bones"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-archer",
+          "type": "normal"
+        },
+        {
+          "name": "bandit-archer",
+          "type": "normal"
+        },
+        {
+          "name": "bandit-archer",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player2": "normal",
+          "player3": "normal"
+        },
+        {
+          "name": "cultist",
+          "player2": "normal"
+        },
+        {
+          "name": "cultist",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player4": "normal"
+        },
+        {
+          "name": "cultist",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

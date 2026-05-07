@@ -1,0 +1,28 @@
+{
+  "index": "167.1",
+  "name": "Among the Wreckage",
+  "edition": "fh",
+  "parent": "54",
+  "marker": "1",
+  "monsters": [],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "treasures": [
+        5
+      ],
+      "objectives": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ]
+    }
+  ]
+}

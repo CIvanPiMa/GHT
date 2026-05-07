@@ -1,0 +1,159 @@
+.treasures-dialog {
+  color: var(--ght-color-white);
+  min-width: 25vw;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-family: var(--ght-font-title);
+      font-size: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+      color: var(--ght-color-yellow);
+
+      .icon {
+        height: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+        width: auto;
+        margin-right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        filter: var(--ght-filter-yellow);
+      }
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ght-color-white);
+      margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    }
+  }
+
+  .scenarios {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 70vh;
+
+    .scenario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: calc(var(--ght-unit) * 1.5 * var(--ght-dialog-factor));
+    }
+
+    .treasures {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .treasure {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-image: url('../../../../../assets/images/scenario/treasure.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+        color: var(--ght-color-black);
+        width: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 6 * var(--ght-dialog-factor));
+        margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        transition: translate calc(var(--ght-animation-speed) * 500ms) ease-in-out;
+
+        .overlay {
+          display: none;
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 50%;
+          width: auto;
+
+          &.check {
+            filter: var(--ght-filter-green);
+          }
+
+          &.uncheck {
+            filter: var(--ght-filter-red);
+          }
+        }
+
+        &:hover {
+          opacity: 0.8;
+          transform: scale(1.1);
+        }
+
+        &.looted {
+          cursor: initial;
+          opacity: 0.4;
+
+          .check {
+            display: block;
+          }
+        }
+
+        &.highlight {
+          .check {
+            display: block;
+          }
+
+          &.looted {
+            .check {
+              display: none;
+            }
+
+            .uncheck {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+    font-family: var(--ght-font-title);
+    font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .cancel {
+      color: var(--ght-color-red);
+    }
+
+    .apply {
+      color: var(--ght-color-green);
+    }
+
+    .disabled {
+      pointer-events: none;
+      color: var(--ght-color-gray);
+    }
+
+    .loot {
+      color: var(--ght-color-yellow);
+
+      &.disabled {
+        color: var(--ght-color-darkgray);
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<div class="items-dialog" [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }">
+  <div class="scroll-container">
+    <div class="header">
+      <span
+        (click)="openShop()"
+        class="title"
+        [ght-label]="'game.items.character'"
+        [ght-label-args]="[character.name, gameManager.characterManager.characterName(character)]"
+        [ght-tooltip]="'game.items.character.shop'"
+      ></span>
+    </div>
+
+    <div class="menu">
+      <a (click)="openShop()" class="shop" [ght-label]="'game.items.character.shop'"></a>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="onlyEquipped" (change)="update()" />
+        <span [ght-label]="'game.items.character.toggleEquipped'"></span>
+      </label>
+    </div>
+
+    @if (items.length === 0) {
+      <div class="item-list">
+        <div class="empty"><span [ght-label]="'game.items.empty'"></span></div>
+      </div>
+    }
+
+    @if (items.length > 0) {
+      <div class="item-list">
+        @for (itemData of items | trackUUID; track itemData._trackUUID) {
+          <div class="item">
+            <img class="open-item" src="./assets/images/fullscreen.svg" ght-pointer-input (singleClick)="openItemDialog(itemData)" />
+            <ght-character-item
+              [character]="character"
+              [item]="itemData"
+              [setup]="setup"
+              [ngClass]="{ spent: !setup && countFlag(itemData, ItemFlags.spent) }"
+            ></ght-character-item>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

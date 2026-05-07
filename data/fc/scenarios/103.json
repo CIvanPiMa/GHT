@@ -1,0 +1,84 @@
+{
+  "index": "103",
+  "name": "Where It Is Needed",
+  "flowChartGroup": "orchid-society",
+  "coordinates": {
+    "x": 1121,
+    "y": 1134.75,
+    "width": 212,
+    "height": 128,
+    "gridLocation": "H-8"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "110"
+  ],
+  "requirements": [
+    {
+      "global": [
+        "knowledge-is-power:2"
+      ]
+    }
+  ],
+  "rewards": {
+    "partyAchievements": [
+      "guard-detail"
+    ],
+    "prosperity": 2,
+    "events": [
+      "city:87"
+    ]
+  },
+  "objectives": [
+    {
+      "name": "Orchid Caravan",
+      "escort": true,
+      "health": "2x(C+L)+3",
+      "marker": "a",
+      "actions": [
+        {
+          "type": "move",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "custom",
+              "small": true,
+              "value": "%data.scenario.rules.fc.103.1%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "randomDungeon": {
+        "monsterCount": 1,
+        "monsterCards": [
+          "570",
+          "560",
+          "555",
+          "554",
+          "561",
+          "564",
+          "568",
+          "558"
+        ],
+        "initial": true
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L1b",
+      "initial": true,
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

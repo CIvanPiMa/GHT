@@ -1,0 +1,78 @@
+{
+  "index": "905",
+  "group": "randomMonsterCard",
+  "name": "Reinforced",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "robotic-boltshooter",
+    "steel-automaton"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "robotic-boltshooter",
+          "type": "normal",
+          "marker": "5"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "10"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "11"
+        },
+        {
+          "name": "robotic-boltshooter",
+          "player4": "normal",
+          "marker": "4"
+        },
+        {
+          "name": "steel-automaton",
+          "type": "normal",
+          "marker": "1"
+        },
+        {
+          "name": "steel-automaton",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "8"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "loot",
+      "marker": "3"
+    },
+    {
+      "type": "loot",
+      "marker": "6"
+    },
+    {
+      "type": "obstacle",
+      "value": "metal-cabinet",
+      "marker": "7"
+    },
+    {
+      "type": "treasure",
+      "value": "enemiesDamage",
+      "values": [
+        2
+      ],
+      "marker": "12"
+    }
+  ]
+}

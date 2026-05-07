@@ -1,0 +1,300 @@
+.challenge-deck-dialog {
+  position: relative;
+
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: calc(var(--ght-unit) * 90 * var(--ght-dialog-factor));
+
+    a,
+    label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-family: var(--ght-font-title);
+      font-size: calc(var(--ght-unit) * 4 * var(--ght-dialog-factor));
+      color: var(--ght-color-gray);
+      text-shadow: var(--ght-outline);
+      margin: 0 calc(var(--ght-unit) * 1.5 * var(--ght-dialog-factor));
+
+      &.disabled {
+        pointer-events: none;
+        color: var(--ght-color-darkgray);
+      }
+
+      &:hover {
+        color: var(--ght-color-white);
+      }
+
+      &:hover {
+        .ght-svg {
+          filter: var(--ght-filter-white) var(--ght-filter-shadow);
+        }
+      }
+    }
+
+    input[type='checkbox'] {
+      cursor: pointer;
+      appearance: none;
+      background-color: var(--form-background);
+      width: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+      height: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+      border-width: calc(var(--ght-unit) * 0.3);
+      border-style: solid;
+      display: grid;
+      place-content: center;
+      margin-right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+      color: var(--ght-color-gray);
+
+      &::before {
+        left: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        top: calc(var(--ght-unit) * -0.5 * var(--ght-dialog-factor));
+        position: relative;
+        content: ' ';
+        width: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: transform calc(var(--ght-animation-speed) * 120ms) ease-in-out;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        color: var(--ght-color-gray);
+        background-color: var(--ght-color-gray);
+      }
+
+      &:checked::before {
+        transform: scale(1);
+      }
+
+      &:hover::before {
+        background-color: var(--ght-color-white);
+      }
+    }
+  }
+
+  .hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ght-font-normal);
+    font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    color: var(--ght-color-white);
+    margin: 0 calc(var(--ght-unit) * 1.5 * var(--ght-dialog-factor));
+  }
+
+  .ght-svg {
+    height: 1em;
+    width: auto;
+    margin: 0 0.3em;
+    filter: var(--ght-filter-gray) var(--ght-filter-shadow);
+  }
+
+  .drop-list {
+    position: relative;
+  }
+
+  .challenge-deck-container {
+    display: flex;
+    width: calc(var(--ght-unit) * 90 * var(--ght-dialog-factor));
+    overflow: auto;
+
+    &.has-removed {
+      width: calc(var(--ght-unit) * 120 * var(--ght-dialog-factor));
+    }
+
+    .upcoming,
+    .discarded,
+    .finished,
+    .removed {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: calc(var(--ght-unit) * 30 * var(--ght-dialog-factor));
+      margin: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+
+      .title {
+        position: sticky;
+        top: 0;
+        background-image: url('../../../../assets/images/dialog_background.png');
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: calc(var(--ght-unit) * 30 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 4 * var(--ght-dialog-factor));
+        font-family: var(--ght-font-text);
+        font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+        color: var(--ght-color-white);
+        z-index: 2;
+      }
+
+      &.edit {
+        .title {
+          display: flex;
+        }
+      }
+
+      &.upcoming,
+      &.finished,
+      &.removed {
+        display: none;
+
+        &.edit {
+          display: flex;
+        }
+      }
+
+      &.discarded {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: calc(var(--ght-unit) * 90 * var(--ght-dialog-factor));
+        min-height: calc(var(--ght-unit) * 40 * var(--ght-dialog-factor));
+
+        .empty {
+          top: calc(var(--ght-unit) * 0.4 * var(--ght-dialog-factor));
+          left: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        }
+
+        &.edit {
+          flex-direction: column;
+          flex-wrap: initial;
+          width: calc(var(--ght-unit) * 30 * var(--ght-dialog-factor));
+
+          .empty {
+            top: calc(var(--ght-unit) * 4.2 * var(--ght-dialog-factor));
+            left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+          }
+        }
+      }
+
+      .challenge-container,
+      .empty {
+        position: relative;
+        display: flex;
+        transition: none;
+        width: calc(var(--ght-unit) * 25.5 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 38.25 * var(--ght-dialog-factor));
+        margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor)) solid transparent;
+        border-radius: 5%;
+
+        ght-challenge-card {
+          position: absolute;
+          display: flex;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        &.keep {
+          border-color: var(--ght-color-blue);
+        }
+      }
+
+      .empty {
+        position: absolute;
+        top: calc(var(--ght-unit) * 4.2 * var(--ght-dialog-factor));
+        left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        margin: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        display: block;
+        border-style: dashed;
+        border-width: calc(var(--ght-unit) * 0.2 * var(--ght-dialog-factor));
+        border-color: var(--ght-color-white);
+        width: calc(var(--ght-unit) * 24 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 37 * var(--ght-dialog-factor));
+        border-radius: 5%;
+      }
+
+      .button-remove,
+      .button-restore {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        top: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        justify-content: center;
+        align-items: center;
+        width: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+        color: var(--ght-filter-white) var(--ght-filter-shadow);
+
+        .ght-svg {
+          height: 100%;
+          filter: var(--ght-filter-white) var(--ght-filter-shadow);
+        }
+
+        &.button-remove:hover .ght-svg {
+          filter: var(--ght-filter-red) var(--ght-filter-shadow);
+        }
+
+        &.button-restore:hover .ght-svg {
+          filter: var(--ght-filter-green) var(--ght-filter-shadow);
+        }
+      }
+
+      &.discarded .challenge-container.active {
+        cursor: pointer;
+      }
+
+      &.finished .challenge-container {
+        filter: grayscale(0.9);
+      }
+
+      .drag-handle {
+        position: absolute;
+        cursor: grab;
+        left: 50%;
+        top: 65%;
+        width: 60%;
+        height: 70%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &.fh {
+      .upcoming,
+      .discarded,
+      .finished,
+      .removed {
+        .title {
+          background-image: url('../../../../assets/images/fh/dialog_background_fh.png');
+        }
+      }
+    }
+
+    &.modern {
+      .upcoming,
+      .discarded,
+      .finished,
+      .removed {
+        .title {
+          background-image: url('../../../../assets/images/modern/dialog_background_modern.png');
+        }
+      }
+    }
+  }
+}
+
+.cdk-drag-preview {
+  opacity: 0;
+  cursor: grabbing;
+  z-index: 999;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.cdk-drag-animating {
+  transition: transform calc(var(--ght-animation-speed) * 250ms) cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drop-list-dragging :not(.cdk-drag-placeholder) {
+  transition: transform calc(var(--ght-animation-speed) * 250ms) cubic-bezier(0, 0, 0.2, 1);
+}

@@ -1,0 +1,106 @@
+<div class="resources-dialog">
+  <div class="scroll-container">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <label (click)="toggleEdit()" [ngClass]="{ disabled: edited }">
+              <span [ght-label]="'party.campaign.sheet.supply.edit'"></span>
+              <input type="checkbox" [checked]="edit" />
+            </label>
+          </th>
+          <th><span [ght-label]="'party.campaign.sheet.supply'"></span></th>
+          @for (character of characters | trackUUID; track character._trackUUID) {
+            <th>
+              <span class="character">
+                <img class="icon character-icon" [src]="character.iconUrl" />
+                <span class="name">
+                  {{ gameManager.characterManager.characterName(character, true) }}
+                </span>
+              </span>
+            </th>
+          }
+          <th>
+            <span [ght-label]="'party.campaign.sheet.supply.total'"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th [ght-tooltip]="'character.progress.gold'"><img class="ght-svg" [src]="'./assets/images/loot.svg'" /></th>
+          <td><span class="loot">-</span></td>
+          @for (character of characters | trackUUID; track character._trackUUID) {
+            <td>
+              @if (!edit) {
+                <span class="loot">{{ character.progress.gold || '-' }}</span>
+              }
+              @if (edit) {
+                <input [(ngModel)]="character.progress.gold" type="number" min="0" (change)="changeGold(character, $event)" />
+              }
+            </td>
+          }
+          <td>
+            <span class="loot" [ngClass]="{ total: totalGold }">{{ totalGold || '-' }}</span>
+          </td>
+        </tr>
+        <tr>
+          <th [ght-tooltip]="'game.experience'"><img class="ght-svg" [src]="'./assets/images/experience.svg'" /></th>
+          <td><span class="loot">-</span></td>
+          @for (character of characters | trackUUID; track character._trackUUID) {
+            <td>
+              @if (!edit) {
+                <span class="loot">{{ character.progress.experience || '-' }}</span>
+              }
+              @if (edit) {
+                <input [(ngModel)]="character.progress.experience" type="number" min="0" (change)="changeXP(character, $event)" />
+              }
+            </td>
+          }
+          <td>
+            <span class="loot" [ngClass]="{ total: totalXP }">{{ totalXP || '-' }}</span>
+          </td>
+        </tr>
+        @for (lootType of lootColumns; track lootType; let i = $index) {
+          <tr>
+            <th [ght-tooltip]="'game.loot.' + lootType"><img class="ght-svg" [src]="'./assets/images/fh/loot/' + lootType + '.svg'" /></th>
+            <td>
+              @if (!edit) {
+                <span class="loot">{{ party.loot[lootType] || '-' }}</span>
+              }
+              @if (edit) {
+                <input [(ngModel)]="party.loot[lootType]" type="number" min="0" (change)="changeLoot(undefined, lootType, $event)" />
+              }
+            </td>
+            @for (character of characters | trackUUID; track character._trackUUID) {
+              <td>
+                @if (!edit) {
+                  <span class="loot">{{ character.progress.loot[lootType] || '-' }}</span>
+                }
+                @if (edit) {
+                  <input
+                    [(ngModel)]="character.progress.loot[lootType]"
+                    type="number"
+                    min="0"
+                    (change)="changeLoot(character, lootType, $event)"
+                  />
+                }
+              </td>
+            }
+            <td>
+              <span class="loot" [ngClass]="{ total: total[lootType] }">{{ total[lootType] || '-' }}</span>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (edit || edited) {
+    <div class="buttons">
+      <a class="cancel" (click)="close()"><span [ght-label]="'cancel'"></span></a>
+      <a class="apply" (click)="apply()" [ngClass]="{ disabled: !edited }"
+        ><span [ght-label]="'party.campaign.sheet.supply.apply'"></span
+      ></a>
+    </div>
+  }
+</div>

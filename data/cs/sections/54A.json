@@ -1,0 +1,42 @@
+{
+  "index": "54A",
+  "name": "Viper Marsh",
+  "edition": "cs",
+  "parent": "47",
+  "marker": "1",
+  "monsters": [
+    "earth-demon",
+    "giant-viper"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "earth-demon",
+          "type": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "type": "elite"
+        },
+        {
+          "name": "giant-viper",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

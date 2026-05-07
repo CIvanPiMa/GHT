@@ -1,0 +1,44 @@
+{
+  "index": "146.5",
+  "name": "Lush Grotto",
+  "edition": "fh",
+  "parent": "113",
+  "parentSections": [
+    [
+      "112.1"
+    ],
+    [
+      "183.2"
+    ]
+  ],
+  "monsters": [
+    "forest-imp",
+    "polar-bear"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "polar-bear",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

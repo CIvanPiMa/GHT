@@ -1,0 +1,33 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    display: flex;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  ght-header {
+    z-index: 2;
+  }
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+
+  ght-event-card {
+    width: 400px;
+    min-width: 400px;
+    height: 600px;
+    min-height: 600px;
+    margin: 10px;
+  }
+}

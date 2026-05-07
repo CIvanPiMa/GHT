@@ -1,0 +1,140 @@
+<div class="requirements">
+  @if (solo) {
+    <div class="solo">
+      <span [ght-label]="'scenario.requirements.solo'" [ght-label-args]="[scenarioData.edition, solo]"></span>
+    </div>
+  }
+  @for (requirement of requirements | trackUUID; track requirement._trackUUID; let i = $index) {
+    <div class="requirement">
+      <div class="party">
+        @for (achievement of requirement.partyAchievements; track achievement) {
+          <div class="achievement" [ght-label]="'scenario.requirements.party'" [ght-label-args]="[achievement]"></div>
+        }
+      </div>
+      <div class="party">
+        @for (achievement of requirement.partyAchievementsCount; track achievement) {
+          <div
+            class="achievement"
+            [ght-label]="'scenario.requirements.partyCount'"
+            [ght-label-args]="[achievement.name, achievement.required - achievement.count, achievement.required]"
+          ></div>
+        }
+      </div>
+      <div class="party">
+        @for (achievement of requirement.partyAchievementsMissing; track achievement) {
+          <div class="achievement" [ght-label]="'scenario.requirements.partyMissing'" [ght-label-args]="[achievement]"></div>
+        }
+      </div>
+      <div class="global">
+        @for (achievement of requirement.globalAchievements; track achievement) {
+          <div class="achievement" [ght-label]="'scenario.requirements.global'" [ght-label-args]="[achievement]"></div>
+        }
+      </div>
+      <div class="global">
+        @for (achievement of requirement.globalAchievementsCount; track achievement) {
+          <div
+            class="achievement"
+            [ght-label]="'scenario.requirements.globalCount'"
+            [ght-label-args]="[achievement.name, achievement.required - achievement.count, achievement.required]"
+          ></div>
+        }
+      </div>
+      <div class="global">
+        @for (achievement of requirement.globalAchievementsMissing; track achievement) {
+          <div class="achievement" [ght-label]="'scenario.requirements.globalMissing'" [ght-label-args]="[achievement]"></div>
+        }
+      </div>
+      <div class="campaign-stickers">
+        @for (campaignSticker of requirement.campaignStickers; track campaignSticker) {
+          <div class="achievement" [ght-label]="'scenario.requirements.campaignStickers'" [ght-label-args]="[campaignSticker]"></div>
+        }
+      </div>
+      <div class="campaign-stickers">
+        @for (campaignStickerCount of requirement.campaignStickersCount | trackUUID; track campaignStickerCount._trackUUID) {
+          <div
+            class="achievement"
+            [ght-label]="'scenario.requirements.campaignStickersCount'"
+            [ght-label-args]="[
+              campaignStickerCount.name,
+              campaignStickerCount.required - campaignStickerCount.count,
+              campaignStickerCount.required
+            ]"
+          ></div>
+        }
+      </div>
+      <div class="campaign-stickers">
+        @for (campaignSticker of requirement.campaignStickersMissing; track campaignSticker) {
+          <div class="achievement" [ght-label]="'scenario.requirements.campaignStickersMissing'" [ght-label-args]="[campaignSticker]"></div>
+        }
+      </div>
+      <div class="buildings">
+        @for (building of requirement.buildings; track building) {
+          <div class="achievement" [ght-label]="'scenario.requirements.buildings'" [ght-label-args]="[building]"></div>
+        }
+      </div>
+      <div class="buildings">
+        @for (buildingLevel of requirement.buildingsLevel | trackUUID; track buildingLevel._trackUUID) {
+          <div
+            class="achievement"
+            [ght-label]="'scenario.requirements.buildingsLevel'"
+            [ght-label-args]="[buildingLevel.name, buildingLevel.level]"
+          ></div>
+        }
+      </div>
+      <div class="buildings">
+        @for (building of requirement.buildingsMissing; track building) {
+          <div class="achievement" [ght-label]="'scenario.requirements.buildingsMissing'" [ght-label-args]="[building]"></div>
+        }
+      </div>
+      <div class="characters">
+        @for (character of requirement.characters; track character) {
+          <div
+            class="characters"
+            [ght-label]="'scenario.requirements.characters'"
+            [ght-label-args]="[scenarioData.edition, character]"
+          ></div>
+        }
+      </div>
+      <div class="characters">
+        @for (character of requirement.charactersMissing; track character) {
+          <div
+            class="characters"
+            [ght-label]="'scenario.requirements.charactersMissing'"
+            [ght-label-args]="[scenarioData.edition, character]"
+          ></div>
+        }
+      </div>
+      @if (requirement.scenarios.length) {
+        <div class="scenarios">
+          <div class="requires" [ght-label]="'scenario.requirements.scenarios'"></div>
+          @for (requires of requirement.scenarios; track requires; let i = $index) {
+            <div class="scenarios">
+              @for (scenario of requires; track scenario; let j = $index) {
+                <div
+                  class="scenario"
+                  [ght-label]="'scenario.requirements.scenarios.scenario'"
+                  [ght-label-args]="[scenario, scenarioData.edition]"
+                ></div>
+                @if (requires.length > 1 && j < requires.length - 1) {
+                  <div class="separator" [ght-label]="'scenario.requirements.scenarios.and'"></div>
+                }
+              }
+            </div>
+            @if (requirement.scenarios.length > 1 && i < requirement.scenarios.length - 1) {
+              <div class="separator" [ght-label]="'scenario.requirements.scenarios.or'"></div>
+            }
+          }
+        </div>
+      }
+    </div>
+    @if (i < requirements.length - 1) {
+      <span class="separator"><span [ght-label]="'or'"></span></span>
+    }
+  }
+
+  @if (allToggle && !hideAll) {
+    <label class="checkbox">
+      <input type="checkbox" [(ngModel)]="all" (change)="update()" /><span [ght-label]="'scenario.requirements.all'"></span>
+    </label>
+  }
+</div>

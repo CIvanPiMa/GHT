@@ -1,0 +1,52 @@
+{
+  "index": "191.2",
+  "name": "Pirate Queen's Haul",
+  "edition": "fh",
+  "parent": "137",
+  "marker": "1",
+  "monsters": [
+    "forest-imp",
+    "piranha-pig",
+    "polar-bear"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "forest-imp",
+          "type": "normal"
+        },
+        {
+          "name": "forest-imp",
+          "type": "normal"
+        },
+        {
+          "name": "forest-imp",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "polar-bear",
+          "type": "elite"
+        },
+        {
+          "name": "polar-bear",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

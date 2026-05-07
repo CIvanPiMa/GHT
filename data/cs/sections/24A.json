@@ -1,0 +1,55 @@
+{
+  "index": "24A",
+  "name": "Icicle Chambers",
+  "edition": "cs",
+  "parent": "23",
+  "parentSections": [
+    [
+      "23C"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "hail-demon",
+    "harrower-icecrawlers"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        25
+      ],
+      "monster": [
+        {
+          "name": "hail-demon",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "hail-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "hail-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "harrower-icecrawlers",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

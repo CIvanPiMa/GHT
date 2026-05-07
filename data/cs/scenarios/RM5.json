@@ -1,0 +1,40 @@
+{
+  "index": "RM5",
+  "group": "RM",
+  "name": "Unseen Plight",
+  "edition": "cs",
+  "initial": true,
+  "monsters": [
+    "ravenous-gharial"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "J1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "ravenous-gharial",
+          "type": "normal"
+        },
+        {
+          "name": "ravenous-gharial",
+          "type": "normal"
+        },
+        {
+          "name": "ravenous-gharial",
+          "type": "elite"
+        },
+        {
+          "name": "ravenous-gharial",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "ravenous-gharial",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

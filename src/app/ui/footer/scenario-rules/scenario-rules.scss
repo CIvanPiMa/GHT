@@ -1,0 +1,103 @@
+.rules-dialog {
+  font-size: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+  color: var(--ght-color-gray);
+  font-family: var(--ght-font-text);
+  text-align: center;
+
+  .hide {
+    position: relative;
+    font-size: calc(var(--ght-unit) * 2 * var(--ght-text-factor));
+    color: var(--ght-color-darkgray);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
+
+    img {
+      height: 1em;
+      width: auto;
+      margin: 0 0.2em;
+      filter: var(--ght-filter-darkgray);
+    }
+
+    &:hover {
+      color: var(--ght-color-gray);
+
+      img {
+        filter: var(--ght-filter-gray);
+      }
+    }
+  }
+
+  .rule-dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(var(--ght-unit) * 6 * var(--ght-text-factor));
+    margin-top: calc(var(--ght-unit) * 1 * var(--ght-text-factor));
+    transition: all calc(var(--ght-animation-speed) * 100ms) ease-in-out;
+    overflow: hidden;
+    width: 100%;
+
+    .dialog-container {
+      padding-bottom: 0;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-top: calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
+
+      a {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        flex-grow: 1;
+        padding-bottom: calc(var(--ght-unit) * 2);
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        img {
+          width: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+          height: auto;
+          margin: 0 0.2em;
+        }
+
+        &.apply {
+          color: var(--ght-color-green);
+
+          img {
+            filter: var(--ght-filter-green);
+          }
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: calc(var(--ght-unit) * 2);
+      left: calc(var(--ght-unit) * 2);
+      right: calc(var(--ght-unit) * 2);
+      bottom: calc(var(--ght-unit) * 2);
+      z-index: 0;
+      cursor: zoom-out;
+    }
+
+    &.closed {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 0;
+      min-height: initial;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "index": "75",
+  "edition": "fc",
+  "parent": "107",
+  "parentSections": [
+    [
+      "96"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "globalAchievements": [
+      "pieces-of-an-artifact"
+    ],
+    "gold": 10,
+    "experience": 5,
+    "hints": {
+      "globalAchievements": [
+        "(If this is the third \"Pieces of an Artifact\" achievement gained, read section 49 on page 17)"
+      ]
+    }
+  }
+}

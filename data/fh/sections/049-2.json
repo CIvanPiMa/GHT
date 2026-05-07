@@ -1,0 +1,10 @@
+{
+  "index": "49.2",
+  "name": "Mining Camp Upgraded",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "unlockCharacter": "meteor"
+  }
+}

@@ -1,0 +1,194 @@
+[
+    {
+        "cardId": "286",
+        "name": "Acrobatic",
+        "checks": 1
+    },
+    {
+        "cardId": "287",
+        "name": "Agoraphobe",
+        "checks": 1
+    },
+    {
+        "cardId": "288",
+        "name": "Altruist",
+        "checks": 1
+    },
+    {
+        "cardId": "289",
+        "name": "Assistant",
+        "checks": 1
+    },
+    {
+        "cardId": "290",
+        "name": "Challenger",
+        "checks": 1
+    },
+    {
+        "cardId": "291",
+        "name": "Closer",
+        "checks": 1
+    },
+    {
+        "cardId": "292",
+        "name": "Conservator",
+        "checks": 1
+    },
+    {
+        "cardId": "293",
+        "name": "Diehard",
+        "checks": 1,
+        "alias": {
+            "name": "Diehard",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "294",
+        "name": "Egoist",
+        "checks": 1
+    },
+    {
+        "cardId": "295",
+        "name": "Fast Healer",
+        "checks": 1,
+        "alias": {
+            "name": "Fast Healer",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "296",
+        "name": "Gambler",
+        "checks": 1
+    },
+    {
+        "cardId": "297",
+        "name": "Hothead",
+        "checks": 1
+    },
+    {
+        "cardId": "298",
+        "name": "Insomniac",
+        "checks": 1
+    },
+    {
+        "cardId": "299",
+        "name": "Masochist",
+        "checks": 1,
+        "alias": {
+            "name": "Masochist",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "300",
+        "name": "Mugger",
+        "checks": 1
+    },
+    {
+        "cardId": "301",
+        "name": "Opener",
+        "checks": 1,
+        "alias": {
+            "name": "Opener",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "302",
+        "name": "Pacifist",
+        "checks": 1,
+        "alias": {
+            "name": "Pacifist",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "303",
+        "name": "Pickpocket",
+        "checks": 1
+    },
+    {
+        "cardId": "304",
+        "name": "Pincushion",
+        "checks": 1
+    },
+    {
+        "cardId": "305",
+        "name": "Plebeian",
+        "checks": 1
+    },
+    {
+        "cardId": "306",
+        "name": "Prohibitionist",
+        "checks": 1
+    },
+    {
+        "cardId": "307",
+        "name": "Ravager",
+        "checks": 1
+    },
+    {
+        "cardId": "308",
+        "name": "Recluse",
+        "checks": 1
+    },
+    {
+        "cardId": "309",
+        "name": "Sadist",
+        "checks": 1,
+        "alias": {
+            "name": "Sadist",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "310",
+        "name": "Scrambler",
+        "checks": 1,
+        "alias": {
+            "name": "Scrambler",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "311",
+        "name": "Shadow",
+        "checks": 1
+    },
+    {
+        "cardId": "312",
+        "name": "Shirker",
+        "checks": 1
+    },
+    {
+        "cardId": "313",
+        "name": "Specialist",
+        "checks": 1
+    },
+    {
+        "cardId": "314",
+        "name": "Straggler",
+        "checks": 1,
+        "alias": {
+            "name": "Straggler",
+            "edition": "gh"
+        }
+    },
+    {
+        "cardId": "315",
+        "name": "Trailblazer",
+        "checks": 1
+    },
+    {
+        "cardId": "316",
+        "name": "Transmitter",
+        "checks": 1
+    },
+    {
+        "cardId": "317",
+        "name": "Weakling",
+        "checks": 1
+    }
+]

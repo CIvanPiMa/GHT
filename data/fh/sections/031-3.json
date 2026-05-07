@@ -1,0 +1,16 @@
+{
+  "index": "31.3",
+  "name": "Jeweler Built",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "winter-outpost:WO-77",
+      "summer-road:SR-37"
+    ],
+    "itemBlueprints": [
+      "156-159"
+    ]
+  }
+}

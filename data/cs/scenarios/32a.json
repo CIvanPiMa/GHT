@@ -1,0 +1,49 @@
+{
+  "index": "32a",
+  "name": "Confronting the Past A",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "requirements": [
+    {
+      "party": [
+        "!take-the-money"
+      ]
+    }
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.cs.32%"
+  },
+  "monsters": [
+    "living-bones"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "G2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

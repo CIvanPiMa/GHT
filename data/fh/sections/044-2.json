@@ -1,0 +1,102 @@
+{
+  "index": "44.2",
+  "name": "Derelict Elevator",
+  "edition": "fh",
+  "parent": "16",
+  "parentSections": [
+    [
+      "27.2"
+    ]
+  ],
+  "monsters": [
+    "ancient-artillery",
+    "flaming-bladespinner",
+    "ruined-machine"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "flaming-bladespinner",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "b"
+        }
+      ],
+      "noteTop": "Any figure occupying %game.mapMarker.b% suffers trap damage and is placed in the closest empty hex."
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "elite"
+          },
+          "marker": "g"
+        },
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "type": "elite"
+          },
+          "marker": "g"
+        },
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "h"
+        },
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "marker": "h"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "note": "Pebbles rain down at each %game.mapMarker.c%. This has no effect yet."
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "01-B",
+      "initial": true,
+      "treasures": [
+        77
+      ],
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

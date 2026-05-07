@@ -1,0 +1,37 @@
+{
+  "index": "17.3",
+  "name": "Haunted Vault",
+  "edition": "fh",
+  "parent": "17",
+  "parentSections": [
+    [
+      "19.3"
+    ]
+  ],
+  "marker": "5",
+  "monsters": [
+    "living-doom",
+    "living-spirit"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "living-doom",
+          "type": "elite"
+        },
+        {
+          "name": "living-spirit",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "living-spirit",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

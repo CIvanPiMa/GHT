@@ -1,0 +1,182 @@
+{
+  "index": "109",
+  "name": "Epilogue of a War",
+  "flowChartGroup": "tainted-crypt",
+  "coordinates": {
+    "x": 600,
+    "y": 2036,
+    "width": 171,
+    "height": 124,
+    "gridLocation": "N-4"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "113"
+  ],
+  "requirements": [
+    {
+      "global": [
+        "knowledge-is-power:2"
+      ]
+    }
+  ],
+  "rewards": {
+    "experience": 10,
+    "items": [
+      "52-gh"
+    ]
+  },
+  "monsters": [
+    "city-archer",
+    "city-guard",
+    "valrath-savage",
+    "valrath-tracker"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "note": "If party achievement Diamara's Aid or Angels of Death is complete, do not apply",
+      "spawns": [
+        {
+          "monster": {
+            "name": "valrath-savage",
+            "type": "elite"
+          },
+          "marker": "b"
+        }
+      ]
+    },
+    {
+      "round": "R == 1",
+      "start": true,
+      "note": "If party achievement Xangroth's Aid or Angels of Death is complete, do not apply",
+      "spawns": [
+        {
+          "monster": {
+            "name": "city-guard",
+            "player2": "elite",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "a"
+        }
+      ]
+    },
+    {
+      "round": "R == 10",
+      "note": "Check Scenario Goal"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "M1b",
+      "initial": true,
+      "treasures": [
+        94,
+        80
+      ],
+      "monster": [
+        {
+          "name": "city-archer",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "city-archer",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player3": "normal"
+        },
+        {
+          "name": "city-archer",
+          "player3": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "type": "elite"
+        },
+        {
+          "name": "city-guard",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-savage",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "type": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

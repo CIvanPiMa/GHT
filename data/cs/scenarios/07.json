@@ -1,0 +1,47 @@
+{
+  "index": "7",
+  "name": "Golden Eggs",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "unlocks": [
+    "8",
+    "10"
+  ],
+  "rewards": {
+    "partyAchievements": [
+      "follow-the-money"
+    ],
+    "collectiveGold": 30
+  },
+  "monsters": [
+    "giant-viper",
+    "hound"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L3a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "giant-viper",
+          "type": "normal"
+        },
+        {
+          "name": "giant-viper",
+          "player4": "normal"
+        },
+        {
+          "name": "hound",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "hound",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

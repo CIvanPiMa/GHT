@@ -1,0 +1,58 @@
+{
+  "index": "2A",
+  "name": "The Dark Lake",
+  "edition": "cs",
+  "parent": "1",
+  "marker": "1",
+  "monsters": [
+    "spitting-drake",
+    "vermling-scout",
+    "water-spirit"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "ref": "G1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "spitting-drake",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "type": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player4": "elite"
+        },
+        {
+          "name": "water-spirit",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "water-spirit",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

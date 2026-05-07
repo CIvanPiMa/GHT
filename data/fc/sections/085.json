@@ -1,0 +1,96 @@
+{
+  "index": "85",
+  "name": "The Third Portal",
+  "edition": "fc",
+  "parent": "104",
+  "parentSections": [
+    [
+      "79"
+    ]
+  ],
+  "marker": "3",
+  "resetRound": "hiddenKeep",
+  "objectives": [
+    {
+      "name": "Hail",
+      "escort": true,
+      "health": "6+2xL",
+      "marker": "a",
+      "tags": [
+        "85"
+      ],
+      "actions": [
+        {
+          "type": "move",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.scenario.rules.fc.104.4%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "R % 2 == 0",
+      "spawns": [
+        {
+          "monster": {
+            "name": "harrower-infester",
+            "player2": "normal",
+            "player3": "elite",
+            "player4": "elite"
+          },
+          "marker": "4"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "escort",
+            "name": "Hail",
+            "tags": [
+              "79"
+            ]
+          },
+          "type": "transfer",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "104",
+          "index": -1,
+          "section": false
+        },
+        {
+          "edition": "fc",
+          "scenario": "52",
+          "index": -1,
+          "section": true
+        },
+        {
+          "edition": "fc",
+          "scenario": "79",
+          "index": -1,
+          "section": true
+        }
+      ]
+    }
+  ]
+}

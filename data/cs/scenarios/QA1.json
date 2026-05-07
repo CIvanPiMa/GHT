@@ -1,0 +1,60 @@
+{
+  "index": "QA1",
+  "group": "QA",
+  "name": "Capstone Test",
+  "edition": "cs",
+  "initial": true,
+  "rewards": {
+    "envelopes": [
+      "%data.characterIcon.tools%"
+    ],
+    "items": [
+      "105",
+      "106"
+    ],
+    "custom": "%data.scenario.rewards.cs.QA1%"
+  },
+  "monsters": [
+    "clockwork-railcaster",
+    "clockwork-soldier"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "M1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "clockwork-railcaster",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "clockwork-railcaster",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "clockwork-railcaster",
+          "player4": "normal"
+        },
+        {
+          "name": "clockwork-soldier",
+          "type": "normal"
+        },
+        {
+          "name": "clockwork-soldier",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "clockwork-soldier",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

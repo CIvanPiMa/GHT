@@ -1,0 +1,86 @@
+import { Dialog, DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject, Input, OnInit } from '@angular/core';
+import { GameManager, gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { SettingsManager, settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { GameState } from 'src/app/game/model/Game';
+import { Monster } from 'src/app/game/model/Monster';
+import { GhsLabelDirective } from 'src/app/ui/helper/label';
+import { PointerInputDirective } from 'src/app/ui/helper/pointer-input';
+import { ghsDialogClosingHelper } from 'src/app/ui/helper/Static';
+
+@Component({
+  imports: [NgClass, GhsLabelDirective, PointerInputDirective],
+  selector: 'ght-monster-image',
+  templateUrl: './image.html',
+  styleUrls: ['./image.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class MonsterImageComponent {
+  private dialog = inject(Dialog);
+  private ghsManager = inject(GhsManager);
+
+  @Input() monster!: Monster;
+  gameManager: GameManager = gameManager;
+  settingsManager: SettingsManager = settingsManager;
+  GameState = GameState;
+  disabled: boolean = false;
+  off: boolean = false;
+  active: boolean = false;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.update());
+  }
+
+  update() {
+    this.disabled = gameManager.game.state === GameState.draw || this.monster.entities.length === 0;
+    this.off = this.monster.off;
+    this.active = this.monster.active;
+  }
+
+  toggleFigure() {
+    if (gameManager.game.state === GameState.next && gameManager.monsterManager.monsterEntityCount(this.monster)) {
+      gameManager.stateManager.before(this.monster.active ? 'unsetActive' : 'setActive', 'data.monster.' + this.monster.name);
+      gameManager.roundManager.toggleFigure(this.monster);
+      gameManager.stateManager.after();
+    } else {
+      this.imageDialog();
+    }
+  }
+
+  imageDialog() {
+    if (settingsManager.settings.artwork && (!this.monster.noArtwork || !this.monster.noThumbnail)) {
+      this.dialog.open(MonsterImageDialogComponent, {
+        data: this.monster
+      });
+    }
+  }
+}
+
+@Component({
+  imports: [NgClass],
+  selector: 'ght-monster-image-dialog',
+  templateUrl: './imagedialog.html',
+  styleUrls: ['./imagedialog.scss']
+})
+export class MonsterImageDialogComponent implements OnInit {
+  private dialogRef = inject(DialogRef);
+
+  gameManager: GameManager = gameManager;
+
+  opened: boolean = false;
+
+  monster: Monster = inject(DIALOG_DATA);
+
+  ngOnInit(): void {
+    this.opened = true;
+  }
+
+  close() {
+    this.opened = false;
+    setTimeout(() => {
+      ghsDialogClosingHelper(this.dialogRef);
+    }, 400);
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "index": "17D",
+  "name": "Preto Krisanta",
+  "edition": "cs",
+  "parent": "16",
+  "parentSections": [
+    [
+      "17A",
+      "17C"
+    ]
+  ],
+  "marker": "1",
+  "monsters": [
+    "apex-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "ref": "C1a",
+      "initial": true,
+      "treasures": [
+        34
+      ],
+      "monster": [
+        {
+          "name": "apex-demon",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

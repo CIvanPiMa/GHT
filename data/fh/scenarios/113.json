@@ -1,0 +1,81 @@
+{
+  "index": "113",
+  "name": "Lush Grotto",
+  "flowChartGroup": "other",
+  "coordinates": {
+    "x": 1496.75,
+    "y": 1241.75,
+    "width": 89,
+    "height": 71,
+    "gridLocation": "G9"
+  },
+  "edition": "fh",
+  "complexity": 1,
+  "eventType": "road",
+  "recaps": [
+    {
+      "type": "event",
+      "value": "WR-13"
+    }
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.fh.113%"
+  },
+  "monsters": [
+    "chaos-demon",
+    "forest-imp"
+  ],
+  "lootDeckConfig": {
+    "money": 8,
+    "lumber": 4,
+    "rockroot": 2,
+    "arrowvine": 2,
+    "flamefruit": 1,
+    "snowthistle": 2,
+    "axenut": 1,
+    "corpsecap": 1
+  },
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "chaos-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "chaos-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "forest-imp",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

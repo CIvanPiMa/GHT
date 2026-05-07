@@ -1,0 +1,171 @@
+{
+  "index": "108",
+  "name": "Prologue to the End",
+  "flowChartGroup": "tainted-crypt",
+  "coordinates": {
+    "x": 89.75,
+    "y": 2218.75,
+    "width": 223,
+    "height": 176,
+    "gridLocation": "O-1"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "requirements": [
+    {
+      "global": [
+        "knowledge-is-power:2"
+      ]
+    }
+  ],
+  "monsters": [
+    "city-archer",
+    "city-guard",
+    "human-commander",
+    "valrath-commander",
+    "valrath-savage",
+    "valrath-tracker"
+  ],
+  "drawExtra": [
+    "valrath-commander"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "A4a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "city-archer",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "city-archer",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "city-archer",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player2": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "city-archer",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "type": "elite"
+        },
+        {
+          "name": "city-guard",
+          "player2": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "city-guard",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "human-commander",
+          "type": "boss"
+        },
+        {
+          "name": "valrath-commander",
+          "type": "boss"
+        },
+        {
+          "name": "valrath-savage",
+          "type": "normal"
+        },
+        {
+          "name": "valrath-savage",
+          "type": "normal"
+        },
+        {
+          "name": "valrath-savage",
+          "player2": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-savage",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-savage",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "type": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "type": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "index": "RM7",
+  "group": "RM",
+  "name": "Insatiable",
+  "edition": "cs",
+  "initial": true,
+  "rewards": {
+    "experience": 10,
+    "items": [
+      "115"
+    ]
+  },
+  "monsters": [
+    "ruinmaw",
+    "vermling-scout",
+    "vermling-shaman"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L3a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "ruinmaw",
+          "type": "boss"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "elite",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "elite",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-shaman",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-shaman",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

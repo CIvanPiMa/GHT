@@ -1,0 +1,15 @@
+.button {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ght-font-title);
+  color: var(--ght-color-gray);
+  font-size: calc(var(--ght-unit) * 3 * var(--ght-small-text-factor) * var(--ght-barsize));
+  text-shadow: var(--ght-outline);
+
+  &:hover {
+    color: var(--ght-color-white);
+  }
+}

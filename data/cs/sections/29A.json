@@ -1,0 +1,41 @@
+{
+  "index": "29A",
+  "name": "Frostbite Cavern",
+  "edition": "cs",
+  "parent": "27",
+  "marker": "1",
+  "monsters": [
+    "savvas-icebound",
+    "stone-golem"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "savvas-icebound",
+          "type": "boss"
+        },
+        {
+          "name": "stone-golem",
+          "type": "normal"
+        },
+        {
+          "name": "stone-golem",
+          "type": "normal"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

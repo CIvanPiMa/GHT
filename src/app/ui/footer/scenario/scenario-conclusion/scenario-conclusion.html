@@ -1,0 +1,25 @@
+<div class="section-popup">
+  <div class="header">
+    <img class="ght-svg" src="./assets/images/scenario/conclusion.svg" />
+    <span [ght-label]="'scenario.section.conclusion.select'"></span>
+  </div>
+
+  <div class="conclusions">
+    @for (sectionData of data.conclusions | trackUUID; track sectionData._trackUUID) {
+      <span
+        class="placeholder text-white conclusion"
+        [ght-label]="'scenario.section.conclusion' + (data.parent.conclusion ? '.continue' : '') + (sectionData.named ? '.named' : '')"
+        [ght-label-args]="[
+          '%data.section:' + sectionData.index + '%',
+          sectionData.named ? gameManager.scenarioManager.scenarioTitle(sectionData, true) : ''
+        ]"
+        (click)="close(sectionData)"
+      >
+      </span>
+    }
+  </div>
+
+  <div class="buttons">
+    <a class="cancel" (click)="close()"><span [ght-label]="'scenario.section.cancel'"></span></a>
+  </div>
+</div>

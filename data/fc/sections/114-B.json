@@ -1,0 +1,11 @@
+{
+  "index": "114-B",
+  "name": "Intimidated > 2+C inhabitants",
+  "edition": "fc",
+  "parent": "102",
+  "conclusion": true,
+  "rewards": {
+    "experience": 15,
+    "reputation": -2
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bandit-guard",
+  "noArtwork": true,
+  "edition": "bb",
+  "bb": true,
+  "count": 4,
+  "baseStat": {
+    "type": "bb",
+    "health": 8,
+    "actions": [
+      {
+        "type": "shield",
+        "value": 1
+      }
+    ]
+  },
+  "stats": [
+    {
+      "type": "elite",
+      "health": 18,
+      "actions": [
+        {
+          "type": "shield",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

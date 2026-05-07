@@ -1,0 +1,34 @@
+{
+  "index": "120.2",
+  "name": "The Dancing Iceberg",
+  "edition": "fh",
+  "parent": "131",
+  "monsters": [
+    "lurker-wavethrower"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "lurker-wavethrower",
+          "type": "normal"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "type": "normal"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

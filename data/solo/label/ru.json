@@ -1,0 +1,108 @@
+{
+  "custom": {
+    "fh": {
+      "algox-snowspeaker-trap-solo": {
+        "1": "Все враги в<br>%game.action.range:2% получают %game.damage:2%"
+      },
+      "lost-in-seaweed": {
+        "1": "Фокусируется на самом<br>дальнем враге в %game.action.range:6%",
+        "2": "Создаёт жетон воды в 1 клетку<br>в соседней пустой клетке.",
+        "3": "в соседней свободной<br>клетке с жетоном воды."
+      }
+    },
+    "gh": {
+      "city-guard-saw-solo": {
+        "1": "Получайте %game.damage:1% в конце каждого раунда пока не вылечитесь полностью"
+      },
+      "ghost-wolf": {
+        "1": "В начале каждого раунда:"
+      }
+    },
+    "solo": {
+      "char-am-deck": "Использует колоду МА персонажа"
+    },
+    "toa": {
+      "glacier-demon": {
+        "1": "Теряет «%game.action.retaliate%» при получении «%game.condition.wound%»"
+      },
+      "inferno-demon": {
+        "1": "Теряет «%game.action.retaliate%» при получении «%game.condition.chill%»"
+      }
+    }
+  },
+  "edition": {
+    "solo": "Соло сценарии (все издания)"
+  },
+  "monster": {
+    "deep-earth": "Недра",
+    "earth-demon-diviner-solo": "%data.monster.earth-demon% (%data.character.fc.diviner% %solo%)",
+    "earth-demon-mindthief-solo": "%data.monster.earth-demon% (%data.character.gh.mindthief% %solo%)",
+    "energized-corpse": "Заряженный труп",
+    "ghost-wolf": "Призрачный Волк",
+    "giant-viper-angry-face-solo": "%data.monster.giant-viper% (%data.character.gh.angry-face% %solo%)",
+    "high-flame": "Пламя",
+    "inox-necromancer": "Инокс-некромант",
+    "lieutenant": "Лейтенант",
+    "mountains-heart": "Сердце гор",
+    "night-demon-deathwalker-solo": "Ночной демон (соло)",
+    "song-of-the-deep": "Песнь Глубин",
+    "stone-golem-scoundrel-solo": "%data.monster.stone-golem% (%data.character.gh.scoundrel% %solo%)",
+    "vermling-scout-mindthief-solo": "%data.monster.vermling-scout% (%data.character.gh.mindthief% %solo%)"
+  },
+  "scenario": {
+    "group": {
+      "solo": "Соло сценарии"
+    },
+    "title": {
+      "fc": {
+        "solo-19": "Предсказания неизбежного"
+      },
+      "gh": {
+        "solo-1": "Возвращение в Чёрный курган",
+        "solo-10": "Ночная жатва",
+        "solo-11": "Чумной склеп",
+        "solo-12": "Кощунство",
+        "solo-13": "Состязание менестрелей",
+        "solo-14": "Скверная охота",
+        "solo-15": "Последствия",
+        "solo-16": "Тайны стихий",
+        "solo-17": "Медведь в клетке",
+        "solo-18": "Пески времени",
+        "solo-2": "Неудачное вторжение",
+        "solo-3": "Происшествие в лаборатории",
+        "solo-4": "Ограбление оружейной",
+        "solo-5": "Каменная защита",
+        "solo-6": "Освобождение грызунов",
+        "solo-7": "Сопровождение каравана",
+        "solo-8": "Расходы на хранение",
+        "solo-9": "Измерение диких зверей"
+      }
+    }
+  },
+  "section": {
+    "title": {
+      "fc": {
+        "solo-19-29": "Предсказания неизбежного",
+        "solo-19-73": "Предсказания неизбежного",
+        "solo-19-90": "Предсказания неизбежного"
+      },
+      "gh": {
+        "solo-15-1": "Последствия",
+        "solo-17-1": "Медведь в клетке",
+        "solo-17-2": "Медведь в клетке",
+        "solo-17-3": "Медведь в клетке",
+        "solo-4-A2a": "Ограбление оружейной",
+        "solo-4-B2b": "Ограбление оружейной",
+        "solo-4-H1b": "Ограбление оружейной",
+        "solo-6-1": "Освобождение грызунов",
+        "solo-6-2": "Освобождение грызунов",
+        "solo-6-3": "Освобождение грызунов",
+        "solo-7-1": "Сопровождение каравана",
+        "solo-7-2": "Сопровождение каравана",
+        "solo-A1b": "Состязание менестрелей",
+        "solo-G2b": "Состязание менестрелей",
+        "solo-I1a": "Состязание менестрелей"
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "program-director",
+  "edition": "fh",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "health": "Cx10",
+    "attack": "C",
+    "immunities": [
+      "wound",
+      "poison",
+      "stun"
+    ],
+    "special": [
+      [
+        {
+          "type": "specialTarget",
+          "value": "focusEnemyFarthest",
+          "subActions": [
+            {
+              "type": "teleport",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fh.program-director.1%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "target",
+              "value": 2,
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.program-director.2%"
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fh.program-director.3%",
+          "subActions": [
+            {
+              "type": "teleport",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fh.program-director.4%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesAdjacent",
+              "small": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "Cx10",
+      "attack": "C"
+    },
+    {
+      "level": 1,
+      "health": "Cx12",
+      "attack": "C+1"
+    },
+    {
+      "level": 2,
+      "health": "Cx15",
+      "attack": "C+1"
+    },
+    {
+      "level": 3,
+      "health": "Cx18",
+      "attack": "C+2"
+    },
+    {
+      "level": 4,
+      "health": "Cx23",
+      "attack": "C+2"
+    },
+    {
+      "level": 5,
+      "health": "Cx27",
+      "attack": "C+3"
+    },
+    {
+      "level": 6,
+      "health": "Cx40",
+      "attack": "C+3"
+    },
+    {
+      "level": 7,
+      "health": "Cx50",
+      "attack": "C+4"
+    }
+  ]
+}

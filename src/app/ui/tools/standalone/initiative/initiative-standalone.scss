@@ -1,0 +1,184 @@
+.initiative-standalone {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  ght-header {
+    z-index: 2;
+  }
+
+  .scroll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--ght-unit) * 1) 0;
+
+    .character {
+      font-family: var(--ght-font-gh-title);
+      display: flex;
+      justify-content: center;
+      z-index: 2;
+      width: calc(var(--ght-unit) * 5 * var(--ght-dialog-factor));
+      height: calc(var(--ght-unit) * 5 * var(--ght-dialog-factor));
+      color: var(--ght-color-white);
+      font-size: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+      line-height: calc(var(--ght-unit) * 4.5 * var(--ght-dialog-factor));
+      background-position: center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-image: url('../../../../../assets/images/character/token.png');
+      margin: calc(var(--ght-unit) * 1);
+      cursor: pointer;
+      filter: grayscale(0.5) brightness(0.5);
+
+      img {
+        margin-top: calc(var(--ght-unit) * 0.8);
+        height: 70%;
+        width: auto;
+      }
+
+      &:hover {
+        filter: brightness(0.7);
+      }
+
+      &.active {
+        filter: none;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+
+      input[type='checkbox'] {
+        border-color: var(--ght-color-black);
+
+        &:before {
+          color: var(--ght-color-black);
+          background-color: var(--ght-color-black);
+        }
+
+        &:hover::before {
+          background-color: var(--ght-color-darkgray);
+        }
+      }
+    }
+  }
+
+  .dialog {
+    width: calc(var(--ght-unit) * 50 * var(--ght-dialog-factor));
+    max-width: calc(50vw - var(--ght-unit) * 4);
+    margin: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+
+    .initiative-dialog {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        height: calc(var(--ght-unit) * 32 * var(--ght-dialog-factor));
+
+        .character {
+          cursor: pointer;
+          margin-top: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+        }
+
+        .initiative {
+          display: flex;
+          align-items: center;
+
+          .value {
+            font-family: var(--ght-font-gh-title);
+            font-size: calc(var(--ght-unit) * 4.5 * var(--ght-dialog-factor));
+          }
+
+          img {
+            filter: var(--ght-filter-white);
+            height: calc(var(--ght-unit) * 4 * var(--ght-dialog-factor));
+            width: auto;
+            margin-left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+          }
+        }
+
+        .long-rest-button {
+          margin-top: auto;
+        }
+      }
+
+      .number-container .value {
+        display: flex;
+        align-items: center;
+
+        img {
+          filter: var(--ght-filter-white);
+          height: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+          width: auto;
+          margin-left: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+        }
+      }
+    }
+  }
+
+  &.vertical {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .scroll-container {
+      flex-direction: column;
+    }
+
+    .dialog {
+      width: calc(var(--ght-unit) * 40 * var(--ght-dialog-factor));
+      max-width: calc(100vw - var(--ght-unit) * 4);
+
+      .initiative-dialog {
+        flex-direction: column;
+
+        .title {
+          height: auto;
+
+          .character {
+            margin-top: initial;
+          }
+        }
+      }
+    }
+
+    .characters {
+      .character {
+        width: calc(var(--ght-unit) * 10 * var(--ght-text-factor));
+        height: calc(var(--ght-unit) * 10 * var(--ght-text-factor));
+        font-size: calc(var(--ght-unit) * 7 * var(--ght-text-factor));
+        line-height: calc(var(--ght-unit) * 9 * var(--ght-text-factor));
+
+        img {
+          margin-top: calc(var(--ght-unit) * 1.5);
+        }
+      }
+    }
+  }
+
+  &.modern {
+    .menu {
+      a {
+        color: var(--ght-color-gray);
+      }
+    }
+  }
+
+  &.fh .characters .character {
+    background-image: url('../../../../../assets/images/fh/character/token.png');
+
+    img {
+      filter: brightness(1.3);
+    }
+  }
+}

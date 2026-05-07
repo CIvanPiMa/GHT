@@ -1,0 +1,55 @@
+{
+  "index": "62A",
+  "name": "Lair of Horrors",
+  "edition": "cs",
+  "parent": "54",
+  "parentSections": [
+    [
+      "61B"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "black-bear",
+    "cave-imp"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        50
+      ],
+      "monster": [
+        {
+          "name": "black-bear",
+          "type": "elite"
+        },
+        {
+          "name": "cave-imp",
+          "type": "normal"
+        },
+        {
+          "name": "cave-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "cave-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "cave-imp",
+          "player4": "normal"
+        },
+        {
+          "name": "cave-imp",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+@if (!!effect) {
+  <span
+    class="effect-wrapper {{ effect.type }}"
+    [ngClass]="{ fh: settingsManager.settings.fhStyle, 'new-style': newStyle, 'town-guard': townGuard }"
+  >
+    <span class="effect">
+      @switch (effect.type) {
+        @case (AttackModifierEffectType.condition) {
+          <img
+            class="full"
+            [ngClass]="{ target: targetClass }"
+            [src]="
+              './assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'condition/' + effect.value.split(':')[0] + '.svg'
+            "
+          />
+          @if (effect.value.split(':').length > 1) {
+            <span class="value">{{ effect.value.split(':')[1] }}</span>
+          }
+          @if (targetString) {
+            <span class="target-value-container {{ 'target-' + targetString.replace('game.specialTarget.', '') }}">
+              <span
+                class="target-value text-white"
+                [ght-label]="targetString.split(':')[0]"
+                [ght-label-args]="targetString.split(':').slice(1)"
+                [style]="newStyle ? 'fh' : false"
+              ></span>
+            </span>
+          }
+          @if (targetValue) {
+            <span class="target-value-container">
+              <img class="full" [src]="'./assets/images/action/target.svg'" />
+              {{ targetValue }}
+            </span>
+          }
+          @if (rangeValue) {
+            <span class="target-value-container range">
+              <span class="target-value text-white" [ght-label]="rangeValue" [style]="newStyle ? 'fh' : false"></span>
+            </span>
+          }
+        }
+        @case (AttackModifierEffectType.element) {
+          <img
+            class="full"
+            [ngClass]="{ 'sub-effects': effect.effects && effect.effects.length }"
+            [src]="'./assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'element/' + effect.value + '.svg'"
+          />
+          @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+            <div class="sub-effects">
+              <ght-attackmodifier-effect
+                [attackModifier]="attackModifier"
+                [effect]="subEffect"
+                [offsetWidth]="offsetWidth"
+                [newStyle]="newStyle"
+              ></ght-attackmodifier-effect>
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.elementHalf) {
+          <span class="element-half-container">
+            <span class="element-half">
+              <img
+                [src]="
+                  './assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'element/' + effect.value.split('|')[0] + '.svg'
+                "
+              />
+            </span>
+            <span class="element-half">
+              <img
+                [src]="
+                  './assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'element/' + effect.value.split('|')[1] + '.svg'
+                "
+              />
+            </span>
+          </span>
+        }
+        @case (AttackModifierEffectType.elementConsume) {
+          <span class="element consume">
+            <img [src]="'./assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'element/' + effect.value + '.svg'" />
+          </span>
+          <span class="divider">:</span>
+          @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+            <div class="sub-effects">
+              <ght-attackmodifier-effect
+                [attackModifier]="attackModifier"
+                [effect]="subEffect"
+                [offsetWidth]="offsetWidth"
+                [newStyle]="newStyle"
+              ></ght-attackmodifier-effect>
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.heal) {
+          <div
+            class="effect-container heal-container"
+            [style.border-width]="offsetWidth * 0.02 + 'px'"
+            [ngClass]="{ target: targetClass, 'sub-effects': subEffects().length > 0 }"
+          >
+            <img [ngClass]="{ 'ght-svg': isGhsSvg(effect.type) }" [src]="'./assets/images/action/' + effect.type + '.svg'" />
+            @if (effect.value) {
+              <span class="value">{{ +effect.value | ghsValueSign }}</span>
+            }
+            @if (targetString && targetString.startsWith('game.specialTarget')) {
+              <span class="target-value-container {{ 'target-' + targetString.replace('game.specialTarget.', '') }}">
+                <span
+                  class="target-value text-white"
+                  [ght-label]="targetString.split(':')[0]"
+                  [ght-label-args]="targetString.split(':').slice(1)"
+                  [style]="newStyle ? 'fh' : false"
+                ></span>
+              </span>
+            }
+            @if (targetString && !targetString.startsWith('game.specialTarget')) {
+              <span class="target-value-container">
+                <img [src]="'./assets/images/action/target.svg'" />
+                <span
+                  class="target-value text-white"
+                  [ght-label]="targetString"
+                  [ght-label-args]="[]"
+                  [style]="newStyle ? 'fh' : false"
+                ></span>
+              </span>
+            }
+            @if (targetValue) {
+              <span class="target-value-container">
+                <img class="full" [src]="'./assets/images/action/target.svg'" />
+                {{ targetValue }}
+              </span>
+            }
+            @if (rangeValue) {
+              <span class="target-value-container range">
+                <span class="target-value text-white" [ght-label]="rangeValue" [style]="newStyle ? 'fh' : false"></span>
+              </span>
+            }
+            <div class="sub-effects">
+              <span class="divider">,</span>
+              @for (subEffect of subEffects() | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          </div>
+        }
+        @case (AttackModifierEffectType.shield) {
+          <div
+            class="effect-container shield-container"
+            [style.border-width]="offsetWidth * 0.02 + 'px'"
+            [ngClass]="{ target: targetClass }"
+          >
+            <img
+              [ngClass]="{ 'ght-svg': isGhsSvg(effect.type) }"
+              [src]="'./assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'action/' + effect.type + '.svg'"
+            />
+            @if (effect.value) {
+              <span class="value">{{ +effect.value }}</span>
+            }
+            @if (targetString) {
+              <span class="target-value-container {{ 'target-' + targetString.replace('game.specialTarget.', '') }}">
+                <span
+                  class="target-value text-white"
+                  [ght-label]="targetString.split(':')[0]"
+                  [ght-label-args]="targetString.split(':').slice(1)"
+                  [style]="newStyle ? 'fh' : false"
+                ></span>
+              </span>
+            }
+            @if (targetValue) {
+              <span class="target-value-container">
+                <img class="full" [src]="'./assets/images/action/target.svg'" />
+                {{ targetValue }}
+              </span>
+            }
+            @if (rangeValue) {
+              <span class="target-value-container range">
+                <span class="target-value text-white" [ght-label]="rangeValue" [style]="newStyle ? 'fh' : false"></span>
+              </span>
+            }
+            <div class="sub-effects">
+              @for (subEffect of subEffects() | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          </div>
+        }
+        @case (AttackModifierEffectType.retaliate) {
+          <div
+            class="effect-container retaliate-container"
+            [style.border-width]="offsetWidth * 0.02 + 'px'"
+            [ngClass]="{ target: targetClass }"
+          >
+            <img
+              [ngClass]="{ 'ght-svg': isGhsSvg(effect.type) }"
+              [src]="'./assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'action/' + effect.type + '.svg'"
+            />
+            @if (effect.value) {
+              <span class="value">{{ +effect.value }}</span>
+            }
+            @if (targetString) {
+              <span class="target-value-container {{ 'target-' + targetString.replace('game.specialTarget.', '') }}">
+                <span
+                  class="target-value text-white"
+                  [ght-label]="targetString.split(':')[0]"
+                  [ght-label-args]="targetString.split(':').slice(1)"
+                  [style]="newStyle ? 'fh' : false"
+                ></span>
+              </span>
+            }
+            @if (targetValue) {
+              <span class="target-value-container">
+                <img class="full" [src]="'./assets/images/action/target.svg'" />
+                {{ targetValue }}
+              </span>
+            }
+            @if (rangeValue) {
+              <span class="target-value-container range">
+                <span class="target-value text-white" [ght-label]="rangeValue" [style]="newStyle ? 'fh' : false"></span>
+              </span>
+            }
+            <div class="sub-effects">
+              @for (subEffect of subEffects() | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          </div>
+        }
+        @case (AttackModifierEffectType.target) {
+          <img class="full" [src]="'./assets/images/attackmodifier/target.svg'" />
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.area) {
+          <ght-action-hex [value]="effect.value"></ght-action-hex>
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.refreshItem) {
+          <span class="card-action">
+            <img class="ght-svg" src="./assets/images/action/card/refresh.svg" />
+            <img class="overlay" src="./assets/images/action/card/overlay/refresh.svg" />
+          </span>
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.refreshSpentItem) {
+          <div class="card-action-container">
+            <span class="card-action">
+              <img class="ght-svg" src="./assets/images/action/card/refresh.svg" />
+              <img class="overlay" src="./assets/images/action/card/overlay/refresh.svg" />
+            </span>
+            <span class="label"><span [ght-label]="'game.attackModifiers.effects.refreshSpentItem'"></span></span>
+            @if (effect.effects) {
+              <div class="sub-effects">
+                @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                  <ght-attackmodifier-effect
+                    [attackModifier]="attackModifier"
+                    [effect]="subEffect"
+                    [offsetWidth]="offsetWidth"
+                    [newStyle]="newStyle"
+                  ></ght-attackmodifier-effect>
+                }
+              </div>
+            }
+          </div>
+        }
+        @case (AttackModifierEffectType.recoverRandomDiscard) {
+          <span class="card-action">
+            <img class="ght-svg" src="./assets/images/action/card/recover.svg" />
+            <img class="overlay" src="./assets/images/action/card/overlay/recover.svg" />
+          </span>
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.custom) {
+          @if (!effect.icon) {
+            <span class="custom-value-container">
+              <span
+                class="custom-value"
+                [ngClass]="{ 'text-white': !settingsManager.settings.fhStyle || townGuard }"
+                [ght-label]="effect.value + ''"
+              ></span>
+            </span>
+          }
+          @if (effect.icon) {
+            <span class="effect-icon">
+              <img [src]="'./assets/images/action/custom/' + effect.value + '.svg'" />
+            </span>
+          }
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.or) {
+          <span class="or-label" [ngClass]="{ 'new-style': newStyle }"><span [ght-label]="'or'"></span></span>
+          @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+            <ght-attackmodifier-effect
+              [attackModifier]="attackModifier"
+              [effect]="subEffect"
+              [offsetWidth]="offsetWidth"
+              [newStyle]="newStyle"
+            ></ght-attackmodifier-effect>
+          }
+        }
+        @case (AttackModifierEffectType.changeType) {
+          <img class="overlay" [src]="'./assets/images/attackmodifier/overlays/replace/' + effect.value + '.png'" />
+          @if (effect.effects) {
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          }
+        }
+        @case (AttackModifierEffectType.required) {
+          <span class="required-container">
+            @if (effect.value) {
+              <span class="label" [ght-label]="'' + effect.value"></span>
+            }
+            @if (!effect.value) {
+              <span class="label">!</span>
+            }
+            <div class="sub-effects">
+              @for (subEffect of effect.effects | trackUUID; track subEffect._trackUUID) {
+                <ght-attackmodifier-effect
+                  [attackModifier]="attackModifier"
+                  [effect]="subEffect"
+                  [offsetWidth]="offsetWidth"
+                  [newStyle]="newStyle"
+                ></ght-attackmodifier-effect>
+              }
+            </div>
+          </span>
+        }
+        @default {
+          <img
+            class="full"
+            [ngClass]="{ 'ght-svg': isGhsSvg(effect.type) }"
+            [src]="'./assets/images/' + (settingsManager.settings.fhStyle ? 'fh/' : '') + 'action/' + effect.type + '.svg'"
+          />
+          @if (effect.value) {
+            <span class="value">{{ +effect.value }}</span>
+          }
+        }
+      }
+    </span>
+  </span>
+}

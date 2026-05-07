@@ -1,0 +1,59 @@
+{
+  "index": "81",
+  "name": "Narrow Street",
+  "edition": "fc",
+  "parent": "111",
+  "parentSections": [
+    [
+      "67"
+    ],
+    [
+      "132"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "aesther-scout",
+    "black-imp",
+    "night-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "ref": "H1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "aesther-scout",
+          "player4": "normal"
+        },
+        {
+          "name": "black-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player2": "normal",
+          "player3": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "night-demon",
+          "type": "normal"
+        },
+        {
+          "name": "night-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

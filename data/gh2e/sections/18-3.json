@@ -1,0 +1,12 @@
+{
+  "index": "18.3",
+  "name": "Icecrag Ascent",
+  "edition": "gh2e",
+  "parent": "13",
+  "conclusion": true,
+  "unlocks": [
+    "29",
+    "32"
+  ],
+  "monsters": []
+}

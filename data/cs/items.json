@@ -1,0 +1,1929 @@
+[
+  {
+    "id": 1,
+    "name": "Orb of Confusion",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-1.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Orb of Momentum",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-2.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Orb of Agility",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-3.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Orb of Vigor",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-4.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Orb of Retribution",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-5.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Orb of Infection",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-6.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Orb of Vitality",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-7.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Orb of Protection",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-8.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Orb of Fortune",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-9.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Orb of Despair",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-10.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pox Antidote",
+    "cost": 10,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-11.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Trophy Helmet",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "head",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-12.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "War Pick",
+    "cost": 20,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-13.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chain Mace",
+    "cost": 30,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-14.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Draining Greaves",
+    "cost": 50,
+    "count": 2,
+    "edition": "cs",
+    "slot": "legs",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-15.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Shoes of Phasing",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "legs",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-16.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Lightweight Boots",
+    "cost": 40,
+    "count": 2,
+    "edition": "cs",
+    "slot": "legs",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-17.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Bottled Moonlight",
+    "cost": 50,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-18.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Boots of Perpetuity",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "legs",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-19.1%",
+        "small": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "immune",
+        "value": "immobilize"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Curious Pendant",
+    "cost": 60,
+    "count": 2,
+    "edition": "cs",
+    "slot": "head",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-20.1%",
+        "small": true
+      }
+    ],
+    "loss": true
+  },
+  {
+    "id": 21,
+    "name": "Infrared Goggles",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "head",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-21.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Steel Helmet",
+    "cost": 30,
+    "count": 2,
+    "edition": "cs",
+    "slot": "head",
+    "minusOne": 1,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-22.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Woven Plate Armor",
+    "cost": 50,
+    "count": 2,
+    "edition": "cs",
+    "slot": "body",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-23.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mantle of Purity",
+    "cost": 20,
+    "count": 2,
+    "edition": "cs",
+    "slot": "body",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-24.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Boneclad Shawl",
+    "cost": 30,
+    "count": 2,
+    "edition": "cs",
+    "slot": "body",
+    "spent": true,
+    "slots": 2,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-25.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Silhouette Cuirass",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "body",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-26.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Translocation Device",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-27.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Alchemy Potion",
+    "cost": 20,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-28.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Intoxicating Potion",
+    "cost": 15,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-29.1%",
+        "small": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "value": 5
+      },
+      {
+        "type": "condition",
+        "value": "poison"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Iron Snare",
+    "cost": 15,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-30.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Concussion Mine",
+    "cost": 20,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-31.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Shifting Compass",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-32.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Battering Ram",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-33.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Claw Trap",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "chain-helmet",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-34.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Staff of Retribution",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-35.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Curseblood Blade",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-36.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Drakescale Shield",
+    "cost": 60,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-37.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Drakescale Dagger",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-38.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Hook Gun",
+    "cost": 45,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-39.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Moonleather Boots",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "galaxy",
+    "slot": "legs",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-40.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Spirit Libation",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "skull",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-41.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Robe of Soothing",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "leaf",
+    "slot": "body",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-42.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Resplendent Mitre",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "head",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-43.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Canister Projectile",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-44.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Chain Cannon",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "target",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-45.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Summoner's Whistle",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-46.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Nature Armlets",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "tusks",
+    "slot": "onehand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-47.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Test Tube",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "flask",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-48.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Booster Shot",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-49.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Luminous Carapace",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "crescent-sun",
+    "slot": "body",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-50.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Flaming Armor",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "ladder-axe",
+    "slot": "body",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-51.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Flaming Axe",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-52.1%",
+        "small": true
+      },
+      {
+        "type": "element",
+        "value": "fire"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Field Mortar",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "sprig",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-53.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Vipertooth Dagger",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-54.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Ghost Viper Venom",
+    "cost": 25,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-55.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Clamp Trap",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "chain-helmet",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-56.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Cleansed Voidheart",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "vortex",
+    "slot": "body",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-57.1%",
+        "small": true
+      }
+    ],
+    "effects": [
+      {
+        "type": "immune",
+        "value": "muddle"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Dizzying Tincture",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-58.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Drake's Blood",
+    "cost": 15,
+    "count": 2,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-59.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Mana Medicine",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-60.1%",
+        "small": true
+      },
+      {
+        "type": "element",
+        "value": "wild"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Ashsteel Gauntlets",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "minusOne": 2,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-61.1%",
+        "small": true
+      },
+      {
+        "type": "card",
+        "value": "round"
+      }
+    ],
+    "effects": [
+      {
+        "type": "immune",
+        "value": "disarm"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Smog Emitter",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-62.1%",
+        "small": true
+      },
+      {
+        "type": "card",
+        "value": "round"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Lucky Horseshoe",
+    "cost": 15,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-63.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Mild Kindled Tonic",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-64.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Rescue Axe",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-65.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Iron Malleus",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-66.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Pike Hook",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-67.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Explosive Tonic",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-68.1%",
+        "small": true
+      },
+      {
+        "type": "condition",
+        "value": "wound",
+        "subActions": [
+          {
+            "type": "area",
+            "value": "(1,0,target)|(0,1,target)|(1,1,target)"
+          },
+          {
+            "type": "range",
+            "value": 3,
+            "small": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Spicy Kindled Tonic",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "slots": 3,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-69.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Utility Rope",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-70.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Fireproof Helm",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "head",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-71.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Wooden Ladder",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-72.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Medical Kit",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-73.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Mild Bolstering Tonic",
+    "cost": 30,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-74.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Medallion of the Oak",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "head",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-75.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Cauterizing Knife",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-76.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Trauma Kit",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-77.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Scroll of Charisma",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-78.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Rescue Shield",
+    "cost": 45,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-79.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Scroll of Protection",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-80.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Spicy Bolstering Tonic",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-81.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Scroll of Command",
+    "cost": 60,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-82.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Sphere of Currents",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-83.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Slug Crossbow",
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-84.1%",
+        "small": true
+      },
+      {
+        "type": "area",
+        "value": "(0,0,target)|(1,0,target)",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Refined Slug Crossbow",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-85.1%",
+        "small": true
+      },
+      {
+        "type": "area",
+        "value": "(0,0,target)|(1,0,target)",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Bulwark Banner",
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-86.1%",
+        "small": true
+      },
+      {
+        "type": "card",
+        "value": "round"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Refined Bulwark Banner",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-87.1%",
+        "small": true
+      },
+      {
+        "type": "card",
+        "value": "round"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Remote Beetle",
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-88.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Refined Remote Beetle",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-89.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Blazing Boots",
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-90.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Refined Blazing Boots",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-91.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Viper Blowgun",
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-92.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Refined Viper Blowgun",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-93.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Frost Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-94.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Storm Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-95.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Inferno Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-96.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Tremor Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-97.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Brilliant Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-98.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Dark Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-99.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Wonder Stone",
+    "cost": 25,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "random": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-100.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Rockspine Bulwark",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "body",
+    "spent": true,
+    "minusOne": 3,
+    "slots": 3,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-101.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Ghostshimmer Honey",
+    "cost": 35,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-102.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Steelsilk Spinneret",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "beetle",
+    "slot": "onehand",
+    "spent": true,
+    "slots": 2,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-103.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Power Modulator",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-104.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Steam Piston Hammer",
+    "cost": 30,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-105.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Spider Climb Gloves",
+    "cost": 30,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-106.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Gravity Inversion Pads",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-107.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Delicate Model",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "small",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-108.1%",
+        "small": true
+      }
+    ],
+    "summon": {
+      "name": "Scrap Collector",
+      "health": 1,
+      "movement": 1
+    }
+  },
+  {
+    "id": 109,
+    "name": "Auscudec of the Makers",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "solo": "tools",
+    "slot": "twohand",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-109.1%",
+        "small": true
+      }
+    ],
+    "loss": true
+  },
+  {
+    "id": 110,
+    "name": "Serrated Edge",
+    "cost": 25,
+    "count": 2,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-110.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Grisly Boots",
+    "cost": 20,
+    "count": 1,
+    "edition": "cs",
+    "slot": "legs",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-111.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Terrorscale Saber",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "onehand",
+    "spent": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-112.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Terrorscale Crossblades",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "slot": "twohand",
+    "spent": true,
+    "slots": 3,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-113.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Rite of Ruin",
+    "cost": 40,
+    "count": 1,
+    "edition": "cs",
+    "solo": "bleeding-claw",
+    "slot": "small",
+    "consumed": true,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-114.1%",
+        "small": true
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Savage Cuirass",
+    "cost": 50,
+    "count": 1,
+    "edition": "cs",
+    "slot": "body",
+    "consumed": true,
+    "slots": 2,
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.items.cs-115.1%",
+        "small": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "index": "30B",
+  "name": "Fountain of Bones",
+  "edition": "cs",
+  "parent": "28",
+  "parentSections": [
+    [
+      "30A"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "cultist",
+    "living-bones",
+    "ooze"
+  ],
+  "objectives": [
+    {
+      "name": "Fountain of Bones",
+      "health": "Cx(L+8)",
+      "marker": "a"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        12
+      ],
+      "monster": [
+        {
+          "name": "cultist",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "cultist",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "type": "normal"
+        },
+        {
+          "name": "ooze",
+          "type": "normal"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

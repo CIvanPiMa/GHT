@@ -1,0 +1,224 @@
+{
+  "name": "gemstone",
+  "characterClass": "orchid",
+  "edition": "toa",
+  "handSize": 11,
+  "unlockEvent": "67",
+  "retireEvent": "68",
+  "color": "#ffd04f",
+  "spoiler": true,
+  "stats": [
+    {
+      "level": 1,
+      "health": 7
+    },
+    {
+      "level": 2,
+      "health": 8
+    },
+    {
+      "level": 3,
+      "health": 9
+    },
+    {
+      "level": 4,
+      "health": 11
+    },
+    {
+      "level": 5,
+      "health": 12
+    },
+    {
+      "level": 6,
+      "health": 13
+    },
+    {
+      "level": 7,
+      "health": 15
+    },
+    {
+      "level": 8,
+      "health": 16
+    },
+    {
+      "level": 9,
+      "health": 17
+    }
+  ],
+  "perks": [
+    {
+      "type": "remove",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus2"
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "minus1"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "shield",
+                "value": 1,
+                "effects": [
+                  {
+                    "type": "specialTarget",
+                    "value": "self"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "custom",
+                "value": "Move one character token on a Crystallize %game.characterIconColoredBg.gemstone% back one space"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "replace",
+      "count": 2,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0"
+          }
+        },
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus1",
+            "rolling": true,
+            "effects": [
+              {
+                "type": "changeType",
+                "value": "plus2",
+                "effects": [
+                  {
+                    "type": "custom",
+                    "value": "instead if the attack has %game.action.pierce%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 2,
+          "attackModifier": {
+            "type": "plus1",
+            "effects": [
+              {
+                "type": "changeType",
+                "value": "plus2",
+                "effects": [
+                  {
+                    "type": "custom",
+                    "value": "instead if you %game.characterIconColoredBg.gemstone% one space"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "add",
+      "count": 1,
+      "cards": [
+        {
+          "count": 1,
+          "attackModifier": {
+            "type": "plus0",
+            "effects": [
+              {
+                "type": "condition",
+                "value": "brittle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "count": 2,
+      "combined": true,
+      "custom": "%game.custom.perks.ignoreNegativeItem% %data.custom.toa.gemstone.1%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.toa.gemstone.2%"
+    },
+    {
+      "type": "custom",
+      "count": 1,
+      "custom": "%data.custom.toa.gemstone.3%"
+    }
+  ]
+}

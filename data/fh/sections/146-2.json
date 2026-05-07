@@ -1,0 +1,18 @@
+{
+  "index": "146.2",
+  "name": "Keep Rattusca's share",
+  "edition": "fh",
+  "parent": "90",
+  "conclusion": true,
+  "unlocks": [
+    "91"
+  ],
+  "forcedLinks": [
+    "91"
+  ],
+  "rewards": {
+    "collectiveGold": -5,
+    "battleGoals": 1,
+    "custom": "%data.section.rewards.fh.146-2%"
+  }
+}

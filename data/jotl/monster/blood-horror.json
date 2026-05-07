@@ -1,0 +1,92 @@
+{
+  "name": "blood-horror",
+  "edition": "jotl",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "disarm",
+      "immobilize",
+      "muddle",
+      "stun"
+    ],
+    "special": [
+      [
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.blood-horror.1%",
+          "small": true
+        }
+      ],
+      [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.jotl.blood-horror.2%",
+          "small": true
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "7xC",
+      "movement": 3,
+      "attack": "C-1"
+    },
+    {
+      "level": 1,
+      "health": "10xC",
+      "movement": 3,
+      "attack": "C"
+    },
+    {
+      "level": 2,
+      "health": "12xC",
+      "movement": 4,
+      "attack": "C"
+    },
+    {
+      "level": 3,
+      "health": "15xC",
+      "movement": 4,
+      "attack": "C+1"
+    },
+    {
+      "level": 4,
+      "health": "17xC",
+      "movement": 5,
+      "attack": "C+1"
+    },
+    {
+      "level": 5,
+      "health": "20xC",
+      "movement": 5,
+      "attack": "C+2"
+    },
+    {
+      "level": 6,
+      "health": "23xC",
+      "movement": 5,
+      "attack": "C+3"
+    },
+    {
+      "level": 7,
+      "health": "28xC",
+      "movement": 5,
+      "attack": "C+4"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "index": "168.2",
+  "name": "Blast the Lurkers",
+  "edition": "fh",
+  "parentSections": [
+    [
+      "114.2"
+    ]
+  ],
+  "conclusion": true,
+  "unlocks": [
+    "50"
+  ],
+  "rewards": {
+    "overlaySticker": {
+      "name": "Z",
+      "location": "F2",
+      "coordinates": {
+        "x": 1444,
+        "y": 350,
+        "width": 366,
+        "height": 288
+      }
+    },
+    "custom": "%data.section.rewards.fh.168-2%"
+  }
+}

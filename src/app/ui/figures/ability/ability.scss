@@ -1,0 +1,582 @@
+.ability {
+  width: 100%;
+  height: 100%;
+  color: var(--ght-color-white);
+  --ght-ability-color: var(--ght-color-red);
+
+  .ability-back,
+  .ability-front {
+    min-height: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3.5%;
+  }
+
+  .ability-front {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../../../assets/images/monster/abilities/monster-ability-front.png');
+      background-position: 0em -0.9em;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../../../assets/images/monster/abilities/monster-ability-front-repeat.png');
+      background-position: 0em -2.9em;
+      background-size: 100% auto;
+      background-repeat: repeat-y;
+      z-index: -1;
+    }
+
+    .ability-actions-container {
+      position: relative;
+      overflow: auto;
+      z-index: 2;
+
+      &.disabled {
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .ability-actions {
+        position: relative;
+        margin-top: 2em;
+        padding-bottom: 0.4em;
+        width: 100%;
+        min-height: 5.4em;
+        font-size: 1.7em;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+
+        ght-actions {
+          font-size: calc(1em * var(--ght-fontsize));
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .bottom-spacer {
+        display: block;
+        position: relative;
+        margin-top: 2em;
+      }
+    }
+
+    .name {
+      display: block;
+      position: absolute;
+      top: 0.2em;
+      left: 0;
+      width: 100%;
+      font-family: var(--ght-font-title);
+      font-size: 1.7em;
+      filter: var(--ght-filter-shadow);
+      text-align: center;
+    }
+
+    .initiative {
+      position: absolute;
+      font-family: var(--ght-font-title);
+      font-size: 2.4em;
+      filter: var(--ght-filter-shadow);
+      top: 1em;
+      left: 0.5em;
+      text-align: center;
+      width: 1em;
+    }
+
+    .shuffle,
+    .bottom-shuffle {
+      position: absolute;
+      bottom: 1em;
+      right: 0.5em;
+      z-index: 0;
+      filter: var(--ght-filter-white) var(--ght-filter-shadow);
+      width: 2em;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .index {
+      position: absolute;
+      font-size: 1em;
+      filter: var(--ght-filter-shadow-thin);
+      bottom: 0.5em;
+      left: 0.5em;
+    }
+
+    &.bottom-actions,
+    &.character-actions {
+      background-position: top;
+      background-attachment: local;
+      height: 100%;
+      overflow-x: unset;
+      overflow-y: auto;
+
+      &.bottom-actions::before {
+        background-position: top;
+        background-image: url('../../../../assets/images/monster/abilities/monster-ability-front-bottom.png');
+      }
+
+      &.character-actions {
+        &::before {
+          background-position: top;
+          background-color: var(--ght-ability-color);
+          background-image:
+            url('../../../../assets/images/character/abilities/character-ability-front.png'),
+            url('../../../../assets/images/character/abilities/character-ability-front-blend.png');
+          background-blend-mode: screen, luminosity;
+        }
+
+        .logo {
+          position: absolute;
+          bottom: 1.2em;
+          left: 50%;
+          width: 1.8em;
+          height: auto;
+          transform: translateX(-50%);
+          z-index: 1;
+
+          img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0.5em 0.5em 0.5em var(--ght-color-black));
+          }
+        }
+      }
+
+      .name {
+        top: 0.8em;
+      }
+
+      .initiative {
+        top: 7em;
+        left: 5.2em;
+        transform: translateX(-50%);
+      }
+
+      .level {
+        position: absolute;
+        top: 3.1em;
+        left: 9.4em;
+        width: 2.1em;
+        height: 1.6em;
+        font-size: 1.2em;
+        font-family: var(--ght-font-title);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--ght-ability-color);
+        mask-image: url('../../../../assets/images/level.svg');
+        -webkit-mask-image: url('../../../../assets/images/level.svg');
+        mask-size: 115% 170%;
+        -webkit-mask-size: 115% 170%;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: 60% 66%;
+        -webkit-mask-position: 60% 66%;
+
+        .text {
+          background: inherit;
+          background-clip: text;
+          color: transparent;
+          filter: invert(1) grayscale(1) contrast(100);
+        }
+      }
+
+      .shuffle {
+        top: 15.5em;
+        right: 3.5em;
+        bottom: initial;
+      }
+
+      .bottom-shuffle {
+        bottom: 2.3em;
+        right: 4.8em;
+      }
+
+      .index {
+        left: 14.7em;
+        bottom: 2.2em;
+      }
+
+      .ability-actions-container {
+        .ability-actions {
+          left: 1.6em;
+          width: 11.5em;
+          min-height: 6.4em;
+          max-height: 6.4em;
+          margin-top: 1.8em;
+
+          &.ability-bottom-actions {
+            top: 1.5em;
+            margin-top: 0;
+            margin-bottom: 2.2em;
+            padding-top: 0.2em;
+            padding-bottom: 0;
+          }
+        }
+
+        .bottom-spacer {
+          display: none;
+        }
+      }
+    }
+
+    ght-interactive-actions {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      z-index: 999;
+
+      &.interactive-actions-top {
+        position: absolute;
+        bottom: 16em;
+      }
+
+      &.interactive-actions-bottom {
+        position: absolute;
+        bottom: 2.5em;
+      }
+    }
+
+    .required-container {
+      position: absolute;
+      bottom: 16.5em;
+      right: 3.3em;
+      display: flex;
+
+      .label {
+        display: none;
+      }
+
+      .box {
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.2em;
+
+        span {
+          position: relative;
+          display: block;
+          height: 2em;
+          margin: 0 0.1em;
+
+          &.loss {
+            height: 1.4em;
+            margin: 0 0.2em;
+          }
+
+          img {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: auto;
+
+            &:nth-child(1) {
+              filter: var(--ght-filter-white) var(--ght-filter-shadow);
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+            }
+          }
+
+          .value {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 1.6em;
+            font-family: var(--ght-font-gh-title);
+            text-align: center;
+            color: var(--ght-color-black);
+            margin: 0;
+          }
+        }
+      }
+
+      &.bottom {
+        right: 4.6em;
+        bottom: 3em;
+      }
+    }
+  }
+
+  .ability-back {
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/monster/abilities/monster-ability-back.png');
+    z-index: 1;
+
+    .touch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      overflow: auto;
+    }
+
+    .name {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      font-family: var(--ght-font-title);
+      font-size: 1.4em;
+      filter: drop-shadow(calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) var(--ght-color-black));
+      text-align: center;
+      transform: translateY(2.9em);
+    }
+
+    &.bottom-actions,
+    &.character-actions {
+      .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: auto;
+          filter: drop-shadow(0.5em 0.5em 0.5em var(--ght-color-black));
+        }
+      }
+
+      &.bottom-actions {
+        background-image: url('../../../../assets/images/monster/abilities/monster-ability-back-botton.png');
+
+        .name {
+          top: 57.5%;
+        }
+      }
+
+      &.character-actions {
+        background-color: var(--ght-ability-color);
+        background-image:
+          url('../../../../assets/images/character/abilities/character-ability-back.png'),
+          url('../../../../assets/images/character/abilities/character-ability-back-blend.png');
+        background-blend-mode: screen, luminosity;
+
+        .name {
+          top: 0.5em;
+          bottom: initial;
+          font-size: 2em;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .confirm {
+    .revealed {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--ght-color-white);
+      font-size: 2.3em;
+      filter: drop-shadow(calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) var(--ght-color-black));
+      z-index: 2;
+
+      .text {
+        text-align: center;
+      }
+    }
+  }
+
+  &.fh {
+    .ability-front {
+      &::before {
+        background-image: url('../../../../assets/images/fh/monster/abilities/monster-ability-front.png');
+        background-position: 0em -0.6em;
+      }
+
+      &::after {
+        background-image: url('../../../../assets/images/fh/monster/abilities/monster-ability-front-repeat.png');
+      }
+
+      &.bottom-actions::before {
+        background-image: url('../../../../assets/images/monster/abilities/monster-ability-front-bottom.png');
+      }
+
+      .index {
+        bottom: 0.5em;
+        left: 0.5em;
+      }
+
+      .initiative {
+        font-size: 2.6em;
+        top: 0.8em;
+      }
+
+      &.character-actions {
+        &::before {
+          background-color: var(--ght-ability-color);
+          background-image:
+            url('../../../../assets/images/fh/character/abilities/character-ability-front.png'),
+            url('../../../../assets/images/fh/character/abilities/character-ability-front-blend.png');
+          background-blend-mode: luminosity, luminosity;
+        }
+
+        .name {
+          color: var(--ght-color-black);
+          top: 1.25em;
+          font-size: 1.6em;
+          filter: none;
+        }
+
+        .level {
+          top: 1.1em;
+          left: 0.8em;
+          font-size: 1.6em;
+          font-family: var(--ght-font-gh-title);
+          color: var(--ght-color-black);
+          mask: none;
+          background-color: transparent;
+
+          .text {
+            background: none;
+            color: var(--ght-color-black);
+            filter: none;
+          }
+        }
+
+        .initiative {
+          font-family: var(--ght-font-gh-title);
+          font-size: 2.6em;
+          top: 6.35em;
+          left: 4.8em;
+        }
+
+        .logo {
+          top: 2.4em;
+          right: 1.4em;
+          bottom: initial;
+          left: initial;
+          filter: brightness(0);
+          width: 1.5em;
+        }
+
+        .index {
+          bottom: 1.6em;
+          left: 2.8em;
+        }
+      }
+
+      .required-container {
+        bottom: 15.7em;
+        right: 2.6em;
+        overflow: hidden;
+
+        &:before {
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--ght-color-black);
+          opacity: 0.5;
+          z-index: 0;
+          border: 0.1em solid var(--ght-color-white);
+          border-top-left-radius: 0.5em;
+        }
+
+        .label {
+          display: block;
+          position: relative;
+          top: 0.1em;
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          align-items: center;
+          padding: 0.3em;
+          border-right: 0.1em solid var(--ght-color-white);
+          font-size: 1.5em;
+        }
+
+        &.bottom {
+          bottom: 2em;
+          right: 2.3em;
+        }
+      }
+    }
+
+    .ability-back {
+      background-image: url('../../../../assets/images/fh/monster/abilities/monster-ability-back.png');
+
+      &.bottom-actions {
+        background-image: url('../../../../assets/images/monster/abilities/monster-ability-back-botton.png');
+      }
+
+      &.character-actions {
+        background-color: var(--ght-ability-color);
+        background-image:
+          url('../../../../assets/images/fh/character/abilities/character-ability-back.png'),
+          url('../../../../assets/images/fh/character/abilities/character-ability-back-blend.png');
+        background-blend-mode: luminosity, luminosity;
+
+        .name {
+          color: var(--ght-color-black);
+          top: 0.4em;
+          font-size: 2.6em;
+          filter: none;
+        }
+      }
+    }
+  }
+
+  &.bb {
+    .ability-front {
+      &::before {
+        background-image: url('../../../../assets/images/bb/monster/abilities/monster-ability-front.png');
+        background-position: 0em -0.6em;
+      }
+
+      &::after {
+        background-image: url('../../../../assets/images/bb/monster/abilities/monster-ability-front-repeat.png');
+      }
+    }
+
+    .ability-back {
+      background-image: url('../../../../assets/images/bb/monster/abilities/monster-ability-back.png');
+    }
+  }
+}

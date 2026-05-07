@@ -1,0 +1,59 @@
+{
+  "ability": {
+    "Venom Shiv": "Venom Shiv"
+  },
+  "character": {
+    "gh2e": {
+      "cragheart": "Cuore di Roccia",
+      "mindthief": "Ladro Mentale",
+      "spellweaver": "Tessimagie",
+      "tinkerer": "Inventore"
+    }
+  },
+  "deck": {
+    "boss": "Boss",
+    "imp": "Imp"
+  },
+  "edition": {
+    "gh2e": {
+      "": "Gloomhaven 2ª Edizione",
+      "hint": "Al momento Gloomhaven 2a Edizione manca della maggior parte delle sezioni non legate agli scenari, così come la maggior parte delle illustrazioni."
+    }
+  },
+  "monster": {
+    "bandit-archer": "Bandito Arciere",
+    "bandit-archer-music-note2-solo": "%data.monster.bandit-archer%",
+    "bandit-scout-music-note2-solo": "%data.monster.bandit-scout%",
+    "black-imp": "Imp Nero",
+    "cave-bear": "Orso della Caverna",
+    "cave-bear-circles2-solo": "%data.monster.cave-bear%",
+    "chaos-demon": "Demone del Caos",
+    "city-archer": "Arciere Cittadino",
+    "city-guard": "Guardia Cittadina",
+    "city-guard-saw2-solo": "%data.monster.city-guard%",
+    "city-guard-sun2-solo": "%data.monster.city-guard%",
+    "cultist": "Cultista",
+    "deep-terror": "Terrore delle Profondità",
+    "earth-demon": "Demone della Terra",
+    "flame-demon": "Demone della Fiamma",
+    "forest-imp": "Imp delle Foreste",
+    "frost-demon": "Demone del Gelo",
+    "hound": "Mastino",
+    "inox-archer": "Inox Arciere",
+    "jekserah": "Jekserah",
+    "living-spirit": "Spirito Vivente",
+    "lurker-soldier": "Osservatore Soldato",
+    "night-demon": "Demone della Notte",
+    "savvas-icestorm": "Savvas Tempesta Glaciale",
+    "vermling-priest": "Vermling Sacerdote",
+    "vermling-scout": "Vermling Esploratore",
+    "wind-demon": "Demone del Vento"
+  },
+  "section": {
+    "title": {
+      "gh2e": {
+        "randomMonsterCard-558": "Selvaggio"
+      }
+    }
+  }
+}

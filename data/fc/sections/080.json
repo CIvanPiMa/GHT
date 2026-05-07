@@ -1,0 +1,36 @@
+{
+  "index": "80",
+  "edition": "fc",
+  "parent": "100",
+  "parentSections": [
+    [
+      "26"
+    ]
+  ],
+  "conclusion": true,
+  "unlocks": [
+    "106",
+    "107"
+  ],
+  "rewards": {
+    "globalAchievements": [
+      "pieces-of-an-artifact",
+      "knowledge-is-power"
+    ],
+    "chooseItem": [
+      [
+        "59-gh",
+        "112-gh"
+      ],
+      [
+        "125-gh",
+        "126-gh"
+      ]
+    ],
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"Knowledge is Power\" achievement gained, read section 27 on page 10)"
+      ]
+    }
+  }
+}

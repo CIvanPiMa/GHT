@@ -1,0 +1,97 @@
+{
+  "name": "the-cultist",
+  "edition": "cs",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "cultist",
+  "standeeShareEdition": "gh",
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "immobilize",
+      "disarm",
+      "stun"
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "7x(C+1)",
+      "movement": 2,
+      "attack": 2
+    },
+    {
+      "level": 1,
+      "health": "9x(C+1)",
+      "movement": 2,
+      "attack": 2
+    },
+    {
+      "level": 2,
+      "health": "12x(C+1)",
+      "movement": 2,
+      "attack": 2
+    },
+    {
+      "level": 3,
+      "health": "13x(C+1)",
+      "movement": 3,
+      "attack": 2,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "curse"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "health": "15x(C+1)",
+      "movement": 3,
+      "attack": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "curse"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "health": "18x(C+1)",
+      "movement": 3,
+      "attack": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "curse"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "health": "22x(C+1)",
+      "movement": 3,
+      "attack": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "curse"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "health": "25x(C+1)",
+      "movement": 3,
+      "attack": 4,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "curse"
+        }
+      ]
+    }
+  ]
+}

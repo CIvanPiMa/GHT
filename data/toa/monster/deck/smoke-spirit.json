@@ -1,0 +1,220 @@
+{
+  "name": "smoke-spirit",
+  "edition": "toa",
+  "abilities": [
+    {
+      "cardId": 698.2,
+      "initiative": 49,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.smoke-spirit.1%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 699.2,
+      "initiative": 39,
+      "shuffle": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.smoke-spirit.2%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 700.2,
+      "initiative": 21,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "pull",
+              "value": 1,
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 701.2,
+      "initiative": 54,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "area",
+              "value": "(0,1,active)|(1,0,target)|(1,1,target)|(1,2,target)"
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.smoke-spirit.3%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 702.2,
+      "initiative": 18,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.smoke-spirit.4%",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "muddle",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.toa.smoke-spirit.5%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 703.2,
+      "initiative": 45,
+      "actions": [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.smoke-spirit.6%",
+          "small": true
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesAdjacent",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cardId": 704.2,
+      "initiative": 78,
+      "actions": [
+        {
+          "type": "move",
+          "value": 2,
+          "valueType": "plus"
+        },
+        {
+          "type": "heal",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.toa.smoke-spirit.7%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "cardId": 705.2,
+      "initiative": 63,
+      "actions": [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "push",
+              "value": 1,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

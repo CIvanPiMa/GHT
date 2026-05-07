@@ -1,0 +1,158 @@
+.stats-dialog {
+  position: relative;
+  width: calc(var(--ght-unit) * 46 * var(--ght-dialog-factor));
+  display: flex;
+  flex-direction: column;
+
+  .name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--ght-font-title);
+    color: var(--ght-color-white);
+    font-size: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      font-family: var(--ght-font-text);
+      color: var(--ght-color-white);
+      font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+
+      .ally {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .stat-effect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--ght-color-white);
+    z-index: 2;
+    overflow: auto;
+    max-height: calc(var(--ght-unit) * 20 * var(--ght-dialog-factor));
+
+    .title {
+      position: sticky;
+      top: 0;
+      font-size: calc(var(--ght-unit) * 2.2 * var(--ght-dialog-factor));
+      background-image: url('../../../../../assets/images/dialog_background.png');
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      padding-bottom: calc(var(--ght-unit) * 0.2 * var(--ght-dialog-factor));
+    }
+
+    &.fh .title {
+      background-image: url('../../../../../assets/images/fh/dialog_background_fh.png');
+    }
+
+    &.modern .title {
+      background-image: url('../../../../../assets/images/modern/dialog_background_modern.png');
+    }
+
+    .stat-changes {
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: calc(var(--ght-unit) * 40 * var(--ght-dialog-factor));
+
+      .stat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+        margin: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor)) 0;
+
+        .type {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 1.5em;
+          margin-right: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+          margin-left: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        }
+
+        img {
+          height: 1.2em;
+          width: auto;
+          filter: var(--ght-filter-white);
+        }
+      }
+    }
+
+    .immunities {
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .immunity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+        width: 1.5em;
+        height: 1.5em;
+        margin: calc(var(--ght-unit) * 0.3 * var(--ght-dialog-factor));
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .deck {
+      z-index: 1;
+      cursor: pointer;
+      font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+      text-align: center;
+    }
+  }
+
+  .stats-container {
+    position: relative;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+    max-height: calc(var(--ght-unit) * 55 * var(--ght-dialog-factor));
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .stats {
+      cursor: pointer;
+      position: relative;
+      width: calc(var(--ght-unit) * 40 * var(--ght-dialog-factor));
+      height: auto;
+      margin: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+      z-index: 1;
+    }
+
+    ght-monster-stats {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: top left;
+    }
+  }
+}

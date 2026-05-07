@@ -1,0 +1,53 @@
+{
+  "index": "17",
+  "name": "Orb Extraction",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "unlocks": [
+    "18"
+  ],
+  "links": [
+    "18"
+  ],
+  "rewards": {
+    "prosperity": 2
+  },
+  "monsters": [
+    "flame-demon",
+    "frost-demon",
+    "savvas-icestorm",
+    "wind-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "H1b",
+      "initial": true,
+      "treasures": [
+        6
+      ],
+      "monster": [
+        {
+          "name": "flame-demon",
+          "type": "elite"
+        },
+        {
+          "name": "flame-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "flame-demon",
+          "player4": "normal"
+        },
+        {
+          "name": "savvas-icestorm",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

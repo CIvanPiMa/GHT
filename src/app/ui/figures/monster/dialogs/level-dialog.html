@@ -1,0 +1,38 @@
+<div class="level-dialog">
+  <span class="title">
+    <span class="name"
+      ><span [ght-label]="'data.monster.' + monster.name"></span>
+      @if (monster.isAlly) {
+        <span class="ally"><span [ght-label]="'game.ally'"></span></span>
+      }
+      @if (monster.isAllied) {
+        <span class="allied"><span [ght-label]="'game.allied'"></span></span>
+      }
+      @if (getEdition()) {
+        <span class="edition">[<span [ght-label]="'data.edition.' + getEdition()"></span>]</span>
+      }
+    </span>
+    <span [ght-label]="'game.level'"></span>
+  </span>
+  <div class="level-container">
+    <span class="item"><img src="./assets/images/status/level.svg" /></span>
+    @for (level of levels; track level) {
+      <span
+        ><a
+          class="level"
+          [ngClass]="{ current: level === gameManager.game.level, active: level === monster.level }"
+          (click)="setLevel(level)"
+          >{{ level }}</a
+        ></span
+      >
+    }
+    <span
+      class="toggle-ally"
+      [ngClass]="{ ally: monster.isAlly, allied: monster.isAllied }"
+      ght-pointer-input
+      (singleClick)="toggleAlly()"
+      (doubleClick)="toggleallied()"
+      ><img src="./assets/images/monster/enemy.png"
+    /></span>
+  </div>
+</div>

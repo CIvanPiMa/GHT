@@ -1,0 +1,65 @@
+{
+  "index": "54",
+  "name": "Lair of Horrors",
+  "flowChartGroup": "side-quests",
+  "edition": "cs",
+  "rewards": {
+    "gold": 30,
+    "reputation": 1
+  },
+  "monsters": [
+    "dark-lurker",
+    "hanging-snake"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "amAdd",
+          "value": "curse:2",
+          "scenarioEffect": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "I2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "dark-lurker",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "dark-lurker",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "hanging-snake",
+          "type": "normal"
+        },
+        {
+          "name": "hanging-snake",
+          "type": "elite"
+        },
+        {
+          "name": "hanging-snake",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

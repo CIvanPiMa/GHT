@@ -1,0 +1,21 @@
+{
+  "index": "195.2",
+  "name": "Furious Factory",
+  "edition": "fh",
+  "parent": "109",
+  "monsters": [
+    "laser-spires"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 7,
+      "initial": true,
+      "monster": [
+        {
+          "name": "laser-spires",
+          "type": "boss"
+        }
+      ]
+    }
+  ]
+}

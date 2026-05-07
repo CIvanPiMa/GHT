@@ -1,0 +1,51 @@
+{
+  "index": "3A",
+  "name": "Underground Channels",
+  "edition": "cs",
+  "parent": "2",
+  "marker": "1",
+  "monsters": [
+    "deep-terror",
+    "inox-archer",
+    "water-spirit"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "ref": "H1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "type": "normal"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "inox-archer",
+          "player4": "elite"
+        },
+        {
+          "name": "water-spirit",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

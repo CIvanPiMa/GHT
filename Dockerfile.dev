@@ -1,0 +1,13 @@
+FROM node:24-alpine AS builder
+WORKDIR /usr/src/gh-tracker
+COPY package.json ./
+RUN npm install
+EXPOSE 4200
+CMD ["npm", "start", "--", "--host", "0.0.0.0"]
+
+# docker build -t gh-tracker-dev -f Dockerfile.dev .
+# docker image prune -f
+# docker run -it --rm -p 4200:4200 \
+#   -v $(pwd):/usr/src/gh-tracker \
+#   -v /usr/src/gh-tracker/node_modules \
+#   gh-tracker-dev

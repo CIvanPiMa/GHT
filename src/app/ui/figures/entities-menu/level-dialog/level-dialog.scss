@@ -1,0 +1,79 @@
+.level-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .level-container {
+    display: grid;
+    grid-template-columns: repeat(5, calc(var(--ght-unit) * 8 * var(--ght-dialog-factor)));
+    margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+
+    &.bb {
+      grid-template-columns: repeat(3, calc(var(--ght-unit) * 8 * var(--ght-dialog-factor)));
+    }
+
+    .level {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+      width: calc(var(--ght-unit) * 7 * var(--ght-dialog-factor));
+      cursor: pointer;
+      font-family: var(--ght-font-title);
+      font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+      color: var(--ght-color-white);
+      text-shadow: var(--ght-outline);
+
+      &.old {
+        border: calc(var(--ght-unit) / 4) var(--ght-color-darkgray) solid;
+        border-radius: 100%;
+      }
+
+      &.active {
+        pointer-events: none;
+        border: calc(var(--ght-unit) / 4) var(--ght-color-white) solid;
+        border-radius: 100%;
+      }
+
+      &:hover {
+        border: calc(var(--ght-unit) / 5) var(--ght-color-gray) solid;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .char-container {
+    display: flex;
+    align-items: center;
+    margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+
+    .titles-container {
+      display: flex;
+      flex-direction: column;
+
+      .title-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .max-health {
+      right: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+    }
+  }
+
+  input.title {
+    max-width: calc(var(--ght-unit) * 20 * var(--ght-dialog-factor));
+    margin: 0 calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+    color: var(--ght-color-white);
+    background-color: var(--form-background);
+    border-width: calc(var(--ght-unit) * 0.1);
+    border-style: solid;
+    border-color: var(--ght-color-gray);
+    border-radius: calc(var(--ght-unit) * 1);
+    user-select: auto;
+    -webkit-user-select: auto;
+    font-family: var(--ght-font-text);
+    font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+  }
+}

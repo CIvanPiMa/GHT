@@ -1,0 +1,12 @@
+{
+  "index": "126.1",
+  "name": "Low Morale",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "prosperity": -1,
+    "custom": "%data.section.rewards.fh.126-1%",
+    "morale": 5
+  }
+}

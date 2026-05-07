@@ -1,0 +1,17 @@
+{
+  "index": "116.3",
+  "name": "Library Upgraded",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "unlocks": [
+    "134"
+  ],
+  "rewards": {
+    "events": [
+      "winter-road:WR-46",
+      "summer-road:SR-48"
+    ],
+    "unlockCharacter": "astral"
+  }
+}

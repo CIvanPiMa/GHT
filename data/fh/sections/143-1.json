@@ -1,0 +1,53 @@
+{
+  "index": "143.1",
+  "name": "Flotsam",
+  "edition": "fh",
+  "parent": "73",
+  "parentSections": [
+    [
+      "28.3"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "abael-herder",
+    "abael-scout",
+    "piranha-pig"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "treasures": [
+        33
+      ],
+      "monster": [
+        {
+          "name": "abael-herder",
+          "type": "elite"
+        },
+        {
+          "name": "abael-herder",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "abael-scout",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "piranha-pig",
+          "type": "normal"
+        },
+        {
+          "name": "piranha-pig",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

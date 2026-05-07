@@ -1,0 +1,1646 @@
+{
+  "name": "diviner",
+  "edition": "fc",
+  "character": true,
+  "abilities": [
+    {
+      "name": "Peer into Battle",
+      "cardId": 574,
+      "level": 1,
+      "initiative": 82,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.574.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.574.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "heal",
+          "value": 1,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesAffect",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "regenerate",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "light"
+        }
+      ]
+    },
+    {
+      "name": "Anticipate Intricacies",
+      "cardId": 575,
+      "level": 1,
+      "initiative": 79,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.575.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.575.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "condition",
+          "value": "curse",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "dark"
+        }
+      ]
+    },
+    {
+      "name": "Protective Aura",
+      "cardId": 576,
+      "level": 1,
+      "initiative": 13,
+      "actions": [
+        {
+          "type": "shield",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesRangeAffect:2 %game.enhancement.circle%",
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": 0,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light"
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.576.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.576.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clairvoyance",
+      "cardId": 577,
+      "level": 1,
+      "initiative": 8,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.577.1%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "dark"
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.577.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.577.3%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Otherworldly Journey",
+      "cardId": 578,
+      "level": 1,
+      "initiative": 34,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.578.1%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ],
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "element",
+          "value": "light",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.578.2%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.578.3%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ray of Light",
+      "cardId": 579,
+      "level": 1,
+      "initiative": 48,
+      "actions": [
+        {
+          "type": "heal",
+          "value": 4,
+          "enhancementTypes": [
+            "diamond_plus",
+            "square"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "allyAffectRange:3",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "light"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 2
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "range",
+              "value": 2,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dimensional Transfer",
+      "cardId": 580,
+      "level": 1,
+      "initiative": 57,
+      "actions": [
+        {
+          "type": "concatenation",
+          "value": "and:2",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "invisible"
+            },
+            {
+              "type": "condition",
+              "value": "stun"
+            },
+            {
+              "type": "specialTarget",
+              "value": "enemyAllyRange:3 %game.enhancement.circle%",
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "dark"
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "element",
+          "value": "dark",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.580.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.580.2%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Void Snare",
+      "cardId": 581,
+      "level": 1,
+      "initiative": 25,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.581.1%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.581.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 1,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "value": "experience:1"
+        }
+      ]
+    },
+    {
+      "name": "Cursed Ground",
+      "cardId": 582,
+      "level": 1,
+      "initiative": 17,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.582.1%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.582.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "loot",
+          "value": 1
+        },
+        {
+          "type": "condition",
+          "value": "muddle",
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "target",
+              "value": 2,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bad Omen",
+      "cardId": 583,
+      "level": "X",
+      "initiative": 66,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.583.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "persistent"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "card",
+              "value": "slot"
+            },
+            {
+              "type": "card",
+              "value": "slotXp:1"
+            },
+            {
+              "type": "concatenationSpacer",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.583.2%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.583.3%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ],
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inspiration from Beyond",
+      "cardId": 584,
+      "level": "X",
+      "initiative": 23,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.584.1%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.584.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "heal",
+          "value": 1,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "regenerate",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Duality Shards",
+      "cardId": 585,
+      "level": "X",
+      "initiative": 39,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "push",
+              "value": 1,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "light"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "range",
+              "value": 4,
+              "small": true
+            },
+            {
+              "type": "pull",
+              "value": 1,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "dark"
+        }
+      ]
+    },
+    {
+      "name": "Revitalizing Fount",
+      "cardId": 586,
+      "level": 2,
+      "initiative": 21,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.586.1%",
+          "small": true
+        },
+        {
+          "type": "heal",
+          "value": 4,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.586.2%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "shield",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.586.2%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "concatenation",
+          "value": 0,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            },
+            {
+              "type": "card",
+              "value": "experience:2"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.586.1%",
+          "small": true
+        },
+        {
+          "type": "pull",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.586.3%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gift of the Void",
+      "cardId": 587,
+      "level": 2,
+      "initiative": 72,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "strengthen",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "allyAffectRange:2",
+              "small": true
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "value": "bless",
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesRangeAffect:2",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.587.1%",
+          "small": true
+        },
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle",
+            "square"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.587.2%",
+          "small": true
+        }
+      ]
+    },
+    {
+      "name": "Envision the Course",
+      "cardId": 588,
+      "level": 3,
+      "initiative": 80,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.588.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.588.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "summon",
+          "value": "summonData",
+          "valueObject": {
+            "name": "ghost-falcons",
+            "health": "4",
+            "attack": "2",
+            "movement": "3",
+            "count": 2,
+            "enhancements": [
+              "heal",
+              "move",
+              "attack"
+            ],
+            "action": {
+              "type": "custom",
+              "value": "%game.action.fly%"
+            }
+          },
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:2"
+            },
+            {
+              "type": "card",
+              "value": "persistent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Call of the Nether",
+      "cardId": 589,
+      "level": 3,
+      "initiative": 43,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.589.1%",
+          "small": true
+        },
+        {
+          "type": "element",
+          "value": "dark",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "invisible",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "poison",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.589.2%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "dark"
+        }
+      ]
+    },
+    {
+      "name": "Preordain the Path",
+      "cardId": 590,
+      "level": 4,
+      "initiative": 87,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.590.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "move",
+              "value": 2,
+              "enhancementTypes": [
+                "circle",
+                "square"
+              ]
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.590.2%"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "value": "experience:1"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.590.3%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.590.4%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cleansing Rite",
+      "cardId": 591,
+      "level": 4,
+      "initiative": 62,
+      "actions": [
+        {
+          "type": "heal",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesRangeAffect:2",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.591.1%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomLoss": true,
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.591.2%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.591.3%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light"
+            },
+            {
+              "type": "card",
+              "value": "experience:2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seal Their Fate",
+      "cardId": 592,
+      "level": 5,
+      "initiative": 37,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.592.1%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:2"
+            },
+            {
+              "type": "card",
+              "value": "persistent"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 3,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "curse",
+              "small": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dimensional Divide",
+      "cardId": 593,
+      "level": 5,
+      "initiative": 13,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.593.1%",
+          "small": true
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.593.2%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.593.3%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "shield",
+          "value": 1,
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesRangeAffect:2",
+              "small": true
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enfeebling Hex",
+      "cardId": 594,
+      "level": 6,
+      "initiative": 52,
+      "lost": true,
+      "loss": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.594.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.594.2%",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "condition",
+          "value": "muddle",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemies",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.594.3%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "dark"
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            },
+            {
+              "type": "card",
+              "value": "round"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Careful Attunement",
+      "cardId": 595,
+      "level": 6,
+      "initiative": 7,
+      "lost": true,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.595.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "grid",
+              "value": 2,
+              "subActions": [
+                {
+                  "type": "concatenation",
+                  "value": "",
+                  "subActions": [
+                    {
+                      "type": "element",
+                      "value": "wild",
+                      "valueType": "minus"
+                    },
+                    {
+                      "type": "elementHalf",
+                      "value": "light:dark",
+                      "valueType": "minus"
+                    }
+                  ]
+                },
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.595.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "move",
+          "value": 4,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.595.3%",
+          "small": true,
+          "enhancementTypes": [
+            "circle"
+          ]
+        },
+        {
+          "type": "card",
+          "value": "round"
+        }
+      ]
+    },
+    {
+      "name": "Curative Flux",
+      "cardId": 596,
+      "level": 7,
+      "initiative": 40,
+      "actions": [
+        {
+          "type": "heal",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "selfAlliesAffect",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "regenerate",
+              "small": true
+            },
+            {
+              "type": "element",
+              "value": "light"
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "condition",
+          "value": "stun",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "enemiesRange:3",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.596.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ethereal Vortex",
+      "cardId": 597,
+      "level": 7,
+      "initiative": 59,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.597.1%",
+          "small": true
+        },
+        {
+          "type": "attack",
+          "value": 2,
+          "enhancementTypes": [
+            "diamond"
+          ],
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.597.2%",
+              "small": true
+            },
+            {
+              "type": "pierce",
+              "value": 2,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "curse",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.597.3%",
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "move",
+              "value": 3
+            },
+            {
+              "type": "card",
+              "value": "experience:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deep Contemplation",
+      "cardId": 598,
+      "level": 8,
+      "initiative": 91,
+      "actions": [
+        {
+          "type": "attack",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "area",
+              "value": "(0,1,enhance)|(1,0,target)|(1,1,target)|(1,2,target)|(2,0,enhance)|(2,1,target)|(2,2,enhance)",
+              "enhancementTypes": [
+                "hex",
+                "square",
+                "hex"
+              ]
+            },
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "immobilize",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "wild",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark"
+            }
+          ]
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.598.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.598.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Anguish and Salvation",
+      "cardId": 599,
+      "level": 8,
+      "initiative": 21,
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 3,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "range",
+              "value": 4,
+              "small": true,
+              "enhancementTypes": [
+                "circle"
+              ]
+            },
+            {
+              "type": "specialTarget",
+              "value": "alliesAffect",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "value": "round"
+        }
+      ],
+      "bottomActions": [
+        {
+          "type": "heal",
+          "value": 6,
+          "enhancementTypes": [
+            "diamond_plus"
+          ],
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "allyAffect",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "wild",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "value": "experience:1"
+        }
+      ]
+    },
+    {
+      "name": "Hand of Destiny",
+      "cardId": 600,
+      "level": 9,
+      "initiative": 96,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.600.1%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "elementHalf",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.600.2%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomLoss": true,
+      "bottomActions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.600.3%",
+          "small": true,
+          "subActions": [
+            {
+              "type": "element",
+              "value": "light:dark",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "custom",
+                  "value": "%data.custom.fc.diviner.abilities.600.4%",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Planar Fissure",
+      "cardId": 601,
+      "level": 9,
+      "initiative": 75,
+      "actions": [
+        {
+          "type": "custom",
+          "value": "%data.custom.fc.diviner.abilities.601.1%",
+          "small": true
+        },
+        {
+          "type": "attack",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.fc.diviner.abilities.601.2%",
+              "small": true
+            },
+            {
+              "type": "condition",
+              "value": "muddle",
+              "small": true
+            }
+          ]
+        }
+      ],
+      "bottomLost": true,
+      "bottomActions": [
+        {
+          "type": "summon",
+          "value": "summonData",
+          "valueObject": {
+            "name": "twilight-archon",
+            "health": "9",
+            "attack": "2",
+            "movement": "3",
+            "count": 1,
+            "enhancements": [
+              "heal",
+              "move",
+              "attack"
+            ],
+            "action": {
+              "type": "condition",
+              "value": "curse",
+              "small": true,
+              "subActions": [
+                {
+                  "type": "elementHalf",
+                  "value": "light:dark"
+                }
+              ]
+            }
+          },
+          "small": true
+        },
+        {
+          "type": "concatenation",
+          "value": "",
+          "subActions": [
+            {
+              "type": "card",
+              "value": "experience:2"
+            },
+            {
+              "type": "card",
+              "value": "persistent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

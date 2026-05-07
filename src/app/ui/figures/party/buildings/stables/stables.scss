@@ -1,0 +1,149 @@
+.stables-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--ght-color-white);
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--ght-font-title);
+    font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .capacity {
+      margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+
+      .used.full {
+        color: var(--ght-color-yellow);
+      }
+
+      .used.warning {
+        color: var(--ght-color-red);
+      }
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ght-color-white);
+      margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    }
+  }
+
+  .pet-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor)) 0;
+    min-height: calc(var(--ght-unit) * 40.5 * var(--ght-dialog-factor));
+
+    .empty {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--ght-font-text);
+      font-size: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+      color: var(--ght-color-yellow);
+    }
+
+    .pet {
+      position: relative;
+      margin: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+      width: calc(var(--ght-unit) * 27 * var(--ght-dialog-factor));
+      height: calc(var(--ght-unit) * 40.5 * var(--ght-dialog-factor));
+
+      ght-pet-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: calc(var(--ght-unit) * 0.35 * var(--ght-dialog-factor)) solid transparent;
+        border-radius: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        overflow: hidden;
+
+        &.unavailable {
+          cursor: initial;
+          border-color: var(--ght-color-darkgray);
+          filter: grayscale(0.7);
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+
+        &.edit {
+          cursor: initial;
+        }
+
+        &.selectable {
+          cursor: pointer;
+        }
+
+        &.selected {
+          border-color: var(--ght-color-green);
+          opacity: 1;
+        }
+      }
+
+      .toggle-active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+      }
+
+      input.name {
+        position: absolute;
+        top: calc(var(--ght-unit) * 6.2 * var(--ght-dialog-factor));
+        left: calc(var(--ght-unit) * 5.35 * var(--ght-dialog-factor));
+        width: calc(var(--ght-unit) * 21 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 2.3 * var(--ght-dialog-factor));
+        color: var(--ght-color-white);
+        font-family: var(--ght-font-fh-extra);
+        filter: var(--ght-filter-outline-thin);
+        font-size: calc(var(--ght-unit) * 1.6 * var(--ght-dialog-factor));
+      }
+
+      .button-remove {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        top: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+        justify-content: center;
+        align-items: center;
+        width: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+        color: var(--ght-filter-white) var(--ght-filter-shadow);
+
+        .ght-svg {
+          filter: var(--ght-filter-white) var(--ght-filter-shadow);
+        }
+
+        &:hover .ght-svg {
+          filter: var(--ght-filter-red) var(--ght-filter-shadow);
+        }
+      }
+
+      .button-lost {
+        z-index: 1;
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        bottom: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+        right: calc(var(--ght-unit) * 1.2 * var(--ght-dialog-factor));
+        width: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+        height: calc(var(--ght-unit) * 3.5 * var(--ght-dialog-factor));
+      }
+    }
+  }
+}

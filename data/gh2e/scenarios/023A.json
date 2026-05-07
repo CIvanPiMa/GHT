@@ -1,0 +1,60 @@
+{
+  "index": "23A",
+  "name": "Gloomhaven Square A (Demon Allies)",
+  "flowChartGroup": "demons",
+  "edition": "gh2e",
+  "monsters": [
+    "cultist",
+    "earth-demon",
+    "living-bones",
+    "living-corpse",
+    "night-demon"
+  ],
+  "allies": [
+    "earth-demon",
+    "night-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "monster": [
+        {
+          "name": "cultist",
+          "type": "elite"
+        },
+        {
+          "name": "earth-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "type": "normal"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "living-corpse",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-corpse",
+          "player4": "normal"
+        },
+        {
+          "name": "night-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

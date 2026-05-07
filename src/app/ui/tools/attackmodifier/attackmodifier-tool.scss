@@ -1,0 +1,28 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  ght-header {
+    z-index: 2;
+  }
+}
+
+.characters {
+  display: flex;
+  overflow: auto;
+
+  .character {
+    display: flex;
+    flex-direction: column;
+
+    ght-attackmodifier {
+      width: 300px;
+      min-width: 300px;
+      height: 200px;
+      min-height: 200px;
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div #levelButton class="level-status">
+  @if (!gameManager.bbRules()) {
+    <div class="values" (click)="open()">
+      <span class="level" [ght-label]="'game.level'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" src="./assets/images/level.svg" /> {{ level }}</span
+      >
+      <span class="loot" [ght-label]="'game.level.loot'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" [src]="'./assets/images' + (settingsManager.settings.fhStyle ? '/fh' : '') + '/loot.svg'" /> x{{ loot }}</span
+      >
+      <span class="trap" [ght-label]="'game.level.trap'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" src="./assets/images/trap.svg" /> {{ trap }}</span
+      >
+      <span class="experience" [ght-label]="'game.level.experience'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" src="./assets/images/experience.svg" /> +{{ experience }}</span
+      >
+      <span class="terrain" [ght-label]="'game.level.hazardousTerrain'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" src="./assets/images/terrain.svg" />
+        <span>{{ hazardousTerrain }}</span>
+      </span>
+    </div>
+  }
+
+  @if (gameManager.bbRules()) {
+    <div class="values" (click)="open()">
+      <span [ght-label]="'game.level.bb.monsterDifficulty'" [ght-label-attribute]="'title'"
+        ><img class="ght-svg" src="./assets/images/bb/monster.svg" />
+        <span [ght-label]="'game.level.bb.monsterDifficulty.' + monsterDifficulty"></span>
+      </span>
+    </div>
+  }
+</div>

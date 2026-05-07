@@ -1,0 +1,60 @@
+{
+  "index": "43A",
+  "name": "Altars of Confusion",
+  "edition": "cs",
+  "parent": "38",
+  "parentSections": [
+    [
+      "42B"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "black-imp",
+    "night-demon",
+    "stone-golem"
+  ],
+  "objectives": [
+    {
+      "name": "Altar of Disorientation",
+      "health": "Cx(L+4)",
+      "marker": "b"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "black-imp",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "black-imp",
+          "player4": "elite"
+        },
+        {
+          "name": "night-demon",
+          "type": "elite"
+        },
+        {
+          "name": "stone-golem",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

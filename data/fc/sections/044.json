@@ -1,0 +1,20 @@
+{
+  "index": "44",
+  "name": "Aiding Xangroth",
+  "edition": "fc",
+  "parent": "108",
+  "blockedSections": [
+    "37",
+    "101"
+  ],
+  "monsters": [
+    "valrath-commander",
+    "valrath-savage",
+    "valrath-tracker"
+  ],
+  "allies": [
+    "valrath-commander",
+    "valrath-savage",
+    "valrath-tracker"
+  ]
+}

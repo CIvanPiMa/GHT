@@ -1,0 +1,52 @@
+{
+  "index": "28",
+  "name": "Fountain of Bones",
+  "flowChartGroup": "tainted",
+  "edition": "cs",
+  "unlocks": [
+    "29"
+  ],
+  "rewards": {
+    "battleGoals": 1
+  },
+  "monsters": [
+    "living-bones",
+    "ooze"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "E1b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "living-bones",
+          "type": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "living-bones",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ooze",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

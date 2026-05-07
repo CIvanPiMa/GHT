@@ -1,0 +1,89 @@
+{
+  "index": "32",
+  "name": "Flaming Caravel",
+  "edition": "fc",
+  "parent": "98",
+  "marker": "b",
+  "monsters": [
+    "bandit-archer",
+    "bandit-guard",
+    "spitting-drake"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "marker": "a",
+            "name": "Ship"
+          },
+          "type": "damage",
+          "value": "1"
+        },
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "marker": "b",
+            "name": "Ship"
+          },
+          "type": "damage",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "98",
+          "index": 0,
+          "section": false
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "ref": "B3a",
+      "initial": true,
+      "treasures": [
+        79
+      ],
+      "monster": [
+        {
+          "name": "bandit-archer",
+          "player2": "elite",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "type": "normal"
+        },
+        {
+          "name": "spitting-drake",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

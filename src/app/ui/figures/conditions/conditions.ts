@@ -1,0 +1,409 @@
+import { NgClass } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  EventEmitter,
+  HostListener,
+  inject,
+  Input,
+  OnInit,
+  Output
+} from '@angular/core';
+import { GameManager, gameManager } from 'src/app/game/businesslogic/GameManager';
+import { GhsManager } from 'src/app/game/businesslogic/GhsManager';
+import { SettingsManager, settingsManager } from 'src/app/game/businesslogic/SettingsManager';
+import { Character } from 'src/app/game/model/Character';
+import { Condition, ConditionName, ConditionType, EntityCondition, EntityConditionState } from 'src/app/game/model/data/Condition';
+import { MonsterType } from 'src/app/game/model/data/MonsterType';
+import { Entity } from 'src/app/game/model/Entity';
+import { Figure } from 'src/app/game/model/Figure';
+import { MonsterEntity } from 'src/app/game/model/MonsterEntity';
+import { ObjectiveContainer } from 'src/app/game/model/ObjectiveContainer';
+import { ObjectiveEntity } from 'src/app/game/model/ObjectiveEntity';
+import { Summon } from 'src/app/game/model/Summon';
+import { GhsTooltipDirective } from 'src/app/ui/helper/tooltip/tooltip';
+import { TrackUUIDPipe } from 'src/app/ui/helper/trackUUID';
+
+@Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [NgClass, GhsTooltipDirective, TrackUUIDPipe],
+  selector: 'ght-conditions',
+  templateUrl: './conditions.html',
+  styleUrls: ['./conditions.scss']
+})
+export class ConditionsComponent implements OnInit {
+  private ghsManager = inject(GhsManager);
+
+  private cdr = inject(ChangeDetectorRef);
+
+  @Input() entityConditions!: EntityCondition[];
+  @Input() immunities!: ConditionName[];
+  @Input() entity: Entity | undefined;
+  @Input() entities!: Entity[];
+  @Input() figure: Figure | undefined;
+  @Input() type!: string;
+  @Input() columns: number = 3;
+  @Input() empower: boolean = false;
+  @Input() enfeeble: boolean = false;
+  @Output('conditionChange') conditionChange: EventEmitter<EntityCondition[]> = new EventEmitter<EntityCondition[]>();
+
+  gameManager: GameManager = gameManager;
+  settingsManager: SettingsManager = settingsManager;
+  ConditionType = ConditionType;
+
+  conditions: Condition[] = [];
+  conditionSeparator: number[] = [];
+
+  monsterType: MonsterType | boolean = false;
+
+  permanentEnabled: boolean = false;
+  roundExpireEnabled: boolean = false;
+  expireEnabled: boolean = false;
+  immunityEnabled: boolean = false;
+  timeout: any;
+  numberStore: number = 0;
+
+  constructor() {
+    this.ghsManager.uiChangeEffect(() => this.initializeConditions());
+  }
+
+  ngOnInit(): void {
+    this.initializeConditions();
+    if (this.entities) {
+      const types = this.entities
+        .map((entity) => entity instanceof MonsterEntity && entity.type)
+        .filter((type, index, self) => type && self.indexOf(type) === index);
+      if (types.length === 1) {
+        this.monsterType = types[0];
+      }
+
+      if (!this.type) {
+        if (this.entities.every((entity) => entity instanceof Character)) {
+          this.type = 'character';
+        } else if (this.entities.every((entity) => entity instanceof MonsterEntity || entity instanceof Summon)) {
+          this.type = 'monster';
+        } else if (this.entities.every((entity) => entity instanceof ObjectiveEntity)) {
+          this.type = 'objective';
+        }
+      }
+    }
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeyPress(event: KeyboardEvent) {
+    if (settingsManager.settings.keyboardShortcuts && event.key in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']) {
+      const keyNumber = +event.key;
+      if (this.timeout) {
+        clearTimeout(this.timeout);
+        const combined: number = this.numberStore * 10 + keyNumber;
+        this.numberStore = combined < this.conditions.length + 3 ? combined : 1;
+        this.selectCondition();
+      } else if (keyNumber > 0 && keyNumber * 10 <= this.conditions.length + 3) {
+        this.numberStore = keyNumber;
+        this.timeout = setTimeout(() => {
+          this.selectCondition();
+          this.cdr.markForCheck();
+        }, 1000);
+      } else {
+        this.numberStore = keyNumber === 0 ? 10 : keyNumber;
+        this.selectCondition();
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+
+  selectCondition() {
+    const index = this.numberStore;
+    if (!(this.figure instanceof ObjectiveContainer) || this.figure.escort) {
+      let condition: Condition | undefined;
+      if (index <= this.conditions.length) {
+        condition = this.conditions[index - 1];
+      } else if (index === this.conditions.length + 1) {
+        this.permanentEnabled = !this.permanentEnabled;
+        this.immunityEnabled = false;
+      } else if (index === this.conditions.length + 2) {
+        this.immunityEnabled = !this.immunityEnabled;
+        this.permanentEnabled = false;
+      }
+      if (
+        condition &&
+        (!this.isImmune(condition.name) ||
+          (this.immunityEnabled &&
+            !!this.entity &&
+            !!this.figure &&
+            !gameManager.entityManager.isImmune(this.entity, this.figure, condition.name, true)))
+      ) {
+        this.toggleCondition(condition);
+      }
+    }
+    this.timeout = undefined;
+    this.numberStore = -1;
+  }
+
+  initializeConditions() {
+    this.conditions = [];
+    this.conditionSeparator = [];
+    let negativeConditions: Condition[] = [];
+    negativeConditions.push(...gameManager.conditionsForTypes('standard', 'negative', this.type));
+    negativeConditions.push(...gameManager.conditionsForTypes('upgrade', 'negative', this.type));
+    negativeConditions.push(...gameManager.conditionsForTypes('stack', 'negative', this.type));
+    negativeConditions = negativeConditions.filter((c, i, s) => s.map((co) => co.name).indexOf(c.name) === i);
+
+    if (negativeConditions.length) {
+      this.conditions.push(...negativeConditions);
+    }
+    let positiveConditions: Condition[] = [];
+    positiveConditions.push(...gameManager.conditionsForTypes('standard', 'positive', this.type));
+    positiveConditions.push(...gameManager.conditionsForTypes('upgrade', 'positive', this.type));
+    positiveConditions.push(...gameManager.conditionsForTypes('stack', 'positive', this.type));
+    positiveConditions = positiveConditions.filter((c, i, s) => s.map((co) => co.name).indexOf(c.name) === i);
+
+    if (positiveConditions.length) {
+      this.conditionSeparator.push(this.conditions.length - 1);
+      this.conditions.push(...positiveConditions);
+    }
+
+    let neutralConditions: Condition[] = [];
+    neutralConditions.push(...gameManager.conditionsForTypes('standard', 'neutral', this.type));
+    neutralConditions.push(...gameManager.conditionsForTypes('upgrade', 'neutral', this.type));
+    neutralConditions.push(...gameManager.conditionsForTypes('stack', 'neutral', this.type));
+    neutralConditions = neutralConditions.filter((c, i, s) => s.map((co) => co.name).indexOf(c.name) === i);
+
+    if (neutralConditions.length) {
+      this.conditionSeparator.push(this.conditions.length - 1);
+      this.conditions.push(...neutralConditions);
+    }
+
+    if (this.immunityEnabled) {
+      this.conditionSeparator.push(this.conditions.length - 1);
+      this.conditions.push(new Condition(ConditionName.curse));
+      if (this.enfeeble) {
+        this.conditions.push(new Condition(ConditionName.enfeeble));
+      }
+      this.conditions.push(new Condition(ConditionName.bless));
+      if (this.empower) {
+        this.conditions.push(new Condition(ConditionName.empower));
+      }
+    }
+  }
+
+  hasCondition(condition: Condition, permanent: boolean = false): boolean {
+    if (this.entityConditions) {
+      return this.entityConditions.some(
+        (entityCondition) =>
+          entityCondition.name === condition.name &&
+          entityCondition.state !== EntityConditionState.removed &&
+          !entityCondition.expired &&
+          (!this.permanentEnabled || ((permanent || this.permanentEnabled) && entityCondition.permanent))
+      );
+    } else if (this.entity) {
+      return gameManager.entityManager.hasCondition(this.entity, condition, permanent || this.permanentEnabled);
+    } else {
+      return this.entities.every((entity) => gameManager.entityManager.hasCondition(entity, condition, permanent || this.permanentEnabled));
+    }
+  }
+
+  isImmune(conditionName: ConditionName, ignoreManual: boolean = false): boolean {
+    let immune: boolean = false;
+
+    if (this.immunities && !ignoreManual) {
+      immune = this.immunities.includes(conditionName);
+    }
+
+    if (!immune) {
+      if (!!this.entity && !!this.figure) {
+        immune = gameManager.entityManager.isImmune(this.entity, this.figure, conditionName, true);
+      } else if (this.entities && !!this.figure) {
+        immune = this.entities.every(
+          (entity) => !!this.figure && gameManager.entityManager.isImmune(entity, this.figure, conditionName, true)
+        );
+      }
+    }
+
+    return immune;
+  }
+
+  isPermanent(conditionName: ConditionName): boolean {
+    if (this.entityConditions) {
+      return this.entityConditions.some(
+        (entityCondition) => entityCondition.name === conditionName && entityCondition.permanent && !entityCondition.expired
+      );
+    }
+
+    return false;
+  }
+
+  isRoundExpire(conditionName: ConditionName): boolean {
+    if (this.entityConditions) {
+      return this.entityConditions.some(
+        (entityCondition) =>
+          entityCondition.name === conditionName && entityCondition.state === EntityConditionState.roundExpire && !entityCondition.expired
+      );
+    }
+
+    return false;
+  }
+
+  isExpire(conditionName: ConditionName): boolean {
+    if (this.entityConditions) {
+      return this.entityConditions.some(
+        (entityCondition) =>
+          entityCondition.name === conditionName && entityCondition.state === EntityConditionState.expire && !entityCondition.expired
+      );
+    }
+
+    return false;
+  }
+
+  inc(condition: Condition) {
+    if (condition.name === ConditionName.plague && condition.value === 3) {
+      return;
+    }
+
+    condition.value = this.getValue(condition) + 1;
+    this.checkUpdate(condition);
+
+    this.conditionChange.emit(this.entityConditions);
+  }
+
+  dec(condition: Condition) {
+    condition.value = this.getValue(condition) - 1;
+    if (condition.value < 1) {
+      condition.value = 1;
+    }
+    this.checkUpdate(condition);
+
+    this.conditionChange.emit(this.entityConditions);
+  }
+
+  getValue(condition: Condition): number {
+    const entityCondition = this.entityConditions.find(
+      (entityCondition) => entityCondition.name === condition.name && !entityCondition.expired
+    );
+    if (entityCondition) {
+      return entityCondition.value;
+    }
+    return condition.value;
+  }
+
+  checkUpdate(condition: Condition) {
+    const entityCondition = this.entityConditions.find(
+      (entityCondition) => entityCondition.name === condition.name && !entityCondition.expired
+    );
+    if (entityCondition) {
+      entityCondition.value = condition.value;
+    }
+  }
+
+  toggleCondition(condition: Condition, permanent: boolean = false) {
+    if (this.immunityEnabled && !permanent) {
+      if (!this.immunities.includes(condition.name)) {
+        this.immunities.push(condition.name);
+      } else {
+        this.immunities.splice(this.immunities.indexOf(condition.name), 1);
+      }
+    } else if (this.roundExpireEnabled && !permanent) {
+      let entityCondition: EntityCondition | undefined = this.entityConditions.find(
+        (entityCondition) => entityCondition.name === condition.name && !entityCondition.permanent
+      );
+      if (entityCondition) {
+        if (entityCondition.state === EntityConditionState.roundExpire) {
+          entityCondition.state = EntityConditionState.new;
+          entityCondition.lastState = EntityConditionState.normal;
+        } else {
+          entityCondition.state = EntityConditionState.roundExpire;
+          entityCondition.lastState = EntityConditionState.normal;
+        }
+        entityCondition.expired = false;
+      } else {
+        entityCondition = new EntityCondition(condition.name, condition.value);
+        entityCondition.state = EntityConditionState.roundExpire;
+        entityCondition.lastState = EntityConditionState.normal;
+        this.entityConditions.push(entityCondition);
+      }
+    } else if (this.expireEnabled && !permanent) {
+      let entityCondition: EntityCondition | undefined = this.entityConditions.find(
+        (entityCondition) => entityCondition.name === condition.name && !entityCondition.permanent
+      );
+      if (entityCondition) {
+        if (entityCondition.state === EntityConditionState.expire) {
+          entityCondition.state = EntityConditionState.new;
+          entityCondition.lastState = EntityConditionState.normal;
+        } else {
+          entityCondition.state = EntityConditionState.expire;
+          entityCondition.lastState = EntityConditionState.normal;
+        }
+        entityCondition.expired = false;
+      } else {
+        entityCondition = new EntityCondition(condition.name, condition.value);
+        entityCondition.state = EntityConditionState.expire;
+        entityCondition.lastState = EntityConditionState.normal;
+        this.entityConditions.push(entityCondition);
+      }
+    } else {
+      if (this.hasCondition(condition, permanent || this.permanentEnabled)) {
+        const entityCondition: EntityCondition | undefined = this.entityConditions.find(
+          (entityCondition) => entityCondition.name === condition.name && (!permanent || entityCondition.permanent)
+        );
+        if (entityCondition) {
+          entityCondition.expired = true;
+          entityCondition.lastState = entityCondition.state;
+          entityCondition.state = EntityConditionState.removed;
+        }
+      } else {
+        let entityCondition: EntityCondition | undefined = this.entityConditions.find(
+          (entityCondition) => entityCondition.name === condition.name && (!permanent || entityCondition.permanent)
+        );
+
+        if (!entityCondition) {
+          entityCondition = new EntityCondition(condition.name, condition.value);
+          entityCondition.lastState = entityCondition.state;
+          entityCondition.state = EntityConditionState.new;
+          this.entityConditions.push(entityCondition);
+        } else {
+          entityCondition.expired = false;
+          entityCondition.lastState = entityCondition.state;
+          entityCondition.state = EntityConditionState.new;
+        }
+        entityCondition.permanent = permanent || this.permanentEnabled;
+      }
+
+      this.conditionChange.emit(this.entityConditions);
+    }
+  }
+
+  togglePermanentEnabled() {
+    this.permanentEnabled = !this.permanentEnabled;
+    this.roundExpireEnabled = false;
+    this.expireEnabled = false;
+    this.immunityEnabled = false;
+    this.initializeConditions();
+  }
+
+  toggleRoundExpireEnabled() {
+    this.roundExpireEnabled = !this.roundExpireEnabled;
+    this.permanentEnabled = false;
+    this.immunityEnabled = false;
+    this.expireEnabled = false;
+    this.initializeConditions();
+  }
+
+  toggleExpireEnabled() {
+    this.expireEnabled = !this.expireEnabled;
+    this.roundExpireEnabled = false;
+    this.permanentEnabled = false;
+    this.immunityEnabled = false;
+    this.initializeConditions();
+  }
+
+  toggleImmunityEnabled() {
+    this.immunityEnabled = !this.immunityEnabled;
+    this.roundExpireEnabled = false;
+    this.permanentEnabled = false;
+    this.expireEnabled = false;
+    this.initializeConditions();
+  }
+}

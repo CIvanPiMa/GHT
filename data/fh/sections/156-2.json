@@ -1,0 +1,56 @@
+{
+  "index": "156.2",
+  "name": "Raised by Wolves",
+  "edition": "fh",
+  "parent": "112",
+  "parentSections": [
+    [
+      "97.1"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "burrowing-blade",
+    "chaos-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        25
+      ],
+      "monster": [
+        {
+          "name": "burrowing-blade",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "burrowing-blade",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "chaos-demon",
+          "type": "elite"
+        },
+        {
+          "name": "chaos-demon",
+          "type": "elite"
+        },
+        {
+          "name": "chaos-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "chaos-demon",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

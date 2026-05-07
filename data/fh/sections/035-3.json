@@ -1,0 +1,20 @@
+{
+  "index": "35.3",
+  "name": "Tavern Upgraded",
+  "edition": "fh",
+  "conclusion": true,
+  "unlocks": [
+    "136"
+  ],
+  "rewards": {
+    "hints": {
+      "lootDeckCards": [
+        "When drawn, read any one section number depicted."
+      ]
+    },
+    "morale": 1,
+    "lootDeckCards": [
+      1419
+    ]
+  }
+}

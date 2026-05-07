@@ -1,0 +1,18 @@
+{
+  "index": "188.1",
+  "name": "My Private Empire",
+  "edition": "fh",
+  "parent": "107",
+  "parentSections": [
+    [
+      "95.2"
+    ]
+  ],
+  "marker": "2",
+  "rooms": [
+    {
+      "roomNumber": 9,
+      "initial": true
+    }
+  ]
+}

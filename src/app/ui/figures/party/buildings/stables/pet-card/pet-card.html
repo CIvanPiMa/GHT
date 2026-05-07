@@ -1,0 +1,47 @@
+<div class="pet-container">
+  @if (!!petCard) {
+    <div
+      class="card vertical reverse pet"
+      [ngClass]="{ flipped: flipped }"
+      [style.fontSize]="fontsize"
+      card-reveal
+      [disabled]="!reveal || false"
+      (changed)="revealed.emit()"
+    >
+      <div class="card-back back">
+        <span class="revealed"><span class="text" [ght-label]="'data.buildings.stables.pets.confirmAdd'"></span></span>
+        <div class="id">
+          <span>{{ petCard.id }}</span>
+        </div>
+      </div>
+      <div class="card-front front">
+        <img class="artwork" [src]="'./assets/artwork/pets/' + petCard.edition + '-' + petCard.id + '.png'" />
+        <div class="title" [ght-label]="'data.pets.' + petCard.edition + '-' + petCard.id"></div>
+        <div class="name-container">
+          <span class="label" [ght-label]="'data.buildings.stables.pets.name'"></span>: <span class="name">{{ name }}<br /></span>
+        </div>
+        @if (petCard.action) {
+          <div class="action">
+            <ght-action [action]="petCard.action" [style]="'fh'" [textBlack]="true"></ght-action>
+          </div>
+        }
+        @if (petCard.round) {
+          <div class="round">
+            <span class="placeholder text-white" [ght-label]="'%game.card.round%'"></span>
+          </div>
+        }
+        @if (petCard.lost) {
+          <div class="lost" ght-pointer-input>
+            <span class="placeholder text-white" [ght-label]="'%game.card.lost%'"></span>
+          </div>
+        }
+        <div class="card-id">
+          @if (petCard.cardId < 1000) {
+            <span>0</span>
+          }
+          <span>{{ petCard.cardId }}</span>
+        </div>
+      </div>
+    </div>
+  }
+</div>

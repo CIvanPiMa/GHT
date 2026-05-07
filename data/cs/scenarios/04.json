@@ -1,0 +1,60 @@
+{
+  "index": "4",
+  "name": "Infected Warriors",
+  "flowChartGroup": "infectious",
+  "edition": "cs",
+  "unlocks": [
+    "5",
+    "6"
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.cs.random-orb%",
+    "randomItems": "1-10"
+  },
+  "monsters": [
+    "blood-ooze",
+    "flaming-drake",
+    "toxic-imp"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "I2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "flaming-drake",
+          "type": "normal"
+        },
+        {
+          "name": "flaming-drake",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "flaming-drake",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "toxic-imp",
+          "type": "normal"
+        },
+        {
+          "name": "toxic-imp",
+          "type": "normal"
+        },
+        {
+          "name": "toxic-imp",
+          "type": "elite"
+        },
+        {
+          "name": "toxic-imp",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

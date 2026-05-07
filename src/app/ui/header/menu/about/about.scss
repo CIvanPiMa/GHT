@@ -1,0 +1,30 @@
+.version-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ght-font-title);
+  font-size: calc(var(--ght-unit) * 2.5 * var(--ght-dialog-factor));
+  color: var(--ght-color-gray);
+  margin-left: calc(var(--ght-unit) * 1.5 * var(--ght-dialog-factor));
+
+  span {
+    margin-right: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+
+    &.unknown {
+      font-size: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+      color: var(--ght-color-darkgray);
+    }
+
+    &.latest {
+      color: var(--ght-color-darkgreen);
+    }
+
+    &.update {
+      color: var(--ght-color-yellow);
+    }
+  }
+
+  .force {
+    margin-left: calc(var(--ght-unit) * 1.5 * var(--ght-dialog-factor));
+  }
+}

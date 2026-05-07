@@ -1,0 +1,60 @@
+.requirements-dialog {
+  position: relative;
+  color: var(--ght-color-white);
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--ght-font-title);
+    color: var(--ght-color-white);
+    font-size: calc(var(--ght-unit) * 4 * var(--ght-text-factor));
+
+    .title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .name {
+        text-align: center;
+        color: var(--ght-color-gray);
+        font-family: var(--ght-font-normal);
+        font-size: calc(var(--ght-unit) * 3 * var(--ght-text-factor));
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+    font-family: var(--ght-font-title);
+    font-size: calc(var(--ght-unit) * 3 * var(--ght-dialog-factor));
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      min-width: 33%;
+      display: flex;
+      justify-content: center;
+      margin: 0 calc(var(--ght-unit) * 2 * var(--ght-dialog-factor));
+      white-space: nowrap;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    .cancel {
+      color: var(--ght-color-red);
+    }
+
+    .start {
+      color: var(--ght-color-yellow);
+    }
+  }
+}

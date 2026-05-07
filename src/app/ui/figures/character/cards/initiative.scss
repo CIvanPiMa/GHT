@@ -1,0 +1,93 @@
+.initiative {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ght-font-title);
+  font-size: calc(var(--ght-unit) * 4.5 * var(--ght-text-factor));
+  color: var(--ght-color-white);
+  text-shadow: var(--ght-outline);
+  transition: width calc(var(--ght-animation-speed) * 500ms) ease-in-out;
+  width: calc(var(--ght-unit) * 5 * var(--ght-text-factor));
+
+  img {
+    cursor: pointer;
+    width: calc(var(--ght-unit) * 2.7 * var(--ght-text-factor));
+    height: auto;
+    filter: var(--ght-filter-white) var(--ght-filter-shadow);
+
+    &:hover {
+      filter: var(--ght-filter-gray) var(--ght-filter-shadow);
+    }
+
+    &.long-rest {
+      width: calc(var(--ght-unit) * 3.5 * var(--ght-text-factor));
+      position: absolute;
+      bottom: calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
+    }
+  }
+
+  input {
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: none;
+    width: calc(var(--ght-unit) * 4.5 * var(--ght-text-factor));
+    height: calc(var(--ght-unit) * 6.5 * var(--ght-text-factor));
+    margin-top: calc(var(--ght-unit) * -0.7 * var(--ght-text-factor));
+    padding: 0;
+    font-family: var(--ght-font-title);
+    color: var(--ght-color-white);
+    text-shadow: var(--ght-outline);
+    font-size: calc(var(--ght-unit) * 4.5 * var(--ght-text-factor));
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active,
+    &:hover {
+      border: none;
+      outline: none !important;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .hidden-initiative {
+    display: block;
+    text-align: center;
+    margin-top: calc(var(--ght-unit) * -0.7 * var(--ght-text-factor));
+    width: calc(var(--ght-unit) * 4.5 * var(--ght-text-factor));
+    height: calc(var(--ght-unit) * 6.5 * var(--ght-text-factor));
+  }
+
+  &.empty {
+    width: calc(var(--ght-unit) * 2 * var(--ght-text-factor));
+
+    img,
+    input {
+      opacity: 0;
+      transition: opacity calc(var(--ght-animation-speed) * 500ms) ease-in-out;
+    }
+
+    &:hover,
+    &:focus-within {
+      width: calc(var(--ght-unit) * 5 * var(--ght-text-factor));
+
+      img,
+      input {
+        opacity: 1;
+      }
+    }
+  }
+}

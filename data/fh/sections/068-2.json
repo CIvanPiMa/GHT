@@ -1,0 +1,44 @@
+{
+  "index": "68.2",
+  "name": "Elemental Cores",
+  "edition": "fh",
+  "parent": "66",
+  "marker": "element:earth",
+  "monsters": [
+    "earth-demon",
+    "frost-demon",
+    "sun-demon"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        "G"
+      ],
+      "monster": [
+        {
+          "name": "earth-demon",
+          "type": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "type": "normal"
+        },
+        {
+          "name": "earth-demon",
+          "player4": "elite"
+        },
+        {
+          "name": "frost-demon",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "sun-demon",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

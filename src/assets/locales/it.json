@@ -1,0 +1,3786 @@
+{
+  "about": {
+    "": "A proposito",
+    "forceUpdate": "Forza aggiornamento",
+    "ip": "Gloomhaven e tutte le proprietà, le immagini e il testo correlate sono di proprietà di {0}.",
+    "license": "Concesso in licenza {0}.",
+    "sourceCode": "Codice sorgente",
+    "support": "Supporta l'autore",
+    "version": {
+      "latest": "Più recente",
+      "unknown": "Impossibile recuperare l'ultima versione",
+      "update": "Ultima versione <a target=\"_blank\" href=\"{1}\">{0}</a>"
+    }
+  },
+  "and": "e",
+  "app": {
+    "install": "Installa come app",
+    "loading": {
+      "": "Caricamento…",
+      "cancel": "Annulla caricamento?"
+    }
+  },
+  "campaign": {
+    "": "Gestione Campagna/Personaggio",
+    "battleGoals": "Configurazione obiettivo battaglia",
+    "campaignManagement": {
+      "": "Gestisci la Campagna",
+      "add": "Aggiungi Campagna",
+      "hint": "La modifica della campagna attuale o la creazione di una nuova campagna sono disabilitati durante uno scenario. Termina o annulla lo scenario corrente per modificare la campagna attuale o crearne una nuova.",
+      "name": "Nome per la Campagna {0}",
+      "reset": "Ricomincia Campagna"
+    },
+    "character": "Schede del personaggio",
+    "enhancements": "Calcolatore di miglioramenti",
+    "items": "Panoramica carte oggetto",
+    "map": {
+      "": "Mappa Globale",
+      "highlighting": "Evidenza"
+    },
+    "party": "Scheda Gruppo/Campagna",
+    "resources": "Tabella panoramica delle risorse",
+    "sheet": "Scheda di gestione globale della campagna",
+    "trials": {
+      "": "Prove",
+      "automation": "L'effetto di questa carta viene automaticamente applicato!"
+    }
+  },
+  "cancel": "Annulla",
+  "challenges": {
+    "": "Sfide",
+    "automation": {
+      "hint": "L'effetto di questa carta viene automaticamente applicato!"
+    },
+    "deck": {
+      "clear": {
+        "": "Scarta la sfida pescata",
+        "multiple": "Scarta le sfide pescate"
+      },
+      "current": "Attuale",
+      "finished": "Finito",
+      "hint": {
+        "current": {
+          "": "Sfida attiva attuale",
+          "multiple": "Sfide attive attuali"
+        },
+        "drawAvailable": {
+          "": "Pesca sfida",
+          "multiple": "Pesca sfide"
+        },
+        "select": {
+          "": "Imposta sfida attiva",
+          "multiple": "Imposta sfide attive"
+        }
+      },
+      "removed": "Eliminato",
+      "upcoming": "In arrivo"
+    },
+    "disabled": "Nessuna sfida fissata per lo scenario!"
+  },
+  "character": {
+    "": "Personaggio",
+    "abilities": {
+      "currentDeck": "Mazzo attuale",
+      "deckWarning": "Non è possibile selezionare la carta corretta perchè ci sono troppe carte nel mazzo!",
+      "enhancements": {
+        "apply": "Applica",
+        "baseCosts": "Costi base",
+        "costs": "Complessivo",
+        "disabled": {
+          "enhancements": "Numero massimo di carte migliorabili ({1}) raggiunto!",
+          "gold": "Non hai abbastanza oro ({0}/{1}) per il miglioramento!"
+        },
+        "enhancements": "Miglioramenti precedenti",
+        "enhancerLevel": "Bonus potenziatore",
+        "hint": {
+          "enhance": {
+            "": "Fare clic per aggiungere miglioramento.",
+            "wipSpecial": "Fare clic per aggiungere miglioramento. Doppio clic per aggiungere un nuovo slot di miglioramento."
+          },
+          "enhanced": "Fare doppio clic per rimuovere il miglioramento."
+        },
+        "level": "Livello",
+        "lost": "Perso",
+        "multiTarget": "Bersagli multipli",
+        "persistent": "Persistente",
+        "temporary": "Temporaneo",
+        "types": {
+          "any": "Qualunque",
+          "circle": "Cerchio",
+          "diamond": "Diamante",
+          "diamond_plus": "Diamante+",
+          "hex": "Esagono",
+          "square": "Quadrato"
+        }
+      },
+      "forceDeck": "Doppio clic per aggiungere la carta al mazzo",
+      "levelWarning": "Mazzo non valido perchè alcune carte sono di livello superiore al personaggio!",
+      "pickCard": "Scegli la tua carta di livello {0}",
+      "removeFromDeck": "Fare doppio clic per rimuovere la carta dal mazzo",
+      "show": "Mostra tutte le carte Capacità",
+      "showDeck": "Mostra il mazzo del personaggio attuale",
+      "sort": {
+        "cardId": "Ordina per numero di carta",
+        "level-deck": "Ordina per le carte nel mazzo",
+        "level-name": "Ordina per livello e nome",
+        "name": "Ordina per nome"
+      },
+      "undoLastPick": {
+        "": "Cancella la scelta per il livello {0}",
+        "hint": "Doppio clic per reimpostare tutte le scelte"
+      },
+      "wip": "<i>%wip%</i>"
+    },
+    "absent": "Assente",
+    "add": "Aggiungi personaggio",
+    "class": {
+      "aesther": "Aesther",
+      "algox": "Algox",
+      "f": {
+        "aesther": "Aesther",
+        "algox": "Algox",
+        "harrower": "Harrower",
+        "human": "Umana",
+        "inox": "Inox",
+        "lurker": "Osservatore",
+        "orchid": "Orchid",
+        "quatryl": "Quatryl",
+        "savvas": "Savvas",
+        "unfettered": "Unfettered",
+        "valrath": "Valrath",
+        "vermling": "Vermling"
+      },
+      "harrower": "Harrower",
+      "human": "Umano",
+      "inox": "Inox",
+      "lurker": "Osservatore",
+      "m": {
+        "aesther": "Aesther",
+        "algox": "Algox",
+        "harrower": "Harrower",
+        "human": "Umano",
+        "inox": "Inox",
+        "lurker": "Osservatore",
+        "orchid": "Orchid",
+        "quatryl": "Quatryl",
+        "savvas": "Savvas",
+        "unfettered": "Unfettered",
+        "valrath": "Valrath",
+        "vermling": "Vermling"
+      },
+      "orchid": "Orchid",
+      "quatryl": "Quatryl",
+      "savvas": "Savvas",
+      "unfettered": "Unfettered",
+      "valrath": "Valrath",
+      "vermling": "Vermling"
+    },
+    "filter": {
+      "": "Filtra per personaggio",
+      "allEditions": "Tutte le edizioni",
+      "noResult": "Nessun risultato"
+    },
+    "lootCards": {
+      "drawn": "Ordina per tempo estratto",
+      "sort": "Ordina per tipo"
+    },
+    "playerNumber": "Giocatore #",
+    "present": "Presente",
+    "progress": {
+      "": "Scheda personaggio",
+      "donate": "Dona",
+      "donations": "Donazioni al Santuario della Grande Quercia: {0}",
+      "export": "Esporta",
+      "fh": {
+        "disable": "Vai alla scheda del personaggio di Gloomhaven",
+        "enable": "Vai alla scheda del personaggio di Frosthaven"
+      },
+      "gold": "Oro",
+      "gold-notes": "Monete d'oro",
+      "import": "Importa",
+      "level": "Livello",
+      "lock": "Blocca la scheda del personaggio per evitare modifiche accidentali.",
+      "masteries": "Maestrie",
+      "name": "Nome",
+      "notes": "Note",
+      "perks": {
+        "": "Talenti",
+        "extra": "Talenti extra"
+      },
+      "personalQuest": {
+        "": "Missione personale",
+        "counter": "Contatore",
+        "openEnvelope": {
+          "": "Apri la busta %game.fhIcon:envelope% {0}",
+          "alt": "Apri la busta %game.fhIcon:envelope% {0}<br>(alt: %game.fhIcon:envelope% {1})",
+          "building": "Sblocca l'edificio '%data.buildings.{1}%' ({0})",
+          "inspiration": "Ottieni +1 ispirazione",
+          "itemBlueprint": "Ottieni il progetto di \"%data.items.{1}-{0}%\" (Oggetto {0})",
+          "itemBlueprintInfo": "Ottieni un progetto di oggetto casuale.",
+          "randomScenario": "Apri %data.section:{0}%, sblocca %data.scenarioNumber:{1}%",
+          "randomScenarioInfo": "Ottieni uno scenario secondario casuale."
+        },
+        "unlockCharacter": {
+          "": "Apri la custodia %game.characterIcon.{0}%",
+          "itemDesign": "Ottieni il modello di \"%data.items.{1}-{0}%\" (Oggetto{0})",
+          "randomScenario": "Sblocca \"{1}\" %data.scenarioNumber:{0}%"
+        },
+        "unlockPQ": "Sblocca Missione Personale {0}"
+      },
+      "resources": {
+        "": "Risorse",
+        "apply": "Sposta risorse",
+        "move": "Sposta alle forniture di Frosthaven",
+        "shared": "Tutte le risorse condivise (regola non ufficiale)"
+      },
+      "retired": "Ritirato",
+      "retirement": {
+        "": "Ritira personaggio",
+        "additionalPQ": {
+          "": "Spendi 15 di ispirazione per ulteriore MP",
+          "cancel": "Annulla MP aggiuntiva",
+          "inspiration": "-15 ispirazione"
+        },
+        "apply": "Applica",
+        "conclusion": "Apri la sezione %data.section:{0}%",
+        "event": "Aggiungi %game.events.type.{0}% Evento {1} al mazzo",
+        "events": "Aggiungi l'evento di strada {0} e l'evento di città {0} al mazzo",
+        "moveSupply": "Sposta le risorse nel magazzino di Frosthaven",
+        "prosperity": "+{0} prosperità"
+      },
+      "retirements": "Ritiri",
+      "title": "{1} {0}",
+      "trial": "Prova",
+      "xp": "XP"
+    },
+    "remove": "Rimuovi personaggio",
+    "removeAll": "Rimuovi tutti",
+    "replay": {
+      "": "Rigioca personaggio",
+      "hint": "Doppio click per rigiocare il personaggio"
+    },
+    "setAside": "Metti da parte il personaggio",
+    "summon": {
+      "action": {
+        "": "%game.action.summon% %data.summon.{0}%",
+        "count": {
+          "": "%game.action.summon% {1} %data.summon.{0}%",
+          "fly": "%game.action.summon% {1} %data.summon.{0}% %game.actionIcon.fly%"
+        },
+        "fly": {
+          "": "%game.action.summon% %data.summon.{0}% %game.actionIcon.fly%"
+        }
+      },
+      "level": "(Level {0})"
+    },
+    "token": "Segnalino personaggio",
+    "traits": "Tratti",
+    "unlock": {
+      "": "Sbloccare?",
+      "confirm": "Sblocca!"
+    },
+    "unlockAll": {
+      "": "Sbloccare tutti?",
+      "confirm": "Sblocca tutti!"
+    }
+  },
+  "close": "Chiudi",
+  "confirm": "Conferma",
+  "datamanagement": {
+    "": "Gestione dati",
+    "addEditionDataUrl": "Aggiungi URL con i dati di edizione",
+    "addSpoiler": "Aggiungi spoiler",
+    "addUnlock": "Sblocca",
+    "backup": {
+      "": "Backup di gioco",
+      "all": "Scarica tutti i backup del gioco ({0})",
+      "auto": {
+        "": "Backup automatici",
+        "count": "Ogni (x) azioni",
+        "countHint": "Numero di azioni tra backup automatici",
+        "onFinish": "Dopo aver terminato lo scenario",
+        "uploadUrl": {
+          "": "Carica URL",
+          "error": {
+            "": "ATTENZIONE: backup automatico non riuscito",
+            "status": "Backup automatico non riuscito con il codice di risposta '{0}'. Dai un'occhiata alla console del browser per maggiori dettagli.",
+            "unknown": "Backup automatico non riuscito per causa sconosciuta. Si prega di dare un'occhiata alla console del browser per maggiori dettagli."
+          },
+          "hint": "Invece di scaricare il file di backup automatico, imposta una URL per caricare i dati. (Ciò richiede impostazioni corrette CORS sulla URL per funzionare!). {FILENAME} o {WINDOWS_FILENAME} possono essere utilizzati come segnaposto per il nome file."
+        },
+        "uploadUrlAuthorization": {
+          "": "Intestazione di autorizzazione",
+          "hint": "Utilizzato come intestazione di 'autorizzazione' per la richiesta di caricamento"
+        },
+        "uploadUrlFileUpload": {
+          "": "Carica come file",
+          "hint": "Crea un oggetto file da caricare. Se non controllati, verranno inviati i dati di stringa JSON grezzi."
+        },
+        "uploadUrlMethod": {
+          "": "Metodo",
+          "get": "GET",
+          "hint": "Metodo HTTP per il caricamento",
+          "post": "POST",
+          "put": "PUT"
+        },
+        "uploadUrlPassword": {
+          "": "Password",
+          "hint": "Password utilizzata per la richiesta di caricamento"
+        },
+        "uploadUrlUsername": {
+          "": "Nome utente",
+          "hint": "Nome utente usato per la richiesta di caricamento"
+        }
+      },
+      "delete": "Elimina i backup del gioco",
+      "download": {
+        "": "Scarica ora il file di backup",
+        "hint": {
+          "": "Effettua il backup del gioco regolarmente per prevenire la perdita di dati.",
+          "hide": "Non mostrare più",
+          "text": "L'intero processo è archiviato nella memoria del browser. Sebbene nessun browser dovrebbe eliminare accidentalmente questi dati, ci sono ancora pochissimi di questi casi fortuiti. Indipendentemente dal fatto che questi incidenti siano causati da errori di utilizzo, per esserne sicuri, è una buona idea creare un backup."
+        },
+        "onFinish": "Backup automatico dopo aver terminato uno scenario"
+      },
+      "latest": "Scarica l'ultimo backup del gioco"
+    },
+    "clearAll": "Ripristina tutti i dati",
+    "editionDataUrls": {
+      "": "Gestisci i dati dell'edizione",
+      "custom": "Dati aggiuntivi dell'edizione",
+      "disable": "Disabilita Edizione",
+      "enable": "Abilita edizione",
+      "remove": "Rimuovi i dati dell'edizione"
+    },
+    "exportDataDump": "Dump di dati di esportazione",
+    "exportGame": "Esporta partita su file",
+    "exportSettings": "Esporta impostazioni su file",
+    "importDataDump": "Importa dump di dati",
+    "importFile": {
+      "": "Importa file",
+      "hint": "Importa qualsiasi file esportato come partita, backup, datadump o impostazioni. Conferma l'importazione con il secondo clic!"
+    },
+    "importGame": "Importa partita dal file",
+    "importSettings": "Importa impostazioni dal file",
+    "removeAllSpoilers": "Rimuovi tutto",
+    "removeAllUnlocks": "Rimuovi tutto",
+    "removeSpoiler": "Rimuovi spoiler",
+    "removeUnlock": "Rimuovi sblocco",
+    "resetGame": "Resetta la partita",
+    "resetSettings": "Ripristina le impostazioni",
+    "restoreEditionDataUrls": "Ripristina i valori predefiniti",
+    "spoilers": "Gestisci spoiler",
+    "unlocks": "Gestisci gli sblocchi"
+  },
+  "duration": {
+    "days": "{3} giorni, {2} ore, {1} minuti e {0} secondi",
+    "gameClock": {
+      "": "Tempo di gioco",
+      "clockIn": "Far partire il tempo di gioco",
+      "clockOut": "Fermare il tempo di gioco",
+      "current": "Corrente: {0}",
+      "off": "Il tempo di gioco si è fermato! Doppio clic per ripartire.",
+      "paused": "Il tempo di gioco si è fermato! Doppio clic per ripartire.<br>Totale: {0}",
+      "running": "Il tempo di gioco è in esecuzione! Doppio click per interromperlo.<br>Corrente: {1}",
+      "runningTotal": "Il tempo di gioco è in esecuzione! Doppio click per interromperlo.<br>Corrente: {1}<br>Totale: {0}",
+      "timestamp": "Vai da {0} a {1}",
+      "total": "Totale: {0}"
+    },
+    "hours": "{2} ore, {1} minuti e {0} secondi",
+    "minutes": "{1} minuti e {0} secondi",
+    "seconds": "{0} secondi",
+    "totalHours": "{0}, circa {1} ore"
+  },
+  "edition": {
+    "": "Scegli edizione",
+    "all": "Tutte le edizioni",
+    "conditions": "Stati disponibili"
+  },
+  "editor": {
+    "": "Editore [Spoiler!]",
+    "action": {
+      "add": "Aggiungi azione",
+      "addBottom": "Aggiungi l'azione inferiore",
+      "addEnhancement": "Aggiungi slot di miglioramento",
+      "addSubAction": "Aggiungi sotto-azione",
+      "enhancements": "Miglioramenti",
+      "remove": "Rimuovi l'azione",
+      "removeEnhancement": "Rimuovi lo slot di miglioramento",
+      "removeSubAction": "Rimuovi la sotto-azione",
+      "small": "Minore",
+      "subActions": "Sotto-azioni",
+      "summon": {
+        "type": {
+          "monster": "Mostro",
+          "summon": "Dati di Evocazione"
+        }
+      },
+      "type": "Tipo di azione",
+      "value": "Valore d'azione",
+      "valueType": {
+        "": "Tipo di valore",
+        "add": "Aggiungi",
+        "fixed": "Fisso",
+        "minus": "Meno",
+        "plus": "Più",
+        "subtract": "Sottrai"
+      }
+    },
+    "character": {
+      "": "Editor dei personaggi",
+      "data": {
+        "": "Dati dei personaggi",
+        "deck": "Nome del mazzo delle Capacità",
+        "hp": {
+          "": "Punti vita",
+          "-1": "Profilo personalizzato",
+          "0": "Profilo basso",
+          "1": "Profilo medio",
+          "2": "Profilo alto"
+        },
+        "json": {
+          "": "Dati del personaggio in formato JSON",
+          "download": "Scarica dati del personaggio come file JSON"
+        }
+      },
+      "edition": "Edizione",
+      "new": "Nuovo personaggio"
+    },
+    "deck": {
+      "": "Editor del mazzo delle Capacità",
+      "abilityName": "Nome Capacità",
+      "addAbility": "Aggiungi Capacità",
+      "character": "Mazzo del personaggio",
+      "json": {
+        "": "Mazzo delle Capacità in formato JSON",
+        "download": "Scarica il mazzo delle Capacità come file JSON"
+      },
+      "name": "Nome del mazzo",
+      "new": "Nuovo mazzo delle Capacità",
+      "removeAbility": "Rimuovi Capacità"
+    },
+    "edition": {
+      "": "Editor dell'edizione",
+      "base": "Dati base",
+      "character": {
+        "": "Aggiungi files personaggio",
+        "remove": "Rimuovi personaggio"
+      },
+      "conditions": {
+        "": "Stati disponibili",
+        "allHint": "Deseleziona tutti gli stati",
+        "allSelected": "Seleziona tutti gli stati"
+      },
+      "decks": {
+        "": "Aggiungi files del mazzo delle Capacità",
+        "remove": "Rimuovi mazzo delle Capacità"
+      },
+      "edition": "Nome edizione",
+      "extensions": "Edizioni da ampliare",
+      "json": {
+        "": "Dati edizione in formato JSON",
+        "download": "Scarica dati edizione come file JSON"
+      },
+      "monster": {
+        "": "Aggiungi files dei mostri",
+        "remove": "Rimuovi mostro"
+      }
+    },
+    "monster": {
+      "": "Editor dei mostri",
+      "new": "Nuovo mostro",
+      "stats": {
+        "": "Statistiche mostro",
+        "addSpecial": "Aggiungi speciale",
+        "allLevel": "Tutti i livelli",
+        "applyAll": "Applica a tutti i livelli",
+        "boss": "È il Boss",
+        "count": "Numero delle pedine",
+        "deck": "Nome del mazzo delle Capacità",
+        "flying": "Sta volando",
+        "hidden": "È nascosto",
+        "json": {
+          "": "Statistiche dei mostri in formato JSON",
+          "download": "Scarica statistiche dei mostri come file JSON"
+        },
+        "levelSelect": "Seleziona livello"
+      }
+    }
+  },
+  "entities": {
+    "filter": {
+      "all": "Tutti",
+      "allies": "Alleati",
+      "character": "Personaggio",
+      "enemies": "Nemici",
+      "monster": "Mostro",
+      "objectives": "Obbiettivi"
+    }
+  },
+  "errata": "Errata",
+  "escort": {
+    "": "Scorta",
+    "add": "Aggiungi scorta"
+  },
+  "game": {
+    "action": {
+      "area": "Effetto ad area",
+      "attack": "Attacco",
+      "box": "&#91;Custodia&#93;",
+      "boxFhSubActions": "&#91;Box sotto-azione FH&#93;",
+      "card": "Carta",
+      "concatenation": "&#91;Concatenazione&#93;",
+      "concatenationSpacer": "&#91;Spaziatore concatenazione&#93;",
+      "condition": "Condizione",
+      "custom": "Personalizzato",
+      "damage": "Danno",
+      "element": "Elemento",
+      "elementHalf": "Mezzo elemento",
+      "extra": "&#91;FH Helper per Sottoazioni&#93;",
+      "fly": "Volo",
+      "fontSize": "&#91;Grandezza carattere (in %)&#93;",
+      "forceBox": "&#91;Box obbligatorio FH&#93;",
+      "grant": "Accordo",
+      "grid": "&#91;Griglia&#93;",
+      "heal": "Cura",
+      "hint": "&#91;Bacheca Informativa&#93;",
+      "jump": "Salto",
+      "loot": "Bottino",
+      "monsterType": "Tipo di mostro",
+      "move": "Movimento",
+      "nonCalc": "org. Azione",
+      "pierce": "Perfora",
+      "pull": "Tira",
+      "push": "Spingi",
+      "range": "Gittata",
+      "refreshItem": "Ripristina un articolo",
+      "retaliate": "Ritorsione",
+      "shield": "Scudo",
+      "spawn": "Genera",
+      "special": "Speciale",
+      "specialTarget": "Bersaglio speciale",
+      "sufferDamage": "Subisci danno",
+      "summon": "Evoca",
+      "swing": "Oscilla",
+      "target": "Bersaglio",
+      "targets": "Obiettivi",
+      "teleport": "Teletrasporta",
+      "trigger": "Innesca"
+    },
+    "affect": "Interessa",
+    "allied": "Compagno",
+    "ally": {
+      "": "Alleato",
+      "addEntity": {
+        "boss": "Genera un alleato Boss",
+        "elite": "Genera un alleato elite",
+        "normal": "Genera un alleato normale"
+      }
+    },
+    "attackModifiers": {
+      "": "Mazzo modificatori attacco",
+      "additional": {
+        "apply": "Usa il mazzo di {0}",
+        "dialog": "Seleziona il mazzo del personaggio per applicare %game.condition.{0} %",
+        "select": "Seleziona personaggio"
+      },
+      "effects": {
+        "refreshSpentItem": "Consumato"
+      },
+      "openDialog": "Mostra il mazzo modificatori di attacco",
+      "perks": {
+        "": "Talenti",
+        "additional": "{0} e {1}",
+        "additionalTwo": "{0}, {1} e {2}",
+        "card": "Carta",
+        "cardLabel": "{0}{1} {2}",
+        "cards": {
+          "": "carte",
+          "1": "%number.1%",
+          "2": "%number.2%",
+          "3": "%number.3%",
+          "4": "%number.4%",
+          "5": "%number.5%"
+        },
+        "effects": {
+          "recoverRandomDiscard": "Recupera %game.card.recover% una carta casuale dalla pila di scarto",
+          "refreshItem": "Ripristina un oggetto",
+          "refreshItemFh": "%game.card.recover% un articolo",
+          "refreshSpentItem": "Ripristina un oggetto esaurito"
+        },
+        "monsterDeck": "al mazzo modificatori di attacco mostro",
+        "type": {
+          "add": "Aggiungi {0}",
+          "remove": "rimuovi {0}",
+          "replace": "sostituisci {0} con {1}"
+        },
+        "warning": "Più talenti selezionati di quelli disponibili!",
+        "wip": "%wip%! Talenti non ancora completati."
+      },
+      "types": {
+        "bless": "Benedizione",
+        "curse": "Maledizione",
+        "double": "Doppio",
+        "invalid": "Non valido",
+        "minus": "Meno",
+        "minus1": "Meno 1",
+        "minus2": "Meno 2",
+        "null": "Nullo",
+        "plus": "Più",
+        "plus0": "Più 0",
+        "plus1": "Più 1",
+        "plus2": "Più 2",
+        "plus3": "Più 3",
+        "plus4": "Più 4"
+      }
+    },
+    "battleGoals": {
+      "": "Obiettivi di battaglia",
+      "all": "Carte attuali",
+      "cancel": "Annulla",
+      "choose": "Scegli l'obiettivo di battaglia per %game.characterIconColored.{0}% {1}",
+      "chooseCard": "Scegli carta selezionata",
+      "chosen": "Obiettivo di battaglia per %game.characterIconColored.{0}% {1}",
+      "drawCard": "Pesca un'altra carta",
+      "drawCards": "Ripesca carte",
+      "drawUnavailable": "Tutti gli obiettivi di battaglia sono stati pescati!",
+      "edition": "Carte %data.edition.{0}%",
+      "setup": {
+        "": "Configura obiettivi battaglia",
+        "empty": "Nessuna carta obiettivi battaglia selezionata."
+      }
+    },
+    "card": {
+      "experience": "X Esperienza",
+      "lost": "Perso",
+      "persistent": "Bonus persistente",
+      "recover": "Recupera",
+      "refresh": "Ripristina",
+      "round": "Bonus Round",
+      "slot": "Usa spazio",
+      "slotXp": "Usa spazio X Esperienza"
+    },
+    "cards": {
+      "confirmReveal": "Clicca di nuovo per rivelare!",
+      "coverAll": "Copri tutto",
+      "defaultSort": "Ordina",
+      "draw": "Pesca",
+      "drawAdvantage": "Pesca con vantaggio",
+      "drawAnother": "Pesca un'altra",
+      "drawDisadvantage": "Pesca con svantaggio",
+      "drawExtra": "Pesca extra",
+      "edit": {
+        "": "Modifica",
+        "toggleBB": "Mostra come tavola BB"
+      },
+      "fullscreen": "Mostra a schermo intero",
+      "openDialog": "Mostra tutte le carte",
+      "removeDrawnDiscards": "Rimuovi pila degli scarti",
+      "restore": "Ripristina predefiniti",
+      "revealAll": "Rivela tutto?",
+      "revealAllConfirm": "Rivela tutto!",
+      "shuffle": {
+        "": "Mescola",
+        "allHint": "Doppio clic per mescolare tutte le carte!",
+        "upcomingHint": "Doppio clic per mischiare solo le prossime carte!"
+      }
+    },
+    "condition": {
+      "bane": {
+        "": "Anatema",
+        "hint": "%game.conditionIcon.bane% Anatema: soffri %game.damage:10% alla fine del turno successivo, quindi rimuovila. Rimuovila anche quando guarito."
+      },
+      "bless": {
+        "": "Benedizione",
+        "hint": "%game.conditionIcon.bless% Benedizione: mescola una carta %game.attackmodifier.bless% nel mazzo modificatori attacco"
+      },
+      "brittle": {
+        "": "Fragile",
+        "hint": "%game.conditionIcon.brittle% Fragile: raddoppia la prossima fonte di %game.damage%, quindi rimuovila. Rimuovila anche quando guarito."
+      },
+      "chill": {
+        "": "Gelo",
+        "hint": "%game.conditionIcon.chill% Gelo: ottieni -1 su tutti i movimenti e gli attacchi per ogni segnalino. Rimuovine uno alla fine del prossimo turno."
+      },
+      "curse": {
+        "": "Maledizione",
+        "hint": "%game.conditionIcon.curse% Maledizione: mescola la carta %game.attackmodifier.curse% nel mazzo modificatori attacco"
+      },
+      "disarm": {
+        "": "Disarmare",
+        "hint": "%game.conditionIcon.disarm% Disarmare: non puoi attaccare. Rimuovi alla fine del turno successivo."
+      },
+      "dodge": {
+        "": "Schivare",
+        "hint": "%game.conditionIcon.dodge% Schivare: scarta o perdi una carta per prevenire un attacco, quindi rimuovila."
+      },
+      "empower": {
+        "": "Potenziare",
+        "hint": "%game.conditionIcon.empower% Potenziare: mescola la carta %game.attackmodifier.empower% nel mazzo modificatori attacco."
+      },
+      "enfeeble": {
+        "": "Indebolire",
+        "hint": "%game.conditionIcon.enfeeble% Indebolire: mescola la carta %game.attackmodifier.enfeeble% nel mazzo modificatori attacco."
+      },
+      "heal": {
+        "": "Curare",
+        "hint": "Non è una condizione, ma aiuta se devi applicare %game.action.heal% per aumentare i punti ferita."
+      },
+      "immobilize": {
+        "": "Immobilizzare",
+        "hint": "%game.conditionIcon.immobilize% Immobilizzare: Non ti puoi muovere. Rimuovi alla fine del turno successivo."
+      },
+      "immune": {
+        "": "Immune",
+        "hint": "Immune alla condizione"
+      },
+      "impair": {
+        "": "Compromettere",
+        "hint": "%game.conditionIcon.impair% Compromettere: Non è possibile usare oggetti. Rimuovi alla fine del turno successivo."
+      },
+      "infect": {
+        "": "Infezione",
+        "hint": "%game.conditionIcon.infect% Infezione: Non puoi ottenere scudo. Rimuovi quando guarito."
+      },
+      "invisible": {
+        "": "Invisibile",
+        "hint": "%game.conditionIcon.invisible% Invisibile: Non può essere bersagliato. Rimuovi alla fine del turno successivo."
+      },
+      "muddle": {
+        "": "Confondere",
+        "hint": "%game.conditionIcon.muddle% Confondere: Svantaggio su tutti gli attacchi. Rimuovi alla fine del prossimo turno."
+      },
+      "permanent": {
+        "": "Permanente",
+        "hint": "Condizione permanente"
+      },
+      "plague": {
+        "": "Gettone Peste",
+        "hint": "Nessuno stato, ma aiuto per tracciare %game.conditionIcon.plague% Gettoni Peste"
+      },
+      "poison": {
+        "": "Veleno",
+        "hint": "%game.conditionIcon.poison% Veleno: Tutti gli attaccanti ottengono +1 %game.action.attack%. Impedisce la guarigione. Rimuovi quando guarito."
+      },
+      "poison_x": {
+        "": "Veleno {0}",
+        "hint": "%game.conditionIcon.poison_x:X% Veleno X:Tutti gli attaccanti ottengono +X %game.action.attack%. Impedisce la guarigione. Rimuovi quando guarito."
+      },
+      "regenerate": {
+        "": "Rigenerazione",
+        "hint": "%game.conditionIcon.regenerate% Rigenerazione: %game.action.heal% 1 all'inizio del turno. Rimuovi quando ricevi danno."
+      },
+      "roundExpire": {
+        "hint": "Rimuovi condizione alla fine del round"
+      },
+      "rupture": {
+        "": "Frattura",
+        "hint": "%game.conditionIcon.rupture% Frattura: Ad ogni movimento subisci %game.damage:1%. Rimuovi quando guarito."
+      },
+      "safeguard": {
+        "": "Salvaguardia",
+        "hint": "%game.conditionIcon.safeguard% Salvaguardia: previeni la prossima condizione negativa, quindi rimuovi la carta."
+      },
+      "strengthen": {
+        "": "Rinforzo",
+        "hint": "%game.conditionIcon.strengthen% Rinforzo: Vantaggio ad ogni attacco. Rimuovi alla fine del prossimo turno."
+      },
+      "stun": {
+        "": "Stordire",
+        "hint": "%game.conditionIcon.stun% Stordire: Non è possibile effettuare capacità o utilizzare o attivare oggetti. Rimuovi alla fine del turno successivo."
+      },
+      "ward": {
+        "": "Interdizione",
+        "hint": "%game.conditionIcon.ward% Interdizione: Dimezza (per difetto) la prossima fonte di %game.damage%, quindi rimuovila."
+      },
+      "wound": {
+        "": "Ferita",
+        "hint": "%game.conditionIcon.wound% Ferita: Subisci %game.damage:1% all'inizio di ogni turno. Rimuovi quando guarito."
+      },
+      "wound_x": {
+        "": "Ferita {0}",
+        "hint": "%game.conditionIcon.wound_x:X% Ferita X: Subisci %game.damage:X% all'inizio di ogni turno. Rimuovi quando guarito."
+      }
+    },
+    "custom": {
+      "advantage": "Vantaggio",
+      "disadvantage": "Gli attaccanti ottengono svantaggio",
+      "instead": "Al posto di",
+      "math": {
+        "ceil": "(arrotondato per eccesso)",
+        "floor": "(arrotondato per difetto)",
+        "max": ", fino ad un massimo di %game.number.{0}%",
+        "maxCeil": "(arrotondato per eccesso), fino ad un massimo di %game.number.{0}%",
+        "maxFloor": "(arrotondato per difetto), fino ad un massimo di %game.number.{0}%",
+        "min": ", ma almeno %game.number.{0}%",
+        "minCeil": "(arrotondato per eccesso), ma almeno %game.number.{0}%",
+        "minFloor": "(arrotondato per difetto), ma almeno di %game.number.{0}%"
+      },
+      "ondeath": "Alla morte:",
+      "perks": {
+        "addTarget": "Aggiungi bersaglio",
+        "addTargets": "Aggiungi {0} bersagli",
+        "ignoreNegativeItem": "Ignora gli effetti negativi degli oggetti",
+        "ignoreNegativeItemFh": "Ignora gli effetti %game.card.minus1% dell'oggetto",
+        "ignoreNegativeScenario": "Ignora gli effetti negativi dello scenario",
+        "ignoreScenario": "Ignora gli effetti dello scenario"
+      },
+      "scenarioBook": "Fare riferimento al libro degli scenari"
+    },
+    "damage": "{0} danno",
+    "dead": "Morto",
+    "element": {
+      "air": "Aria",
+      "dark": "Oscurità",
+      "earth": "Terra",
+      "fire": "Fuoco",
+      "ice": "Ghiaccio",
+      "light": "Luce",
+      "state": {
+        "always": "sempre",
+        "consumed": "consumato",
+        "inert": "inerte",
+        "new": "forte",
+        "strong": "forte",
+        "waning": "debolezza"
+      },
+      "wild": "Selvaggio"
+    },
+    "enemy": "Nemico",
+    "events": {
+      "accept": {
+        "": "Risolvi Evento",
+        "notApply": "Risolvi, non applicare"
+      },
+      "applyManually": "Applicare manualmente le seguenti operazioni:",
+      "conditions": {
+        "and": "e",
+        "building": "{0}",
+        "campaignSticker": "%data.campaignSticker.{0}%",
+        "character": "{0}",
+        "loseCollectiveGold": "Perdi {0} oro collettivo",
+        "loseCollectiveResource": "Perdi {0} %game.resource.{1}% collettivi",
+        "loseCollectiveResourceType": "Perdi {0} %game.loot.{1}% risorse collettive",
+        "loseResource": "Perdi {0} %game.resource.{1}%",
+        "loseResourceType": "Ciascuno perde{ 0} %game.loot.{1}% risorsa",
+        "moraleGT": "Morale > {0}",
+        "moraleLT": "Morale < {0}",
+        "otherwise": "Altrimenti",
+        "payCollectiveGold": "Paga {0} oro collettivo",
+        "payCollectiveGoldConditional": {
+          "connector": "oppure",
+          "prefix": "Paga",
+          "suffix": "oro collettivo"
+        },
+        "payCollectiveGoldReputationGT": "{0} (reputazione > {1})",
+        "payCollectiveGoldReputationLT": "{0} (reputazione < {1})",
+        "payGold": "Paga {0} oro ciascuno",
+        "reputationFactionGT": "%data.gh2eFaction:{0}% > {1}",
+        "reputationGT": "Reputazione > {0}",
+        "reputationLT": "Reputazione < {0}",
+        "season": "%party.campaign.sheet.{0}%",
+        "seasonLT": "Se %party.campaign.sheet.{0}% è {1} settimane o meno di distanza",
+        "traits": "%game.trait% {0}",
+        "traitsAll": "%game.trait% {0}"
+      },
+      "deck": {
+        "addCard": "Aggiungi alle carte in arrivo e mescola il mazzo",
+        "allTypes": "Mostra tutti i mazzi",
+        "draw": "Pesca Carta",
+        "drawn": "Risolto ({0})",
+        "filter": "Cerca per ID della carta",
+        "new": "Bloccato ({0})",
+        "removeCard": "Rimuovi dalle prossime carte",
+        "removeDrawn": "Rimuovi dalle carte pescate",
+        "removeSelection": "Reimposta esito",
+        "resolved": "Mostra Risolto",
+        "setup": "Configura i Mazzi Evento",
+        "show": "Mostra la carta evento completa",
+        "shuffle": "Mescola il Mazzo",
+        "upcoming": "Nel mazzo ({0})"
+      },
+      "effects": {
+        "additionally": "In più",
+        "and": "e",
+        "automation": "L'effetto viene applicato automaticamente",
+        "battleGoal": "Ottieni {0} %game.checkmark% ciascuno.",
+        "campaignSticker": "Ottieni adesivo campagna \"%data.campaignSticker.{0}%\".",
+        "campaignStickerMap": "Posiziona l'adesivo della campagna \"%data.campaignSticker.{0}%\" sulla mappa della città nella posizione {1}.",
+        "campaignStickerReplace": "Posiziona l'adesivo della campagna \"%data.campaignSticker.{0}% sopra \"%data.campaignSticker.{1}%\".",
+        "choose": {
+          "connector": "oppure",
+          "prefix": "Entrambi",
+          "suffix": "."
+        },
+        "collectiveGold": "Ottieni {0} di oro collettivo.",
+        "collectiveGoldAdditional": "Ottieni {0} oro collettivo addizionale.",
+        "collectiveGoldOther": "Tutti gli altri personaggi ottengono {0} oro collettivo.",
+        "collectiveItem": "Ottieni {2}\"%data.items.{1}-{0}%\" (Oggetto {0}) collettivo.",
+        "collectiveResource": "Ottieni {0} %game.resource.{1}% collettivo.",
+        "collectiveResourceType": "Ottieni qualsiasi {0} %game.loot.{1}% collettivo.",
+        "consumeCollectiveItem": "Consuma {0} oggetto %game.itemSlot:{1}% collettivo.",
+        "consumeItem": "Ognuno consuma {0} oggetto %game.itemSlot:{1}%.",
+        "custom": "{0}",
+        "discard": {
+          "": "Ognuno scarta {0} carte.",
+          "fh": "Tutti i personaggi iniziano lo scenario successivo scartando %number.{0}% carte.",
+          "gh2e": "Ogni personaggio inizia lo scenario successivo scartando %number.{0}% carte."
+        },
+        "discardOne": {
+          "": "Ognuno scarta 1 carta.",
+          "fh": "Tutti i personaggi iniziano lo scenario successivo scartando una carta.",
+          "gh2e": "Ogni personaggio inizia lo scenario successivo scartando una carta."
+        },
+        "drawAnotherEvent": {
+          "": "Pesca un altro Evento %game.events.type.{0}%.",
+          "fh": "Risolvi un altro Evento %game.events.type.{0}%.",
+          "gh2e": "Risolvi un altro Evento %game.events.type.{0}% ."
+        },
+        "drawEvent": "Pesca un Evento %game.events.type.{0}%.",
+        "event": {
+          "": "Aggiungi l'Evento %game.events.type.{0}% al mazzo.",
+          "fh": "Aggiungi l'evento {1} al mazzo %game.events.type.{0}%.",
+          "gh2e": "Aggiungi l'evento {1} al mazzo %game.events.type.{0}%."
+        },
+        "eventFH": "Aggiungi l'Evento {1} al mazzo %game.events.type.{0}%.",
+        "eventReturn": "Recupera l'evento {1} e rimettilo nel mazzo %game.events.type.{0}%.",
+        "eventsToTop": "Sbircia nel mazzo %game.events.type.{0}% fino a che non trovi {1}, {2}, o {3} e lo metti in cima al mazzo.",
+        "experience": {
+          "": "Ciascuno ottiene {0} esperienza.",
+          "fh": "Ciascun personaggio ottiene {0} %game.card.experience%.",
+          "gh2e": "Ciascun personaggio ottiene {0} %game.card.experience%."
+        },
+        "gainTrait": "Ciascun personaggio ottiene %game.trait:{0}%.",
+        "globalAchievement": "Traguardo globale:<br>\"%data.globalAchievements.{0}%\".",
+        "gold": "Ognuno ottiene {0} di oro.",
+        "goldAdditional": "Ognuno ottiene {0} di oro aggiuntivo.",
+        "inspiration": "Ottieni {0} ispirazione.",
+        "item": {
+          "": "Ottieni \"%data.items.{1}-{0}%\" (Oggetto {0}).",
+          "fh": "Ottieni \"%data.items.{1}-{0}%\" %game.itemFh.{0}%.",
+          "gh2e": "Ottieni \"%data.items.{1}-{0}%\" %game.itemFh.{0}%."
+        },
+        "itemCollective": "Ottieni {1} \"%data.items.{2}-{0}%\" collettivi (Oggetto {0}).",
+        "itemDesign": "Ottieni il modello \"%data.items.{1}-{0}%\" (Oggetto {0}).",
+        "loseBattleGoal": "Ognuno perde {0} %game.checkmark%.",
+        "loseCollectiveExperience": "Perdi {0} esperienza collettiva.",
+        "loseCollectiveGold": "Perdi {0} oro collettivo.",
+        "loseCollectiveResource": "Perdi {0} %game.resource.{1}% collettivo.",
+        "loseCollectiveResourceAny": "Perdi {0} risorse collettive.",
+        "loseCollectiveResourceType": "Perdi {0} %game.loot.{1}% risorse collettive.",
+        "loseExperience": "Ciascuno perde {0} esperienza.",
+        "loseGold": "Ognuno perde {0} oro.",
+        "loseGoldOne": "Un personaggio perde {0} oro.",
+        "loseItem": {
+          "": "Perdi \"%data.items.{1}-{0}%\" (Item {0}).",
+          "fh": "Perdi \"%data.items.{1}-{0}%\" %game.itemFh.{0}%.",
+          "gh2e": "Perdi \"%data.items.{1}-{0}%\" %game.itemFh.{0}%."
+        },
+        "loseMorale": "Perdi {0} morale.",
+        "loseProsperity": "Perdi {0} prosperità.",
+        "loseReputation": "Perdi {0} reputazione.",
+        "loseReputationFaction": "Perdi {1} reputazione %data.gh2eFaction:{0}%",
+        "loseResource": "Perdi {0} %game.resource.{1}%.",
+        "loseTrait": "Ciascun personaggio perde %game.trait:{0}%.",
+        "morale": "Ottieni {0} morale.",
+        "noEffect": "Nessun effetto.",
+        "outcome": "Leggi la conclusione %game.events.option.{0}%.",
+        "outcomeSelect": "Seleziona una conclusione, %game.events.option.{0}% o %game.events.option.{1}%, da leggere.",
+        "outcomes": "Leggi entrambe le conclusioni %game.events.option.{0}% e %game.events.option.{1}%.",
+        "outpostAttack": "%game.valueSign:{0}% %game.action.attack%",
+        "outpostAttackTarget": {
+          "": "%game.valueSign:{0}% %game.action.attack% per %game.events.effects.outpostAttackTarget.{1}%",
+          "all": "tutti i bersagli.",
+          "one": "qualsiasi bersaglio."
+        },
+        "outpostTarget": "%game.valueSign:{0}% %game.action.target%",
+        "partyAchievement": "Traguardo di gruppo:<br>\"%data.partyAchievements.{0}%\".",
+        "prosperity": {
+          "": "Ottieni {0} prosperità.",
+          "fh": "Ottieni {0} %game.prosperity%.",
+          "gh2e": "Ottieni {0} %game.prosperity%."
+        },
+        "randomItem": {
+          "": "Ottieni un Oggetto Casuale.",
+          "fh": "Ottieni un oggetto casuale collettivo %game.itemFh.random%.",
+          "gh2e": "Ottieni un oggetto casuale collettivo %game.itemFh.random%."
+        },
+        "randomItemBlueprint": "Ottieni un progetto oggetto casuale %game.itemFh.random%.",
+        "randomItemDesign": "Ottieni un modello di oggetto casuale.",
+        "randomScenario": "Ottieni uno scenario secondario casuale.",
+        "removeEvent": {
+          "": "Rimuovi %game.events.type.{0}% Evento {1} dal gioco.",
+          "fh": "Rimuovi l'evento {1} dal mazzo %game.events.type.{0}%.",
+          "gh2e": "Rimuovi l'evento {1} dal mazzo %game.events.type.{0}%."
+        },
+        "reputation": "Ottieni {0} reputazione.",
+        "reputationAdditional": "Ottieni {0} reputazione aggiuntiva.",
+        "reputationFaction": "Ottieni {1} reputazione %data.gh2eFaction:{0}%",
+        "resource": "Ognuno ottiene {0} %game.resource.{1}%.",
+        "resourceType": "Ognuno ottiene {0} %game.loot.{1}% qualsiasi.",
+        "scenarioCondition": {
+          "": "Tutti iniziano lo scenario con {0}.",
+          "fh": "Tutti i personaggi iniziano lo scenario successivo con {0}.",
+          "gh2e": "Ciascun personaggio inizia lo scenario successivo con {0}."
+        },
+        "scenarioConditionOne": "Un personaggio ottiene %game.condition.{0}%.",
+        "scenarioDamage": {
+          "": "Tutti iniziano lo scenario con %game.damage:{0}%.",
+          "fh": "Tutti i personaggi iniziano lo scenario successivo con %game.damage:{0}%.",
+          "gh2e": "Ciascun personaggio inizia lo scenario successivo con %game.damage:{0}%."
+        },
+        "scenarioSingleMinus1": "Uno inizia lo scenario con %game.card.minus1% x{0}.",
+        "sectionOrWeek": "Aggiungi %game.section:{0}% OPPURE {1} al calendario in una settimana.",
+        "sectionOrWeeks": "Aggiungi %game.section:{0}% OPPURE {1} al calendario in %game.number.{2}% settimane.",
+        "sectionWeek": "Aggiungi %game.section:{0}% al calendario in una settimana.",
+        "sectionWeekSeasonFinal": "Aggiungi %game.section:{0}% al calendario fino all'ultima settimana della prossima {1}.",
+        "sectionWeeks": "Aggiungi %game.section:{0}% al calendario tra %game.number.{1}% settimane.",
+        "sectionWeeksSeason": "Aggiungi %game.section:{0}% al calendario tra %game.number.{1}% settimane. Se quella settimana è tra {2},aggiungilo invece alla %game.numbered.{3}% settimana del prossimo {4}.",
+        "skipThreat": "Non risolvere la minaccia sottostante.",
+        "soldier": "Ottieni 1 soldato.",
+        "soldiers": "Ottieni {0} soldati.",
+        "townGuardDeckCard": "Aggiungi una carta %game.townGuardAM:{0}% al mazzo della guardia cittadina.",
+        "townGuardDeckCardRemove": "Rimuovi una carta %game.townGuardAM:{0}% dal mazzo della guardia cittadina.",
+        "townGuardDeckCardRemovePermanently": "Rimuovi permanentemente una carta %game.townGuardAM:{0}% dal mazzo della guardia cittadina.",
+        "townGuardDeckCards": "Aggiungi %game.number.{1}% %game.townGuardAM:{0}% carte al mazzo della guardia cittadina.",
+        "traitExperience": "Tutti %game.trait:{0}% guadagnano {1} esperienza ciascuno.",
+        "traitScenarioCondition": "Tutti i personaggi %game.trait:{0}% iniziano lo scenario successivo con {1}.",
+        "traitScenarioDamage": "Tutti i personaggi %game.trait:{0}% iniziano lo scenario successivo con %game.damage:{1}%.",
+        "unlockEnvelope": "Sblocca la busta {0} se non è sbloccata.",
+        "unlockScenario": {
+          "": "Sblocca \"%data.scenario.title.{1}.{0}%\" %data.scenarioNumber:{0}%.",
+          "fh": "Nuovo Scenario: \"%data.scenario.title.{1}.{0}%\" ({0})",
+          "gh2e": "Nuovo scenario: \"%data.scenario.title.{1}.{0}%\" %data.scenarioNumber:{0}%."
+        },
+        "unlockScenarioGroup": "Sblocca \"%data.scenario.title.{2}.{1}-{0}%\" (%data.scenario.group.{1}%).",
+        "upgradeBuilding": "Aggiorna il %data.buildings.{0}% al livello successivo, oppure, se il %data.buildings.{0}% è già di livello {1}, ottieni invece {2} morale.",
+        "wreckBuilding": "Distruggi i %data.buildings.{0}%."
+      },
+      "option": {
+        "": "Opzione {0}:",
+        "1": "A",
+        "2": "B",
+        "3": "C"
+      },
+      "outpostAttack": {
+        "": "Attacco all'Avamposto",
+        "effects": "Il seguente sarà applicato all'Attacco all'Avamposto"
+      },
+      "requirements": {
+        "": "Requisiti:",
+        "partyAchievement": "%data.partyAchievements.{0}% (Gruppo) COMPLETO",
+        "warning": "Requisiti non soddisfatti. Clicca per pescare un'altra carta!"
+      },
+      "type": {
+        "boat": "Barca",
+        "city": "Città",
+        "rift": "Crepa",
+        "road": "Strada",
+        "summer-outpost": "Avamposto estivo",
+        "summer-road": "Strada estiva",
+        "winter-outpost": "Avamposto invernale",
+        "winter-road": "Strada invernale"
+      }
+    },
+    "exhausted": "Esaurito",
+    "experience": "Esperienza",
+    "figure": {
+      "endTurn": "Fine del turno",
+      "error": {
+        "deck": {
+          "": "Mazzo mancante",
+          "hint": "Nessun mazzo Capacità trovato per %{0}% '%data.{0}.{1}%'! Si prega di controllare i dati del mazzo (Edizione: %data.edition.{2}%)."
+        },
+        "monsterEdition": {
+          "": "Edizione del mostro errata",
+          "hint": "Nessun mostro '%data.{0}.{1}%' trovato per l'edizione '%data.edition.{2}%' (Edizione usata invece '%data.edition.{3}%')! Controlla i dati di mostro per l'edizione: %data.edition.{2}%."
+        },
+        "monsterType": {
+          "": "Tipo di mostro mancante",
+          "hint": "Tipo di mostro attuale {3} non trovato per '%data.{0}.{1}%'! Per favore controlla i dati del mostro (Edizione: %data.edition.{2}%)."
+        },
+        "stat": {
+          "": "Attributo mancante",
+          "hint": "Gli attributi per {3} livello {4} mancano per %{0}% '%data.{0}.{1}%'! Per favore controlla i dati (Edizione: %data.edition.{2}%)."
+        },
+        "unknown": {
+          "": "Unità sconosciuta",
+          "hint": "Non sono stati trovati dati per %{0}% '%data.{0}.{1}%'! Per favore controlla i dati dell'edizione (Edizione: %data.edition.{2}%)."
+        }
+      },
+      "longRest": "Effettua un riposo lungo",
+      "longRestOff": "Disabilita il riposo lungo",
+      "setInitiative": "Imposta iniziativa",
+      "startTurn": "Inizia il turno"
+    },
+    "health": "Punti vita",
+    "hp": "PV",
+    "initiative": "Iniziativa",
+    "item": "Oggetto",
+    "items": {
+      "": "Oggetti",
+      "add": "Aggiungi '{0}'",
+      "anyResource": "Qualsiasi %game.loot.{0}%",
+      "brewing": {
+        "": "Prepara le pozioni",
+        "brew": "Prepara",
+        "brewFor": "Prepara per {0}",
+        "brewed": "{2} ha preparato %data.items.{1}-{0}% %game.itemFh.{0}%",
+        "brewedOther": "{2} ha preparato %data.items.{1}-{0}% %game.itemFh.{0}% per {3}",
+        "disabled": "Impossibile preparare le pozioni, ricostruire prima%dati.buildings.alchemist%'(35)",
+        "grid": "Mostra griglia dell'alchimia",
+        "item": "%data.items.{1}-{0}% %game.itemFh.{0}%",
+        "noChar": "Pozione già posseduta da ogni personaggio!",
+        "selectCharacter": "Seleziona il personaggio con il quale preparare:",
+        "special3": "2 o più uguali",
+        "table": "Mostra Tavolo dell'alchimia"
+      },
+      "buy": "Compra '{0}' per {1} oro",
+      "character": {
+        "": "Carte oggetto per %game.characterIconColored.{0}% {1}",
+        "empty": "Nessun oggetto",
+        "shop": "Negozio",
+        "toggleEquipped": "Solo gli oggetti equipaggiati",
+        "toggleSorted": "Ordina gli oggetti"
+      },
+      "choose": "Seleziona oggetto",
+      "craft": "Crea '{0}'",
+      "distilling": {
+        "": "Distilla '{0}'",
+        "distill": "Distilla per 1 %game.loot.{0}%",
+        "select": "Seleziona risorsa"
+      },
+      "effect": "Se l'oggetto è equipaggiato, il suo effetto viene automaticamente applicato. Per equipaggiare un oggetto, fai clic sul nome. L'equipaggiamento degli oggetti è consentito solo prima e tra gli scenari. Doppio clic per forzare l'equipaggiamento.",
+      "empty": "Nessun oggetto trovato",
+      "filter": {
+        "": "Cerca…",
+        "affordable": "Solo articoli acquistabili",
+        "all": "Mostra tutti gli oggetti",
+        "owned": "Solo oggetti posseduti",
+        "sorted": "Ordinati"
+      },
+      "remove": "Rimuovi '{0}'",
+      "sell": "Vendi '{0}' per {1} oro",
+      "share": {
+        "": "Condividi '{0}'",
+        "apply": "Condividi Oggetto",
+        "select": "Seleziona Personaggio"
+      },
+      "shop": {
+        "": "Carte oggetto",
+        "buy": "Acquista gli articoli",
+        "buyingDisabled": "Impossibile acquistare articoli, ricostruisci prima '%data.buildings.Trading-Post%' (37)",
+        "character": {
+          "": "Negozio di articoli per %game.characterIconColored.{0}% {1}",
+          "buy": "Acquista articoli per %game.characterIconColored.{0}% {1}",
+          "craft": "Crea oggetti per %game.characterIconColored.{0}% {1}"
+        },
+        "craft": "Crea oggetti",
+        "craftingDisabled": "Non è possibile creare oggetti, ricostruisci prima '%data.buildings.craftsman%' (34)"
+      },
+      "unlock": "Sblocca oggetto",
+      "unlocked": "Oggetto sbloccato",
+      "wip": "%wip%! Oggetti per %data.edition.{0}% non ancora completati."
+    },
+    "level": {
+      "": "Livello",
+      "bb": {
+        "monsterDifficulty": {
+          "": "Modificatore difficoltà mostro",
+          "0": "Molto facile",
+          "1": "Facile",
+          "2": "Normale",
+          "3": "Difficile",
+          "4": "Molto difficile"
+        }
+      },
+      "experience": "Bonus esperienza",
+      "hazardousTerrain": "Danno per terreno pericoloso",
+      "loot": "Conversione in oro",
+      "trap": "Danno da trappola"
+    },
+    "loot": {
+      "": "Bottino",
+      "apply": "Aggiungi a %data.character.{0}.{1}%",
+      "arrowvine": "Rampicafreccia",
+      "axenut": "Ascianoce",
+      "chooseCharacter": "Seleziona personaggio per +{0} {1}",
+      "config": {
+        "": "Tabella del bottino",
+        "apply": "Applica la tabella del bottino",
+        "create": "Crea una tabella del bottino",
+        "discard": "Annulla i cambiamenti",
+        "hide": "Nascondi la tabella del bottino",
+        "show": "Mostra la tabella del bottino"
+      },
+      "corpsecap": "Cappellocadavere",
+      "deck": "Mazzo del bottino",
+      "enhancements": {
+        "": "Miglioramenti",
+        "add": "Aggiungi miglioramento",
+        "remove": "Rimuovi miglioramento"
+      },
+      "flamefruit": "Fruttofiamma",
+      "herb_resources": "erba",
+      "hide": "Pelle",
+      "keep": "Continua con %data.character.{0}.{1}%",
+      "lootTreasure": {
+        "": "{0} saccheggia il tesoro{1}?",
+        "confirm": "Conferma",
+        "looted": "{0} saccheggia:",
+        "selectCharacter": "Seleziona il personaggio per il tesoro {0}",
+        "selectTreasure": "Seleziona il tesoro per {0}"
+      },
+      "lumber": "Legname",
+      "material_resources": "materiale",
+      "metal": "Metallo",
+      "money": "Denaro",
+      "random_item": {
+        "": "Oggetto casuale",
+        "apply": "Seleziona e equipaggia",
+        "draw": "Oggetto casuale per %game.characterIconColored.{0}% {1}"
+      },
+      "remove": "Rimuovi da %data.character.{0}.{1}%",
+      "rockroot": "Pietraradice",
+      "snowthistle": "Nevecardo",
+      "special": "speciale",
+      "special1": "Carta speciale 1(#1418)",
+      "special2": "Carta speciale 2 (#1419)",
+      "toggleSpecial": "%game.loot.{0}%",
+      "treasures": {
+        "": "Tesori",
+        "rewards": {
+          "battleGoal": "ottieni {0} <img class=\"icon ght-svg\" src=\"./assets/images/check.svg\">",
+          "calendarSection": "aggiungi %data.section:{0}% tra %number.{1}% settimane",
+          "campaignSticker": "ottieni l'adesivo campagna \"{0}\"",
+          "condition": "ottieni {0}",
+          "damage": "subisci {0}",
+          "event": {
+            "city": "aggiungi l'evento di città {0} al mazzo",
+            "rift": "aggiungi l'evento di varco {0} al mazzo",
+            "road": "aggiungi l'evento di strada {0} al mazzo"
+          },
+          "experience": "ottieni {0} esperienza",
+          "experienceFh": "ottieni {0} <img class=\"icon ght-svg\" src=\"./assets/images/experience.svg\">",
+          "goal": "Obiettivo",
+          "gold": "ottieni {0} oro",
+          "goldFh": "ottieni {0} <img class=\"icon ght-svg\" src=\"./assets/images/fh/loot.svg\">",
+          "heal": "effettua \"Cura {0}, Se Stesso\"",
+          "item": "ottieni {1} ({0})",
+          "itemBlueprint": "ottieni {1} progetto %game.itemFh.{0}%",
+          "itemDesign": "ottieni {1} modello ({0}",
+          "itemFh": "ottieni {1} %game.itemFh.{0}%",
+          "loot": "ottieni {0} segnalini denaro",
+          "lootCards": "ottieni %number.{0}% carte bottino",
+          "partyAchievement": "Traguardo di gruppo: \"%data.partyAchievements.{0}%\"",
+          "randomItem": {
+            "": "Ottieni un oggetto casuale (oggetti {0})",
+            "result": ": {1} ({0})"
+          },
+          "randomItemBlueprint": {
+            "": "Progetto di un oggetto casuale",
+            "result": ": {1} progetto ({0})"
+          },
+          "randomItemDesign": {
+            "": "Modello di oggetto casuale",
+            "result": ": {1} modello ({0})"
+          },
+          "randomScenario": {
+            "": "Scenario secondario casuale",
+            "result": ": {1} %data.scenarioNumber:{0}%"
+          },
+          "randomScenarioFh": {
+            "": "Scenario secondario casuale",
+            "result": ": Aprire %data.section:{0}%, sblocca {2}"
+          },
+          "resource": "ottieni {0}",
+          "scenario": "Nuovo scenario: {1} %data.scenarioNumber:{0}%"
+        }
+      }
+    },
+    "maxHealth": "Punti vita massimi",
+    "solo": "In solitario",
+    "specialTarget": {
+      "ability": "%game.target% l'obiettivo dell'abilità %game.actionText.{0}%",
+      "all": "%game.target% tutti",
+      "allCharacters": "%game.target% tutti i personaggi",
+      "allies": "%game.target% tutti gli alleati",
+      "alliesAdjacent": "%game.target% tutti gli alleati adiacenti",
+      "alliesAdjacentAffect": "%game.affect% tutti gli alleati adiacenti",
+      "alliesAffect": "%game.affect% tutti gli alleati",
+      "alliesEnemies": "%game.target% tutti gli alleati e i nemici",
+      "alliesRange": "%game.target% tutti gli alleati entro %game.action.range% {0}",
+      "alliesRangeAffect": "%game.affect% tutti gli alleati entro %game.action.range% {0}",
+      "ally": "%game.target% 1 alleato",
+      "allyAdjacent": "%game.target% un alleato adiacente",
+      "allyAffect": "%game.affect% ogni alleato",
+      "allyAffectAdjacent": "%game.affect% un alleato adiacente",
+      "allyAffectRange": "%game.affect% un alleato entro %game.action.range% {0}",
+      "allyShort": "Alleato",
+      "enemies": "%game.target% tutti i nemici",
+      "enemiesAdjacent": "%game.target% tutti i nemici adiacenti",
+      "enemiesMovedThrough": "%game.target% tutti i nemici spostati",
+      "enemiesMovedThroughAdjacent": "%game.target% tutti i nemici che occupano o sono adiacenti a<br>esagoni attraversati durante l'abilità di spostamento",
+      "enemiesRange": "%game.target% tutti i nemici entro %game.action.range% {0}",
+      "enemiesRangeAffect": "%game.affect% tutti i nemici entro %game.action.range% {0}",
+      "enemiesRangeAffectExact": "%game.affect% tutti i nemici esattamente a %game.action.range% {0}",
+      "enemiesRangeExact": "%game.target% tutti i nemici esattamente a %game.action.range% {0}",
+      "enemy": "%game.target% un nemico",
+      "enemyAdjacent": "%game.target% un nemico adiacente",
+      "enemyAllyRange": "%game.target% un nemico o %game.affect% un alleato entro %game.action.range% {0}",
+      "enemyAttacked": "%game.target% il nemico che<br>ti ha attaccato",
+      "enemyOneAll": "%game.target% un nemico con tutti gli attacchi",
+      "enemyRange": "%game.target% un nemico esattamente a %game.action.range% {0}",
+      "figures": "%game.target% tutte le unità",
+      "figuresAdjacent": "%game.target% tutte le unità adiacenti",
+      "figuresRange": "%game.target% tutte le unità a %game.action.range% {0}",
+      "focusEnemyFarthest": "Concentrati sul nemico<br>più lontano.",
+      "self": "Se Stesso",
+      "selfAllies": "Se stesso e gli alleati",
+      "selfAlliesAdjacentAffect": "%game.affect% se stesso e tutti gli alleati adiacenti",
+      "selfAlliesAffect": "%game.affect% se stesso e tutti gli alleati",
+      "selfAlliesAffectRange": "%game.affect% se stesso e tutti gli alleati entro %game.action.range% {0}",
+      "selfAlliesRange": "%game.target% se stesso e tutti gli alleati entro %game.action.range% {0}",
+      "selfOrAlly": "Se stesso o un alleato",
+      "targets": "Tutti i bersagli"
+    },
+    "sufferDamage": "{0} subisci %game.damage:{1}%",
+    "summon": {
+      "player2-3": "%game.monsterType.{0}% per due o tre personaggi o %game.monsterType.{1}% per quattro personaggi",
+      "player3-4": "%game.monsterType.{0}% per due o %game.monsterType.{1}% per tre o quattro personaggi",
+      "playerAll": "%game.monsterType.{0}% per tutti i personaggi",
+      "spawn": "{1} %data.monster.{0}%",
+      "spawnMarker": "{1} %data.monster.{0}% a %game.mapMarker.{2}%",
+      "spawnObjective": "{1} %data.objective.{0}%",
+      "spawnObjectiveMarker": "{1} %data.objective.{0}% a %game.mapMarker.{2}%",
+      "spawnType": "{2} %game.monsterType.{1}% %data.monster.{0}%",
+      "spawnTypeMarker": "{2} %game.monsterType.{1}% %data.monster.{0}% a %game.mapMarker.{3}%"
+    },
+    "target": {
+      "": "Bersaglio",
+      "all": "tutti"
+    }
+  },
+  "help": "Aiuto",
+  "hints": {
+    "active": "A turno",
+    "active-full": "A turno, clicca su ogni immagine delle unità",
+    "addAdditionalContent": "Aggiungi contenuto addizionale",
+    "addCharacters": "%character.add%",
+    "addMonsterEntities": "Usa i pulsanti \"+\" per generare mostri.",
+    "addMonsters": "%monster.add%",
+    "draw": "Fai clic su \"%round.draw%\"",
+    "draw-full": "Scegli le carte capacità del personaggio, imposta l'iniziativa, fai clic su \"%round.draw%\".",
+    "draw-short": "Imposta l'iniziativa, fai clic su \"%round.draw%\"",
+    "next": "Fai clic su \"%round.next%\"",
+    "setScenario": "%scenario.set%"
+  },
+  "menu": {
+    "backToMain": "Torna a %menu.main%",
+    "main": "Menu principale"
+  },
+  "monster": {
+    "": "Mostro",
+    "add": "Aggiungi mostro",
+    "addEntity": {
+      "boss": "Genera mostro boss",
+      "elite": "Genera mostro elite",
+      "normal": "Genera mostro normale"
+    },
+    "applyInteractiveActions": "Applica capacità evidenziate per",
+    "boss": "Boss",
+    "cancelNumberpicker": "Annulla",
+    "changeStandee": "Cambia %game.monsterType.{0}% pedina #{1}",
+    "changeType": "Cambia tipologia da %game.monsterType.{0}% a %game.monsterType.{1}%",
+    "elite": "Elite",
+    "filter": {
+      "": "Filtra mostro",
+      "noResult": "Nessun risultato"
+    },
+    "normal": "Normale",
+    "remove": "Rimuovi mostro",
+    "removeAll": "Rimuovi tutti",
+    "removeUnused": "Rimuovi inutilizzato",
+    "selectStandees": {
+      "all": "Seleziona tutte le pedine",
+      "boss": "Seleziona tutte le pedine Boss",
+      "elite": "Seleziona tutte le pedine Elite",
+      "normal": "Seleziona tutte le pedine normali"
+    },
+    "setStandees": "Sistema le pedine {1} %game.monsterType.{0}%",
+    "showBoss": "Mostra mostro Boss",
+    "showHidden": "Mostra mostro nascosto",
+    "skipInteractiveActions": "Salta le capacità interattive per",
+    "statEffect": {
+      "": "Regole speciali applicano le seguenti modifiche:",
+      "deck": "Usa capacità modificate:<br>\"{0}\""
+    },
+    "toggleAction": "Attiva/disattiva la capacità applicabile",
+    "toggleAllied": {
+      "off": "Disattiva <span class=\"monster-allied-off\">alleato</span>",
+      "on": "Attiva<span class=\"monster-allied-on\">Alleato</span>"
+    },
+    "toggleAlly": {
+      "off": "Torna a <span class=\"monster-ally-off\">Nemico</span>",
+      "on": "Passa a<span class=\"monster-ally-on\">Alleato</span>"
+    },
+    "toggleDormant": {
+      "off": "Tornare alle entità attive",
+      "on": "Passare alle entità inattive"
+    }
+  },
+  "number": {
+    "0": "zero",
+    "1": "uno",
+    "2": "due",
+    "3": "tre",
+    "4": "quattro",
+    "5": "cinque",
+    "6": "sei",
+    "7": "sette",
+    "8": "otto",
+    "9": "nove"
+  },
+  "numbered": {
+    "1": "primo",
+    "10": "decimo",
+    "2": "secondo",
+    "3": "terzo",
+    "4": "quarto",
+    "5": "quinto",
+    "6": "sesto",
+    "7": "settimo",
+    "8": "ottavo",
+    "9": "nono"
+  },
+  "objective": {
+    "": "Obiettivo",
+    "add": "Aggiungi obiettivo",
+    "addContainer": "Aggiungi contenitore obiettivo (%wip%)",
+    "remove": "Rimuovi obiettivo",
+    "removeAll": "Rimuovi tutti"
+  },
+  "or": "oppure",
+  "party": {
+    "": "Gruppo",
+    "achievements": "Traguardi",
+    "addGlobalAchievement": {
+      "": "Aggiungi traguardo globale",
+      "empty": "Nessun traguardo globale corrispondente trovato"
+    },
+    "addPartyAchievement": {
+      "": "Aggiungi traguardo di gruppo",
+      "empty": "Nessun traguardo di gruppo corrispondente trovato"
+    },
+    "campaign": {
+      "": "Campagna",
+      "achievements": "Traguardi globali",
+      "donations": "Donazioni al santuario della Grande Quercia",
+      "envelopeB": "Busta B",
+      "items": "Oggetti sbloccati",
+      "manage": "Gestione campagna globale",
+      "map": "Mappa",
+      "players": {
+        "": "Nomi dei giocatori",
+        "add": "Aggiungi giocatore"
+      },
+      "retirements": {
+        "": "Personaggi ritirati",
+        "character": "Personaggio",
+        "class": "Classe",
+        "level": "Livello",
+        "masteries": "Maestrie",
+        "perks": "Talenti",
+        "player": "Giocatore",
+        "reactivate": "Riattiva personaggio"
+      },
+      "scenarios": {
+        "": "Scenari",
+        "addConclusion": "Aggiungi conclusione",
+        "addSuccess": "Segna come terminato",
+        "conclusions": "Conclusioni",
+        "edition": "Edizione",
+        "finished": "Terminato",
+        "group": "Gruppo",
+        "index": "#",
+        "name": "Nome",
+        "removeManual": "Segna come non sbloccato",
+        "removeSuccess": "Segna come non terminato",
+        "removeSuccessCasual": "Rimuovi dagli scenari casuali completati",
+        "unlock": "Sblocca scenario"
+      },
+      "sheet": {
+        "": "Scheda campagna",
+        "buildings": {
+          "": "Edifici",
+          "action": "Azione",
+          "build": {
+            "": "Costruisci",
+            "action": "Costruisci",
+            "hint": "Costruisci (forza con doppio clic)"
+          },
+          "costs": "Costi",
+          "discount": "-1 risorsa materiale",
+          "effects": "Effetti",
+          "id": "Numero",
+          "interactions": "Interazioni",
+          "level": {
+            "": "Livello",
+            "hint": "Mostra bonus (abbassa livello con doppio clic)"
+          },
+          "name": "Nome",
+          "rebuild": {
+            "": "Ricostruisci",
+            "action": "Ricostruisci",
+            "hint": "Ricostruisci (forza con doppio clic)"
+          },
+          "repair": {
+            "": "Ripara edificio",
+            "action": "Ripara edificio",
+            "costs": "Ogni {0}",
+            "hint": "Ripara edificio (forza con doppio clic)",
+            "morale": "-1 di Morale"
+          },
+          "rewards": {
+            "action": "Livello {0}",
+            "defense": "+{0} difesa",
+            "items": "Aggiungi %game.itemFh.{0}% a %game.itemFh.{1}% al rifornimento oggetti",
+            "loseMorale": "-{0} morale",
+            "plot": "+{0} trama",
+            "plots": "+{0} trame",
+            "prosperity": "+{0} prosperità",
+            "section": "%data.section:{0}%",
+            "soldiers": "+{0} soldati"
+          },
+          "selectResources": {
+            "": "Seleziona risorse",
+            "confirm": "Conferma",
+            "morale": "-1 di Morale"
+          },
+          "state": {
+            "damaged": "danneggiato",
+            "normal": "normale",
+            "wrecked": "distrutto"
+          },
+          "unlock": "Sblocca edificio",
+          "upgrade": {
+            "": "Aggiorna edificio",
+            "action": "Aggiorna l'edificio al livello {0}",
+            "hint": "Aggiorna edificio (forza con doppio clic)"
+          }
+        },
+        "campaignStickers": {
+          "": "Adesivi campagna",
+          "empty": "Nessun adesivo corrispondente trovato per la campagna"
+        },
+        "defense": "Difesa",
+        "disable": "Vai alla scheda gruppo di Gloomhaven",
+        "enable": "Vai alla scheda campagna di Frosthaven",
+        "name": "Nome gruppo",
+        "nextWeek": "Prossima settimana (nuovo calendario)",
+        "soldierLevel": "Liv",
+        "soldiers": "Soldati",
+        "summer": "Estate",
+        "supply": {
+          "": "Scorta di Frosthaven",
+          "apply": "Applica cambiamenti",
+          "edit": "Modifica",
+          "total": "Totale"
+        },
+        "totalDefense": "Difesa totale",
+        "townGuardPerks": "Talenti della guardia cittadina",
+        "weekSections": {
+          "": "Imposta sezioni per settimana {0}",
+          "addSection": "Aggiungi sezione alla settimana",
+          "calc": "{0} settimane dalla settimana corrente",
+          "hint": "Fare doppio clic per impostare/modificare le sezioni per la settimana",
+          "lock": "Blocca il calendario per evitare modifiche accidentali. Doppio clic per creare un blocco permissivo, consentendo di aggiungere o rimuovere esattamente una settimana.",
+          "openConclusion": "Seleziona la sezione continua",
+          "section": "Sezione"
+        },
+        "winter": "Inverno"
+      },
+      "totalTime": "Tempo giocato in scenari: {0}",
+      "townGuard": "Guardia cittadina",
+      "townGuardDeck": "Mazzo della guardia cittadina",
+      "treasures": {
+        "": "Tesori",
+        "applySelect": "Applica selezione",
+        "batchSelect": "Selezione multipla",
+        "loot": "Saccheggia il tesoro"
+      }
+    },
+    "campaignMode": "Modalità campagna",
+    "change": "Cambia gruppo",
+    "export": "Esporta",
+    "greatOak": "Santuario della Grande Quercia",
+    "imbuement": "Infusione",
+    "import": "Importa",
+    "inspiration": "Ispirazione",
+    "location": "Luogo",
+    "morale": "Morale",
+    "name": "Nome",
+    "new": {
+      "": "Crea nuova campagna",
+      "hint": "La creazione di una nuova campagna è disabilitata durante uno scenario. Termina o annulla lo scenario corrente per creare una nuova campagna."
+    },
+    "notes": "Note",
+    "outpostAttack": {
+      "advantage": "Ottieni vantaggio per questo attacco per aver perso soldati!",
+      "buildings": {
+        "damaged": "Edificio danneggiato",
+        "lvl": "Liv {0}",
+        "wrecked": "Edificio distrutto"
+      },
+      "defense": "Difesa della base:",
+      "disadvantage": "Ottieni svantaggio perché le caserme sono distrutte!",
+      "filter": {
+        "desc": "Ordine decrescente",
+        "distance": "Distanza",
+        "even": "Pari",
+        "level": {
+          "": "Livello",
+          "high": "Da alto a basso",
+          "low": "Da basso ad alto"
+        },
+        "lowerBoundary": "Confine inferiore",
+        "odd": "Dispari",
+        "parity": "Parità",
+        "randomize": "Rendi casuale",
+        "upperBoundary": "Confine superiore"
+      },
+      "finish": "Termina",
+      "map": "Apri la Mappa Globale",
+      "next": "Prossimo obiettivo",
+      "other": "Altri edifici",
+      "result": {
+        "damage": "L'edificio è danneggiato.<br>Fallito con {0} Difesa contro %game.action.attack% {2}!",
+        "success": "Successo con {0} difesa contro %game.action.attack% {2}!",
+        "successfull": "La difesa è stata un successo!",
+        "wreck": "L'edificio è distrutto!"
+      },
+      "sheet": "Apri Scheda di Gruppo",
+      "targets": "Edifici Bersagliati"
+    },
+    "prosperity": {
+      "": "Prosperità",
+      "reset": "Resetta prosperità",
+      "wrap": {
+        "expand": "Espandi",
+        "shrink": "Restringi"
+      }
+    },
+    "remove": "Rimuovi gruppo",
+    "reputation": {
+      "": "Reputazione",
+      "additional": {
+        "": "Sblocchi di reputazione aggiuntivi",
+        "sectionRequires": {
+          "": "Leggi %game.section:{0}% quando hai almeno {1} %game.gh2eFaction:{2}% reputazione e hai completato lo Scenario {3}.",
+          "multiple": "Leggi %game.section:{0}% quando hai {1} %game.gh2eFaction:{2}% reputazione e hai completato gli Scenari {3}."
+        },
+        "special": {
+          "city-event": "Aggiungi C-{0} al mazzo evento cittadino una volta che hai almeno {1} reputazione con una fazione."
+        }
+      }
+    },
+    "sheet": "Scheda gruppo",
+    "shop": {
+      "": "Modificatore di prezzo",
+      "none": "Nessuno"
+    }
+  },
+  "permissions": {
+    "": "Le tue autorizzazioni",
+    "all": {
+      "": "Tutte le autorizzazioni",
+      "hint": "Si possono creare nuove autorizzazioni! Non può essere cambiato in seguito!"
+    },
+    "attackModifiers": {
+      "": "Mazzo modificatori attacco",
+      "hint": "Pesca e modifica il mazzo modificatori attacco dei mostri e degli alleati"
+    },
+    "characters": {
+      "": "Tutti i personaggi",
+      "hint": "Aggiorna e modifica tutti i personaggi e gli obiettivi."
+    },
+    "code": {
+      "": "Nuovo codice di gioco per le autorizzazioni"
+    },
+    "create": "Crea nuove autorizzazioni",
+    "custom": {
+      "": "Definisci nuove autorizzazioni",
+      "hint": "Specifica le autorizzazioni concesse"
+    },
+    "elements": {
+      "": "Elementi",
+      "hint": "Imposta stato degli elementi"
+    },
+    "hasAll": "Concesse tutte le autorizzazioni",
+    "level": {
+      "": "Livello",
+      "hint": "Cambia il livello dello scenario"
+    },
+    "lootDeck": {
+      "": "Mazzo del bottino",
+      "hint": "Pesca e modifica il mazzo del bottino"
+    },
+    "monsters": {
+      "": "Tutti i mostri",
+      "hint": "Aggiorna e cambia tutti i mostri e le entità dei mostri"
+    },
+    "party": {
+      "": "Gruppo",
+      "hint": "Aggiorna e cambia il gruppo e i progressi della campagna"
+    },
+    "round": {
+      "": "Round",
+      "hint": "Controlla i round e i turni delle unità"
+    },
+    "save": "Salva autorizzazioni",
+    "scenario": {
+      "": "Scenario",
+      "hint": "Cambia edizione, scenario e sezioni"
+    }
+  },
+  "round": {
+    "draw": "Pesca",
+    "hint": {
+      "active": "Non tutte le unità hanno terminato. Finisci il round comunque?",
+      "battleGoals": "Non tutti i personaggi hanno scelto un'obiettivo di battaglia. Inizia il round comunque?",
+      "confirm": "Conferma",
+      "confirmFailed": "Finisci lo scenario con un fallimento",
+      "confirmFinish": "Finisci lo scenario con un successo",
+      "confirmReset": "Resetta lo scenario",
+      "confirmTurns": "Conferma senza terminare i turni!",
+      "continueDraw": "Continua con un pescaggio",
+      "continueNext": "Continua con il prossimo round",
+      "empty": "Aggiungi mostri e personaggi prima del round.",
+      "eventDraw": "Pesca una carta evento %game.events.type.{0}%.",
+      "failed": "Tutti i personaggi sembrano esausti. Vuoi riavviare lo scenario?",
+      "finish": "Non sono rimasti mostri. Hai finito con successo lo scenario?",
+      "initiativeRoundConfirm": "Tutte le iniziative sono impostate. Inizia il prossimo round?",
+      "missingInitiative": "L'iniziativa deve essere impostata per tutte le unità!"
+    },
+    "next": "Prossimo round"
+  },
+  "scenario": {
+    "": "Scenario",
+    "blocked": "Bloccato",
+    "cancel": "Annulla scenario",
+    "chart": {
+      "": "Diagramma di flusso dello scenario",
+      "campaign": {
+        "": "Modalità campagna",
+        "back": "Torna alla modalità campagna",
+        "force": "Doppio clic per mostrare il diagramma di flusso completo di spoilers."
+      },
+      "legend": {
+        "": "Legenda",
+        "blocked": {
+          "": "Bloccato",
+          "hint": "Questo scenario non può essere giocato, perché è bloccato da altri."
+        },
+        "calendar": {
+          "": "Sbloccato tramite calendario",
+          "hint": "Questo scenario si sblocca tramite una sezione del calendario."
+        },
+        "exclusive": {
+          "": "Esclusivo",
+          "hint": "Questo percorso scenario è esclusivo, quindi si può seguire un solo percorso e gli altri sono bloccati."
+        },
+        "force-linked": {
+          "": "Forza Collegato",
+          "hint": "Questo scenario è collegato e deve essere giocato subito dopo."
+        },
+        "linked": {
+          "": "Collegato",
+          "hint": "Questo scenario è collegato."
+        },
+        "locked": {
+          "": "Bloccato",
+          "hint": "Questo scenario è bloccato, non può ancora essere giocato a causa di requisiti insoddisfatti."
+        },
+        "not-campaign": {
+          "": "Nessuna modalità campagna",
+          "hint": "Non sei in modalità Campagna"
+        },
+        "not-unlocked": {
+          "": "Non sbloccato",
+          "hint": "uesto scenario è visibile, ma non può essere giocato perché non è stato ancora sbloccato."
+        },
+        "success": {
+          "": "Successo",
+          "hint": "Questo scenario è stato terminato con successo."
+        },
+        "success-blocked": {
+          "": "Successo, attualmente bloccato",
+          "hint": "Questo scenario è stato completato con successo, ma ora è bloccato."
+        },
+        "success-locked": {
+          "": "Successo, attualmente chiuso",
+          "hint": "Questo scenario è stato completato con successo, ma ora è chiuso."
+        },
+        "unplayed": {
+          "": "Non giocato",
+          "hint": "Questo scenario è sbloccato e può essere giocato."
+        }
+      },
+      "setup": "Mostra le impostazioni dello scenario",
+      "start": "Inizia lo scenario",
+      "success": "Segna come completato",
+      "treasures": {
+        "": "Mostra tesori (se presenti)",
+        "empty": "Nessun tesoro"
+      }
+    },
+    "conclusion": "Conclusione",
+    "custom": "Personalizzato",
+    "eventEffects": {
+      "": "Effetti dell'evento",
+      "campaign": "Influisce sulla campagna",
+      "drawEvent": "Pesca Evento %game.events.type.{0}%",
+      "drawRandomItem": {
+        "": "Pesca un modello casuale di oggetto",
+        "apply": "Applica",
+        "blueprint": "Pesca un progetto casuale di oggetto"
+      },
+      "drawRandomScenario": {
+        "": "Pesca uno scenario casuale",
+        "apply": "Applica",
+        "scenario": "{1} %data.scenarioNumber:{0}%",
+        "section": "Aprire %data.section:{0}%, sblocca {2}"
+      },
+      "hint": "Applica a tutte le figure selezionate",
+      "outpostAttack": "Attacco all'Avamposto",
+      "progress": "Colpisce il progresso del personaggio",
+      "progressShare": "Influisce sul progresso dell'avamposto"
+    },
+    "favors": {
+      "": "Appendice F: favori",
+      "apply": "Applica",
+      "keep": "Mantieni i favori per ogni scenario",
+      "label": {
+        "": "%game.data.favors.{0}.{1}% (1 Punto)",
+        "multiple": "%game.data.favors.{0}.{1}% ({2} Punti)"
+      }
+    },
+    "filter": {
+      "": "Filtra scenario",
+      "noResult": "Nessun risultato"
+    },
+    "filterSuccess": "Solo scenari non completati",
+    "finish": {
+      "": "Termina lo scenario",
+      "failure": "Fallimento",
+      "reset": "Resetta",
+      "success": "Successo"
+    },
+    "gh2eImbuement": {
+      "": "Appendice F: Infusione di mostri",
+      "advancedImbuement": "Infusione avanzata",
+      "imbuement": "Infusione"
+    },
+    "level": "Liv {0}",
+    "locked": "Requisiti mancanti",
+    "manual": {
+      "add": "Sblocca scenari",
+      "index": "Numero di scenario, separato da virgola"
+    },
+    "openRoom": "Apri la porta",
+    "openRoomMarker": "Apri la porta %game.mapMarker.{1}%",
+    "openRoomMarkerRef": "Apri la porta %game.mapMarker.{1}% per la tessera '{0}'",
+    "openRoomRef": "Apri la porta per la tessera '{0}'",
+    "random": {
+      "": "Dungeon casuale",
+      "treasure": {
+        "createTwoElements": "Crea due elementi qualsiasi",
+        "cureConditions": "Cura tutte le condizioni negative",
+        "enemiesCondition": "Tutti i nemici ottengono %game.condition.{0}%",
+        "enemiesDamage": "Tutti i nemici subiscono %game.damage:{0}%",
+        "gold": "{0} oro",
+        "heal": "Cura {0} punti ferita",
+        "lootCards": "Ottieni {0} carte bottino",
+        "recoverCards": "Recupera {0} carte dalla pila degli scarti",
+        "recoverLost": "Recupera una carta smarrita",
+        "refreshItem": "Ripristina {0} %game.itemSlot:{1}% oggetti",
+        "resource": "Ottieni {1} %game.resource.{0}%"
+      }
+    },
+    "recap": "Riepilogo",
+    "requirements": {
+      "": "Requisiti di scenario",
+      "all": "Mostra tutti i requisiti (includi i soddisfatti)",
+      "buildings": "'%data.buildings.{0}%' (Edificio) COSTRUISCI",
+      "buildingsLevel": "'%data.buildings.{0}%' (Edificio) Livello {1} COSTRUISCI",
+      "buildingsMissing": "'%data.buildings.{0}%' (Edificio) NON COSTRUITO",
+      "campaignStickers": "'%data.campaignSticker.{0}%' (Adesivo campagna) COMPLETO",
+      "campaignStickersCount": "'%data.campaignSticker.{0}%' (Adesivo campagna) x{2} COMPLETO (ottenuto {1})",
+      "campaignStickersMissing": "'%data.campaignSticker.{0}%' (Adesivo campagna) INCOMPLETO",
+      "cancel": "Annulla",
+      "characters": "%data.characterIconColored.{1}% '%data.character.{0}.{1}%' presente",
+      "charactersMissing": "%data.characterIconColored.{1}% '%data.character.{0}.{1}%' assente",
+      "global": "'%data.globalAchievements.{0}%' (Globale) COMPLETO",
+      "globalCount": "'%data.globalAchievements.{0}%' (Globale) x{2} COMPLETO (ottenuto {1})",
+      "globalMissing": "'%data.globalAchievements.{0}%' (Globale) INCOMPLETO",
+      "party": "'%data.partyAchievements.{0}%' (Gruppo) COMPLETO",
+      "partyCount": "'%data.partyAchievements.{0}%' (Gruppo)x{2} COMPLETO (ottenuto {1})",
+      "partyMissing": "'%data.partyAchievements.{0}%' (Gruppo) INCOMPLETO",
+      "scenarios": {
+        "": "Richiede che i seguenti scenari siano finiti",
+        "and": "e",
+        "or": "oppure",
+        "scenario": "%data.scenarioNumber:{0}%"
+      },
+      "solo": "%data.characterIconColored.{1}% '%data.character.{0}.{1}%' Livello 5 o superiore",
+      "start": "Avvia comunque lo scenario"
+    },
+    "reset": "Ricomincia scenario",
+    "rewards": {
+      "": "Ricompense",
+      "addWeek": {
+        "": "Calendario",
+        "next": "Sposta automaticamente il calendario alla settimana {0}",
+        "section": "Apri %data.section:{0}% (applicato automaticamente)",
+        "summer": "Nuova stagione: estate <img class=\"icon ght-svg\" src=\"./assets/images/fh/party/summer.svg\">",
+        "winter": "Nuova stagione: inverno <img class=\"icon ght-svg\" src=\"./assets/images/fh/party/winter.svg\">"
+      },
+      "battleGoals": "{0} <img class=\"icon ght-svg\" src=\"./assets/images/check.svg\"> ognuno",
+      "bonus": "Bonus",
+      "calendarSection": {
+        "": "Collegamenti della sezione",
+        "add": {
+          "": "Aggiungi %data.section:{0}% tra %number.{1}% settimane.",
+          "next": "Aggiungi %data.section:{0}% al calendario nella settimana %numbered.{1}% della prossima %party.campaign.sheet.{2}%."
+        }
+      },
+      "campaignSticker": "Adesivo campagna",
+      "chooseItem": "Scegli di ottenere uno dei seguenti",
+      "chooseLocation": "Scegli di sbloccare solo uno dei seguenti",
+      "collectiveGold": "{0} oro collettivo",
+      "collectiveResources": "Ottieni {1} %game.resource.{0}% collettivo",
+      "collectiveResourcesLose": "Perdi {1} %game.resource.{0}% collettivo",
+      "envelope": "Apri la busta {0}",
+      "event": {
+        "boat": "Aggiungi l'evento {0} al mazzo della barca",
+        "city": "Aggiungi evento città {0} al mazzo",
+        "rift": "Aggiungi l'evento di varco {0} to the deck",
+        "road": "Aggiungi l'evento di strada {0} al mazzo",
+        "summer-outpost": "Aggiungi l'evento {0} al mazzo avamposto estivo",
+        "summer-road": "Aggiungi l'evento{0} al mazzo strada estiva",
+        "winter-outpost": "Aggiungi l'evento {0} al mazzo avamposto invernale",
+        "winter-road": "Aggiungi l'evento {0} al mazzo strada invernale"
+      },
+      "experience": "{0} esperienza ciascuno",
+      "factionUnlock": "%data.gh2eFaction:{0}% la reputazione ora può essere aumentata oltre 12.",
+      "globalAchievements": "Traguardi globali",
+      "gold": "{0} oro ciascuno",
+      "inspiration": "{0} ispirazione",
+      "item": "\"%data.items.{1}-{0}%\" (Oggetto {0})",
+      "itemBlueprint": "Ottieni \"%data.items.{1}-{0}%\" progetto %game.itemFh.{0}%",
+      "itemBlueprintRange": "Aggiungi gli oggetti da %game.itemFh.{0}% a %game.itemFh.{1}% alla riserva di oggetti disponibili.",
+      "itemDesign": "\"%data.items.{1}-{0}%\" modello (Oggetto {0})",
+      "itemDesignEdition": "\"%data.items.{1}-{0}%\" modello (Oggetto {0} %data.edition.{1}%)",
+      "itemDesignRange": "Aggiungi i modelli di oggetto {0}",
+      "items": "{2} \"%data.items.{1}-{0}%\" (Oggetto {0})",
+      "location": "Nuova posizione",
+      "locations": "Nuove posizioni",
+      "lootDeckCard": "Aggiungi la carta bottino {0} a ogni mazzo bottino di scenario oltre alla normale distribuzione del bottino.",
+      "lostPartyAchievements": "Traguardi del gruppo perduto",
+      "morale": "{0} morale",
+      "overlayCampaignSticker": "Colloca l'adesivo \"%data.campaignSticker.{0}%\" sulla mappa della città nella posizione {1}",
+      "overlaySticker": "Posiziona l'adesivo di sovrapposizione {0} sul luogo della mappa {0} ({1}).",
+      "partyAchievements": "Traguardi del gruppo",
+      "perks": "Ognuno ottiene {0} talenti",
+      "pet": "Aggiungi %data.pets.{1}-{0}% (Animale {0}) alle stalle. Ciò può superare la capacità delle scuderie.",
+      "prosperity": "{0} prosperità",
+      "randomItemBlueprint": "Ottieni un progetto di oggetto casuale",
+      "randomItemBlueprints": "Aggiungi gli oggetti da %game.itemFh.{0}% a %game.itemFh.{1}% al mazzo dei progetti casuali.",
+      "randomItems": "Ogni personaggio ottiene un oggetto casuale ({0}-{1})",
+      "randomSideScenario": "Pesca uno scenario secondario casuale.",
+      "removeEvent": {
+        "boat": "Rimuovi l'evento {0} dal mazzo della barca",
+        "city": "Rimuovi l'evento città {0} dal mazzo",
+        "rift": "Rimuovi l'evento varco {0} dal mazzo",
+        "road": "Rimuovi l'evento strada {0} dal mazzo",
+        "summer-outpost": "Rimuovi l'evento {0} dal mazzo avamposto estivo",
+        "summer-road": "Rimuovi l'evento {0} dal mazzo strada estiva",
+        "winter-outpost": "Rimuovi l'evento {0} dal mazzo avamposto invernale",
+        "winter-road": "Rimuovi l'evento {0} dal mazzo strada invernale"
+      },
+      "removeLootDeckCard": "Rimuovi la carta bottino {0} dal gioco. Non aggiungerlo più al mazzo di bottino di nessuno scenario.",
+      "repeatScenario": "Lo scenario può essere rigiocato!",
+      "reputation": "{0} reputazione",
+      "reputationFactions": "Ottieni {1} reputazione con %game.gh2eFaction:{0}%",
+      "resources": "Ciascuno ottiene {1} %game.resource.{0}%",
+      "resourcesLose": "Ciascuno perde {1} %game.resource.{0}%",
+      "townGuardAm": "Aggiungi una carta %game.townGuardAm.{1}:{0}% al mazzo della guardia cittadina.",
+      "unlockCharacter": {
+        "": "Sblocca",
+        "box": "Custodia di classe %game.characterIcon.{0}%"
+      }
+    },
+    "rules": {
+      "addSection": "Apri la sezione {1}",
+      "addSectionIndex": "Apri la sezione #{0} {1}",
+      "addSectionMarker": "Apri la sezione {1} %game.mapMarker.{2}%",
+      "addSectionMarkerIndex": "Apri la sezione #{0} {1} %game.mapMarker.{2}%",
+      "alwaysApply": "Applica automaticamente",
+      "alwaysApplyTurn": {
+        "after": "alla fine di ciascuno dei loro turni.",
+        "turn": "all'inizio di ciascuno dei loro turni."
+      },
+      "apply": "Applica",
+      "clearDiscarded": "Elimina le regole di scenario scartate",
+      "dismiss": "Congeda",
+      "figures": {
+        "activate": "{0} attiva",
+        "all": "Tutte le unità",
+        "amAdd": "{0} aggiungi %game.attackModifiers.perks.cards.{4}% %game.attackmodifier.{3}% %game.attackModifiers.types.{3}% al mazzo dei modificatori attacco",
+        "amRemove": "0} rimuovi %game.attackModifiers.perks.cards.{4}% %game.attackmodifier.{3}% %game.attackModifiers.types.{3}% dal mazzo dei modificatori attacco",
+        "damage": "{0} subisci %game.damage:{2}%",
+        "discard": "{0}ognuno scarta %number.{2}% carte capacità",
+        "discardAbilityToBottom": "Posiziona la capacità sul fondo della pila degli scarti per {0}",
+        "dormant": "{0} diventa dormiente",
+        "drawAbility": "Pesca un'altra carta capacità per {0}",
+        "gainCondition": "{0} ottieni %game.condition.{1}%",
+        "heal": "{0} %game.action.heal% {2}",
+        "loseCondition": "{0} perdi %game.condition.{1}%",
+        "permanentCondition": "{0} ottieni %game.condition.{1}% permanente",
+        "remove": "Rimuovi {0}",
+        "removeAbility": "Rimuovi la carta abilità '{1}' di {0}",
+        "scenarioEffect": "come effetto dello scenario",
+        "setAbility": "Imposta la carta capacità attiva da {0} a '{1}'",
+        "setHp": "{0} PV a {2}",
+        "toggleOff": "{0} a inattivo",
+        "toggleOn": "{0} a attivo",
+        "transfer": "{0} diventa %data.monster.{1}% {4}",
+        "transferEntities": "{0} diventa %data.monster.{1}% {4}"
+      },
+      "finish": {
+        "lost": "Scenario perso!",
+        "round": "Prossimo round!",
+        "won": "Scenario vinto!"
+      },
+      "finishWithConclusion": "Finisci lo scenario con #{0} {1}",
+      "hide": "Non mostrare più",
+      "openRoom": "Apri la porta",
+      "openRoomMarker": "Apri la porta %game.mapMarker.{0}%",
+      "randomDungeon": {
+        "dungeon": {
+          "": "Pesca {0} carte casuali dal mazzo di carte Dungeon casuale. (manuale)",
+          "cards": "Pesca {0} carte casuali dal mazzo di carte Dungeon casuale. Usa solo le carte<i>{1}</i>. (manuale)"
+        },
+        "monster": {
+          "": "Aggiungi {0} carte casuali dal mazzo di carte mostri casuali.",
+          "cards": "Aggiungi {0} carte casuali dal mazzo di carte mostri casuali. Usa solo le carte:<i>{1}</i>."
+        }
+      },
+      "show": {
+        "": "Mostra le regole dello scenario",
+        "applied": "Regole di scenario applicate",
+        "discarded": "Regole di scenario scartate"
+      },
+      "spawn": "Genera {2}%game.monsterType.{1}% %data.monster.{0}%",
+      "spawnMarker": "Genera {2}%game.monsterType.{1}% %data.monster.{0}% a %game.mapMarker.{3}%",
+      "spawnObjective": "Genera obiettivo '{0}'",
+      "spawnObjectiveEscort": "Genera scorta '{0}'",
+      "spawnObjectiveEscortMarker": "Genera scorta '{0}' a %game.mapMarker.{2}%",
+      "spawnObjectiveMarker": "Genera obiettivo '{0}' a %game.mapMarker.{2}%",
+      "spawnObjectives": "Genera {1} obiettivi '{0}'",
+      "spawnObjectivesEscort": "Genera {1} scorte '{0}'",
+      "spawnObjectivesEscortMarker": "Genera {1} scorte '{0}' a %game.mapMarker.{2}%",
+      "spawnObjectivesMarker": "Genera {1} obiettivi '{0}' a %game.mapMarker.{2}%"
+    },
+    "section": {
+      "": "Sezione",
+      "add": "Aprire sezione {1}?",
+      "addIndex": "Aprire sezione {1}#{0}?",
+      "addMarker": "Aprire sezione %game.mapMarker.{1}%?",
+      "addMarkerIndex": "Aprire sezione #{0} %game.mapMarker.{1}%?",
+      "cancel": "Annulla",
+      "conclusion": {
+        "": "Finisci lo scenario con {0}",
+        "continue": {
+          "": "Continua con {0}",
+          "named": "Continua con {1} {0}"
+        },
+        "named": "Finisci lo scenario con {1} {0}",
+        "select": "Seleziona la conclusione:"
+      },
+      "confirm": "Conferma"
+    },
+    "set": "Imposta scenario",
+    "setup": {
+      "": "Configurazione scenario",
+      "abilities": "Capacità",
+      "detailed": "Mostra statistiche dettagliate dei mostri",
+      "spoiler": "Spoiler",
+      "stats": "Statistiche mostri"
+    },
+    "showAllSections": "Mostra tutte le sezioni",
+    "stats": {
+      "": "Statistiche dello scenario",
+      "bossKills": {
+        "": "%game.monsterType.boss%: {0}",
+        "hint": "Numero di mostri %game.monsterType.boss% uccisi"
+      },
+      "damage": {
+        "": "Danni"
+      },
+      "dealtDamage": {
+        "": "%game.action.attack% {0}",
+        "hint": "Danno inflitto"
+      },
+      "eliteKills": {
+        "": "%game.monsterType.elite%: {0}",
+        "hint": "Numero di mostri %game.monsterType.elite% uccisi"
+      },
+      "gold": {
+        "": "%game.gameIcon:loot%: {0}",
+        "hint": "Numero di %game.gameIcon:loot% monete saccheggiate"
+      },
+      "heal": {
+        "": "Cure"
+      },
+      "healedDamage": {
+        "": "%game.condition.heal:{0}%",
+        "hint": "Cure ricevute"
+      },
+      "heals": {
+        "": "%game.action.heal% {0}",
+        "hint": "Cure ad altri"
+      },
+      "kills": {
+        "": "Uccisioni"
+      },
+      "max": {
+        "": "Max."
+      },
+      "maxDamage": {
+        "": "%game.damage:{0}%",
+        "hint": "Danno singolo più alto ricevuto"
+      },
+      "maxDealtDamage": {
+        "": "%game.action.attack% {0}",
+        "hint": "Danno singolo più alto inflitto"
+      },
+      "monsterDamage": {
+        "": "%game.damage:{0}%",
+        "hint": "Danni ricevuti dai nemici"
+      },
+      "normalKills": {
+        "": "%game.monsterType.normal%: {0}",
+        "hint": "Numero di mostri %game.monsterType.normal% uccisi"
+      },
+      "otherDamage": {
+        "": "%game.gameIcon:trap% {0}",
+        "hint": "Altri danni ricevuti"
+      },
+      "progress": "Bottino, Esp",
+      "resources": {
+        "": "Risorse",
+        "loot": {
+          "": "%game.resource.{0}%: {1}",
+          "hint": "Numero di risorse %game.resource{0}% raccolte"
+        }
+      },
+      "scenarios": "Scenari",
+      "toggle": {
+        "hide": "Nascondi le statistiche dello scenario",
+        "show": "Mostra statistiche sullo scenario"
+      },
+      "total": "Totale",
+      "treasures": {
+        "": "%game.gameIcon:scenario/treasure%: {0}",
+        "hint": "Numero di tesori %game.gameIcon:scenario/treasure% aperti"
+      },
+      "xp": {
+        "": "%game.gameIcon:experience%: {0}",
+        "hint": "Quantità di esperienza %game.gameIcon:experience% ottenuta"
+      }
+    },
+    "summary": {
+      "": "Riepilogo dello scenario",
+      "alreadyWarning": {
+        "": "Già finito",
+        "hint": "Lo scenario era già finito con successo in modalità campagna, non sono stati concessi premi.",
+        "ignore": "Ottieni comunque i premi!",
+        "reapply": "Rimuovi i premi"
+      },
+      "apply": "Finisci",
+      "cancel": "Annulla",
+      "casualWarning": {
+        "": "Modalità casuale",
+        "campaignRewards": "Abilita i premi della campagna",
+        "fh": "Modalità casuale di Frosthaven",
+        "hintFh": "In modalità casuale di Frosthaven, tutti gli effetti della campagna vengono ignorati. Nessun evento viene risolto, il tempo non passa e il gruppo non acquisisce esperienza, bottino, tesori, spunte, progressi missione personale, premi, sbloccabili, ecc",
+        "ignore": "Ottieni comunque i premi!",
+        "reapply": "Torna alla modalità casuale"
+      },
+      "challenges": {
+        "": "Sfide",
+        "complete": "Sfida completata",
+        "completed": "Sfide completate"
+      },
+      "conclusionWarning": {
+        "": "Soluzione mancante!",
+        "hint": "Sembra che questo scenario sia terminato senza una conclusione. Ciò può portare a ricompense e sblocchi mancanti. Le sezioni di conclusione sono contrassegnate con un'icona <img class=\"icon ght-svg\" src=\"./assets/images/scenario/conclusion.svg\">."
+      },
+      "forcedLinks": "%scenario.summary.links% (forzato)",
+      "gold": "Oro",
+      "item": "Oggetto \"%data.items.{1}-{0}%\"",
+      "levelUp": "Fino al livello {1}",
+      "link": "Continua con #{0}",
+      "links": "Continua con uno scenario collegato",
+      "loot": "Bottino",
+      "name": "%character%",
+      "perksUp": "Ottieni un nuovo talento",
+      "randomItem": "Oggetto casuale",
+      "randomItemLooted": "Oggetto casuale saccheggiato",
+      "randomItems": "Oggetti casuali",
+      "restart": "Ricomincia scenario",
+      "restartLoseLoot": "Ricomincia scenario (perdi le risorse)",
+      "rewards": {
+        "": "Ricompense dello scenario",
+        "collectiveGold": "%game.resource.gold% collettivo",
+        "collectiveResource": "%game.resource.{0}% collettivo/a",
+        "experience": "Ricompensa di Esp",
+        "gold": "Ricompensa in oro"
+      },
+      "solve": "Continua",
+      "totalGold": "Oro totale",
+      "totalXp": "Esp totale",
+      "treasures": "Tesori",
+      "xp": "Esp",
+      "xpBonus": "Esp bonus",
+      "xpChallenges": "Sfide esp",
+      "xpGained": "Esp ottenuta"
+    },
+    "title": "Titolo",
+    "tooltip": {
+      "": "{0}",
+      "blocked": "{0} (%scenario.blocked%)",
+      "locked": "{0} (%scenario.locked%)"
+    }
+  },
+  "section": "Aggiungi sezione",
+  "server": {
+    "autoconnect": "Connettiti automaticamente",
+    "blocked": "Dal momento che non sei connesso al server configurato, sono attualmente bloccati gli aggiornamenti del gioco.",
+    "closed": "Chiuso",
+    "closing": "Chiusura",
+    "code": {
+      "": "Codice di gioco",
+      "hint": "Il codice di gioco identifica il tuo gioco. Per un nuovo gioco, inserisci un nuovo codice a tua scelta o generane uno. Coloro che hanno lo stesso codice si connettono allo stesso gioco.<br><br> Prima era chiamato \"password\", ma per evitare confusione ora è stato rinominato.",
+      "uuid": "Genera codice (UUID)"
+    },
+    "connect": "Connettiti",
+    "connected": "Connesso",
+    "connecting": "In connessione",
+    "connectionTries": {
+      "": "(Tentativi: {0})",
+      "hint": "Non sembra sia possibile stabilire una connessione. Dotresti controllare la connessione di rete o la configurazione della connessione."
+    },
+    "disconnect": "Disconnetti",
+    "disconnected": "Nessuna connessione",
+    "force": "Consenti i cambiamenti locali",
+    "forceHint": "Attenzione: i cambiamenti locali vengono scartati dopo una riconnessione!",
+    "how-to-run": "Crea il tuo server",
+    "info": {
+      "": "Informazioni",
+      "description": "Descrizione",
+      "location": "Luogo",
+      "privacy": "Politica sulla riservatezza",
+      "status": "Pagina di stato",
+      "version": {
+        "": "Versione server",
+        "latest": "Più recente",
+        "unknown": "Impossibile recuperare l'ultima versione",
+        "update": "Ultima versione <a target=\"_blank\" href=\"{1}\">0}</a>"
+      },
+      "website": "Sito web"
+    },
+    "list": {
+      "deselect": "Entra nel server a mano",
+      "select": "Seleziona il server pubblico"
+    },
+    "menu": {
+      "connect": "Connettiti al server",
+      "connected": "Connessione al server"
+    },
+    "ping": "Ping del server",
+    "port": "Porta",
+    "reconnect": "Riconnetti",
+    "settings": {
+      "": "Sincronizza le impostazioni",
+      "hint": "Sincronizza oltre al gioco anche le impostazioni per tutti i client che utilizzano questa opzione. Sicuramente<b> non</b> tutte le impostazioni saranno sincronizzate, ad esempio alcune opzioni per la grafica o l'interfaccia."
+    },
+    "undefined": "Connessione non specificata",
+    "url": "Host",
+    "wss": {
+      "": "Rendi sicuro",
+      "accept": "Accettare?"
+    }
+  },
+  "settings": {
+    "": "Impostazioni",
+    "abilities": {
+      "": "Carte Capacità",
+      "hint": "Pesca carte capacità per i mostri. Se non selezionato, l'ordine dei mostri deve essere impostato manualmente con un trascinamento."
+    },
+    "abilityNumbers": {
+      "": "Mostra i numeri delle capacità",
+      "hint": "Mostra il numero della carta sulle carte capacità"
+    },
+    "abilityReveal": {
+      "": "Rivela le capacità direttamente",
+      "hint": "Se non selezionato, le capacità dei mostri non vengono rivelate fino al turno"
+    },
+    "activeApplyConditions": {
+      "": "Conferma gli stati applicabili",
+      "auto": {
+        "": "Conferma automatica",
+        "hint": {
+          "": "Non chiedere conferma e applica automaticamente tali stati.<br><br>Da abilitare con attenzione!",
+          "brittle": "Quando subisci danno, applica automaticamente %game.condition.brittle% e aumenta il danno.<br><br>Non funziona automaticamente su %game.condition.poison%!",
+          "heal": "Per aumentare i punti ferita applica automaticamente %game.action.heal% e rimuovi gli stati corrispondenti.",
+          "shield": "Quando subisci danno, applica automaticamente %game.action.shield% e abbassa il danno.",
+          "ward": "Quando subisci danno, applica automaticamente %game.condition.ward% e abbassa il danno.<br><br>Non funziona automaticamente su %game.condition.poison%!"
+        }
+      },
+      "hint": {
+        "": "Alcuni stati richiedono la conferma per essere applicati, ad esempio quando diminuiscono i PV con il Veleno, conferma per perdere 1 PV extra",
+        "brittle": "Quando subisci danno, chiedi di applicare %game.condition.brittle% e aumenta il danno.",
+        "heal": "Non è uno stato, ma %game.action.heal% potrebbe essere applicato per aumentare i punti ferita.",
+        "poison": "Quando subisci danno, chiedi di applicare %game.action.attack% +1 da %game.condition.poison% (incluso %game.attackmodifier.double%).",
+        "poison_x": "Quando subisci danno, chiedi di applicare %game.action.attack% +X da %game.condition.poison_x:X% (incluso %game.attackmodifier.double%).",
+        "shield": "Non è uno stato, ma %game.action.shield% potrebbe essere applicato per ridurre i danni quando se ne subiscono.",
+        "ward": "Quando subisci danno, chiedi di applicare %game.condition.ward% per diminuire il danno."
+      }
+    },
+    "activeStandees": {
+      "": "Pedine attive",
+      "hint": "Durante il turno dei mostri, ogni pedina ha uno stato attivo, fai doppio clic sulla pedina per segnarlo come fatto"
+    },
+    "activeSummons": {
+      "": "Evocazioni attive",
+      "hint": "All'inizio del turno dei personaggi, le evocazioni verranno attivate nel loro ordine, fare doppio clic per attivare lo stato attivo."
+    },
+    "addAllMonsters": {
+      "": "Aggiungi per tutte le stanze/sezioni",
+      "hint": "Questo aggiungerà automaticamente tutti i mostri che appaiono nello scenario. Si prega di considerare che potrebbe fare da spoiler a stanze/sezioni non rivelate."
+    },
+    "additional": "Gameplay aggiuntivo",
+    "allyAttackModifierDeck": {
+      "": "Mazzo modificatore di attacco per gli alleati",
+      "hint": "Abilita il mazzo modificatore di attacco per gli alleati"
+    },
+    "alwaysAllyAttackModifierDeck": {
+      "": "Usa sempre mazzo modificatore attacco per gli alleati",
+      "hint": "Mostra sempre il mazzo modificatore di attacco per gli alleati"
+    },
+    "alwaysFhAdvantage": {
+      "": "Sempre le regole di vantaggio/svantaggio di Frosthaven",
+      "hint": "Applicare sempre le regole di Frosthaven per pescare il modificatore di attacco con vantaggio o svantaggio (abilitato automaticamente quando si gioca a Frosthaven)"
+    },
+    "alwaysFhEnhancements": {
+      "": "Sempre miglioramenti di Frosthaven",
+      "hint": "Utilizzare sempre le regole di Frosthaven e i costi di miglioramento."
+    },
+    "alwaysFhSolo": {
+      "": "Usa sempre le regole in solitario di Frosthaven",
+      "hint": "Applicare sempre le regole di Frosthaven per il calcolo del livello in solitario (abilitato automaticamente quando si gioca a Frosthaven)"
+    },
+    "alwaysGh2eImbuement": {
+      "": "Infusione dei Mostri sempre attiva",
+      "hint": "Abilita tutte le opzioni per aggiungere l'infusione dei Mostri (Appendice F) nel menu Effetto Evento per tutte le edizioni."
+    },
+    "alwaysHazardousTerrain": {
+      "": "Sempre terreno pericoloso",
+      "hint": "Applicare sempre le regole di Frosthaven per il calcolo del terreno pericoloso (abilitato automaticamente quando si gioca a Frosthaven)"
+    },
+    "alwaysLootApplyDialog": {
+      "": "Mostra sempre la finestra di dialogo Applica bottino",
+      "hint": "Mostra sempre la finestra di dialogo per selezionare il personaggio sulla carta bottino pescata invece di usare il personaggio attivo"
+    },
+    "alwaysLootDeck": {
+      "": "Usa sempre il mazzo bottino",
+      "hint": "Mostra il mazzo bottino per ogni scenario (abilitato automaticamente quando si gioca a Frosthaven)"
+    },
+    "amAdvantage": {
+      "": "Mazzo modificatore di attacco con vantaggio/svantaggio",
+      "hint": "Aggiungi i pulsanti di vantaggio e svantaggio e scorciatoie da tastiera per i mazzi modificatore attacco."
+    },
+    "amAdvantageHouseRule": {
+      "": "Regole personalizzate di tiro vantaggio/svantaggio",
+      "hint": "Invece di ignorare il risultato al secondo pescaggio, pesca più carte fino a quando una è estratta senza un modificatore aggiuntivo."
+    },
+    "animationSpeed": {
+      "": "Velocità di animazione",
+      "hint": "Modifica la velocità delle animazioni"
+    },
+    "animations": {
+      "": "Animazioni",
+      "hint": "Disabilita tutte le animazioni per aumentare le prestazioni"
+    },
+    "applyBuildingRewards": {
+      "": "Applica bonus di costruzione",
+      "hint": "In caso di costruzione o aggiornamento di un edificio, applica i bonus corrispondenti e apri la finestra di dialogo sezione, se presente."
+    },
+    "applyConditions": {
+      "": "Applica stati automaticamente",
+      "hint": {
+        "": "Gli stati corrispondenti vengono applicati automaticamente prima e dopo il turno, ad esempio quando l'entità ha una ferita perderà 1 PV all'inizio del suo round",
+        "bane": "Applica automaticamente il danno da %game.condition.bane% alla fine del turno.",
+        "regenerate": "Applica automaticamente %game.condition.regenerate% all'inizio del turno.",
+        "safeguard": "Applica automaticamente %game.condition.safeguard% quando subisci la successiva condizione negativa.",
+        "wound": "Applica automaticamente il danno da %game.condition.wound% all'inizio del turno.",
+        "wound_x": "Applica automaticamente il danno da %game.condition.wound_x:X% all'inizio del turno."
+      }
+    },
+    "applyLongRest": {
+      "": "Applica riposo lungo",
+      "hint": "Effettua automaticamente %game.action.heal% 2 nel turno del personaggio quando riposa a lungo"
+    },
+    "applyLoot": {
+      "": "Applica bottino al personaggio",
+      "hint": "Aggiungi automaticamente il bottino dopo che la carta è stata pescata dal personaggio attivo/scelto"
+    },
+    "applyLootRandomItem": {
+      "": "Pesca un oggetto casuale nel bottino",
+      "hint": "Pesca ed equipaggia automaticamente un nuovo oggetto casuale del bottino casuale per il personaggio attivo/scelto."
+    },
+    "applyRetirement": {
+      "": "Applica bonus di ritiro",
+      "hint": "Quando si ritira un personaggio, apri la finestra di dialogo per applicare il bonus di ritiro. Il ritiro viene effettuato spuntando la missione personale sulla scheda personaggio."
+    },
+    "artwork": {
+      "": "Illustrazione",
+      "hint": "Illustrazione per mostri e personaggi"
+    },
+    "automaticAttackModifierFullscreen": {
+      "": "Mazzo MA a schermo intero",
+      "hint": "Apri il mazzo modificatori attacco (e anche il mazzo bottino) in modalità a schermo intero quando su piccoli dispositivi."
+    },
+    "automaticFirstFigure": {
+      "": "Avvio automatico prima figura",
+      "hint": "Inizia automaticamente il turno della prima figura all'inizio del turno successivo. Questa opzione è sempre attivata, se è richiesta l'iniziativa."
+    },
+    "automaticGameClock": {
+      "": "Orologio di gioco automatico",
+      "hint": "Avvia e arresta automaticamente l'orologio di gioco quando la finestra si apre o si chiude."
+    },
+    "automaticGameClockFocus": {
+      "": "Orologio di gioco automatico sul focus",
+      "hint": "Fai partire e ferma automaticamente l'orologio di gioco quando la finestra si attiva o si disattiva."
+    },
+    "automaticPassTime": {
+      "": "Avanzamento automatico del tempo sul calendario",
+      "hint": "Fai avanzare il tempo automaticamente aggiungendo una settimana al calendario dopo aver finito uno scenario. Ciò aggiunge automaticamente effetti alle sezioni del calendario in questa settimana."
+    },
+    "automaticStandees": {
+      "": "Pedine automatiche",
+      "hint": "Aggiunta automatica delle pedine."
+    },
+    "automaticStandeesDialog": {
+      "": "Finestre di dialogo delle pedine automatici",
+      "hint": "Apri automaticamente le finestre di dialogo del numero di pedina per tutte le nuove pedine."
+    },
+    "automaticTheme": {
+      "": "Tema automatico",
+      "hint": "Regola automaticamente il tema e lo stile di Frosthaven quando si cambia edizione. Regola anche il tema quando si attiva lo stile Frosthaven.<br>(regolazione del tema disabilitata per il tema moderno)"
+    },
+    "automaticUnlocking": {
+      "": "Sblocco automatico dei personaggi",
+      "hint": "Sblocca automaticamente i personaggi dai premi dello scenario."
+    },
+    "automation": "Automazione",
+    "autoscroll": {
+      "": "Scrolling automatico",
+      "hint": "Scorrimento automatico alla figura attiva successiva"
+    },
+    "backupHint": {
+      "": "Mostra il suggerimento di backup",
+      "hint": "Mostra un promemoria di backup quando nessuno scenario è in esecuzione."
+    },
+    "barsize": {
+      "": "Dimensione delle barre",
+      "dec": "Diminuisci la dimensione delle barre",
+      "hint": "Imposta le dimensioni di intestazione e piè di pagina",
+      "inc": "Aumenta la dimensione delle barre",
+      "reset": "Reimposta grandezza delle barre"
+    },
+    "battleGoals": {
+      "": "Obiettivi di battaglia",
+      "hint": "Abilita la pesca e la selezione degli obiettivi di battaglia prima dell'inizio dello scenario."
+    },
+    "battleGoalsCharacter": {
+      "": "Mostra sempre gli obiettivi di battaglia",
+      "hint": "Mostra sempre il menu degli obiettivi di battaglia sul personaggio. Questo è abilitato automaticamente se il mazzo modificatore attacco del personaggio è disabilitato per accedere comunque al menu obiettivo di battaglia."
+    },
+    "battleGoalsFh": {
+      "": "Pesca sempre 3 obiettivi di battaglia",
+      "hint": "Applica sempre le regole di Frosthaven per pescare tre obiettivi di battaglia. (Automaticamente abilitato quando si gioca a Frosthaven)"
+    },
+    "battleGoalsReminder": {
+      "": "Promemoria obiettivi di battaglia",
+      "hint": "Mostra un promemoria prima del primo round se non tutti i personaggi hanno scelto il loro obiettivo di battaglia."
+    },
+    "bbAm": {
+      "": "Tira il dado per MA",
+      "hint": "Tira il dado per determinare il prossimo modificatore di attacco. Se disabilitato, viene utilizzato il normale modificatore di attacco come mazzo mescolato."
+    },
+    "bbChars": {
+      "": "Limite dei personaggi",
+      "hint": "Consenti solo un personaggio nel gioco in solitaria predefinito. Se disabilitato, è possibile aggiungere più personaggi."
+    },
+    "bbRules": "Regole di Button & Bugs",
+    "bbStandeeLimit": {
+      "": "Limita le pedine dei mostri",
+      "hint": "Utilizza il limite predefinito di 4 pedine per tutti i mostri. Se disabilitato è possibile aggiungere fino a 10 pedine."
+    },
+    "bonusAdjustment": {
+      "": "Regolazione dei bonus di livello"
+    },
+    "browserNavigation": {
+      "": "Cancella/Ripeti con la navigazione",
+      "hint": "%wip%"
+    },
+    "calculate": {
+      "": "Mostra le statistiche calcolate",
+      "hint": "I valori di capacità sono calcolati insieme alle statistiche, quindi invece di attacco +1, viene mostrato attacco 4 per un valore di attacco di 3 nelle statistiche"
+    },
+    "calculateAdvantageStats": {
+      "": "Aggiungi vantaggio alle capacità",
+      "hint": "Aggiungi %game.custom.advantage% a %game.action.attack% sulle carte Capacità."
+    },
+    "calculateShieldStats": {
+      "": "Aggiungi Scudo e Ritorsione alle capacità",
+      "hint": "I valori statistici predefiniti di %game.action.shield% e %game.action.retaliate% vengono aggiunti alle azioni %game.action.shield% e %game.action.retaliate% della scheda capacità, il che consente di visualizzare valori aggregati completi."
+    },
+    "calculateStats": {
+      "": "Aggiungi i valori statistici alle capacità",
+      "hint": "I valori delle statistiche predefiniti vengono aggiunti al valore di capacità, ad esempio un valore di Gittata viene automaticamente aggiunto alla capacità di Attacco"
+    },
+    "character": "Personaggio",
+    "characterAttackModifierAnimate": {
+      "": "Mostra l'animazione del mazzo MA del personaggio",
+      "hint": "Visualizza un'animazione di pesca se un modificatore di attacco viene estratto dal mazzo MA chiuso di un personaggio."
+    },
+    "characterAttackModifierDeck": {
+      "": "Mazzo modificatore attacco del personaggio",
+      "hint": "Abilita il mazzo modificatore di attacco per i personaggi. Per utilizzare i talenti, la scheda personaggio deve essere abilitata."
+    },
+    "characterAttackModifierDeckActiveBottom": {
+      "": "Mazzo MA Personaggio sopra il Mazzo dei Mostri",
+      "hint": "Visualizza il mazzo modificatori d'attacco del personaggio attivo sopra il mazzo modificatori d'attacco dei mostri."
+    },
+    "characterAttackModifierDeckPermanent": {
+      "": "Mazzo MA permanente del personaggio",
+      "hint": "Visualizza il mazzo modificatore di attacco permanente sotto il personaggio."
+    },
+    "characterAttackModifierDeckPermanentActive": {
+      "": "Attiva autom. mazzo MA",
+      "hint": "Attiva automaticamente il mazzo MA per il personaggio attivo."
+    },
+    "characterCompact": {
+      "": "Plancia personaggio compatta",
+      "hint": "Visualizza la plancia personaggio ridotta. (Attualmente non supportato sul tema moderno)"
+    },
+    "characterFullView": {
+      "": "Visualizzazione completa del personaggio",
+      "hint": "Fare doppio clic sull'icona del personaggio per visualizzare una vista autonoma."
+    },
+    "characterHandSize": {
+      "": "Mostra il numero di carte in mano e livello",
+      "hint": "Visualizza il numero di carte in mano e il livello sulla plancia del personaggio."
+    },
+    "characterIdentities": {
+      "": "Forme del personaggio",
+      "hint": "Altrerna tra le forme del personanggio cliccando sull'icona di forma vicino al suo nome."
+    },
+    "characterIdentityHint": {
+      "": "Suggerimento di forma",
+      "hint": "Visualizza la forma attiva corrente dopo il nome del personaggio."
+    },
+    "characterItems": {
+      "": "Oggetti del personaggio",
+      "hint": "Consente di gestire lo stato degli oggetti durante uno scenario."
+    },
+    "characterItemsApply": {
+      "": "Applica le azioni dell'oggetto",
+      "hint": "Applica tutte le azioni autoeffettive come %game.action.heal%, stati, evocazioni ecc. quando si utilizza l'oggetto."
+    },
+    "characterItemsPermanent": {
+      "": "Oggetti permanenti del personaggio",
+      "hint": "Visualizza gli oggetti permanenti sotto il personaggio."
+    },
+    "characterItemsPermanentActive": {
+      "": "Oggetti autom. attivi",
+      "hint": "Attiva automaticamente gli oggetti permanenti per il personaggio attivo."
+    },
+    "characterItemsShareHouseRule": {
+      "": "Condividi oggetti del personaggio (regola non ufficiale)",
+      "hint": "Regola non ufficiale che consente lo scambio di oggetti tra i personaggi."
+    },
+    "characterSheet": {
+      "": "Scheda del personaggio",
+      "hint": "Abilita la scheda del personaggio. Per aprirla, fai clic sull'icona grande del personaggio sul lato destro."
+    },
+    "characterSheetCompact": {
+      "": "Schede del personaggio compatte (%wip%)",
+      "hint": "Mostra schede del personaggio più compatte che non utilizzano il layout originale della scheda."
+    },
+    "characterShieldRetaliate": {
+      "": "Scudo e Ritorsione",
+      "hint": "Segui i valori %game.action.shield% e %game.action.retaliate% per il personaggio."
+    },
+    "characterSortIndex": {
+      "": "Ordina per giocatore #",
+      "hint": "Ordina i personaggi per numero del giocatore # tra i round."
+    },
+    "characterTraits": {
+      "": "Mostra i tratti",
+      "hint": "Mostra i tratti sulla plancia del personaggio."
+    },
+    "columns": {
+      "": "Struttura a colonne",
+      "hint": "Abilita la struttura a colonne se si adattano zoom e spazio"
+    },
+    "columnsForce": {
+      "": "Usa tutte le colonne disponibili",
+      "hint": "Distribuisci sempre le unità in tutte le colonne disponibili."
+    },
+    "combineInteractiveAbilities": {
+      "": "Combina capacità interattive",
+      "hint": "Effettua capacità interattive per tutte le pedine contemporaneamente."
+    },
+    "conditions": "Condizioni/elementi",
+    "controls": "Controlli",
+    "damageHP": {
+      "": "Danno invece di PV",
+      "hint": "Mostra danni inferti al posto dei punti ferita rimanenti"
+    },
+    "damageHPToggle": {
+      "": "Attiva Danno/PV sulla plancia del personaggio",
+      "hint": "Facendo doppio clic sulla scritta PV sulla plancia personaggio per passare da danno a PV."
+    },
+    "debug": {
+      "": "Impostazioni/strumenti di debug",
+      "logServerMessages": "Registro messaggi del server",
+      "rightClick": "Abilita sempre il tasto destro del mouse"
+    },
+    "display": "Schermo",
+    "dragFigures": {
+      "": "Drag'n'Drop per le unità",
+      "hint": "Drag'n'Drop per l'elenco delle unità. Avvertenza, se disabilitato e non è richiesta alcuna iniziativa, non c'è modo di riordinare manualmente le unità."
+    },
+    "dragValues": {
+      "": "Trascina Valori",
+      "hint": "Supporto al trascinamento per la modifica dei valori. Per cambiare l'iniziativa trascina sul ritratto del personaggio. Per i punti ferita, l'esperienza e il bottino trascina sopra i valori"
+    },
+    "dragValuesHp": "Trascina Punti Ferita",
+    "dragValuesInitiative": "Trascina Iniziativa",
+    "dragValuesLoot": "Trascina Bottino",
+    "dragValuesXp": "Trascina Esp",
+    "drawRandomItem": {
+      "": "Pesca ricompense Oggetto Casuale",
+      "hint": "Pesca automaticamente una carta Oggetto Casuale."
+    },
+    "drawRandomScenario": {
+      "": "Pesca ricompense di scenario casuale",
+      "hint": "Pesca automaticamente uno scenario casuale."
+    },
+    "eliteFirst": {
+      "": "Prima le pedine elite",
+      "hint": "Mostra prima le pedine elite quando si ordinano le pedine"
+    },
+    "entitiesMenu": {
+      "": "Menu di tutte le figure e dei segnalini",
+      "hint": "Mostra un pulsante nel menu sul piè di pagina per applicare modifiche a tutte le figure e ai segnalini contemporaneamente."
+    },
+    "errata": {
+      "": "Mostra suggerimenti Errata",
+      "hint": "Visualizza note di errata per scenari, sezioni, ecc. Nei dati stessi, tutti questi errata dovrebbero essere sistemati, ma con i suggerimenti dovrebbe essere più facile comprendere le differenze nella stampa."
+    },
+    "events": {
+      "": "Carte Evento",
+      "hint": "Supporto per i mazzi di Carte Evento."
+    },
+    "eventsApply": {
+      "": "Applica eventi automaticamente",
+      "hint": "Applica automaticamente (se possibile) i risultati delle carte evento."
+    },
+    "eventsDraw": {
+      "": "Pesca Eventi automaticamente",
+      "hint": "Pesca automaticamente eventi come l'Evento Strada all'inizio dello scenario."
+    },
+    "eventsDrawReminder": {
+      "": "Promemoria pesca Eventi",
+      "hint": "Mostra un promemoria prima del primo round per pescare un evento."
+    },
+    "expireConditions": {
+      "": "Termine stati automatico",
+      "hint": "Gli stati corrispondenti verranno rimossi automaticamente dopo il turno delle unità, ad esempio Rinforzo verrà rimosso dopo il turno"
+    },
+    "feedback": {
+      "": "Disabilita il pulsante di feedback"
+    },
+    "feedbackErrors": {
+      "": "Feedback automatico",
+      "clear": "Elimina gli errori di feedback automatico ignorati",
+      "hint": "Segnala automaticamente gli errori tramite finestra di feedback"
+    },
+    "fhChallenges": {
+      "": "Supporto per le sfide",
+      "hint": "Pesca le carte sfida dal mazzo."
+    },
+    "fhChallengesApply": {
+      "": "Applica sfide",
+      "hint": "Applica automaticamente (se possibile) le carte di sfida attive."
+    },
+    "fhGarden": {
+      "": "Supporto per il giardinaggio",
+      "hint": "Pianta e raccogli erbe (edificio 24 Giardino)"
+    },
+    "fhGhItems": {
+      "": "Aggiungi gli oggetti di Gloomhaven",
+      "hint": "Aggiungi gli oggetti di Gloomhaven e Cerchi Dimenticati alla riserva disponibile come indicato nelle regole. (Solo su schede personaggio o oggetti personaggio abilitati)"
+    },
+    "fhPets": {
+      "": "Supporto per animali domestici",
+      "hint": "Cattura e gestisci gli animali da compagnia (edificio 88 Stalle)"
+    },
+    "fhRules": "Regole di Frosthaven",
+    "fhSecondEdition": {
+      "": "2a Stampa",
+      "hint": "Alcuni cambiamenti tra la prima e la seconda stampa di Frosthaven non possono essere impostati automaticamente. Quindi, per favore, controlla se si utilizza la seconda stampa di Frosthaven."
+    },
+    "fhShareResources": {
+      "": "Condividi risorse regole non ufficiali",
+      "hint": "Condividi tutte le risorse tranne l'oro tra tutti i personaggi e le forniture di Frosthaven."
+    },
+    "fhStyle": {
+      "": "Stile di Frosthaven",
+      "hint": "Visualizzare azioni, capacità e icone nel nuovo stile di Frosthaven, attiva automaticamente il tema di Frosthaven."
+    },
+    "fhTrials": {
+      "": "Supporto per le prove",
+      "favors": {
+        "": "Supporto per l'Appendice F: favori",
+        "hint": "Seleziona nel menu Effetti dell'evento"
+      },
+      "hint": "Pesca carte della prova per ogni personaggio. Visibile sulla scheda dei personaggi!"
+    },
+    "fhTrialsApply": {
+      "": "Applica prove",
+      "favors": {
+        "": "Applica l'Appendice F: favori",
+        "hint": "Applica automaticamente (se possibile) i favori attivi."
+      },
+      "hint": "Applica automaticamente (se possibile) le carte delle prove attive."
+    },
+    "filter": "Cerca...",
+    "fontsize": {
+      "": "Grandezza carattere delle Capacità",
+      "dec": "Riduci il carattere delle capacità",
+      "hint": "Imposta le dimensioni del carattere delle carte capacità e delle statistiche",
+      "inc": "Aumenta il carattere delle capacità",
+      "reset": "Reimposta il carattere delle capacità"
+    },
+    "fullscreen": {
+      "": "Schermo intero",
+      "hint": "Passa a schermo intero"
+    },
+    "gameClock": {
+      "": "Orologio di gioco",
+      "hint": "Abilita un orologio di gioco per tracciare il tempo di esecuzione dell'app."
+    },
+    "gameClockMerge": {
+      "": "Unisci orologi di gioco",
+      "hint": "Unisci l'orologio di gioco del server con l'orologio di gioco locale per ottenere il tempo di gioco complessivo."
+    },
+    "gameplay": "Gameplay",
+    "gamerules": "Specifico del gioco",
+    "ge5Player": {
+      "": "Regole giocatori ≥ 5"
+    },
+    "gh2eImbuement": {
+      "": "Abilita le Infusioni dei Mostri",
+      "hint": "Abilita l'opzione per aggiungere l'Infusione dei Mostri (Appendice F) nel menu Effetto Evento."
+    },
+    "gh2eImbuementKeep": {
+      "": "Conserva le Infusioni dei Mostri",
+      "hint": "Applica sempre l'ultima impostazione di Infusione del Mostro a tutti gli scenari."
+    },
+    "gh2eRules": "Gloomhaven 2a edizione",
+    "helperDefaults": {
+      "": "Applica impostazioni predefinite"
+    },
+    "hideAbsent": {
+      "": "Nascondi le unità assenti",
+      "hint": "Le unità assenti non sono mostrate nell'elenco"
+    },
+    "hideCharacterHP": {
+      "": "Nascondi i PV del personaggio",
+      "hint": "Non visualizzare i punti ferita sulla plancia dei personaggi"
+    },
+    "hideCharacterLoot": {
+      "": "Nascondi il bottino del personaggio",
+      "hint": "Non visualizzare il bottino sulla plancia dei personaggi"
+    },
+    "hideCharacterXP": {
+      "": "Nascondi l'Esp del personaggio",
+      "hint": "Non visualizzare l'esperienza sulla plancia dei personaggi"
+    },
+    "hideStats": {
+      "": "Nascondi statistiche",
+      "hint": "Nascondi le statistiche dei mostri non generati"
+    },
+    "hints": {
+      "": "Suggerimenti sul menu principale",
+      "hint": "Mostra scorciatoie e suggerimenti accanto al menu principale"
+    },
+    "hintsMenu": "Suggerimenti",
+    "initiativeRequired": {
+      "": "È richiesta l'iniziativa",
+      "hint": "Se non selezionato, l'ordine delle entità deve essere impostato manualmente con il Drag & Drop"
+    },
+    "initiativeRoundConfirm": {
+      "": "Finestra di dialogo dell'iniziativa",
+      "hint": "Mostra una finestra di dialogo per iniziare il prossimo round quando sono impostate tutte le iniziative."
+    },
+    "interactiveAbilities": {
+      "": "Capacità interattive",
+      "hint": "Applica alcune capacità evidenziate, come evocazioni o azioni elementali, facendo clic sull'area corrispondente della scheda capacità."
+    },
+    "interface": "Interfaccia",
+    "keyboardShortcuts": {
+      "": "Scorciatoie da tastiera abilitate",
+      "hint": "Abilita le scorciatoie da tastiera elencate."
+    },
+    "levelAdjustment": {
+      "": "Regolazione del livello di scenario"
+    },
+    "levelCalculation": {
+      "": "Livello di scenario automatico"
+    },
+    "locale": {
+      "": "Lingua",
+      "de": "Tedesco (Deutsch)",
+      "en": "Inglese (English)",
+      "es": "Spagnolo (Español)",
+      "fr": "Francese (Français)",
+      "help": {
+        "": "Aiuta a tradurre!"
+      },
+      "it": "Italiano",
+      "ko": "Coreano (한국어)",
+      "pl": "Polacco (Polski)",
+      "pt": "Portoghese (Portuguese)",
+      "ru": "Russo (Русский)",
+      "th": "Thailandese (ชาวไทย)",
+      "zh_Hans": "Cinese semplificato (简体中文)",
+      "zh_Hant": "Cinese tradizionale (繁體中文)"
+    },
+    "lootDeck": {
+      "": "Mazzo del bottino",
+      "hint": "Abilita il mazzo del bottino"
+    },
+    "lurkarsDefaults": "Applica le impostazioni personali di Lurkars",
+    "maxUndo": {
+      "": "Numero massimo di Cancella",
+      "hint": {
+        "": "Il tuo browser non sembra supportare IndexedDB o hai un utilizzo limitato. Quindi il numero massimo di Cancella è limitato a 50.",
+        "firefox": "Su Firefox è possibile abilitare IndexedDB per la modalità privata in <a href=\"about:config\" target=\"_blank\">about:config</a> con la chiave<i>dom.indexedDB.privateBrowsing.enabled</i>."
+      }
+    },
+    "monsterAttackModifierDeck": {
+      "": "Mazzo modificatore di attacco per i mostri",
+      "hint": "Abilita il mazzo modificatore di attacco per i mostri"
+    },
+    "monsters": {
+      "": "Mostri",
+      "hint": "Se disabilitato non vengono mostrati mostri."
+    },
+    "moveElements": {
+      "": "Aggiorna automaticamente lo stato degli elementi",
+      "hint": "Lo stato degli elementi viene automaticamente modificato prima di ogni round"
+    },
+    "partySheet": {
+      "": "Scheda gruppo",
+      "hint": "Abilita le schede gruppo e campagna. La scheda campagna si trova sul lato <i>posteriore</i> della scheda gruppo."
+    },
+    "passiveSummons": {
+      "": "Evocazioni passive",
+      "hint": "Permette alle evocazioni contrassegnate come passive di saltare il turno attivo."
+    },
+    "pinchZoom": {
+      "": "Zoom gestuale",
+      "hint": "Zoom tramite gesti touch."
+    },
+    "playerCount": {
+      "": "Conteggio manuale dei personaggi"
+    },
+    "playerNumber": {
+      "": "Visualizza il numero del giocatore",
+      "hint": "Visualizza il numero del giocatore sulla plancia del personaggio."
+    },
+    "portraitMode": {
+      "": "Ottimizzazione in modalità ritratto",
+      "hint": "Ottimizzazione della modalità ritratto per schermi più piccoli."
+    },
+    "preferences": "Preferenze",
+    "pressDoubleClick": {
+      "": "Premi a lungo per doppio clic (touch)",
+      "hint": "Sui touchscreen, esegui un doppio clic solo con una lunga pressione. (Consigliato per evitare i clic fantasma)"
+    },
+    "randomStandees": {
+      "": "Pedine casuali",
+      "hint": "Aggiungi pedine con un numero casuale inutilizzato"
+    },
+    "removeUnusedMonster": {
+      "": "Rimuovi inutilizzati",
+      "hint": "Rimuovi automaticamente tutti i mostri inutilizzati."
+    },
+    "requires": "Richiede:",
+    "requiresOne": "Richiede uno tra:",
+    "scenarioNumberInput": {
+      "": "Inserimento numero di scenario"
+    },
+    "scenarioRewards": {
+      "": "Applica i premi dello scenario",
+      "hint": "Applica automaticamente i premi del tesoro: dai oro, Esp ecc. ai personaggi"
+    },
+    "scenarioRewardsItems": {
+      "": "Pesca oggetti casuali come ricompense di scenario",
+      "hint": "Pesca automaticamente una carta oggetto casuale."
+    },
+    "scenarioRooms": {
+      "": "Stanze dello scenario",
+      "hint": "Sblocco di stanze separate in uno scenario. Se non impostato, disabilita anche l'aggiunta automatica di pedine."
+    },
+    "scenarioRules": {
+      "": "Regole dello scenario",
+      "hint": "Mostra finestre di popup sulle regole di scenario speciali e le applica in maniera opzionale"
+    },
+    "scenarioRulesAutoapply": {
+      "": "Applica le regole di scenario automaticamente",
+      "hint": "Applica direttamente le regole di scenario automaticamente senza conferma"
+    },
+    "scenarioStats": {
+      "": "Statistiche dello scenario",
+      "hint": "Raccogli statistiche su danni, uccisioni, bottino, Esp e cure durante uno scenario"
+    },
+    "showExpandedAbilityCard": {
+      "": "Mostra carte capacità ampliate",
+      "hint": "Mostra tutte le capacità sulle carte capacità contemporaneamente (mostra automaticamente anche il titolo della carta)."
+    },
+    "showExpandedStatCard": {
+      "": "Mostra le schede statistiche espanse",
+      "hint": "Estendi le schede statistiche per mostrare tutto il contenuto."
+    },
+    "showFullAbilityCard": {
+      "": "Mostra il titolo della carta capacità",
+      "hint": "Mostra le carte capacità incluso il titolo."
+    },
+    "sortFigures": {
+      "": "Ordina le unità",
+      "hint": "Ordina automaticamente le unità. Se disabilitato, l'ordine deve essere impostato manualmente tramite Drag'n'Drop."
+    },
+    "standeeShieldRetaliate": {
+      "": "Scudo e Ritorsione",
+      "hint": "Traccia i valori extra %game.action.shield% e %game.action.retaliate% per pedine ed evocazioni."
+    },
+    "standeeStats": {
+      "": "Scudo e Ritorsione sulle pedine",
+      "hint": "Mostra il valore corrente di %game.action.shield% e %game.action.retaliate% vicino ad ogni pedina."
+    },
+    "standees": {
+      "": "Pedine",
+      "hint": "Visualizza le pedine. Se disabilitato, anche lo sblocco automatico di stanze e pedine sono disabilitati."
+    },
+    "statAnimations": {
+      "": "Animazione statistiche",
+      "hint": "Abilita l'animazione per evidenziare statistiche come %game.action.shield% o %game.action.retaliate%."
+    },
+    "stats": {
+      "": "Carte delle statistiche",
+      "hint": "Mostra le carte delle statistiche per i mostri."
+    },
+    "summons": {
+      "": "Evocazioni dei personaggi",
+      "hint": "Abilita l'evocazione dei personaggi"
+    },
+    "synced": "Queste impostazioni sono sincronizzate con il server!",
+    "temporaryEnhancements": {
+      "": "Miglioramenti temporanei",
+      "hint": "Utilizza i miglioramenti temporanei per ridurre i costi di miglioramento. Per le regole di Frosthaven sono utilizzati come indicato nel libro delle regole, altrimenti si applicano i costi di potenziamento digitale di Gloomhaven."
+    },
+    "theme": {
+      "": "Tema",
+      "bb": "Button & Bugs (%wip%)",
+      "default": "Predefinito",
+      "fh": "Frosthaven",
+      "hint": "Scegli un tema per sfondo, barre e caratteri.",
+      "modern": "Moderno"
+    },
+    "tooltips": {
+      "": "Aiuti",
+      "hint": "Visualizza gli aiuti"
+    },
+    "treasures": {
+      "": "Indicatore dei tesori della stanza",
+      "hint": "Mostra i tesori disponibili per lo scenario quando viene rivelata la stanza corrispondente e aggiungi la finestra di dialogo per aprire il tesoro."
+    },
+    "treasuresLoot": {
+      "": "Applica i premi del tesoro",
+      "hint": "Applica automaticamente i premi del tesoro: dai oro, Esp ecc. al personaggio che saccheggia, pesca uno scenario secondario casuale o un modello di oggetto ecc."
+    },
+    "treasuresLootItem": {
+      "": "Pesca oggetti di ricompensa casuali nei tesori",
+      "hint": "Pesca automaticamente una carta oggetto casuale."
+    },
+    "treasuresLootScenario": {
+      "": "Pesca ricompense di scenario casuali",
+      "hint": "Pesca automaticamente uno scenario casuale."
+    },
+    "turnConfirmation": {
+      "": "Conferma round/turno",
+      "hint": "Mostra un promemoria quando fai clic su\"%round.next%\" prima che tutte le unità finiscano i loro turni. Se disabilitato e %settings.expireConditions% o %settings.applyConditions% sono attivi, verrà automaticamente applicato per tutte le unità."
+    },
+    "unlockEnvelopeBuildings": {
+      "": "Sblocca gli edifici dalle buste",
+      "hint": "Sblocca automaticamente gli edifici aprendo le buste (dalla missione personale)."
+    },
+    "wakeLock": {
+      "": "Schermo sempre acceso",
+      "hint": "Lascia lo schermo sempre acceso sui dispositivi supportati. Può scaricare la batteria dei dispositivi mobili."
+    },
+    "xhaDefaults": "Applica le impostazioni Assistente X-Haven",
+    "zoom": {
+      "": "Zoom",
+      "in": "Ingrandisci",
+      "out": "Rimpicciolisci",
+      "reset": "Reimposta zoom"
+    }
+  },
+  "spoiler": {
+    "add": "Aggiungi spoiler",
+    "all": "Rivela tutti gli spoiler",
+    "placeholder": "???"
+  },
+  "state": {
+    "clear": {
+      "": "Elimina",
+      "redos": "Elimina i Ripeti",
+      "undos": "Elimina i Cancella"
+    },
+    "currentGame": "Attuale",
+    "info": {
+      "addBuilding": "Sbloccare l'edificio '%data.buildings.{1}%' ({0})",
+      "addCampaignSticker": "Aggiungi l'adesivo per la campagna {0}",
+      "addChar": "Aggiungi personaggio {0}",
+      "addCondition": {
+        "char": "%game.condition.{1}% {0}",
+        "monster": "%game.condition.{2}% '{1}' di {0}",
+        "monsterEntities": "%game.condition.{1}% tutti i {2}{0}",
+        "objective": "%game.condition.{1}% {0}",
+        "objectiveContainer": "%game.condition.{2}% %game.objectiveMarker.{1}% di {0}",
+        "objectives": "%game.condition.{1}% tutti i {0}",
+        "summon": "%game.condition.{2}% '{1}' di {0}",
+        "summons": "%game.condition.{1}% tutte le {0} evocazioni"
+      },
+      "addConditions": {
+        "char": "{2}x %game.condition.{1}% {0}",
+        "monster": "{3}x %game.condition.{2}% '{1}' di {0}",
+        "monsterEntities": "{3}x %game.condition.{1}% tutti i {2}{0}",
+        "objective": "{2}x %game.condition.{1}% {0}",
+        "objectiveContainer": "{3}x %game.condition.{2}% %game.objectiveMarker.{1}% di {0}",
+        "objectives": "{2}x %game.condition.{1}% tutti i {0}",
+        "summon": "{3}x %game.condition.{2}% '{1}' di {0}",
+        "summons": "{2}x %game.condition.{1}% tutte le {0} evocazioni"
+      },
+      "addGameCondition": "Aggiungi %game.condition.{0}% alla partita attuale",
+      "addGlobalAchievement": "Aggiungi il traguardo globale '%data.globalAchievements.{0}%'",
+      "addImmunity": {
+        "char": "%game.immunity.{1}% immunità{0}",
+        "monster": "%game.immunity.{2}% immunità '{1}' di {0}",
+        "monsterEntities": "%game.immunity.{1}% immunità a tutti {2}{0}",
+        "objective": "%game.immunity.{1}% immunità {0}",
+        "objectiveContainer": "%game.immunity.{2}% immunità %game.objectiveMarker.{1}% di {0}",
+        "objectives": "%game.immunity.{1}% immunità a tutti {0}",
+        "summon": "%game.immunity.{2}% immunità '{1}' di {0}",
+        "summons": "%game.immunity.{1}% immunità a tutte le {0} evocazioni"
+      },
+      "addItem": "Aggiungi l'oggetto {1} (%data.edition.{2}%) a {0}",
+      "addManualScenario": "Sblocca lo scenario #{0} {1} ({2})",
+      "addMarker": {
+        "char": "%data.characterIconColored.{2}% {1} segnalino a {0}",
+        "monster": "%data.characterIconColored.{3}% {2} segnalino a '{1}' di {0}",
+        "monsterEntities": "%data.characterIconColored.{2}% {1} segnalino a tutti {2}{0}",
+        "objective": "%data.characterIconColored.{2}% {1} segnalino a {0}",
+        "objectiveContainer": "%data.characterIconColored.{3}% {2} segnalino a %game.objectiveMarker.{1}% di {0}",
+        "objectives": "%data.characterIconColored.{2}% {1} segnalino a tutti {0}",
+        "summon": "%data.characterIconColored.{3}% {2} segnalino a '{1}' di {0}",
+        "summons": "%data.characterIconColored.{2}% {1} segnalino a tutte le {0} evocazioni"
+      },
+      "addMastery": "Controlla la maestria {1} per{0}",
+      "addMonster": "Aggiungi mostro {0}",
+      "addNextStandee": "Aggiungi {1} {0} pedina",
+      "addObjective": {
+        "": "Aggiungi obiettivo",
+        "entity": "Aggiungi %game.objectiveMarker.{0}% a {1}",
+        "escort": "Aggiungi scorta"
+      },
+      "addParty": "Crea nuovo gruppo '{0}'",
+      "addPartyAchievement": "Aggiungi traguardo di gruppo '%data.partyAchievements.{0}%'",
+      "addPartyTownGuardPerkSection": "Aggiungi la sezione talenti della guardia cittadina {0}",
+      "addPartyWeekSection": "Aggiungi la sezione {2} alla settimana {1}",
+      "addRandomStandee": "Aggiungi {1} {0} pedina casuale {2}",
+      "addResource": "Aggiungi +{2} {1} per {0}",
+      "addSection": "Aggiungi sezione #{0} {1} ({2})",
+      "addSpecialTags": "Aggiungi azioni speciali {1} per {0}",
+      "addSpecialTagsSummon": "Aggiungi azioni speciali {1} per {2} di {0}",
+      "addStandee": "Aggiungi {1} {0} pedina {2}",
+      "addSummon": "Aggiungi evocazione '{1}' per {0}",
+      "addTreasure": "Aggiungi tesoro {1} '%data.treasures.{0}.{1}%' (%data.edition.{0}%)",
+      "addTreasures": "Aggiungi tesoro {1} (%data.edition.{0}%)",
+      "applyCondition": {
+        "char": "Applica %game.condition.{1}% a {0}",
+        "monster": "Applica %game.condition.{2}% a '{1}' di {0}",
+        "monsterEntities": "Applica %game.condition.{1}% a tutti {2}{0}",
+        "objective": "Applica %game.condition.{1}% a {0}",
+        "objectiveContainer": "Applica %game.condition.{2}% a %game.objectiveMarker.{1}% di {0}",
+        "summon": "Applica %game.condition.{2}% a '{1}' di {0}"
+      },
+      "applyHighlightAction": {
+        "condition": "%game.condition.{0}%",
+        "elementConsume": "Consuma {0}",
+        "elementInfuse": "Infondi {0}",
+        "heal": "%game.action.heal% {0}",
+        "spawn": "Genera",
+        "sufferDamage": "Subisci %game.damage:{0}%",
+        "summon": "Evoca",
+        "switchType": "Scambia tra %game.monsterType.normal% e %game.monsterType.elite%"
+      },
+      "applyInteractiveActions": "Applica {0} per le pedine {1} di {2}",
+      "applyScenarioRule": "Applica la regola dello scenario",
+      "battleGoals": {
+        "deselect": "Deseleziona l'obiettivo di battaglia attuale di {0}",
+        "drawCard": "Pesca un'altra carta obiettivo di battaglia per {0}",
+        "drawCards": "Pesca le carte obiettivo di battaglia per {0}",
+        "select": "Seleziona l'obiettivo di battaglia {0}",
+        "setup": {
+          "addEdition": "Aggiungi le carte obiettivo di battaglia dall'edizione %data.edition.{0} %",
+          "filter": {
+            "addCard": "Aggiungi nuovamente l'obiettivo di battaglia '{1}' (%data.edition.{0}%) alle carte Obiettivo di Battaglia",
+            "removeCard": "Rimuovi l'obiettivo di battaglia '{1}' (%data.edition.{0}%) dalle carte Obiettivo di Battaglia"
+          },
+          "removeEdition": "Rimuovi le carte Obiettivo di Battaglia dall'edizione %data.edition.{0}%"
+        }
+      },
+      "brewPotion": "Prepara l'oggetto \"%data.items.{2}-{1}%\" per {0}",
+      "brewPotionOther": "{0} prepara l'oggetto \"%data.items.{2}-{1}%\" per {3}",
+      "buildBuilding": "Costruisci '%data.buildings.{1}%' ({0})",
+      "buildings": {
+        "stables": {
+          "pets": {
+            "add": "Aggiungi l'animale %data.pets. {0}-{1}% alle stalle",
+            "catch": "Cattura l'animale dalla {1} pedina {2} di {0}",
+            "play": "Gioca la carta animale %data.pets.{0}-{1}%",
+            "remove": "Rimuovi l'animale %data.pets.{0}-{1}% dalle stalle",
+            "restore": "Riprostina la carta animale %data.pets.{0}-{1}%",
+            "setActive": "Porta la carta animale %data.pets.{0}-{1}% sullo scenario",
+            "setInactive": "Rimuovi la carta animale %data.pets.{0}-{1}% dallo scenario",
+            "setName": "Nome dell'animale %data.pets.{0}-{1}% '{2}'",
+            "unsetName": "Rimuovi il nome dell'animale %data.pets.{0}-{1}%"
+          }
+        }
+      },
+      "buyItem": "Compra l'oggetto {1} (%data.edition.{2}%) per {0}",
+      "cancelScenario": "Elimina lo scenario #{0} {1} ({2})",
+      "challengeDeck": {
+        "clear": "Scarta le sfide pescate",
+        "draw": "Pesca la sfida",
+        "hide": "Nascondi il mazzo sfide",
+        "removeCard": "Rimuovi la carta dal mazzo sfide",
+        "reorder": "Riordina il mazzo sfide",
+        "restoreCard": "Ripristina la carta {0} del mazzo sfide",
+        "show": "Mostra il mazzo sfide",
+        "shuffle": "Mescola il mazzo sfide",
+        "toggle": "Imposta la sfida attiva"
+      },
+      "changeBuildingState": "Stato dell'edificio '%data.buildings.{1}%' ({0}) per %party.campaign.sheet.buildings.state.{2}%",
+      "changeCustomScenario": "Nome '{0}' per lo scenario personalizzato",
+      "changeEntityHp": "PV {3} per {1} pedina {2} di {0}",
+      "changeEntityMaxHp": "PV max. {3} per {1} pedina {2} di {0}",
+      "changeHP": "PV {1} per {0}",
+      "changeLoot": "Saccheggia {1} per {0}",
+      "changeMaxHP": "PV max. {1} per {0}",
+      "changeMonsterHP": "PV {1} per tutti {2}{0}",
+      "changeMonsterType": "Cambia la tipologia da {0} pedina {2} da {1} a %monster.{3}%",
+      "changeObjectiveEntityHP": "PV {2} per %game.objectiveMarker.{1}% di {0}",
+      "changeObjectiveEntityNumber": "Cambia indicatore da %game.objectiveMarker.{1}% a %game.objectiveMarker.{2}% per {0}",
+      "changeObjectiveHP": "PV {1} per obiettivo {0}",
+      "changeObjectiveId": "ID '{1}' per {0}",
+      "changeObjectiveMaxHp": "PV max. {1} per obiettivo {0}",
+      "changeObjectivesHP": "PV {1} per tutti {0}",
+      "changeParty": "Cambia il gruppo in '{0}'",
+      "changeSummonAttack": "Attacco {2} per l'evocazione '{1}' di {0}",
+      "changeSummonHp": "PV {2} per l'evocazione '{1}' di {0}",
+      "changeSummonMaxHp": "PV max. {2} per l'evocazione '{1}' di {0}",
+      "changeSummonMove": "Movimento {2} per l'evocazione '{1}' di {0}",
+      "changeSummonRange": "Gittata {2} per l'evocazione '{1}' di {0}",
+      "changeXP": "Esp {1} per {0}",
+      "characterItemApply": {
+        "consumed": "{0} oggetto consumato {1} \"{3}\"",
+        "flipped": "{0} oggetto capovolto {1} \"{3}\"",
+        "persistent": "{0} oggetto persistente {1} \"{3}\"",
+        "slot": "{0} slot contrassegnato sull'oggetto {1} \"{3}\"",
+        "slotBack": "{0} slot non contrassegnato sull'oggetto {1} \"{3}\"",
+        "spent": "0} oggetto utilizzato {1} '{3}'"
+      },
+      "characterItemUnapply": {
+        "consumed": "{0} oggetto recuperato {1} \"{3}\"",
+        "flipped": "{0} oggetto capovolto {1} \"{3}\" indietro",
+        "persistent": "{0} oggetto non persistente {1} \"{3}\"",
+        "slot": "{0} slot non contrassegnato sull'articolo {1} \"{3}\"",
+        "slotBack": "{0} slot contrassegnato sull'articolo {1} \"{3}\"",
+        "spent": "{0} oggetto ripristinato {1} \"{3}\""
+      },
+      "characterLongRest": "Imposta il riposo lungo per {0}",
+      "characterLongRestOff": "Disabilita il riposo lungo per {0}",
+      "characterReplay": "Gioca {0} di nuovo per il giocatore {1}",
+      "characterSetAside": "Metti da parte {0} per il giocatore {1}",
+      "clearDiscardedScenarioRules": "Elimina le regole di scenario scartate",
+      "command": {
+        "character": {
+          "initiative": "Iniziativa per {0}"
+        },
+        "round": {
+          "state": {
+            "draw": "Pesca",
+            "next": "Prossimo Round"
+          }
+        }
+      },
+      "craftItem": "Crea l'oggetto {1} (%data.edition.{2}%) per {0}",
+      "declineApplyCondition": {
+        "char": "Rifiuta di applicare %game.condition.{1}% a {0}",
+        "monster": "Rifiuta di applicare %game.condition.{2}% a '{1}' di {0}",
+        "monsterEntities": "Rifiuta di applicare %game.condition.{a}% a tutti {2}{0}",
+        "objective": "Rifiuta di applicare %game.condition.{1}% a {0}",
+        "objectiveContainer": "Rifiuta di applicare %game.condition.{2}% a %game.objectiveMarker.{1}% di {0}",
+        "summon": "Rifiuta di applicare %game.condition.{2}% a '{1}' di {0}"
+      },
+      "disableAutomaticLevel": "Disabilita il calcolo del livello automatico",
+      "disableEnvelopeB": "Disabilita la busta B",
+      "disablePartyCampaignMode": "Disabilita la modalità campagna",
+      "disableSolo": "Disabilita il calcolo del livello in solitaria",
+      "disabledGe5Player": "Disabilita le regole per ≥ 5 giocatori",
+      "disabledManualPlayerCount": "Disabilita il conteggio manuale dei giocatori",
+      "distillItem": "Distilla l'oggetto \"%data.items.{2}-{1}%\" per {0}",
+      "donate": "Donazione di {0} al Santuario della Grande Quercia",
+      "downgradeBuilding": "Downgrade dell'edificio '%data.buildings.{1}%' ({0}) al livello {2}",
+      "draw": "Pesca",
+      "drawAbility": "Pesca la capacità per {0}",
+      "enableAutomaticLevel": "Abilita il calcolo automatico del livello",
+      "enableEnvelopeB": "Apri la busta B",
+      "enablePartyCampaignMode": "Abilita la modalità campagna",
+      "enableSolo": "Abilita il calcolo del livello in solitaria",
+      "enabledGe5Player": "Abilita le regole per ≥ 5 giocatori",
+      "enabledManualPlayerCount": "Abilita il conteggio manuale dei giocatori",
+      "endAllTurns": "Termina tutti i turni",
+      "entityDead": "Uccidi {1} pedina {2} di {0}",
+      "equipItem": "Equipaggia l'oggetto {1} (%data.edition.{ 2}%) per {0}",
+      "eventEffect": {
+        "addCondition": "%game.condition.{0}% per {1}",
+        "addImmunity": "%game.immunity.{0}% per {1}",
+        "changeCharacterBattleGoals": "{0} %game.checkmark% per {1}",
+        "changeCharacterBless": "{0} %game.condition.bless% per {1}",
+        "changeCharacterCurse": "{0} %game.condition.curse% per {1}",
+        "changeCharacterGold": "{0} Oro per {1}",
+        "changeCharacterHP": "{0} PV per {1}",
+        "changeCharacterResource": "{1} %game.resource.{0}% per {2}",
+        "changeCharacterXP": "{0} Esp per {1}",
+        "drawRandomItem": "Pesca un modello di oggetto casuale {0} \"{2}\" (%data.edition.{1}%)",
+        "drawRandomItemBlueprint": "Pesca un progetto casuale {0} \"{2}\" (%data.edition.{1}%)",
+        "drawRandomScenario": "Pesca uno scenario casuale {2} %data.scenarioNumber:{0}%",
+        "drawRandomScenarioSection": "Pesca una sezione di scenario casuale %data.section:{0}%, sblocca {3}",
+        "inspiration": "{0} Ispirazione",
+        "morale": "{0} Morale",
+        "prosperity": "{0} Prosperità",
+        "removeCondition": "Rimuovi %game.condition.{0}% da {1}",
+        "removeImmunity": "Rimuovi %game.immunity.{0}% da {1}",
+        "reputation": "{0} Reputazione",
+        "setConditionValue": "%game.condition.{0}% a {1} per {2}"
+      },
+      "finishConclusion": "Conclusione finale #{0} {1} ({2})",
+      "finishScenario": {
+        "battleGoal": "Imposta i segni di spunta dell'obiettivo di battaglia per %data.character.{0}.{1}% a {2}",
+        "close": "Chiudi il riepilogo dello scenario",
+        "dialog": "Riepilogo dello scenario per #{0} {1} ({2})",
+        "failure": "Scenario #{0} {1} ({2}) fallito",
+        "linked": "Scenario #{0} {1} superato, continua con #{3} ({2})",
+        "remove": "Rimuovi lo scenario #{0} {1} ({2}) superato",
+        "restart": "Riavvia lo scenario fallito #{0} {1} ({2})",
+        "success": "Scenario #{0} {1} ({2}) superato"
+      },
+      "gameClock": {
+        "automaticGameClockOut": "Uscita automatica",
+        "clockIn": "Entrata",
+        "clockOut": "Uscita",
+        "merge": "Unisci orologio di gioco"
+      },
+      "hideScenarioRule": "Non mostrare più la regola dello scenario",
+      "importCharacter": "Importa personaggio {0} da file",
+      "importParty": "Importa campagna da file",
+      "loadGameFromFile": "Carica salvataggio partita da file",
+      "lootCharTreasure": "{2} saccheggia il tesoro {0}",
+      "lootDeckAddEnhancement": "Migliora la carta bottino '{1} %game.loot.{0}%'",
+      "lootDeckChangeConfig": "Cambia la tabella del bottino",
+      "lootDeckDraw": "Pesca la carta Bottino",
+      "lootDeckHide": "Nascondi mazzo bottino",
+      "lootDeckRemoveCard": "Rimuovi la carta {0} dal mazzo bottino",
+      "lootDeckRemoveEnhancement": "Rimuovi il potenziamento dalla carta bottino '{1} %game.loot.{0}%'",
+      "lootDeckReorder": "Riordina il mazzo bottino",
+      "lootDeckShow": "Mostra il mazzo bottino",
+      "lootDeckShuffle": "Mescola il mazzo bottino",
+      "lootDeckShuffleUpcoming": "Mescola le carte in arrivo dal mazzo Bottino",
+      "lootRandomItem": "{3} saccheggia l'oggetto casuale {0} \"{2}\" (%data.edition.{1}%)",
+      "monsterChangeEntityHp": "PV {2} per la pedina {1} di %data.monster.{0}%",
+      "monsterConsumeElement": "{0} consuma {1}",
+      "monsterDead": "Uccidi tutti i {1}{0}",
+      "monsterInfuseElement": "{0} infondi {1}",
+      "monsterSetEntityActive": "Imposta la pedina %game.monster.{2}% {1} di %data.monster.{0}% attiva",
+      "monsterUnsetEntityActive": "Imposta la pedina %game.monster.{2}% {1} di %data.monster.{0}% non attiva",
+      "moveResource": "Sposta {2} {1} da {0} alla riserva di Frosthaven",
+      "nextIdentity": "Imposta forma di {0} da %data.Character.{4}.{1}.{2}% a %data.Character.{4}.{1}.{3}%",
+      "nextRound": "Prossimo round",
+      "objectiveContainerChangeEntityHp": "PV {2} per %game.objectiveMarker.{1}% di {0}",
+      "objectiveEntityDead": "Uccidi %game.objectiveMarker.{1}% di {0}",
+      "openRoom": "Porta aperta per la tessera '{2}' in #{0} {1}",
+      "openRoomMarker": "Apri la porta %game.mapMarker.{3}% per la tessera '{2}' in #{0} {1}",
+      "rebuildBuilding": "Ricostruisci '%data.buildings.{1}%' ({0})",
+      "removeAbility": "Rimuovi la capacità \"{1}\" da {0}",
+      "removeAllChars": "Rimuovi tutti i personaggi",
+      "removeAllMonster": "Rimuovi tutti i mostri",
+      "removeAllObjectives": "Rimuovi tutti gli obiettivi",
+      "removeBuilding": "Rimuovi l'edificio '%data.buildings.{1}%' ({0})",
+      "removeCampaignSticker": "Rimuovi l'adesivo della campagna {0}",
+      "removeChar": "Rimuovi il personaggio{0}",
+      "removeCharTreasure": "Rimuovi il tesoro {1} per {2}",
+      "removeCharacterRetaliate": "Rimuovi %game.action.retaliate% per {0}",
+      "removeCharacterRetaliatePersistent": "Rimuovi %game.card.persistent% %game.action.retaliate% per {0}",
+      "removeCharacterShield": "Rimuovi %game.action.shield% per {0}",
+      "removeCharacterShieldPersistent": "Rimuovi %game.card.persistent% %game.action.shield% per {0}",
+      "removeCondition": {
+        "char": "Rimuovi %game.condition.{1}% da {0}",
+        "monster": "Rimuovi %game.condition.{2}% da '{1}' di {0}",
+        "monsterEntities": "Rimuovi %game.condition.{1} % da tutti {2}{0}",
+        "objective": "Rimuovi %game.condition.{1}% da {0}",
+        "objectiveContainer": "Rimuovi %game.condition.{2}% da %game.objectiveMarker.{1}% di {0}",
+        "objectives": "Rimuovi %game.condition.{1}% da tutti {0}",
+        "summon": "Rimuovi %game.condition.{2}% da '{1}' di {0}",
+        "summons": "Rimuovi %game.condition.{1}% da tutte {0} evocazioni"
+      },
+      "removeConditions": {
+        "char": "Rimuovi {2}x %game.condition.{1}% da {0}",
+        "monster": "Rimuovi {3}x %game.condition.{2}% da '{1}' di {0}",
+        "monsterEntities": "Rimuovi{3}x %game.condition.{1}% da tutti {2}{0}",
+        "objective": "Rimuovi {2}x %game.condition.{1}% da {0}",
+        "objectiveContainer": "Rimuovi {3}x %game.condition.{2}% da %game.objectiveMarker.{1}% di {0}",
+        "objectives": "Rimuovi {2}x %game.condition.{1}% da tutti {0}",
+        "summon": "Rimuovi {3}x %game.condition.{2}% da '{1}' di {0}",
+        "summons": "Rimuovi {2}x %game.condition.{1}% da tutte le {0} evocazioni"
+      },
+      "removeEntityMarker": {
+        "monster": "Rimuovi segnalino %game.mapMarker.{2}% da '{1}' di {0}",
+        "objectiveContainer": "Rimuovi segnalino %game.mapMarker.{2}% da %game.objectiveMarker.{1}% di {0}"
+      },
+      "removeEntityRetaliate": {
+        "char": "Rimuovi %game.action.retaliate% per {0}",
+        "monster": "Rimuovi %game.action.retaliate% per '{1}' di {0}",
+        "objectiveContainer": "Rimuovi %game.action.retaliate% per %game.objectiveMarker.{1}% di {0}",
+        "summon": "Rimuovi %game.action.retaliate% per '{1}' di {0}"
+      },
+      "removeEntityRetaliatePersistent": {
+        "char": "Rimuovi %game.card.persistent% %game.action.retaliate% per {0}",
+        "monster": "Rimuovi %game.card.persistent% %game.action.retaliate% per '{1}' di {0}",
+        "objectiveContainer": "Rimuovi %game.card.persistent% %game.action.retaliate% per %game.objectiveMarker.{1}% di {0}",
+        "summon": "Rimuovi %game.card.persistent% %game.action.retaliate% per '{1}' di {0}"
+      },
+      "removeEntityShield": {
+        "char": "Rimuovi %game.action.shield% per {0}",
+        "monster": "Rimuovi %game.action.shield% per '{1}' di {0}",
+        "objectiveContainer": "Rimuovi %game.action.shield% per %game.objectiveMarker.{1}% di {0}",
+        "summon": "Rimuovi %game.action.shield% per '{1}' di {0}"
+      },
+      "removeEntityShieldPersistent": {
+        "char": "Rimuovi %game.card.persistent% %game.action.shield% per {0}",
+        "monster": "Rimuovi %game.card.persistent% %game.action.shield% per '{1}' di {0}",
+        "objectiveContainer": "Rimuovi %game.card.persistent% %game.action.shield% per %game.objectiveMarker.{1}% di {0}",
+        "summon": "Rimuovi %game.card.persistent% %game.action.shield% per '{1}' di {0}"
+      },
+      "removeGameCondition": "Rimuovi %game.condition.{0}% dalla partita in corso",
+      "removeGlobalAchievement": "Rimuovi l'obiettivo globale '%data.globalAchievements.{0}%'",
+      "removeImmunity": {
+        "char": "Rimuovi %game.immunity.{1}% immunità da {0}",
+        "monster": "Rimuovi %game.immunity.{2}% immunità da '{1}' di {0}",
+        "monsterEntities": "Rimuovi %game.immunity.{1}% immunità da tutti {2}{0}",
+        "objective": "Rimuovi %game.immunity.{1}% immunità da {0}",
+        "objectiveContainer": "Rimuovi %game.immunity.{2}% immunità da %game.objectiveMarker.{1}% di {0}",
+        "objectives": "Rimuovi %game.immunity.{1}% immunità da tutti {0}",
+        "summon": "Rimuovi %game.immunity.{2}% immunità da '{1}' di {0}",
+        "summons": "Rimuovi %game.immunity.{1}% immunità da tutte le {0} evocazioni"
+      },
+      "removeItem": "Rimuovi l'oggetto {1} (%data.edition.{2}%) da {0}",
+      "removeManualScenario": "Rimuovi lo scenario #{0} {1} ({2}) dagli sbloccati",
+      "removeMarker": {
+        "char": "Rimuovi il segnalino %data.characterIconColored.{2}% {1} da {0}",
+        "monster": "Rimuovi il segnalino %data.characterIconColored.{3}% {2} da '{1}' di {0}",
+        "monsterEntities": "Rimuovi il segnalino %data.characterIconColored.{2}% {1} da tutti {2}{0}",
+        "objective": "Rimuovi il segnalino %data.characterIconColored.{2}% {1} da {0}",
+        "objectiveContainer": "Rimuovi il segnalino %data.characterIconColored.{3}% {2} da %game.objectiveMarker.{1}% di {0}",
+        "objectives": "Rimuovi il segnalino %data.characterIconColored.{2}% {1} da tutti {0}",
+        "summon": "Rimuovi il segnalino %data.characterIconColored.{3}% {2} da '{1}' di {0}",
+        "summons": "Rimuovi il segnalino %data.characterIconColored.{2}% {1} da tutte le {0} evocazioni"
+      },
+      "removeMastery": "Deseleziona la maestria {1} per {0}",
+      "removeMonster": "Rimuovi il mostro {0}",
+      "removeObjective": "Rimuovi l'obiettivo {0}",
+      "removeParty": "Rimuovi il gruppo '{0}'",
+      "removePartyAchievement": "Rimuovi il risultato del gruppo '%data.partyAchievements.{0}%'",
+      "removePartyTownGuardPerkSection": "Rimuovi la sezione talenti della guardia cittadina {0}",
+      "removePartyWeekSection": "Rimuovi la sezione {2} dalla settimana {1}",
+      "removePlayer": "Rimuovi il giocatore {1} ({0})",
+      "removeResource": "-{2} {1} di {0}",
+      "removeScenarioRule": "Rimuovi regola dello scenario",
+      "removeSpecialTags": "Rimuovi le azioni speciali {1} da {0}",
+      "removeSpecialTagsSummon": "Rimuovi le azioni speciali {1} da {2} di {0}",
+      "removeTreasure": "Rimuovi il tesoro {1} '%data.treasures.{0}.{1}%' (%data.edition.{0}%)",
+      "removeTreasures": "Rimuovi i tesori {1} (%data.edition.{0}%)",
+      "reorder": "Riordina le unità",
+      "reorderAbilities": "Riordina le capacità di {0}",
+      "repairBuilding": "Ripara '%data.buildings.{1}%' ({0})",
+      "resetCampaign": "Reimposta la campagna",
+      "resetScenario": "Reimposta lo scenario #{0} {1} ({2})",
+      "restoreAbility": "Ripristina la capacità \"{1}\" per {0}",
+      "restoreDefaultAbilities": "Ripristina le capacità predefinite di {0}",
+      "sellItem": "Vendi l'oggetto \"%data.items.{2}-{1}%\" per {0}",
+      "serverSync": "Server: {0}",
+      "serverSyncEmpty": "Sincronizzazione server",
+      "setAbsent": "{0} assente",
+      "setActive": "Inizia il turno per {0}",
+      "setAllied": "{0} come compagno",
+      "setAlly": "{0} come alleato",
+      "setBG": "Imposta gli obiettivi di battaglia da {0} a {1}",
+      "setCharacterRetaliate": "{1} per {0}",
+      "setCharacterRetaliatePersistent": "%game.card.persistent% {1} per {0}",
+      "setCharacterShield": "%game.action.shield% {1} per {0}",
+      "setCharacterShieldPersistent": "%game.card.persistent% %game.action.shield% {1} per {0}",
+      "setCharacterTokenValue": "Imposta il gettone {1} su {2} per {0}",
+      "setConditionValue": {
+        "char": "%game.condition.{1}% a {2} per {0}",
+        "monster": "%game.condition.{2}% a {3} per '{1}' di {0}",
+        "monsterEntities": "%game.condition.{1}% a {2} per tutti {3}{0}",
+        "objective": "%game.condition.{1}% a {2} per {0}",
+        "objectiveContainer": "%game.condition.{2}% a {3} per %game.objectiveMarker.{1}% di {0}",
+        "summon": "%game.condition.{2}% a {3} per '{1}' di {0}"
+      },
+      "setCustomScenario": "Imposta uno scenario personalizzato",
+      "setDrawExtraAbility": "Imposta pesca extra per {0}",
+      "setEdition": "Imposta l'edizione su {0}",
+      "setEditionAll": "Seleziona tutte le edizioni",
+      "setEntityActive": "Imposta la pedina {1} di {0} attiva",
+      "setEntityRetaliate": {
+        "char": "{1} per {0}",
+        "monster": "{2} per '{1}' di {0}",
+        "objectiveContainer": "{2} per %game.objectiveMarker.{1}% di {0}",
+        "summon": "{2} per '{1}' di {0}"
+      },
+      "setEntityRetaliatePersistent": {
+        "char": "%game.card.persistent% {1} per {0}",
+        "monster": "%game.card.persistent% {2} per '{1}' di {0}",
+        "objectiveContainer": "%game.card.persistent% {2} per %game.objectiveMarker.{1}% di {0}",
+        "summon": "%game.card.persistent% {2} per '{1}' di {0}"
+      },
+      "setEntityShield": {
+        "char": "%game.action.shield% {1} per {0}",
+        "monster": "%game.action.shield% {2} per '{1}' di {0}",
+        "objectiveContainer": "%game.action.shield% {2} per %game.objectiveMarker.{1}% di {0}",
+        "summon": "%game.action.shield% {2} per '{1}' di {0}"
+      },
+      "setEntityShieldPersistent": {
+        "char": "%game.card.persistent% %game.action.shield% {1} per {0}",
+        "monster": "%game.card.persistent% %game.action.shield% {2} per '{1}' di {0}",
+        "objectiveContainer": "%game.card.persistent% %game.action.shield% {2} per %game.objectiveMarker.{1}% di {0}",
+        "summon": "%game.card.persistent% %game.action.shield% {2} per '{1}' di {0}"
+      },
+      "setEntitySummonState": "Imposta evocazione {3} per {1} pedina {2} di {0}",
+      "setExhausted": "{0} esaurito",
+      "setGold": "Oro {1} per {0}",
+      "setIdentity": "Imposta la forma di {0} su %data.character.{3}.{1}.{2}%",
+      "setInitiative": "Iniziativa {1} per {0}",
+      "setLevel": "Livello {1} per {0}",
+      "setNotes": "Note '{1}' per {0}",
+      "setObjectiveEntityMarker": "Imposta segnalino da %game.objectiveMarker.{1}% di {0} a %game.mapMarker.{2}%",
+      "setObjectiveExhausted": "Obiettivo {0} esaurito",
+      "setObjectiveInitiative": "Iniziativa {1} per l'obiettivo {0}",
+      "setPQ": "Missione personale {1} per {0}",
+      "setPQProgress": "Imposta il contatore delle missioni personali {1} a {2} per {0}",
+      "setPartyAchievements": "Traguardi del gruppo",
+      "setPartyDonations": "Donazioni a {0}",
+      "setPartyInspiration": "Ispirazione per {1}",
+      "setPartyLocation": "Luogo del gruppo '{0}'",
+      "setPartyMorale": "Morale a {0}",
+      "setPartyName": "Nome del gruppo '{0}'",
+      "setPartyNotes": "Note del gruppo",
+      "setPartyProsperity": "Prosperità a {0}",
+      "setPartyReputation": "Reputazione a {0}",
+      "setPartyResource": "Imposta le risorse di Frosthaven {1} a {2}",
+      "setPartySoldiers": "Soldati a {0}",
+      "setPartyTotalDefense": "Imposta difesa totale su {1}",
+      "setPartyTownGuardPerks": "Talenti della Guardia Cittadina a {0}",
+      "setPartyWeeks": "Settimane a {0}",
+      "setPerk": "Talento {1} a {2} per {0}",
+      "setPlayer": "Imposta il giocatore {1} a {0}",
+      "setPlayerNumber": "Imposta il numero del giocatore {1} per {0}",
+      "setRandomScenario": "Imposta Dungeon Casuale",
+      "setResource": "Imposta {1} {2} per {0}",
+      "setRetired": "{0} ritirato",
+      "setRetirements": "Ritiri {1} per {0}",
+      "setScenario": "Scenario #{0} {1} ({2})",
+      "setScenarioLevel": "Livello di scenario {0}",
+      "setSummonState": "Imposta evocazione {1} {2} per {0}",
+      "setTitle": "Titolo '{1}' per {0}",
+      "setXP": "Esp {1} per {0}",
+      "shareItem": "{0} condivide \"%data.items.{3}-{2}%\" (Oggetto {2}) con {1}",
+      "shuffleAbilityDeck": "Mescola le capacità di {0}",
+      "shuffleAbilityDeckUpcoming": "Mescola le capacità in arrivo di {0}",
+      "skipInteractiveActions": "Salta le capacità interattive per le pedine {1} di {2}",
+      "startCampaign": "Avvia una nuova campagna {0}",
+      "summonActive": "Evoca '{1}' di {0} attivo",
+      "summonDead": "Uccidi evocazione '{1}' di {0}",
+      "summonInactive": "Evoca '{1}' di {0} inattivo",
+      "toggleTypeAll": "Attiva/disattiva tutti i tipi di pedine dei mostri per {0}",
+      "unequipItem": "Rimuovi l'oggetto {1} (%data.edition.{2}%) per {0}",
+      "unlockChar": "Sblocca {0}",
+      "unsetAbsent": "{0} presente",
+      "unsetActive": "Fine turno di {0}",
+      "unsetAllied": "{0} non come compagno",
+      "unsetAlly": "{0} come nemico",
+      "unsetCustomScenario": "Annulla scenario personalizzato",
+      "unsetDrawExtraAbility": "Annulla pesca extra per {0}",
+      "unsetEntityActive": "Imposta pedina {1} di {0} inattiva",
+      "unsetExhausted": "{0} non esaurito",
+      "unsetObjectiveExhausted": "Obiettivo {0} non esaurito",
+      "unsetRetired": "Revoca il ritiro di {0}",
+      "unsetTitle": "Rimuovi il titolo '{1}' da {0}",
+      "updateAttackModifierDeck": {
+        "addBless": "Aggiungi Benedizione al mazzo MA {0}",
+        "addCard": "Aggiungi {1} carta al mazzo MA {0}",
+        "addCardShuffled": "Mescola la nuova carta {1} nel mazzo MA {0}",
+        "addCurse": "Aggiungi Maledizione al mazzo MA {0}",
+        "amDeckHide": "Nascondi mazzo MA {0}",
+        "amDeckShow": "Mostra mazzo MA {0}",
+        "draw": "Pesca MA {0}",
+        "drawadvantage": "Pesca MA {0} con Vantaggio",
+        "drawdisadvantage": "Pesca MA {0} con Svantaggio",
+        "removeBless": "Rimuovi Benedizione dal mazzo MA {0}",
+        "removeCard": "Rimuovi la carta {1} dal mazzo MA {0}",
+        "removeCurse": "Rimuovi Maledizione dal mazzo MA {0}",
+        "removeDrawnDiscards": "Rimuovi gli scarti pescati dal mazzo MA {0}",
+        "reorder": "Riordina mazzo MA {0}",
+        "restoreDefault": "Ripristina il mazzo MA {0} predefinito",
+        "shuffle": "Mescola mazzo MA {0}",
+        "shuffleUpcoming": "Mescola le carte in arrivo del mazzo MA {0}"
+      },
+      "updateBonusAdjustment": "Adeguamento bonus {0}",
+      "updateElement": "Elemento {0} {1}",
+      "updateGlobalAchievements": "Traguardi globali di {0}",
+      "updateLevelAdjustment": "Regolazione del livello {0}",
+      "updateLevelAdjustmentBb": "Imposta la difficoltà del modificatore dei mostri su %game.level.bb.monsterDifficulty.{0}%",
+      "updateManualPlayerCount": "Imposta il conteggio manuale dei giocatori su {0}",
+      "updatePartyAchievements": "Traguardi di gruppo di {0}",
+      "updateStandee": "Modifica {1} numero della pedina {2} in {3} per {0}",
+      "upgradeBuilding": "Potenzia l'edificio '%data.buildings.{1}%' ({0}) al livello {2}"
+    },
+    "loadMore": "Mostra di più",
+    "missing": "Stati mancanti: {0}",
+    "redo": "Ripeti",
+    "reset": "Reimposta",
+    "undo": "Cancella"
+  },
+  "summon": {
+    "": "Evoca",
+    "addCustom": "Evoca '{0}'",
+    "name": "Nome",
+    "state": {
+      "": "Stato",
+      "false": "Inattivo",
+      "new": "Nuovo",
+      "true": "Attivo"
+    }
+  },
+  "tools": {
+    "": "Strumenti [Spoiler!]",
+    "attackModifier": "Modificatore di attacco",
+    "backToGhs": "Torna a GHT",
+    "decks": "Mazzi Capacità",
+    "feedback": {
+      "": "Commenti",
+      "githubIssue": "Segnala un problema in GitHub",
+      "reportIssue": {
+        "": "Segnala un problema",
+        "automaticText": "Testo automatico",
+        "download": "Scarica il dump dei dati",
+        "errorHint": "Si è verificato un problema software.<br>Puoi aiutare a migliorare il software segnalando questo errore allo sviluppatore.<br>Allega il dump dei dati, se possibile. Grazie!",
+        "errorIgnore": "Non segnalare nuovamente questo errore in automatico.",
+        "errorText": "Analisi degli ERRORI:\n\n{0}\n\n{1}",
+        "mail": "Si noti che Microsoft vuole utilizzare il suo potere di mercato per bloccare piccoli server di posta elettronica privati. Di conseguenza, posso ricevere e-mail da outlook.com, hotmail.com o altri servizi Microsoft, ma non sono in grado di rispondere!",
+        "send": "Segnala problema (e-mail)",
+        "specify": "Si prega di specificare i dettagli nel testo.<br>Se non sei sicuro di quale sia esattamente il problema, scarica e allega il dump dei dati qui sotto!",
+        "text": "Testo",
+        "type": {
+          "": "Tipo di problema",
+          "abilityCard": {
+            "": "Carte capacità",
+            "hint": "Valori errati sulle carte capacità.",
+            "subject": "Riscontrato un problema con le carte capacità"
+          },
+          "artwork": {
+            "": "Illustrazione",
+            "hint": "Grafica errata o mancante.",
+            "subject": "Riscontrato un problema con le illustrazioni"
+          },
+          "automatic": {
+            "": "Automatico",
+            "hint": "Un bug del software, generato automaticamente",
+            "subject": "Problema automatico del software"
+          },
+          "characterStat": {
+            "": "Statistiche del personaggio",
+            "hint": "Valori errati nelle statistiche del personaggio.",
+            "subject": "Riscontrato un problema con le statistiche del personaggio"
+          },
+          "feedback": {
+            "": "Commento generale",
+            "hint": "Un messaggio generale per lo sviluppatore.",
+            "subject": "Commento generale"
+          },
+          "monsterStat": {
+            "": "Statistiche dei mostri",
+            "hint": "Valori errati nelle statistiche dei mostri.",
+            "subject": "Riscontrato un problema con le statistiche dei mostri"
+          },
+          "software": {
+            "": "Software",
+            "hint": "Un bug del software, qualcosa che non funziona come previsto.",
+            "subject": "Problema software rilevato"
+          }
+        }
+      },
+      "submitScenario": {
+        "": "Invia scenario corrente",
+        "index": "Numero scenario",
+        "name": "Nome scenario",
+        "notes": {
+          "": "Note aggiuntive",
+          "hint": "per esempio, regole speciali di scenario come le regolazioni del livello dei mostri, eventi di round o calcoli PV…"
+        },
+        "send": "Invia scenario"
+      }
+    },
+    "keyboard": {
+      "": "Scorciatoie da tastiera",
+      "activeCharacter": {
+        "lootDec": "Riduci segnalini moneta per il personaggio attivo",
+        "lootInc": "Aumenta segnalini moneta per il personaggio attivo",
+        "xpDec": "Riduci Esp per il personaggio attivo",
+        "xpInc": "Aumenta Esp per il personaggio attivo"
+      },
+      "alt": "ALT",
+      "am": "Pesca una carta MA (mazzo a seconda della figura attiva, mazzo dei mostri quando non attivo, disabilitato quando <b>Pesca</b>)",
+      "amAdvantage": "Lo stesso di <kbd><span>m</span></kbd>, ma pesca con vantaggio se abilitato",
+      "amDisadvantage": "Lo stesso di <kbd><span>m</span></kbd>, ma pesca con svantaggio se abilitato",
+      "backspace": "⌫",
+      "cmd": "⌘",
+      "ctrl": "CTRL",
+      "difficulty": "Menu di difficoltà/livello",
+      "enter": "↵",
+      "entityMenu": {
+        "": "In qualsiasi menu di figure/pedine aperto, queste scorciatoie sono disabilitate, attualmente sono disponibili queste scorciatoie nel menu figure/pedine:",
+        "blessDec": "Riduci Benedizione",
+        "blessInc": "Aumenta Benedizione",
+        "characterSheet": "Apri la scheda del personaggio",
+        "curseDec": "Riduci Maledizione",
+        "curseInc": "Aumenta Maledizione",
+        "hpDec": "Riduci PV attuali",
+        "hpInc": "Aumenta PV attuali",
+        "kill": "Uccidi / Esaurisci",
+        "lootDec": "Riduci segnalini moneta",
+        "lootInc": "Aumenta segnalini moneta",
+        "maxHpDec": "Riduci PV max",
+        "maxHpInc": "Aumenta PV max",
+        "toggleAbsent": "Attiva/disattiva personaggio assente",
+        "toggleCondition": "Attiva/disattiva Condizione/Modificatore di condizione",
+        "xpDec": "Riduci Esp",
+        "xpInc": "Aumenta Esp"
+      },
+      "esc": {
+        "": "ESC",
+        "fullscreen": "Nella maggior parte dei browser, il tasto ESC esce dalla modalità a schermo intero; usa invece il tasto BACKSPACE."
+      },
+      "events": "Menu degli effetti degli eventi",
+      "finish": "(Termina) Menu scenario",
+      "global": "Attualmente sono implementate le seguenti scorciatoie da tastiera:",
+      "globalMap": "Apri la Mappa Globale",
+      "keyboard": "Mostra le scorciatoie da tastiera",
+      "loot": "Pesca dal mazzo bottino",
+      "mainMenu": {
+        "": "Apri il menu principale",
+        "confirm": "Conferma azione / Apri sottomenu",
+        "decline": "Rifiuta azione / Chiudi menu",
+        "open": "Su menu aperto",
+        "select": "Seleziona l'azione"
+      },
+      "party": "Apri la scheda del gruppo",
+      "redo": "Ripeti",
+      "round": "Prossimo round / pescaggio",
+      "scenarioChart": "Mostra diagramma di flusso dello scenario",
+      "select": "Selezionare la figura/pedina per l'apertura del menu con il tasto numerico",
+      "selectNatural": "Selezionare la figura/pedina per l'apertura del menu in ordine fisso con il tasto numerico",
+      "shift": "SHIFT",
+      "space": "SPAZIO",
+      "tab": "↹",
+      "toggelTab": "Imposta la figura attiva quando peschi / Imposta l'iniziativa quando ti concentri sull'input",
+      "toggleAbsent": "Attiva/disattiva <i>Nascondi le figure assenti</i>",
+      "toggleDamageHP": "Attiva/disattiva <i>%settings.damageHP%</i>",
+      "toggleElements": "Passa da uno stato dell'elemento all'altro",
+      "toggleFullscreen": "Attiva/disattiva <i>Schermo intero</i>",
+      "toggleHandSize": "Attiva/disattiva <i>Mostra le dimensioni e il livello della mano</i>",
+      "togglePlayerNumber": "Attiva/disattiva <i>Mostra il numero del giocatore</i>",
+      "toggleTraits": "Attiva/disattiva <i>Mostra tratti</i>",
+      "undo": "Cancella",
+      "zoomIn": "Avvicina",
+      "zoomOut": "Allontana",
+      "zoomReset": "Ripristina zoom"
+    },
+    "validateEditionData": "Convalida i dati dell'edizione"
+  },
+  "update": "Aggiorna - Ricarica",
+  "welcome": {
+    "": "Benvenuto a Gloomhaven Tracker",
+    "chooseCharacters": "Scegli i tuoi personaggi",
+    "chooseEdition": "Inizia una nuova campagna scegliendo la tua edizione:",
+    "orChooseCharacters": "o inizia una partita casuale aggiungendo direttamente i personaggi",
+    "settings": {
+      "": "Impostazioni",
+      "text": "Usa le diverse impostazioni per configurare tutto adeguatamente:"
+    }
+  },
+  "wip": "In lavorazione"
+}

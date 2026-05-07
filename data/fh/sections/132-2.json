@@ -1,0 +1,78 @@
+{
+  "index": "132.2",
+  "name": "A Giant Block of Ice",
+  "edition": "fh",
+  "parent": "72",
+  "parentSections": [
+    [
+      "105.3"
+    ]
+  ],
+  "marker": "3",
+  "resetRound": "visible",
+  "monsters": [
+    "frozen-corpse",
+    "steel-automaton"
+  ],
+  "rules": [
+    {
+      "round": "R == 2",
+      "spawns": [
+        {
+          "monster": {
+            "name": "steel-automaton",
+            "type": "normal"
+          }
+        }
+      ],
+      "noteTop": "Replace any one metal cabinet"
+    },
+    {
+      "round": "R == 4",
+      "spawns": [
+        {
+          "monster": {
+            "name": "steel-automaton",
+            "player3": "normal",
+            "player4": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "round": "R == 6",
+      "spawns": [
+        {
+          "monster": {
+            "name": "steel-automaton",
+            "player4": "normal"
+          }
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        37
+      ],
+      "monster": [
+        {
+          "name": "frozen-corpse",
+          "type": "normal"
+        },
+        {
+          "name": "frozen-corpse",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "steel-automaton",
+          "type": "elite"
+        }
+      ]
+    }
+  ]
+}

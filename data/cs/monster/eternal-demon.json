@@ -1,0 +1,148 @@
+{
+  "name": "eternal-demon",
+  "edition": "cs",
+  "deck": "boss",
+  "boss": true,
+  "hidden": true,
+  "count": 1,
+  "standeeShare": "earth-demon",
+  "standeeShareEdition": "gh",
+  "baseStat": {
+    "type": "boss",
+    "immunities": [
+      "immobilize",
+      "muddle",
+      "disarm",
+      "curse",
+      "wound",
+      "stun",
+      "poison",
+      "bane",
+      "brittle"
+    ],
+    "special": [
+      [
+        {
+          "type": "jump",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.eternal-demon.1%",
+              "small": true
+            }
+          ]
+        },
+        {
+          "type": "heal",
+          "value": "X",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "self",
+              "small": true
+            },
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.eternal-demon.2%",
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "%data.custom.cs.eternal-demon.3%",
+              "small": true
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "10xC",
+      "movement": 2,
+      "attack": 4
+    },
+    {
+      "level": 1,
+      "health": "13xC",
+      "movement": 2,
+      "attack": 4
+    },
+    {
+      "level": 2,
+      "health": "18xC",
+      "movement": 2,
+      "attack": 4
+    },
+    {
+      "level": 3,
+      "health": "20xC",
+      "movement": 2,
+      "attack": 4,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "immobilize"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "health": "21xC",
+      "movement": 3,
+      "attack": 5,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "immobilize"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "health": "25xC",
+      "movement": 3,
+      "attack": 5,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "immobilize"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "health": "27xC",
+      "movement": 3,
+      "attack": 6,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "immobilize"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "health": "32xC",
+      "movement": 3,
+      "attack": 6,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "immobilize"
+        }
+      ]
+    }
+  ]
+}

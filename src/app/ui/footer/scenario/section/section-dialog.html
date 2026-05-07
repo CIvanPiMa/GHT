@@ -1,0 +1,23 @@
+<div class="section-popup">
+  @if (!sectionData.conclusion) {
+    <p
+      [ght-label]="(sectionData.marker ? 'scenario.section.addMarker' : 'scenario.section.add') + (sectionData.hideIndex ? '' : 'Index')"
+      [ght-label-args]="[sectionData.index, sectionData.marker || '']"
+    ></p>
+  }
+
+  @if (sectionData.conclusion) {
+    <p
+      [ght-label]="'scenario.section.conclusion'"
+      [ght-label-args]="[
+        sectionData.name ? gameManager.scenarioManager.scenarioTitle(sectionData, true) : '%scenario.section% #' + sectionData.index
+      ]"
+    ></p>
+  }
+
+  <div class="buttons">
+    <a class="cancel" (click)="close(false)"><span [ght-label]="'scenario.section.cancel'"></span></a>
+    <span class="spacer"></span>
+    <a class="add" (click)="addSection()"><span [ght-label]="'scenario.section.confirm'"></span></a>
+  </div>
+</div>

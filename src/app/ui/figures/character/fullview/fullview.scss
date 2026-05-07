@@ -1,0 +1,112 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.container {
+  height: 100%;
+}
+
+.fullview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    margin-top: calc(var(--ght-unit) * 1);
+    position: relative;
+    display: flex;
+  }
+
+  ght-character-image {
+    width: calc(var(--ght-unit) * 15);
+    height: calc(var(--ght-unit) * 15);
+    border-radius: calc(var(--ght-unit) * 2);
+  }
+
+  ght-highlight-conditions {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(var(--ght-unit) * 15);
+    z-index: 5;
+  }
+
+  ght-pointer-input.drag-initiative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--ght-unit) * 15);
+    height: 100%;
+    z-index: 4;
+
+    &.dragging {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .conditions {
+    position: relative;
+    display: flex;
+    margin-left: calc(var(--ght-unit) * 1 * var(--ght-text-factor));
+
+    .condition {
+      position: relative;
+      display: flex;
+      margin-right: calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
+
+      img {
+        width: calc(var(--ght-unit) * 5 * var(--ght-text-factor));
+        height: calc(var(--ght-unit) * 5 * var(--ght-text-factor));
+        margin: 0;
+
+        &.stack {
+          margin-left: calc(var(--ght-unit) * -3 * var(--ght-text-factor));
+        }
+      }
+
+      .value {
+        font-family: var(--ght-font-gh-title);
+        font-size: calc(var(--ght-unit) * 1.8 * var(--ght-text-factor));
+        color: var(--ght-color-white);
+        position: absolute;
+        top: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+        left: calc(var(--ght-unit) * 2.5 * var(--ght-text-factor));
+        text-shadow: none;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .sheet {
+    padding: calc(var(--ght-unit) * 1.5 * var(--ght-text-factor));
+    background-color: var(--ght-color-white);
+  }
+}
+
+.wip {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--ght-color-red);
+  font-size: calc(var(--ght-unit) * 4);
+
+  img {
+    filter: var(--ght-filter-yellow) var(--ght-filter-shadow);
+    width: calc(var(--ght-unit) * 4);
+    height: auto;
+    margin-right: calc(var(--ght-unit) * 1);
+  }
+
+  &:hover {
+    color: var(--ght-color-black);
+  }
+}

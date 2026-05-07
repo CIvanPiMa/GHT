@@ -1,0 +1,29 @@
+{
+  "index": "135",
+  "edition": "fc",
+  "parent": "111",
+  "parentSections": [
+    [
+      "128"
+    ]
+  ],
+  "conclusion": true,
+  "rewards": {
+    "globalAchievements": [
+      "a-peril-averted"
+    ],
+    "partyAchievements": [
+      "hunting-the-hunter"
+    ],
+    "lostPartyAchievements": [
+      "hunted-prey"
+    ],
+    "experience": 12,
+    "battleGoals": 1,
+    "hints": {
+      "globalAchievements": [
+        "(If this is the second \"A Peril Averted\" achievement gained, read section 118 on page 37)"
+      ]
+    }
+  }
+}

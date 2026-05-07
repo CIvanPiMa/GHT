@@ -1,0 +1,35 @@
+.recaps {
+  display: flex;
+  flex-direction: column;
+
+  .recap {
+    margin: calc(var(--ght-unit) * 0.2 * var(--ght-dialog-factor)) 0;
+
+    ght-scenario-recap {
+      display: block;
+      padding-bottom: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+      margin-bottom: calc(var(--ght-unit) * 1 * var(--ght-dialog-factor));
+      border-bottom: calc(var(--ght-unit) * 0.2 * var(--ght-dialog-factor)) dashed var(--ght-color-gray);
+    }
+
+    .section .title {
+      margin: 0 calc(var(--ght-unit) * 0.25 * var(--ght-dialog-factor));
+    }
+
+    .separator {
+      margin-right: calc(var(--ght-unit) * 0.5 * var(--ght-dialog-factor));
+    }
+  }
+
+  .select-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .select {
+      cursor: pointer;
+      margin: calc(var(--ght-unit) * 0.6 * var(--ght-dialog-factor)) 0;
+      font-size: 1.2em;
+    }
+  }
+}

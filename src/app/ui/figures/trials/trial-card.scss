@@ -1,0 +1,106 @@
+.trial {
+  position: relative;
+  width: 100%;
+  padding-bottom: 147%;
+
+  .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5% solid transparent;
+    border-radius: 5%;
+
+    .card-front {
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 5%;
+      background-image: url('../../../../assets/images/fh/trials/trial-front.png');
+
+      .title {
+        position: absolute;
+        top: 7%;
+        left: 25%;
+        width: 100%;
+        margin: 0;
+        font-family: var(--ght-font-title);
+        font-size: 1.1em;
+        color: var(--ght-color-white);
+        filter: var(--ght-filter-outline);
+        text-transform: uppercase;
+      }
+
+      .automation {
+        position: absolute;
+        top: 4%;
+        right: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ght-svg {
+          cursor: help;
+          width: 1.2em;
+          height: auto;
+          filter: var(--ght-filter-white);
+        }
+      }
+
+      .text {
+        position: absolute;
+        top: 20%;
+        left: 11%;
+        width: 78%;
+        height: 70%;
+        margin: 0;
+        font-family: var(--ght-font-normal);
+        font-size: 0.8em;
+        line-height: 0.9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .card-id {
+        position: absolute;
+        bottom: 1.2%;
+        right: 88%;
+        text-align: right;
+        font-family: var(--ght-font-normal);
+        font-size: 0.45em;
+        color: var(--ght-color-white);
+        filter: var(--ght-filter-outline);
+      }
+    }
+
+    .card-back {
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 5%;
+      background-image: url('../../../../assets/images/fh/trials/trial-back.png');
+    }
+  }
+
+  .confirm {
+    .revealed {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--ght-color-black);
+      font-size: 1.3em;
+      filter: drop-shadow(calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) calc(var(--ght-unit) * 0.1) var(--ght-color-white));
+
+      .text {
+        text-align: center;
+      }
+    }
+  }
+}

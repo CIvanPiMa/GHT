@@ -1,0 +1,25 @@
+<div class="scenario-rules-dialog">
+  @if (appliedScenarioRules.length) {
+    <h2 [ght-label]="'scenario.rules.show.applied'"></h2>
+  }
+  <div class="applied">
+    @for (ruleModel of appliedScenarioRules | trackUUID; track ruleModel._trackUUID) {
+      <ght-scenario-rule
+        [rule]="ruleModel.rule"
+        [identifier]="ruleModel.identifier"
+        (click)="discardScenarioRule(ruleModel)"
+      ></ght-scenario-rule>
+    }
+  </div>
+  <h2 [ght-label]="'scenario.rules.show.discarded'"></h2>
+  <div class="discarded">
+    @for (ruleModel of discardedScenarioRules | trackUUID; track ruleModel._trackUUID) {
+      <ght-scenario-rule [rule]="ruleModel.rule" [identifier]="ruleModel.identifier"></ght-scenario-rule>
+    }
+  </div>
+  <div class="menu">
+    @if (discardedScenarioRules.length) {
+      <a [ght-label]="'scenario.rules.clearDiscarded'" (click)="clearDiscardedScenarioRules()"></a>
+    }
+  </div>
+</div>

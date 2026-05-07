@@ -1,0 +1,101 @@
+{
+  "index": "914",
+  "group": "randomMonsterCard",
+  "name": "Swift",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "algox-scout",
+    "wind-demon"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "air",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "algox-scout",
+          "type": "elite",
+          "marker": "1"
+        },
+        {
+          "name": "algox-scout",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "6"
+        },
+        {
+          "name": "wind-demon",
+          "type": "normal",
+          "marker": "7"
+        },
+        {
+          "name": "wind-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "9"
+        },
+        {
+          "name": "wind-demon",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "5"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "obstacle",
+      "value": "snow-rock-small",
+      "marker": "4"
+    },
+    {
+      "type": "obstacle",
+      "value": "snow-rock-small",
+      "marker": "8"
+    },
+    {
+      "type": "trap",
+      "value": "bear-trap",
+      "values": [
+        "damage",
+        "immobilize"
+      ],
+      "marker": "10"
+    },
+    {
+      "type": "trap",
+      "value": "bear-trap",
+      "values": [
+        "damage",
+        "immobilize"
+      ],
+      "marker": "11"
+    },
+    {
+      "type": "treasure",
+      "value": "resource",
+      "values": [
+        "hide",
+        3
+      ],
+      "marker": "12"
+    }
+  ]
+}

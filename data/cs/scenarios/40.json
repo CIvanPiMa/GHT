@@ -1,0 +1,45 @@
+{
+  "index": "40",
+  "name": "Smugglers Hideout",
+  "flowChartGroup": "city-events",
+  "edition": "cs",
+  "rewards": {
+    "collectiveGold": 50
+  },
+  "monsters": [
+    "rending-drake",
+    "spitting-drake"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "E1a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "rending-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "rending-drake",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "spitting-drake",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

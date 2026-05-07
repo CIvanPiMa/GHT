@@ -1,0 +1,13 @@
+{
+  "index": "78.4",
+  "name": "Garden Built",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "summer-outpost:SO-57",
+      "summer-road:SR-46"
+    ]
+  }
+}

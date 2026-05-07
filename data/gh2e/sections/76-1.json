@@ -1,0 +1,11 @@
+{
+  "index": "76.1",
+  "name": "Decrepit Wood",
+  "edition": "gh2e",
+  "parent": "31",
+  "conclusion": true,
+  "unlocks": [
+    "32"
+  ],
+  "monsters": []
+}

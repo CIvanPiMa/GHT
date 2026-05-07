@@ -1,0 +1,117 @@
+{
+  "index": "1",
+  "name": "A Town in Flames",
+  "flowChartGroup": "intro",
+  "coordinates": {
+    "x": 961.25,
+    "y": 1872,
+    "width": 165,
+    "height": 95,
+    "gridLocation": "FR"
+  },
+  "edition": "fh",
+  "complexity": 1,
+  "initial": true,
+  "recaps": [
+    {
+      "type": "other"
+    }
+  ],
+  "unlocks": [
+    "2",
+    "3"
+  ],
+  "rewards": {
+    "custom": "%data.scenario.rewards.fh.001%",
+    "morale": "2+X",
+    "valueMapping": {
+      "X": {
+        "identifier": {
+          "type": "monster",
+          "edition": "fh",
+          "name": "city-guard"
+        },
+        "type": "present",
+        "value": "morale"
+      }
+    }
+  },
+  "monsters": [
+    "algox-archer",
+    "algox-guard",
+    "algox-priest",
+    "city-guard"
+  ],
+  "allies": [
+    "city-guard"
+  ],
+  "lootDeckConfig": {
+    "money": 6,
+    "lumber": 5,
+    "metal": 3,
+    "hide": 3,
+    "rockroot": 1,
+    "snowthistle": 2
+  },
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "alwaysApply": true,
+      "statEffects": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "fh",
+            "name": "city-guard"
+          },
+          "statEffect": {
+            "actions": [
+              {
+                "type": "shield",
+                "value": 1
+              },
+              {
+                "type": "retaliate",
+                "value": 2
+              }
+            ],
+            "deck": "city-guard-scenario-1"
+          },
+          "note": "%data.scenario.rules.fh.1%"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "09-A",
+      "initial": true,
+      "monster": [
+        {
+          "name": "algox-archer",
+          "type": "normal"
+        },
+        {
+          "name": "algox-archer",
+          "player4": "normal"
+        },
+        {
+          "name": "algox-guard",
+          "type": "normal"
+        },
+        {
+          "name": "algox-priest",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard",
+          "type": "normal"
+        }
+      ]
+    }
+  ]
+}

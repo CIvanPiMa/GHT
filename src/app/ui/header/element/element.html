@@ -1,0 +1,4 @@
+<span class="element" [ngClass]="{ consume: element.state === ElementState.consumed || element.state === ElementState.partlyConsumed }">
+  <ght-element-icon [element]="element"></ght-element-icon>
+  <ght-pointer-input (singleClick)="toggleElement()" (doubleClick)="toggleElement(true)"></ght-pointer-input>
+</span>

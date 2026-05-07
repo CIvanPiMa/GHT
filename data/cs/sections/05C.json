@@ -1,0 +1,70 @@
+{
+  "index": "5C",
+  "name": "Infected Warriors",
+  "edition": "cs",
+  "parent": "4",
+  "marker": "3",
+  "monsters": [
+    "blood-ooze",
+    "city-guard-scenario-4:-1",
+    "toxic-imp"
+  ],
+  "allies": [
+    "city-guard-scenario-4"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "name": "city-.*",
+            "tags": [
+              "5C"
+            ]
+          },
+          "type": "gainCondition",
+          "value": "infect"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "ref": "A2b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "blood-ooze",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "blood-ooze",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "city-guard-scenario-4:-1",
+          "type": "normal",
+          "marker": "b",
+          "tags": [
+            "5C"
+          ]
+        },
+        {
+          "name": "toxic-imp",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

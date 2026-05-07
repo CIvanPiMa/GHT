@@ -1,0 +1,59 @@
+{
+  "index": "2",
+  "name": "Underground Channels",
+  "flowChartGroup": "intro",
+  "edition": "cs",
+  "unlocks": [
+    "3"
+  ],
+  "links": [
+    "3"
+  ],
+  "monsters": [
+    "deep-terror",
+    "inox-guard",
+    "water-spirit"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "I2a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "deep-terror",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "deep-terror",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "inox-guard",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "water-spirit",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "water-spirit",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

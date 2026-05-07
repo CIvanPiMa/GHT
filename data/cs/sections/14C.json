@@ -1,0 +1,54 @@
+{
+  "index": "14C",
+  "name": "Corpse Cavern",
+  "edition": "cs",
+  "parent": "13",
+  "parentSections": [
+    [
+      "14A"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "living-corpse-scenario-13",
+    "lurker"
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "treasures": [
+        7
+      ],
+      "monster": [
+        {
+          "name": "living-corpse-scenario-13",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "lurker",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "lurker",
+          "player2": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "lurker",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

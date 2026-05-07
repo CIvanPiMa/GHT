@@ -1,0 +1,59 @@
+{
+  "index": "137.1",
+  "name": "Orphan's Halls",
+  "edition": "fh",
+  "parent": "51",
+  "parentSections": [
+    [
+      "32.1"
+    ]
+  ],
+  "marker": "2",
+  "monsters": [
+    "ancient-artillery",
+    "flaming-bladespinner"
+  ],
+  "objectives": [
+    {
+      "name": "Door",
+      "health": "(L+2)xC",
+      "marker": "2"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 3,
+      "initial": true,
+      "monster": [
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ancient-artillery",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "type": "normal"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "type": "normal"
+        },
+        {
+          "name": "flaming-bladespinner",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

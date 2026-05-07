@@ -1,0 +1,49 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  ght-header {
+    z-index: 2;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    display: flex;
+  }
+}
+
+.decks {
+  flex: 1 1 auto;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  margin-top: 20px;
+
+  .deck {
+    display: flex;
+    flex-direction: column;
+
+    h2,
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+
+    ght-ability {
+      flex-shrink: 0;
+      width: 400px;
+      height: 255px;
+      margin: 10px;
+
+      &.bottom-actions {
+        height: 540px;
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "index": "15",
+  "name": "Tainted Blood",
+  "flowChartGroup": "main",
+  "coordinates": {
+    "x": 787,
+    "y": 678.5,
+    "width": 247,
+    "height": 195,
+    "gridLocation": "C4"
+  },
+  "edition": "jotl",
+  "unlocks": [
+    "16"
+  ],
+  "rewards": {
+    "gold": 10,
+    "itemDesigns": [
+      "21-26"
+    ]
+  },
+  "monsters": [
+    "black-imp",
+    "blood-imp",
+    "zealot"
+  ],
+  "objectives": [
+    {
+      "name": "Table",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "A",
+      "count": 2
+    },
+    {
+      "name": "Table",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "B",
+      "count": 2
+    },
+    {
+      "name": "Table",
+      "health": "[(2+L)xC/2{$math.ceil}]",
+      "marker": "C",
+      "count": 2
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Table",
+            "marker": "A"
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "black-imp",
+            "type": "normal"
+          },
+          "marker": "A",
+          "count": "F"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Table",
+            "marker": "B"
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "black-imp",
+            "player3": "normal",
+            "player4": "normal"
+          },
+          "marker": "B",
+          "count": "F"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Table",
+            "marker": "C"
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "black-imp",
+            "player4": "normal"
+          },
+          "marker": "C",
+          "count": "F"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "requiredRooms": [
+        2
+      ],
+      "rooms": [
+        3
+      ],
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Table",
+            "marker": "A"
+          },
+          "type": "dead"
+        },
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Table",
+            "marker": "B"
+          },
+          "type": "dead"
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "note": "%data.scenario.rules.jotl.15.1%",
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "jotl",
+            "name": "zealot"
+          },
+          "type": "present"
+        }
+      ],
+      "spawns": [
+        {
+          "monster": {
+            "name": "blood-imp",
+            "type": "elite"
+          },
+          "summon": true,
+          "manual": true
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "jotl15-1",
+      "initial": true,
+      "rooms": [
+        2
+      ],
+      "monster": [
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "roomNumber": 2,
+      "ref": "jotl15-2",
+      "rooms": [
+        3
+      ],
+      "monster": [
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "roomNumber": 3,
+      "ref": "jotl15-6",
+      "marker": "D",
+      "monster": [
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "zealot",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        1,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

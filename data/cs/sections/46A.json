@@ -1,0 +1,36 @@
+{
+  "index": "46A",
+  "name": "Curse of the Void",
+  "edition": "cs",
+  "parent": "41",
+  "marker": "1",
+  "monsters": [
+    "rogue-hollowpact"
+  ],
+  "objectives": [
+    {
+      "name": "Void Pit",
+      "health": "C+L"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "rogue-hollowpact",
+          "type": "boss"
+        }
+      ],
+      "objectives": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

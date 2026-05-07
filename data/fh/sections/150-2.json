@@ -1,0 +1,115 @@
+{
+  "index": "150.2",
+  "name": "A Grand View",
+  "edition": "fh",
+  "parent": "94",
+  "monsters": [
+    "ruined-machine",
+    "steel-automaton",
+    "vermling-scout-scenario-94"
+  ],
+  "allies": [
+    "vermling-scout-scenario-94"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "note": "one for each character or Vermling Scout adjacent to a Flaming Bladespinner in any empty starting hex.",
+      "spawns": [
+        {
+          "monster": {
+            "name": "ruined-machine",
+            "player2": "normal",
+            "player3": "normal",
+            "player4": "elite"
+          },
+          "count": "0",
+          "manual": true
+        }
+      ]
+    },
+    {
+      "round": "true",
+      "always": true,
+      "disableRules": [
+        {
+          "edition": "fh",
+          "scenario": "94",
+          "index": 0,
+          "section": false
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 4,
+      "initial": true,
+      "monster": [
+        {
+          "name": "ruined-machine",
+          "type": "elite"
+        },
+        {
+          "name": "ruined-machine",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "ruined-machine",
+          "player2": "normal",
+          "player3": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player4": "normal"
+        },
+        {
+          "name": "steel-automaton",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "type": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "player4": "elite"
+        },
+        {
+          "name": "vermling-scout-scenario-94",
+          "player4": "elite"
+        }
+      ]
+    }
+  ]
+}

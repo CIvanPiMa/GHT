@@ -1,0 +1,16 @@
+<a
+  #button
+  ght-pointer-input
+  (singleClick)="open()"
+  class="button active-outline {{ type }}"
+  [ngClass]="{ disabled: settingsManager.settings.standees && (nonDead >= count || usedStandees >= maxStandees) }"
+  [ght-label]="'monster.addEntity.' + type"
+  [ght-label-attribute]="'title'"
+>
+  @if (settingsManager.settings.standees || !hasEntity()) {
+    <img class="ght-svg" src="./assets/images/plus.svg" />
+  }
+  @if (!settingsManager.settings.standees && hasEntity()) {
+    <img class="ght-svg" src="./assets/images/minus.svg" />
+  }
+</a>

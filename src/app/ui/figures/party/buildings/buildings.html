@@ -1,0 +1,8 @@
+<div class="buildings-container">
+  <form class="header" (submit)="unlockBuilding(building)">
+    <label><img src="./assets/images/fh/buildings/build.svg" /><span [ght-label]="'party.campaign.sheet.buildings'"></span></label>
+    <input type="text" #building [ght-label]="'party.campaign.sheet.buildings.unlock'" [ght-label-attribute]="'placeholder'" />
+    <img src="./assets/images/plus.svg" (click)="unlockBuilding(building)" />
+  </form>
+  <ght-buildings-list [buildings]="buildings" (change)="updateBuildings()"></ght-buildings-list>
+</div>

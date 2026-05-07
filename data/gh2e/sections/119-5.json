@@ -1,0 +1,53 @@
+{
+  "index": "119.5",
+  "edition": "gh2e",
+  "parent": "93",
+  "marker": "b",
+  "monsters": [
+    "lurker-soldier",
+    "vermling-priest",
+    "vermling-scout"
+  ],
+  "objectives": [
+    {
+      "name": "Villagers",
+      "health": "3+L",
+      "marker": "i",
+      "escort": true,
+      "actions": [
+        {
+          "type": "move",
+          "value": 3,
+          "subActions": [
+            {
+              "type": "custom",
+              "value": "towards %game.mapMarker.a%"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "initial": true,
+      "monster": [
+        {
+          "name": "vermling-priest",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "vermling-scout",
+          "player2": "elite",
+          "player3": "normal",
+          "player4": "elite"
+        }
+      ],
+      "objectives": [
+        "1:3"
+      ]
+    }
+  ]
+}

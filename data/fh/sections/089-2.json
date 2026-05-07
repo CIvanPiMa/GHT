@@ -1,0 +1,13 @@
+{
+  "index": "89.2",
+  "name": "Library Upgraded",
+  "edition": "fh",
+  "conclusion": true,
+  "named": true,
+  "rewards": {
+    "events": [
+      "winter-road:WR-47",
+      "summer-road:SR-49"
+    ]
+  }
+}

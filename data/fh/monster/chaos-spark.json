@@ -1,0 +1,51 @@
+{
+  "name": "chaos-spark",
+  "edition": "fh",
+  "boss": true,
+  "hidden": true,
+  "count": "Cx2",
+  "standeeCount": 12,
+  "baseStat": {
+    "type": "boss",
+    "actions": [
+      {
+        "type": "custom",
+        "value": "%data.custom.fh.chaos-spark.3%"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": 1
+    },
+    {
+      "level": 1,
+      "health": 2
+    },
+    {
+      "level": 2,
+      "health": 3
+    },
+    {
+      "level": 3,
+      "health": 4
+    },
+    {
+      "level": 4,
+      "health": 5
+    },
+    {
+      "level": 5,
+      "health": 6
+    },
+    {
+      "level": 6,
+      "health": 7
+    },
+    {
+      "level": 7,
+      "health": 8
+    }
+  ]
+}

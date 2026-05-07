@@ -1,0 +1,214 @@
+{
+  "name": "valrath-commander",
+  "edition": "fc",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "actions": [
+      {
+        "type": "condition",
+        "value": "wound"
+      },
+      {
+        "type": "condition",
+        "value": "poison"
+      }
+    ],
+    "immunities": [
+      "disarm",
+      "immobilize",
+      "muddle",
+      "wound",
+      "curse",
+      "stun"
+    ],
+    "special": [
+      [
+        {
+          "type": "summon",
+          "value": "monsterStandee",
+          "valueObject": [
+            {
+              "monster": {
+                "name": "valrath-tracker",
+                "player2": "normal",
+                "player3": "elite",
+                "player4": "elite"
+              }
+            }
+          ]
+        },
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "minus"
+        },
+        {
+          "type": "heal",
+          "value": "[0.35*L+1.65{$math.ceil}]",
+          "subActions": [
+            {
+              "type": "specialTarget",
+              "value": "alliesAdjacentAffect",
+              "small": true
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "summon",
+          "value": "monsterStandee",
+          "valueObject": [
+            {
+              "monster": {
+                "name": "valrath-savage",
+                "player2": "normal",
+                "player3": "normal",
+                "player4": "elite"
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "10xC",
+      "movement": 2,
+      "attack": 3,
+      "range": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "health": "12xC",
+      "movement": 2,
+      "attack": 4,
+      "range": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "health": "15xC",
+      "movement": 3,
+      "attack": 4,
+      "range": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "health": "18xC",
+      "movement": 3,
+      "attack": 5,
+      "range": 3,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        },
+        {
+          "type": "condition",
+          "value": "poison"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "health": "21xC",
+      "movement": 3,
+      "attack": 5,
+      "range": 4,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        },
+        {
+          "type": "condition",
+          "value": "poison"
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "health": "24xC",
+      "movement": 3,
+      "attack": 6,
+      "range": 4,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        },
+        {
+          "type": "condition",
+          "value": "poison"
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "health": "28xC",
+      "movement": 4,
+      "attack": 6,
+      "range": 4,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        },
+        {
+          "type": "condition",
+          "value": "poison"
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "health": "33xC",
+      "movement": 4,
+      "attack": 7,
+      "range": 5,
+      "actions": [
+        {
+          "type": "condition",
+          "value": "wound"
+        },
+        {
+          "type": "condition",
+          "value": "poison"
+        }
+      ]
+    }
+  ]
+}

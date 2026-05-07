@@ -1,0 +1,61 @@
+<div class="battle-goals-dialog">
+  <div class="scroll-container">
+    <div
+      class="header"
+      [ght-label]="character.battleGoal ? 'game.battleGoals.chosen' : 'game.battleGoals.choose'"
+      [ght-label-args]="[character.name, gameManager.characterManager.characterName(character)]"
+    ></div>
+    <div class="battle-goals">
+      @for (battleGoal of battleGoals | trackUUID; track battleGoal._trackUUID; let index = $index) {
+        <ght-battlegoal
+          ght-pointer-input
+          (singleClick)="select(index)"
+          (doubleClick)="select(index, true)"
+          [battleGoal]="battleGoal"
+          [flipped]="
+            gameManager.roundManager.firstRound ||
+            selected === index ||
+            !character.battleGoal ||
+            revealed.includes(index) ||
+            trial349 ||
+            (trial356 && battleGoals.length > 3 && index < battleGoals.length - 2) ||
+            cardOnly
+          "
+          [selected]="selected === index || trial349 || (trial356 && battleGoals.length > 3 && index < battleGoals.length - 2)"
+          [reveal]="!cardOnly && gameManager.game.round > 0 && selected !== index && character.battleGoal && !revealed.includes(index)"
+          [disabled]="(character.battleGoal && !!gameManager.game.scenario && gameManager.game.round > 0) || false"
+        >
+        </ght-battlegoal>
+      }
+    </div>
+    @if (!character.battleGoal || selected !== 0) {
+      <div class="menu">
+        <a class="cancel" (click)="cancel()" [ght-label]="'game.battleGoals.cancel'"></a>
+        <a
+          class="accept"
+          (click)="accept()"
+          [ngClass]="{ disabled: selected === -1 && !trial349 }"
+          [ght-label]="'game.battleGoals.chooseCard'"
+        ></a>
+      </div>
+    }
+    @if (!cardOnly) {
+      <div class="menu small">
+        @if (redrawAvailable) {
+          <a (click)="drawCards()" [ght-label]="'game.battleGoals.drawCards'"></a>
+        }
+        @if (available) {
+          <a (click)="drawCard()" [ght-label]="'game.battleGoals.drawCard'"></a>
+        }
+        @if (!available || !redrawAvailable) {
+          <p class="empty-hint" [ght-label]="'game.battleGoals.drawUnavailable'"></p>
+        }
+      </div>
+    }
+    @if (!cardOnly) {
+      <div class="menu small">
+        <a (click)="setup()" [ght-label]="'game.battleGoals.setup'"></a>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,801 @@
+{
+  "ability": {
+    "Accelerated Power": "威力加速",
+    "Angry Howl": "憤怒嚎叫",
+    "Barbaric Instincts": "野蠻本能",
+    "Black Boon": "黑暗恩澤",
+    "Black Hex": "黑色巫術",
+    "Black Tendrils": "黑色觸須",
+    "Blade Dance": "利刃之舞",
+    "Blinding Sickle": "耀目鐮刀",
+    "Boil Blood": "鮮血沸騰",
+    "Bombardment": "狂轟猛炸",
+    "Booming Scream": "轟鳴尖叫",
+    "Brutalize": "殘酷蠻力",
+    "Burn Away the Dark": "黑暗燃盡",
+    "Calculated Strike": "精算打擊",
+    "Camaraderie": "戰友情深",
+    "Care Package": "護理包裹",
+    "Careful Throw": "謹慎投擲",
+    "Center Mass": "中心靶點",
+    "Chilling Breath": "冰凍吐息",
+    "Close Cuts": "近身切割",
+    "Close to the Abyss": "臨近深淵",
+    "Cold Embrace": "寒冷之擁",
+    "Collateral Damage": "附帶傷害",
+    "Commanding Presence": "號令儀態",
+    "Constrict": "纏身收束",
+    "Coupled Chain": "共軛鎖鏈",
+    "Crash Protocol": "撞擊協議",
+    "Cripple": "致殘攻擊",
+    "Crushing Cold": "寒冷粉碎",
+    "Crushing Weight": "粉碎重壓",
+    "Dark Charm": "黑暗魅惑",
+    "Defensive Strike": "防禦打擊",
+    "Desert Night": "沙漠之夜",
+    "Disorienting Barrage": "失感彈幕",
+    "Double Throw": "雙重投擲",
+    "Drain Life": "汲取生命",
+    "Drill Fist": "鑽機鐵拳",
+    "Dual Daggers": "匕首雙刺",
+    "Dust Cloud": "漫天塵雲",
+    "Empowered Link": "賦能鏈接",
+    "Excessive Force": "過量武力",
+    "Executioner's Axe": "處決之斧",
+    "Explode": "外向爆破",
+    "Explosive Blisters": "爆裂水皰",
+    "Explosive Blitz": "爆裂閃襲",
+    "Extra Fuel": "額外燃料",
+    "Extra Lift": "縱身騰躍",
+    "Eye of the Void": "虛空之眼",
+    "Fancy Hat": "精美禮帽",
+    "Fearsome Efficiency": "高效殺戮",
+    "Feed": "吞物進食",
+    "Fierce Brilliance": "烈陽耀華",
+    "Find Cover": "尋找掩護",
+    "Fire Bombs": "火焰炸彈",
+    "Flame Shroud": "烈焰帷幕",
+    "Flaming Sickle": "燃焰鐮刀",
+    "Flashing Claws": "閃光利爪",
+    "Flying Sickle": "飛行鐮刀",
+    "Follow Through": "緊追不捨",
+    "Freeze the Soul": "靈魂凍結",
+    "Gift of the Void": "虛空饋贈",
+    "Give and Take": "互交互換",
+    "Grasp of Doom": "末日抓攫",
+    "Greed": "貪得無厭",
+    "Ground Pound": "捶打地面",
+    "Gut Punch": "腹部拳擊",
+    "Harvest Sickle": "收割鐮刀",
+    "Hasty Assault": "倉促攻擊",
+    "Hateful Blast": "恨意爆彈",
+    "Healing Sands": "治療沙土",
+    "Heart Seeker": "穿心利斧",
+    "Heat Blast": "高溫爆彈",
+    "Hex Whip": "妖術鞭笞",
+    "Honorable Fury": "榮譽狂怒",
+    "Horns of the Beast": "野獸之角",
+    "Hungry Maw": "飢餓巨口",
+    "Icy Glare": "寒冰怒視",
+    "Implode": "向內聚爆",
+    "Insult to Injury": "雪上加霜",
+    "Knock Out the Support": "擊垮支柱",
+    "Leech Warmth": "體溫榨取",
+    "Level": "夷為平地",
+    "Lingering Strength": "力量縈繞",
+    "Lobbed Charge": "長程衝擊",
+    "Lull into Oblivion": "誘入湮滅",
+    "Lure of the Void": "虛空誘餌",
+    "Mana Explosion": "魔力爆破",
+    "Master Influence": "影響掌控",
+    "Mech Suit": "機械裝甲",
+    "Micro Missiles": "微型導彈",
+    "No Fear": "無所畏懼",
+    "Nothing Special": "普通攻擊",
+    "Nowhere to Run": "無處可逃",
+    "Noxious Blade": "毒素利刃",
+    "One-Two Punch": "二連拳擊",
+    "Ones-Two Punch": "二連組合拳",
+    "Overwatch": "掩護射擊",
+    "Parry": "巧勁招架",
+    "Patch Wounds": "包紮傷口",
+    "Phase Out": "相位隱退",
+    "Piston Punch": "活塞拳擊",
+    "Plasma Ward": "電漿結界",
+    "Possessed by Fate": "命運附身",
+    "Power Pitch": "威力投擲",
+    "Precision Strike": "精準打擊",
+    "Prismatic Sickle": "炫彩鐮刀",
+    "Quick Turnaround": "快速轉身",
+    "Radiant Sickle": "光輝鐮刀",
+    "Rancid Arrow": "酸腐之箭",
+    "Rapid Bolts": "速射之矢",
+    "Reckless Charge": "魯莽衝鋒",
+    "Release Gas": "釋放毒氣",
+    "Remote Detonation": "遠程引爆",
+    "Repeat Shot": "多重射擊",
+    "Resigned Frenzy": "順命狂亂",
+    "Restoration": "療傷復原",
+    "Retrieval": "物歸原主",
+    "Ricochet": "迴旋彈射",
+    "Ripped From the Flesh": "撕裂血肉",
+    "Robotic Enhancement": "機器強化",
+    "Rotting Embrace": "腐爛之擁",
+    "Rubble": "碎石利用",
+    "Runic Draw": "符文牽引",
+    "Runic Feedback": "符文反饋",
+    "Sacrificial Hurl": "犧牲拋擲",
+    "Sand Devil": "魔塵沙暴",
+    "Sap Strength": "力量榨幹",
+    "Sap Warmth": "體溫榨幹",
+    "Savage Instinct": "野蠻本能",
+    "Screaming Shot": "尖叫射擊",
+    "Second Wind": "調勻氣息",
+    "Seismic Punch": "震波拳擊",
+    "Septic Hex": "敗血巫術",
+    "Sharpened Blades": "銳利鋒刃",
+    "Shield Spikes": "護盾尖刺",
+    "Shield of the Desert": "沙漠護盾",
+    "Shocking Advance": "震敵前行",
+    "Short Bow": "短弓攻擊",
+    "Shrapnel": "碎片飛濺",
+    "Signs of the Void": "虛空符印",
+    "Soaring Shield": "翱翔護盾",
+    "Spiked Pit": "尖刺坑洞",
+    "Spirit Hunger": "靈力饑餓",
+    "Stand Fast": "寸步不讓",
+    "Stopping Power": "制動作用",
+    "Strangling Chain": "勒喉鎖鏈",
+    "Suggestion": "意見指導",
+    "Surge of Power": "威力涌流",
+    "Surround": "包抄圍堵",
+    "Swarm": "蜂擁群襲",
+    "Swift Fangs": "迅捷尖牙",
+    "Swift Strength": "迅捷力量",
+    "Taunting Fate": "命運嘲諷",
+    "Taxing Advance": "費力前行",
+    "The Big One": "大型炸彈",
+    "The Bigger One": "巨型炸彈",
+    "The Favorite": "趁手飛斧",
+    "The Last Journey": "最終旅程",
+    "The New Favorite": "趁手愛斧",
+    "Tip The Scales": "扭轉局勢",
+    "Toxic Explosion": "毒性爆裂",
+    "Toxic Frenzy": "劇毒狂亂",
+    "Turn Out the Lights": "黑燈瞎火",
+    "Twin Missiles": "二重飛彈",
+    "Twirling Stabs": "旋身戳刺",
+    "Unholy Flame": "不潔烈焰",
+    "Unstable Frenzy": "無常狂亂",
+    "Unstable Scratch": "無常抓撓",
+    "Vicious Ballet": "狠毒華舞",
+    "Vicious Spear": "狠毒長矛",
+    "Vile Scourge": "邪毒天災",
+    "Violent Slam": "暴力猛推",
+    "Warmth of the Sun": "烈日溫暖",
+    "Warrior of the Sun": "烈日勇士",
+    "Weakening Bite": "虛弱撕咬",
+    "Whirlwind": "氣流旋風",
+    "Wholesale Destruction": "整體摧毀",
+    "Wicked Scratch": "邪性抓撓",
+    "Windup": "上緊發條",
+    "Withering Conviction": "凋零罪罰"
+  },
+  "battleGoals": {
+    "286": {
+      "": "雜技高手",
+      "text": "遺失一張卡牌來抵銷5點或更多傷害。"
+    },
+    "287": {
+      "": "曠野恐懼症",
+      "text": "你每個回合結束時都與牆壁或障礙物相鄰。"
+    },
+    "288": {
+      "": "利他主義",
+      "text": "收取的錢幣標記比其他任何一位角色要少。"
+    },
+    "289": {
+      "": "助攻",
+      "text": "消滅1個同一輪中你盟友之前攻擊過的怪物。"
+    },
+    "290": {
+      "": "挑戰者",
+      "text": "從不離開怪物的相鄰格。"
+    },
+    "291": {
+      "": "閉幕者",
+      "text": "消滅本劇本中最後一個死亡的怪物。"
+    },
+    "292": {
+      "": "保守份子",
+      "text": "從不遺失卡牌來抵銷承受傷害。"
+    },
+    "293": {
+      "": "頑強生存",
+      "text": "從不讓你的生命跌至你生命值上限的一半以下(向上取整)。"
+    },
+    "294": {
+      "": "利己主義",
+      "text": "收取的錢幣標記比其他任何一位角色都要多。"
+    },
+    "295": {
+      "": "回春妙手",
+      "text": "劇本結束時生命值等於你生命值上限。"
+    },
+    "296": {
+      "": "賭徒",
+      "text": "使用具有劣勢的攻擊消滅1個怪物。"
+    },
+    "297": {
+      "": "莽夫",
+      "text": "在你第一次休息前執行2個帶有遺失圖標的行動。"
+    },
+    "298": {
+      "": "失眠者",
+      "text": "你充分休息的同一輪承受攻擊傷害。"
+    },
+    "299": {
+      "": "受虐狂",
+      "text": "劇本結束時生命為3點或更低。"
+    },
+    "300": {
+      "": "搶劫者",
+      "text": "消滅1個怪物並在同一回合中拾取其掉落的錢幣。"
+    },
+    "301": {
+      "": "開幕者",
+      "text": "消滅本劇本中第一個死亡的怪物。"
+    },
+    "302": {
+      "": "和平主義",
+      "text": "消滅的怪物少於等於3個。"
+    },
+    "303": {
+      "": "扒手",
+      "text": "你與2個及以上怪物相鄰時，通過執行拾取行動收取了至少1個錢幣標記。"
+    },
+    "304": {
+      "": "針墊",
+      "text": "同一輪中成為3個及以上怪物攻擊的目標。"
+    },
+    "305": {
+      "": "白丁",
+      "text": "從未消滅過精英怪物和頭目。"
+    },
+    "306": {
+      "": "禁酒份子",
+      "text": "從未使用藥水。"
+    },
+    "307": {
+      "": "肆虐者",
+      "text": "在同一個回合執行了2個帶有遺失圖標的行動。"
+    },
+    "308": {
+      "": "隱士",
+      "text": "你回合結束時從不與你的任何盟友相鄰。"
+    },
+    "309": {
+      "": "施虐狂",
+      "text": "消滅5個及以上怪物。"
+    },
+    "310": {
+      "": "勇進者",
+      "text": "從不充分休息(長休)。"
+    },
+    "311": {
+      "": "暗影",
+      "text": "你每個回合結束時均與你的盟友相鄰。"
+    },
+    "312": {
+      "": "逃避份子",
+      "text": "你與一個怪物相鄰時消滅另一個不與你相鄰的怪物。"
+    },
+    "313": {
+      "": "行家",
+      "text": "從不執行基礎動作。"
+    },
+    "314": {
+      "": "落後者",
+      "text": "從不短暫休息。"
+    },
+    "315": {
+      "": "開拓者",
+      "text": "打開房門且當回合結束時停留在揭示的房間內。"
+    },
+    "316": {
+      "": "傳導者",
+      "text": "你擁有負面狀態的情況下對1個怪物施加負面狀態。"
+    },
+    "317": {
+      "": "菜雞",
+      "text": "先於任何其他角色精疲力盡。"
+    }
+  },
+  "character": {
+    "jotl": {
+      "demolitionist": {
+        "": "爆破手",
+        "mech": {
+          "": "機械裝甲",
+          "hint": "你的最大生命值增加 5 點。治療自己 %game.action.heal% 10。"
+        }
+      },
+      "hatchet": "飛斧手",
+      "red-guard": "赤色守衛",
+      "voidwarden": "虛空守望者"
+    }
+  },
+  "custom": {
+    "jotl": {
+      "basic-vermling-raider": {
+        "1": "在回合結束後洗混此牌庫。",
+        "2": "他們會移動以避免與其目標相鄰。",
+        "3": "他們本回合不會移動。",
+        "4": "這正是他們在上一場劇本中的行動方式。"
+      },
+      "black-sludge": {
+        "1": "視線內最近的敵人承受 [1+L/2{$math.ceil}] 點 %game.damage% ，無視射程"
+      },
+      "blood-horror": {
+        "1": "跳躍到最遠且死亡 %data.monster.zealot% 並將其復活，或跳向最遠的角色並執行 %game.action.attack%+0",
+        "2": "復活房間內所有死亡的 %data.monster.zealot%"
+      },
+      "blood-monstrosity": {
+        "1": "死亡時，所有相鄰的角色受到 %game.damage:1%"
+      },
+      "chaos-demon": {
+        "1": "本輪中，任何時候有個體攻擊 %data.monster.chaos-demon% 時，該個體承受 %game.damage:2%",
+        "2": "所有與目標相鄰的敵人各承受 %game.damage:1%"
+      },
+      "demolitionist": {
+        "1": "所有相鄰的敵人受到 %game.damage:1%",
+        "abilities": {
+          "101": {
+            "1": "你的最大生命值增加 5 點。"
+          },
+          "102": {
+            "1": "摧毀一個相鄰的障礙物。若你這麼做， %game.card.experience:1%，並執行"
+          },
+          "103": {
+            "1": "<small>若此攻擊與前兩次攻擊目標相同，無視目標的護甲值，附加 %game.condition.poison%， %game.card.experience:1%。</small>",
+            "2": "將你的一個角色標記放置在一個相鄰的普通或菁英敵人上。本回合你與所有盟友可無視該敵人的護盾值。"
+          },
+          "104": {
+            "1": "所有在 %game.action.range:3% 範圍內的目標物受到 %game.damage:3% 。"
+          },
+          "105": {
+            "1": "<small>你接下來三次針對本回合內曾攻擊過的敵人所進行的攻擊，附加 +3 %game.action.attack%。</small>",
+            "2": "本回合你所有的攻擊皆附加 %game.condition.immobilize%。",
+            "3": "另附加 %game.condition.muddle%、%game.card.experience:1%"
+          },
+          "107": {
+            "1": "摧毀目標區域內的所有障礙物。目標區域內的所有盟友受到 %game.damage:2% 。",
+            "2": "所有與牆壁相鄰的相鄰敵人受到 %game.damage:2% 。"
+          },
+          "108": {
+            "1": "摧毀一個相鄰的障礙物或目標物。若你這麼做， %game.card.experience:1%，並執行",
+            "2": "以被摧毀的障礙物或目標物相鄰的所有敵人為目標",
+            "3": "摧毀一個相鄰的障礙物。若你這麼做， %game.card.experience:1%，並使與該障礙物位於同一房間的所有敵人受到 %game.damage:2% 。"
+          },
+          "109": {
+            "1": "你可以執行任何摧毀障礙物能力，如同該能力射程內的1個空格含有障礙物。如果你這麼做，不要放置摧毀標記。"
+          },
+          "74": {
+            "1": "摧毀一個 %game.action.range:2% 範圍內的障礙物",
+            "bottomHint": "最多移動 2 格，然後在 3 格範圍內的一個障礙物上放置一個摧毀標記。該障礙物現在視為普通六角格。",
+            "hint": "一名相鄰敵人承受 %game.damage:3%（加上修正卡牌），並在其下回合結束前所有攻擊獲得劣勢。"
+          },
+          "75": {
+            "1": "摧毀一個相鄰的障礙物。若你這麼做，執行",
+            "bottomHint": "<small>在你的下回合結束前，你的所有攻擊皆獲得優勢。</small>",
+            "hint": "一名相鄰敵人受到 %game.damage:3%（加上攻擊修正）傷害。"
+          },
+          "76": {
+            "bottomHint": "一名相鄰敵人在其下回合結束前無法執行任何動作。",
+            "hint": "一名相鄰敵人承受 %game.damage:3%（加上攻擊修正）傷害。"
+          },
+          "77": {
+            "bottomHint": "移動最多四格。",
+            "hint": "一名距離 4 格內的敵人承受 %game.damage:2%（加上攻擊修正--若相鄰則獲得劣勢）。"
+          },
+          "78": {
+            "bottomHint": "移動最多三格。",
+            "hint": "距離2格內至多兩名敵人承受 %game.damage:2% 傷害（每名敵人各自抽取攻擊修正--若相鄰則處於劣勢狀態）。"
+          },
+          "79": {
+            "bottomHint": "一名相鄰敵人承受 %game.damage:1%（加上攻擊修正）傷害。",
+            "hint": "一名相鄰敵人承受 %game.damage:2%（加上攻擊修正）傷害，接著相同或另一名相鄰敵人承受 %game.damage:1%（加上攻擊修正）傷害。"
+          },
+          "80": {
+            "bottomHint": "最多移動3格，然後將一名相鄰敵人向遠離你的位置移動1格。",
+            "hint": "<small>目標區域內所有敵人各自承受 %game.damage:3% 傷害（每名敵人分別抽取攻擊修正--若相鄰則處於劣勢），並失去此卡牌。</small>"
+          },
+          "81": {
+            "1": "若此攻擊目標與前一個攻擊相同，添加 %game.action.push:2% 和 %game.condition.muddle%。",
+            "bottomHint": "一名相鄰敵人承受 %game.damage:1%（加上攻擊修正）傷害，然後拾取你所在格子內或相鄰格子的所有金幣標記與寶藏標記。"
+          },
+          "82": {
+            "1": "在你接下來的兩次攻擊中，添加 +2 %game.action.attack%。",
+            "2": "使你下一次移動能力的數值加倍。"
+          },
+          "83": {
+            "1": "若目標相鄰牆面，則此攻擊額外添加 +2 %game.action.attack%， %game.card.experience:1%。",
+            "2": "一名與牆面相鄰的相鄰敵人承受 %game.damage:2%。"
+          },
+          "84": {
+            "1": "本回合內，所有對該目標的治療皆無效。請將你的一個角色標記放置在該目標上以作為標記。",
+            "2": "摧毀一個相鄰的障礙物。若這麼做， %game.card.experience:1%，並執行"
+          },
+          "85": {
+            "1": "摧毀一個相鄰的障礙物。若這麼做， %game.card.experience:2%，並執行",
+            "2": "對所有與被摧毀障礙物相鄰的敵人",
+            "3": "每個目標各自承受 %game.damage:2%。"
+          },
+          "86": {
+            "1": "摧毀距離 %game.action.range:3% 內的一個障礙物。"
+          },
+          "88": {
+            "1": "若你在移動期間打開了一扇門，則執行"
+          },
+          "89": {
+            "1": "摧毀一個相鄰的障礙物。若你這麼做， %game.card.experience:1%，並執行"
+          },
+          "90": {
+            "1": "若此攻擊目標與前一個攻擊相同，則添加 %game.action.push:2%、%game.condition.muddle%，獲得 %game.card.experience:1%。"
+          },
+          "91": {
+            "1": "指定一個距離 %game.action.range:3% 內且含有摧毀標記的格子。該格子內及其相鄰的所有盟友與敵人各自承受 %game.damage:2%。",
+            "2": "在一個相鄰且包含摧毀標記的空格中創造一個造成2點傷害的陷阱。"
+          },
+          "92": {
+            "1": "若目標為目標物，則此攻擊添加 +3 %game.action.attack%，獲得 %game.card.experience:1%。",
+            "2": "本輪你所有的近戰攻擊額外添加 +1 %game.action.attack%。"
+          },
+          "93": {
+            "1": "在 %game.action.range:3% 內的一個空格中，創造一個造成3點傷害並附加 %game.condition.muddle% 的陷阱。",
+            "2": "指定一名最終相鄰的敵人。若移動的每一格皆讓你更接近該敵人，則執行",
+            "3": "<small>以該名敵人為目標，其中 X =你移動的格數。</small>"
+          },
+          "94": {
+            "1": "此移動不受困難地形影響。"
+          },
+          "95": {
+            "1": "在你接下來的四次針對與牆面相鄰敵人的攻擊中，額外增加 +2 %game.action.attack%。",
+            "2": "每當你在此次移動中進入一個包含障礙物的格子時，摧毀該障礙物並額外增加 +1 %game.action.move%。",
+            "3": "所有被穿越的敵人各自承受 %game.damage:1%， %game.card.experience:1%。"
+          },
+          "96": {
+            "1": "摧毀一個相鄰的障礙物。若你這麼做，獲得 %game.card.experience:1%，且所有與被摧毀障礙物相鄰的敵人各自承受 %game.damage:2%。"
+          },
+          "97": {
+            "1": "目標每相鄰一個牆面、障礙物、目標物、個體或陷阱，此攻擊額外增加 +1 %game.action.attack%。",
+            "2": "將一個相鄰的陷阱移動到一個相鄰敵人的格子中。"
+          },
+          "98": {
+            "1": "摧毀距離 %game.action.range:4% 內的一個障礙物。若你這麼做，則執行",
+            "2": "指定所有與被摧毀障礙物相鄰的敵人為目標",
+            "3": "在距離 %game.action.range:4% 內的一個空格中創造三個造成3點傷害的陷阱。"
+          },
+          "99": {
+            "1": "若目標與牆面相鄰，添加 +2 %game.action.attack%、添加 %game.condition.wound%，獲得 %game.card.experience:1%。"
+          }
+        }
+      },
+      "first-of-the-order": {
+        "1": "所有在 %game.action.range:2% 敵人各承受 %game.damage:2%",
+        "2": "在目標 %game.action.range:2% 內"
+      },
+      "flowChartGroup": {
+        "characters": "角色",
+        "city-events": "城市事件",
+        "intro": "引導",
+        "main": "主線故事"
+      },
+      "giant-viper": {
+        "1": "本輪所有以 %data.monster.giant-viper% 為目標的攻擊獲得劣勢。",
+        "2": "若目標與任何 %data.monster.giant-viper% 的盟友相鄰，增加 +2 %game.action.attack%。"
+      },
+      "giant-viper-scenario-21": {
+        "1": "每當有個體攻擊巨型蝰蛇後，該個體承受 %game.damage:L%"
+      },
+      "hatchet": {
+        "abilities": {
+          "10": {
+            "1": "<small>將你的一個角色標記放置在此卡牌上。將該標記從此卡牌移到目標上，來為任意遠程攻擊添加 +3 %game.action.attack%。當目標死亡時，將該標記放置在其死亡的格子中。若拾取該格子，則將標記歸回此卡牌。</small>"
+          },
+          "11": {
+            "1": "若目標擁有你的愛斧標記，則將該標記歸回其卡牌上。"
+          },
+          "14": {
+            "1": "指定所有與你在此次移動中進入的任一格相鄰的敵人"
+          },
+          "15": {
+            "1": "在本輪中，接下來的攻擊數值增為兩倍。"
+          },
+          "16": {
+            "1": "所有相鄰的敵人承受 %game.damage:1%。",
+            "2": "所有相鄰敵人各自承受 %game.damage:2%。"
+          },
+          "18": {
+            "1": "若目標身上有你的愛斧標記，添加 +2 %game.action.attack%，獲得 %game.card.experience:1%。"
+          },
+          "19": {
+            "1": "若本輪中擊殺過敵人，添加 +2 %game.action.move%，獲得 %game.card.experience:1%。"
+          },
+          "20": {
+            "1": "指定一名與攻擊目標相鄰的盟友"
+          },
+          "21": {
+            "1": "在接下來的四次移動能力中，添加 +2 %game.action.move%。"
+          },
+          "22": {
+            "1": "這回合中你的所有攻擊額外添加 +1 %game.action.attack% 。"
+          },
+          "23": {
+            "1": "若目標有愛斧標記，添加 +2 %game.action.attack%，獲得 %game.card.experience:1%。"
+          },
+          "24": {
+            "1": "指定一名距離前一個攻擊目標 %game.action.range:2% 內的不同敵人為目標",
+            "2": "在接下來的四次攻擊中，一名與目標相鄰的敵人承受 %game.damage:2%。"
+          },
+          "25": {
+            "1": "<small>若此攻擊殺死目標，一名與其死亡格子相鄰的敵人承受 X 點傷害，其中 X 為該目標超過其死亡所需的傷害值。</small>",
+            "2": "\"若本輪中擊殺過敵人，添加 +2 %game.action.attack%，獲得 %game.card.experience:1%。"
+          },
+          "26": {
+            "1": "在接下來的五次攻擊中，添加 +1 %game.action.attack%，附加 %game.condition.wound%"
+          },
+          "27": {
+            "1": "若有相鄰敵人擁有愛斧標記，可以選擇將該標記歸回其卡牌上。若這麼做，該敵人承受 %game.damage:2%，附加 %game.condition.wound%。",
+            "2": "若本回合擊殺過敵人，添加 %game.condition.strengthen%，獲得 %game.card.experience:1%。"
+          },
+          "28": {
+            "1": "<small>在接下來的五次中，有敵人在移動能力結束時位於距離 %game.action.range:5% 內，即對該敵人執行一次\"%game.action.attack:2%、%game.action.range:5%\"的動作。</small>"
+          },
+          "30": {
+            "1": "<small>將斧頭標記放置在此卡牌上。在解決攻擊後，將該標記從此卡牌移到目標上，來為任意遠程攻擊添加 +3 %game.action.attack%、%game.condition.wound% 和 %game.action.push:1%。當該目標死亡時，將標記放置在其死亡的格子中。若拾取該格子，則將標記歸回此卡牌。當「趁手飛斧」卡片啟動時，此卡片無法同時啟動。</small>"
+          },
+          "31": {
+            "1": "所有相鄰敵人承受 %game.damage:1%。"
+          },
+          "32": {
+            "1": "若你的愛斧標記位於所在格子或相鄰格子中，執行"
+          },
+          "33": {
+            "1": "在接下來的五次針對擁有愛斧標記之敵人的攻擊中，添加 +2 %game.action.attack%。"
+          },
+          "34": {
+            "1": "若目標擁有愛斧標記，添加+2 %game.action.attack%，獲得 %game.card.experience:1%，將該標記歸回其卡牌上。"
+          },
+          "35": {
+            "1": "<small>在接下來的五次中，只要殺死一名敵人，所有與其死亡格子相鄰的敵人自承受 %game.damage:2%。</small>"
+          },
+          "36": {
+            "1": "若與一名盟友相鄰，則本回合的下一次攻擊添加+2 %game.action.attack%。"
+          },
+          "37": {
+            "1": "一名相鄰的普通或精英敵人承受 %game.damage:12%。",
+            "2": "若本輪中擊殺過敵人，則將愛斧標記歸回其卡牌上，獲得 %game.card.experience:1%。"
+          },
+          "38": {
+            "1": "<small>在接下來的四次只要你殺死一名敵人，執行%game.action.heal:3%、%game.action.range:2%、%game.condition.bless%的動作。</small>"
+          },
+          "9": {
+            "bottomHint": "最多移動 4 格，然後收集你所在格子或相鄰格內的所有金幣與寶藏標記，並遺失此卡牌。",
+            "hint": "目標區域內的所有敵人承受 %game.damage:3%（每個敵人各自套用一張攻擊修正牌）。"
+          }
+        }
+      },
+      "living-corpse": {
+        "1": "目標承受 %game.damage:2% 。",
+        "2": "若執行移動， %data.monster.living-corpse% 承受 %game.damage:1%。",
+        "3": "若執行攻擊， %data.monster.living-corpse% 承受 %game.damage:1%。"
+      },
+      "monstrosity": {
+        "1": "若執行攻擊行動， %data.monster.monstrosity% 承受 %game.damage:1%。",
+        "2": "與 %data.monster.monstrosity% 的相鄰盟友，添加 +1 %game.action.attack%。",
+        "3": "本輪中，任何個體攻擊 %data.monster.monstrosity% 時，該個體承受 %game.damage:2%。",
+        "4": "%data.monster.monstrosity% 承受 %game.damage:1%"
+      },
+      "rat-monstrosity": {
+        "1": "所有相鄰個體承受 %game.damage:1%",
+        "2": "所有相鄰個體承受 %game.damage:2%",
+        "3": "所有相鄰個體承受 %game.damage:3%",
+        "4": "所有相鄰個體承受 %game.damage:4%"
+      },
+      "rat-monstrosity-16-2": {
+        "1": "若有任何個體因死亡傷害而導致死亡或精疲力盡"
+      },
+      "red-guard": {
+        "abilities": {
+          "227": {
+            "1": "所有相鄰的敵人受到 1 點傷害。"
+          },
+          "228": {
+            "1": "所有相鄰的敵人受到 1 點傷害。"
+          },
+          "230": {
+            "1": "在接下來的五次敵人進入你相鄰的格子時，該敵人承受 2 點傷害。"
+          },
+          "233": {
+            "1": "指定一名距離2格內的敵人"
+          },
+          "235": {
+            "1": "所有被穿越的敵人各自承受 1 點傷害。",
+            "2": "改為承受 2 點傷害"
+          },
+          "236": {
+            "1": "若目標具有負面狀態，添加 +3 %game.action.attack%。",
+            "2": "優勢"
+          },
+          "237": {
+            "1": "此移動期間，每進入一個格子便進行一次 %game.action.loot%。"
+          },
+          "238": {
+            "1": "所有相鄰的敵人受到 1 點傷害。"
+          },
+          "240": {
+            "1": "本輪中，每當該目標被攻擊時，額外承受 1 點傷害。請將你的一個角色標記放置在該目標上以作為標記。",
+            "2": "改為承受 2 點傷害"
+          },
+          "241": {
+            "1": "所有與該目標相鄰的敵人各自承受 1 點傷害。"
+          },
+          "242": {
+            "1": "指定所有距離2格內的敵人為目標"
+          },
+          "244": {
+            "1": "<small>將魔塵沙暴放置在一個相鄰的空格中。怪物的移動而言，它視為一個陷阱。在你每回合開始時，可以將其移動最多2格，並可以強制任何位於其上的個體一同移動。每當有個體移動到魔塵沙暴上，或魔塵沙暴移動到個體所在格子時（不包括一同移動的情況），該個體承受 1 點傷害並獲得 %game.condition.muddle%。</small>"
+          },
+          "245": {
+            "1": "在接下來的四次中，只要有敵人進入你相鄰的格子，該敵人便獲得 %game.condition.disarm%。",
+            "2": "所有相鄰的敵人受到 2 點傷害。"
+          },
+          "247": {
+            "1": "一名相鄰盟友執行一次%game.action.attack:3%的動作， %game.card.experience:1%",
+            "2": "一名不同的相鄰盟友執行一次\"%game.action.attack:3%\"的動作， %game.card.experience:1%",
+            "3": "一名相鄰敵人承受 1 點傷害。"
+          },
+          "250": {
+            "1": "本回合中，每當你受到攻擊時，獲得 %game.action.shield:X%，其中 X 為攻擊當下相鄰敵人的數量，最多為 3。",
+            "2": "在接下來的五次中，只要有敵人進入你相鄰的格子，執行一次%game.action.heal:3%、%game.specialTarget.self%的動作。"
+          },
+          "252": {
+            "1": "所有與該目標相鄰的敵人各自承受 1 點傷害",
+            "2": "優勢",
+            "3": "所有相鄰的敵人受到 3 點傷害。"
+          }
+        }
+      },
+      "stone-golem": {
+        "1": "本回合中，任何個體攻擊 %data.monster.stone-golem% 時，該個體承受 %game.damage:3%。",
+        "2": "若執行移動能力，則 %data.monster.stone-golem% 承受 %game.damage:1%。",
+        "3": "若執行攻擊行動，則 %data.monster.stone-golem% 承受 %game.damage:2%。"
+      },
+      "vermling-raider": {
+        "1": "在最靠近敵人一個相鄰空格中製造一個 3-%game.damage% 的陷阱。"
+      },
+      "voidwarden": {
+        "abilities": {
+          "157": {
+            "1": "<small>強制一名在 %game.action.range:3% 範圍內的敵人執行</small>",
+            "2": "<small>以你選擇的敵人為目標。執行攻擊的敵人將受到與目標相同的傷害。</small>"
+          },
+          "170": {
+            "1": "強制一個相鄰的敵人執行"
+          },
+          "175": {
+            "1": "<small>強制一名在 %game.action.range:3% 範圍內的敵人執行</small>"
+          }
+        }
+      },
+      "zealot": {
+        "1": "X =攻擊的目標所承受的 %game.damage%"
+      }
+    }
+  },
+  "deck": {
+    "boss": "首領",
+    "imp": "小惡魔",
+    "monstrosity": "巨怪"
+  },
+  "edition": {
+    "jotl": "雄獅蠻顎"
+  },
+  "monster": {
+    "basic-giant-viper": "基礎巨型蝰蛇",
+    "basic-vermling-raider": "基礎腐鼠突襲者",
+    "basic-zealot": "基礎狂熱者",
+    "black-imp": "黑暗小惡魔",
+    "black-sludge": "黑色淤泥",
+    "blood-horror": "血色駭物",
+    "blood-imp": "血色小惡魔",
+    "blood-monstrosity": "血色巨怪",
+    "blood-tumor": "血色腫塊",
+    "chaos-demon": "混亂惡魔",
+    "common-vermling-raider": "腐鼠突襲者",
+    "first-of-the-order": "教團首腦",
+    "giant-viper": "巨型蝰蛇",
+    "living-corpse": "活化屍體",
+    "living-spirit": "活化靈體",
+    "monstrosity": "巨怪",
+    "rat-monstrosity": "鼠類巨怪",
+    "stone-golem": "石魔像",
+    "vermling-raider": "腐鼠突襲者",
+    "vermling-scout": "腐鼠偵察兵",
+    "zealot": "狂熱者"
+  },
+  "objective": {
+    "Growth": "滋長物",
+    "Loot": "拾取",
+    "Nest": "巢穴",
+    "Pillar": "立柱",
+    "Pillar left": "左側立柱",
+    "Pillar right": "右側立柱",
+    "Summoning Stone": "召喚石",
+    "Table": "煉金桌",
+    "Ward": "結界"
+  },
+  "scenario": {
+    "rules": {
+      "jotl": {
+        "10": {
+          "1": "將 %game.mapMarker.1% 區域內的最初設置的陷阱向下移動一格",
+          "2": "將 %game.mapMarker.2% 區域內最初設置的陷阱向最近的角色移動一格"
+        },
+        "14": {
+          "1": "所有與狂熱者相鄰的巨型蝰蛇死亡，巨型蝰蛇為普通生成1個，巨型蝰蛇為精英，改為生成2個精英"
+        },
+        "15": {
+          "1": "每輪結束時，每個狂熱者消滅一個其射程3內的黑色小惡魔，該狂熱者獲得 %game.condition.stun%"
+        },
+        "20": {
+          "1": "每次拾取字母格時，在該格放置一個激活標記",
+          "2": "找到1個貨物",
+          "3": "找到復原戒指(物品32)"
+        },
+        "21": {
+          "1": "在最後一個目標點被摧毀的任意格子裡",
+          "2": "直到消滅混亂惡魔 %game.mapMarker.A% 之前，角色在本房間內每進入一格，承受 %game.damage:[L/2{$math.floor}]%"
+        }
+      }
+    },
+    "title": {
+      "jotl": {
+        "1": "路邊伏擊",
+        "10": "奪命試煉",
+        "11": "污穢陰溝",
+        "12": "迷幻陰溝",
+        "13": "邪性收割",
+        "14": "毒性收割",
+        "15": "污穢之血",
+        "16": "混雜成果",
+        "17": "血色暮光",
+        "18": "巧取豪奪",
+        "19": "鼠賊老窩",
+        "2": "城牆怪洞",
+        "20": "貨物整管",
+        "21": "混亂使者",
+        "22": "殺意留言",
+        "23": "人中龍鳳",
+        "24": "界護虛空",
+        "25": "至高工程",
+        "3": "黑色艦船",
+        "4": "石中儀式",
+        "5": "深層理解",
+        "6": "腐化研究",
+        "7": "水下腫塊",
+        "8": "隱密腫塊",
+        "9": "爆裂進化"
+      }
+    }
+  },
+  "section": {
+    "title": {
+      "jotl": {
+        "9-7": "水下腫塊",
+        "9-8": "隱密腫塊"
+      }
+    }
+  }
+}

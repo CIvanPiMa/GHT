@@ -1,0 +1,17 @@
+<div
+  class="random-item-dialog"
+  [ngClass]="{ fh: settingsManager.settings.theme === 'fh', modern: settingsManager.settings.theme === 'modern' }"
+>
+  <div class="scroll-container">
+    <span class="title" [ght-label]="'scenario.eventEffects.drawRandomItem' + (blueprint ? '.blueprint' : '')"></span>
+
+    <div class="item">
+      <ght-item [item]="item" [flipped]="true" [editionLabel]="gameManager.currentEdition()" (click)="openDialog()"></ght-item>
+    </div>
+
+    <div class="menu">
+      <a class="cancel" (click)="close()"><span [ght-label]="'cancel'"></span></a>
+      <a class="apply" (click)="apply()"><span [ght-label]="'scenario.eventEffects.drawRandomItem.apply'"></span></a>
+    </div>
+  </div>
+</div>

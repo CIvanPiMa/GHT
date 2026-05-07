@@ -1,0 +1,9 @@
+{
+  "index": "181.2",
+  "name": "HE-RO-IC-S",
+  "edition": "fh",
+  "conclusion": true,
+  "rewards": {
+    "custom": "%data.section.rewards.fh.181-2%"
+  }
+}

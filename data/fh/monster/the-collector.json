@@ -1,0 +1,222 @@
+{
+  "name": "the-collector",
+  "edition": "fh",
+  "deck": "boss",
+  "boss": true,
+  "count": 1,
+  "baseStat": {
+    "type": "boss",
+    "health": "Cx12",
+    "movement": 3,
+    "attack": 3,
+    "immunities": [
+      "poison",
+      "immobilize",
+      "disarm",
+      "stun",
+      "curse"
+    ],
+    "special": [
+      [
+        {
+          "type": "move",
+          "value": 0,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 1,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "condition",
+                  "value": "wound",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "value": "ice",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "condition",
+                  "value": "disarm",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "value": "air",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "target",
+                  "value": 1,
+                  "valueType": "add",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "dark",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "condition",
+              "value": "curse",
+              "subActions": [
+                {
+                  "type": "target",
+                  "value": "%game.target.all%",
+                  "small": true
+                },
+                {
+                  "type": "range",
+                  "value": 1,
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire:air:earth:light"
+        }
+      ],
+      [
+        {
+          "type": "move",
+          "value": 1,
+          "valueType": "plus"
+        },
+        {
+          "type": "attack",
+          "value": 0,
+          "valueType": "plus",
+          "subActions": [
+            {
+              "type": "element",
+              "value": "fire",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "condition",
+                  "value": "wound",
+                  "small": true
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "value": "air",
+              "valueType": "minus",
+              "subActions": [
+                {
+                  "type": "target",
+                  "value": 1,
+                  "valueType": "add",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "earth",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "heal",
+              "value": "[C]",
+              "subActions": [
+                {
+                  "type": "specialTarget",
+                  "value": "self",
+                  "small": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "light",
+          "valueType": "minus",
+          "subActions": [
+            {
+              "type": "shield",
+              "value": "[(1+L)/6{$math.ceil}]"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "value": "fire:ice:air:dark"
+        }
+      ]
+    ]
+  },
+  "stats": [
+    {
+      "level": 0,
+      "health": "Cx12",
+      "movement": 3,
+      "attack": 3
+    },
+    {
+      "level": 1,
+      "health": "Cx15",
+      "movement": 3,
+      "attack": 4
+    },
+    {
+      "level": 2,
+      "health": "Cx19",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 3,
+      "health": "Cx25",
+      "movement": 4,
+      "attack": 4
+    },
+    {
+      "level": 4,
+      "health": "Cx30",
+      "movement": 4,
+      "attack": 5
+    },
+    {
+      "level": 5,
+      "health": "Cx38",
+      "movement": 5,
+      "attack": 5
+    },
+    {
+      "level": 6,
+      "health": "Cx54",
+      "movement": 5,
+      "attack": 6
+    },
+    {
+      "level": 7,
+      "health": "Cx68",
+      "movement": 5,
+      "attack": 7
+    }
+  ]
+}

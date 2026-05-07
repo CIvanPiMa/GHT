@@ -1,0 +1,25 @@
+@if (!!treasure) {
+  <span class="treasure-label">
+    @for (reward of treasure.rewards | trackUUID; track reward._trackUUID; let index = $index) {
+      <span class="label" [ght-label]="rewardLabel[index][0]" [ght-label-args]="rewardLabel[index].slice(1)"></span>
+      @if (!!rewardResults && !!rewardResults[index] && rewardResults[index].length > 0) {
+        <span class="result" [ght-label]="rewardLabel[index][0] + '.result'" [ght-label-args]="rewardResults[index]"></span>
+      }
+      @if (treasure.rewards.length > 1 && index < treasure.rewards.length - 1) {
+        <span>,&nbsp;</span>
+      }
+    }
+    @if (!!itemCards && items.length > 0) {
+      <div class="items">
+        @for (item of items | trackUUID; track item._trackUUID) {
+          <ght-item
+            (click)="openItemDialog(item)"
+            [item]="item"
+            [flipped]="true"
+            [editionLabel]="gameManager.game.edition || ''"
+          ></ght-item>
+        }
+      </div>
+    }
+  </span>
+}

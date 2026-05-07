@@ -1,0 +1,97 @@
+{
+  "index": "912",
+  "group": "randomMonsterCard",
+  "name": "Luminous",
+  "edition": "fh",
+  "named": true,
+  "monsters": [
+    "lurker-wavethrower",
+    "sun-demo"
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "once": true,
+      "elements": [
+        {
+          "type": "light",
+          "state": "new"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "initial": true,
+      "treasures": [],
+      "monster": [
+        {
+          "name": "lurker-wavethrower",
+          "type": "elite",
+          "marker": "10"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite",
+          "marker": "5"
+        },
+        {
+          "name": "lurker-wavethrower",
+          "player4": "elite",
+          "marker": "8"
+        },
+        {
+          "name": "sun-demon",
+          "type": "normal",
+          "marker": "1"
+        },
+        {
+          "name": "sun-demon",
+          "player2": "normal",
+          "player3": "elite",
+          "player4": "elite",
+          "marker": "4"
+        },
+        {
+          "name": "sun-demon",
+          "player3": "normal",
+          "player4": "normal",
+          "marker": "3"
+        }
+      ]
+    }
+  ],
+  "overlays": [
+    {
+      "type": "loot",
+      "marker": "6"
+    },
+    {
+      "type": "loot",
+      "marker": "7"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "water-small",
+      "marker": "9"
+    },
+    {
+      "type": "difficultTerrain",
+      "value": "water-small",
+      "marker": "11"
+    },
+    {
+      "type": "treasure",
+      "value": "resource",
+      "values": [
+        "lumber",
+        3
+      ],
+      "marker": "12"
+    }
+  ]
+}

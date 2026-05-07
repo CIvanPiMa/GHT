@@ -1,0 +1,8 @@
+.key-container {
+  position: absolute;
+  display: flex;
+  min-width: calc(var(--ght-unit) * 10);
+  max-width: calc(var(--ght-unit) * 10);
+  font-size: calc(var(--ght-unit) * 2.5);
+  z-index: 999;
+}

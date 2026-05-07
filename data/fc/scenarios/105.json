@@ -1,0 +1,144 @@
+{
+  "index": "105",
+  "name": "Monstrosities of a Cult",
+  "flowChartGroup": "citizens",
+  "coordinates": {
+    "x": 1380.25,
+    "y": 150.25,
+    "width": 193,
+    "height": 177,
+    "gridLocation": "B-10"
+  },
+  "edition": "fc",
+  "eventType": "rift",
+  "unlocks": [
+    "111"
+  ],
+  "requirements": [
+    {
+      "global": [
+        "knowledge-is-power:2"
+      ]
+    }
+  ],
+  "rewards": {
+    "itemDesigns": [
+      "154"
+    ]
+  },
+  "monsters": [
+    "bandit-guard",
+    "valrath-tracker"
+  ],
+  "rules": [
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "character",
+            "name": ".*"
+          },
+          "type": "gainCondition",
+          "value": "wound",
+          "scenarioEffect": true
+        }
+      ]
+    },
+    {
+      "round": "R == 1",
+      "start": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "monster",
+            "edition": "gh",
+            "name": "bandit-guard"
+          },
+          "type": "transfer",
+          "value": "bandit-guard:+1"
+        }
+      ],
+      "noteTop": "%data.scenario.rules.fc.105.1%"
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 1,
+      "ref": "L3a",
+      "initial": true,
+      "monster": [
+        {
+          "name": "bandit-guard",
+          "player2": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player2": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "normal"
+        },
+        {
+          "name": "bandit-guard",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player2": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player2": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "normal",
+          "player4": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "normal"
+        },
+        {
+          "name": "valrath-tracker",
+          "player3": "elite",
+          "player4": "elite"
+        },
+        {
+          "name": "valrath-tracker",
+          "player4": "normal"
+        }
+      ]
+    }
+  ]
+}

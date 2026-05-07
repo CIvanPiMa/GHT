@@ -1,0 +1,82 @@
+{
+  "index": "34",
+  "name": "Frozen Cave",
+  "edition": "fc",
+  "parent": "96",
+  "marker": "a",
+  "monsters": [
+    "frost-demon"
+  ],
+  "objectives": [
+    {
+      "name": "Altar of Blizzards",
+      "health": "Cx2+L",
+      "marker": "f",
+      "actions": [
+        {
+          "type": "retaliate",
+          "value": 2,
+          "subActions": [
+            {
+              "type": "range",
+              "value": 3,
+              "small": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "round": "true",
+      "always": true,
+      "figures": [
+        {
+          "identifier": {
+            "type": "objective",
+            "edition": "objective",
+            "name": "Altar of Blizzards",
+            "marker": "f"
+          },
+          "type": "dead"
+        }
+      ],
+      "disableRules": [
+        {
+          "edition": "fc",
+          "scenario": "96",
+          "index": 0,
+          "section": false
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "roomNumber": 2,
+      "ref": "B4b",
+      "initial": true,
+      "monster": [
+        {
+          "name": "frost-demon",
+          "type": "normal"
+        },
+        {
+          "name": "frost-demon",
+          "player2": "normal",
+          "player3": "normal",
+          "player4": "elite"
+        },
+        {
+          "name": "frost-demon",
+          "player3": "normal",
+          "player4": "normal"
+        }
+      ],
+      "objectives": [
+        1
+      ]
+    }
+  ]
+}

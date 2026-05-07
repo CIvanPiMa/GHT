@@ -1,0 +1,16 @@
+.recap-dialog {
+  color: var(--ght-color-white);
+  font-size: calc(var(--ght-unit) * 2 * var(--ght-text-factor));
+  max-width: calc(var(--ght-unit) * 60 * var(--ght-text-factor));
+
+  .header {
+    font-size: calc(var(--ght-unit) * 3.2 * var(--ght-text-factor));
+    border-bottom: calc(var(--ght-unit) * 0.3 * var(--ght-text-factor)) solid var(--ght-color-white);
+    padding-bottom: calc(var(--ght-unit) * 1 * var(--ght-text-factor));
+    margin-bottom: calc(var(--ght-unit) * 1 * var(--ght-text-factor));
+  }
+
+  ght-scenario-recap {
+    font-size: calc(var(--ght-unit) * 2.7 * var(--ght-text-factor));
+  }
+}

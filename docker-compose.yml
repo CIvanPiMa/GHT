@@ -1,17 +1,21 @@
 services:
   app:
+    container_name: ght
+    image: ght:local
     build:
       context: https://github.com/CIvanPiMa/GHT.git
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8081:80"
 
   server:
+    container_name: ght-server
+    image: ght-server:local
     build:
       context: https://github.com/CIvanPiMa/GHT-server.git
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8082:8080"
     volumes:
       - ght-server-data:/data
     environment:
@@ -22,3 +26,4 @@ services:
 
 volumes:
   ght-server-data:
+    driver: local

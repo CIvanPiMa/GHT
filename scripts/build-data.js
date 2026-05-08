@@ -44,6 +44,10 @@ const load_file = function (edition_path, file, default_value) {
   return default_value;
 };
 
+if (!fs.existsSync(output_dir)) {
+  fs.mkdirSync(output_dir, { recursive: true });
+}
+
 const edition_dirs = fs
   .readdirSync(input_dir)
   .map((file) => path.join(input_dir, file))

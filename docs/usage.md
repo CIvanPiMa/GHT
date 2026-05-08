@@ -107,22 +107,29 @@ Click **Finish Scenario** (or press `Shift+F`). The app applies all rewards:
 
 ## Multi-Client Sync with GHT Server
 
-GH Tracker supports synchronizing state across multiple devices/clients via [GHT Server](https://github.com/Lurkars/ght-server).
+GH Tracker supports synchronizing state across multiple devices/clients via [GHT Server](https://github.com/CIvanPiMa/GHT-server) — a companion WebSocket server that persists game state in SQLite and broadcasts changes to all connected clients in real time.
 
 ### Setup
 
-1. Go to **Settings** → **Server**.
-2. Enter a server URL address.
-3. Enter or create a game code.
-4. All clients connected to the same game code share state in real time.
+1. Go to the hamburger menu → **Server**.
+2. Enter the **Host** (IP or hostname of the server) and **Port** (default `8080`).
+3. Enter a UUID as the **Room Code** (e.g. from [uuidgenerator.net](https://www.uuidgenerator.net)).
+4. Click **Connect**. Share the same room code with other players — all connected clients will sync state in real time.
 
 ### Permissions
 
-The server supports per-client permission management. The host can grant or restrict actions (e.g., allow a client to only control specific characters).
+The server supports per-client permission management. The host (the client that connected with root access) can create additional room codes with restricted `Permissions` — e.g. a client that may only control specific characters. Manage these in the **Server** panel under **Permissions**.
 
 ### Self-hosting GHT Server
 
-See [GHT Server](https://github.com/Lurkars/ght-server) for setup instructions.
+See [GHT Server](https://github.com/CIvanPiMa/GHT-server) for the source and full setup instructions. The quickest way to run the full stack on a home server is:
+
+```bash
+# from the GHT repo root
+docker compose up --build
+```
+
+This starts the Angular app on port 80 and the sync server on port 8080. See [docs/installation.md](./installation.md#self-hosting-with-sync-server) for details.
 
 ---
 

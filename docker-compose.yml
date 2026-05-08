@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      context: https://github.com/CIvanPiMa/GHT.git
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+
+  server:
+    build:
+      context: https://github.com/CIvanPiMa/GHT-server.git
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ght-server-data:/data
+    environment:
+      PORT: "8080"
+      DATA_DIR: "/data"
+      PUBLIC: "true"
+    restart: unless-stopped
+
+volumes:
+  ght-server-data:

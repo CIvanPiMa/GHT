@@ -1,17 +1,26 @@
 services:
   app:
+    container_name: ght
+    image: ght:local
     build:
-      context: https://github.com/CIvanPiMa/GHT.git
+      context: https://github.com/CIvanPiMa/GHT.git#add-server-with-compose
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8081:80"
+    labels:
+      casaos.app: "ght"
+      casaos.name: "GHT"
+      casaos.webui.port: "8081"
+      casaos.webui.path: "/"
 
   server:
+    container_name: ght-server
+    image: ght-server:local
     build:
       context: https://github.com/CIvanPiMa/GHT-server.git
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8082:8080"
     volumes:
       - ght-server-data:/data
     environment:
@@ -19,6 +28,12 @@ services:
       DATA_DIR: "/data"
       PUBLIC: "true"
     restart: unless-stopped
+    labels:
+      casaos.app: "ght-server"
+      casaos.name: "GHT Server"
+      casaos.webui.port: "8082"
+      casaos.webui.path: "/"
 
 volumes:
   ght-server-data:
+    driver: local

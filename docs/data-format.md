@@ -19,20 +19,33 @@ This document describes how GH Tracker's game data is structured, how the build 
 
 ## Data Pipeline Overview
 
-```
-data/
-  {edition}/           ← source JSON files (human-editable)
-    base.json
-    character/
-    monster/
-    scenarios/
-    label/
-    ...
-          ↓
-  scripts/build-data.js
-          ↓
-src/assets/data/
-  {edition}.json       ← compiled single-file output (auto-generated, do not edit)
+```mermaid
+flowchart LR
+    subgraph src["📁 data/{edition}/"]
+        base["📄 base.json"]
+        char["🧑‍🤝‍🧑 character/"]
+        mon["👹 monster/"]
+        scen["🗺️ scenarios/"]
+        lbl["🌐 label/"]
+    end
+
+    build["⚙️ scripts/build-data.js\nruns before every start & build"]
+
+    subgraph out["📁 src/assets/data/"]
+        compiled["📦 {edition}.json\nauto-generated · do not edit"]
+    end
+
+    src --> build --> out
+
+    style src fill:#1e3a1e,stroke:#2ecc71,color:#e8ffe8
+    style out fill:#1e2a3a,stroke:#3498db,color:#e8f4ff
+    style build fill:#3a2200,stroke:#e67e22,color:#fff3e0
+    style base fill:#1a4a2a,stroke:#27ae60,color:#e8ffe8
+    style char fill:#1a4a2a,stroke:#27ae60,color:#e8ffe8
+    style mon fill:#1a4a2a,stroke:#27ae60,color:#e8ffe8
+    style scen fill:#1a4a2a,stroke:#27ae60,color:#e8ffe8
+    style lbl fill:#1a4a2a,stroke:#27ae60,color:#e8ffe8
+    style compiled fill:#1a2a3a,stroke:#2980b9,color:#e8f4ff
 ```
 
 `scripts/build-data.js` is run automatically before every `npm run start` and `npm run build`. It merges all JSON files within each edition subfolder into a single output file per edition.

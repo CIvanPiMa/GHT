@@ -10,6 +10,7 @@ This guide covers all ways to install or deploy GH Tracker.
   - [Production](#production)
   - [Development](#development)
 - [Self-Hosting](#self-hosting)
+- [Self-Hosting with Sync Server](#self-hosting-with-sync-server)
 - [PWA (Install as App)](#pwa-install-as-app)
 - [Electron (Standalone Desktop App)](#electron-standalone-desktop-app)
 - [Environment Configuration](#environment-configuration)
@@ -87,6 +88,26 @@ Follow the [Production Build](#production-build) steps above, then copy `./dist/
 
 The app is a static Angular SPA. Configure your web server to serve `index.html` for all routes (catch-all / try_files).
 
+## Self-Hosting with Sync Server
+
+To run both the Angular app **and** the sync server ([GHT Server](https://github.com/CIvanPiMa/GHT-server)) together via Docker Compose:
+
+**Start the full stack:**
+
+```bash
+docker compose up --build
+```
+
+- Angular app → **port 80**
+- Sync server → **port 8080** (WebSocket)
+- Game state is persisted in a named Docker volume (`ght-server-data`) so it survives container restarts.
+
+Check [how to connect](./installation.md#self-hosting-with-sync-server) the app to the server
+
+> [!Note]
+>
+> By default the server runs with `PUBLIC=true`, meaning any new room code creates a new game automatically. To restrict this, set `PUBLIC=false` in `docker-compose.yml` and manage room codes manually via the [GHT Server](https://github.com/CIvanPiMa/GHT-server) documentation.
+
 ## PWA (Install as App)
 
 GH Tracker is a Progressive Web App — it can be installed on any device that supports PWAs:
@@ -114,8 +135,8 @@ npm run electron
 
 Environment files are in `src/environments/`:
 
-| File                       | Used for                 |
-| -------------------------- | ------------------------ |
-| `environment.ts`           | Development (`ng serve`) |
-| `environment.prod.ts`      | Production builds        |
-| `environment.electron.ts`  | Electron builds          |
+| File                      | Used for                 |
+| ------------------------- | ------------------------ |
+| `environment.ts`          | Development (`ng serve`) |
+| `environment.prod.ts`     | Production builds        |
+| `environment.electron.ts` | Electron builds          |

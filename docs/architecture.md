@@ -51,26 +51,34 @@
 
 ## 1. Overview
 
-GH Tracker is a Progressive Web App companion for Gloomhaven-family board games. It runs entirely in the browser as an Angular SPA. Persistence is handled offline via IndexedDB (with a LocalStorage fallback), and optionally synchronized across multiple clients via a separate GHT Server over WebSocket.
+GH Tracker is a Progressive Web App companion for Gloomhaven-family board games. It runs entirely in the browser as an Angular SPA. Persistence is handled offline via IndexedDB (with a LocalStorage fallback), and optionally synchronized across multiple clients via [GHT Server](https://github.com/CIvanPiMa/GHT-server) over WebSocket.
 
-```
-┌───────────────────────────────┐
-│  Browser (Angular SPA / PWA)  │
-│  ┌──────────────────────────┐ │
-│  │  UI Layer (Components)   │ │
-│  ├──────────────────────────┤ │
-│  │  Business Logic Layer    │ │
-│  │  (GameManager + 25 mgrs) │ │
-│  ├──────────────────────────┤ │
-│  │  Data Layer (EditionData)│ │
-│  └──────────────────────────┘ │
-│           ↕ IndexedDB         │
-└───────────────────────────────┘
-          ↕ WebSocket (optional)
-┌───────────────────────────────┐
-│  GHT Server (external)        │
-│  Multi-client sync / auth     │
-└───────────────────────────────┘
+```mermaid
+graph TD
+    subgraph Browser["🌐 GHT"]
+        UI["🎨 UI Layer<br>Standalone Components"]
+        BL["⚙️ Business Logic Layer<br>GameManager + 25 managers"]
+        DL["📦 Data Layer<br>EditionData"]
+        IDB[("🗄️ IndexedDB / LocalStorage")]
+        UI --> BL
+        BL --> DL
+        BL <--> IDB
+    end
+
+    subgraph GHTServer["🖥️ GHT Server"]
+        WS["🔌 WebSocket Server<br>Node.js + TypeScript"]
+        DB[("🗄️ SQLite<br>Game State")]
+        WS <--> DB
+    end
+
+    Browser <-->|"🔄 WebSocket (optional)"| GHTServer
+
+    style UI fill:#1a6b4a,stroke:#2ecc71,color:#e8fff4
+    style BL fill:#7d3c00,stroke:#e67e22,color:#fff8e8
+    style DL fill:#4a235a,stroke:#9b59b6,color:#f5eeff
+    style IDB fill:#1a3a5c,stroke:#3498db,color:#e8f4ff
+    style WS fill:#4a0e2e,stroke:#e74c3c,color:#ffe8e8
+    style DB fill:#1a3a5c,stroke:#3498db,color:#e8f4ff
 ```
 
 Deployment targets: browser (PWA), Docker + nginx, Electron desktop app.
@@ -356,9 +364,9 @@ Key operations: `writeGameModel`, `readGameModel`, `addBackup`, `write`/`read`/`
 
 ---
 
-## 7. Multi-Client Sync (GHT Server)
+## 7. Multi-Client Sync ([GHT Server](https://github.com/CIvanPiMa/GHT-server))
 
-When server credentials are configured (`serverUrl`, `serverPort`, `serverCode` in Settings), `StateManager.connect()` opens a WebSocket connection.
+When server credentials are configured (`serverUrl`, `serverPort`, `serverCode` in Settings), `StateManager.connect()` opens a WebSocket connection to [GHT Server](https://github.com/CIvanPiMa/GHT-server) — a Node.js + TypeScript WebSocket server that persists room state in SQLite and broadcasts `GameModel` snapshots to all connected clients.
 
 ### Message Flow
 
@@ -397,11 +405,11 @@ The `Permissions` model (`src/app/game/model/Permissions.ts`) specifies which ch
 
 Defined in `angular.json` under `projects.gh-tracker.architect.build.configurations`:
 
-| Configuration | Environment File           | Notes                                             |
-| ------------- | -------------------------- | ------------------------------------------------- |
-| (default)     | `environment.ts`           | Dev: `production: false`, Service Worker enabled  |
-| `production`  | `environment.prod.ts`      | Full optimization, output hashing, budget checks  |
-| `electron`    | `environment.electron.ts`  | `electron: true`, `base-href ./` for file:// URLs |
+| Configuration | Environment File          | Notes                                             |
+| ------------- | ------------------------- | ------------------------------------------------- |
+| (default)     | `environment.ts`          | Dev: `production: false`, Service Worker enabled  |
+| `production`  | `environment.prod.ts`     | Full optimization, output hashing, budget checks  |
+| `electron`    | `environment.electron.ts` | `electron: true`, `base-href ./` for file:// URLs |
 
 Output directory: `dist/gh-tracker/`.
 
@@ -417,13 +425,13 @@ Output directory: `dist/gh-tracker/`.
 
 ## 9. Deployment Options
 
-| Option                          | How                                                       | Trade-offs                                                                                         |
-| ------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **PWA / Static hosting**        | `npm run build`, serve `dist/` from any web server or CDN | Simplest; offline support via Service Worker; no server needed for single-client use               |
-| **Docker (production)**         | `docker compose up` (uses `Dockerfile`)                   | Multi-stage build → nginx:alpine image on port 80; easy to host on any container platform          |
-| **Docker (dev)**                | `docker compose -f docker-compose.dev.yaml up`            | Mounts source volume, runs `ng serve` on port 4200 with live reload                                |
-| **Electron**                    | `npm run electron:build`                                  | Offline desktop app; no browser required; Linux AppImage/RPM; `base-href ./` for local file access |
-| **Self-hosted with GHT Server** | Deploy static files + run GHT Server separately           | Enables multi-client sync, permissions, and shared campaign state across devices                   |
+| Option                          | How                                                                                                                                                            | Trade-offs                                                                                                      |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **PWA / Static hosting**        | `npm run build`, serve `dist/` from any web server or CDN                                                                                                      | Simplest; offline support via Service Worker; no server needed for single-client use                            |
+| **Docker (production)**         | `docker compose up` (uses `Dockerfile`)                                                                                                                        | Multi-stage build → nginx:alpine image on port 80; easy to host on any container platform                       |
+| **Docker (dev)**                | `docker compose -f docker-compose.dev.yaml up`                                                                                                                 | Mounts source volume, runs `ng serve` on port 4200 with live reload                                             |
+| **Electron**                    | `npm run electron:build`                                                                                                                                       | Offline desktop app; no browser required; Linux AppImage/RPM; `base-href ./` for local file access              |
+| **Self-hosted with GHT Server** | `docker compose up --build` — Docker builds both images directly from GitHub; no local clone of [GHT-server](https://github.com/CIvanPiMa/GHT-server) required | App on port 80 + sync server on port 8080; SQLite persistence via named Docker volume; `PUBLIC=true` by default |
 
 ---
 

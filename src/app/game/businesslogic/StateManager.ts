@@ -126,7 +126,8 @@ export class StateManager {
   }
 
   buildWsUrl(protocol: string, serverUrl: string, port: number | string) {
-    const urls = serverUrl.split('/');
+    const cleanUrl = serverUrl.replace(/^(wss?|https?):\/\//, '');
+    const urls = cleanUrl.split('/');
     const url = urls[0];
     let path: string = '';
     if (urls.length > 1) {

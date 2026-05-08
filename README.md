@@ -43,15 +43,15 @@ Run the Angular app and sync server together with Docker Compose:
 docker compose up --build
 ```
 
-- App is served on **port 80**
-- Sync server is served on **port 8080** (WebSocket)
+- App is served on **port 8081**
+- Sync server is served on **port 8082** (WebSocket)
 - Game state is persisted in a named Docker volume (`ght-server-data`)
 
 **Connect the app to your server:**
 
 1. Open the app → hamburger menu → **Server**
 2. Set **Host** to your server's IP or hostname
-3. Set **Port** to `8080`
+3. Set **Port** to `8082`
 4. Enter any UUID as the **Room Code** (e.g. generate one at [uuidgenerator.net](https://www.uuidgenerator.net))
 5. Click **Connect** — share the same room code with other players to sync
 

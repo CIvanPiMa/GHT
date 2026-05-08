@@ -7,11 +7,6 @@
     "name": "CIvanPiMa"
   },
   "repository": "github:CIvanPiMa/GHT",
-  "bugs": "https://github.com/CIvanPiMa/GHT/issues",
-  "funding": {
-    "type": "ko-fi",
-    "url": "https://ko-fi.com/cIvanPiMa"
-  },
   "main": "main.js",
   "nodemonConfig": {
     "execMap": {
@@ -25,7 +20,6 @@
   },
   "scripts": {
     "postinstall": "patch-package",
-    "prepare": "husky",
     "prestart": "node ./scripts/build-data.js",
     "start": "ng serve",
     "prebuild": "node ./scripts/build-data.js && node ./scripts/pre-build.js",

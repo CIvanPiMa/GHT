@@ -1,0 +1,40 @@
+services:
+  # docker run -it --rm -p 4200:4200 \
+  #   --name ght-dev \
+  #   -v $(pwd):/usr/src/ght \
+  #   -v /usr/src/ght/node_modules \
+  #   ght-dev
+  app:
+    container_name: ght
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      tags:
+        - ght-dev
+    ports:
+      - '4200:4200'
+    volumes:
+      - .:/usr/src/ght
+      - /usr/src/ght/node_modules
+
+  # docker build -t ght-server-dev -f Dockerfile.dev .
+  # docker run -it --rm -p 4201:8080 \
+  #   -e PUBLIC=true \
+  #   -v $(pwd):/app \
+  #   -v /app/node_modules \
+  #   ght-server-dev
+  server:
+    container_name: ght-server
+    build:
+      context: ../GHT-server/.
+      dockerfile: Dockerfile.dev
+      tags:
+        - ght-server-dev
+    ports:
+      - '4201:4201'
+    environment:
+      PORT: '4201'
+      PUBLIC: 'true'
+    volumes:
+      - ../GHT-server/:/app
+      - /app/node_modules

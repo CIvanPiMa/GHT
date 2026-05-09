@@ -819,6 +819,14 @@ export class CharacterComponent implements OnInit {
     gameManager.stateManager.after();
   }
 
+  discardCardsCount(): number {
+    return (this.character.discardedAbilities || []).length;
+  }
+
+  lostCardsCount(): number {
+    return (this.character.lostAbilities || []).length;
+  }
+
   inHandCount(): number {
     const abilities = gameManager.deckData(this.character, true).abilities;
     return abilities.filter((_, i) =>

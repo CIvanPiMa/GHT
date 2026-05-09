@@ -1,7 +1,7 @@
 {
   "name": "Gloomhaven Tracker",
   "description": "Gloomhaven Tracker is a companion app for Gloomhaven / Frosthaven based board games.",
-  "short_name": "GH GH-Tracker",
+  "short_name": "GHT",
   "categories": [
     "games",
     "utilities"

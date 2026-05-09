@@ -4,11 +4,3 @@ COPY package.json /usr/src/ght/
 RUN npm i
 EXPOSE 4200
 CMD ["npm", "start", "--", "--host", "0.0.0.0"]
-
-# docker build -t ght-dev -f Dockerfile.dev .
-# docker run -it --rm -p 4200:4200 \
-#   --name ght-dev \
-#   -v $(pwd):/usr/src/ght \
-#   -v /usr/src/ght/node_modules \
-#   ght-dev
-

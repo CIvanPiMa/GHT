@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   private meta = inject(Meta);
   private dialog = inject(Dialog);
 
-  title = 'gh-tracker';
+  title = 'ght';
 
   theme: string = '';
   locale: string = '';

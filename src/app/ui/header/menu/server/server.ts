@@ -30,7 +30,16 @@ export class ServerMenuComponent implements OnInit {
   WebSocket = WebSocket;
 
   permissions: Permissions | undefined = new Permissions();
-  publicServer: ServerInfo[] = [];
+  publicServer: ServerInfo[] = [
+    Object.assign(new ServerInfo('ght-server.cima-gordos.com', 443, true), {
+      description: 'Gordos Server',
+      urls: { website: 'https://ght-server.cima-gordos.com' },
+    }),
+    Object.assign(new ServerInfo('localhost', 4201, false), {
+      description: 'Dev Server',
+      urls: { website: 'http://localhost:4201' },
+    }),
+  ];
   selectedServerIndex: number = -1;
 
   code: string = '';

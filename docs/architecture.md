@@ -1,4 +1,4 @@
-# GH Tracker — Architecture
+o# GH Tracker — Architecture
 
 **Table of Contents**:
 

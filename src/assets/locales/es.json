@@ -2239,7 +2239,7 @@
     },
     "list": {
       "deselect": "Introducir manualmente el servidor",
-      "select": "Seleccionar servidor público"
+      "select": "Seleccionar servidor"
     },
     "menu": {
       "connect": "Conectar a un Servidor",

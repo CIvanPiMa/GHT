@@ -522,12 +522,8 @@
 
     @if (!character.bb && settingsManager.settings.characterHandSize && !character.absent) {
       <div class="hand-size" ght-pointer-input (singleClick)="openAbilityCards()">
-        {{ inHandCount() }}/{{ character.handSize }}
+        {{ inHandCount() }}|{{ discardCardsCount() }}<br />{{ lostCardsCount() }}|{{ character.handSize }}
       </div>
-    }
-
-    @if (character.bb && settingsManager.settings.characterHandSize && !character.absent) {
-      <div class="hand-size" ght-pointer-input (singleClick)="openAbilityCards()">{{ character.level - 1 }}|4</div>
     }
 
     @if (settingsManager.settings.characterHandSize && !character.absent) {

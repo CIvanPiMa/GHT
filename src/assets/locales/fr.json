@@ -1933,7 +1933,7 @@
     },
     "list": {
       "deselect": "Inscrire le serveur manuellement",
-      "select": "Sélectionner le serveur public"
+      "select": "Sélectionner le serveur"
     },
     "menu": {
       "connect": "Se connecter au serveur",

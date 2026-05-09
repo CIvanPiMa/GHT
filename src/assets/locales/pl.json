@@ -2270,7 +2270,7 @@
     },
     "list": {
       "deselect": "Wprowadź serwer ręcznie",
-      "select": "Wybierz publiczny serwer"
+      "select": "Wybierz serwer"
     },
     "menu": {
       "connect": "Połącz z serwerem",

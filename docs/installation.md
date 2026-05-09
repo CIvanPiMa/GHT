@@ -6,29 +6,27 @@ This guide covers all ways to install or deploy GH Tracker.
 
 - [Development Setup](#development-setup)
 - [Production Build](#production-build)
-- [Docker](#docker)
-  - [Production](#production)
-  - [Development](#development)
-- [Self-Hosting](#self-hosting)
-- [Self-Hosting with Sync Server](#self-hosting-with-sync-server)
 - [PWA (Install as App)](#pwa-install-as-app)
 - [Electron (Standalone Desktop App)](#electron-standalone-desktop-app)
 - [Environment Configuration](#environment-configuration)
 
 ## Development Setup
 
-Clone the repository and start the dev server:
+Clone this and the server repositories:
 
 ```bash
 git clone https://github.com/CIvanPiMa/GHT.git
-cd gh-tracker
-npm install
-npm run start
+git clone https://github.com/CIvanPiMa/GHT-server.git
 ```
 
-The dev server is available at [http://localhost:4200](http://localhost:4200).
+Run the Dev Docker Compose to start both the Angular app and the sync server together:
 
-`npm run start` runs `scripts/build-data.js` automatically (via `prestart`) to compile the JSON data files in `data/` into `src/assets/data/` before launching the Angular dev server.
+```bash
+docker compose -f docker-compose.dev.yml up --build
+```
+
+- The app will be available at [http://localhost:4200](http://localhost:4200).
+- The sync server will be available at `ws://localhost:4201` for WebSocket connections from the app.
 
 To watch for data file changes while developing:
 
@@ -40,73 +38,16 @@ This uses [nodemon](https://nodemon.io/) to re-run `build-data.js` whenever any 
 
 ## Production Build
 
-```bash
-npm run build
-```
-
-The `prebuild` hook runs `build-data.js` and `pre-build.js` automatically. The output is placed in `./dist/gh-tracker/`.
-
-To serve the build locally for testing:
+You can build the app and server for production with the docker-compose setup:
 
 ```bash
-npx serve ./dist/gh-tracker
+docker compose -f docker-compose.yml up --build
 ```
 
-> The default production build sets the base URL to `/`. To use a different base path (e.g. for hosting at `example.com/gh-tracker/`), pass `--base-href`:
->
-> ```bash
-> npm run build -- --base-href /gh-tracker/
-> ```
+This builds the app and server with production optimizations.
 
-## Docker
-
-### Production
-
-Build and run the production image (served by nginx on port 80):
-
-```bash
-docker build -t gh-tracker .
-docker run --rm -p 80:80 --name gh-tracker gh-tracker
-```
-
-### Development
-
-Build the dev image and run it with your local source mounted for live reload (served on port 4200):
-
-```bash
-docker image prune -f
-docker build -t gh-tracker-dev -f Dockerfile.dev .
-docker run -it --rm -p 4200:4200 \
-  -v $(pwd):/usr/src/gh-tracker \
-  -v /usr/src/gh-tracker/node_modules \
-  gh-tracker-dev
-```
-
-## Self-Hosting
-
-Follow the [Production Build](#production-build) steps above, then copy `./dist/gh-tracker/` to your web server.
-
-The app is a static Angular SPA. Configure your web server to serve `index.html` for all routes (catch-all / try_files).
-
-## Self-Hosting with Sync Server
-
-To run both the Angular app **and** the sync server ([GHT Server](https://github.com/CIvanPiMa/GHT-server)) together via Docker Compose:
-
-**Start the full stack:**
-
-```bash
-docker compose up --build
-```
-
-- Angular app → **port 80**
-- Sync server → **port 8080** (WebSocket)
-- Game state is persisted in a named Docker volume (`ght-server-data`) so it survives container restarts.
-
-Check [how to connect](./installation.md#self-hosting-with-sync-server) the app to the server
-
-> [!Note]
->
-> By default the server runs with `PUBLIC=true`, meaning any new room code creates a new game automatically. To restrict this, set `PUBLIC=false` in `docker-compose.yml` and manage room codes manually via the [GHT Server](https://github.com/CIvanPiMa/GHT-server) documentation.
+- The app is served via nginx on port 8081.
+- The sync server is available at `ws://localhost:8082` for WebSocket connections from the app.
 
 ## PWA (Install as App)
 

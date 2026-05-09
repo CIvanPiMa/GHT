@@ -726,7 +726,7 @@
     margin-left: calc(var(--ght-unit) * 2);
 
     &.hand-size-margin {
-      margin-left: calc(var(--ght-unit) * 4.5);
+      margin-left: calc(var(--ght-unit) * 7);
     }
 
     img {
@@ -739,14 +739,14 @@
   .hand-size {
     position: absolute;
     right: calc(var(--ght-unit) * 14);
-    top: calc(var(--ght-unit) * 4);
-    width: calc(var(--ght-unit) * 4.2);
-    height: calc(var(--ght-unit) * 5);
+    top: calc(var(--ght-unit) * 3);
+    width: calc(var(--ght-unit) * 6.5);
+    height: calc(var(--ght-unit) * 7.5);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: var(--ght-font-title);
-    font-size: calc(var(--ght-unit) * 1.5);
+    font-size: calc(var(--ght-unit) * 2);
     padding-right: calc(var(--ght-unit) * 0.4);
     z-index: 1;
 

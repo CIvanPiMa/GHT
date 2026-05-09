@@ -2332,7 +2332,7 @@
     },
     "list": {
       "deselect": "Manual enter Server",
-      "select": "Select public Server"
+      "select": "Select Server"
     },
     "menu": {
       "connect": "Connect to Server",

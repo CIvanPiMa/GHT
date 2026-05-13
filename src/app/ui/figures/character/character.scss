@@ -641,7 +641,7 @@
       margin-bottom: calc(var(--ght-unit) * 0.5 * var(--ght-text-factor));
 
       img {
-        height: calc(var(--ght-unit) * 4 * var(--ght-text-factor));
+        height: calc(var(--ght-unit) * 3.5 * var(--ght-text-factor));
         margin-left: calc(var(--ght-unit) * 1 * var(--ght-text-factor));
       }
 
@@ -726,7 +726,7 @@
     margin-left: calc(var(--ght-unit) * 2);
 
     &.hand-size-margin {
-      margin-left: calc(var(--ght-unit) * 7);
+      margin-left: calc(var(--ght-unit) * 8);
     }
 
     img {

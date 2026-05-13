@@ -465,8 +465,6 @@
             [ght-label]="'game.experience'"
             [ght-label-attribute]="'title'"
             ght-pointer-input
-            (singleClick)="addExperience(1)"
-            (doubleClick)="addExperience(-1)"
             (dragMove)="dragXpMove($event)"
             (dragEnd)="dragXpEnd()"
             (dragCancel)="dragCancel()"
@@ -489,8 +487,6 @@
             [ght-label]="'game.loot'"
             [ght-label-attribute]="'title'"
             ght-pointer-input
-            (singleClick)="addLoot(1)"
-            (doubleClick)="addLoot(-1)"
             (dragMove)="dragLootMove($event)"
             (dragEnd)="dragLootEnd()"
             (dragCancel)="dragCancel()"

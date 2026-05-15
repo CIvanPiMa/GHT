@@ -135,6 +135,9 @@ export class Game {
     this.conditions = model.conditions || [];
     this.battleGoalEditions = model.battleGoalEditions || [];
     this.filteredBattleGoals = model.filteredBattleGoals || [];
+    model.characters = model.characters || [];
+    model.monsters = model.monsters || [];
+
     this.figures = this.figures.filter(
       (figure) =>
         (figure instanceof Character &&
